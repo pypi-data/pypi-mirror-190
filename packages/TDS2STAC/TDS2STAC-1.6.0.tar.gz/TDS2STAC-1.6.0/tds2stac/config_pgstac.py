@@ -1,0 +1,28 @@
+import os
+
+
+def run_all():
+    os.environ["APP_HOST"] = "0.0.0.0"
+    os.environ["APP_PORT"] = "8082"
+    os.environ["RELOAD"] = "true"
+    os.environ["ENVIRONMENT"] = "local"
+    os.environ["POSTGRES_USER"] = "hadizadeh-m"
+    os.environ["POSTGRES_PASS"] = ""
+    os.environ["POSTGRES_DBNAME"] = "postgis"
+    os.environ["POSTGRES_HOST_READER"] = "localhost"
+    os.environ["POSTGRES_HOST_WRITER"] = "localhost"
+    os.environ["POSTGRES_PORT"] = "5432"
+    os.environ["WEB_CONCURRENCY"] = "10"
+    os.environ["VSI_CACHE"] = "TRUE"
+    os.environ["GDAL_HTTP_MERGE_CONSECUTIVE_RANGES"] = "YES"
+    os.environ["GDAL_DISABLE_READDIR_ON_OPEN"] = "EMPTY_DIR"
+    os.environ["DB_MIN_CONN_SIZE"] = "1"
+    os.environ["DB_MAX_CONN_SIZE"] = "10"
+    os.environ["USE_API_HYDRATE"] = "${USE_API_HYDRATE:-false}"
+    os.environ["POSTGRES_USER"] = "hadizadeh-m"
+    os.environ["POSTGRES_PASSWORD"] = ""
+    os.environ["POSTGRES_DB"] = "postgis"
+    os.environ["PGUSER"] = "hadizadeh-m"
+    os.environ["PGPASSWORD"] = ""
+    os.environ["PGHOST"] = "localhost"
+    os.environ["PGDATABASE"] = "postgis"
