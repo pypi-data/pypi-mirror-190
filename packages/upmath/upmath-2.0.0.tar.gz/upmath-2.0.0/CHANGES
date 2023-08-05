@@ -1,0 +1,19 @@
+Package: upmath-1.0
+=====================
+First Package
+
+Package: upmath-1.2
+=====================
+Some changes is made to license file, setup.py file to include the 
+license file and README.md file. No change in the coding.
+
+Package: upmath-1.3
+=====================
+Just corrections are made
+
+Package: upmath-2.0.0
+======================
+1) New module, digits.py is added
+2) Bugs in upnumber are fixed
+3) Math functions are made more efficient
+4) Package structure is changed, the package is no more backward compatible
