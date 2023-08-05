@@ -1,0 +1,63 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+authors = ["kagemeka <kagemeka1@gmail.com>"]
+description = "A package for datastructures and algorithms."
+documentation = "https://kagemeka.github.io/dsalgo-python"
+homepage = "https://github.com/kagemeka/dsalgo-python/README.md"
+keywords = ["algorithm", "datastructure"]
+license = "MIT"
+name = "dsalgo"
+packages = [{ include = "dsalgo" }]
+readme = "README.md"
+repository = "https://github.com/kagemeka/dsalgo-python"
+version = "0.3.2"
+
+[tool.poetry.dependencies]
+
+python = "^3.10"
+numpy = "*"
+scipy = "*"
+numba = { version = "^0.56", python = "<3.11", optional = true }
+
+[tool.poetry.extras]
+nb = ["numba"]
+
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pdoc = "^12"
+
+
+[tool.black]
+line-length = 79
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+
+
+[tool.mypy]
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+show_absolute_path = true
+strict = true
+warn_return_any = true
+local_partial_types = true
+# exclude = ["archive/"]
+plugins = "numpy.typing.mypy_plugin"
+
+
+[tool.pytest.ini_options]
+python_files = ["*.py"]
+python_classes = ["Test*", "_Test*"]
+python_functions = ["test", "_test", "_test_*", "test_*"]
