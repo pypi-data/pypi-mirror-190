@@ -1,0 +1,83 @@
+[tool.poetry]
+name = "django-reverse-proxy-send-file"
+version = "1.0.1"
+description = "Storage and View to send X-Accel-Redirect (or X-Sendfile) header to nginx (or apache) reverse-proxy"
+authors = ["Fabs <fabien.michel@hespul.org>"]
+license = "WTFPL"
+readme = "README.md"
+repository="https://bitbucket.org/hespul/django-reverse-proxy-send-file"
+packages = [{include = "reverse_proxy_send_file"}]
+classifiers=[
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Framework :: Django :: 3.2',
+        'Framework :: Django :: 4.0',
+        'Framework :: Django :: 4.1',
+        'Intended Audience :: Developers',
+        'License :: Public Domain',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Development Status :: 5 - Production/Stable',
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+Django = "^4.1.5"
+black = "^22.12.0"
+isort = "^5.11.4"
+pylint = "^2.15.10"
+pre-commit = "^2.21.0"
+
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+# preview = true
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 120
+known_django = "django"
+sections = [
+    "FUTURE",
+    "STDLIB",
+    "THIRDPARTY",
+    "DJANGO",
+    "FIRSTPARTY",
+    "LOCALFOLDER",
+]
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint.messages_control]
+disable = [
+    "missing-docstring",
+    "invalid-name",
+    "arguments-differ",
+    "logging-fstring-interpolation",
+    "too-few-public-methods",
+    "arguments-renamed",
+    "wrong-import-order",
+    "import-outside-toplevel",
+    "no-member",
+    "empty-docstring",
+    "unused-argument",
+    "abstract-method",
+    "protected-access",
+    "too-many-arguments",
+    "broad-except",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
