@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/PKG-INFO
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/SOURCES.txt
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/dependency_links.txt
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/requires.txt
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/top_level.txt
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/PKG-INFO
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/SOURCES.txt
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/dependency_links.txt
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/requires.txt
+eDOCr/keras_ocr_models/models/eDOCr.egg-info/top_level.txt
