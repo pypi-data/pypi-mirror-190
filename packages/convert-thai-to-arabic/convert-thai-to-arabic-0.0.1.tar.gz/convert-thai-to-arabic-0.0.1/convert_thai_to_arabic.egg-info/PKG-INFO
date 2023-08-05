@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: convert-thai-to-arabic
+Version: 0.0.1
+Summary: Convert Thai numbers in file names to Arabic numbers
+Home-page: https://github.com/jaytrairat/convert_thai_to_arabic
+Author: jaytrairat
+Author-email: jaytrairat@outlook.com
