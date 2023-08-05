@@ -1,0 +1,4 @@
+include README.md
+include CHANGELOG.txt
+recursive-include OrangePi_PidiPlugins *.py *.png
+' written by Clement Skau.' written by Clement Skau.
