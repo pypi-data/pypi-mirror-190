@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: drag-dash
+Version: 0.0.2
+Summary: drag dash objects
+Author: Jin Ch <jin236248@gmail.com>
+License: MIT
+Classifier: Framework :: Dash
+License-File: LICENSE
+
+This package makes dash objects draggable. It is based on react-draggable (https://www.npmjs.com/package/react-draggable).
