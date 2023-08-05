@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: finder-smlm
+Version: 0.0.2
+Summary: Finder algorithm for SMLM
+Author: Andreas Nold, Pietro Verzelli
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib (>=3.5.2)
+Requires-Dist: numpy (>=1.22.3)
+Requires-Dist: pandas (>=1.2.5)
+Requires-Dist: seaborn (>=0.11.0)
+Requires-Dist: scikit-learn (>=1.0.2)
+
+## FINDER
+
+A module
