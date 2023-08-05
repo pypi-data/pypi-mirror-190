@@ -1,0 +1,4 @@
+include models/randomforest.pkl
+include models/tfid_vectorizer.pkl
+include models/rf_selectkbest.pkl
+include description.md
