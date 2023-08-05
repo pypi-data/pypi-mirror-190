@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aup-manager
+Version: 2.0.1
+Summary: Module for managing AUPs
+Home-page: https://gitlab.ics.muni.cz/perun-proxy-aai/python/aup-manager.git
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Requires-Dist: Flask-pyoidc (~=3.11)
+Requires-Dist: connexion[swagger-ui] (~=2.14)
+Requires-Dist: jsonpatch (~=1.22)
+Requires-Dist: jwcrypto (~=1.4.2)
+Requires-Dist: markdown2 (~=2.4)
+Requires-Dist: pymongo (~=4.2)
+Requires-Dist: setuptools
+Provides-Extra: perun
+Requires-Dist: perun.connector (~=3.3) ; extra == 'perun'
+
+UNKNOWN
+
+
