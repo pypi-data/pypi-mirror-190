@@ -1,0 +1,10 @@
+eons/__init__.py,sha256=f500dF1xcUkwiVjlkKegcJaJkBE7BvuvynW0g9FjiNA,20
+eons/eons.py,sha256=6U-GaKeidMVNY0hP56hrJnOinOaOCwutUVncoYgHUgA,80838
+eons/resolve/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+eons/resolve/resolve_find_by_fetch.py,sha256=NIG8YAxTDI_kYQu2S6tPROtVIzR15sOZkD4qj-yXz0c,3399
+eons/resolve/resolve_install_from_repo.py,sha256=IltJiRXlxwbNbpVpecCr_DaQFo2XZBwaID-MQecqdu8,488
+eons/resolve/resolve_install_with_pip.py,sha256=cavHrEmRaQ7lmUrS94DgTVmFo4mVfUQvODyc8HjEGfg,389
+eons-2.1.0.dist-info/METADATA,sha256=opcogvSTtqN9fLJ1kZCt5LuOjc19os3pO0WHYTw6gpk,16978
+eons-2.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+eons-2.1.0.dist-info/top_level.txt,sha256=FuSWridIwbj2dEr3Z5h2jUYF_7PLsyFoLO3qBhmLFgo,5
+eons-2.1.0.dist-info/RECORD,,
