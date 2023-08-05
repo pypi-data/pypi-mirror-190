@@ -1,0 +1,13 @@
+upmath/__init__.py,sha256=hJqRi7yEkjUoph9eWpXs05WZf6INp9OnMzsLOtypewQ,1522
+upmath/lib.py,sha256=bkGNiDbhUWNdmoOGIgWNZMGZN8vNooN1xnlqGMD_hBc,7312
+upmath/src/digits.py,sha256=eYqJUOHeQdux-15d4OpRzR1kXx3SgZKMarckp951Q-Q,7806
+upmath/src/mypi.py,sha256=ILNn2165V6_dOYhuIRX6lzBf6CU1wmuw7yLcg4d4CFY,2264
+upmath/src/pE.py,sha256=7Sj8TMYp9_cYmkcNbdnNbsQOvNPyF1wfB8s7wOlyovo,1423
+upmath/src/psmf.py,sha256=rex39Y_o3rs1p41cNsSwYLyDqWULMOpcq5ANlUGBsMA,104296
+upmath/src/upnumber.py,sha256=QIus0pSu-GJU4R2DOachlE787Q7Vgm5qZpSgVyVish8,391334
+upmath-2.0.0.data/data/LICENSE,sha256=DBni5z58oWltWpJBXn0kUcEuXdVGOevcevw4neNFXf4,1902
+upmath-2.0.0.dist-info/LICENSE,sha256=DBni5z58oWltWpJBXn0kUcEuXdVGOevcevw4neNFXf4,1902
+upmath-2.0.0.dist-info/METADATA,sha256=PeIPfd-jKKyu2JHTnnpgNukwB5OhjytuSblemi4z61w,48938
+upmath-2.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+upmath-2.0.0.dist-info/top_level.txt,sha256=iOZZ29mDYrqlb1QDuDxkiELP0ardsrDGDmTIwn3KLFI,7
+upmath-2.0.0.dist-info/RECORD,,
