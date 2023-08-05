@@ -1,0 +1,138 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"object programming runtime"
+
+
+import os
+import readline
+import sys
+import termios
+import time
+import traceback
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from opq.default import Default
+from opq.storage import Wd
+
+
+from opq.runtime.bus import Bus
+from opq.runtime.config import Config
+from opq.runtime.command import Command
+from opq.runtime.event import Event
+from opq.runtime.handler import Handler
+from opq.runtime.scanner import scan
+from opq.runtime.thread import launch
+from opq.runtime.utils import privileges, wait
+
+
+from opq.modules import cmd, fnd, irc, log, rss
+
+
+Cfg = Config()
+Wd.workdir = os.path.expanduser("~/.opq")
+
+
+scan(cmd)
+scan(fnd)
+scan(irc)
+scan(log)
+scan(rss)
+
+
+class CLI(Handler):
+
+    @staticmethod
+    def announce(txt):
+        pass
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+class Console(CLI):
+
+    def handle(self, event):
+        Command.dispatch(event)
+        event.wait()
+
+    def poll(self):
+        event = Event()
+        event.orig = repr(self)
+        event.txt = input("> ")
+        return event
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    sis = open("/dev/null", 'r')
+    os.dup2(sis.fileno(), sys.stdin.fileno())
+    sos = open("/dev/null", 'a+')
+    ses = open("/dev/null", 'a+')
+    os.dup2(sos.fileno(), sys.stdout.fileno())
+    os.dup2(ses.fileno(), sys.stderr.fileno())
+
+
+def waiter():
+    got = []
+    for ex in Command.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Command.errors.remove(exc)
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+        waiter()
+
+
+def main():
+    Cfg.parse(" ".join(sys.argv[1:]))
+    if Cfg.txt:
+        e = Event()
+        e.type = "command"
+        e.txt = Cfg.otxt
+        cli = CLI()
+        cli.handle(e)
+        Cfg.wait = False
+        e.wait()
+    elif "d" in Cfg.opts:
+        privileges("opq")
+        daemon()
+        Cfg.wait = True
+    elif "c" in Cfg.opts:
+        date = time.ctime(time.time()).replace("  ", " ")
+        print(f"OPQ started {date}")
+        csl = Console()
+        csl.start()
+        irc.init()
+        rss.init()
+        Cfg.wait = True
+    if Cfg.wait:
+        wait(waiter)
+
+
+wrap(main)
