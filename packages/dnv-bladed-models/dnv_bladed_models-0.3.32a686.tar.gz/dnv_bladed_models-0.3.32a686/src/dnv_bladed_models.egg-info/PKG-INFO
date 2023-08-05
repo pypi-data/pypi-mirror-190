@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: dnv-bladed-models
+Version: 0.3.32a686
+Summary: An API for working with Bladed Next Gen models.
+Author: DNV
+Author-email: DNV <bladednextgen@dnv.com>
+License: MIT
+Keywords: Bladed Data Model
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Bladed Next Gen Python Models API
+
+`dnv_bladed_models=0.3.32a686`
+
+A Python package to easily work with JSON input models for Bladed Next Generation.
+
+Visit <https://bladednextgen.dnv.com/> for more information.
+
+## Usage
+
+Load a JSON model from file:
+
+```python
+import dnv_bladed_models as models
+
+analysis = models.BladedAnalysis.from_file('/path/to/analysis.json')
+```
+
+Modify a model object in code:
+
+```python
+analysis.SteadyCalculation.PitchRange.Minimum = 0.
+analysis.SteadyCalculation.PitchRange.Maximum = 0.
+analysis.SteadyCalculation.PitchRange.Interval = 0.1
+```
+
+Work with a turbine assembly component in the Component Library, in code:
+
+```python
+blade: models.Blade = analysis.ComponentDefinitions['Blade']
+```
+
+Save a model to a JSON file:
+
+```python
+analysis.to_file('/path/to/file.json')
+```
+
+Create a new model object programmatically:
+
+```python
+beam = models.LidarBeam(
+    MountingPosition=models.LidarMountingPosition(
+        X=1,
+        Y=2,
+        Z=3
+    )
+)
+```
+
+Render a model as a JSON string:
+
+```python
+json_str = blade.to_json()
+```
+
+Load a model from a JSON string:
+
+```python
+blade = models.Blade.from_json(json_str)
+```
+
