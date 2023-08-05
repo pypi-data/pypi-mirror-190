@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Steam-Price
+Version: 0.0.1
+Summary: Checks Steam Game Pricing
+Home-page: UNKNOWN
+Author: Follen
+Author-email: <binor15175@brandoza.com>
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+UNKNOWN
+

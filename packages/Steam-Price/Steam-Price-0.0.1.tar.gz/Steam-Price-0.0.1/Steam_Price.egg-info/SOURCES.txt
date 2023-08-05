@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+SteamTracker/SteamPricer.py
+SteamTracker/__init__.py
+Steam_Price.egg-info/PKG-INFO
+Steam_Price.egg-info/SOURCES.txt
+Steam_Price.egg-info/dependency_links.txt
+Steam_Price.egg-info/top_level.txt
