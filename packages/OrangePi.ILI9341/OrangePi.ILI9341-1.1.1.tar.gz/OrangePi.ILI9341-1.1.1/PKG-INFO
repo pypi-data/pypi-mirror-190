@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: OrangePi.ILI9341
+Version: 1.1.1
+Summary: Library to control ILI9341 TFT LCD displays on the Orange Pi.
+Home-page: https://github.com/sonocotta/ili9341-orangepi-python
+Author: Andriy Malyshenko
+Author-email: andriy@sonocotta.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Hardware
+License-File: LICENSE
