@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hvclient
+Version: 1.0.5
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: hvac>=1.0.2
+Requires-Dist: setuptools>=66.1.1
