@@ -1,0 +1,8 @@
+setup.py
+convert_thai_to_arabic/__init__.py
+convert_thai_to_arabic/convert_thai_to_arabic.py
+convert_thai_to_arabic.egg-info/PKG-INFO
+convert_thai_to_arabic.egg-info/SOURCES.txt
+convert_thai_to_arabic.egg-info/dependency_links.txt
+convert_thai_to_arabic.egg-info/entry_points.txt
+convert_thai_to_arabic.egg-info/top_level.txt
