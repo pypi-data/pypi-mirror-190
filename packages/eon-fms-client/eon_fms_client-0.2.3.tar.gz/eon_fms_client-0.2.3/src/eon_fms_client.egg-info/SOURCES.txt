@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/eon_fms_client/__init__.py
+src/eon_fms_client.egg-info/PKG-INFO
+src/eon_fms_client.egg-info/SOURCES.txt
+src/eon_fms_client.egg-info/dependency_links.txt
+src/eon_fms_client.egg-info/requires.txt
+src/eon_fms_client.egg-info/top_level.txt
