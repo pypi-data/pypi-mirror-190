@@ -1,0 +1,10 @@
+ail_typo_squatting/__init__.py,sha256=lMMaiwODy8mDIAbxeM-ujh8Ewn77G0s7Cjk1A7NkZlk,1304
+ail_typo_squatting/typo.py,sha256=o4f_hn0j7HwOR3JIMfo2rUUboGm04ZKVkrleNfVOJlo,69573
+etc/common-misspellings.json,sha256=CTBSfsb8UCSMh5mL1IWXwV8ziLr19QKe3VtaW_6Gc6o,130949
+etc/dynamic-dns.json,sha256=GCfGtTRXUY-hu_NKkWQaE3cfnLz0x0Ki5Qxik9vWCaE,11077
+etc/homophones.txt,sha256=yZ0WMDZrEwHMr_gGUlKMx8XfzcUj_LMCxhfQnPL8MyI,6028
+etc/tlds-alpha-by-domain.txt,sha256=p5qAJs6hbpSOH_HmtRHHQ4fjciarr7SonjL79XhYZTs,9889
+ail_typo_squatting-2.3.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ail_typo_squatting-2.3.2.dist-info/LICENSE,sha256=9dD1FRQOYoiz5YNJIrFCB5Ou4JihGPfQW5lL9ycGKmg,1480
+ail_typo_squatting-2.3.2.dist-info/METADATA,sha256=PEMnqp-ctVnlU--twDOPgsroAi1vkdy-PjgkNMpA0Lk,16455
+ail_typo_squatting-2.3.2.dist-info/RECORD,,
