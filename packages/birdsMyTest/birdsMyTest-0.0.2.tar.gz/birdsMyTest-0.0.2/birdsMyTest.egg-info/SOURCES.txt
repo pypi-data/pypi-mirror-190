@@ -1,0 +1,5 @@
+setup.py
+birdsMyTest.egg-info/PKG-INFO
+birdsMyTest.egg-info/SOURCES.txt
+birdsMyTest.egg-info/dependency_links.txt
+birdsMyTest.egg-info/top_level.txt
