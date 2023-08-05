@@ -1,0 +1,15 @@
+CHANGELOG.txt
+MANIFEST.in
+README.md
+setup.py
+OrangePi.PidiPlugins.egg-info/PKG-INFO
+OrangePi.PidiPlugins.egg-info/SOURCES.txt
+OrangePi.PidiPlugins.egg-info/dependency_links.txt
+OrangePi.PidiPlugins.egg-info/entry_points.txt
+OrangePi.PidiPlugins.egg-info/requires.txt
+OrangePi.PidiPlugins.egg-info/top_level.txt
+OrangePi_PidiPlugins/DisplayILI9341.py
+OrangePi_PidiPlugins/DisplayST7789.py
+OrangePi_PidiPlugins/__init__.py
+OrangePi_PidiPlugins/images/controls-pause.png
+OrangePi_PidiPlugins/images/controls-play.png
