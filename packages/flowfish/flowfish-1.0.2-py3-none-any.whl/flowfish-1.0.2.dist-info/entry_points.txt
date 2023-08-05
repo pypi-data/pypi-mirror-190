@@ -1,0 +1,2 @@
+[console_scripts]
+flow = flowfish.__main__:main
