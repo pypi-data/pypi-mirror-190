@@ -1,0 +1,6 @@
+numpy
+scipy
+pyyaml
+quantities
+xmltodict
+natsort
