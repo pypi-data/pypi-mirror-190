@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: MySchedule.py
+Version: 1.0.4
+Summary: A Python wrapper for the McDonalds Myschedule
+Author: olijeffers0n
+Author-email: pleaseUseMyDiscord@Please.com
+License: MIT
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MySchedule.py
+
+## Description
+This is an API wrapper for the McDonald's *MySchedule* website.
+
+## Usage:
+
+Install with:
+```
+pip install MySchedule.py
+```
+
+Then you can use it like this:
+
+```python
+from schedule import ScheduleAPI
+from datetime import datetime
+
+api = ScheduleAPI("USERID", "PASSWORD")
+api.login()
+print(api.get_shifts_for_date(datetime.now()))
+```
+
+Which will print out the shifts for the current Week. 
