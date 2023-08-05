@@ -1,0 +1,8 @@
+django_sqlfun/__init__.py,sha256=YDrufy3EWjNeq6hfKbTjPwzCQufuvidvXC2LDQOnJag,25
+django_sqlfun/apps.py,sha256=ZMHexoFdfshvXNhjRpRHIdpA5oG9Jsk8I2ItB7h2wyY,927
+django_sqlfun/core.py,sha256=bMB8BNaXSfV_AljYbj7hxlFQPCwgCibDOHNWfiqNOfo,838
+django_sqlfun/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sqlfun-0.0.1.dist-info/WHEEL,sha256=_tUZrwPtr100-R0q5G_f5lOII6s0lN3q8n5zAHueCvs,87
+django_sqlfun-0.0.1.dist-info/METADATA,sha256=1HWHqvlYLlpFE3aiiIJNAiRzNh_ii7tqu6d9fBmpbK4,2241
+django_sqlfun-0.0.1.dist-info/licenses/LICENSE,sha256=mhZ8d0VFCdyQthfh6OSpXzPxIlTMrfoKinb6lEM4Aws,1067
+django_sqlfun-0.0.1.dist-info/RECORD,,
