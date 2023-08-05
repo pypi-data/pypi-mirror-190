@@ -1,0 +1,8 @@
+bucket_pull/__init__.py,sha256=wpgJGLFZRTfsrt_PDZHM52HPiw5e28selw8Df4fGQAk,18
+bucket_pull/__main__.py,sha256=QfaQ6i0B-27lPN2mKWHG701Co4FrNA6yfWzqj4PcjQA,59
+bucket_pull/cli.py,sha256=4PG79RGeJq6YqleKr39TZH1uxxxTPXQcUoe7hyvpnA0,2614
+bucket_pull-0.0.1.dist-info/METADATA,sha256=zN_yUFVMPA07CVLpNJKXzWMVPy5CDd3WU1FEhGASmQs,2732
+bucket_pull-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bucket_pull-0.0.1.dist-info/entry_points.txt,sha256=_SLjIyI93unWqPudDcYL7yQxzD_TECKRY5NDlBSOeW0,53
+bucket_pull-0.0.1.dist-info/top_level.txt,sha256=pmBD3lolGigumrnRwI3feld7_TLF5azXStmTRl_tDK8,12
+bucket_pull-0.0.1.dist-info/RECORD,,
