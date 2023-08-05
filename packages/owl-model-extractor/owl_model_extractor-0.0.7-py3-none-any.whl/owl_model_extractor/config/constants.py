@@ -1,0 +1,112 @@
+NS_RDFS = "http://www.w3.org/2000/01/rdf-schema#"
+NS_SCHEMA = "https://schema.org/"
+NS_DC = "http://purl.org/dc/elements/1.1/"
+NS_DCTERMS = "http://purl.org/dc/terms/"
+NS_OWL = "http://www.w3.org/2002/07/owl#"
+NS_VANN = "http://purl.org/vocab/vann/"
+NS_PROV = "http://www.w3.org/ns/prov#"
+NS_BIBO = "http://purl.org/ontology/bibo/"
+NS_SKOS = "http://www.w3.org/2004/02/skos/core#"
+NS_PAV = "http://purl.org/pav/"
+NS_FOAF = "http://xmlns.com/foaf/0.1/"
+NS_CC = "http://creativecommons.org/ns#"
+
+VOCS_REUSE_METADATA = {NS_DC, NS_SCHEMA, NS_DCTERMS, NS_VANN, NS_PROV,
+                       NS_BIBO, NS_PAV, NS_FOAF, NS_RDFS, NS_OWL}
+
+SKOS_CONCEPT = NS_SKOS + "Concept"
+SKOS_CONCEPT_SCHEME = NS_SKOS + "ConceptScheme"
+PROP_SKOS_PREF_LABEL = NS_SKOS + "prefLabel"
+PROP_SKOS_PREF_DEFINITION = NS_SKOS + "definition"
+
+PROP_FOAF_LOGO = NS_FOAF + "logo"
+
+PROP_RDFS_LABEL = NS_RDFS + "label"
+PROP_RDFS_COMMENT = NS_RDFS + "comment"
+
+PROP_SCHEMA_NAME = NS_SCHEMA + "name"
+PROP_SCHEMA_CREATOR = NS_SCHEMA + "creator"
+PROP_SCHEMA_LICENSE = NS_SCHEMA + "license"
+PROP_SCHEMA_CONTRIBUTOR = NS_SCHEMA + "contributor"
+PROP_SCHEMA_DESCRIPTION = NS_SCHEMA + "description"
+PROP_SCHEMA_CITATION = NS_SCHEMA + "citation"
+PROP_SCHEMA_DATE_CREATED = NS_SCHEMA + "dateCreated"
+PROP_SCHEMA_DATE_MODIFIED = NS_SCHEMA + "dateModified"
+PROP_SCHEMA_PUBLISHER = NS_SCHEMA + "publisher"
+PROP_SCHEMA_SCHEMA_VERSION = NS_SCHEMA + "schemaVersion"
+PROP_SCHEMA_SCHEMA_LOGO = NS_SCHEMA + "logo"
+
+PROP_OWL_VERSION_INFO = NS_OWL + "versionInfo"
+PROP_OWL_VERSION_IRI = NS_OWL + "versionIRI"
+PROP_OWL_PRIOR_VERSION = NS_OWL + "priorVersion"
+PROP_OWL_BACKWARDS_COMPATIBLE = NS_OWL + "backwardCompatibleWith"
+PROP_OWL_INCOMPATIBLE = NS_OWL + "incompatibleWith"
+
+PROP_DC_TITLE = NS_DC + "title"
+PROP_DC_RIGHTS = NS_DC + "rights"
+PROP_DC_ABSTRACT = NS_DC + "abstract"
+PROP_DC_DESCRIPTION = NS_DC + "description"
+PROP_DC_CREATOR = NS_DC + "creator"
+PROP_DC_REPLACES = NS_DC + "replaces"
+PROP_DC_CONTRIBUTOR = NS_DC + "contributor"
+PROP_DC_PUBLISHER = NS_DC + "publisher"
+PROP_DC_SOURCE = NS_DC + "source"
+
+PROP_DCTERMS_REPLACES = NS_DCTERMS + "replaces"
+PROP_DCTERMS_DESCRIPTION = NS_DCTERMS + "description"
+PROP_DCTERMS_LICENSE = NS_DCTERMS + "license"
+PROP_DCTERMS_TITLE = NS_DCTERMS + "title"
+PROP_DCTERMS_ABSTRACT = NS_DCTERMS + "abstract"
+PROP_DCTERMS_CREATOR = NS_DCTERMS + "creator"
+PROP_DCTERMS_CONTRIBUTOR = NS_DCTERMS + "contributor"
+PROP_DCTERMS_PUBLISHER = NS_DCTERMS + "publisher"
+PROP_DCTERMS_CREATED = NS_DCTERMS + "created"
+PROP_DCTERMS_MODIFIED = NS_DCTERMS + "modified"
+PROP_DCTERMS_BIBLIOGRAPHIC_CIT = NS_DCTERMS + "bibliographicCitation"
+PROP_DCTERMS_ISSUED = NS_DCTERMS + "issued"
+PROP_DCTERMS_SOURCE = NS_DCTERMS + "source"
+
+PROP_BIBO_DOI = NS_BIBO + "doi"
+PROP_BIBO_STATUS = NS_BIBO + "status"
+
+PROP_PROV_WAS_REVISION_OF = NS_PROV + "wasRevisionOf"
+PROP_PROV_GENERATED_AT_TIME = NS_PROV + "generatedAtTime"
+PROP_PROV_ATTRIBUTED_TO = NS_PROV + "wasAttributedTo"
+
+PROP_VANN_PREFIX = NS_VANN + "preferredNamespacePrefix"
+PROP_VANN_URI = NS_VANN + "preferredNamespaceUri"
+
+PROP_SKOS_NOTE = NS_SKOS + "note"
+
+PROP_PAV_CREATED_BY = NS_PAV + "createdBy"
+PROP_PAV_CREATED_ON = NS_PAV + "createdOn"
+PROP_PAV_PREVIOUS_VERSION = NS_PAV + "previousVersion"
+PROP_PAV_CONTRIBUTED_BY = NS_PAV + "contributedBy"
+
+PROP_CC_LICENSE = NS_CC + "license"
+
+FOOPS_TITLE = "title"
+FOOPS_DESCRIPTION = "description"
+FOOPS_LICENSE = "license"
+FOOPS_RIGHTS = "rights"
+FOOPS_VERSION_IRI = "version iri"
+FOOPS_AUTHOR = "author"
+FOOPS_NS_URI = "namespace URI"
+
+FOOPS_NS_PREFIX = "namespace prefix"
+FOOPS_VERSION_INFO = "version info"
+FOOPS_CONTRIBUTOR = "contributor"
+FOOPS_STATUS = "status"
+FOOPS_PREVIOUS_VERSION = "previous version"
+FOOPS_CREATION_DATE = "creation date"
+FOOPS_B_COMPATIBILITY = "backwards compatibility"
+FOOPS_PUBLISHER = "publisher"
+FOOPS_CITATION = "citation"
+FOOPS_DOI = "doi"
+
+FOOPS_LOGO = "logo"
+FOOPS_MODIFIED = "modified"
+FOOPS_SOURCE = "source"
+FOOPS_ISSUED = "issued"
+
+MINIMUN_METADA = [PROP_DC_TITLE,PROP_SCHEMA_LICENSE]
