@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qocttools"
+version = "0.0.3"
+authors = [
+  { name="Alberto Castro", email="alberto.castro.barrigon@gmail.com" },
+]
+description = "A set of tools to do quantum optimal control in combination with the QuTIP package"
+readme = "README.rst"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies= [
+        "pytest",
+        "pytest-xdist",
+        "numpy",
+        "jupyter",
+        "scipy",
+        "qutip",
+        "nlopt",
+        "matplotlib",
+        "python-git-info",
+        "mpi4py"
+]
+
+[project.urls]
+"Homepage" = "https://acbarrigon.gitlab.io/qocttools/"
+"Bug Tracker" = "https://gitlab.com/acbarrigon/qocttools/-/issues"

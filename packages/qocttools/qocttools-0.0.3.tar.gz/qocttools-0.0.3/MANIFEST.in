@@ -1,0 +1,14 @@
+include Pipfile
+include qocttools/cythonfuncs.pyx
+include sample-runs/dissipation/* 
+include sample-runs/floquet/*
+include sample-runs/gradient/*
+include sample-runs/gradient-2perts/*
+include sample-runs/gradient-dissipation/*
+include sample-runs/gradient-dissipation-multitarget/*
+include sample-runs/model/*
+include sample-runs/pipulse/*
+include sample-runs/propagators/*
+include sample-runs/qoctbasic/*
+include sample-runs/qoctbasic-krotov/*
+include sample-runs/qocttoffoli/*
