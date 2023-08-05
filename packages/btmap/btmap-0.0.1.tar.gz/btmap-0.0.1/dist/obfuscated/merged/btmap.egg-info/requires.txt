@@ -1,0 +1,2 @@
+btobex>=0.0.1
+xpycommon>=0.0.24
