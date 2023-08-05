@@ -1,0 +1,2 @@
+[console_scripts]
+convert-thai-to-arabic = convert_thai_to_arabic.convert_thai_to_arabic:main
