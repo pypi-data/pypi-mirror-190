@@ -1,0 +1,9 @@
+description: Complément familial (CF)
+metadata:
+  ux_name: Complément familial
+  description_en: Family complement (CF)
+  order:
+  - cf_cm
+  - cf_plaf
+  - cf_plaf_ancien
+  - cf_cm_dom
