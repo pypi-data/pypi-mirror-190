@@ -1,0 +1,16 @@
+falcon
+python-rapidjson
+aionostr>=0.14.0
+sqlalchemy[asyncio]>=2.0
+aiosqlite>=0.18.0
+aiohttp[speedups]
+uvicorn[standard]
+gunicorn
+setproctitle
+alembic
+
+[test]
+pytest
+pytest-cov
+pytest-asyncio
+pytest-xdist
