@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bert4vec
+Version: 0.2.0
+Summary: Chinese Sentence Embeddings using SimBERT / RoFormer-Sim / Paraphrase-Multilingual-MiniLM
+Home-page: https://github.com/zejunwang1/bert4vec
+Author: wangzejun
+Author-email: wangzejunscut@126.com
+License: Apache License 2.0
+Description: bert4vec: https://github.com/zejunwang1/bert4vec
+Platform: UNKNOWN
