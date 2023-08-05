@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+test_platform_helper.egg-info/PKG-INFO
+test_platform_helper.egg-info/SOURCES.txt
+test_platform_helper.egg-info/dependency_links.txt
+test_platform_helper.egg-info/requires.txt
+test_platform_helper.egg-info/top_level.txt
