@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+bucket_pull/__init__.py
+bucket_pull/__main__.py
+bucket_pull/cli.py
+bucket_pull.egg-info/PKG-INFO
+bucket_pull.egg-info/SOURCES.txt
+bucket_pull.egg-info/dependency_links.txt
+bucket_pull.egg-info/entry_points.txt
+bucket_pull.egg-info/requires.txt
+bucket_pull.egg-info/top_level.txt
