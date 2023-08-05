@@ -1,0 +1,8 @@
+django_storage_celery_results/__init__.py,sha256=Z6pkhD70PfxTZXRrhxsm1Y4xiwD7JqxI1_UNfkKeawI,67
+django_storage_celery_results/backends.py,sha256=qsOX_MYruOC3VEJtmJ7u-0dAIXsEssAQ1g4A-ESL4JE,4146
+django_storage_celery_results-0.0.1b4.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+django_storage_celery_results-0.0.1b4.dist-info/METADATA,sha256=geytL_X9fYywDe9Q3SDPPpV9Hql5hD0wDK3rUWZSqW4,1529
+django_storage_celery_results-0.0.1b4.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+django_storage_celery_results-0.0.1b4.dist-info/entry_points.txt,sha256=2lT7P7agC41uimkRmHCMIhVXshBomXnPnpjSxEIs_bw,96
+django_storage_celery_results-0.0.1b4.dist-info/top_level.txt,sha256=OVv4N_1komapEPIZ1wPSu8VM5jQzGupxH_ZbC16uQDY,30
+django_storage_celery_results-0.0.1b4.dist-info/RECORD,,

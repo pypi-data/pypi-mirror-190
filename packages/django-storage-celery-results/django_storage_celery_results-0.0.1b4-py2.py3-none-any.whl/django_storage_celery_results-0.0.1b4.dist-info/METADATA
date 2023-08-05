@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: django-storage-celery-results
+Version: 0.0.1b4
+Summary: Django-Storage-Celery-Result - the application introducing Django Storage-based Celery Results backend
+Home-page: https://github.com/nnseva/django-storage-celery-results
+Author: Vsevolod Novikov
+Author-email: nnseva@gmail.com
+License: LGPL
+Keywords: celery django backend filestorage storage
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Celery
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+
+Django-Storage-Celery-Result
+============================
+
+The application introducing Celery Result storage based on the Django Storage.
+
+It allows using any existent core or third-party Django Storage implementation
+to store Celery results.
+
+
+See details at the home page: https://github.com/nnseva/django-storage-celery-results
