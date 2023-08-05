@@ -1,0 +1,6 @@
+setup.py
+apispec_falcon.egg-info/PKG-INFO
+apispec_falcon.egg-info/SOURCES.txt
+apispec_falcon.egg-info/dependency_links.txt
+apispec_falcon.egg-info/not-zip-safe
+apispec_falcon.egg-info/top_level.txt
