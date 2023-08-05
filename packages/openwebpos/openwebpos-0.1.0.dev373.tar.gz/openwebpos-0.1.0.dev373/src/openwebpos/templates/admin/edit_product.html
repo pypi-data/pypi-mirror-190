@@ -1,0 +1,145 @@
+{% extends 'layouts/body.html' %}
+
+
+{% block main %}
+
+    <section>
+        <div class="row">
+            <form action="" method="POST">
+                {{ form.csrf_token() }}
+                <div class="input-field col s12">
+                    {{ form.product_type_id() }}
+                </div>
+                <div class="input-field col s8">
+                    {{ form.name.label }}
+                    {{ form.name(class="validate") }}
+                </div>
+                <div class="input-field col s4">
+                    {{ form.price.label }}
+                    {{ form.price(class="validate") }}
+                </div>
+                <div class="input-field col s12">
+                    {{ form.description.label }}
+                    {{ form.description(class="materialize-textarea") }}
+                </div>
+                <div class="center-align">
+                    <button class="btn red accent-4 modal-trigger" data-target="modalVerifyDelete">
+                        <i class="left material-icons">delete</i>
+                        <span>Delete</span>
+                    </button>
+                    <button type="submit" class="btn indigo accent-4">
+                        <i class="left material-icons">edit</i>
+                        <span>Update</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="modalVerifyDelete" class="modal">
+            <a class="modal-close corner"><i class="material-icons grey-text">cancel</i></a>
+            <div class="modal-content">
+                <h4 class="center-align">Delete Product</h4>
+            </div>
+            <div class="modal-footer">
+                <form action="{{ url_for('route.admin.product.delete_product') }}" method="POST">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="product_id" value="{{ product.id }}">
+                    <button class="btn w100 red accent-4 rounded m0 black-text"><b>YES</b> Delete forever..</button>
+                </form>
+            </div>
+        </div>
+
+        {% if product_variants %}
+            <div class="row">
+                <ul class="collapsible">
+                    {% for product_variant in product_variants %}
+                        <li>
+                            <div class="collapsible-header row mb0">
+                                <div class="col s2">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </div>
+                                <div class="col s6">
+                                    <span>{{ product_variant.name }}</span>
+                                </div>
+                                <div class="col s4">
+                                    <span class="right">{{ format_currency(product_variant.price) }}</span>
+                                </div>
+                            </div>
+                            <div class="collapsible-body px0">
+                                <form action="{{ url_for('route.admin.product.update_variant') }}" method="POST"
+                                      class="row mb0">
+                                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                    <input type="hidden" name="variant_id" value="{{ product_variant.id }}">
+                                    <div class="input-field col s5">
+                                        <input id="variant_name" name="variant_name" type="text"
+                                               value="{{ product_variant.name }}" class="validate">
+                                        <label for="variant_name">Name</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input id="product_variant_price" type="number" step="any" name="variant_price"
+                                               value="{{ format_currency(product_variant.price)[1:] }}">
+                                        <label for="product_variant_price">Price</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <button class="btn-small blue accent-4" type="submit">Update</button>
+                                    </div>
+                                </form>
+                                <div class="row mb0">
+                                    <div class="col s12 center-align">
+                                        <button data-target="modalVerifyDelete-{{ product_variant.id }}"
+                                                class="btn-small red modal-trigger"><b>Delete</b></button>
+                                        <div id="modalVerifyDelete-{{ product_variant.id }}" class="modal">
+                                            <a class="modal-close corner"><i class="material-icons grey-text">cancel</i></a>
+                                            <div class="modal-content">
+                                                <h4 class="center-align">Delete Variant</h4>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <form action="{{ url_for('route.admin.product.delete_variant') }}"
+                                                      method="POST">
+                                                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                                    <input type="hidden" name="variant_id"
+                                                           value="{{ product_variant.id }}">
+                                                    <button class="btn w100 red accent-4 rounded m0 black-text">
+                                                        <b>YES</b> Delete forever..
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </section>
+
+
+    <div class="fixed-action-btn">
+        <a href="#modalAddVariant" class="btn-floating btn-large indigo accent-4 modal-trigger">
+            <i class="large material-icons">add</i>
+        </a>
+        <div id="modalAddVariant" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4 class="center-align">Add {{ product.name }} Variant</h4>
+                <form action="{{ url_for('route.admin.product.add_variant') }}" method="POST" class="row">
+                    {{ variant_form.hidden_tag() }}
+                    <div class="input-field col s12">
+                        {{ variant_form.name.label }}
+                        {{ variant_form.name(class="validate") }}
+                    </div>
+                    <div class="input-field col s12">
+                        {{ variant_form.price.label }}
+                        {{ variant_form.price() }}
+                    </div>
+                    <div class="center-align">
+                        <button class="btn indigo accent-4" type="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

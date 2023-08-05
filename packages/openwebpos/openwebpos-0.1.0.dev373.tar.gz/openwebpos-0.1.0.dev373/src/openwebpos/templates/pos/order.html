@@ -1,0 +1,112 @@
+{% extends 'layouts/body.html' %}
+
+{% from 'macros/ui.html' import keypad, modalProducts, deleteButton %}
+
+{% block main %}
+
+    <section class="fullscreen">
+        <div class="row mb0 h100">
+
+
+            {% if current_ordered_items %}
+
+                <div class="col s12 h100">
+                    <div class="row h100 mb0">
+                        <div class="col s12 ordered-items px0">
+                            <table class="highlight">
+                                <thead class="grey darken-4 white-text">
+                                <tr>
+                                    <th class="left-align">QT</th>
+                                    <th class="center-align">Item Name</th>
+                                    <th class="center-align">Item Price</th>
+                                    <th class="center-align">Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for item in current_ordered_items %}
+
+                                    <tr>
+                                        <td class="left-align">
+                                            <a href="#modalEditQT-{{ item.id }}"
+                                               class="modal-trigger btn rounded grey darken-3">
+                                                {{ item.quantity }}
+                                            </a>
+                                            <div id="modalEditQT-{{ item.id }}" class="modal bottom-sheet">
+                                                <div class="modal-content">
+                                                    <h4 class="center-align">Change Quantity</h4>
+                                                    <form action="{{ url_for('route.pos.update_product_quantity') }}"
+                                                          method="POST" class="number-keypad">
+                                                        <input type="hidden" name="csrf_token"
+                                                               value="{{ csrf_token() }}">
+                                                        <input type="hidden" name="ordered_item_id"
+                                                               value="{{ item.id }}">
+                                                        {{ keypad(item.id, 'quantity') }}
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="center-align">
+                                            {{ item.product_name }}{{ ' ----- ' + item.product_variant_name if item.product_variant_name }}
+                                        </td>
+                                        <td class="center-align">{{ format_currency(item.price) }}</td>
+                                        <td class="center-align">
+                                            {{ deleteButton(id=item.product_name+item.id|string, route=url_for('route.pos.remove_product'),name='ordered_item_id', value=item.id) }}
+                                        </td>
+                                    </tr>
+
+                                {% endfor %}
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col s12 order-settings grey darken-2 row mb0 px0 py-half">
+                            <div class="col s4 center-align">
+                                <a href="" class="btn-floating modal-trigger blue">
+                                    <i class="material-icons">contacts</i>
+                                </a>
+                            </div>
+                            <div class="col s4 center-align">
+                                <a href="" class="btn-floating modal-trigger red">
+                                    <i class="material-icons">discount</i>
+                                </a>
+                            </div>
+                            <div class="col s4 center-align">
+                                <a href="" class="btn-floating green">
+                                    <i class="material-icons">new_label</i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <dl class="w100">
+                                <dt>Sub-Total:</dt>
+                                <dd class="mx0">{{ format_currency(current_order.subtotal) }}</dd>
+                                <dt>Discount:</dt>
+                                <dd class="mx0">$0000.00</dd>
+                                <dt>TAX(8.25%):</dt>
+                                <dd class="mx0">{{ format_currency(current_order.tax) }}</dd>
+                            </dl>
+                        </div>
+                        <div class="col s12 order-payout">
+                            <a href=""
+                               class="btn rounded green waves-effect waves-light modal-trigger h100 w100">
+                                {{ format_currency(current_order.subtotal + current_order.tax) }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {{ modalProducts('modalProducts', products) }}
+
+            {% else %}
+
+                {% for product in products %}
+                    {% include 'pos/_products.html' %}
+                {% endfor %}
+
+
+            {% endif %}
+
+        </div>
+    </section>
+
+{% endblock %}

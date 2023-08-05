@@ -1,0 +1,28 @@
+{% extends 'layouts/main.html' %}
+
+
+{% block main %}
+
+    <section class="fullscreen">
+        <div class="row h100 mb0 valign-wrapper">
+            <div class="card col s10 offset-s1">
+                <div class="card-content">
+                    <h4 class="center-align">Login</h4>
+                    <form action="" method="POST" class="row mb0">
+                        {{ form.hidden_tag() }}
+                        <div class="input-field col s12">
+                            {{ form.username.label }}
+                            {{ form.username(class="validate") }}
+                        </div>
+                        <div class="input-field col s12">
+                            {{ form.password.label }}
+                            {{ form.password(class="validate") }}
+                        </div>
+                        {{ form.submit(class="btn w100") }}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

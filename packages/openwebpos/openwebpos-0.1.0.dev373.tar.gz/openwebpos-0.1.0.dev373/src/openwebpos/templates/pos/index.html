@@ -1,0 +1,16 @@
+{% extends 'layouts/body.html' %}
+
+{% from 'macros/ui.html' import orderTypeContent %}
+
+
+{% block main %}
+
+    <section>
+        <div class="row mb0">
+
+            {{ orderTypeContent(order_types, pagers) }}
+
+        </div>
+    </section>
+
+{% endblock %}

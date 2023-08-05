@@ -1,0 +1,93 @@
+{% extends 'layouts/body.html' %}
+
+
+
+{% block main %}
+
+    <section>
+
+        {% if pagers %}
+            <ul class="collapsible">
+                {% for pager in pagers %}
+                    <li>
+                        <div class="collapsible-header row mb0">
+                            <div class="col s2">
+                                <i class="material-icons">arrow_drop_down</i>
+                            </div>
+                            <div class="col s10">
+                                {{ pager.name }}
+                            </div>
+                        </div>
+                        <div class="collapsible-body px0">
+                            <form action="{{ url_for('route.admin.pager.update_pager') }}" method="POST"
+                                  class="row mb0">
+                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                <div class="input-field col s7">
+                                    <input type="text" name="name" id="name" value="{{ pager.name }}" class="validate">
+                                    <label for="name">Pager Name</label>
+                                </div>
+                                <div class="input-field col s5">
+                                    <div class="switch">
+                                        <label>
+                                            Off
+                                            <input name="active"
+                                                   type="checkbox" {{ 'checked="checked"' if pager.active }}>
+                                            <span class="lever"></span>
+                                            On
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-field col s12 center-align">
+                                    <button class="btn-small red modal-trigger"
+                                            data-target="modalDeletePager{{ pager.id }}">Delete
+                                    </button>
+                                    <button class="btn-small" type="submit">Update</button>
+                                </div>
+                            </form>
+                            <div id="modalDeletePager{{ pager.id }}" class="modal">
+                                <div class="modal-content">
+                                    <h4>Delete Pager.?</h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <form action="{{ url_for('route.admin.pager.delete_pager') }}" method="POST"
+                                          class="row mb0">
+                                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                        <input type="hidden" name="id" value="{{ pager.id }}">
+                                        <div class="input-field col s12 center-align">
+                                            <button class="btn-small red" type="submit"><b>YES</b></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+    </section>
+
+    <div class="fixed-action-btn">
+        <a href="#modalAddPager" class="btn-floating btn-large modal-trigger">
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
+    <div id="modalAddPager" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4 class="center-align">Add Pager</h4>
+            <form action="{{ url_for('route.admin.pager.create_pager') }}" method="POST" class="row mb0">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <div class="input-field col s12">
+                    <input id="name" type="text" name="name" class="validate">
+                    <label for="name">Pager Number</label>
+                </div>
+                <div class="input-field col s12 center-align">
+                    <button class="btn waves-effect waves-light indigo accent-4" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

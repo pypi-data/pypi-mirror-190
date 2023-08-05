@@ -1,0 +1,59 @@
+{% extends 'layouts/body.html' %}
+
+
+{% block main %}
+
+    <section>
+        <div class="row">
+            <div class="col s12">
+                <form action="" class="row mb0" method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="input-field col s12">
+                        {{ form.name.label }}
+                        {{ form.name(class="validate") }}
+                    </div>
+                    <div class="input-field col s12">
+                        {{ form.address.label }}
+                        {{ form.address(class="validate") }}
+                    </div>
+                    <div class="input-field col s8">
+                        {{ form.city.label }}
+                        {{ form.city(class="validate") }}
+                    </div>
+                    <div class="input-field col s4">
+                        {{ form.state.label }}
+                        {{ form.state(class="validate") }}
+                    </div>
+                    <div class="input-field col s4">
+                        {{ form.zip_code.label }}
+                        {{ form.zip_code(class="validate") }}
+                    </div>
+                    <div class="input-field col s8">
+                        {{ form.country.label }}
+                        {{ form.country(class="validate") }}
+                    </div>
+                    <div class="input-field col s6">
+                        {{ form.phone.label }}
+                        {{ form.phone(class="validate") }}
+                    </div>
+                    <div class="input-field col s6">
+                        {{ form.email.label }}
+                        {{ form.email(class="validate") }}
+                    </div>
+                    <div class="input-field col s12">
+                        {{ form.website.label }}
+                        {{ form.website(class="validate") }}
+                    </div>
+                    <div class="input-field col s12">
+                        {{ form.tax_rate.label }}
+                        {{ form.tax_rate(class="validate") }}
+                    </div>
+                    <div class="center-align">
+                        {{ form.submit(class="btn waves-effect waves-light") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
