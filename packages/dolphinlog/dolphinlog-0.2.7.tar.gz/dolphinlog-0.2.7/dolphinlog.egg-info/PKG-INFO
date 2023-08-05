@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dolphinlog
+Version: 0.2.7
+Summary: Yet another HAM radio logger using SQLite with ADIF-3 export support.
+Home-page: https://github.com/xaratustrah/dolphinlog
+Download-URL: https://github.com/xaratustrah/dolphinlog/tarball/0.2.7
+Author: xaratustrah
+License: GPLv3
+Keywords: HAM,Logging,Amateur Radio,QSO
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications :: Ham Radio
+Description-Content-Type: text/markdown
+License-File: LICENSE
