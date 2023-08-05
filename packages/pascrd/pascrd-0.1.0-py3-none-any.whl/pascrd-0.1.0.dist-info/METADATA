@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pascrd
+Version: 0.1.0
+Home-page: https://github.com/matt-sd-watson/pascrd/
+Author: Matthew Watson
+Author-email: mwatson@lunenfeld.ca
+License: Unlicensed
+Project-URL: Issues, https://github.com/matt-sd-watson/pascrd/issues
+Project-URL: Source, https://github.com/matt-sd-watson/pascrd
+Keywords: single-cell download repository
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: requests
+Requires-Dist: asyncio
+Requires-Dist: aiohttp
+
+# pascrd
+
+Progammatic Access (to) Single-Cell Repositories for Download
+
+## About
+
+This package provides various Python apis for programmatically
+data from various online single-cell repositories. 
+
+Currently there are apis written for Tabula Sapiens and the
+Human Cell Atlas. 
+
+## Installation
+
+```
+git clone https://github.com/matt-sd-watson/pascrd.git && cd pascrd
+pip install . 
+```
+
+
+

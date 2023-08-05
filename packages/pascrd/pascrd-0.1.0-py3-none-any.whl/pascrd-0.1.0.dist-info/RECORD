@@ -1,0 +1,13 @@
+pascrd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pascrd/utils.py,sha256=9UcIFeHQA2akbfc0_CST5fzKsQe6InZPZedVjnSpxWw,5390
+pascrd/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pascrd/api/human_cell_atlas.py,sha256=bgrSG3l0jWHNtOJylW4r45OEO3N13rIeeABvkFh1rrI,6522
+pascrd/api/tabula_sapiens.py,sha256=mJMGYGZKoT44NFJhseNGYfr2LVX2VKpY9XyXkpSDz70,3737
+pascrd/api/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pascrd/api/data/hca.json,sha256=54ONVSbC5Dv22br-ye6dZZDpexmey81ztGuwarSVK14,7402805
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_basic_parsers.py,sha256=Pn_5IFZrMD8j7bF_VPwaqpKTqPo6dgORJt15GRyriHM,6007
+pascrd-0.1.0.dist-info/METADATA,sha256=QNaKFyqUxCJEMtL7o4H5qXKR0LccJWyFs4u2qVRV_Ls,1004
+pascrd-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pascrd-0.1.0.dist-info/top_level.txt,sha256=tVo3N6fNJi-aKJn8J3XMWuYQX3mzz46eej3rcVYRYVc,13
+pascrd-0.1.0.dist-info/RECORD,,
