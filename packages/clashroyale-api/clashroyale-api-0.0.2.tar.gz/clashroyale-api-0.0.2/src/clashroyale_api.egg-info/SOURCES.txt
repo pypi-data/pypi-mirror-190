@@ -1,0 +1,10 @@
+README.rst
+setup.py
+src/ClashRoyale/__init__.py
+src/ClashRoyale/main.py
+src/ClashRoyale/request.py
+src/clashroyale_api.egg-info/PKG-INFO
+src/clashroyale_api.egg-info/SOURCES.txt
+src/clashroyale_api.egg-info/dependency_links.txt
+src/clashroyale_api.egg-info/requires.txt
+src/clashroyale_api.egg-info/top_level.txt
