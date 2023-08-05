@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: task-progress
+Version: 1.1.5
+Summary: A simple API for progress information of tasks and Handlers to display them (with progress bars)
+Home-page: https://github.com/JulienBrn/TaskProgressDisplay
+Download-URL: https://github.com/JulienBrn/TaskProgressDisplay.git
+Author: Julien Braine
+Author-email: julienbraine@yahoo.fr
+License: MIT
+Keywords: python,progress,task
+License-File: LICENSE.txt
