@@ -1,0 +1,9 @@
+grai_source_mssql/__init__.py,sha256=3nLHNz4yVBkHo_OPCluB2l136pFyye5jlqjOq-Sfj4U,139
+grai_source_mssql/adapters.py,sha256=rAyLAiB3WjXmr1tOFF12e5ztBTMcayh7D9pRjJcatCQ,5893
+grai_source_mssql/base.py,sha256=pTY5kWe2FD3n9w3jwhI0SY0JF2oMPhmeMJvNWbAJK7M,1302
+grai_source_mssql/loader.py,sha256=QLlyajZxEoocLWY8-LfZYEoGv1EZLXTp-YA0nR37yMg,9483
+grai_source_mssql/models.py,sha256=bWf8yZ0BBIGGrZpt7ZqEdKNmPF7YPXUPQ_XpJOdWCjw,4012
+grai_source_mssql/package_definitions.py,sha256=ob43Zkhq0QNFfTts1oJv8ZbQEUV1vIGxI4Lpi5GSwJM,180
+grai_source_mssql-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+grai_source_mssql-0.0.1.dist-info/METADATA,sha256=6Sfwk7DW0KxbOQIUwIJZ6XPRfATY23BHvZ_hiN5bOBQ,673
+grai_source_mssql-0.0.1.dist-info/RECORD,,
