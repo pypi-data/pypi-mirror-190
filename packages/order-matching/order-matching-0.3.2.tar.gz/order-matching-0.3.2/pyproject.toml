@@ -1,0 +1,82 @@
+[project]
+name = "order-matching"
+description = "Order Book Matching Engine"
+authors = [
+    {name = "Stanislav Khrapov", email = "stanislav.khrapov@chintai.io"},
+    {name = "Akanksha Toshniwal", email = "akanksha.toshniwal@chintai.io"},
+    {name = "Shannen Tioniwar", email = "shannen.tioniwar@chintai.io"}
+]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "pandera",
+    "faker"
+]
+dynamic = ["version"]
+
+[project.urls]
+Source = "https://github.com/chintai-platform/OrderBookMatchingEngine"
+Documentation = "https://order-book-matching-engine.readthedocs.io/"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist"
+]
+doc = [
+    "mkdocs-material",
+    "mkdocstrings[python]",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+    "mkdocs-macros-plugin",
+    "pymdown-extensions"
+]
+dev = [
+    "black",
+    "ruff",
+    "mypy",
+    "pre-commit",
+]
+
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel",
+    "setuptools_scm[toml]>=6.2"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov-config=.coveragerc --doctest-modules --doctest-glob='*.md' -n=auto"
+testpaths = ["tests", "src", "README.md"]
+
+[tool.setuptools_scm]
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120
+select = ["E", "F", "D", "B", "I", "ARG"]
+target-version = "py310"
+src = ["src", "tests"]
+ignore = ["D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107", "D213", "D417"]
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
+
+[tool.mypy]
+ignore_missing_imports = true
+install_types = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+non_interactive = true
+no_strict_optional = true
