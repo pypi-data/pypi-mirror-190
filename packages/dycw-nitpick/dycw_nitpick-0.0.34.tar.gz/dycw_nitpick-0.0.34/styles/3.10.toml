@@ -1,0 +1,15 @@
+#### black ####################################################################
+["pyproject.toml".tool.black]
+target-version = ["py310"]
+
+#### project ##################################################################
+["pyproject.toml".project]
+requires-python = ">= 3.10"
+
+#### pyright ##################################################################
+["pyproject.toml".tool.pyright]
+pythonVersion = "3.10"
+
+#### ruff #####################################################################
+["pyproject.toml".tool.ruff]
+target-version = "py310"

@@ -1,0 +1,15 @@
+#### black ####################################################################
+["pyproject.toml".tool.black]
+target-version = ["py38"]
+
+#### project ##################################################################
+["pyproject.toml".project]
+requires-python = ">= 3.8"
+
+#### pyright ##################################################################
+["pyproject.toml".tool.pyright]
+pythonVersion = "3.8"
+
+#### ruff #####################################################################
+["pyproject.toml".tool.ruff]
+target-version = "py38"
