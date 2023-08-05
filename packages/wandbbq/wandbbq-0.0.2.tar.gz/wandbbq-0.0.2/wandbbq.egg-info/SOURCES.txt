@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+wandbbq/__init__.py
+wandbbq/main.py
+wandbbq.egg-info/PKG-INFO
+wandbbq.egg-info/SOURCES.txt
+wandbbq.egg-info/dependency_links.txt
+wandbbq.egg-info/requires.txt
+wandbbq.egg-info/top_level.txt

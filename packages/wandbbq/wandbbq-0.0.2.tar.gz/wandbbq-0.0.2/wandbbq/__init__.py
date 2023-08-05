@@ -1,0 +1,1 @@
+from wandbbq.main import init
