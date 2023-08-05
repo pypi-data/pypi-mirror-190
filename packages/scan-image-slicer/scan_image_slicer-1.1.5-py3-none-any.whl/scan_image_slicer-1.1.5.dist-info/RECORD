@@ -1,0 +1,11 @@
+scan_image_slicer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scan_image_slicer/config.py,sha256=XwugAkbjRMZFG3E19sAvB1HYj0ShfpX0LBlRtbaESG0,1285
+scan_image_slicer/confparser.py,sha256=GvTZZakjyIULRMnzEN5P6l8TD00e8A5uvpbPCKv2kXE,12026
+scan_image_slicer/filters.py,sha256=SX8JxuHVc9-bwaghk5u8H3mnSjCNsVgtSBMTmGwt9rY,1727
+scan_image_slicer/scan_image_slicer.py,sha256=ikZnMHBQ7wz305BC2YPaFXTGj6N--G6YgUoq7S9cFsA,1505
+scan_image_slicer/scis.py,sha256=CSy23RUGJP2VwmUlLG0uvyxpyXTTj7Gw7b-SgQ2IR4k,16946
+scan_image_slicer-1.1.5.dist-info/entry_points.txt,sha256=FH81IYQM2zurkPMsLZU2PIfEYny90rgWYIVKKUK5kGs,78
+scan_image_slicer-1.1.5.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+scan_image_slicer-1.1.5.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+scan_image_slicer-1.1.5.dist-info/METADATA,sha256=uWQi8OMoroQInpOHP1vvhENF8sDbsEApWct4xQI9yOk,6106
+scan_image_slicer-1.1.5.dist-info/RECORD,,
