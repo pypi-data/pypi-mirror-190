@@ -1,0 +1,6 @@
+derm_tiff/__init__.py,sha256=3i3tUUf0_JUHwTPa7V1IXFcnplf8D-yK50TtOAqZj0c,98
+derm_tiff/derm_tiff_image.py,sha256=4dDAu-x-l8jdWJBkA73gzs_wGcWfz3SaUgSnCG901Ac,6084
+derm_tiff/io.py,sha256=dG4S-LUE10aPwwZnV_6m8i5TnGAfpPfLixOblwgRBus,163
+derm_tiff-2.0.7.dist-info/METADATA,sha256=tByVWuaMl0yQYFARNxM2yGs_LjwdfY2hM1CREgQFRZ8,1048
+derm_tiff-2.0.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+derm_tiff-2.0.7.dist-info/RECORD,,
