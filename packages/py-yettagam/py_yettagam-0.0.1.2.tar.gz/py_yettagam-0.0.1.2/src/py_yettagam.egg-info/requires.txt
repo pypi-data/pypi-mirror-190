@@ -1,0 +1,7 @@
+py-metarium==0.0.2.51
+py-metarium-decoder==0.0.1.41
+py-metarium-encoder==0.0.1.41
+py-metarium-listener==0.0.1.93
+substrate-interface==1.4.0
+ipfshttpclient==0.7.0
+blake3==0.3.3

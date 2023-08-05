@@ -1,0 +1,237 @@
+Metadata-Version: 2.1
+Name: py_yettagam
+Version: 0.0.1.2
+Summary: Python package for Metarium's Storage Layer
+Author: MetariumProject
+Project-URL: Homepage, https://github.com/MetariumProject/py-yettagam
+Project-URL: Bug Tracker, https://github.com/MetariumProject/py-yettagam/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-yettagam
+Python client for Yettagam - Metarium's storage layer
+
+# Usage
+
+
+## 1. Virtual environment
+
+### 1.1. Install virtual environment
+
+```
+pip3 install virtualenv
+```
+
+### 1.2. Create virtual environment for metarium
+
+```
+python3 -m venv virtualenv ~/venv-yettagam
+```
+
+### 1.3. Activate metarium virtual environment
+
+```
+source ~/venv-yettagam/bin/activate
+```
+
+## 2. Dependencies
+
+
+### 2.1. Install Metarium libraries
+
+```
+pip install py-metarium==0.0.2.51
+pip install py-metarium-decoder==0.0.1.41
+pip install py-metarium-encoder==0.0.1.41
+pip install py-metarium-listener==0.0.1.93
+pip install py-yettagam==0.0.1.2
+```
+
+### 2.2. Install third-party libraries
+
+```
+pip install substrate-interface==1.4.0
+pip install ipfshttpclient==0.7.0
+pip install blake3==0.3.3
+pip install python-dotenv==0.21.0
+```
+
+### 2.3. Modify `ipfshttpclient` version
+Modify `Ln:19` in `client/__init__.py`
+```
+nano ~/venv-yettagam/lib/python3.10/site-packages/ipfshttpclient/client/__init__.py
+
+VERSION_MAXIMUM   = "0.17.0"
+```
+
+## 3. Example usage - Create a simple Yettagam Storage Sync
+
+### 3.1. Environment file to store configuration
+
+Create a `.env` file to store your secrets
+```
+NODE_URL=ws://127.0.0.1:9944
+SCRIBE_MNEMONIC=your scribe mnemonic here ...
+SERVICE_MNEMONIC=your service mnemonic here ...
+```
+
+### 3.2. Kuri Uploader script for `Scribe`
+Create a kuri-uploader script called `kuri-uploader.py` with the following code block
+```
+import asyncio
+
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    Scribe,
+)
+
+async def test_yettagam():
+    config = dotenv_values(".env")
+
+    scribe_1 = Scribe(
+        node_url=config.get("NODE_URL", None),
+        mnemonic=config.get("SCRIBE_MNEMONIC", None)
+    )
+    # start auto upload
+    await scribe_1.start()
+
+
+if __name__ == "__main__":
+    asyncio.run(test_yettagam())
+```
+Run the kuri-uploader script
+```
+python kuri-uploader.py
+```
+
+### 3.3. Service Listener script for `Scribe`
+Create a service-listener script called `service-listener.py` with the following code block
+```
+import asyncio
+
+from dotenv import dotenv_values
+
+from substrateinterface import Keypair
+from py_yettagam import (
+    Scribe,
+)
+
+async def test_yettagam():
+    config = dotenv_values(".env")
+
+    scribe_1 = Scribe(
+        node_url=config.get("NODE_URL", None),
+        mnemonic=config.get("SCRIBE_MNEMONIC", None)
+    )
+    # listen to service updates
+    service_key = Keypair.create_from_mnemonic(mnemonic=config.get("SERVICE_MNEMONIC", None))
+    service_data = {
+        "service": service_key.ss58_address
+    }
+    await scribe_1.listen_to_service_updates(service_data=service_data)
+
+
+if __name__ == "__main__":
+    asyncio.run(test_yettagam())
+```
+Run the service-listener script
+```
+python service-listener.py
+```
+
+
+### 3.4. Kuri Listener script for `Service`
+Create a kuri-listener script called `kuri-listener.py` with the following code block
+```
+import asyncio
+
+from dotenv import dotenv_values
+
+from substrateinterface import Keypair
+from py_yettagam import (
+    Service,
+)
+
+async def test_yettagam():
+    config = dotenv_values(".env")
+
+    service_1 = Service(
+        node_url=config.get("NODE_URL", None),
+        mnemonic=config.get("SERVICE_MNEMONIC", None)
+    )
+
+    # listen to scribe kuris as service
+    scribe_key = Keypair.create_from_mnemonic(mnemonic=config.get("SCRIBE_MNEMONIC", None))
+    await service_1.sync_scribe_kuris(scribe_key.ss58_address)
+
+
+if __name__ == "__main__":
+    asyncio.run(test_yettagam())
+```
+Run the kuri-listener script
+```
+python kuri-listener.py
+```
+
+
+### 3.5. Status Publisher script for `Service`
+Create a status-publisher script called `status-publisher.py` with the following code block
+```
+import asyncio
+
+from dotenv import dotenv_values
+
+from py_yettagam import (
+    Service,
+)
+
+async def test_yettagam():
+    config = dotenv_values(".env")
+
+    service_1 = Service(
+        node_url=config.get("NODE_URL", None),
+        mnemonic=config.get("SERVICE_MNEMONIC", None)
+    )
+
+    # publish status every 5 mins
+    await service_1.periodic_publish_status(interval=300)
+
+
+if __name__ == "__main__":
+    asyncio.run(test_yettagam())
+```
+Run the status-publisher script
+```
+python status-publisher.py
+```
+
+### 3.6. Expectations
+
+- The scribe uploads a kuri by dropping a file into the `<SCRIBE_ADDRESS>/<CHAIN_NAME>/data/` folder
+- After upload, the scribe saves the file's kuri in `<SCRIBE_ADDRESS>/<CHAIN_NAME>/data/mappings.json`
+- Upon listening to the kuri, the service stores the file's kuri in
+  - `<SERVICE_ADDRESS>/<CHAIN_NAME>/data/sync/<SCRIBE_ADDRESS>/kuris.json`
+  - `<SERVICE_ADDRESS>/<CHAIN_NAME>/data/sync/status.txt`
+  - `<SERVICE_ADDRESS>/<CHAIN_NAME>/data/sync/rff.txt`
+- The service publishes it's status and rff to Metarium
+- Upon listening to the status, the scribe
+  - Saves the status in `<SCRIBE_ADDRESS>/<CHAIN_NAME>/data/sync/<SERVICE_ADDRESS>/status.txt`
+  - Saves the rff in `<SCRIBE_ADDRESS>/<CHAIN_NAME>/data/sync/<SERVICE_ADDRESS>/rff.txt`
+
+
+### 3.7. TODO
+- The uploaded file is synced to `<SERVICE_ADDRESS>/<CHAIN_NAME>/data/` folder via IPFS PubSub
+
+
+## 4. Teardown
+
+Please remember to deactivate the virtual environment after usage
+
+```
+deactivate
+```
