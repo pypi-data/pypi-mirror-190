@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sleep-models
+Version: 2.0.0
+Summary: Models to learn the mapping between the transcriptome of cells and their sleep/wake state
+Home-page: https://github.com/shaliulab/sleep-models
+Author: Antonio Ortega
+Author-email: ntoniohu@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.4
+Requires-Dist: anndata (==0.7.5)
+Requires-Dist: scanpy (==1.6.0)
+Requires-Dist: numpy (==1.21.5)
+Requires-Dist: umap-learn (==0.5.0)
+Requires-Dist: scipy (==1.7.3)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: interpret (==0.2.7)
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: joblib
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: openpyxl
+Requires-Dist: pyaml
+Requires-Dist: tqdm
+
