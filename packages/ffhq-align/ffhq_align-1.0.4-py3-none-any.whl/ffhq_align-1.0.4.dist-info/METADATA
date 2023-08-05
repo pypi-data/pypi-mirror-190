@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ffhq-align
+Version: 1.0.4
+Summary: ffhq-align is a face alignment operation runs on PyTorch GPU entirely.
+Home-page: https://github.com/kynk94/ffhq-align
+Author: kynk94
+Author-email: kynk94@naver.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE.md
+Requires-Dist: torch
+Requires-Dist: kornia
+Requires-Dist: pillow
+Provides-Extra: all
+Requires-Dist: tqdm ; extra == 'all'
+Requires-Dist: face-alignment ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
