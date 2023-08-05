@@ -1,0 +1,10 @@
+numeral_converter/__init__.py,sha256=PKzXzsPj6a5jk5u4zqVNfhqNEVnmvdh4S54pmb5uw_Q,245
+numeral_converter/constants.py,sha256=PY4G6CUKjXmCuyN45fMwj9N5AYdiVi2IRgm-Ei3vfRk,829
+numeral_converter/lang_data_loader.py,sha256=WAVGe4QKTLw7SyjuENhrnSBev0ifzE9kBP_5oXEsSSw,4383
+numeral_converter/numeral_converter.py,sha256=2CZybaS7D27RU_ndhWrN89N1wFKT4w7YH9d5PzAiODM,18102
+numeral_converter/text.py,sha256=fySxuqnxdVFqZgY74c4d24MRNEGWd3jVcL4PemYmVCI,3025
+numeral_converter/utils.py,sha256=uLnSBXHo1bPopOU_qvmidKNClNCchq1pCJet7ZlNjs8,446
+numeral_converter-0.0.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+numeral_converter-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+numeral_converter-0.0.1.dist-info/METADATA,sha256=ht_PKyztLQFRlQHSjaoZbSbH8jTA3wjq4muyhmgdWms,5592
+numeral_converter-0.0.1.dist-info/RECORD,,
