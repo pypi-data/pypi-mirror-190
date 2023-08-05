@@ -1,0 +1,9 @@
+stopPhishing/__init__.py,sha256=R6PeZbl10U19dEdJq61QOVimDhKHtXDhsRjHN686ni4,559
+stopPhishing/functions/amount.py,sha256=R3VXsH_QsNL9hOWTmfKAQ-QGmjZb_4GLG0dmb-5ds04,492
+stopPhishing/functions/check.py,sha256=xlI_r4kGow_XHq_rRyThXGjPRWcgYJHYeOcU8Kd72RQ,1493
+stopPhishing/functions/list.py,sha256=W3BzfrVqUCB0otLNwBvgF7tRyBfyovqM_7Qq-S9Fv2I,1322
+stopPhishing-0.0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+stopPhishing-0.0.2.dist-info/METADATA,sha256=gRK3LGZujwitw0ebo4Nf3s1XqYfpeFICX2_FP25fVm0,5031
+stopPhishing-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+stopPhishing-0.0.2.dist-info/top_level.txt,sha256=cDP26CalSL3ODAk9YtTI2q7jdjbdyvA20eYyspc0qbw,13
+stopPhishing-0.0.2.dist-info/RECORD,,
