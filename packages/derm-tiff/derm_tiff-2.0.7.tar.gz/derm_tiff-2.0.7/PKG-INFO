@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: derm-tiff
+Version: 2.0.7
+Summary: Utilities for tiff images created by DermAnnotation
+Author: kawa-yo
+Author-email: yoshito.kawasaki.pub@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Pillow (>=9.4.0,<10.0.0)
+Requires-Dist: nptyping (>=2.2.0,<3.0.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: opencv-python (>=4.7.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Designed for DermAnnotation
+
+This is an utility python package to deal with tiff images
+created by [DermAnnotation](https://kondoa9.github.io/DermAnnotation/en/).
+
+## Release Note
+
+- 2.0.0: デフォルトの圧縮方式を`tiff_adobe_deflate`に変更
+
+- 1.0.6: 圧縮方式を`tiff_adobe_deflate`から`tiff_lzw`に変更
+- 1.0.5: パッケージ名をDermAnnoからDermTiffに変更
