@@ -1,0 +1,4 @@
+[console_scripts]
+binary-module-cli=binary_module:main
+lib-hello=library_module.public:public_hello
+
