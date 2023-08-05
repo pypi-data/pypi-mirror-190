@@ -1,0 +1,21 @@
+## t5html
+@@ example3.t5hi from .
+
+
+!! HTML5
+html
+   head > UTF8 | AUTHOR_splendor | FAVICON 
+      CSS_ href=css/main.css
+      title > "Example Three 
+   body
+      header
+         nav
+      main
+      aside
+      footer
+      template
+         div single-attribute other-attribute
+
+
+
+## vi: set et sw=3 ts=3 ai ft=t5html :
