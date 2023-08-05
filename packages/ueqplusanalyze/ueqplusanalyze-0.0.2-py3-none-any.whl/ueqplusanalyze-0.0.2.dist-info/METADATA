@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ueqplusanalyze
+Version: 0.0.2
+Summary: Create statical analysis for UEQ+ data
+Project-URL: Homepage, https://github.com/B3J4y/ueq-plus-data-analyze
+Project-URL: Bug Tracker, https://github.com/B3J4y/ueq-plus-data-analyze/issues
+Author-email: Jan Bernoth <jan.bernoth@uni-potsdam.de>, Lewin Kästner <lewin.kaestner@uni-potsdam.de>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: jupyter==1.0.0
+Requires-Dist: matplotlib==3.6.2
+Requires-Dist: numpy==1.23.5
+Requires-Dist: pandas==1.5.2
+Requires-Dist: pytest==7.2.1
+Description-Content-Type: text/markdown
+
+# UEQ Plus Data Analyzer
+
+[![PyPI](https://img.shields.io/pypi/v/ueqplusanalyze.svg)](https://pypi.org/project/ueqplusanalyze/)
+
+This repository is data analyzer for UEQ+ data in Python. The calculations are copied from the 
+data analysis tool of the [oficial UEQ+ website](https://ueqplus.ueq-research.org/).
+
+## Project structure
+
+```
+ueq-plus-data-analyze
+| .github               # used for github files
+  | workflows           # used for github actions
+| data                  # example data which shows the needed data structure
+| src
+  | ueq-plus-anazye
+| .gitignore
+| definitions.py        # defines global variables
+| LICENSE               
+| README.md
+| requirements.in       # every new package should be written in here
+```
