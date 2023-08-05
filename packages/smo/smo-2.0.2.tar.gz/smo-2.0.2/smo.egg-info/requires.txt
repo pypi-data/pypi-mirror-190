@@ -1,0 +1,10 @@
+numpy
+scipy
+
+[:python_version < "3.9"]
+typing_extensions
+
+[dev]
+pre-commit
+pytest
+tox

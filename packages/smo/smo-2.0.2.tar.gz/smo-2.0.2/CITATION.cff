@@ -1,0 +1,47 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Robust and unbiased estimation of the background
+  distribution for automated quantitative imaging
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Mauro
+    family-names: Silberberg
+    email: maurosilber@df.uba.ar
+    orcid: 'https://orcid.org/0000-0002-2402-1100'
+    affiliation: >-
+      Department of Physics, FCEN, University of
+      Buenos Aires and IFIBA, CONICET, Buenos Aires.
+      C1428EHA, Argentina
+  - given-names: Hernán Edgardo
+    family-names: Grecco
+    email: hgrecco@df.uba.ar
+    affiliation: >-
+      Department of Physics, FCEN, University of
+      Buenos Aires and IFIBA, CONICET, Buenos Aires.
+      C1428EHA, Argentina; and, Department of
+      Systemic Cell Biology, Max Planck Institute of
+      Molecular Physiology, Dortmund, 44227, Germany
+    orcid: 'https://orcid.org/0000-0002-1165-4320'
+identifiers:
+  - type: doi
+    value: 10.1364/JOSAA.477468
+abstract: >-
+  Background estimation is the first step in quantitative analysis of images.
+  It has an impact on all subsequent analyses,
+  in particular for segmentation and calculation of ratiometric quantities.
+  Most methods recover only a single value such as the median
+  or yield a biased estimation in non-trivial cases.
+  We introduce,
+  to our knowledge,
+  the first method to recover an unbiased estimation of background distribution.
+  It leverages the lack of local spatial correlation in background pixels
+  to robustly select a subset that accurately represents the background.
+  The resulting background distribution can be used to test for foreground membership of individual pixels
+  or estimate confidence intervals in derived quantities.
+license: MIT
