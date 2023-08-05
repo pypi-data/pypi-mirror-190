@@ -1,0 +1,2 @@
+[celery.result_backends]
+django-storage = django_storage_celery_results.backends:StorageBackend
