@@ -1,0 +1,6 @@
+datalad>=0.17.0
+annexremote>=1.6.0
+
+[devel]
+pytest
+coverage
