@@ -1,0 +1,3 @@
+[console_scripts]
+get_number = woomodule.app.app:get_number
+
