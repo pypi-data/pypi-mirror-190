@@ -1,0 +1,4 @@
+[console_scripts]
+get_str = woomodule.app.app:get_str
+main = woomodule.main:main
+
