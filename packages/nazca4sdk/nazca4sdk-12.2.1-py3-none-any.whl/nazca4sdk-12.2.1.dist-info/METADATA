@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: nazca4sdk
+Version: 12.2.1
+Summary: Nazca4 SDK
+Home-page: https://www.apagroup.pl
+Author: Nazca4.0
+Author-email: 
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: mysql-connector-python
+Requires-Dist: pip
+Requires-Dist: configparser
+Requires-Dist: wheel
+Requires-Dist: py
+Requires-Dist: Sphinx
+Requires-Dist: tzlocal
+Requires-Dist: six
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: clickhouse-driver
+Requires-Dist: urllib3
+Requires-Dist: kafka-python
+Requires-Dist: datetime
+Requires-Dist: typing
+Requires-Dist: dask (~=2022.12.1)
+
+pythonowe SDK
+
+plik Dockerfile jest do budowania kontenera z dokumentacja
+
+dokuentacja dostepna na porcie 40000 
+
+
