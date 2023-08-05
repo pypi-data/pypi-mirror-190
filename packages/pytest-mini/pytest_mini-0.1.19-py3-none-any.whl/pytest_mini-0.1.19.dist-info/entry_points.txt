@@ -1,0 +1,4 @@
+[pytest11]
+mini=pytest_mini.mini
+mp=pytest_mini.plugin:Plugin
+
