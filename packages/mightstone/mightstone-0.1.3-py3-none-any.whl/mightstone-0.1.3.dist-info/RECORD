@@ -1,0 +1,17 @@
+mightstone/__init__.py,sha256=_dJ2EmRFYncoANmpcukwPSgJ1BrSN55d024pu-ssCCc,92
+mightstone/app.py,sha256=TVRUqVcz_5TALkcPL_XdEXFLBaLHVT_Y5sm1oMC4SIA,266
+mightstone/ass.py,sha256=6LC3SWYHKwkhKn4s7IPve-r7ZxuQycw6QodcZkXvRqc,1099
+mightstone/cli.py,sha256=JiAwUHwiPO8_fqrSyb4_2mSamHXKWlPVO8XXlSkJb28,10525
+mightstone/core.py,sha256=9bRTpDg9N8nxbAakUFAPd7JlkkEbenAtS2oRTLUlU1s,158
+mightstone/py.typed,sha256=hIM2iUHa8aUuwNSIFC5YpI2z3lWlcBQ3EYGy2GLCI6c,75
+mightstone/rule/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mightstone/rule/color.py,sha256=Gt4rcbTP_mKwG88QBVy5VTDlxcV9pelqQoC7MMSrYQ4,6917
+mightstone/rule/cr.py,sha256=q3iySvZJcmaiQGd2vR1h3CSYh3nfPAMKJ0xnK-p5bIg,9061
+mightstone/services/__init__.py,sha256=E9Ld2_0SeUDXKmTRT9WhOSZPgQIe4-qdEkNsxPOn-EE,1354
+mightstone/services/edhrec.py,sha256=LkF-ih7V067D3s2gFMBKuu6HeB4HMAGPxGkVdIVkChU,19672
+mightstone/services/scryfall.py,sha256=zrMWIRWUoRXxj292X3LDSCgzAqWWrisy1bu4eRKuva0,50202
+mightstone-0.1.3.dist-info/LICENSE,sha256=5Iq4RotsfCO2E1S_ojLFG_wrqpxIe5LFvE3l0v4Pe-E,1078
+mightstone-0.1.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mightstone-0.1.3.dist-info/entry_points.txt,sha256=HcNJhc1U2QzE42lLtisdfhvCzU01Fd50QbOtcvNd9Fk,49
+mightstone-0.1.3.dist-info/METADATA,sha256=9Q_OLkXxygENImqog0CWpZqBGoqCnC0LOzEDGvv1g3Q,2700
+mightstone-0.1.3.dist-info/RECORD,,
