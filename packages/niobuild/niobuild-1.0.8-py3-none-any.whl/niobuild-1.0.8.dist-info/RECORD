@@ -1,0 +1,9 @@
+conannio/__init__.py,sha256=ytAxf1wQkTRFmJwANdqjdXMk1XPif-zgX2eLN6uFwpI,108
+conannio/build.py,sha256=AaFM5E2yEYee8Deeslc6xg0IBuVBDxAm0_VksQu2XkU,37817
+conannio/nioconanfile.py,sha256=GBQt5ADcg5ymI-y98DG5b56YJ6hO3WKtCD2d2zX9Qjg,7198
+conannio/simulate.py,sha256=3WoHFjg9QaT95BpY1YX1YKhgavZjJbB7nh47QO3Dfy8,9257
+niobuild-1.0.8.dist-info/METADATA,sha256=WQrVOr2MXfNQWHIgzRgO8QkKWHS0YUBmjnZ4BJOUwcQ,53
+niobuild-1.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+niobuild-1.0.8.dist-info/entry_points.txt,sha256=WuMp_Sl2x7JCewG0C5s_3VOtRpBJzQqPIU3sfGafbbY,49
+niobuild-1.0.8.dist-info/top_level.txt,sha256=_RQ4PyxsEEE7i9cu-879Tl8h9titt3yPlEsmz27u6AE,9
+niobuild-1.0.8.dist-info/RECORD,,
