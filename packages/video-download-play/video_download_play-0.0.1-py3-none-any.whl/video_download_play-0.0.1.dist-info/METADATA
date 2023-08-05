@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: video_download_play
+Version: 0.0.1
+Summary: A video download and play package
+Author-email: Ramachandran <rama5864@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+This is a youtubr video download and play package
