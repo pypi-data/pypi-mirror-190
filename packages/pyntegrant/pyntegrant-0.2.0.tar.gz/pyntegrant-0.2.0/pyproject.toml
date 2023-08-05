@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "pyntegrant"
+version = "0.2.0"
+description = "A system assembly framework based on Integrant"
+authors = ["Vic Putz <vbputz@gmail.com>"]
+license =  "Apache-2.0"
+classifiers = [
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+readme="README.rst"
+homepage="https://github.com/vputz/pyntegrant"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyrsistent = "^0.18.0"
+toolz = "^0.11.2"
+networkx = "^2.6"
+icontract = "^2.6.0"
+toml = {version = "^0.10.2", optional = true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+pipdeptree = "^2.2.1"
+python-lsp-server = {extras = ["rope", "pyflakes", "mccabe"], version = "^1.3.3"}
+mypy-ls = "^0.5.1"
+pyls-isort = "^0.2.2"
+python-lsp-black = "^1.1.0"
+pyls-memestra = "^0.0.16"
+pre-commit = "^2.17.0"
+pytest-xdist = "^2.5.0"
+mypy = "^0.941"
+tox = "^3.24.5"
+Sphinx = "^4.5.0"
+sphinx-rtd-theme = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile="black"
+
+[[tool.mypy.overrides]]
+module = [
+  "networkx",
+]
+ignore_missing_imports = true
