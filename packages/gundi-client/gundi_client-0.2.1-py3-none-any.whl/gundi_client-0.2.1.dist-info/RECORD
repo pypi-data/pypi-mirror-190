@@ -1,0 +1,7 @@
+gundi_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gundi_client/client.py,sha256=_EFogy2xxu27LNkY6eTIjcLEizNYZa7Iyutr15JGpG4,9094
+gundi_client/schemas.py,sha256=zhfCswRKeDksZ4BauoKaXmw98NwTqQDQcJYA5LNhHCg,13847
+gundi_client/settings.py,sha256=UbD6pt6pumRc-wptdVskT-3KUbj9nbVAyOg83ZyaoIU,1804
+gundi_client-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+gundi_client-0.2.1.dist-info/METADATA,sha256=9Mez7vInYJ_9PavcwWij0MEiZTSQa2FJElHA4waK8Mo,764
+gundi_client-0.2.1.dist-info/RECORD,,
