@@ -1,0 +1,29 @@
+[project]
+name = "check_connection"
+version = "0.0.1"
+description = "Function to check connection to certain server"
+readme = "README.md"
+requires-python = ">=3.7"
+license= {"file" = "LICENSE.txt"}
+keywords = ["connection", "check", "template"]
+authors = [
+    {name = "Raphael Trinkler"},
+    {email = "raphael.trinkler@infineon.com"}
+]
+maintainers = [
+    {name = "Raphael Trinkler", email = "raphael.trinkler@infineon.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    "requests",
+    'PySimpleGUI',
+    'datetime',
+]
+
+
+[project.urls]
+"Bitbucket" = "https://bitbucket.vih.infineon.com/projects/SCSS/repos/py-template-project/browse?at=refs%2Fheads%2Ffeature"
+

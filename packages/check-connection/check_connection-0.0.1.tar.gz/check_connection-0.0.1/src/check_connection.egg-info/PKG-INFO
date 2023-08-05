@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: check-connection
+Version: 0.0.1
+Summary: Function to check connection to certain server
+Author: Raphael Trinkler
+Author-email: raphael.trinkler@infineon.com
+Maintainer-email: Raphael Trinkler <raphael.trinkler@infineon.com>
+License: Proprietary.
+        
+        Do not distribute outside of Infineon Technologies AG.
+Project-URL: Bitbucket, https://bitbucket.vih.infineon.com/projects/SCSS/repos/py-template-project/browse?at=refs%2Fheads%2Ffeature
+Keywords: connection,check,template
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
