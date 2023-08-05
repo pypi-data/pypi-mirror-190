@@ -1,0 +1,8 @@
+boto3
+django-debug-toolbar
+django-smoketest
+django-storages
+django-waffle
+django_compressor
+gunicorn
+raven
