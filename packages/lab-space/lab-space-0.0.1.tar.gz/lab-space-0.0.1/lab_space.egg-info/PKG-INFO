@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lab-space
+Version: 0.0.1
+Summary: The purpose of this project is to provide an interface for nested dictionaries with unknown structures
+Author-email: "Jared J. Beard" <jbeard6@mix.wvu.edu>
+Project-URL: Homepage, https://github.com/jaredjbeard/reconfigurator
+Project-URL: Documentation, https://reconfigurator.readthedocs.io/en/latest/introduction.html
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# experimentlab
+This repository is designed to run multithreaded experiments and provide some basic analysis tools.
