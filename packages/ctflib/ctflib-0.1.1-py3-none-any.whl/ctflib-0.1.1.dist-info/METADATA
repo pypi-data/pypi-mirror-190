@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ctflib
+Version: 0.1.1
+Summary: Tools for better CTF experience
+License: WTFPL
+Author: Alexey Tarasov
+Author-email: tarasovion2004@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# ctflib
+
