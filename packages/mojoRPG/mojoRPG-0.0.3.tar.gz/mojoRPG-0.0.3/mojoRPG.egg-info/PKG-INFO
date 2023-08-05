@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: mojoRPG
+Version: 0.0.3
+Summary: Mojo RPG test game
+Home-page: UNKNOWN
+Author: Alex Iannicelli
+Author-email: atiannicelli@gmail.com
+License: MIT
+Description: A package demonstrates mojo rpg combat
+Keywords: mojo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
