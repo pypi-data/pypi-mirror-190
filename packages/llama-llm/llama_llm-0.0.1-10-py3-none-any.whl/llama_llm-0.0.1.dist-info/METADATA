@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: llama-llm
+Version: 0.0.1
+Summary: Build on large language models faster
+Author-email: PowerML <info@powerml.co>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.11,>=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: powerml-app
+Requires-Dist: pydantic
+Requires-Dist: docstring-parser
+
+# llama-lang
+
+Check out the code
+
+```
+    git@github.com:powerml/llama-lang.git
+```
+
+Run the example
+
+```
+    ./run-llama-example.sh
+```
+
+Look at the [example](https://github.com/powerml/llama-lang/blob/main/examples/write_story.py)
+
+
