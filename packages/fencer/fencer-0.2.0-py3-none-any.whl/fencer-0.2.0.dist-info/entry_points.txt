@@ -1,0 +1,2 @@
+[console_scripts]
+fencer = fencer.cli:cli
