@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+RTMLCore.egg-info/PKG-INFO
+RTMLCore.egg-info/SOURCES.txt
+RTMLCore.egg-info/dependency_links.txt
+RTMLCore.egg-info/top_level.txt
+rtml_core/Document.py
+rtml_core/Subtag.py
+rtml_core/Tag.py
+rtml_core/__init__.py
