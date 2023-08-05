@@ -1,0 +1,4 @@
+[console_scripts]
+heatdesalination = heatdesalination.scripts.heatdesalination:main
+heatdesalination-hpc = heatdesalination.scripts.hpc:main
+heatdesalination-parallel-optimiser = heatdesalination.scripts.parallel_oprimiser:main
