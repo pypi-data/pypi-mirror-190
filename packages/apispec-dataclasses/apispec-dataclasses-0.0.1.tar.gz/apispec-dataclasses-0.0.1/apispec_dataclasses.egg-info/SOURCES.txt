@@ -1,0 +1,6 @@
+setup.py
+apispec_dataclasses.egg-info/PKG-INFO
+apispec_dataclasses.egg-info/SOURCES.txt
+apispec_dataclasses.egg-info/dependency_links.txt
+apispec_dataclasses.egg-info/not-zip-safe
+apispec_dataclasses.egg-info/top_level.txt
