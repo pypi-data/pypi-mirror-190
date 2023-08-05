@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+fucking_argparse/__init__.py
+fucking_argparse/code_generate.py
+fucking_argparse.egg-info/PKG-INFO
+fucking_argparse.egg-info/SOURCES.txt
+fucking_argparse.egg-info/dependency_links.txt
+fucking_argparse.egg-info/top_level.txt
