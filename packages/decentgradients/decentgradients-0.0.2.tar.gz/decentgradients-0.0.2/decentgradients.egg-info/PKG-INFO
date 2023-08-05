@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: decentgradients
+Version: 0.0.2
+Summary: Calculations
+Home-page: UNKNOWN
+Author: Benjamin Kjær
+Author-email: UNKNOWN
+License: MIT
+Description: Description to come
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
