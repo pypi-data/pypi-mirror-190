@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+Adyen/__init__.py
+Adyen/client.py
+Adyen/exceptions.py
+Adyen/httpclient.py
+Adyen/settings.py
+Adyen/util.py
+AdyenAntoni.egg-info/PKG-INFO
+AdyenAntoni.egg-info/SOURCES.txt
+AdyenAntoni.egg-info/dependency_links.txt
+AdyenAntoni.egg-info/top_level.txt
