@@ -1,0 +1,7 @@
+include models/randomforest.pkl
+include models/naivebayes.pkl
+include models/randomforest_count_vectorizer.pkl
+include models/naivebayes_count_vectorizer.pkl
+include models/tfid_vectorizer.pkl
+include models/rf_selectkbest.pkl
+include description.md
