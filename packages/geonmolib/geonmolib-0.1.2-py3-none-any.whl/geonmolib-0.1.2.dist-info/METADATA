@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: geonmolib
+Version: 0.1.2
+Summary: Python library for GSDC's geonmo
+License: apache
+Author: Geonmo Ryu
+Author-email: geonmo@kisti.re.kr
+Requires-Python: >=3.6.0,<3.7
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: certifi (>=2022.12.7,<2023.0.0)
+Requires-Dist: dataclasses (>=0.8,<0.9)
+Requires-Dist: dbs3-client (>=4.0.12,<5.0.0)
+Requires-Dist: xrootd (>=5.5.1,<6.0.0)
