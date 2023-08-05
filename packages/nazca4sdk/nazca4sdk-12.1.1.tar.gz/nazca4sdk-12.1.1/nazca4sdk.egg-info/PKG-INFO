@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nazca4sdk
+Version: 12.1.1
+Summary: Nazca4 SDK
+Home-page: https://www.apagroup.pl
+Author: Nazca4.0
+Author-email: 
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+pythonowe SDK
+
+plik Dockerfile jest do budowania kontenera z dokumentacja
+
+dokuentacja dostepna na porcie 40000 
+
+
