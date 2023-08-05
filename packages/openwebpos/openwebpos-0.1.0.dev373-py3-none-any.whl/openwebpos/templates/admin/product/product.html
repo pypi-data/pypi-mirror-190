@@ -1,0 +1,32 @@
+{% extends 'layouts/body.html' %}
+
+
+{% from 'macros/ui.html' import clikableCard %}
+
+{% block main %}
+
+    <section>
+
+        <div class="row">
+
+            <div class="col s6">
+                {{ clikableCard('', 'Edit') }}
+            </div>
+
+            <div class="col s6">
+                {{ clikableCard('', 'Options') }}
+            </div>
+
+            <div class="col s6">
+                {{ clikableCard('', 'Ingredients') }}
+            </div>
+
+            <div class="col s6">
+                {{ clikableCard('', 'Add-ons') }}
+            </div>
+
+        </div>
+
+    </section>
+
+{% endblock %}

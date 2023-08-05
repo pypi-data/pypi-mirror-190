@@ -1,0 +1,95 @@
+/* Small devices */
+@media only screen and (max-width: 601px) {
+    .modal.bottom-sheet {
+        max-height: 90%;
+    }
+}
+
+
+@media only screen and (min-width: 601px) {
+    nav.nav-extended .nav-wrapper {
+        min-height: 50px;
+    }
+
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .navbar-fixed {
+        height: 50px;
+    }
+
+    nav i,
+    nav [class^=mdi-], nav [class*=mdi-],
+    nav i.material-icons {
+        display: block;
+        font-size: 25px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+.modal,
+.card {
+    border-radius: 1.5rem;
+}
+
+.modal .modal-footer {
+    height: 4rem;
+}
+
+.modal .modal-footer .btn {
+    /*line-height: 4rem;*/
+    border-radius: 0;
+}
+
+.modal.bottom-sheet {
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.modal.bottom-sheet > .modal-content {
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.collapsible-body.row {
+    margin-bottom: 0;
+    padding: 1rem
+}
+
+tr {
+    border-bottom: 3px dashed #000000;
+}
+
+thead > tr,
+tbody > tr:last-child {
+    border-bottom-style: none;
+}
+
+a {
+    color: #000000;
+}
+
+.btn, .btn-small, .btn-large, .btn-floating, .btn-flat {
+    border-radius: 3rem;
+}
+
+.btn-large {
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.btn-floating.btn-large i {
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+.fixed-action-btn {
+    bottom: .5rem;
+    right: .5rem;
+    padding-top: 0;
+}

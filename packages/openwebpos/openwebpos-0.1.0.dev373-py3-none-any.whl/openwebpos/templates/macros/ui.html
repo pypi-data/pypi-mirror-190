@@ -1,0 +1,169 @@
+{% macro floatingButton(route, icon, color, modal_trigger=True) -%}
+
+    <div class="fixed-action-btn">
+        <a href="{{ '#' if modal_trigger }}{{ route }}"
+           class="btn-floating btn-large {{ color if color else 'indigo accent-4' }} {{ 'modal-trigger' if modal_trigger }}">
+            <i class="large material-icons">{{ icon if icon else 'add' }}</i>
+        </a>
+    </div>
+
+
+{%- endmacro %}
+
+
+{% macro orderTypeContent(order_types, pagers, heading=None) %}
+
+    {% if heading %}
+        <h4 class="center-align">{{ title }}</h4>
+    {% endif %}
+
+
+    {% for order_type in order_types|sort(attribute='name') %}
+
+        <div class="col s12 my1">
+            {% if order_type.name == 'Take Out' %}
+
+                <button class="btn btn-large waves-effect w100 modal-trigger"
+                        data-target="modalPagers">{{ order_type.name }}</button>
+                <div id="modalPagers" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4 class="center-align">Pagers</h4>
+
+                        {% for pager in pagers %}
+
+                            <form action="{{ url_for('route.pos.create_order') }}" method="POST">
+                                <div class="col s4 center-align p1">
+                                    <input type="hidden" name="csrf_token"
+                                           value="{{ csrf_token() }}">
+                                    <input type="hidden" name="order_type_id"
+                                           value="{{ order_type.id }}">
+                                    <input type="hidden" name="pager_name" value="{{ pager.name }}">
+                                    <button class="btn btn-large"
+                                            type="submit">{{ pager.name[6:] }}</button>
+                                </div>
+                            </form>
+
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+
+            {% else %}
+
+                <form action="{{ url_for('route.pos.create_order') }}" method="POST">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="order_type_id" value="{{ order_type.id }}">
+                    <input type="hidden" name="pager_name" value="">
+                    <button type="submit"
+                            class="btn btn-large btn-block waves-effect w100">{{ order_type.name }}</button>
+                </form>
+
+            {% endif %}
+
+        </div>
+
+    {% endfor %}
+
+{% endmacro %}
+
+
+{% macro productsContent(products) %}
+
+    {% for product in products %}
+
+        {% include 'pos/_products.html' %}
+
+    {% endfor %}
+
+
+{% endmacro %}
+
+{% macro modalOrderType(route, order_types, pagers) %}
+
+    {{ floatingButton(route) }}
+
+    <div id="{{ route }}" class="modal bottom-sheet">
+        <div class="modal-content row mb0">
+            {{ orderTypeContent(order_types, pagers) }}
+        </div>
+    </div>
+
+{% endmacro %}
+
+
+{% macro modalProducts(route, products) %}
+
+    {{ floatingButton(route) }}
+
+    <div id="{{ route }}" class="modal bottom-sheet">
+        <div class="modal-content row mb0">
+            {{ productsContent(products) }}
+        </div>
+    </div>
+
+{% endmacro %}
+
+
+{% macro keypad(id, field_name) %}
+
+    <div class="number-keypad-display">
+        <label for="{{ id }}"></label>
+        <input id="{{ id }}" type="text" name="{{ field_name }}">
+    </div>
+
+    {{ keypadNumbers(id) }}
+
+{% endmacro %}
+
+
+{% macro keypadNumbers(id) %}
+
+    <div class="number-keypad-keys">
+        <input type="button" value="7" onclick="addQuantity(this,'{{ id }}')">
+        <input type="button" value="8" onclick="addQuantity(this,'{{ id }}')">
+        <input type="button" value="9" onclick="addQuantity(this,'{{ id }}')">
+        <input type="button" value="4" onclick="addQuantity(this,'{{ id }}')">
+        <input type="button" value="5" onclick="addQuantity(this,'{{ id }}')">
+        <input type="button" value="6" onclick="addQuantity(this,'{{ id }}')">
+        <input type="button" value="1" onclick="addQuantity(this,'{{ id }}')">
+        <input type="button" value="2" onclick="addQuantity(this,'{{ id }}')">
+        <input type="button" value="3" onclick="addQuantity(this,'{{ id }}')">
+        <button type="reset" class="red"><i class="material-icons">delete</i></button>
+        <input type="button" value="0" onclick="addQuantity(this,'{{ id }}')">
+        <button type="submit" class="green"><i class="material-icons">keyboard_return</i></button>
+    </div>
+
+{% endmacro %}
+
+
+{% macro deleteButton(id, route, name, value) %}
+
+    <button class="btn-small red modal-trigger" data-target="{{ id }}">
+        <i class="material-icons">delete</i>
+    </button>
+    <div id="{{ id }}" class="modal">
+        <div class="modal-content">
+            <h4 class="center-align">Delete. ?</h4>
+            <form action="{{ route }}" method="POST">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <input type="hidden" name="{{ name }}" value="{{ value }}">
+                <button type="submit" class="btn btn-large red btn-block waves-effect w100">Delete</button>
+            </form>
+        </div>
+    </div>
+
+{% endmacro %}
+
+
+{% macro clikableCard(route, title, activates_modal=False) %}
+
+    <a href="{{ route }}" {{ 'class="modal-trigger"' if activates_modal }}>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title center-align">{{ title }}</span>
+            </div>
+        </div>
+    </a>
+
+{% endmacro %}

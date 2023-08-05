@@ -1,0 +1,55 @@
+{% extends 'layouts/core.html' %}
+
+
+{% block content %}
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="indigo accent-4">
+                <div class="nav-wrapper">
+                    <a href="{{ url_for('route.index') }}" class="brand-logo">OWPOS</a>
+                    <a data-target="slide-out" class="sidenav-trigger right clickable"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </nav>
+        </div>
+        <ul id="slide-out" class="sidenav user-sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background indigo accent-4">
+                        <img src="{{ url_for('static', filename='img/placeholder.pg') }}" alt="">
+                    </div>
+                    <a href=""><img class="circle" src="{{ url_for('static', filename='img/default.png') }}" alt=""></a>
+                    <a href=""><span class="white-text name"><b>{{ current_user.username }}</b></span></a>
+                    <a href=""><span class="white-text email">{{ current_user.profile.email }}</span></a>
+                </div>
+            </li>
+            {% if current_user.role.name == 'Admin' %}
+
+                <li><a class="subheader">Administrator</a></li>
+                <li><a class="waves-effect" href="{{ url_for('route.admin.company_route') }}">Company</a></li>
+                <li><a href="{{ url_for('route.admin.product.index') }}" class="waves-effect">Products</a></li>
+                <li><a href="{{ url_for('route.admin.pager.index') }}" class="waves-effect">Pagers</a></li>
+                <li><a href="{{ url_for('route.admin.ingredient.index') }}" class="waves-effect">Ingredients</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+
+            {% endif %}
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="{{ url_for('route.logout') }}"><i class="material-icons">logout</i>Logout</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+        </ul>
+    </header>
+    <main>
+        {% block main %}
+
+        {% endblock %}
+    </main>
+    <footer>
+
+    </footer>
+
+{% endblock %}

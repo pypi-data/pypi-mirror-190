@@ -1,0 +1,102 @@
+{% extends 'layouts/body.html' %}
+
+{% from 'macros/ui.html' import keypad %}
+
+{% block main %}
+
+    <section>
+        <div class="row mb0">
+            {% for product in products %}
+                <div class="col s6">
+                    <div class="card">
+                        <div class="card-content p1-half">
+
+                            {% if product.has_variants(product.id) %}
+
+                                <button class="btn-flat w100 modal-trigger"
+                                        data-target="modal{{ product.name|capitalize }}Variants">{{ product.name }}</button>
+                                <div id="modal{{ product.name|capitalize }}Variants" class="modal bottom-sheet">
+                                    <div class="modal-content">
+                                        <h4 class="center-align">{{ product.name|capitalize }}&ensp;Variants</h4>
+                                        <div class="row">
+
+                                            {% for product_variant in product.get_product_variants(product.id) %}
+                                                <div class="col s6">
+                                                    <button class="btn btn-large w100 modal-trigger my-half"
+                                                            data-target="modal{{ product.name|capitalize + product_variant.name|capitalize }}QT">
+                                                        {{ product_variant.name[:5] }}
+                                                    </button>
+                                                    <div id="modal{{ product.name|capitalize + product_variant.name|capitalize }}QT"
+                                                         class="modal bottom-sheet keypad">
+                                                        <div class="modal-content">
+                                                            <h4 class="center-align">Quantity</h4>
+                                                            <form action="{{ url_for('route.pos.add_product', order_number=order.order_number) }}"
+                                                                  method="POST" class="number-keypad"
+                                                                  autocomplete="off">
+
+                                                                <input type="hidden" name="csrf_token"
+                                                                       value="{{ csrf_token() }}">
+
+                                                                <input type="hidden" name="product_name"
+                                                                       value="{{ product.name }}">
+
+                                                                <input type="hidden" name="product_variant_name"
+                                                                       value="{{ product_variant.name }}">
+
+                                                                <input type="hidden" name="product_price"
+                                                                       value="{{ product.price }}">
+
+                                                                <input type="hidden" name="product_variant_price"
+                                                                       value="{{ product_variant.price }}">
+
+
+                                                                {{ keypad(product.name|capitalize + product_variant.name|capitalize, 'quantity') }}
+
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            {% else %}
+
+                                <button class="btn-flat w100 modal-trigger" data-target="modal{{ product.name }}QT">
+                                    {{ product.name }}
+                                </button>
+
+                                <div id="modal{{ product.name }}QT" class="modal bottom-sheet">
+                                    <div class="modal-content">
+                                        <h4 class="center-align">Quantity</h4>
+                                        <form action="{{ url_for('route.pos.add_product', order_number=order.order_number) }}"
+                                              method="POST" class="number-keypad"
+                                              autocomplete="off">
+
+                                            <input type="hidden" name="csrf_token"
+                                                   value="{{ csrf_token() }}">
+
+                                            <input type="hidden" name="product_name"
+                                                   value="{{ product.name }}">
+
+                                            <input type="hidden" name="product_price"
+                                                   value="{{ product.price }}">
+
+                                            {{ keypad(product.name|capitalize, 'quantity') }}
+
+                                        </form>
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </section>
+
+{% endblock %}

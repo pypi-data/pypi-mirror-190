@@ -1,0 +1,34 @@
+{% extends 'layouts/body.html' %}
+
+{% from 'macros/ui.html' import modalOrderType %}
+
+{% block main %}
+
+    <section>
+        <div class="row mb0">
+
+            {% for order in active_orders | sort(attribute="created_by") %}
+
+                <div class="col s6">
+                    <div class="card active-order-card">
+                        <a href="{{ url_for('route.pos.order') }}">
+                            <div class="card-content">
+                                <div class="white-text deep-purple">
+                                    <p>
+                                        <span>&nbsp; {{ order.order_number[7:9] + ':' + order.order_number[9:11] }}</span>
+                                        <span class="right">{{ order.order_number[-6:] }}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            {% endfor %}
+
+        </div>
+    </section>
+
+    {{ modalOrderType('modalOrderTypes', order_types, pagers) }}
+
+{% endblock %}

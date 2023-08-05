@@ -1,0 +1,61 @@
+{% extends 'layouts/body.html' %}
+
+
+{% block main %}
+
+    <section>
+        <div class="row mb0">
+            {% for product in products %}
+                <div class="col s6">
+                    <div class="card">
+                        <a href="{{ url_for('route.admin.product.product', product_name=product.name) }}">
+                            <div class="card-content">
+                                <span class="card-title center-align">{{ product.name }}</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </section>
+
+
+    <div class="fixed-action-btn">
+        <a href="#modalAddProduct" class="btn-floating btn-large indigo accent-4 modal-trigger">
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
+    <div id="modalAddProduct" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4 class="center-align">Add Product</h4>
+            <div class="row">
+                <form action="{{ url_for('route.admin.product.create_product') }}" method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="input-field col s12">
+                        {{ form.product_type_id() }}
+                    </div>
+                    <div class="input-field col s8">
+                        {{ form.name.label }}
+                        {{ form.name(class="validate") }}
+                    </div>
+                    <div class="input-field col s4">
+                        {{ form.price.label }}
+                        {{ form.price(class="validate") }}
+                    </div>
+                    <div class="input-field col s12">
+                        {{ form.description.label }}
+                        {{ form.description(class="materialize-textarea") }}
+                    </div>
+                    <div class="center-align">
+                        <button class="btn waves-effect waves-light indigo accent-4" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

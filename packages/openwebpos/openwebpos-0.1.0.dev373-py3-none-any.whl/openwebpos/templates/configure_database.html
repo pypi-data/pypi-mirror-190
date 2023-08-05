@@ -1,0 +1,42 @@
+{% extends 'layouts/main.html' %}
+
+
+
+{% block content %}
+
+    <section>
+        <h4 class="center-align">Configure Database</h4>
+        <div class="row">
+            <div class="col s12">
+                <button class="btn btn-large w100 mb1 modal-trigger" data-target="sqliteModal">
+                    SQLite
+                </button>
+                <div id="sqliteModal" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4 class="center-align">Configure SQLite Database</h4>
+                        <form action="{{ url_for('route.setup_sqlite') }}" method="POST" class="row">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <div class="input-field col s12">
+                                <input type="text" id="sqlitePath" name="sqlitePath" value="{{ sqlitePath }}">
+                                <label for="sqlitePath">SQLite Path</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input type="text" id="sqliteName" name="sqliteName" value="{{ sqliteName }}">
+                                <label for="sqliteName">SQLite Name</label>
+                            </div>
+                            <button class="btn w100" type="submit">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12">
+                <button class="btn btn-large w100">
+                    PostgreSQL
+                </button>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

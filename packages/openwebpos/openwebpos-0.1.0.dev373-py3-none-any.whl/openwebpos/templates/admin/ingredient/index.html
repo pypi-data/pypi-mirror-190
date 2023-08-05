@@ -1,0 +1,82 @@
+{% extends 'layouts/body.html' %}
+
+{% from 'macros/ui.html' import deleteButton %}
+
+
+{% block main %}
+
+    <section>
+
+        {% if ingredients %}
+            <ul class="collapsible">
+                {% for ingredient in ingredients %}
+
+                    <li>
+                        <div class="collapsible-header row mb0">
+                            <div class="col s2">
+                                <i class="material-icons">arrow_drop_down</i>
+                            </div>
+                            <div class="col s10">
+                                {{ ingredient.name }}
+                            </div>
+                        </div>
+                        <div class="collapsible-body px0 mb0 row">
+                            <form action="{{ url_for('route.admin.ingredient.update_ingredient') }}" method="POST">
+                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                                <div class="input-field col s7">
+                                    <input type="hidden" name="ingredient_id" value="{{ ingredient.id }}">
+                                    <input type="text" name="name" id="name" value="{{ ingredient.name }}"
+                                           class="validate">
+                                    <label for="name">Ingredient Name</label>
+                                </div>
+                                <div class="input-field col s5">
+                                    <div class="switch">
+                                        <label>
+                                            Off
+                                            <input name="active"
+                                                   type="checkbox" {{ 'checked="checked"' if ingredient.active }}>
+                                            <span class="lever"></span>
+                                            On
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-field col s6 center-align">
+                                    <button class="btn-small" type="submit">Update</button>
+                                </div>
+                            </form>
+                            <div class="input-field col s6 center-align">
+                                {{ deleteButton(id='modalDeletePager'+ingredient.id|string, route=url_for('route.admin.ingredient.remove_ingredient'), name='ingredient_id', value=ingredient.id) }}
+                            </div>
+                        </div>
+                    </li>
+
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <div class="fixed-action-btn">
+            <a href="#modalAddPager" class="btn-floating btn-large modal-trigger">
+                <i class="large material-icons">add</i>
+            </a>
+        </div>
+        <div id="modalAddPager" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4 class="center-align">Add Ingredient</h4>
+                <form action="{{ url_for('route.admin.ingredient.create_ingredient') }}" method="POST" class="row mb0">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <div class="input-field col s12">
+                        <input id="name" type="text" name="name" class="validate">
+                        <label for="name">Ingredient Name</label>
+                    </div>
+                    <div class="input-field col s12 center-align">
+                        <button class="btn waves-effect waves-light indigo accent-4" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}
