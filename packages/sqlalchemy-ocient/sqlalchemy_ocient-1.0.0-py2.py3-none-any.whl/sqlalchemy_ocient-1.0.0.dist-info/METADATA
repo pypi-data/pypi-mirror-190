@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-ocient
+Version: 1.0.0
+Summary: Ocient for SQLAlchemy
+Home-page: UNKNOWN
+Author: Ocient Inc
+Author-email: info@ocient.com
+License: UNKNOWN
+Keywords: SQLAlchemy Ocient
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Database :: Front-Ends
+Description-Content-Type: text/markdown
+Requires-Dist: pyocient
+Requires-Dist: sqlalchemy
+
+# Ocient Dialect for SQLAlchemy
+
+The Ocient Database Python API extension gives application developers the full power and flexibility of SQLAlchemy.
+
+## Installation
+
+Install the sqlalchemy-ocient package.
+
+```python
+pip install sqlalchemy-ocient
+```
+
+## SQLAlchemy URI
+
+
+The Ocient DSN is of the format:
+```shell
+ocient://user:password@[host][:port][/database][?param1=value1&...]
+```
+
+**NOTE**: You must enter the `user` and `password` credentials.  `host` defaults to localhost,
+port defaults to 4050, database defaults to `system` and `tls` defaults
+to `off`.
+
+## User Access Control
+
+Make sure the user has privileges to access and use all required databases, schemas, tables, views, and warehouses, as the Ocient SQLAlchemy engine does not test for user or role rights by default.
+
+
