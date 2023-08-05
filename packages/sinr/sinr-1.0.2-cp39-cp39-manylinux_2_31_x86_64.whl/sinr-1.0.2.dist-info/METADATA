@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: sinr
+Version: 1.0.2
+Summary: Build word and graph embeddings based on community detection in graphs.
+Home-page: https://github.com/SINr-Embeddings/sinr
+License: CeCILL 2.1
+Keywords: node embedding,word embedding,embedding,graph embedding,louvain,community
+Author: Thibault Prouteau
+Author-email: thibault.prouteau@univ-lemans.fr
+Requires-Python: >=3.8
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: ipykernel (>=6.21.1,<7.0.0)
+Requires-Dist: joblib (>=1.1.1)
+Requires-Dist: networkit (==9.1.1)
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: parallel-sort (>=0.1.0,<0.2.0)
+Requires-Dist: scikit-learn (>=1.2.1,<2.0.0)
+Requires-Dist: scipy (>=1.6.1)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Project-URL: Repository, https://github.com/SINr-Embeddings/sinr
+Description-Content-Type: text/markdown
+
+SINr
+==============================
+
+Build word and graph embeddings based on community detection in graphs.
+
+Installation 
+------------
+
+
+
+Usage
+---------
+
+For examples, see [notebooks](/notebooks)
+
+
+Contributing
+------------
+
+Pull requests are welcome. For major changes, please open an issue first to disccuss the changes to be made.
+
+
+# License
+
+Releaser under [CeCILL 2.1](https://cecill.info/)
+
