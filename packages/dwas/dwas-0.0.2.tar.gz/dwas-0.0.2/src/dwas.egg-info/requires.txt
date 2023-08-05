@@ -1,0 +1,15 @@
+colorama
+
+[docs]
+furo
+sphinx
+sphinxcontrib-spelling
+sphinx-copybutton
+sphinx-inline-tabs
+pygments-ansi-color
+
+[test]
+pytest
+pytest-cov
+pytest-xdist
+pygments
