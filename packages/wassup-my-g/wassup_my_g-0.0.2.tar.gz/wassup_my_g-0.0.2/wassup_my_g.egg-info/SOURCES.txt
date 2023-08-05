@@ -1,0 +1,6 @@
+__init__.py
+main.py
+wassup_my_g.egg-info/PKG-INFO
+wassup_my_g.egg-info/SOURCES.txt
+wassup_my_g.egg-info/dependency_links.txt
+wassup_my_g.egg-info/top_level.txt
