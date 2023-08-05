@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pydantic-extra
+Version: 0.0.1
+Summary: Extra Pydantic types.
+Project-URL: Homepage, https://github.com/pydantic/pydantic-extra
+Project-URL: Source, https://github.com/pydantic/pydantic-extra
+Project-URL: Changelog, https://github.com/pydantic/pydantic-extra/releases
+Author-email: Samuel Colvin <s@muelcolvin.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+# pydantic-extra
+
+A place for pydantic types that probably shouldn't exist in the main pydantic lib.
+
+See [pydantic/pydantic#5012](https://github.com/pydantic/pydantic/issues/5012) for more info.
+
+This is just a stub to reserve the name `pydantic-extra`.
