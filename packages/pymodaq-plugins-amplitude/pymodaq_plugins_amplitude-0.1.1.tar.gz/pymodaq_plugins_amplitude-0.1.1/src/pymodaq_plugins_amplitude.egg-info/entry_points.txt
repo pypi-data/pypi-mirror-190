@@ -1,0 +1,2 @@
+[pymodaq.plugins]
+amplitude = pymodaq_plugins_amplitude
