@@ -1,0 +1,92 @@
+# pydavsync
+
+A command line to synchronize files with WebDav servers, written in Python.
+
+## Name
+
+The foundational idea was to have a similar command line and behavior to
+[rsync](https://rsync.samba.org/), but for WebDav servers. `davsync` is the logical
+name. But I started to implement it in Rust, then in Python, and I decided to integrate
+the development language in the name. Thus `pydavsync` for the Python implementation.
+
+## Description
+
+[rsync](https://rsync.samba.org/) allows to synchronize files over a SSH connection.
+[pydavsync](https://framagit.org/RomainTT/pydavsync/) has been developed to do the same
+over a WebDav connection.
+
+The command line is not identical because compatibility is not a goal, and some new
+ideas emerged while developing `pydavsync`.
+
+The following operations can be done :
+- Synchronization from local filesystem to WebDav server
+- Synchronization from WebDav server to local filesystem
+- Synchronization from WebDav server to WebDav server (not necessarily the same)
+
+Here are some of the features :
+- dry run
+- verbose output
+- login/password given through command line options
+- synchronization based on modified time and file size
+- deletion when files disappear
+
+### Webdav?
+
+[Webdav](https://fr.wikipedia.org/wiki/WebDAV) is used to manage files on remote servers
+using HTTP.
+
+The primary motivation was to use `pydavsync` with [Nextcloud](https://nextcloud.com/)
+which is compatible with webdav. But there are many other services accepting webdav.
+
+## Installation
+
+`pydavsync` is available on [Pypi.org](https://pypi.org/project/pydavsync) and can be
+installed using `pip`. Many options are available to you, do as you please.
+
+```
+pip install pydavsync
+```
+
+## Usage
+
+Once installed, the program `pydavsync` should be available in your terminal.
+
+To get help, use `pydavsyncc --help`.
+
+Here is an example to synchronize files from a webdav server to a local directory.
+
+```sh
+$ pydavsync --src-user Username --src-pass Password --verbose https://my-server.org/path/to/my/directory /path/to/local/directory
+```
+
+## Support
+
+If you have a question or need help, please [open an issue](https://framagit.org/RomainTT/pydavsync/-/issues/new) and tag it with the ~support label.
+
+## Roadmap
+
+Future developments:
+
+- Synchronization from local to webdav (and consequently from webdav to webdav)
+- Smarter synchronization if source and destination are both the same webdav server.
+- Better tests with mocks to simulate a webdav server.
+- A [man](https://www.man7.org/linux/man-pages/man1/man.1.html) page.
+- New and optional means to check if a file has changed or not.
+
+## Contributing
+
+- Firstly, you can open [a new issue](https://framagit.org/RomainTT/pydavsync/-/issues/new) if you find a bug or have an improvement idea.
+- Any help to test the tool on various systems and Webdav servers is appreciated, as I did not checked many of these myself.
+- If you feel like coding, please [fork](https://framagit.org/RomainTT/pydavsync/-/forks/new) the repository and do a [merge request](https://framagit.org/RomainTT/pydavsync/-/merge_requests). It will be reviewed. Don’t forget to mention issues in your comments if you fix some of them!
+
+## Authors and acknowledgment
+
+Main author: Romain TAPREST [✉](mailto:romain@taprest.fr)
+
+## License
+
+This project is under the [Mozilla Public License Version 2.0](https://choosealicense.com/licenses/mpl-2.0/).
+
+## Project status
+
+🧡 This project is alive! Not frequent updates, but it is not abandoned.
