@@ -1,0 +1,9 @@
+nile_upgrades/artifacts/Proxy.json,sha256=LLuVO6YDJCF3DROL8Si9aurLrpmgF12OZo5ropsb_cY,483282
+nile_upgrades/common.py,sha256=yiuU-Z7kvIGeBe2tY1gPSWfGvlFnYufxTQ81VaxWKhg,1426
+nile_upgrades/deploy_proxy.py,sha256=9ScV6Hyo61vQEucCTNV3x79n8X-90lPdrgclRZ9l3hc,2390
+nile_upgrades/upgrade_proxy.py,sha256=t5xKcFvTQaMvDW5tmDWFst9fTO_LoavAwoy3u3dKs2w,2494
+nile_upgrades-0.0.3.dist-info/LICENSE,sha256=QHag0pKhiRbvnKOnvYfqltTF6JlnHTnJ7AD-WQJ_ObI,1069
+nile_upgrades-0.0.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+nile_upgrades-0.0.3.dist-info/entry_points.txt,sha256=OUEraD5h3niUABehMGxl7s1_1txOgCw4dWEzPuwPYaY,175
+nile_upgrades-0.0.3.dist-info/METADATA,sha256=ARIChEhYFBMYrizHajB8aA8jDPeiCvsAUEl115yAIh8,4908
+nile_upgrades-0.0.3.dist-info/RECORD,,
