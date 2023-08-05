@@ -1,0 +1,12 @@
+clamshell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clamshell/__main__.py,sha256=f3X9sSiHLURtJsEb-As0VdZZ9DW1MZtfa3JEyIxlgYo,1365
+clamshell/defaults.py,sha256=msOluknK9uCtb1Wcc7O6IB23joA7O1lInYhGJnPzL14,305
+clamshell/key_bindings.py,sha256=RYUm-K05iIUepQWfxb10dZ3l3cpyWnR5QSJnaZtZFhs,341
+clamshell/meta_functions.py,sha256=6wJVVdNBid6jkzL2TGw-vr8Cy3oiluEBH_ii23Ndl2g,1276
+clamshell/shell.py,sha256=P-nvmhtCvvScjlCOyMLpnVDvpnVs12v4c83okikwAq8,10965
+clamshell/shell_utils.py,sha256=Buh-E67K3hdxYFbvfZamEDvAJaTw50pwf9a-U_tu63s,6883
+clamshell/types.py,sha256=x0t7uyWaSpM57LfNu9BTGFDgB2NDr3abCiunagyOIBM,32
+clamshell-0.4.dist-info/entry_points.txt,sha256=tFU6wC_AAtWrh7SCu4XLhTdIW11uaOaCqm26gbAB6F8,57
+clamshell-0.4.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+clamshell-0.4.dist-info/METADATA,sha256=HYHtBWkVyE3CbUDtHWZzATznJpAUdHxKy-YqAnAYhwU,11115
+clamshell-0.4.dist-info/RECORD,,
