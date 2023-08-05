@@ -1,0 +1,223 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+name = "lpk"
+version = "0.1.6"
+description = "learning python"
+authors = ["kagemeka <kagemeka1@gmail.com>"]
+maintainers = ["kagemeka <kagemeka1@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/kagemeka/learn-python"
+homepage = "https://github.com/kagemeka/learn-python#readme"
+documentation = "https://kagemeka.github.io/learn-python"
+packages = [
+    { include = "single_file_module.py", from = "./src/" },
+    { include = "binary_module", from = "./src/" },
+    { include = "learn_python", from = "./src/" },
+    { include = "library_module", from = "./src/" },
+    { include = "another_module" },
+]
+# https://pypi.org/classifiers/
+keywords = ["project", "learning", "packaging"]
+include = ["*.yaml"]
+exclude = ["*_test.py"]
+
+[tool.poetry.urls]
+# anything but homepage, repository, documentation
+rtd_document = "https://lpk.readthedocs.io/en/latest/"
+
+
+[tool.poetry.dependencies] # implicit main group
+# https://python-poetry.org/docs/dependency-specification/
+# https://python-poetry.org/docs/managing-dependencies
+# [tool.poetry.group.main.dependencies] # explicit
+
+python = ">=3.8, <3.12"
+
+numba = { version = "^0.56.4", optional = true }
+# >= 0.56.4, < 0.57.0
+numpy = [
+    { version = "^1.23", python = "<3.11", optional = true },
+    # >= 1.23.0, 2.0.0
+    { version = "^1", python = ">=3.11", optional = true },
+    # but you cannot use numba
+]
+scipy = { version = "~1.10", optional = true } # >=1.10.0, < 1.11.0
+# version constraints,
+# https://python-poetry.org/docs/dependency-specification/#version-constraints
+
+
+# another-pkg = { path = "another_pkg", develop = true, extras = [
+#     "req",
+#     "flask",
+# ] }
+# also you can do below by defining "full" extra in another-pkg
+# another-pkg = { path = "another_pkg", develop = true, extras = ["full"] }
+
+
+# https://python-poetry.org/docs/dependency-specification/#git-dependencies
+
+# dsalgo = { git = "https://github.com/kagemeka/dsalgo-python.git", optional = true, branch = "unstable" }
+# you can specify a branch like above or `rev` for a commit hash, `tag` for a tag.
+
+# dsalgo2 = { git = "https://github.com/kagemeka/dsalgo.git", optional = true, subdirectory = "python" }
+# you can specify subdirectory
+
+
+[tool.poetry.extras]
+# https://python-poetry.org/docs/pyproject/#extras
+# can be used as `pip install learn-python[nb, np]`
+nb = ["numba"]
+np = ["numpy", "scipy"]
+
+
+[tool.poetry.group.dev.dependencies]
+# all the groups other than  main should be used in development.
+
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pre-commit = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+pytest-asyncio = "*"
+
+
+[tool.poetry.group.docs]
+optional = true
+# https://python-poetry.org/docs/managing-dependencies/#optional-groups
+# optional group can be installed as `poetry install --with docs`
+
+[tool.poetry.group.docs.dependencies]
+# build with pdoc
+pdoc = "^12"
+
+# build with sphinx
+sphinx = "^6"
+
+# sphinx themes
+# https://sphinx-themes.org/
+# furo = "*"
+# pydata-sphinx-theme = "*"
+python-docs-theme = "*"
+# sphinx-book-theme = "*"
+# sphinx-rtd-theme = "*"
+# sphinx-theme-pd = "*"
+# there are many other themes. check the gallery from above url.
+
+# sphinx extensions
+# https://www.sphinx-doc.org/en/master/usage/extensions/index.html
+
+# https://www.sphinx-doc.org/en/master/usage/markdown.html
+# to build from markdown
+# myst-parser = "*"
+
+
+[tool.poetry.scripts]
+binary-module-cli = "binary_module:main"
+# can be executed as `binary-module-cli` from terminal after pip install (poetry install).
+lib-hello = "library_module.public:public_hello"
+# can be executed as `lib-hello` from terminal
+
+
+#---- external packages configurations -------
+
+[tool.black]
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#command-line-options
+# https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-format
+# poetry run black --help
+line-length = 79
+target-version = ["py311"]
+
+
+[tool.isort]
+profile = "black"
+
+
+# [tool.flake8]
+# currently flake8 configs in pyproject.toml are not looked by flake8.
+# please write configs in tox.ini
+# why? see
+# https://flake8.pycqa.org/en/latest/user/configuration.html#configuration-locations
+
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/stable/config_file.html
+
+# https://mypy.readthedocs.io/en/stable/config_file.html#import-discovery
+ignore_missing_imports = false
+exclude = []
+follow_imports = "normal"
+follow_imports_for_stubs = false
+
+# https://mypy.readthedocs.io/en/stable/config_file.html#disallow-dynamic-typing
+disallow_any_unimported = true
+disallow_any_expr = true
+disallow_any_decorated = true
+disallow_any_explicit = true
+disallow_any_generics = true
+disallow_subclassing_any = true
+
+# https://mypy.readthedocs.io/en/stable/config_file.html#untyped-definitions-and-calls
+disallow_untyped_calls = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+
+# https://mypy.readthedocs.io/en/stable/config_file.html#none-and-optional-handling
+implicit_optional = false
+strict_optional = true
+
+# https://mypy.readthedocs.io/en/stable/config_file.html#configuring-warnings
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_return_any = true
+warn_unreachable = true
+
+# https://mypy.readthedocs.io/en/stable/config_file.html#suppressing-errors
+ignore_errors = false
+
+# https://mypy.readthedocs.io/en/stable/config_file.html#miscellaneous-strictness-flags
+allow_untyped_globals = false
+allow_redefinition = false
+local_partial_types = true
+disable_error_code = []
+enable_error_code = []
+implicit_reexport = false
+strict_equality = true
+strict = true
+
+# https://mypy.readthedocs.io/en/stable/config_file.html#configuring-error-messages
+show_error_context = true
+show_column_numbers = true
+hide_error_codes = false
+pretty = true
+color_output = true
+error_summary = true
+show_absolute_path = true
+
+# https://mypy.readthedocs.io/en/stable/config_file.html#advanced-options
+plugins = ["numpy.typing.mypy_plugin"]
+
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org
+# https://docs.pytest.org/en/latest/reference/reference.html#ini-options-ref
+python_files = ["*.py"]
+python_classes = ["Test*", "_Test*"]
+python_functions = ["test", "_test", "_test_*", "test_*"]
