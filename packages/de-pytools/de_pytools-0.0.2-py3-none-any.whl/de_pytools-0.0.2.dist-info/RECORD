@@ -1,0 +1,10 @@
+de_pytools/__init__.py,sha256=bltOzXrWVi-rZNnoDzg2alKWBc4QmrDIoAyakMR0hKY,41
+de_pytools/aws/__init__.py,sha256=RkDqVmfsmIKM3GlAM3L6ynBHplI9V67eoMNgcBIUY50,191
+de_pytools/aws/s3.py,sha256=jh3TFUnWxTkinA5cLAlmxV6VmGtYNKOiFbq_2f1LQJU,2035
+de_pytools/oracle/__init__.py,sha256=k2g2dkUNBhqCXYZHrBYAHbhJTM2f0AuFCseAWYsw3i8,5277
+de_pytools/snowflake/__init__.py,sha256=L72F_y9MGQf2THWDpjH38c5sBe1s0Cs9ALza8dfc9dk,6346
+de_pytools-0.0.2.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+de_pytools-0.0.2.dist-info/METADATA,sha256=53A9hlSLyuVovqx0qwKTZJ7BJoQZTt5CVZICbLYOgY0,738
+de_pytools-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+de_pytools-0.0.2.dist-info/top_level.txt,sha256=A_kO5hoyILiXJCO9fmQOWN2nSoigpkkyXwUNornXSOo,11
+de_pytools-0.0.2.dist-info/RECORD,,
