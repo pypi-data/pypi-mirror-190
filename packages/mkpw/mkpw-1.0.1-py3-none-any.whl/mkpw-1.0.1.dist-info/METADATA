@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: mkpw
+Version: 1.0.1
+Summary: Memorable Password Generator
+Home-page: https://github.com/stevemcgrath/mkpw
+Author: Steve McGrath
+Author-email: steve@mcgrath.sh
+License: MIT
+Keywords: password passwords
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: typer (>=0.3.2)
+Requires-Dist: rich (>=10.2.2)
+Requires-Dist: memorable (>=1.0.3)
+
+
+=====================================
+A simple memorable password generator
+=====================================
+
+The goal here was a simple password generator that will smash words together to
+create a memorable password with a special character in between each word.  One
+of the words will be uppercased.  The only options really available is the
+number of words to be used.
+
+The tool was written using the memorable library to enable offline wordlists.
+
+.. code-block::
+
+    ❯ mkpw --help
+
+     Usage: mkpw [OPTIONS] [NUM_WORDS]
+
+     Memorable Password Generator
+     Generates a password that should be able to be easily remembered
+
+    ╭─ Arguments ────────────────────────────────╮
+    │   num_words      [NUM_WORDS]  [default: 5]                            │
+    ╰───────────────────────────────────────╯
+    ╭─ Options ─────────────────────────────────╮
+    │ --help          Show this message and exit.                           │
+    ╰───────────────────────────────────────╯
+
+    ❯ mkpw
+    Generated Pasword: golden-perch+intentionally-IRRELEVANTLY0lumpy7pants
+    ❯ mkpw 3
+    Generated Pasword: coaxingly_STUPENDOUS?worker
+
+
