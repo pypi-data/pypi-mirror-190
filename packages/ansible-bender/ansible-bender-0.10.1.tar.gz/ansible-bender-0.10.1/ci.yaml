@@ -1,0 +1,3 @@
+---
+- name: Provision environment with dependncies to run Bender's test suite
+  import_playbook: contrib/setup.yml
