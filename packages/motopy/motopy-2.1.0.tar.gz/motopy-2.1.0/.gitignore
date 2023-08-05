@@ -1,0 +1,8 @@
+__pycache__
+dist
+tests/out
+tests/*.json
+*.log
+tests/test.m
+tests/test.py
+test.py
