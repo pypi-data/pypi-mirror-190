@@ -1,0 +1,1 @@
+2022-05-16 11:34:05,206 INFO  17189 /home/david/Documentos/Proyectos2022/collector/tests/collect_one.py collect_one.py collect_one manage_log r.iso8601('2022-05-16T15:33:40.166413+00:00') :: process_data :: Station instance Gsof(LSCH,('10.54.82.247', 5017)) created for LSCH_GSOF, control 0
