@@ -1,0 +1,8 @@
+usb_gadget/__init__.py,sha256=lqtyUCj8tex9_5qxNB6y7OwfwSa8X9e9QnGi0nhdyRM,136
+usb_gadget/hid_gadget.py,sha256=zKQQLr0-yiM0aUiaapNN4ZMHg_HqCX8mmX-_NL17NGk,8347
+usb_gadget/usb_gadget.py,sha256=ZWhYrEFuJDOvWYTG-4tDb1Gk3vNHCUhBBUT7g4uf0Sk,3505
+usb_gadget-0.1.dist-info/LICENSE,sha256=U-C9Qa8338RJIvzAhmnKCZ8H_3GdArWH_-LKSgKovBc,1096
+usb_gadget-0.1.dist-info/METADATA,sha256=WmpnW4yoyDRQtY2j1DeI1J0YRv6qeZsUVkWIViqHbo8,1510
+usb_gadget-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+usb_gadget-0.1.dist-info/top_level.txt,sha256=NNivzRmrWz2NBrfuNAd-KQPeLhnJLbsBVQJ-S2z8SWc,11
+usb_gadget-0.1.dist-info/RECORD,,
