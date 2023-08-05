@@ -1,0 +1,63 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "setuptools_scm>=6.2"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyOngc"
+description = "Python interface to OpenNGC database data"
+readme = "README.rst"
+authors = [
+  {email = "mattia.verga@tiscali.it"},
+  {name = "Mattia Verga"}
+]
+requires-python = ">=3.8"
+keywords = ["astronomy", "database"]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Database",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+    "Click",
+    "numpy",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+data = ["pandas"]
+development = ["pytest", "flake8", "pytest-cov", "pytest-doctestplus"]
+docs = ["pandas", "sphinx", "sphinx_rtd_theme"]
+
+[project.scripts]
+ongc = "pyongc.scripts.ongc:cli"
+
+[project.urls]
+homepage = "https://github.com/mattiaverga/PyOngc"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "pyongc.__version__"}
+
+[tool.setuptools.packages]
+find = {where = ["src"]}
+
+[tool.setuptools.package-data]
+pyongc = ["ongc.db"]
+
