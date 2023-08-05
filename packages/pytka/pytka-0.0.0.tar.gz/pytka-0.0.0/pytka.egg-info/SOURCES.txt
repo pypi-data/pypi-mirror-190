@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.idea/.gitignore
+pytka/__init__.py
+pytka.egg-info/PKG-INFO
+pytka.egg-info/SOURCES.txt
+pytka.egg-info/dependency_links.txt
+pytka.egg-info/top_level.txt
