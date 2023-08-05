@@ -1,0 +1,11 @@
+include drag_dash/drag_dash.min.js
+include drag_dash/drag_dash.min.js.map
+include drag_dash/async-*.js
+include drag_dash/async-*.js.map
+include drag_dash/*-shared.js
+include drag_dash/*-shared.js.map
+include drag_dash/metadata.json
+include drag_dash/package-info.json
+include README.md
+include LICENSE
+include package.json

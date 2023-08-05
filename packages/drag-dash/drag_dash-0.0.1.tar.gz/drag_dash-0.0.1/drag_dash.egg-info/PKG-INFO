@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: drag-dash
+Version: 0.0.1
+Summary: drag dash objects
+Author: Jin Ch <jin236248@gmail.com>
+License: MIT
+Classifier: Framework :: Dash
+License-File: LICENSE
