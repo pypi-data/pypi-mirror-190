@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: urm-validatetoken
+Version: 0.0.4
+Summary: urm_validatetoken package contains method validate_token() which takes access_token as input and returns status of the token as valid or invalid.
+Author: Shubham Nalawade
+Author-email: s.satish.nalawade@accenture.com
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3 (>=1.26.12)
+
+Method validate_token() takes four required parameters and returns two values.\ syntax: <TOKEN_VALIDATION_STATUS>, <TOKEN_STATUS> = urm_validatetoken.validate_token(<REQUEST_METHOD>,<VALIDATE_TOKEN_URL>,<ACCESS_TOKEN>,<CONTENT_TYPE>).\ <REQUEST_METHOD>: POST, PUT, GET, PATCH, etc.\ <VALIDATE_TOKEN_URL>: url of validate_token api.\ <ACCESS_TOKEN>: unique access token for authorization.\ <CONTENT_TYPE>: for ex. application/json.\ <TOKEN_VALIDATION_STATUS>: validation status description.\ <TOKEN_STATUS>: it may contain value True or False or status_code(403 or 401).
