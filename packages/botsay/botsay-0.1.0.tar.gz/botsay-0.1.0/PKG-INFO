@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: botsay
+Version: 0.1.0
+Summary: cowsay but with no cows and a lot of robots
+License: GPL-3.0-only
+Author: RoboM101
+Author-email: personal@robom101.net
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: lolpython (>=2.2.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+idk :)

@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "botsay"
+version = "0.1.0"
+description = "cowsay but with no cows and a lot of robots"
+authors = ["RoboM101 <personal@robom101.net>"]
+readme = "README.md"
+license = "GPL-3.0-only"
+packages = [
+    { include = "botsay" },
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+lolpython = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+botsay = "botsay.main:run"
