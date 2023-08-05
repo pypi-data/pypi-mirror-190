@@ -1,0 +1,3 @@
+[console_scripts]
+tdd-mon = tdd_monitor.src.main:main
+
