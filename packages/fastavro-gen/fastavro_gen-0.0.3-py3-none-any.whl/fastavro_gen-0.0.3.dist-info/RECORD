@@ -1,0 +1,12 @@
+fastavro_gen/__init__.py,sha256=w5UkCuNaYiAQDuCY90uL4bR3ViaaL99djRJ937LCTao,218
+fastavro_gen/__main__.py,sha256=npRypRG99LQT_cAJu6qxJMH4vJ6K0rm-rdELidFueZ4,1896
+fastavro_gen/from_dict.py,sha256=WlLoNWuiKRQcm0l0106cblUdCWZIK2gEusmuqmHqA-k,1605
+fastavro_gen/models.py,sha256=JUMQkiZyyIVdpGhU-i5Q_Ok3NhX6lbUTBNOEaQhkj6E,838
+fastavro_gen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastavro_gen/type_gen.py,sha256=Mn7fPcWBoij_MstKaXXGDiM_rqyOKQbJCKV8bMSLvdg,9898
+fastavro_gen-0.0.3.dist-info/LICENSE,sha256=iMPp_4I9VHCJnU4uRQeW2cWbBAux66tecB8jVsK-qLg,1084
+fastavro_gen-0.0.3.dist-info/METADATA,sha256=wks0iF3Mn0gRenCrCyl75Lo-GJEU51GEb9sNsc4wZ5g,6641
+fastavro_gen-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fastavro_gen-0.0.3.dist-info/entry_points.txt,sha256=WnhpWvISAZFhJlI2Y90bkrfv-lkzPuUIJQcQg9N3uLk,61
+fastavro_gen-0.0.3.dist-info/top_level.txt,sha256=MNMMQgDUXvwlPIqdtWbJU2ugkzloIlnFCsaHIlcYtD8,13
+fastavro_gen-0.0.3.dist-info/RECORD,,
