@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hsi_moss
+Version: 0.0.3
+Summary: Hyperspectral image processing pipeline for moss sample images
+Project-URL: Homepage, https://github.com/arenglish/hsi-moss
+Author-email: Austin Ryan English <austinenglish4@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Hyperspectral Image Analysis for Moss Samples
+
+This is an in-progress pipeline for processing hyperspectral images of moss samples.
