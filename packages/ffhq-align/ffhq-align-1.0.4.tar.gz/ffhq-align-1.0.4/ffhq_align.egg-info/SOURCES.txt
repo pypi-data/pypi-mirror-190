@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.py
+ffhq_align/__init__.py
+ffhq_align/__version__.py
+ffhq_align/module.py
+ffhq_align/ops.py
+ffhq_align/utils.py
+ffhq_align.egg-info/PKG-INFO
+ffhq_align.egg-info/SOURCES.txt
+ffhq_align.egg-info/dependency_links.txt
+ffhq_align.egg-info/requires.txt
+ffhq_align.egg-info/top_level.txt
