@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+stopPhishing/__init__.py
+stopPhishing.egg-info/PKG-INFO
+stopPhishing.egg-info/SOURCES.txt
+stopPhishing.egg-info/dependency_links.txt
+stopPhishing.egg-info/requires.txt
+stopPhishing.egg-info/top_level.txt
+stopPhishing/functions/amount.py
+stopPhishing/functions/check.py
+stopPhishing/functions/list.py
