@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+django_jlog.egg-info/PKG-INFO
+django_jlog.egg-info/SOURCES.txt
+django_jlog.egg-info/dependency_links.txt
+django_jlog.egg-info/requires.txt
+django_jlog.egg-info/top_level.txt
+jlog/__init__.py
+jlog/apps.py
+jlog/file.py
