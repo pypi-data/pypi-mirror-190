@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jpnumeric
+Version: 0.1.1
+Summary: jpnumberic: convert japanese-numeral string and integer.
+Home-page: https://zenn.dev/karamawanu
+Download-URL: https://zenn.dev/karamawanu
+Author: hideto honda
+Author-email: honda.alfa@gmail.com
+Maintainer: hideto honda
+Maintainer-email: honda.alfa@gmail.com
+License: MIT
+Keywords: kanji japanese numerals interger
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+pure python3, japanese-numeral string converter

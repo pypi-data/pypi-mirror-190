@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jpnumeric/__init__.py
+jpnumeric/jpnumeric.py
+jpnumeric.egg-info/PKG-INFO
+jpnumeric.egg-info/SOURCES.txt
+jpnumeric.egg-info/dependency_links.txt
+jpnumeric.egg-info/top_level.txt

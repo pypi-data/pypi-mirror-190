@@ -1,0 +1,1 @@
+pure python3, japanese-numeral string converter
