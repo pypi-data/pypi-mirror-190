@@ -1,0 +1,99 @@
+[tool.poetry]
+name = "neosctl"
+version = "0.5.0"
+description = "Nortal Core CLI"
+authors = []
+license = "closed"
+repository="https://github.com/NEOS-Critical/neos-platform-cli"
+homepage="https://github.com/NEOS-Critical/neos-platform-cli"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+httpx = "^0.23.0"
+typer = "^0.6.1"
+Pygments = "^2.13.0"
+pydantic = "^1.9.2"
+
+[tool.poetry.dev-dependencies]
+
+# Tests
+freezegun = "^1.2.1"
+pretend = "^1.0.9"
+pytest = "~7.1.2"
+pytest-asyncio = "^0.18.3"
+pytest-benchmark = "^3.4.1"
+pytest-cov = "^3.0.0"
+pytest-env = "^0.6.2"
+pytest-random-order = "^1.0.4"
+requests = "^2.28.1"
+pytest-httpx = "^0.21.0"
+
+# Style
+ruff = {version="^0.0", source="pypi"}
+pre-commit = {version="^3.0.2", source="pypi"}
+black = {version="^23.1.0", source="pypi"}
+
+# Releases
+bump2version = "*"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "--random-order"
+env = [
+]
+markers = [
+    "nodotfile_patch: don't auto patch a dotfile into existence",
+]
+
+
+[tool.coverage.report]
+sort = "cover"
+fail_under = 98
+show_missing = true
+skip_covered = true
+exclude_lines = [
+	"pragma: no cover",
+	"if __name__ == '__main__':",
+	"@abc.abstractmethod"
+]
+
+[tool.coverage.run]
+branch = true
+source = ["neosctl"]
+
+[tool.bandit]
+exclude_dirs = ["tasks.py"]
+skips = ["B101"]
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+target-version = "py38"
+line-length = 120
+select = ["ALL"]
+ignore = [
+    "ANN",  # annotation checks, once type checking is brought in
+    "B008",  # fastapi involves a lot of function calls in function definitions
+    "D",  # docstrings, once docstrings are adopted
+    "FBT",  # boolean trap? no documentation
+    "PLR0913",  # too many arguments to a function call
+    "TCH",  # type checking, once type checking is brought in
+    "S",  # run full bandit as commit-hook
+]
+
+[tool.ruff.per-file-ignores]
+"tasks.py" = ["E501", "INP001"]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.poetry.scripts]
+neosctl = "neosctl.cli:app"
+
+[build-system]
+requires = ["poetry-core>=1.0,<1.1"]
+build-backend = "poetry.core.masonry.api"
