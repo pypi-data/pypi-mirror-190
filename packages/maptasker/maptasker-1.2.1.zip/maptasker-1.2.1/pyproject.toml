@@ -1,0 +1,46 @@
+[build-system]
+requires = [
+      "CTkColorPicker>=0.3.0",
+      "customtkinter>=5.0.5",
+      "darkdetect>=0.8.0",
+      "Pillow>=9.4.0",
+      "setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maptasker"
+version = "1.2.1"
+authors = [
+    {name = "Michael Rubin", email = "mikrubin@gmail.com"},
+]
+description = "Display your Android device's Tasker configuration from its backup file on a Mac"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+requires-python = ">=3.10"
+keywords = ["tasker", "Tasker", "map tasker"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Environment :: MacOS X",
+  "Natural Language :: English",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Utilities",
+]
+dependencies = [
+      "CTkColorPicker>=0.3.0",
+      "customtkinter>=5.0.5",
+      "darkdetect>=0.8.0",
+      "Pillow>=9.4.0",
+      "setuptools"]
+#dependencies = [
+#  'python_version = >="3.10"'
+#]
+[options.packages.find]
+where = "maptasker/routines"
+include = "*.py"
+
+[project.urls]
+BugTracker = "https://github.com/mctinker/Map-Tasker/issues"
+Changelog = "https://github.com/mctinker/Map-Tasker/CHANGELOG.md"
