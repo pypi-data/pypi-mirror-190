@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "json-schema-to-csv"
+version = "0.1.0"
+description = ""
+authors = ["Łukasz Bacik <mail@luka.sh>"]
+readme = "README.md"
+packages = [{include = "json2csv"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jsonschema = "^4.17.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
