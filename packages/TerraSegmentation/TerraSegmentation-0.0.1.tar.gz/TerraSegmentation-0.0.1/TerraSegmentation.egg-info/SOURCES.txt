@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+TerraSegmentation/TerraMaskrcnnDemo.py
+TerraSegmentation/TerraSegmentation.py
+TerraSegmentation.egg-info/PKG-INFO
+TerraSegmentation.egg-info/SOURCES.txt
+TerraSegmentation.egg-info/dependency_links.txt
+TerraSegmentation.egg-info/top_level.txt
