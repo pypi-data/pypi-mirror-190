@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: FAIRsoft
+Version: 0.1.10
+Summary: FAIRsoft package for the aggregation of Life Sciences software metadata and FAIR evaluation.
+Home-page: https://gitlab.bsc.es/inb/elixir/software-observatory/FAIRsoft_ETL/-/tree/master/FAIRsoft
+Author: Eva Martin del Pico
+Author-email: Eva Martin del Pico <eva.martin@bsc.es>
+License: AGLP-3.0
+Project-URL: Bug Tracker, https://gitlab.bsc.es/inb/elixir/software-observatory/FAIRsoft_ETL/issues
+Project-URL: Repository, https://gitlab.bsc.es/inb/elixir/software-observatory/FAIRsoft_ETL/-/tree/master/FAIRsoft
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FAIRsoft 
+
+Library for the aggregation of Life Sciences software metadata and FAIR evaluation.
+
+
+## Installation 
+Install using [pip](https://pip.pypa.io/en/stable/):
+```
+pip install FAIRsoft
+``` 
+
+### Requirements 
+In order to use the Bioconda and repositories (GitHub and Bitbucket) importers, the following two tools need to be installed:
+
+- [opeb-enrichers/repoEnricher](https://github.com/inab/opeb-enrichers).
+
+- [bioconda-utils](https://github.com/bioconda/bioconda-utils): bioconda package, requires [Conda](https://docs.conda.io/projects/conda/en/latest/index.html). 
+
+
+## Usage 
+Example of usage in this [jupyter-notebook](https://gitlab.bsc.es/inb/elixir/software-observatory/FAIRsoft_ETL/-/blob/master/docs/ETL_workflow.ipynb).
