@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fabexp_helper"
+version = "0.0.1"
+description = "A tool to help create and manage fabric experiments"
+authors = ["Devin Lane <silvertenor@icloud.com>"]
+readme = "README.md"
+packages = [{include = "fabexp_helper", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nbformat = "^5.7.3"
+click = "^8.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+fabexp = "fabexp_helper.fabexp:create_project"
