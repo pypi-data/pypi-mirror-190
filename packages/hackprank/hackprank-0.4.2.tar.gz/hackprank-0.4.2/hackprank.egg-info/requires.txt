@@ -1,0 +1,6 @@
+rich
+flask
+pyfiglet
+flask
+colorama
+termios
