@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: docstruct
+Version: 1.0.8
+Summary: A package for representing documents as a tree of document, pages, paragraphs, lines, words, and characters
+Home-page: https://github.com/smrt-co/docstruct
+Author: Moran Nechushtan
+Author-email: moran.n@trullion.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+Hey! random text for readme
+
