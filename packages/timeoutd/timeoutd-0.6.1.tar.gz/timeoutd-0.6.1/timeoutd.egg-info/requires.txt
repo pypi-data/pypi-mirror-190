@@ -1,0 +1,16 @@
+
+[all]
+coverage
+flake8
+mypy
+pycodestyle
+pytest>=6.2.2
+pytest-cov
+
+[tests]
+coverage
+flake8
+mypy
+pycodestyle
+pytest>=6.2.2
+pytest-cov
