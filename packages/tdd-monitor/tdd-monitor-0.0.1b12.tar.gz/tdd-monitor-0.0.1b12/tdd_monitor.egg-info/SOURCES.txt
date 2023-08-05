@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+dev-requirements.txt
+requirements.txt
+setup.py
+tdd_monitor.egg-info/PKG-INFO
+tdd_monitor.egg-info/SOURCES.txt
+tdd_monitor.egg-info/dependency_links.txt
+tdd_monitor.egg-info/entry_points.txt
+tdd_monitor.egg-info/requires.txt
+tdd_monitor.egg-info/top_level.txt
