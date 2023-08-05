@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: equal-odds
+Version: 0.0.3
+Summary: _PACKAGE IN CONSTRUCTION_
+Home-page: https://github.com/AndreFCruz/equal-odds
+Author: AndreFCruz
+License: MIT
+Keywords: ml,optimization,fairness
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: cvxpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+# equal-odds
+> This repository is under construction :construction:
+
+![badge for PyPI publishing status](https://github.com/AndreFCruz/equal-odds/actions/workflows/python-publish.yml/badge.svg)
+
+A fast adjust
+
+## Installing
+
+Install package from [PyPI](https://pypi.org/project/equal-odds/):
+```
+pip install equal-odds
+```
+
+Or, for development, you can clone the repo and install from local sources:
+```
+git clone https://github.com/AndreFCruz/equal-odds.git
+pip install ./equal-odds
+```
+
+## Getting started
+
+```py
+# Given any trained model that outputs real-valued scores
+fair_clf = RelaxedEqualOdds(
+    predictor=lambda X: model.predict_proba(X)[:, -1],   # for sklearn API
+    # predictor=model,  # use this for a callable model
+    tolerance=0.05,     # fairness constraint tolerance
+)
+
+# Fit the fairness adjustment on some data
+# This will find the optimal _fair classifier_
+fair_clf.fit(X=X, y=y, group=group)
+
+# Now you can use `fair_clf` as any other classifier
+# You have to provide group information to compute fair predictions
+y_pred_test = fair_clf(X=X_test, group=group_test)
+```
