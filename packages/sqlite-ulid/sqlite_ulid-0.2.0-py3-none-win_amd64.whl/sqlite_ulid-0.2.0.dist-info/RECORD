@@ -1,0 +1,7 @@
+noop.cp311-win_amd64.pyd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlite_ulid/__init__.py,sha256=ITaiSkyDVpPqSYSCMesIETqpVqartuDI6HB_Kygji1Q,249
+sqlite_ulid/ulid0.dll,sha256=uF4xXMZ437N9-X6jbOB7MHszf0CK3elqpJ58XxRlp1k,1197056
+sqlite_ulid-0.2.0.dist-info/METADATA,sha256=uTIz9a2ofhveFIR1RomtxQDZ20Vujp-V0OZw6of5yLc,513
+sqlite_ulid-0.2.0.dist-info/WHEEL,sha256=wklNeoByNLhdCl-oEQTdaHIeDl4q9zaQVqAlPxUEgLU,102
+sqlite_ulid-0.2.0.dist-info/top_level.txt,sha256=N6ER61ACZBUr1qJ-hg5ezZUvuynJp4lZiazFzTwdze8,17
+sqlite_ulid-0.2.0.dist-info/RECORD,,
