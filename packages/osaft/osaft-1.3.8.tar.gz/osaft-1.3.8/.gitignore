@@ -1,0 +1,73 @@
+# vim autosave files
+*.swp
+*.swo
+
+# Pycharm
+.idea/
+*.pyc
+
+# Visual Studio Code
+*.code-workspace
+
+# projectionist
+.vim
+.projections.json
+
+# VS-Code
+.vscode/
+
+# version file
+osaft/core/version.py
+
+# build folders
+build/
+dist/
+
+# coverage report
+.coverage*
+report.xml
+
+# jupyter checkpoints
+**/.ipynb_checkpoints/
+
+# Virtual Environment
+/env*
+/venv/
+/venv39/
+/venv310/
+/venv311/
+
+# Build
+.eggs/
+osaft.egg-info/
+
+**/.DS_Store
+
+**/__pycache__/
+
+
+# Log files
+debug.log
+info.log
+
+# the file with the personal access token
+personal_token.json
+
+# Sphinx documentation
+docs/_build/
+docs/examples/
+docs/backreferences/
+docs/**/generated
+
+# Testing artifacts
+OutputPlotting/
+
+# coverage
+htmlcov/
+
+# c-tags folder
+tags
+
+# Scratch Folder
+/scratch/
+/bin/

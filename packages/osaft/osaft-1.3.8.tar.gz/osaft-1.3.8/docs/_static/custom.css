@@ -1,0 +1,19 @@
+/* inheritance diagram has white background */
+img.graphviz {
+    background-color: white;
+    border-radius: 15pt;
+}
+
+/* animations buttons */
+.anim-buttons button {
+width: 40px;
+color: black;
+background-color: whitesmoke;
+border-radius: 5px;
+}
+
+/* rounded border of images */
+
+img {
+    border-radius: 10px;
+}

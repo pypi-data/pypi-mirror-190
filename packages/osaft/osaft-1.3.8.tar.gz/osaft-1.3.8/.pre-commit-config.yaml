@@ -1,0 +1,55 @@
+exclude: 'docs/_static/logo.psd'
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v3.2.0
+  hooks:
+  - id: check-yaml
+  - id: trailing-whitespace
+  - id: mixed-line-ending
+  - id: end-of-file-fixer
+  - id: check-added-large-files
+  - id: check-docstring-first
+  - id: check-ast
+  - id: check-merge-conflict
+- repo: https://github.com/asottile/pyupgrade
+  rev: v2.7.2
+  hooks:
+  - id: pyupgrade
+    args: [--py36-plus]
+- repo: https://github.com/pycqa/isort
+  rev: 5.12.0
+  hooks:
+  - id: isort
+- repo: https://github.com/psf/black
+  rev: 22.10.0
+  hooks:
+    - id: black
+      language_version: python3
+- repo: https://github.com/asottile/add-trailing-comma
+  rev: v2.2.0
+  hooks:
+    - id: add-trailing-comma
+- repo: https://github.com/PyCQA/flake8
+  rev: 3.9.2
+  hooks:
+  - id: flake8
+  - id: flake8
+    name: flake8-print-statements
+    exclude: |
+      (?x)^(
+      examples.+\.py|
+      create_changelog.py|
+      osaft/tests/testing_parameters.py|
+      osaft/tests/basetest_numeric.py
+        )$
+    additional_dependencies: [flake8-print]
+- repo: https://github.com/sondrelg/pep585-upgrade
+  rev: v1.0.1  # Use the sha / tag you want to point at
+  hooks:
+  - id: upgrade-type-hints
+- repo: https://github.com/pre-commit/pygrep-hooks
+  rev: v1.9.0
+  hooks:
+  - id: python-use-type-annotations
+  - id: rst-backticks
+  - id: rst-directive-colons

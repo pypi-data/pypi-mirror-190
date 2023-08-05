@@ -1,0 +1,23 @@
+.. _King1934:
+
+King (1934)
+===========
+
+`Link to paper
+<https://royalsocietypublishing.org/doi/10.1098/rspa.1934.0215>`_
+
+.. inheritance-diagram::
+    osaft.solutions.king1934.arf
+   :top-classes: osaft.solutions.base_arf.BaseARF
+   :parts: 1
+
+.. currentmodule:: osaft.solutions.king1934
+
+.. autosummary::
+   :toctree: generated/
+   :template: template_gallery.rst
+   :nosignatures:
+
+   ~base.BaseKing
+   ~scattering.ScatteringField
+   ~arf.ARF

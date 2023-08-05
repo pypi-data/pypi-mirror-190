@@ -1,0 +1,23 @@
+version: 2
+
+# Set the version of Python and other tools you might need
+build:
+  os: ubuntu-20.04
+  apt_packages:
+    - graphviz
+    - ffmpeg
+  tools:
+    python: "3.9"
+    nodejs: "16"
+
+sphinx:
+  builder: html
+  configuration: docs/conf.py
+  fail_on_warning: false
+
+python:
+  install:
+    - method: pip
+      path: .
+      extra_requirements:
+        - docs

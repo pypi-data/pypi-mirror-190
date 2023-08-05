@@ -1,0 +1,166 @@
+image: python:3.11-buster
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+.cache_python:
+  variables:
+    FF_USE_FASTZIP: 1  # enable faster caching/artifacting
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip_cache"
+  cache:
+    key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
+    paths:  # cache the venv and pip cache (you may opt to use just 1 of these)
+      - venv
+      - $PIP_CACHE_DIR
+      - .cache/pip
+
+stages:
+  - preprocessing
+  - testing
+  - documentation
+  - release
+
+
+.python_3.9_before_script_template: &build_venv_3p9
+  before_script:
+    - python -V  # Print out python version for debugging
+    - python3.9 -m pip install install virtualenv
+    - virtualenv venv/3p9
+    - source venv/3p9/bin/activate
+    - pip install ".[dev,docs]"
+
+.python_3.10_before_script_template: &build_venv_3p10
+  before_script:
+    - python3.10 -V  # Print out python version for debugging
+    - python3.10 -m pip install virtualenv
+    - virtualenv venv/3p10
+    - source venv/3p10/bin/activate
+    - pip install ".[dev,docs]"
+
+.python_3.11_before_script_template: &build_venv_3p11
+  before_script:
+    - rm -rf OutputPlotting/ # remove [possible] artifacts
+    - python3.11 -V  # Print out python version for debugging
+    - python3.11 -m pip install virtualenv
+    - virtualenv venv/3p11
+    - source venv/3p11/bin/activate
+    - pip install ".[dev,docs]"
+
+verify-changelog:
+  stage: preprocessing
+  script:
+    - python -V  # Print out python version for debugging
+    - python verify_changelog.py
+  interruptible: true
+
+check-formatting:
+  stage: preprocessing
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+  script:
+    - python -V  # Print out python version for debugging
+    - pip install pre-commit
+    - pre-commit run --all-files
+  interruptible: true
+
+test-3.9:
+  <<: *build_venv_3p9
+  image: python:3.9-buster
+  extends: ".cache_python"
+  stage: testing
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+  tags:
+    - python_3_9
+  needs: ['check-formatting', 'verify-changelog']
+  script:
+    - pytest osaft/tests/ -n auto -x # -x=stop at first failure
+    - deactivate
+  timeout: 3h 30m
+  interruptible: true
+  retry: 2
+
+test-3.10:
+  <<: *build_venv_3p10
+  image: python:3.10-buster
+  extends: ".cache_python"
+  stage: testing
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+  tags:
+    - python_3_10
+  needs: ['check-formatting', 'verify-changelog']
+  script:
+    - pytest osaft/tests/ -n auto -x # -x=stop at first failure
+    - deactivate
+  timeout: 3h 30m
+  interruptible: true
+  retry: 2
+
+test-3.11:
+  <<: *build_venv_3p11
+  stage: testing
+  extends: ".cache_python"
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+  script:
+    - pytest osaft/tests/ -n auto -x # -x=stop at first failure
+    - deactivate
+  coverage: '/TOTAL.*\s+(\d+%)$/'
+  needs: ['check-formatting', 'verify-changelog']
+  timeout: 3h 30m
+  interruptible: true
+  retry: 2
+  artifacts:
+    when: always
+    paths:
+      - OutputPlotting/*.png
+    reports:
+      junit: report.xml
+    expire_in: 1 hour
+
+docu:
+  <<: *build_venv_3p11
+  extends: ".cache_python"
+  stage: documentation
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+  script:
+    - apt-get update
+    - apt-get install -y graphviz
+    - apt-get install -y ffmpeg
+    - cd docs ; make html
+    - mv _build/html/ ../public/
+  artifacts:
+    paths:
+      - public/
+    expire_in: 2 hour
+  interruptible: true
+  needs: ['test-3.11']
+
+pypi:
+  <<: *build_venv_3p11
+  extends: ".cache_python"
+  stage: release
+  only:
+    - tags
+    - /^v\d+\.\d+\.\d+$/
+  script:
+    - python -m build
+    - TWINE_PASSWORD=${PYPI_PASSWORD} TWINE_USERNAME=gorkovpy twine upload dist/*
+  artifacts:
+    paths:
+      - build/
+      - dist/
+      - osaft.egg-info/
+    expire_in: 2 hour

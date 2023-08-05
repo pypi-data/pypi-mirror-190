@@ -1,0 +1,14 @@
+[pytest]
+; -n auto == multicore
+; --cov=osaft get coverage for package osaft
+; --junitxml=report.xml export as junitxml report file
+addopts = -n auto  --cov=osaft --junitxml=report.xml
+testpaths =
+    osaft/tests
+
+[flake8]
+ignore = D100,D203,D405,E741,E731,W503,W504,W605
+count = True
+max-line-length = 79
+statistics = True
+exclude = *__init__.py, examples/tutorial/example_doinikov_1994.py, osaft/tests/solutions/doinikov2021viscous/test_streaming.py
