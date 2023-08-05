@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: aup_manager
+Version: 2.0.1
+Summary: Module for managing AUPs
+Home-page: https://gitlab.ics.muni.cz/perun-proxy-aai/python/aup-manager.git
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Provides-Extra: perun
