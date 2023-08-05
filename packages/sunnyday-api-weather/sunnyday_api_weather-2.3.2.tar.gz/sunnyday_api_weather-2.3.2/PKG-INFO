@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sunnyday_api_weather
+Version: 2.3.2
+Summary: Weather forecast data
+Home-page: http://www.example/
+Author: Man Creator
+Author-email: example@foo.example
+License: MIT
+Keywords: weather,forecast,openweather
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

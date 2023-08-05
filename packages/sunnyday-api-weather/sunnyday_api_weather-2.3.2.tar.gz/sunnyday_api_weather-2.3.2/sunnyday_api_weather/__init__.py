@@ -1,0 +1,1 @@
+from sunnyday.sunnyday_api_weather import Weather
