@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ZTF
+Version: 0.0.2
+Summary: A package ZTF.
+Home-page: https://github.com/rahulbhadani/ZTF
+Author: Rahul Bhadani
+Author-email: rahulbhadani@email.arizona.edu
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: AsyncIO
+Classifier: Topic :: Communications
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+
+# ZTF
+
+(c) Rahul Bhadani
+
+
