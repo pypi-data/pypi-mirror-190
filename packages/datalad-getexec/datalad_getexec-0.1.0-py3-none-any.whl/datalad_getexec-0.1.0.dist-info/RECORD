@@ -1,0 +1,12 @@
+datalad_getexec/__init__.py,sha256=tlV8YxgkX0W2P1CM-5mwrqFhgUaN3lz4dyU5HI0GHs0,928
+datalad_getexec/_version.py,sha256=H83Nom8I0O_MRnzdMUBw3iOp4eoTV5jQcXmuV_CCWig,497
+datalad_getexec/compat.py,sha256=wteWN2fD3HPPV-twRR0Q2pR8wxvpSWuqljdch_gpcNk,546
+datalad_getexec/getexec.py,sha256=FhpnWo4ip9YNyN05k0Ud9mk0oAtjueZ--PswgwGF6AA,6825
+datalad_getexec/remote.py,sha256=18CgQxC7vZc7i5bQ6DHb4bTNBuS3CkpSTmDSVipvG8c,2621
+datalad_getexec/spec.py,sha256=nlfVZX3HzMRit5Vn7bCRcLVZ5WXtu_4W7y71aAsYNn0,1311
+datalad_getexec-0.1.0.dist-info/LICENSE,sha256=jhD5mboLzFUzp_iK7lczMEeyW4bZN_V-7w-0s-G2Azs,1341
+datalad_getexec-0.1.0.dist-info/METADATA,sha256=_04DgfR1M08jvHztOGRxyDzITIiO0MOVlRmBgZjWM3c,4578
+datalad_getexec-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+datalad_getexec-0.1.0.dist-info/entry_points.txt,sha256=aV99KeLtonRNzZGpO9yvpnfQ61IfFZ7XVdPNxIIJi7Q,135
+datalad_getexec-0.1.0.dist-info/top_level.txt,sha256=QinONEpe12BWXxztiP3W6a0xxRfjKvpUM10kzKXXkNI,16
+datalad_getexec-0.1.0.dist-info/RECORD,,

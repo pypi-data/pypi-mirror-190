@@ -1,0 +1,5 @@
+[console_scripts]
+git-annex-remote-getexec = datalad_getexec.remote:main
+
+[datalad.extensions]
+getexec = datalad_getexec:command_suite
