@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: rfcparser
+Version: 0.0.4
+Requires-Dist: lark
+Description-Content-Type: text/markdown
+
+"Rfcparser" is a Python parsing tool that aids in the parsing of common rfc syntaxes.
