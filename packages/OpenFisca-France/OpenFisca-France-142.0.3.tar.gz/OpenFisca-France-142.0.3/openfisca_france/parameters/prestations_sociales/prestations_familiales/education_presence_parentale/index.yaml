@@ -1,0 +1,12 @@
+description: "Prestations sociales familiales : Éducation et présence parentale"
+metadata:
+  ux_name: Éducation et présence parentale
+  description_en: Education and parental presence
+  order:
+  - ars
+  - ape
+  - asf
+  - aes
+  - aeeh
+  - app
+  - ajpp
