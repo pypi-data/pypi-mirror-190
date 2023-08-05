@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: News-NLP
+Version: 0.4
+Summary: This package aims to collect news data via Google News API, preporcessing, implement pretrained news type classifer and sentiment classifier and perform predictive model for news event and then implememnt multiple geolocator
+Home-page: https://github.com/HigherHoopern/News_NLP/blob/main/TestNoteBook.ipynb
+Author: JasonLu
+Author-email: luzhenxian@hotmail.com
+License: MIT
+
