@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: infodeslib
+Version: 0.0.18
+Summary: DES with Late Fusion
+Home-page: UNKNOWN
+Author: Firuz Juraev
+Author-email: f.i.juraev@gmail.com
+License: MIT
+Description: Implementation of Dynamic Ensemble Selection methods with Late Fusion
+Keywords: infodeslib
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
