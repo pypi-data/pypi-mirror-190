@@ -1,0 +1,4 @@
+OPi.GPIO
+spidev
+Pillow
+NumPy
