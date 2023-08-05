@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+sqlalchemy_ocient.py
+version.py
+sqlalchemy_ocient.egg-info/PKG-INFO
+sqlalchemy_ocient.egg-info/SOURCES.txt
+sqlalchemy_ocient.egg-info/dependency_links.txt
+sqlalchemy_ocient.egg-info/entry_points.txt
+sqlalchemy_ocient.egg-info/requires.txt
+sqlalchemy_ocient.egg-info/top_level.txt
