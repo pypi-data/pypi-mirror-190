@@ -1,0 +1,15 @@
+rkclient/__init__.py,sha256=BrcYS2yDSvawpvc5I5TuAUdJhZur1JysdmFqa3AzHZI,809
+rkclient/admin.py,sha256=yRNO2RhZXBUS7ON7iP-PgVzjNINr1eA3D6cnkl1SReg,12359
+rkclient/auth.py,sha256=XyPtuvUwjA8R3xqiz47HfyIodW3zVVwyazp_EqnPs30,97
+rkclient/client.py,sha256=LkJScyOogTB1zCBaF_VzDwu0jUaeXYqyAbXH9BIIc3E,6116
+rkclient/entities.py,sha256=9p91vxcKo0YhphywyEMFKCfXUTg4BANMBLA7ROVkK4E,3264
+rkclient/factory.py,sha256=ysZbrv0oiNolQwbZ1xDt0LkaUkBr_ENNLdQIt5RWy84,2294
+rkclient/request.py,sha256=RLvLDp9TjZlhs-nVUHQdTtVbyfrNqJHMV6kP6HCDL6U,3548
+rkclient/serialization.py,sha256=pTF7n-T-zPVeiNALACCt9kuCxLm3tmdVtUt5vy6oBtA,3885
+rkclient/test_api.py,sha256=vFlne9dZDLBom2dIUdqvGg-o8ma4vfvl0QtBPYV5M3Y,2819
+rkclient/test_serialization.py,sha256=PqETm942dV1hVQqi1NAKN3zuOgfllvpvP6DWRipdTJk,6615
+RecordKeeper_Client-3.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+RecordKeeper_Client-3.0.0.dist-info/METADATA,sha256=jVPaAvcAAJMGub1UE7F61JVQvw0dMKGbmHFT_vyt64g,4581
+RecordKeeper_Client-3.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+RecordKeeper_Client-3.0.0.dist-info/top_level.txt,sha256=sy2hulYgnc-DIjj1U1CxqoLdPC59xXIVU77Oi7p2D6A,9
+RecordKeeper_Client-3.0.0.dist-info/RECORD,,
