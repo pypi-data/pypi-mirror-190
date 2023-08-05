@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: geoview
+Version: 0.0.1
+Summary: geoview: view geojson data
+Home-page: https://pypi.org/project/geoview
+Author: district10
+Author-email: dvorak4tzx@gmail.com
+Keywords: geojson,view
+Platform: any
+Requires-Python: >=3.6
+License-File: LICENSE
