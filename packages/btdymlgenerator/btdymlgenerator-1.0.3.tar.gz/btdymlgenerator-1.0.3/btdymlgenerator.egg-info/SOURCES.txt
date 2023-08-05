@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+btdymlgenerator/__init__.py
+btdymlgenerator/main.py
+btdymlgenerator.egg-info/PKG-INFO
+btdymlgenerator.egg-info/SOURCES.txt
+btdymlgenerator.egg-info/dependency_links.txt
+btdymlgenerator.egg-info/entry_points.txt
+btdymlgenerator.egg-info/top_level.txt
