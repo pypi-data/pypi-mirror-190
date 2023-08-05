@@ -1,0 +1,2 @@
+btl2cap>=0.0.11
+xpycommon>=0.0.24

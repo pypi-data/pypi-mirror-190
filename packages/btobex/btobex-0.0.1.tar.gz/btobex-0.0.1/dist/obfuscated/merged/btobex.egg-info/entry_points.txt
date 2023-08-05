@@ -1,0 +1,2 @@
+[console_scripts]
+btobex = btobex.__main__:main
