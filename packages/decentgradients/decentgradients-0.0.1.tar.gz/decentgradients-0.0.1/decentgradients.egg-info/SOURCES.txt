@@ -1,0 +1,9 @@
+LICENSE.TXT
+MANIFEST.in
+README.txt
+setup.py
+decentgradients/__init__.py
+decentgradients.egg-info/PKG-INFO
+decentgradients.egg-info/SOURCES.txt
+decentgradients.egg-info/dependency_links.txt
+decentgradients.egg-info/top_level.txt
