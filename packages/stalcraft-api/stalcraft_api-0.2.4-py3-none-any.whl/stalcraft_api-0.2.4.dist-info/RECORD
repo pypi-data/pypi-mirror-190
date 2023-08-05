@@ -1,0 +1,17 @@
+stalcraft/__init__.py,sha256=J_j8NcHUQLouXaqdJI7WLsdGEdgJFvT3bvk_0TQ-OgQ,289
+stalcraft/api.py,sha256=9Im4gel5LpzC2hAzKoHKm3VV0r12_5l4qyfbvrM052g,4493
+stalcraft/auction.py,sha256=rkAZObrm6B17mCzbq0q8EjNQiHHavxqVKEm1fegcxY4,2553
+stalcraft/auth.py,sha256=TFyI67UCLhdUAHcUQcGHw5D0ErsTmOd2Soa8IwG-YSQ,2212
+stalcraft/clan.py,sha256=9nNURixMh0eeS44gGQzrO_QrWjUCbMrMsHPlT988RnM,1613
+stalcraft/client.py,sha256=cvKCcr_T4PYGjpbGCjJuvQpCG_IhtJtFXVkFIwvetV4,6146
+stalcraft/enums.py,sha256=TJsNWS-8nI_3ELV-LQQio4c_BWdFMV1Ah2NmGS9B5vY,978
+stalcraft/exceptions.py,sha256=gJdS2NH8nW8H-zVcrVSoaIFusJ80jmSdwcO1K7qZYLc,482
+stalcraft/item.py,sha256=ODSXeBOoaEZNNARuIEeazL1pKN_XvqcEl1UxM0gTO4E,3597
+stalcraft/schemas.py,sha256=J27pHS9o9omZXFUw1pjtzj5V4rCPZXUzxfia9UKEvvE,5023
+stalcraft/data/items.json,sha256=_mfUfeNlXJaNpli73OfTDki2twoHUqRwh9o-sL3OXvY,76554
+stalcraft/data/stats.json,sha256=4Xj6rkpPGCuzgMD0K3xFRSzGb3qlNkgIWxEfIAUakAE,34103
+stalcraft_api-0.2.4.dist-info/LICENSE,sha256=wd_APRUT0IfjRlnng0HSo5VUbtEbEKsJ4NHD-z7gMuc,1083
+stalcraft_api-0.2.4.dist-info/METADATA,sha256=VZ6Jg9XyIe5iwm3TYo-Y1Xn8A9D1VzbMpPgzmuZ7FjQ,6399
+stalcraft_api-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stalcraft_api-0.2.4.dist-info/top_level.txt,sha256=NyBsnO7ZpHljzADh5mcWplD5RPilhk2vBRytpv4j2AY,10
+stalcraft_api-0.2.4.dist-info/RECORD,,
