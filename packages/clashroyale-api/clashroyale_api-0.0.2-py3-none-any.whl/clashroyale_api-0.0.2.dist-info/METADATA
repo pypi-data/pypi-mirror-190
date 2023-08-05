@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: clashroyale-api
+Version: 0.0.2
+Summary: A Clash Royale API
+Home-page: https://github.com/Acul747/ClashRoyale-API
+Author: Luca Koch
+Author-email: luca.koch@aon.at
+License: MIT License
+Keywords: cr,clash,clashroyale
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=3.11
+Requires-Dist: requests (~=2.28.2)
+
