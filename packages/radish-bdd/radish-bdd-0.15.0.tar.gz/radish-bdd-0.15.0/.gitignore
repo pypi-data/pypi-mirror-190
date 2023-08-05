@@ -1,0 +1,43 @@
+# vim swap files
+*.swp
+
+# python bytecode files
+*.pyc
+
+# nosetools coverage file
+.coverage
+
+# python virtualenv
+env*
+
+# python tox files
+.tox
+
+# python setuptools
+build/
+dist/
+radish_bdd.egg-info/
+
+# generated files by radish (these files could be created during manual tests of radish)
+result.xml
+
+# generated files by the sphinx documentation
+docs/_build
+docs/modules.rst
+docs/modules/
+docs/radish.vendor.parse.rst
+docs/radish.vendor.rst
+docs/radish.extensions.rst
+docs/radish.rst
+
+
+# generated files by the debian package
+.pybuild
+debian/files
+debian/radish-bdd*
+
+# ignore README.rst which is only generated for pypi
+README.rst
+
+# IDE configuration
+.idea/
