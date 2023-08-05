@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+usb_gadget/__init__.py
+usb_gadget/hid_gadget.py
+usb_gadget/usb_gadget.py
+usb_gadget.egg-info/PKG-INFO
+usb_gadget.egg-info/SOURCES.txt
+usb_gadget.egg-info/dependency_links.txt
+usb_gadget.egg-info/top_level.txt
