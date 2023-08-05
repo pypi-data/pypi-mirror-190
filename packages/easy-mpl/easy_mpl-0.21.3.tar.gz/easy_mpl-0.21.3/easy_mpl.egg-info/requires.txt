@@ -1,0 +1,7 @@
+matplotlib<4.0.0,>=3.0.0
+
+[all]
+numpy<2.0.0,>=1.16.2
+matplotlib<4.0.0,>=3.0.0
+pandas<2.0.0,>=0.23.3
+scipy
