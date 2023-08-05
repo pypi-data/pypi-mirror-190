@@ -1,0 +1,2 @@
+[console_scripts]
+bayesian_classifier = bayesian_classifier.__main__:cli
