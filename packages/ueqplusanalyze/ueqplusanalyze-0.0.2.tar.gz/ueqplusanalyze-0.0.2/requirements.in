@@ -1,0 +1,8 @@
+# here should be defined every used package
+# you can generate the requirements.txt with 'pip-compile --output-file=- > requirements.txt'
+
+pandas == 1.5.2
+numpy == 1.23.5
+matplotlib == 3.6.2
+jupyter == 1.0.0
+pytest == 7.2.1
