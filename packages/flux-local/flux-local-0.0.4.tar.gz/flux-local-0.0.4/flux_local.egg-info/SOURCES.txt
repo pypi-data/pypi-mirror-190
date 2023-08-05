@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flux_local/__init__.py
+flux_local/command.py
+flux_local/helm.py
+flux_local/kustomize.py
+flux_local/manifest.py
+flux_local/repo.py
+flux_local.egg-info/PKG-INFO
+flux_local.egg-info/SOURCES.txt
+flux_local.egg-info/dependency_links.txt
+flux_local.egg-info/requires.txt
+flux_local.egg-info/top_level.txt
