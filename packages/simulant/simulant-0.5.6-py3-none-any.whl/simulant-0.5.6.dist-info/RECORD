@@ -1,0 +1,14 @@
+simulant/__init__.py,sha256=s8MHvO9rWidwmfJgUf2roODQStwSsZOZ0akycHfiPZ8,611
+simulant/os.py,sha256=LgsQTM8Uzz9UCiLWGpBQT90d0H3oc4_IkIPl3uiyov0,688
+simulant/display/__init__.py,sha256=v4YwXBfkOeNEXjIi1pbGoCjPKYyT7e-cCE79lpY7Bi4,1454
+simulant/display/panel.py,sha256=QAIa0h6FqdA4b_-mUKpUXCswLemXWzTn6N3rB3hqJnI,219
+simulant/display/screen.py,sha256=LOuxK5zyHKeiTHjtm6UmjWoa-wseZvm1nwkxbErF8to,732
+simulant/display/window.py,sha256=yIe154BL2rXtBOPw8LXUjCfq_KivrQR2DkUSQnOxZTQ,2689
+simulant/keyboard/__init__.py,sha256=idsviwhuPzNfAOnE9UtOBQG97O9shQu5taHiLht6zV8,1623
+simulant/keyboard/key.py,sha256=X1V8mueUOBWQlGHcBxxgRwwFk4Lb2TBH1MTkQqw0urQ,1775
+simulant/mouse/__init__.py,sha256=PqVrE_bDeSmriieU54O-vmKSg80UgA4sjfnnlUFpNn0,628
+simulant/mouse/human.py,sha256=PbxG-Qdy5YLJgRS1_MyxrVuwBgrm5Il21jipK3xnVVg,1716
+simulant-0.5.6.dist-info/METADATA,sha256=vwYWdKEoz84Z_0SWjPk3hGLQ2UIWxl7UcSS5-4B4QXc,425
+simulant-0.5.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+simulant-0.5.6.dist-info/top_level.txt,sha256=ELpGJtdbuIkh3898FP9agTfuzOv_AtBQgT1k-tNOb6M,9
+simulant-0.5.6.dist-info/RECORD,,
