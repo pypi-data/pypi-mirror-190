@@ -1,0 +1,28 @@
+services:
+
+  database:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - FLASK_APP=insecure_api.server:server
+      - FLASK_ENV=development
+    volumes:
+      - database-data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    environment:
+      - DB_URI=postgresql+psycopg://postgres:postgres@database:5432/postgres
+#    volumes:
+#      - ./framtid:/framtid/framtid
+    ports:
+      - "5000:5000"
+    depends_on:
+      - database
+
+volumes:
+  database-data:

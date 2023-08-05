@@ -1,0 +1,54 @@
+openapi: 3.1.0
+
+info:
+  title: Space Travel API
+  description: An API that allows you to book space rides
+  version: v1
+
+servers:
+  - url: https://spacetravel.com
+    description: main production server
+  - url: http://localhost:5000
+    description: local development server
+
+paths:
+  # user profile can be created (POST), read (GET), updated (PUT), and deleted (DELETE)
+  # User earns credit with each travel, and they can use the credit to book free rides.
+  # Credit is available through GET. Not supposed to update with PUT, but that'll be the
+  # mass assignment test. We'll also update user rating.
+  /user:
+
+  # Destinations can only be read. There's a POST endpoint that's only for internal use.
+  # But surface attack will allow discovering the POST endpoint and use it to create
+  # random destinations. We'll do the same for the DELETE endpoint.
+  # PUT endpoint is also private. Mass assignment + surface attack may also allow editing
+  # details of one destination like the coordinates.
+  # Destinations can be narrowed down near somewhere. The nearby location is provided through a
+  # query parameter. We'll test sql injection through that.
+  /destinations:
+
+  # The /rides endpoint allows us to book a ride. We'll test sql injection through the input payload.
+  # Users should only have access to their own bookings. We'll test broken object level authorization
+  # by trying to access other users' bookings. For example, we'll update the destination of an in-progress ride.
+  /rides:
+
+components:
+  # In the schemas, we look for too much exposure of IDs, emails, and other stuff that looks sensitive:
+  # First is a static analysis of the schemas and highlight where we may think there's too much exposure.
+  # Next is using the IDs to see if we can figure out new endpoints.
+
+  # We also look for arrays without limits and test what happens if we send a million items.
+  # Need example of this...
+  schemas:
+
+
+# We'll try to access all the secured endpoints without access token to test Broken User Authentication.
+# We'll try to brute force the tokens to see if they're HS256 with weak passwords. I believe no point wiht RS256?
+# We'll try multiple login attempts in the user/password endpoint
+# If the API doesn't use JWTs, if it's random short hashes, we try the endpoints with our own random hashes
+# With a valid token, we try changing the payload, maybe the audience
+# We try with expired tokens
+# We try with alg set to none, None, noNe, False, ''
+# Try to hack around the OAuth/OIDC flows? Specially if they're custom implemented
+security:
+  -
