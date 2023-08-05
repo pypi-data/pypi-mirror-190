@@ -1,0 +1,6 @@
+OpenFisca-Core<36,>=35.2.0
+OpenFisca-France<142.0.1,>=141.0.0
+
+[test]
+nose
+pytest>=5.4.2
