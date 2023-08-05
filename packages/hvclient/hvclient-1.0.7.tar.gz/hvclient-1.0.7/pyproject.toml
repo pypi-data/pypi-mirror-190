@@ -1,0 +1,32 @@
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.2.1",
+]
+formatter = [
+    "black>=22.12.0",
+]
+lint = [
+    "pylama>=8.4.1",
+]
+
+[project]
+name = "hvclient"
+dynamic = []
+dependencies = [
+    "hvac>=1.0.2",
+    "setuptools>=66.1.1",
+]
+requires-python = ">=3.8"
+version = "1.0.7"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0",
+]
+build-backend = "pdm.pep517.api"
