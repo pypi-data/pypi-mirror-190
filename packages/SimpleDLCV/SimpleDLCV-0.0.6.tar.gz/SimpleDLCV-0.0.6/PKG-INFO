@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: SimpleDLCV
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: https://gitee.com/small_eyes_zdh/SimpleDL
+Author: zdh
+Author-email: zhoudonghui0124@163.com
+License: UNKNOWN
+Keywords: pytorch dl cv
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# SimpleDL
+
+### 介绍
+用于对基于pytorch深度学习框架的快速开发。提供一种优雅快速的开发方式----您仅需要修改配置文件或者少量代码即可完成模型的训练验证等工作。
+
+### 软件架构
+软件架构说明
+
+
+### 安装教程
+
+1.  xxxx
+2.  xxxx
+3.  xxxx
+
+### 使用说明
+> ### model（神经网络模型）的配置：   
+> model包含三个关键字，type、args、input_name，分别用来指定模型的类、模型的初始化参数以及输入模型的内容
+> *************************************
+> + type：指定模型的类。
+> + args：type类的初始参数。参数为字典类型，关键字为参数关键字，值为该关键字值。不可以省略args 参数，若如参数传入则需要指定args为空字典
+> + input_name：输入模型数据所对应的关键字。！！数据集加载时以字典方式加载多个待用数据，可能包括图像、标签、坐标等等，传入模型时需要指定模型所接受数据在数据集中所对应的关键字。
+更多详细的数据集加载问题请参考[data(数据集加载)配置](#fo)
+> + 例子：
+> ```yaml
+> "model":{
+>    type: torchvision.models.resnet.resnet34,
+>    "args": {
+>    },
+>    input_name: "img"
+> }
+> ```             
+
+
+> ### data(数据集加载)配置：
+> 
+> *************************************
+> + 例子
+> ```yaml
+>   "dataset":{
+>    type: SimpleDL.dataset.BasicDataset,
+>    "args": {
+>      base_path: "/home/zhoudonghui/dataset",
+>      behavior: [
+>        {type: SimpleDL.dataset.LoadImageBehavior, args:{transforms: *transforms}, out_name: "img"},
+>        {type: SimpleDL.dataset.ClassifiBehavior, args:{}, out_name: "label"},
+>      ]
+>    }
+>  }
+> ```
+> *************************************
+
+
+
+
+#### 参与贡献
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
+
+# fo
+
+
