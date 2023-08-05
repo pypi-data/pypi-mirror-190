@@ -1,0 +1,10 @@
+pyopenephys/__init__.py,sha256=xmQhWKWEDyuFuGHEe_kg8gFtwKV9aqv9qAVhtLwOOaQ,68
+pyopenephys/core.py,sha256=ES2CMMgT8kra_ewLkMua6LG-h4AuFbVvYTj-5HIPvOM,51204
+pyopenephys/openephys_tools.py,sha256=fzT1d7SvhcVebKxm58XjqIMobqnZfJuZZY9kfb2wPjI,7326
+pyopenephys/tools.py,sha256=_Jytx3XhhCI4pwF2s9ULC35TihaDOTLf902ziu7N5c4,6009
+pyopenephys/version.py,sha256=ieMLeOrjSJT3zobvddpSi4MZ3hUHEe63dk5832thhMc,18
+pyopenephys-1.1.6.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+pyopenephys-1.1.6.dist-info/METADATA,sha256=R4A-08vrsprEz2-uy_sXmPZ5bGggIl1ylyU14eedPlA,4638
+pyopenephys-1.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyopenephys-1.1.6.dist-info/top_level.txt,sha256=878N7dI141_vwAB9W03wwbwAgEuTyA6bPNmfZNY4ozU,12
+pyopenephys-1.1.6.dist-info/RECORD,,
