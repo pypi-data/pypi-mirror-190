@@ -1,0 +1,7 @@
+json2csv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json2csv/cli.py,sha256=ZkeZeTqroxDe-0GyQLdkfaiZ8gxt8R1UJ5pjAa_fuZc,822
+json2csv/csv_data.py,sha256=XGBNhkY_Ag1jwaP5bjQcb0wYw-xtKheS9Y0Fwhf5Jzw,867
+json2csv/json_schema.py,sha256=hUk1esyngANj3DmVvRaszdg7KcM4ktfe76BiQfKvwX0,315
+json_schema_to_csv-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+json_schema_to_csv-0.1.0.dist-info/METADATA,sha256=9ZqmsiCI_4SatfpVFa7uKkATPlpWQafXuX9U__dmbNE,465
+json_schema_to_csv-0.1.0.dist-info/RECORD,,
