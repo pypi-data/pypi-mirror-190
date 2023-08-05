@@ -1,0 +1,6 @@
+pydantic
+motor
+
+[dev]
+black
+mypy

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+fastapi_motor_oil/__init__.py
+fastapi_motor_oil/model.py
+fastapi_motor_oil/service.py
+fastapi_motor_oil/typing.py
+fastapi_motor_oil.egg-info/PKG-INFO
+fastapi_motor_oil.egg-info/SOURCES.txt
+fastapi_motor_oil.egg-info/dependency_links.txt
+fastapi_motor_oil.egg-info/requires.txt
+fastapi_motor_oil.egg-info/top_level.txt
