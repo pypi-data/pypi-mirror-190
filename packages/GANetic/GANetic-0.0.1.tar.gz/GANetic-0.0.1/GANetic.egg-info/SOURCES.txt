@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+GANetic.egg-info/PKG-INFO
+GANetic.egg-info/SOURCES.txt
+GANetic.egg-info/dependency_links.txt
+GANetic.egg-info/requires.txt
+GANetic.egg-info/top_level.txt
