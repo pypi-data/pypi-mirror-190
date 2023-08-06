@@ -1,0 +1,10 @@
+symboliq/__init__.py,sha256=DDNLYbJSwASGG5fzxrcDFC65Gmu_5LIbn_OmtlZDaTs,140
+symboliq/_version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+symboliq/_version_test.py,sha256=Z7-2wDZKZ0nryQxCZczjA97iaRsrlUbYnNS_922zbWk,235
+symboliq/dirac_notation.py,sha256=DKOJf6S3RFNxz6hFvwSmqJ-FzhF1KS7aLBBN8kmlGjc,9884
+symboliq/dirac_notation_test.py,sha256=CkqvfGHKzm9ZUrVy-fbyJcSXqMMRVU00NQoVag9Cv1A,4584
+symboliq-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+symboliq-0.0.1.dist-info/METADATA,sha256=Hc92LisHUS6yu5lcoLQRZBVwbPj3w6zc0AijkVrvffw,1716
+symboliq-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+symboliq-0.0.1.dist-info/top_level.txt,sha256=FG0u8znwhKtx4UK99iX1ua865b4dFPXHc4grimAFdDo,9
+symboliq-0.0.1.dist-info/RECORD,,
