@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_new.py
+veryacademy-sql-tools/__init__.py
+veryacademy-sql-tools/middleware.py
+veryacademy_sql_tools.egg-info/PKG-INFO
+veryacademy_sql_tools.egg-info/SOURCES.txt
+veryacademy_sql_tools.egg-info/dependency_links.txt
+veryacademy_sql_tools.egg-info/requires.txt
+veryacademy_sql_tools.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: veryacademy-sql-tools
+Version: 1.0.1
+Summary: A Django middleware package to print out queries to the terminal
+Author: Very Academy
+License: MIT
+Project-URL: Homepage, https://github.com/veryacademy
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+veryacademy-sql-tools
+==================
+A simple middleware tool for analyzing Django ORM SQL execution. You can learn how to build this middleware package on our course at Udemy. 
+
+# Usage
+Add the follow line of code to your middleware in your project settings.py file.
+```
+veryacademy-sql-tools.middleware.new_middleware
+```
+
+# How it works
+The tool uses Django built in features to inspect the SQL genrated from queries executed by the application. 3rd party tools are used to format and highlight the SQL presented in the terminal window.
