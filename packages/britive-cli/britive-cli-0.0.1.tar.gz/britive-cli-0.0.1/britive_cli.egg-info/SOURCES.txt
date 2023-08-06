@@ -1,0 +1,7 @@
+README.md
+britive-cli.py
+setup.py
+britive_cli.egg-info/PKG-INFO
+britive_cli.egg-info/SOURCES.txt
+britive_cli.egg-info/dependency_links.txt
+britive_cli.egg-info/top_level.txt
