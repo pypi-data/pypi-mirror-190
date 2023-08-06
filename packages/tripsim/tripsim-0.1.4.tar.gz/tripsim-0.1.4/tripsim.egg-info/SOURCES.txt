@@ -1,0 +1,17 @@
+HISTORY.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tests/__init__.py
+tests/test_full_sim.py
+tripsim/VERSION
+tripsim/__init__.py
+tripsim/sim.py
+tripsim.egg-info/PKG-INFO
+tripsim.egg-info/SOURCES.txt
+tripsim.egg-info/dependency_links.txt
+tripsim.egg-info/entry_points.txt
+tripsim.egg-info/requires.txt
+tripsim.egg-info/top_level.txt
+tripsim/point/__init__.py
