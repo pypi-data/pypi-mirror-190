@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vfp2py
+Version: 0.1.1
+Summary: Convert foxpro code to python
+Home-page: https://github.com/mwisslead/vfp2py
+Author: Michael Wisslead
+Author-email: michael.wisslead@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: antlr4-python3-runtime (==4.11.1)
+Requires-Dist: autopep8
+Requires-Dist: dbf
+Requires-Dist: isort (<5)
+Requires-Dist: pyodbc
+Requires-Dist: python-dateutil
+
+UNKNOWN
+
