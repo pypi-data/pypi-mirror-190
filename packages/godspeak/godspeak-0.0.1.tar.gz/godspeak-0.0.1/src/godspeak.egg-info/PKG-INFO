@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: godspeak
+Version: 0.0.1
+Summary: A PYPI package for Terry's Godspeak
+Author-email: QAEZZ <russian.devv@gmail.com>
+Project-URL: Homepage, https://github.com/The-Holy-Church-of-Terry-Davis/godspeak-package
+Project-URL: Bug Tracker, https://github.com/The-holy-Church-of-Terry-Davis/godspeak-package/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Godspeak Module
+a pypi module for godspeak 
+
+(I dont know how to use classes)
+---
+
+```python
+pip3 install godspeak
+```
+
+```python
+from godspeak import god
+god.speak(10)
+```

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/godspeak.py
+src/godspeak.egg-info/PKG-INFO
+src/godspeak.egg-info/SOURCES.txt
+src/godspeak.egg-info/dependency_links.txt
+src/godspeak.egg-info/top_level.txt
