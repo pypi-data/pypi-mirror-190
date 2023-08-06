@@ -1,0 +1,15 @@
+aiohttp<3.9,>=3.8
+pydantic<1.11,>=1.10
+pendulum<2.2,>=2.1.2
+bidict<0.23,>=0.22
+watchdog<2.3,>=2.2
+ujson<5.8,>=5.7
+paho-mqtt<1.7,>=1.6
+immutables==0.19
+eascheduler==0.1.8
+easyconfig==0.2.8
+stack_data==0.6.2
+colorama==0.4.6
+voluptuous==0.13.1
+typing-extensions<5,>=4.1
+aiohttp-sse-client==0.2.1
