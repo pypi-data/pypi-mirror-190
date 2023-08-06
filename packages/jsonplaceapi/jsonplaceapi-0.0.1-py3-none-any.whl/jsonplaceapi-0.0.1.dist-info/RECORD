@@ -1,0 +1,10 @@
+jsonplaceapi/__init__.py,sha256=K-caimzAFrPHxPPP0QB6RERKsT2oNhb97gWEg2N_jKQ,94
+jsonplaceapi/apptypes.py,sha256=3xdeS_0F6EMiO4jPFLqE_eeTvGNCfxoE_y8XVXE7XRQ,858
+jsonplaceapi/apputils.py,sha256=D10oV_nHcXFV49WvYXbNRYVl4UQ1Azm8LF-khvY0XlI,3527
+jsonplaceapi/main.py,sha256=eDtFmF-fBHPFhgnwKD8hkvzJMzAOWIHUsHa3RBjn1PA,1504
+jsonplaceapi/subtypes.py,sha256=nIB9i7CNoAuPjL6wvbfoixvXt05bdwDJ4_MGoY1eyts,262
+jsonplaceapi-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+jsonplaceapi-0.0.1.dist-info/METADATA,sha256=qRsffaLVowDr2YKFbcg4LWPmUqvr2BmvaLS5wtIpUJw,762
+jsonplaceapi-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jsonplaceapi-0.0.1.dist-info/top_level.txt,sha256=Ld8L9yQ5iIRDJuaSRgQWfyXVS6iJHf9UnZyFPWR59-c,13
+jsonplaceapi-0.0.1.dist-info/RECORD,,
