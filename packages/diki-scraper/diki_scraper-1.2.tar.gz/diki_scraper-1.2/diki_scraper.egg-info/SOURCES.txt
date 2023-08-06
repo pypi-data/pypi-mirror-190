@@ -1,0 +1,8 @@
+setup.py
+diki_scraper/__init__.py
+diki_scraper/diki.py
+diki_scraper.egg-info/PKG-INFO
+diki_scraper.egg-info/SOURCES.txt
+diki_scraper.egg-info/dependency_links.txt
+diki_scraper.egg-info/requires.txt
+diki_scraper.egg-info/top_level.txt
