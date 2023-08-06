@@ -1,0 +1,16 @@
+xrft/__init__.py,sha256=Bsf5sMi3s4X9onQ-4gtzgDjSe3lzqOQVGo74bAaAHK0,181
+xrft/_version.py,sha256=bMIenWosteoeUs51RbaWVZetIuzRhWymuyy-n0rfK0I,21
+xrft/detrend.py,sha256=gkJ0q-E3nMErnKUFNQo3QyfLzXLwVsDq7ijdqH-uBLk,3004
+xrft/padding.py,sha256=XtjvFB67RuZDrORPDDTCBAtxHxMSYirCm52hy8wO_s4,14705
+xrft/utils.py,sha256=Uu7wAfKU4Qo_61VV-N8GS-vrs2KzUqTVGKkruYr6yvo,432
+xrft/xrft.py,sha256=1RLyMEhR6vrUEW6WSz1duzejYjvArI-zNMunQ55g9rk,43609
+xrft/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xrft/tests/test_detrend.py,sha256=4LRsALBCg5vS0K7fLJokbJEcdLMOVk_tZt33NKhEQO4,3990
+xrft/tests/test_padding.py,sha256=F9v-_IUmYkjGLKOsBH2B32sG0KxTLR0juljwPCNcaJU,8403
+xrft/tests/test_utils.py,sha256=w9Zf0j0fiVJ0uF9PhjhmHHXcHPfBthHJMmCLlMnYuPw,1459
+xrft/tests/test_xrft.py,sha256=92UtbAg0t3mu5xbJhEHlxMlUoRqfUiglvPRMSVAzGNM,46285
+xrft-1.0.1.dist-info/LICENSE,sha256=VTjOjJLNntzH045tAQG_A3C31Cohnk6KY5UatXJvpTE,1103
+xrft-1.0.1.dist-info/METADATA,sha256=PIfU3mlbS1J_C7-SeHsZAZq7kTyVLY-D-P_PPGQSd8M,4127
+xrft-1.0.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+xrft-1.0.1.dist-info/top_level.txt,sha256=dVtmAH5PHsJqv1kCMBSPA1Uj2mE7scLwUtvp4Of9Bnk,5
+xrft-1.0.1.dist-info/RECORD,,
