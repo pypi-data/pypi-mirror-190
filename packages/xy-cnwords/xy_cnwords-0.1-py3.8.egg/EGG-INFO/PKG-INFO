@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: xy-cnwords
+Version: 0.1
+Summary: 星圆文字处理，基于snowNlp与jieba
+Author: Xingyuan55
+Author-email: dus0963@outlook.com
+License: Mozilla Public License 2.0
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Requires: jieba
+Requires: wheel
