@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: iAROnline
+Version: 0.0.1
+Summary: Online estimation methods for the irregularly observed autoregressive (iAR) model
+Home-page: https://github.com/felipeelorrieta/Onlineiar
+Author: Felipe Elorrieta
+Author-email: <felipe.elorrieta@usach.cl>
+License: MIT
+Description: Data sets, functions and scripts with examples to implement online estimation methods for the irregularly observed autoregressive (iAR) model (Eyheramendy et al.(2018) <doi:10.1093/mnras/sty2487>). The online learning algorithms implemented are: gradient descent (IAR_OGD), Newton-step (IAR-ONS) and Kalman filter recursions (IAR-OBR).
+Keywords: irregulary observed time series,autoregressive,online estimation methods
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
