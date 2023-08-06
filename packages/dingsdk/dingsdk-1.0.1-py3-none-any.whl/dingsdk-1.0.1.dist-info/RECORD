@@ -1,0 +1,17 @@
+dingsdk/__init__.py,sha256=C1Z3KJj7w-Gz067Z3LL91M06DVxp2GxUgLWgSMuW-9Q,62
+dingsdk/access_token.py,sha256=hVytayiYs1vzx20co83ldZL35zLCcSK3Fyf3EylJQPA,310
+dingsdk/approval.py,sha256=y-kn8Zlf_rX4Z5GIq7czqnrxRbUaj_Xrse7CYtnOFtk,8239
+dingsdk/chatbots.py,sha256=9hSO9Kws47P9U6hBhyuDJ6vHvr2y1Ym4oC_a6Vb8uBM,919
+dingsdk/contacts.py,sha256=W5JEd1aFxpaEBVeW0_rlNbgr6ZysqNIlNbnRwl3xmy0,485
+dingsdk/content_types.py,sha256=GnhryweaILQmWIKJVVw7GRmgQTM5kUQrVRN4K4OCNwM,25144
+dingsdk/core.py,sha256=17q0Pt_DBkBtiflv9gYpCJX19Xo9TKAY3GROcmCq9Sc,1995
+dingsdk/could_store.py,sha256=zKGU_gYtVX4qczYmeqD_AfWV3O1w2aJleCGqlkabyMA,1342
+dingsdk/main.py,sha256=Qu9aW0yFLnfRSXq036rz5hGPgihgL0GBUc4NzPpyr_s,256
+dingsdk/persons.py,sha256=l05bwfBWmUk6tEOVaV30F0TBJpA7QtxVUUkT9VONj5s,1599
+dingsdk-1.0.1.dist-info/LICENSE,sha256=3TV3zIaAlxUgtm8ZtyhQj3duwxwPh36_W1dCcDDeS2w,1070
+dingsdk-1.0.1.dist-info/LICENSE-APACHE,sha256=_FsPQtOm4CA4f_jDutlKX4FAGcn478KAYLR7s2OBDpI,9749
+dingsdk-1.0.1.dist-info/LICENSE-MIT,sha256=Q0uSdfekzvyAWus3ext7wOaYdx8cboD-S__sgxqi3VM,1066
+dingsdk-1.0.1.dist-info/METADATA,sha256=q_5hBnVvCnqCokxwUz7r6c-BcWajwP2MjIbDp7iwIcQ,2677
+dingsdk-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dingsdk-1.0.1.dist-info/top_level.txt,sha256=NSVzXEtKJto9DK6i89HfdIRXlrx_38OxvdiVzxEzgts,8
+dingsdk-1.0.1.dist-info/RECORD,,
