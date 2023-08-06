@@ -1,0 +1,11 @@
+FedDCM1/__init__.py,sha256=u7qx5d_rQnGZWU_K4vqDb7xBWw3_wSjx9GbUmJUVnAA,247
+FedDCM1/client_matrix.py,sha256=5Y1B_nGeu3mdmewXVgSKK7mpnwhKWb1bTK-IlWuJpqA,5224
+FedDCM1/client_single.py,sha256=kMrjdGX3W42ycUzLPDkK7A_Wm7Ji3OTL6kt4NOCm3ss,4891
+FedDCM1/dcm.py,sha256=a7hGmvvO69VuAHMiR-NieuwNDRLzwoNTlbsw_jOkltc,2998
+FedDCM1/functions.py,sha256=y8FSr6mVpSBgjz2iUvgYj3vPRJm1SBm4qMGYGpJlP60,840
+FedDCM1/server.py,sha256=V4ibO4tm2rsPzG0NZYEDSG1I1nOBv1Po6oYyY7Rphkw,6319
+FedDCM-0.0.2.dist-info/LICENSE,sha256=yb0K1D7d7sdTYekIR-ZzHWNDhRx8aUvZX6eB0Sx11iM,1107
+FedDCM-0.0.2.dist-info/METADATA,sha256=YrRlT_p2ciD3yEuhsTn7TTMP65rrMwIhOrSxlxJR7gE,594
+FedDCM-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+FedDCM-0.0.2.dist-info/top_level.txt,sha256=ygVPHf9Y6nbfrXU8MhXJYSXPkdD0Om4O0lmUoBjE1fE,8
+FedDCM-0.0.2.dist-info/RECORD,,
