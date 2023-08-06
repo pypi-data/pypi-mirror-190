@@ -1,0 +1,378 @@
+{
+  "src/lib/components/DashTest.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "DashTest",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The value displayed in the input."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/HeatmapLayer.js": {
+    "description": "",
+    "methods": [
+      {
+        "name": "createLeafletElement",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "getMax",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "props",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getRadius",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "props",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getMaxZoom",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "props",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getMinOpacity",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "props",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getBlur",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "props",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getHeatmapProps",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "props",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "updateHeatmapProps",
+        "docblock": "Update various heatmap properties like radius, gradient, and max",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "props",
+            "type": {
+              "name": "Object",
+              "alias": "Object"
+            }
+          }
+        ],
+        "returns": null,
+        "description": "Update various heatmap properties like radius, gradient, and max"
+      },
+      {
+        "name": "updateHeatmapRadius",
+        "docblock": "Update the heatmap's radius and blur (blur is optional)",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "radius",
+            "type": {
+              "name": "number"
+            }
+          },
+          {
+            "name": "blur",
+            "type": {
+              "name": "number",
+              "nullable": true
+            }
+          }
+        ],
+        "returns": {
+          "type": {
+            "name": "void"
+          }
+        },
+        "description": "Update the heatmap's radius and blur (blur is optional)"
+      },
+      {
+        "name": "updateHeatmapGradient",
+        "docblock": "Update the heatmap's gradient",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "gradient",
+            "type": {
+              "name": "Object",
+              "alias": "Object"
+            }
+          }
+        ],
+        "returns": {
+          "type": {
+            "name": "void"
+          }
+        },
+        "description": "Update the heatmap's gradient"
+      },
+      {
+        "name": "updateHeatmapMax",
+        "docblock": "Update the heatmap's maximum",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "maximum",
+            "type": {
+              "name": "number"
+            }
+          }
+        ],
+        "returns": {
+          "type": {
+            "name": "void"
+          }
+        },
+        "description": "Update the heatmap's maximum"
+      },
+      {
+        "name": "fitBounds",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": {
+          "type": {
+            "name": "void"
+          }
+        }
+      },
+      {
+        "name": "attachEvents",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": {
+          "type": {
+            "name": "void"
+          }
+        }
+      },
+      {
+        "name": "_animateZoom",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": {
+              "name": "signature",
+              "type": "object",
+              "raw": "{\n  zoom: number;\n  center: Object;\n}",
+              "signature": {
+                "properties": [
+                  {
+                    "key": "zoom",
+                    "value": {
+                      "name": "number",
+                      "required": true
+                    }
+                  },
+                  {
+                    "key": "center",
+                    "value": {
+                      "name": "Object",
+                      "required": true
+                    }
+                  }
+                ]
+              },
+              "alias": "LeafletZoomEvent"
+            }
+          }
+        ],
+        "returns": {
+          "type": {
+            "name": "void"
+          }
+        }
+      },
+      {
+        "name": "reset",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": {
+          "type": {
+            "name": "void"
+          }
+        }
+      },
+      {
+        "name": "redraw",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": {
+          "type": {
+            "name": "void"
+          }
+        }
+      }
+    ],
+    "props": {
+      "points": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": ""
+      },
+      "longitudeExtractor": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": ""
+      },
+      "latitudeExtractor": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": ""
+      },
+      "intensityExtractor": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": ""
+      },
+      "fitBoundsOnLoad": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "fitBoundsOnUpdate": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onStatsUpdate": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "max": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "radius": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "maxZoom": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "minOpacity": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "blur": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "gradient": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+}

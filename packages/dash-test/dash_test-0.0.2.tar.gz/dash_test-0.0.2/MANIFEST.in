@@ -1,0 +1,11 @@
+include dash_test/dash_test.min.js
+include dash_test/dash_test.min.js.map
+include dash_test/async-*.js
+include dash_test/async-*.js.map
+include dash_test/*-shared.js
+include dash_test/*-shared.js.map
+include dash_test/metadata.json
+include dash_test/package-info.json
+include README.md
+include LICENSE
+include package.json
