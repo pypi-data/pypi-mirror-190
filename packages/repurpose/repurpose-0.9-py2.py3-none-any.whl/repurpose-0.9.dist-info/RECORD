@@ -1,0 +1,10 @@
+repurpose/__init__.py,sha256=YwyxVLH1HZMJgsfMnAgJ2HFniknlUq13mveS9L8rvRc,593
+repurpose/img2ts.py,sha256=Z9LKAbZVvfXkg8Wcs0j-1-CiBGddesyZsVTAMvKTMGk,22997
+repurpose/resample.py,sha256=VnYAaRCYHhHisJVRnn-2zil40Kuh8ts94Ual4aOfsuA,11716
+repurpose/ts2img.py,sha256=WUcFGrvwG4TvX7W8remuDjJdcsiunA7hxlDvKSMW63I,6217
+repurpose-0.9.dist-info/AUTHORS.rst,sha256=B_4TiyzyrrLjxeizGiba6UU_M3pKejNkWKvEbcYm9Bk,154
+repurpose-0.9.dist-info/LICENSE.txt,sha256=JI7G5dseFLTp2DO5USy_TtQhIZYMMA8LAdgfNqMt3EE,1618
+repurpose-0.9.dist-info/METADATA,sha256=EzcRDsXHsEa3ZGywE6BuZCynF1rgj0WCRmuks6J0KSw,5221
+repurpose-0.9.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+repurpose-0.9.dist-info/top_level.txt,sha256=sb60S9LUnsmvFLVgddsAoMf0JNpyTkuux70oeKptRWo,10
+repurpose-0.9.dist-info/RECORD,,
