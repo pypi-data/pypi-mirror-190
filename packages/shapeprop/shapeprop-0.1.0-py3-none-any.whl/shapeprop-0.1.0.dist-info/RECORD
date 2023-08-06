@@ -1,0 +1,11 @@
+shapeprop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shapeprop/circle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shapeprop/circle/shape.py,sha256=L0MJQhvDXvli5XRR9sBVGU6DCBesy7OafZrKVhSqLZo,347
+shapeprop/triangle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shapeprop/triangle/shape.py,sha256=uqU2UYsIlQP4jJyodIYsCEp38kuNT7Sx37chP3rxb3A,298
+shapeprop/triangle/types.py,sha256=MmzHJRND6sv1bjuGDYEtPq3JRq6WgJ3Glfbr0MRnK3o,104
+shapeprop-0.1.0.dist-info/LICENSE,sha256=0qe9F6KRlTJfNs2PTn-8Dwev13u2kAmPG2_f5Rye7aw,1093
+shapeprop-0.1.0.dist-info/METADATA,sha256=2h_gwpKJFbBDztRsDLfrHa8Ee_FIf80jwQF5HREU6M4,564
+shapeprop-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shapeprop-0.1.0.dist-info/top_level.txt,sha256=hgpjXOqd3dYZcGKSHT9BrsfT7rTcPB7VHRLVnMcQUJA,10
+shapeprop-0.1.0.dist-info/RECORD,,
