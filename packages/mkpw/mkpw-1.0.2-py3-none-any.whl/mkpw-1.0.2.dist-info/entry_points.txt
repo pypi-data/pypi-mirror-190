@@ -1,0 +1,3 @@
+[console_scripts]
+mkpw = make_password:app
+
