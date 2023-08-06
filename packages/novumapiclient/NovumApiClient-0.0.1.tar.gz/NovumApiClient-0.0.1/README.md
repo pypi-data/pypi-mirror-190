@@ -1,0 +1,1 @@
+This library contains the basic api functions for Novum Service Center. 
