@@ -1,0 +1,8 @@
+dagster_twilio/__init__.py,sha256=ZPLDogK3OrNlpo9pVb3zcz9YJyCBhyPDmOv7e7JZ4lI,228
+dagster_twilio/resources.py,sha256=oYwl7XuyK8aQafdOtxUqLmSBT58t3kD-PZETPqNXaMs,451
+dagster_twilio/version.py,sha256=woU9IWXWHwuGWS0yp3QUg6UygmaKQdNq2tgod9BYEpM,24
+dagster_twilio-0.17.17.dist-info/LICENSE,sha256=-gtoVIAZYUHYmNHISZg982FI4Oh19mV1nxgTVW8eCB8,11344
+dagster_twilio-0.17.17.dist-info/METADATA,sha256=hN4r3RcMru5JX1waJTXlDrHGCB-p_zgJxt54fzc1wWc,690
+dagster_twilio-0.17.17.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dagster_twilio-0.17.17.dist-info/top_level.txt,sha256=D1N12q9c4OwVrqRpwOoN6GB3giZCUnwcvE2A9riCCGE,15
+dagster_twilio-0.17.17.dist-info/RECORD,,
