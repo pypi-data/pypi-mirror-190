@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+flask_jwt_token.egg-info/PKG-INFO
+flask_jwt_token.egg-info/SOURCES.txt
+flask_jwt_token.egg-info/dependency_links.txt
+flask_jwt_token.egg-info/top_level.txt
