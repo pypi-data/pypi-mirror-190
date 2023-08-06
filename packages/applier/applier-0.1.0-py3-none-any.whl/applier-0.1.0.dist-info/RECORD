@@ -1,0 +1,10 @@
+applier/__init__.py,sha256=8G-rLhbTJsxt8QMNfYPDILcn9K1Psojh3Vq-lntPyS4,21
+applier/app.py,sha256=538U2S2SifQXHtsGMBmxN-HSvnvRzzs4ioiia6yC8zk,513
+applier/commands.py,sha256=7fOPC6e_3qL5kWi0hxwnzIsQc9PpaCRgSGTKj8e8x-U,968
+applier/config.py,sha256=y2jBUlMbPE88A-vPk_OmgElSSw9m2e7iKb6kEJTtL1E,293
+applier/security.py,sha256=3BmYbK8gzCDfNmKyo8w0LblravO17221IN3FL7olXJY,790
+configs/applier.service,sha256=Y5cVTDDONapaBMVenhLY0SZkjdbq_Cpu5lT_-YNlNPI,324
+configs/applier.socket,sha256=mOPmsJcysxoPGH-LgxkPH6sd10jvV-sghmTCYgJLxjI,145
+applier-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+applier-0.1.0.dist-info/METADATA,sha256=hBvjPAOP4My_duv7VOag2wGXWxeQHzAhChi-2KTdcQs,595
+applier-0.1.0.dist-info/RECORD,,
