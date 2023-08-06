@@ -1,0 +1,14 @@
+pydevmgr_ua/__init__.py,sha256=p5lY5SOWrCK8lqNFbllt8tmTz-njGdTLc8Iemg3i_qo,204
+pydevmgr_ua/config.py,sha256=vnssm1_ZInLMfvQVEFTlFQXyeJ2zuvqsupRlSrGqvbc,1311
+pydevmgr_ua/register.py,sha256=HDhNC1c3TuXqrLDa-1x-jQGFlCnZR6X7SAFZ4IXZ1aY,35
+pydevmgr_ua/uabase.py,sha256=471C0OcgQXTtr-Vn6r-5dToZ6Q4EwOZggUbn1d4xLHQ,1290
+pydevmgr_ua/uacom.py,sha256=cl3K8-gVpaCl0krXumIFwsbjc2Sov0R9_w2jCO0QGUU,7344
+pydevmgr_ua/uadevice.py,sha256=ZfT3EYk6K6NpM-V4OXUSg15ETcpuXzsb0te8edYMGu8,1454
+pydevmgr_ua/uaengine.py,sha256=FiXcY_dQfc6Oay57r57lSNrtCi5IzTgeMqU3EA7LtZM,5201
+pydevmgr_ua/uainterface.py,sha256=kz9KjdtR1R_TERezAe46oNzkyEpz_-_WX-QxC2kZWCA,1159
+pydevmgr_ua/uanode.py,sha256=mzgR9AaN0fzyel91-CZUjIbhj20sRga5-QxnrbaJX6c,6020
+pydevmgr_ua/uarpc.py,sha256=9CBrSfi7SXa_MskSgHv6ZZBnigtIk6pUOaujoSpN_6U,1153
+pydevmgr_ua/variants.py,sha256=n-Du9gpq9rD-3hTFm3kUugqyat_7U7to0GZLTmA7sFM,3075
+pydevmgr_ua-0.6a6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pydevmgr_ua-0.6a6.dist-info/METADATA,sha256=sO7xCjwA0zzwEvkpddDuVdr_gRkZH6rdpmyzKAL5zg8,1908
+pydevmgr_ua-0.6a6.dist-info/RECORD,,
