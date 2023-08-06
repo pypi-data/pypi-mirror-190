@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: folktables
+Version: 0.0.12
+Summary: New machine learning benchmarks from tabular datasets.
+Author: John Miller, Frances Ding, Ludwig Schmidt, Moritz Hardt
+Author-email: hardt@is.mpg.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+
