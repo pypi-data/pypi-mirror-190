@@ -1,0 +1,11 @@
+pandas>=1.0.1
+selenium>=3.14.0
+numpy>=1.18.2
+tqdm
+beautifulsoup4
+html5lib
+xlrd
+requests_html
+requests
+webdriver-manager
+dateparser
