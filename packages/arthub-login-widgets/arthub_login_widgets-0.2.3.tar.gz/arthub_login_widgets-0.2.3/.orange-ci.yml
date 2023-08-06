@@ -1,0 +1,2 @@
+include:
+  - https://git.woa.com/lightbox/internal/workerbee_ci_template/blob/master/orange-ci-templates/main.yml

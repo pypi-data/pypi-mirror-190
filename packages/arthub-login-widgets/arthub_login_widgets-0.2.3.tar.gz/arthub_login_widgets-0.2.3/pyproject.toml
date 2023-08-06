@@ -1,0 +1,34 @@
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+include_ini = $_THM_BASE_TOX_INI
+"""
+
+[tool.flakehell]
+# Inherit the flakehell configuration from the following file. You can still
+# override settings by stating them in this config file.
+base = ["${_THM_BASE_FLAKEHELL_CONFIG}"]
+
+# How to see all linter warnings and not hide any?
+# Uncomment the following line to disable the baseline feature.
+# baseline = ""
+
+# How to clear the current baseline?
+# Remove the content from ".flakehell_baseline".
+
+# Hide all current linter warnings and focus on the future?
+# Create a new baseline file by running `thm dev` -> `tox -e lint-baseline`.
+
+[tool.isort]
+# Enforce import section headers.
+import_heading_future = "Import future modules"
+import_heading_stdlib = "Import built-in modules"
+import_heading_thirdparty = "Import third-party modules"
+import_heading_firstparty = "Import local modules"
+
+force_sort_within_sections = true
+force_single_line = true
+
+# All project unrelated unknown imports belong to third-party.
+default_section = "THIRDPARTY"
+skip_glob = "*/docs/conf.py"

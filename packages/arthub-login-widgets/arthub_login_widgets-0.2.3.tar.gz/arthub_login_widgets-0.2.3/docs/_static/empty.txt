@@ -1,0 +1,1 @@
+Empty file to ensure _static directory gets copied by sync agent.
