@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/foambryo/__init__.py
+src/foambryo.egg-info/PKG-INFO
+src/foambryo.egg-info/SOURCES.txt
+src/foambryo.egg-info/dependency_links.txt
+src/foambryo.egg-info/requires.txt
+src/foambryo.egg-info/top_level.txt
