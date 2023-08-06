@@ -1,0 +1,8 @@
+include dl_test/*.json
+include dl_test/*.css
+include dl_test/*.map
+include dl_test/*.js
+include dl_test/images/*.png
+include package.json
+include README.md
+include LICENSE
