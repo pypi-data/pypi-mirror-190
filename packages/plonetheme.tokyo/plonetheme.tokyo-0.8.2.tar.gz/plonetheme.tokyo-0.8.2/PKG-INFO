@@ -1,0 +1,404 @@
+Metadata-Version: 2.1
+Name: plonetheme.tokyo
+Version: 0.8.2
+Summary: An add-on for Plone
+Home-page: https://pypi.python.org/pypi/plonetheme.tokyo
+Author: Stefan Antonelli
+Author-email: stefan.antonelli@operun.de
+License: GPL version 2
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        
+        ========================================
+        Tokyo Theme for Plone (plonetheme.tokyo)
+        ========================================
+        
+        Tokyo Theme for Plone implements Bootstrap into Plone, with an emphasis on keeping things as close to "default" as possible.
+        
+        
+        Mostly Harmless
+        ---------------
+        
+        .. build status
+        
+        .. image:: https://img.shields.io/github/workflow/status/collective/plonetheme.tokyo/Build/0.x?label=Build
+           :target: https://github.com/collective/plonetheme.tokyo/actions/workflows/build.yml
+           :alt: Build Status
+        
+        .. coverage
+        
+        .. image:: https://coveralls.io/repos/github/collective/plonetheme.tokyo/badge.svg?branch=0.x
+            :target: https://coveralls.io/github/collective/plonetheme.tokyo?branch=0.x
+            :alt: Code Coverage
+        
+        .. pypi version
+        
+        .. image:: https://img.shields.io/pypi/v/plonetheme.tokyo.svg?label=PyPI
+            :target: https://pypi.python.org/pypi/plonetheme.tokyo/
+            :alt: Latest Version
+        
+        .. supported python versions
+        
+        .. image:: https://img.shields.io/pypi/pyversions/plonetheme.tokyo.svg?label=Python
+            :target: https://pypi.python.org/pypi/plonetheme.tokyo/
+            :alt: Supported Python Versions
+        
+        .. licence
+        
+        .. image:: https://img.shields.io/pypi/l/plonetheme.tokyo.svg?label=Licence
+            :target: https://pypi.python.org/pypi/plonetheme.tokyo/
+            :alt: License
+        
+        
+        Frontpage
+        ---------
+        
+        .. image:: https://raw.githubusercontent.com/collective/plonetheme.tokyo/0.x/docs/frontpage.png
+            :target: https://raw.githubusercontent.com/collective/plonetheme.tokyo/0.x/docs/frontpage.png
+        
+        
+        Sidebar
+        -------
+        
+        .. image:: https://raw.githubusercontent.com/collective/plonetheme.tokyo/0.x/docs/sidebar.png
+            :target: https://raw.githubusercontent.com/collective/plonetheme.tokyo/0.x/docs/sidebar.png
+        
+        
+        Mobile
+        ------
+        
+        .. image:: https://raw.githubusercontent.com/collective/plonetheme.tokyo/0.x/docs/mobile.png
+            :target: https://raw.githubusercontent.com/collective/plonetheme.tokyo/0.x/docs/mobile.png
+        
+        
+        Demo
+        ----
+        
+        - https://plonetheme.tokyo/
+        
+        
+        Features
+        --------
+        
+        - Responsive mobile first theme for Plone
+        - No Dependencies to Barceloneta
+        - No Diazo Rules
+        - No Toolbar
+        - No Portlets
+        - Plone patterns still persistent
+        - Default Bootstrap for form fields and views
+        - Bootstrap components and JavaScript
+        - Bootstrap Icons are available 
+        - Uses https://github.com/collective/collective.sidebar
+        
+        
+        Documentation
+        -------------
+        
+        Full documentation for end users can be found in the "docs" folder.
+        
+        
+        Credits
+        -------
+        
+        This theme is developed and maintained by `operun Digital Solutions <https://www.operun.de>`_. Check out other `projects <https://www.operun.de/projekte>`_ we developed based on the `Enterprise Content Management System <https://www.operun.de/produkte/enterprise-content-management-system>`_ Plone.
+        
+        
+        Translations
+        ------------
+        
+        This product has been translated into:
+        
+        - English (thanks, Netroxen)
+        - German (thanks, santonelli)
+        
+        
+        Known Issues
+        ------------
+        
+        - Some missing view overrides
+        - Some unstyled form widgets and fields
+        
+        Some views implement custom forms that do not use `z3c.form`. In these cases it's possible the form fields may be styled incorrectly. We encourage users to report missing, broken or incomplete views (see below).
+        
+        
+        Installation
+        ------------
+        
+        Install plonetheme.tokyo by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                plonetheme.tokyo
+        
+        
+        and then running ``bin/buildout``...
+        
+        
+        Versions
+        --------
+        
+        - Version 0.x contains Bootstrap 4 and works with Plone 5.2
+        - Version 1.x contains Bootstrap 5 works with Plone 5.2
+        - Version 2.x works with Plone 6
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/collective/plonetheme.tokyo/issues
+        - Source Code: https://github.com/collective/plonetheme.tokyo
+        
+        
+        Support
+        -------
+        
+        If you are having issues, please let us know. We have a issue tracker located at: https://github.com/collective/plonetheme.tokyo/issues
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        Contributors
+        ============
+        
+        
+        - Stefan Antonelli, stefan.antonelli@operun.de
+        - Jesse Stippel, jesse.stippel@operun.de
+        - Stefan Arnold, stefan.arnold@operun.de
+        
+        
+        Changelog
+        =========
+        
+        
+        0.8.2 (2023-02-07)
+        ------------------
+        
+        Changed:
+        
+        - Update package buildout to Plone 5.2.11
+          [santonelli]
+        
+        - Update note packages.
+          [santonelli]
+        
+        Fixed:
+        
+        - Fix readme badges.
+          [santonelli]
+        
+        
+        0.8.1 (2023-02-07)
+        ------------------
+        
+        Fixed:
+        
+        - Fix readme badges.
+          [santonelli]
+        
+        
+        0.8.0 (2023-02-07)
+        ------------------
+        
+        Fixed:
+        
+        - Fix postion of plone.header in @@manage-viewlets
+          [santonelli]
+        
+        Changed:
+        
+        - Update buildout to Plone 5.2.11
+          [santonelli]
+        
+        - Update Bootstrap to 4.6.2
+          [santonelli]
+        
+        - Update Bootstrap Icons to 1.10.3
+          [santonelli]
+        
+        
+        0.7.0 (2021-05-06)
+        ------------------
+        
+        Changed:
+        
+        - Added jQuery 3.5 required by Bootstrap
+          [santonelli]
+        
+        - Added scripts viewlet and moved Bootstrap JS to footer
+          [santonelli]
+        
+        Fixed:
+        
+        - Removed non existent custom.css from theme manifest.
+          [santonelli]
+        
+        - Added missing map files.
+          [santonelli]
+        
+        
+        0.6.0 (2021-04-15)
+        ------------------
+        
+        Added:
+        
+        - Re-added version pins for development packages.
+          [santonelli]
+        
+        - Add required marker via CSS.
+          [santonelli]
+        
+        - Add translations to fix file upload translations.
+          [santonelli]
+        
+        Changed:
+        
+        - Cleanup search result page.
+          [santonelli]
+        
+        - Move logo viewlet logic to viewlet code.
+          [santonelli]
+        
+        - Update buildout to Plone 5.2.4
+          [santonelli]
+        
+        Fixed:
+        
+        - Update markup from p.a.z3cform. Fix checkbox/radio field widget.
+          [santonelli]
+        
+        - Fix navbar padding on mobile devices.
+          [santonelli]
+        
+        - Added styling fixes for folder_contents structure pattern.
+          [santonelli]
+        
+        
+        0.5.0 (2020-10-06)
+        ------------------
+        
+        Added:
+        
+        - Added Bootstrap icons and make them available via bi-icon classes.
+          [santonelli]
+        
+        - Added templates for Plone's default content types.
+          [santonelli]
+        
+        Changed:
+        
+        - Changed container structure in main template.
+          [santonelli]
+        
+        - Changed pagination to use arrows instead of text.
+          [santonelli]
+        
+        - Update Bootstrap icons to 1.0.0.
+          [santonelli]
+        
+        - Bump version of collective.sidebar to 1.4.0.
+          [santonelli]
+        
+        
+        0.4.0 (2020-04-20)
+        ------------------
+        
+        Added:
+        
+        - Nothing added yet
+          [santonelli]
+        
+        Changed:
+        
+        - Cleanup, remove paddings, add wrapper in main template
+          [santonelli]
+        
+        - Rename resources
+          [santonelli]
+        
+        - Removed CSS overrides for Bootstrap styling
+          [santonelli]
+        
+        - Update config for npm / yarn
+          [santonelli]
+        
+        - Convert Less to Sass
+          [santonelli]
+        
+        Fixed:
+        
+        - Remove custom error message to fix redirection tool
+          [santonelli]
+        
+        
+        0.3.0 (2019-12-06)
+        ------------------
+        
+        Added:
+        
+        - Added Event View and Listing
+          [santonelli]
+        
+        Changed:
+        
+        - Update package for Plone 5.2 and Python 3.7
+          [ale-rt, santonelli]
+        
+        Fixed:
+        
+        - Restore barceloneta after the theme has been uninstalled (Refs. #32)
+          [ale-rt]
+        
+        - Improve reference widget styling
+          [santonelli]
+        
+        
+        0.2.1 (2019-08-20)
+        ------------------
+        
+        Fixed:
+        
+        - Fixed KeyError in @@prefs_install_products_form.
+          [sarn0ld]
+        
+        
+        0.1.0 (2019-08-14)
+        ------------------
+        
+        Added:
+        
+        - Add Event Listing and View. #19
+          [santonelli]
+        
+        - Updated password reset & recovery views with Bootstrap 4 markup.
+          [Netroxen]
+        
+        - Updated @@prefs_install_products_form view with Bootstrap 4 markup.
+          [Netroxen]
+        
+        - Updated @@edit view and form fields with Bootstrap 4 markup.
+          [Netroxen]
+        
+        - Update @@login views for Plone 5.1 and 5.2.
+          [Netroxen]
+        
+Keywords: Python Plone Theme Tokyo
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Provides-Extra: test
