@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+orbax_checkpoint.egg-info/PKG-INFO
+orbax_checkpoint.egg-info/SOURCES.txt
+orbax_checkpoint.egg-info/dependency_links.txt
+orbax_checkpoint.egg-info/top_level.txt
