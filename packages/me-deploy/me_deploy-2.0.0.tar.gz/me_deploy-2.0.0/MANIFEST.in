@@ -1,0 +1,5 @@
+recursive-include me_deploy/resources/marvell *
+recursive-include me_deploy/resources/mcu *.hex
+recursive-include me_deploy/resources/uboot *.bin
+recursive-include me_deploy/resources/vois *
+recursive-include me_deploy/mcu_tools *

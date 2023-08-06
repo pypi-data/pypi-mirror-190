@@ -1,0 +1,4 @@
+intelhex
+me-setups
+psutil
+xmodem
