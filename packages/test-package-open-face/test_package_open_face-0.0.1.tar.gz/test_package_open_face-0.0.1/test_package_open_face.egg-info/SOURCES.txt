@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+test_package_open_face/__init__.py
+test_package_open_face/run.py
+test_package_open_face.egg-info/PKG-INFO
+test_package_open_face.egg-info/SOURCES.txt
+test_package_open_face.egg-info/dependency_links.txt
+test_package_open_face.egg-info/top_level.txt
