@@ -1,0 +1,17 @@
+ribdif/__init__.py,sha256=wP3qIcg98a-24y-wCBW5i8o03gvJURnpgEXL3rt1hpM,405
+ribdif/__main__.py,sha256=-qepeFUcPkre1yw1Bi3XV1t2vVpwSAEHCByeCnQFwIA,14118
+ribdif/barrnap_run.py,sha256=CuQe2jmHn009wdTt9WeJ8uMD5XL_zw8JWH9k9wLHSLc,2818
+ribdif/in_silico_PCR.pl,sha256=wOGIndn0T1seIsgvXeiz8V0xxOyhSN8peXp4K41zcvs,18423
+ribdif/make_heatmaps.py,sha256=QdluyMG0M5JHC8ZrXxZnZnIV0UrOXxvgXgppqmvC3Vo,3649
+ribdif/msa_run.py,sha256=xpN9kCv3wma3_HrOZIOX49NTe_V_SSXuDatFkzsP490,3285
+ribdif/ngd_download.py,sha256=QLccDwEfSGcK9eNpXp8QECborg-tetH01c6eFPAL8rU,1451
+ribdif/overlaps.py,sha256=Am48zIDolBiF0ftDWM8DgID3LhuluntQtNk-GUOPUjA,6490
+ribdif/pcr_run.py,sha256=vFerubcegwYQZun5pO6PIGWZ4O2zEn1VAXOOpNE_80k,4118
+ribdif/pyani_run.py,sha256=mlRpGb9bWcB3_N_ZMY40-NBG2KhXnwIjr4gYtRCEZOw,825
+ribdif/summary_16S.py,sha256=lVtDaxd74GZ9yZ56dfHDtET29EAE2s7lqU9v6mxkehk,4849
+ribdif/utils.py,sha256=s5Ffq6Q4H7dGHjyBHxsReE4LHL0aOmxGaZyDhkxlK-U,2587
+ribdif/vsearch_run.py,sha256=VqCNv2XiSdG6voamhz0WGTELf4jKGLO395ozxmHZsZk,1103
+ribdif-1.1.1.dist-info/METADATA,sha256=qoujvo-9us0Qu2bW9PzjwRFqHF3RCR6NMVpWWW-WxaQ,1046
+ribdif-1.1.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+ribdif-1.1.1.dist-info/licenses/LICENSE,sha256=aFLFZg6LEJFpTlNQ8su3__jw4GfV-xWBmC1cePkKZVw,35802
+ribdif-1.1.1.dist-info/RECORD,,
