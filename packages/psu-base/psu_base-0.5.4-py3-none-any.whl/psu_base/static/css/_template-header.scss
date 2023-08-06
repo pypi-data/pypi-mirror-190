@@ -1,0 +1,186 @@
+@import 'variables';
+
+/** Site Header Styles **/
+
+.header-container{
+    /* position: fixed; */
+    top: 0;
+    left:0;
+    right: 0;
+    display: grid;
+    grid-template-columns: minmax(160px, 0.3fr) 1fr 1fr;
+    grid-template-areas: "logo title menu1";
+    background-color: $primary-bg-color;
+    color: $primary-fg-color;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 3px 5px;
+    font-size: 1.1em;
+    line-height: 40px;
+}
+
+/** Heading Links **/
+.header-container a{
+    color: $primary-fg-color;
+    text-decoration: underline;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/** PSU Logo **/
+.header-logo {
+    padding: 0 12px;
+}
+.header-logo img{
+    max-width:100%;
+    height:auto;
+}
+
+/** Site Title **/
+.header-title{
+    @include heading();
+    color: $primary-fg-color;
+    justify-self: start;
+    margin: auto;
+    text-align: center;
+}
+
+/** Navigation Menus **/
+.header-right {
+    float: right;
+    grid-area: menu1;
+    padding-right: 12px;
+    background-color: $primary-bg-color;
+}
+
+.dropbtn {
+    background-color: $primary-bg-color;
+    color: $primary-fg-color;
+    padding: 4px 12px;
+    font-size: 16px;
+    border: none;
+    height: 47px;
+}
+
+.header-menu {
+    float: right;
+    line-height: 20px;
+    display: block !important;
+}
+
+.menuname {
+    display: inline-block;
+}
+
+.menu-top {
+    padding: 4px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-user {
+    display: none;
+}
+
+.dev-icon {
+    display: none;
+}
+
+.header-right a.icon {
+    display: none;
+}
+
+.menu-responsive {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $primary-bg-color;
+    color: $primary-fg-color;
+    min-width: 200px;
+    z-index: 1;
+    font-size: 14px;
+    right: 0px;
+}
+
+.dropdown-content a, .dropdown-content b {
+    color: $primary-fg-color;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: darken( $primary-bg-color, 20% );
+    color: lighten( $primary-fg-color, 20% );
+}
+/* .dropdown:hover .dropdown-content {display: block;} */
+.dropdown:hover .dropbtn {
+    background-color: darken( $primary-bg-color, 20% );
+    color: lighten( $primary-fg-color, 20% );
+}
+
+
+@media screen and (max-width: 860px) {
+    .menuname {
+        display: none;
+    }
+    .dev-icon {
+        display: inline-block;
+    }
+    .dropdown-user{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header-container{
+        padding: 3px 5px;
+        grid-row-gap: 3px;
+        grid-template-columns: minmax(60px, 0.1fr) minmax(120px, 1fr) 60px;
+        grid-template-areas:
+            "logo title menu1"
+            "menu2 menu2 menu2";
+    }
+    .header-menu {
+        display: block;
+        float: left;
+        text-align: left;
+    }
+    .dropbtn {
+        display: none;
+    }
+    .dropdown-content {
+        display: none;
+        position: relative;
+        left: 0;
+        text-align: left;
+        margin: auto;
+        max-width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-content a {
+        display: block !important;
+    }
+    .header-right {
+        grid-area: menu2;
+        grid-column: 1 / -1;
+        margin: auto;
+        float: none;
+        display: none;
+    }
+    .menu-responsive a.icon {
+        float: right;
+        display: block;
+        padding: 0px 12px;
+    }
+    .menu-responsive {
+        display: block;
+        grid-area: menu1;
+    }
+}
