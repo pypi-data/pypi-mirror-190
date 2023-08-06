@@ -1,0 +1,27 @@
+[project]
+name = "TheRuffianReport"
+version = "1.0.1"  # 版本号
+authors=[
+    {name="TheRuffian",email="bugpz2779@gmail.com"}
+]
+description="Report for unittest"  # 描述
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers=[
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Natural Language :: Chinese (Simplified)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Testing",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "requests"
+]
+keywords=[ "the-ruffian", "ruffianTest", "ruffian","TheRuffian", "TheRuffianReport"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/the-ruffian/TheRuffianReport"
+"download_page" = "https://codeload.github.com/the-ruffian/TheRuffianReport/zip/refs/heads/master"
