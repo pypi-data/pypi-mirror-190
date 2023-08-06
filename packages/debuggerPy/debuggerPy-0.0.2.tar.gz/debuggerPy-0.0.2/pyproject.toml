@@ -1,0 +1,18 @@
+[project]
+name = "debuggerPy"
+version = "0.0.2"
+authors = [
+  { name="Wesley Marques", email="wesleymr59@gmail.com" },
+]
+description = "Projeto criado com o intuito de facilitar o dabug de variaveis em python"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/wesleymr59/debug-variavel-py"
+"Bug Tracker" = "https://github.com/wesleymr59/debug-variavel-py/issues"

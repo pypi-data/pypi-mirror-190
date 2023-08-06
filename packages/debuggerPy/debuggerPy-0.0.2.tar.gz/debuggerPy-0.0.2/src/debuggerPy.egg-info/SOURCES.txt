@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/debuggerPy/debugs.py
+src/debuggerPy.egg-info/PKG-INFO
+src/debuggerPy.egg-info/SOURCES.txt
+src/debuggerPy.egg-info/dependency_links.txt
+src/debuggerPy.egg-info/top_level.txt
