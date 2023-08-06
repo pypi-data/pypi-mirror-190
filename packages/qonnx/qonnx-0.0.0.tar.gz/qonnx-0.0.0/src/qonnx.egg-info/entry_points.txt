@@ -1,0 +1,3 @@
+[console_scripts]
+qonnx-cleanup = qonnx.util.cleanup:main
+qonnx-to-channels-last = qonnx.util.to_channels_last:main
