@@ -1,0 +1,13 @@
+HISTORY.rst
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/django_namespace/__init__.py
+src/django_namespace.egg-info/PKG-INFO
+src/django_namespace.egg-info/SOURCES.txt
+src/django_namespace.egg-info/dependency_links.txt
+src/django_namespace.egg-info/not-zip-safe
+src/django_namespace.egg-info/requires.txt
+src/django_namespace.egg-info/top_level.txt
