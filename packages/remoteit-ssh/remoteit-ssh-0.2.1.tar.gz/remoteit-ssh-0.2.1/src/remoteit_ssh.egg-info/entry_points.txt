@@ -1,0 +1,3 @@
+[console_scripts]
+_remoteit-ssh = remoteit_ssh.client:main
+
