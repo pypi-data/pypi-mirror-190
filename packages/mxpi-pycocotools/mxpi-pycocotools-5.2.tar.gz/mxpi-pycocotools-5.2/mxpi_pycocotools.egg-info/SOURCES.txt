@@ -1,0 +1,12 @@
+setup.py
+../common/maskApi.c
+../common/maskApi.c
+mxpi_pycocotools/__init__.py
+mxpi_pycocotools/_mask.c
+mxpi_pycocotools/coco.py
+mxpi_pycocotools/cocoeval.py
+mxpi_pycocotools/mask.py
+mxpi_pycocotools.egg-info/PKG-INFO
+mxpi_pycocotools.egg-info/SOURCES.txt
+mxpi_pycocotools.egg-info/dependency_links.txt
+mxpi_pycocotools.egg-info/top_level.txt
