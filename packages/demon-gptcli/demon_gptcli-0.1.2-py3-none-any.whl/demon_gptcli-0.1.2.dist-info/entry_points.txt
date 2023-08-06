@@ -1,0 +1,3 @@
+[console_scripts]
+gpt-cli=gpt_cli.__main__:__start__
+
