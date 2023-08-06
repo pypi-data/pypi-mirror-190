@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: isv3
+Version: 0.0.1
+Summary: isv3 - input super vrp version 3
+Author-email: Nosense <uchihanosense@gmail.com>
+Project-URL: Contact, https://www.facebook.com/nosense.mlem
+Project-URL: Github, https://github.com/bot-nosense/isv3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# isv3
+seed input project super vrp version 3 
