@@ -1,0 +1,38 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"operator bot daemon"
+
+
+import traceback
+
+
+from operbot import Handler, Storage, privileges, scan, wait
+from operbot.modules import cmd, irc, rss
+
+
+Storage.workdir = "/var/lib/operbot/"
+
+
+scan(cmd)
+scan(rss)
+
+
+def waiter():
+    got = []
+    for ex in Handler.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Handler.errors.remove(exc)
+
+
+def main():
+    #privileges("operbot")
+    irc.init()
+    rss.init()
+    wait(waiter)
+
+
+main()
