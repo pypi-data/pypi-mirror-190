@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+snlquest.egg-info/PKG-INFO
+snlquest.egg-info/SOURCES.txt
+snlquest.egg-info/dependency_links.txt
+snlquest.egg-info/requires.txt
+snlquest.egg-info/top_level.txt
