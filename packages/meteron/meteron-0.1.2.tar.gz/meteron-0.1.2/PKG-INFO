@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: meteron
+Version: 0.1.2
+Summary: Queuing, storage, metering, rate limiting for AI
+Home-page: https://meteron.com
+Download-URL: https://github.com/meteron-ai/meteron-python
+Author: Karolis Rusenas
+Author-email: karolis@rusenas.dev
+License: Apache License 2.0
+Keywords: deep learning,ML,AI
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Meteron AI
+
+Installation:
+
+```bash
+pip install meteron
+```
+
+Usage:
+
+```python
+import json
+
+from meteron import Cluster
+
+# Create your cluster that has one or more servers.
+# In this example we will use https://lightning.ai/muse
+cluster = Cluster(cluster='lightning-muse',
+                  servers=[{
+                      'url': 'https://ulhcn-01gd3c9epmk5xj2y9a9jrrvgt8.litng-ai-03.litng.ai/api/predict'
+                  }])
+
+cluster.initialize()
+
+# Send the request to the cluster
+result = cluster.image_gen(data=json.dumps({'prompt': 'spaceships above alien planet'}))
+
+# Do whatever you want with the result
+```
