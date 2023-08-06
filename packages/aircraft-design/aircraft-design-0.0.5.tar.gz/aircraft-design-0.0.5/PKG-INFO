@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aircraft-design
+Version: 0.0.5
+Summary: Biblioteca para fazer análises de aeronaves
+Home-page: UNKNOWN
+Author: NisusAerodesign Irisson Lima
+Author-email: ufsc.nisus@gmail.com
+License: MIT
+Keywords: aircraft design VLM vortex lattice
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# aircraft-design
+Projeto Desenvolvido pelos membros da equipe de competição NISUS-aerodesign para facilitar análises de aeronaves por meio da ferramenta de *Vortex lattice*.
+
+
