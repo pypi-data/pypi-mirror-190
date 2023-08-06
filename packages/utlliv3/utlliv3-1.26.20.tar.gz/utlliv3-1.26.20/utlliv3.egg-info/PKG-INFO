@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: utlliv3
+Version: 1.26.20
+Summary: HTTP library with thread-safe connection pooling, file post, and more.
+Home-page: https://urllib3.readthedocs.io/
+Author: Andrey Petrov
+Author-email: rubberswan007@gmail.com
+License: MIT
+Project-URL: Documentation, https://urllib3.readthedocs.io/
+Project-URL: Code, https://github.com/urllib3/urllib3
+Project-URL: Issue tracker, https://github.com/urllib3/urllib3/issues
+Keywords: urllib httplib threadsafe filepost http https ssl pooling
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*
+Description-Content-Type: text/x-rst
+Provides-Extra: brotli
+Provides-Extra: secure
+Provides-Extra: socks
+License-File: LICENSE.txt
+
+
+This package is a copy of the orignal urllib3. Used for research purposes, but should not be used by others. urllib3 is a powerful, *user-friendly* HTTP client for Python. Much of the
+Python ecosystem already uses urllib3 and you should too.
+urllib3 brings many critical features that are missing from the Python
+standard libraries:
+
+- Thread safety.
+- Connection pooling.
+- Client-side SSL/TLS verification.
+- File uploads with multipart encoding.
+- Helpers for retrying requests and dealing with HTTP redirects.
+- Support for gzip, deflate, and brotli encoding.
+- Proxy support for HTTP and SOCKS.
+- 100% test coverage.
+
+urllib3 is powerful and easy to use:
+
+.. code-block:: python
+
+    >>> import urllib3
+    >>> http = urllib3.PoolManager()
+    >>> r = http.request('GET', 'http://httpbin.org/robots.txt')
+    >>> r.status
+    200
+    >>> r.data
+    'User-agent: *\nDisallow: /deny\n'
+
+
+Installing
+----------
+
+urllib3 can be installed with `pip <https://pip.pypa.io>`_::
+
+    $ python -m pip install urllib3
+
+Alternatively, you can grab the latest source code from `GitHub <https://github.com/urllib3/urllib3>`_::
+
+    $ git clone https://github.com/urllib3/urllib3.git
+    $ cd urllib3
+    $ git checkout 1.26.x
+    $ pip install .
+
+
+Documentation
+-------------
+
+urllib3 has usage and reference documentation at `urllib3.readthedocs.io <https://urllib3.readthedocs.io>`_.
