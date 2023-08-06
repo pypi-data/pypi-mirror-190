@@ -1,0 +1,101 @@
+{% load base_taglib %}
+{% load sass_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {%if is_development%}
+            DEV:
+        {%elif is_non_production%}
+            STAGE:
+        {%endif%}
+        {% block title %}Portland State University{% endblock %}
+    </title>
+    <link rel="shortcut icon" href="{%static_content_url%}/images/favicon.ico" type="image/x-icon">
+    {%jquery%}
+    {%bootstrap%}
+    {%font_awesome version='4'%}
+
+    {% wdt_stylesheet 'legacy.css' %}
+    {% wdt_stylesheet 'main.css' %}
+    {% wdt_stylesheet 'fonts.css' %}
+    {% wdt_javascript "ajax.js" %}
+    {% wdt_javascript 'utils.js' %}
+    {% wdt_javascript 'flash-messages.js' %}
+    {% wdt_javascript 'filter-generator.js' %}
+    {% jquery_confirm %}
+
+    
+    {% if use_local_static %}
+        <link href="{%sass_src 'css/template.scss'%}?app={%app_code%}&v={%app_version%}" rel="stylesheet" type="text/css" />
+    {% else %}
+        <link href="{%static_content_url%}/wdt/apps/{%app_code%}/template.css?app={%app_code%}&v={%app_version%}" rel="stylesheet" type="text/css">
+    {% endif %}
+
+    {% block head %}{% endblock %}
+    {% block scripts %}{% endblock %}
+</head>
+<body>
+    {% include '_components/header/grid.html' %}
+    {%if 'downtime_messages'|feature:True%}{%downtime_messages%}{%endif%}
+
+    {%if next_downtime%}
+        {%if active_downtime%}
+            <div class="alert alert-danger">
+                {%fa fa-exclamation-triangle%}
+                This site currently undergoing scheduled maintenance.
+                You may experience errors, and any changes you make may be lost.
+                We recommend you check back later.
+            </div>
+        {%else%}
+            <div class="alert alert-info">
+                {%fa fa-clock-o%}
+                This site will be going offline in {{next_downtime.minutes_until_start}} minutes.<br />
+                <div class="indent" style="padding-top:7px;"><em>{{next_downtime.reason}}</em></div>
+            </div>
+        {%endif%}
+    {%endif%}
+
+    <div id="breadcrumb-container" class="breadcrumbs">{% block breadcrumbs %}{% endblock %}</div>
+    {% include '_components/message_container.html' %}
+    <div id="psu-main-content-block">
+    {% block pagecontent %}
+    <br />
+    Put your content here...<br />
+    <br />
+    {% endblock %}
+    </div>
+
+    {% include '_components/footer.html' %}
+
+    {# Set the color of the PSU logo #}
+    {% if modify_logo %}
+        <script type="text/javascript">
+            {% if modify_logo_calculate %}
+                if(typeof setPsuLogoColor === "function"){
+                    setPsuLogoColor();
+                }
+            {%else%}
+                $('.header-logo').find('img').css('filter', '{{modify_logo_filter}}');
+            {%endif%}
+        </script>
+    {%endif%}
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            let bc = $('#breadcrumb-container');
+            if(bc.html() == ''){
+                bc.remove();
+            }
+        });
+
+        {%include '_components/session_counter.js'%}
+    </script>
+    {## Run AdminScripts if enabled ##}
+    {%admin_script%}
+</body>
+</html>
+
