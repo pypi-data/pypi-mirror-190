@@ -1,0 +1,17 @@
+preserves/__init__.py,sha256=_AJbPmxqoWPyuWTObkEBH0MmUJI7_pWK_V63ef1OrFs,493
+preserves/binary.py,sha256=NyU4WxZGxGAwJ_dyxhWoBrz67G8Gn2njNC7Q2B8hpV4,8278
+preserves/compare.py,sha256=26tegyRBOxB-SKoCrDZrqYRs-PwRK8Du5wuPryDri3M,3842
+preserves/compat.py,sha256=jddHG5KMpNF7OTdUS2Fj60TIAuC6U9I11bRybKRbIQg,214
+preserves/error.py,sha256=1a018tblp3gw9qyEh-33Kl6YaDmt_LAlm9FcbUEwW-U,109
+preserves/fold.py,sha256=1LARJ5wAZQ7rxLMaspohuQgYK8EGp8Sop2bYo7_xaMw,613
+preserves/merge.py,sha256=r_wNrAkgvhJZN6ka6-Pd3n-XGw8MXkd__Tfq9Ylri0Q,1504
+preserves/path.prb,sha256=3cRDNWmQetE-jEW8r90CgLrjDC27q85JohOM4uTsDc0,2089
+preserves/path.py,sha256=Che8AKcmydkBhdY9eLNC1tT4rxswhcFAaYRau9wNEBY,12138
+preserves/schema.prb,sha256=2shAmGlu4M6HpoIpa77chDMerOi1ZKdumUrF-637VJY,2936
+preserves/schema.py,sha256=2qBWk5LFZQufd4gplY0_u9Iwaty6nr675l38b81tRMQ,17373
+preserves/text.py,sha256=fcylJAG0N5TVtXcucnaZOegphIvtFxMOKpBLEbBbJ6g,13944
+preserves/values.py,sha256=alIfkY6DrssdLdez8tGmsRvVy65kQm89Yizrtl2Sqrw,11228
+preserves-0.17.0.dist-info/METADATA,sha256=riJ73RxsPg-UziZbwonJV-sj7z_mV0R4fF4roV_T16M,552
+preserves-0.17.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+preserves-0.17.0.dist-info/top_level.txt,sha256=xgFjfvm2n7THVOaqXYIGVBxLxFMtzoMH2R34ZLbZVzs,10
+preserves-0.17.0.dist-info/RECORD,,
