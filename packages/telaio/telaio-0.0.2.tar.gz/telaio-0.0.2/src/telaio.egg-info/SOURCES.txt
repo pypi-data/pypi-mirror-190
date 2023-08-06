@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/telaio/__init__.py
+src/telaio/video_file.py
+src/telaio.egg-info/PKG-INFO
+src/telaio.egg-info/SOURCES.txt
+src/telaio.egg-info/dependency_links.txt
+src/telaio.egg-info/requires.txt
+src/telaio.egg-info/top_level.txt
