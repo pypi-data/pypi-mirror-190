@@ -1,0 +1,11 @@
+views/__init__.py,sha256=vGalnuaG6yNyWKpIRIRIdzspg1nbTkIF_Oju8ycHzG4,293
+views/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+views/utilities.py,sha256=oVjx_el6Stn0lGRlO0Zxudju6OoEGGHQfoQNaWoftcA,2917
+views/views.py,sha256=dkZVxplGvJOfnp3bIQ-b5kn42SzeiVUVhWNA99iAhGQ,4674
+views/tests/__init__.py,sha256=d8K10lTC049JSCqyLfJG8IdYtpsAEtSfCumJKJM1ZmQ,30
+views/tests/test_utilities.py,sha256=rafS3WIjypE4YMWnOeoRtF8ZLTsiNkg4LaxgKqCOMOM,10619
+views_py-2.0.0.dist-info/LICENSE,sha256=gmGw2eF8j5p9GvpqPBRObIFwYOfx_5ZJaXy3FdIj84Q,1066
+views_py-2.0.0.dist-info/METADATA,sha256=6H2M-re2n52H8N5CI5N1bgHvwFr_optmFhQ0DW66bAI,1468
+views_py-2.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+views_py-2.0.0.dist-info/top_level.txt,sha256=3mlhwPWKTlJcMay5h2UNVtu5lyKS4xeNefwwrym1Ntk,6
+views_py-2.0.0.dist-info/RECORD,,
