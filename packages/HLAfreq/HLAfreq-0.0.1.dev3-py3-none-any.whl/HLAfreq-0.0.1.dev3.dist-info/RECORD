@@ -1,0 +1,11 @@
+HLAfreq/HLAfreq.py,sha256=z0vbPZuq7v7rYAN1I_QAq1uSJ5Ek7N6nkmL6-VjL54o,27524
+HLAfreq/HLAfreq_data.py,sha256=QO08lg3-V-m4X9ZtQwH8GZ03M5aUyyvnQ7wSKRqkJCE,392
+HLAfreq/HLAfreq_pymc.py,sha256=f7VguI5nWh6ADjjnl_PL3wAjZnWUgKXO9YYijwhzrfw,4084
+HLAfreq/__init__.py,sha256=hthuig93fXPFplCvEvP9lYVMKj23N3u5UCiome1oeG0,22
+HLAfreq/data/HLA1supertypes_Sidney2008.csv,sha256=JYcpSVbDhMm--tujyrdQHsLFaUrcWOkHnjw1yvmKqjU,12117
+HLAfreq/data/countries.csv,sha256=J5uLTSIv8L4YGqMC4dpuRm2rWoRz9fu2XLYPoUpPbxc,8988
+HLAfreq-0.0.1.dev3.dist-info/LICENSE,sha256=1uWBppkyOz-NnKQu7i0n846cYfDMuoWa2uFXRN9cEvg,1070
+HLAfreq-0.0.1.dev3.dist-info/METADATA,sha256=QM8uIAY-MlCyQaxONf6PMv4NwftDlwlInpLJ6zWVosc,3804
+HLAfreq-0.0.1.dev3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+HLAfreq-0.0.1.dev3.dist-info/top_level.txt,sha256=nOkXpuayfwHQDlk3jQbrB63e5ZA7_aZt5pC_mIWOHL0,8
+HLAfreq-0.0.1.dev3.dist-info/RECORD,,
