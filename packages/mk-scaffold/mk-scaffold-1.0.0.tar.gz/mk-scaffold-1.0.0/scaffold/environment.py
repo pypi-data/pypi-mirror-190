@@ -1,0 +1,51 @@
+"""
+Jinja2 environment and extensions loading.
+
+Source: https://github.com/cookiecutter/cookiecutter
+"""
+import sys
+
+from jinja2 import Environment, StrictUndefined
+
+
+class ExtensionLoaderMixin:
+    """
+    Mixin providing sane loading of extensions specified in a given context.
+    """
+
+    def __init__(self, *_args, context=None, path=None, **kwargs):
+        """
+        Initialize the Jinja2 Environment object while loading extensions.
+        """
+        extensions = [
+            "scaffold.extensions.JsonifyExtension",
+            "scaffold.extensions.RandomStringExtension",
+            "scaffold.extensions.UUIDExtension",
+            "scaffold.extensions.SlugifyExtension",
+            "jinja2_time.TimeExtension",
+        ]
+        extensions += context or []
+
+        # Add template path to sys.path for loading
+        if path is not None:
+            sys.path.append(path)
+
+        super().__init__(extensions=extensions, **kwargs)
+
+
+class StrictEnvironment(ExtensionLoaderMixin, Environment):
+    """
+    Create strict Jinja2 environment.
+
+    Jinja2 environment will raise error on undefined variable in template-
+    rendering context.
+    """
+
+    def __init__(self, *_args, **kwargs):
+        """
+        Set the standard Cookiecutter StrictEnvironment.
+
+        Also loading extensions defined in mk-scaffold 'extensions' key.
+        """
+        super().__init__(**kwargs)
+        self.undefined = StrictUndefined
