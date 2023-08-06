@@ -1,0 +1,3 @@
+[console_scripts]
+nospace=nospace.nospace:main
+
