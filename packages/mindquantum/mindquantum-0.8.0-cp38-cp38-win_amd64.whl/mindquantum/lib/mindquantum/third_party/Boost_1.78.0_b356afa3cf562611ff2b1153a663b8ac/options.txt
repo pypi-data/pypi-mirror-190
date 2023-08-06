@@ -1,0 +1,3 @@
+7.3.0-7.3.0-
+            GIT_REPOSITORYhttps://gitee.com/dnguyen/boost-source-codeGIT_TAGv1.78.0-winLIBSserializationfilesystemsystemVER1.78.0MD5xxxxxPATCHESPRE_CONFIGURE_COMMANDbootstrap.batmingwSKIP_BUILD_STEPINSTALL_COMMAND./b2--with-headers--prefix=@PREFIX@--with-serialization--with-system--with-filesystemvariant=debug,releasetoolset=gccinstallTARGET_ALIASmindquantum::boost_headersBoost::headersmindquantum::boost_serializationBoost::serializationmindquantum::boost_systemBoost::systemmindquantum::boost_filesystemBoost::filesystem - - 
+            ----
