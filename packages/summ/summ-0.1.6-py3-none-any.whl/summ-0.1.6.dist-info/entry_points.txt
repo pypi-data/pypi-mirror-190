@@ -1,0 +1,2 @@
+[console_scripts]
+summ-example = examples.otter.implementation.__main__:main
