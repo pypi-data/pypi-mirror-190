@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: InspiroQuotes
+Version: 1.0.2
+Summary: An API using Inspiro AI quote generator.
+Home-page: https://github.com/SOME-1HING/InspiroQuotes
+Author: SOME1HING
+Author-email: yashprakash2005@gmail.com
+License: GNU General Public License v3.0
+Keywords: telegram,inspiro,quote,ai,inspiroquoute,bot,api,gban,scan
+Classifier: Framework :: AsyncIO
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/markdown
+
+# InspiroQuotes
+
+An API using Inspiro AI quote generator.
+
+## Installation
+
+```Python
+pip install InspiroQuotes
+```
+
+## Example
+
+- For General Purpose
+
+```Python
+from InspiroQuotes import Quote
+
+Q = Quote()
+
+img_link1 = Q.quote()
+img_link2 = Q.quote()
+text_quote = Q.text_quote()
+
+print(img_link1)
+print(img_link2)
+print(text_quote)
+
+```
+
+- For Telegram
+
+```Python
+from InspiroQuotes import Quote
+from pyrogram import filters, Client
+from pyrogram.types import Message
+
+Q = Quote()
+pbot = Client("PyroBot", api_id="API_ID", api_hash="API_HASH", bot_token="TOKEN")
+
+
+@pbot.on_message(filters.command("quote"))
+async def sauce(_, message: Message):
+    quote_url = await Q.quote()
+    return await message.reply_photo(photo=quote_url)
+
+
+@pbot.on_message(filters.command("tquote"))
+async def sauce(_, message: Message):
+    text_quote = await Q.text_quote()
+    return await message.reply_text(text_quote)
+
+```
