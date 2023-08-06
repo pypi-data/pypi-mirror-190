@@ -1,0 +1,208 @@
+Metadata-Version: 2.1
+Name: bbcpy
+Version: 0.1.1
+Summary: A novel Python BCI toolbox
+Home-page: https://github.com/bbcpy/bbcpy
+Author: Neurotechnology Group TU Berlin
+Author-email: bbcpy@tu-berlin.de
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: pyriemann
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# BBCpy
+
+[![Build Status](https://github.com/bbcpy/bbcpy/blob/2354d48ec0beb8aaa31b87ef3943428419f04c4a/.github/test-coverage.svg)](https://travis-ci.com/pulyaevskiy/test-coverage)
+![Coverage](https://github.com/bbcpy/bbcpy/blob/2354d48ec0beb8aaa31b87ef3943428419f04c4a/.github/docstr-coverage.svg)
+
+
+Write everything that is needed to be known to develop within this project into this readme. 
+This serves as a reminder to ourselves but also to facilitate collaboration. 
+
+Don't hesitate too long to write what you find or know. If its wrong it still helps to progress from there. 
+If someone else knows better that is good for the project. 
+Try to describe also some 'easy' things that can be googled but not the very basic python stuff. 
+It's always good to document why we did certain things in certain ways.
+
+## Basic Structure
+
+There are different specific datatypes for each application. These come with a number of methods and are derived from 
+numpys np.ndarray. This makes them compatible with scikit-learn, pytorch and other toolboxes.
+
+### Data structure and Indexing
+The data structure is similar to scikit-learn. The first dimension is the epochs, the second the channels and the last 
+the time domain.
+
+Indexing also works with strings to direclty work with units or channel names e.g..
+```
+#select all but some (here exclude all frontal and fronto-central) channels:
+print(imagVPaw['~F*'].shape)
+#can also be combined - selecting all frontal channels except for 7 and 8s e.g.:
+print(imagVPaw[['F?', '~*7', '~*8']].shape)
+print(imagVPaw[['F?,~*7,~*8']].chans)
+#adding advanced slicing with units - e.g. 2s to 5s in steps of 100ms:
+print(imagVPaw['~F*', '2s:5s:100ms'].shape)
+#you may also select single time points:
+print(imagVPaw[:, '2s,5s,100ms'].shape)
+#the same can be separated in a list:
+print(imagVPaw[:, ['2s', '5s', '100ms']].shape)
+
+cnt_bp = imagVPaw.lfilter(band)
+epo_bp = cnt_bp.epochs(ival)
+
+#also works on epoched data, also with comma separation, each taken individually
+print(epo_bp[:, ['C?,~*3,~*4', 'FC*,~*3,~*4']].chans)
+```
+
+
+### Functions
+The *bbcpy.function* libraries consists of different submodules that are named by their specification. Everything here 
+can be directly used within our scikit-learn compatible *bbcpy.pipeline*.
+
+Everything in *bbcpy.functions* that starts with a capital letter (*bbcpy.spatial.CSP* e.g.) is directly implemented as 
+a transformer and needs to be fitted (*.fit()*) before being applied (*.transform()*).
+
+It is easy to import other functions into the toolbox using *bbcpy.functions.base.ImportFunc*. You can also directly use
+numpy compatible functions in the pipeline but that does not guarantee that the indivudal datatype is not lost and
+(standard) parameters are not straightforwardly implemented.
+
+*pipeline = bbcpy.pipeline.make_pipeline(np.mean)* calculates the mean over all dimensions, while
+*pipeline = bbcpy.pipeline.make_pipeline(bbcpy.functions.base.ImportFunc(np.mean, axis=-1, outClass='same'))* makes it 
+work in the time domain and keeps the class.
+
+You can also import a function to be used on data directly:
+mean = bbcpy.functions.base.ImportFunc(np.mean, axis=-1, outClass='same')
+mean(data)
+
+
+## Demo.py
+There is a demo.py, which you can use to test some basic functionalities/play around etc.
+
+## Development
+
+This project defines specific requirement versions. To minimize version conflicts with already installed libraries 
+you should either set up a virtual environment or use a docker container for development.
+In case you use an IDE (like PyCharm) you might need to configure it to use the virtual environment as-well.
+
+In case your installed `python --version` differs from the required 3.10 the docker approach may be appropriate.
+
+Daniel does not like that. We want a toolbox that rather works everywhere. 
+He thinks we should only specify a minimum version.
+Also some of the selcted versions did lead to errors.
+
+### Package Structure
+The folder structure of the project is inline with the necessities of a package. There needs to be a folder named after 
+the project in order to be importable using `import bbpy.whatever` etc.
+Within the bbcpy folder the actual code should go. The submodules are organized in subfolders. 
+The structure is sofar just a suggestion and debatable (best via github issues etc). 
+Refactoring works like a charm with pycharm.
+
+Every folder that has an `__init__.py` can basically be imported. 
+The file can be empty but then nothing is imported by `import bbcpy` only the folder can be searched and imported 
+by `from bbcpy import types` e.g..
+
+### Virtual Environment
+
+Python 3 supports virtual environments natively with the [venv module](https://docs.python.org/3/tutorial/venv.html).
+
+The following commands create the virtual environment `.venv` and install all dependencies defined in 
+`requirements.txt`. The virtual environment needs to be active in the terminal you work with. 
+Use `source .venv/bin/activate` to activate it in the bash shell or `.venv\Scripts\activate.bat` on Windows. 
+More information can be found [here](https://docs.python.org/3/tutorial/venv.html).
+
+*Note: `python` may refer to version 2 on your system, in that case use `python3` in the commands instead.*
+
+Example for Linux with bash shell:
+```sh
+# create virtual environment "venv"
+python -m venv .venv
+# activate environment
+source .venv/bin/activate
+# install dependencies
+pip install -r requirements.txt
+```
+
+
+
+### Docker DEPRECATED
+ 
+WARNING THIS DOCKER DOC IS DEPRECATED COPIED FROM AN OLD PROJECT. NEEDS TO BE UPDATED AS SOON AS WE'VE SET UP THE GIT  
+
+The docker container contains python 3.8 and all dependencies from the `requirements.txt` at the time of building and is
+based on a modern ubuntu image.  
+To download from or publish to the container registry you need to log in first with your tu gitlab account. 
+In case you have 2FA enabled you need to use a 
+[personal access token](https://git.tu-berlin.de/help/user/profile/personal_access_tokens.md) instead of your password. 
+The scopes `read_registry` and `write_registry` should suffice.
+
+The following command creates and starts the container named `bci-dev` and mounts the current directory inside.
+
+```sh
+# login if you have not already
+docker login git.tu-berlin.de:5000
+# run container and access it's terminal
+docker run -it --name bci-dev -v "$(pwd)":/home git.tu-berlin.de:5000/roydick1.0/bcifntd2020ws:dev
+```
+
+You can work and edit files normally and may test and execute from the command line within the container.  
+The python executable is `python3`.
+
+If you need other dependencies you can simply use `apt` or `pip` to install them inside the container or edit the 
+`requirements.txt` and build your own image with the `Dockerfile`.
+
+### Testing
+
+Currently, a badly copied and not working unit_testing with nose is implemented. 
+If you run
+```sh 
+py setup.py test
+```
+It complains to be deprecated and to rather use tox:
+>WARNING: Testing via this command is deprecated and will be removed in a future version. Users looking for a generic test entry point independent of test runner are encouraged to use tox.
+
+To run nose alone, just type:
+```sh
+#install nose first (see https://python-packaging.readthedocs.io/en/latest/testing.html)
+pip install nose
+#then run tests 
+nosetests
+```
+The tests should go into the `bbcpy/tests` directory.
+
+### Building Wheels to use with pip
+
+Currently and old-fashioned installation using setuptools is implemented which gives the following waring: 
+> >SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
+
+In order to build wheels with pip, first run the setup.py and build the package (/build):
+```sh   
+py setup.py build 
+```
+In the setup.py all the settings for the installation etc are given. 
+This includes descriptions and info that will be contained on pypi. Please update. 
+Also the version number is initialized, here.
+
+After that, use build to construct the wheels distribution (/dist):
+```sh
+#if you haven't so far, install build
+py -m pip install --upgrade build     
+#then run it
+py -m build
+```
+and then finally upload the wheel to pypi:
+```sh
+#if you haven't so far, install twine
+pip install twine
+#and then run it to upload to pypi
+py -m twine upload --repository pypi dist/* 
+```
+Finally, the new version is uploaded and can be installed anywhere by
+```sh
+pip install bbcpy
+```
