@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: musif
+Version: 1.0.0
+Summary: Music feature extraction library from the DIDONE project
+License: MIT
+Author-email: Didone Project <didone@iccmu.es>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# musif
+
+Python library for **Music Feature Extraction and Analysis**, developed by [Didone Project](https://didone.eu/). 
+
+For more info, see the documentation website at: https://didoneproject.github.io/musif
+
