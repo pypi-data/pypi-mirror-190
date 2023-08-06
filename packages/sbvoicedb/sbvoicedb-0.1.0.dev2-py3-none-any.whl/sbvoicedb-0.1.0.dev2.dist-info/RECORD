@@ -1,0 +1,10 @@
+sbvoicedb/__init__.py,sha256=zjlLqGwoqYtULgYee21lSWn-iFp9JlXK85lNge9_nps,128
+sbvoicedb/common.py,sha256=E31ESlZzEPHNfXM7aiqykOp04Z9oVtVYp6VTsxcIS7Q,1662
+sbvoicedb/database.py,sha256=x4SJfcqVjDUxNW0hmaYqGvP83JkG9wvTCChS1D9QW2k,27253
+sbvoicedb/download.py,sha256=v6Qn_TLyyQS6yrR0ynFaBZlprRT-YwDGqQksNvkPaAk,8141
+sbvoicedb/process.py,sha256=2fhQFaO56yUhcMHmmYd_zbb9ApXQGvWefKjMsRvS-HU,3536
+sbvoicedb-0.1.0.dev2.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+sbvoicedb-0.1.0.dev2.dist-info/METADATA,sha256=Aqdz6F0onLweceR7qZnSQQr6pTLLVCgu_XLEb6IlF4c,2868
+sbvoicedb-0.1.0.dev2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sbvoicedb-0.1.0.dev2.dist-info/top_level.txt,sha256=i9Kx-Akf88zqrB93yzLdb2njlx5dElPXN3WH0WBe5xI,10
+sbvoicedb-0.1.0.dev2.dist-info/RECORD,,
