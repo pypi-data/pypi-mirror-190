@@ -1,0 +1,8 @@
+gha_python_packaging_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gha_python_packaging_demo/app.py,sha256=AZDjC3GisP0IJ2vJNLvdy0JsAl25I7PDkU8PaPasgww,326
+fedeful_test-0.0.2.dist-info/LICENSE,sha256=qPDaoyiS7EmVgyZIuSrCHRWRfzrf5bO4Oy-cPpm_g4A,1315
+fedeful_test-0.0.2.dist-info/METADATA,sha256=cm2_CxYqBB39WK8uGAR6x_utGg9eypMFtqrmQR86WR8,727
+fedeful_test-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fedeful_test-0.0.2.dist-info/entry_points.txt,sha256=waFJf_HJf_gtPHzGG9TiwiQ0o3xDPJ4hWchy0MPsWNw,88
+fedeful_test-0.0.2.dist-info/top_level.txt,sha256=iDFxzCeVt7tYvobcSACZb5JWJEWylrNBp5ELxmgeERo,26
+fedeful_test-0.0.2.dist-info/RECORD,,
