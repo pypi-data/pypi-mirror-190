@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: malicious-donotinstall-httpspost
+Version: 0.0.3
+Summary: Malicious package (HTTPS post), do not install
+Home-page: https://github.com/invalid/nonexistent
+Author: Ben Wiederhake
+Author-email: BenWiederhake.GitHub@gmx.de
+License: MIT
+Keywords: malicious donotinstall
+Platform: Any
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.28.1)
+
+Malicious package (HTTPS post), do not install
