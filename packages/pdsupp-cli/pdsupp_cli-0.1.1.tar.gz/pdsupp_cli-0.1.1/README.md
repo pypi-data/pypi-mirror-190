@@ -1,0 +1,72 @@
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/PagerDuty/pdsupp_cli/tree/main.svg?style=svg&circle-token=8eba9a14bddce13134d9dac56397a8ef2506dd60)](https://dl.circleci.com/status-badge/redirect/gh/PagerDuty/pdsupp_cli/tree/main)
+
+# [Automatic Dev Docs](https://probable-fiesta-292lyp2.pages.github.io/pdsupp_cli.html)
+
+# Installation & Use (note: **Pre-Release**)
+
+[PyPi Index Link](https://pypi.org/project/pdsupp-cli/)
+
+Install:
+```bash
+pip install pdsupp_cli
+```
+
+Use:
+```bash
+pspdbeta --help
+```
+
+# Goal:
+
+### 1 - User Accessibility
+Move the hard work represented in [PagerDuty Public Support Scripts](https://github.com/PagerDuty/public-support-scripts) to an accessible, user-friendly, but low-maintenance CLI framework.
+
+Offer basic help, parsing, and a `pip install ...` option for users.
+
+### 2 - Developer Confidence
+Add unit and integration tests to the varous script conversions to make extension and maintenance feel (and *be*) safer!
+
+### 3 - Developer Acessibility
+Add developer documentation (alongside auto-doc publication and in-IDE registration) to the scripts to make maintenance and extension (and inspiration) more fun and efficient!
+
+### 4 - Shared Learning
+Offer a learning project to share with anyone who wants to work with CLI apps, small-scale automated CI/CD processes, and modern Python idioms.
+
+
+# General Repo characteristics:
+
+## Python Skeleton Repo
+This repo is derived from an in-progress [Python+Poetry Skeleton](https://github.com/ethanmsl/skelly-explorer).  All code there is functional.  However some knowledge of what variables to populate is still required.
+
+## Supported Virtual Environoment, Dependency, and Publication Mgmgt Environment:
+This repo is designed for use with the [Poetry](https://python-poetry.org/) environment.
+The code it runs assumes that .venv's are local.
+Set with:
+```bash
+poetry config virtualenvs.in-project true
+```
+
+Check with:
+```bash
+poetry config --list
+```
+
+The repo also uses pre-commit hooks (download separately, as `.git/` is not automatically synched) that auto-populate a `requirements.txt` & `requirements-dev.txt` so Poetry is **NOT** required for building and exploration.  (However the CI/CD scripts will use the Poetry system.)
+
+## Dev-Dependencies Specified
+- formatting: `isort` & `black`
+- linting: `pylint`
+- lsp & typechecking: `pyright`
+- testing: `pytest` + `coverage` (via `pytest-cov`)
+- auto-documentation: `pdoc` (*not* ~~"pdoc3"~~, which should be strongly avoided)
+
+
+## Run Pre-Commit Hook Manually
+from anywhere in project:
+```zsh
+git hook run pre-commit
+```
+
+## Note:
+Due to runner environment caching in GitHub Workflow environment renaming needs to be accompanied by explicit cache deletion.  And possible other maintenance.
