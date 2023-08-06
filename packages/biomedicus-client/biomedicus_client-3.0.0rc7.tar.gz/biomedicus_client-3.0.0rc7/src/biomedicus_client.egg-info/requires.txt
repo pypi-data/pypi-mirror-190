@@ -1,0 +1,10 @@
+mtap>=1.0.0rc5
+tqdm
+importlib_resources>=1.3
+
+[docs]
+sphinx
+
+[test]
+pytest-runner
+pytest
