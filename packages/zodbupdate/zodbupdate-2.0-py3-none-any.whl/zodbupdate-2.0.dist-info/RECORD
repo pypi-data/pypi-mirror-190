@@ -1,0 +1,13 @@
+zodbupdate/__init__.py,sha256=dbDpQyAWfsWp69W6rY7GD9JfC9wgNMf8eZMbUk46p8s,29
+zodbupdate/convert.py,sha256=FV79rGwiFCDHWRIDKoi4CZf86m4TSVfdCQAY2lu4_Gc,5453
+zodbupdate/main.py,sha256=mqhk9gaoAqQHSFCrA-d15m2wrr5lIvuTh5ypIN98YUA,7346
+zodbupdate/serialize.py,sha256=4jkL2qGl_oB79ayhgfj2U6iDXhi6qotFiLADVhR6LyI,12776
+zodbupdate/tests.py,sha256=KrnOyzHjn6qXOdCnRgcRnHCccmyI4FxpVPj74uxlb3c,31036
+zodbupdate/update.py,sha256=dsFv51pfyk2dKeNjjVVylAZSQrD66ulZeuL1ruOvWag,5932
+zodbupdate/utils.py,sha256=sSOIyBmJRCGvfGL6Pdfudu3sPeC7_ezQNP5VHgxjzS0,2539
+zodbupdate-2.0.dist-info/LICENSE.txt,sha256=L-6VJW_kS3fJpaNaDbaD2yXByVwFix74JIDLUbTLaiM,2071
+zodbupdate-2.0.dist-info/METADATA,sha256=bK4EUpgIGlRP3I64Eci2c3e1HW0_rTj1ZyRzcVISzJg,12981
+zodbupdate-2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zodbupdate-2.0.dist-info/entry_points.txt,sha256=cAqDyZah6-LNoR8VFsKvXlOR244MvQyuNCRhIHUgWHs,52
+zodbupdate-2.0.dist-info/top_level.txt,sha256=Guxf_aEfusg81MxQNJl1oDXAwIneVtYVO-AfUNoa0Jc,11
+zodbupdate-2.0.dist-info/RECORD,,
