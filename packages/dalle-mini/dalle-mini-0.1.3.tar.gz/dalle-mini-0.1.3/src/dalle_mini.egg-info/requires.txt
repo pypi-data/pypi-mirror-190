@@ -1,0 +1,17 @@
+transformers==4.25.1
+einops
+unidecode
+ftfy
+emoji
+pillow
+jax
+flax
+wandb
+
+[dev]
+tqdm
+optax
+braceexpand
+datasets[streaming]
+black[jupyter]
+isort
