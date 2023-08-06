@@ -1,0 +1,11 @@
+dist/
+dev/
+__pycache__/
+*.egg-info
+*.so
+*.o
+build
+_skbuild
+*.whl
+core.*
+MANIFEST.in
