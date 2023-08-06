@@ -1,0 +1,12 @@
+transbase-0.0.6.data/purelib/lib/tci.dll,sha256=1pcBRWZU5iqTkxA8ukPt3o0DNA8GuPGD0f218oI0NZs,1880056
+transbase-0.0.6.data/purelib/transbase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transbase-0.0.6.data/purelib/transbase/error.py,sha256=f7RD0n2NMW1bxru41SRDF5qsV0QURCfwNAy9cQXNCPQ,1018
+transbase-0.0.6.data/purelib/transbase/install.py,sha256=iAfh2MWB6BwxFd8UO0cKu6-8qV_W6M2PTnvrWrhXY0E,1014
+transbase-0.0.6.data/purelib/transbase/tci.py,sha256=wnLUXBSwiL92erCq3E6UpLKsRTdzlepJs0AU9Hle3ng,12035
+transbase-0.0.6.data/purelib/transbase/transbase.py,sha256=QMQgIesHc44wXnFy2qPZO_sw553p4IARZmgv57Xy6CE,11249
+transbase-0.0.6.data/scripts/install_tci,sha256=hVk_12PKadtpH5SZ_x-hFkK0kjUDko-vLnqaiZEVQvA,85
+transbase-0.0.6.dist-info/LICENSE,sha256=cnxWipa3OO6AR6m9fIiX17RNAD3L8Ue0xPpDA1hu5JU,1103
+transbase-0.0.6.dist-info/METADATA,sha256=0bX0pToWj2TkxiC0uAFLP22XNZz_avpouQzk89vKx6k,3548
+transbase-0.0.6.dist-info/WHEEL,sha256=J_4V_gB-O6Y7Pn6lk91K27JaIhI-q07YM5J8Ufzqla4,100
+transbase-0.0.6.dist-info/top_level.txt,sha256=03xxRHIEuaOL1NCO3Qrcg7YvcBJOcWY__VPohd0THt0,10
+transbase-0.0.6.dist-info/RECORD,,
