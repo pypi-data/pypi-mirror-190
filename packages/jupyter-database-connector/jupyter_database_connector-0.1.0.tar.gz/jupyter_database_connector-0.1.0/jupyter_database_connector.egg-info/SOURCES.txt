@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+jupyter_database_connector/jupyter_database_connector.py
+jupyter_database_connector.egg-info/PKG-INFO
+jupyter_database_connector.egg-info/SOURCES.txt
+jupyter_database_connector.egg-info/dependency_links.txt
+jupyter_database_connector.egg-info/requires.txt
+jupyter_database_connector.egg-info/top_level.txt
