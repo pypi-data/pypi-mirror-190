@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bootstrap/__init__.py
+bootstrap/innodb-optimize
+innodb_optimize.egg-info/PKG-INFO
+innodb_optimize.egg-info/SOURCES.txt
+innodb_optimize.egg-info/dependency_links.txt
+innodb_optimize.egg-info/requires.txt
+innodb_optimize.egg-info/top_level.txt
