@@ -1,0 +1,10 @@
+tripsim/__init__.py,sha256=HhSZ8Ni7pQNbzTfPhK0XPQ6zl-huwDE0MBTA0iTo6-4,56
+tripsim/sim.py,sha256=ktoHbJMuHJYkkr_kjwtOwUv6uuF6HWQA2ckI_31pfOQ,7574
+tripsim/point/__init__.py,sha256=UbxSlaO4x08ktd_gLs4Hk9iHBtVJnKdHoMl2mqnDBa0,3201
+tripsim/point/distance.py,sha256=8Mu4W0SA_at43Oz08fNWfUx_Qayd8z7HfswF0wLvYAY,2015
+tripsim-0.1.5.dist-info/LICENSE,sha256=74ZIp8UuUks4a-thmcsX1FY5jz5NHHR5lQ8xGkb1yIY,1492
+tripsim-0.1.5.dist-info/METADATA,sha256=epNQROS6TWKOQSPPsDtc_QvgicXeyX6KiXt3WBqfDkE,3506
+tripsim-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tripsim-0.1.5.dist-info/entry_points.txt,sha256=ut4HdERWVbOc1ewuZuzu5zSZpP70OZKWJLw6evZ83EU,50
+tripsim-0.1.5.dist-info/top_level.txt,sha256=dy0ZBSR9aJhWClYPzkDCFZ7LUc6sUo9Urn1WUuEdqSo,8
+tripsim-0.1.5.dist-info/RECORD,,
