@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: di-ioc
+Version: 0.0.2
+Summary: Dependency injection / inversion of control
+Project-URL: Documentation, https://github.com/unknown/di-ioc#readme
+Project-URL: Issues, https://github.com/unknown/di-ioc/issues
+Project-URL: Source, https://github.com/unknown/di-ioc
+Author: Evan Aranda
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# di-ioc
+
+Inversion of control / dependency injection for python
