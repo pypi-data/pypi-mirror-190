@@ -1,0 +1,3 @@
+[console_scripts]
+woopac2 = woopac2.__main__:main
+
