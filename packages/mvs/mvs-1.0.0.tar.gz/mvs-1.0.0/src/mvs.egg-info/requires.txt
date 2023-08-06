@@ -1,0 +1,15 @@
+kwexception
+pyperclip
+short-con
+
+[dev]
+invoke
+ipython
+pycodestyle
+twine
+virtualenv
+virtualenvwrapper
+
+[test]
+pytest-cov
+tox

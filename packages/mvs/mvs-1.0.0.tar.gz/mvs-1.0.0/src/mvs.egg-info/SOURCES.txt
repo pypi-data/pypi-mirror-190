@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/mvs/__init__.py
+src/mvs/cli.py
+src/mvs/plan.py
+src/mvs/problems.py
+src/mvs/utils.py
+src/mvs/version.py
+src/mvs.egg-info/PKG-INFO
+src/mvs.egg-info/SOURCES.txt
+src/mvs.egg-info/dependency_links.txt
+src/mvs.egg-info/entry_points.txt
+src/mvs.egg-info/not-zip-safe
+src/mvs.egg-info/requires.txt
+src/mvs.egg-info/top_level.txt
