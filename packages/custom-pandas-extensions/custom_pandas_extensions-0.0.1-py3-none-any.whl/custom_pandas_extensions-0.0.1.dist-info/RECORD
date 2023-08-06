@@ -1,0 +1,7 @@
+pandas_extensions/__init__.py,sha256=2Xx4gtOviQkYkfFiFSH6lAOjlEV3gyzVrJfQoOzf-A8,46
+pandas_extensions/string_extensions.py,sha256=ynTA-WGshYvSXbcObsbEUCuHXlHHGeRID9ylK03Fh8k,1173
+pandas_extensions/utils.py,sha256=cC3lp945JN-Bg9sLNlbHgY8RdwzKECFbh10crVNtwXc,717
+custom_pandas_extensions-0.0.1.dist-info/METADATA,sha256=olzbL6dZO5bBhv5QteCxPwdZ8_vRlEWIZHJbbI0musM,374
+custom_pandas_extensions-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+custom_pandas_extensions-0.0.1.dist-info/top_level.txt,sha256=XwPiDwOg6gEy42iND3fnodASXhY7m_FHYi1mcsR216w,18
+custom_pandas_extensions-0.0.1.dist-info/RECORD,,
