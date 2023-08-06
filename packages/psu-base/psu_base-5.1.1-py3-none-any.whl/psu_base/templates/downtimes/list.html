@@ -1,0 +1,81 @@
+{% extends 'psu_base.html' %}
+{% load base_taglib %}
+
+{%block title%}Downtime Console{%endblock%}
+{%block scripts%}{%datatables%}{%endblock%}
+
+{% block pagecontent %}
+    <h1>Downtimes</h1>
+
+    {%if not active_downtime%}
+        <div class="well" style="max-width: 800px;margin:0 auto;">
+            <form method="post" action="{%url 'psu:add_downtime'%}">
+                <h2>Create a Downtime</h2>
+                {%csrf_token%}
+                <label>
+                    Start downtime at: <input type="datetime-local" name="from_date" />
+                </label><br />
+
+                <label>
+                    End downtime at: <input type="datetime-local" name="until_date" />
+                </label><br />
+
+                <label for="reason">
+                    Reason for downtime:
+                </label><br />
+                <textarea name="reason" id="reason" class="form-control"></textarea><br />
+
+                <input type="submit" class="btn btn-success btn-block" style="max-width: 500px;margin:0 auto;" />
+            </form>
+        </div><br />
+    {%endif%}
+
+
+    <table class="table table-condensed table-striped sm" id="downtime-table">
+        <thead>
+            <tr>
+                <th scope="col">When</th>
+                <th scope="col">From</th>
+                <th scope="col">Until</th>
+                <th scope="col">Reason</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for dt in downtimes%}
+            <tr>
+                <td>
+                    {{dt.from_date_description}}
+                </td>
+                <td>{{dt.from_date_display}}</td>
+                <td>{{dt.until_date_display}}</td>
+                <td>{{dt.reason}}</td>
+
+                <td>
+                    {%if dt.can_delete%}
+                        <a href="{%url 'psu:delete_downtime' dt.id%}">{%fa fa-trash-o text-danger title="Delete"%}</a>
+                    {%elif dt.can_end%}
+                        <a href="{%url 'psu:end_downtime' dt.id%}">{%fa fa-stop text-danger title="End Downtime"%}</a>
+                    {%endif%}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+
+
+    <script type="text/javascript">
+
+        $('#downtime-table').DataTable( {
+            "order": [[ 1, "desc" ]],
+            "pageLength": 10,
+            "pagingType": "full_numbers"
+        } );
+
+    </script>
+    {% endblock %}
+</body>
+</html>
