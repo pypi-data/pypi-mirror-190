@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pynodeinfo
+Version: 0.1.2
+Summary: Python Nodeinfo Library
+Home-page: https://codeberg.org/CSDUMMI/pynodeinfo
+License: AGPL-3.0-or-later
+Author: CSDUMMI
+Author-email: csdummi.misquality@simplelogin.co
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Repository, https://codeberg.org/CSDUMMI/pynodeinfo
+Description-Content-Type: text/markdown
+
+# pynodeinfo
+
+Python NodeInfo library implemented with poetry.
+
+
+## Usage
+
+```python
+import nodeinfo
+
+async main():
+    host = "mastodon.social"
+
+    print(await nodeinfo.load(host))
+```
+
