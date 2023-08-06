@@ -1,0 +1,4 @@
+six
+diffpy.structure>=3
+diffpy.pdffit2
+diffpy.utils
