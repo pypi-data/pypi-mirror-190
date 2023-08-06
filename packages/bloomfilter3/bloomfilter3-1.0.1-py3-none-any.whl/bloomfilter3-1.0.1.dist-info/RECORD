@@ -1,0 +1,12 @@
+bloomfilter3/__init__.py,sha256=AG50_7L2spx-lbaxAJXpnMgDt-Nya9mCG6YaSaoJ7ss,168
+bloomfilter3/bloom_filter.py,sha256=LsnwMKA0Bj8BuaxHQRwunoUury75A_FoTAig6iApUKE,4457
+bloomfilter3/cfg.py,sha256=0ot7DPf84orlLCad9rwb-eqktcgSr3KSmf6npeS6MhU,157
+bloomfilter3/backends/__init__.py,sha256=WyPBxaRUeBHFnBChPzYt-Z0X75cICyK2l8IkaIbzH0A,87
+bloomfilter3/backends/mmap.py,sha256=TeOD1KsXDjVXCCoWdv0K-iVUwhLKYsgu1Tfrxq7aon8,5188
+bloomfilter3/hash/__init__.py,sha256=cqIIW5j6PwvO1ZcviHltOTxZDtaY2ltCXV57epRooN4,108
+bloomfilter3/hash/hashing.py,sha256=kaSoQohx1EtaMrrGTcFOV4i_AttV3a2IXbU3_1Htsho,1761
+bloomfilter3-1.0.1.dist-info/METADATA,sha256=cRQ6FwRuvfCiGslyFiU78KG1Y8pWwaP3wuRA04sjqVQ,2721
+bloomfilter3-1.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+bloomfilter3-1.0.1.dist-info/licenses/AUTHORS.md,sha256=e8ZD9yuwCGrwp-XiYO1pMOQkA-X-utkfG19hdLV_z74,425
+bloomfilter3-1.0.1.dist-info/licenses/LICENSE.md,sha256=4R9u9bZPJCmrL03nRm3rMxuqcvvVDWYnE7IBwjAPUoA,1085
+bloomfilter3-1.0.1.dist-info/RECORD,,
