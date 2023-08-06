@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: lXtractor
+Version: 0.1.dev6
+Summary: Feature extraction library for sequences and structures
+Project-URL: Source code, https://github.com/edikedik/lXtractor
+Project-URL: Bug Tracker, https://github.com//edikedik/lXtractor/issues
+Author-email: Ivan Reveguk <ivan.reveguk@gmail.com>
+Maintainer-email: Ivan Reveguk <ivan.reveguk@gmail.com>
+License-File: LICENSE
+Keywords: Bioinformatics,Computational biology,Data Mining,Datasets,Feature extracton,Protein sequence,Protein structure
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.10
+Requires-Dist: biotite>=0.35.0
+Requires-Dist: more-itertools>=9.0
+Requires-Dist: networkx>=2.8.6
+Requires-Dist: numpy>=1.23
+Requires-Dist: pandas>=1.5
+Requires-Dist: pyhmmer>=0.7.1
+Requires-Dist: requests>=2.28.1
+Requires-Dist: toolz>=0.12
+Requires-Dist: tqdm>=4.64
+Requires-Dist: typing-extensions>=4.3.0
+Description-Content-Type: text/x-rst
+
+lXtractor
+=========
+
+.. image:: https://coveralls.io/repos/github/edikedik/lXtractor/badge.svg
+    :target: https://coveralls.io/github/edikedik/lXtractor
+    :alt: Branch coverage
+
+.. image:: https://readthedocs.org/projects/lxtractor/badge/?version=latest
+    :target: https://lxtractor.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation status
+
+.. image:: https://img.shields.io/pypi/v/lXtractor.svg
+    :target: https://pypi.org/project/lXtractor
+    :alt: PyPi status
+
+.. image:: https://img.shields.io/pypi/pyversions/lXtractor.svg
+    :target: https://pypi.org/project/lXtractor
+    :alt: Python version
+
+.. image:: https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg
+   :alt: Hatch project
+   :target: https://github.com/pypa/hatch
