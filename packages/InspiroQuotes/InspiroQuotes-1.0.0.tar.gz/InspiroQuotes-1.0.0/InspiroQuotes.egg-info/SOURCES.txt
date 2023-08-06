@@ -1,0 +1,10 @@
+README.md
+setup.py
+InspiroQuotes/__init__.py
+InspiroQuotes/__main__.py
+InspiroQuotes.egg-info/PKG-INFO
+InspiroQuotes.egg-info/SOURCES.txt
+InspiroQuotes.egg-info/dependency_links.txt
+InspiroQuotes.egg-info/requires.txt
+InspiroQuotes.egg-info/top_level.txt
+test/test.py
