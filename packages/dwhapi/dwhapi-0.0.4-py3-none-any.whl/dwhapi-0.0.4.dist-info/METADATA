@@ -1,0 +1,220 @@
+Metadata-Version: 2.1
+Name: dwhapi
+Version: 0.0.4
+Summary: whl api
+Author-email: Evgeniy Ilichev <developer@example.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: feedparser (>=5.2.0)
+Requires-Dist: requests (>=2.28.1)
+
+# Readme.md
+
+## Before starting
+
+
+### Install build
+
+```pip install --upgrade build```
+
+
+### Install virtual environment
+
+```python -m venv venv```
+
+
+### Build python package 
+
+```python -m build```
+
+
+The 'dist' directory contains module that can be installed from local directory by
+
+```pip install ../packages/dwh/dist/dwhapi-0.0.3-py3-none-any.whl```
+
+
+### Example of usage
+
+Please ask somebody to give you api key
+
+```python
+
+from dwhapi import Api
+
+api_key = '<api-key>'
+
+api = Api(api_key)
+
+api.project.get_project_info()
+
+#######################################
+# project management:
+#######################################
+
+# Create it
+project = api.project.create_project('your-project-name')  
+
+'''
+{'project': {'date': '2022-12-22T14:56:39.844Z',
+  'name': 'your-project-name',
+  'uuid': 'c603b42a-bc99-4243-8a4b-3a5715e11b8c'}}
+'''
+
+# get info about your project
+project_info = api.project.get_project_info('c603b42a-bc99-4243-8a4b-3a5715e11b8c')
+
+'''
+{'project': {'date': '2022-12-22T14:56:39.844Z',
+  'name': 'your-project-name',
+  'permissions': ['PROJECT:LIST',
+   'PROJECT:VIEW',
+   'PROJECT:CLONE',
+   'PROJECT:DELETE',
+   'PROJECT:UPDATE',
+   'PROJECT:CHANGE_OWNERSHIP',
+   'PROJECT:SHARE'],
+  'users': {'owner': 'user@mail.com,
+   'readers': {'count': 1},
+   'writers': {'count': 1}},
+  'uuid': 'c603b42a-bc99-4243-8a4b-3a5715e11b8c'},
+ 'servers': [{'database': {'branch': {'name': 'main',
+     'uuid': '97e8502d-3260-49c0-b139-81054d462153'},     
+    'environment': 'development',
+    'name': 'your-project-name',
+    'uuid': '8c35652a-d90c-4d09-b685-4f0f84ff5a0b'},    <-------- this think you need for source manipulation
+   'name': 'dwh',
+   'type': 'local',
+   'uuid': '2b7c7a6e-1738-4646-99d3-f89d4c6165cc',
+   'vendor': 'snowflake'}],
+ 'ddl': {'relations': 0,
+  'views': 0,
+  'tasks': 0,
+  'etls': 0,
+  'reports': 0,
+  'default': {'database': None}},
+ 'cdn': {'object': {'ddl': [{'type': 'CATALOG',
+     'url': 'https://dwh-dev-production.fra1.digitaloceanspaces.com/catalog/null/0.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=UUFWPTC3LTJKPWTEXN22%2F20221222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221222T150350Z&X-Amz-Expires=60&X-Amz-Signature=d8bfd2230ad81ed03a8345a92b3fd06bd65d50a6806c5aac79f38e503af78f4f&X-Amz-SignedHeaders=host',
+     'lifetime': 60}],
+   'workspace': [{'type': 'OBJECT',
+     'url': 'https://dwh-dev-production.fra1.digitaloceanspaces.com/workspace/ir/null/object/0.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=UUFWPTC3LTJKPWTEXN22%2F20221222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221222T150350Z&X-Amz-Expires=60&X-Amz-Signature=ca8568692e865e246d7f9ccebc15d81abe70b957fca3ace9950a9f6ce4edceff&X-Amz-SignedHeaders=host',
+     'lifetime': 60}]},
+  'source': {'ddl': []},
+  'lineage': [{'url': 'https://dwh-dev-production.fra1.digitaloceanspaces.com/lineage/ir/null/object/0.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=UUFWPTC3LTJKPWTEXN22%2F20221222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221222T150350Z&X-Amz-Expires=60&X-Amz-Signature=8825d9ce00b5fc9483d9579203d1393a7111abc4bec2bd885b08d0665d2c219e&X-Amz-SignedHeaders=host',
+    'lifetime': 60,
+    'type': 'LINEAGE'}]}}
+'''
+
+# get project list
+
+project_list = api.project.get_project_list()
+
+
+#######################################
+# source management:
+#######################################
+
+# add ddl source
+db_uuid = project_info['servers'][0]['database']
+api.ddl.add_source(db_uuid, source='crate table c(id integer);', file_type='SQL', request_type='GET_DDL')
+
+source = api.ddl.add_source_from_file(db_uuid,'/home/user/projects/db.sql' )
+'''
+{'ddl': {'source': {'commit': {'hash': '97ec3d3ece71234fa7a74c867830017e5df048bf'},
+
+   'uuid': '61ef5cd8-61c5-481c-ba72-91a52282f8ad'}},                 <--- you need this to get source upload ststus
+   
+ 'server': {'vendor': 'snowflake'}}
+ '''
+
+
+# get source upload status
+
+
+upload_status = api.ddl.get_source_status('61ef5cd8-61c5-481c-ba72-91a52282f8ad')
+'''
+{'status': 'OK', 'data': {'ddl': {'source': {'uuid': '61ef5cd8-61c5-481c-ba72-91a52282f8ad'}}, 'status': 'finished'}}
+
+'''
+```
+
+
+## Exception list
+### Ddl exception (base)
+` DdlException`
+  
+
+#### ddl was not found
+` DdlNotfound`
+
+
+#### Parsing ddl is in progress
+` DdlParsingInProgress`
+
+#### Duplicate source
+` DdlDuplicateSources`
+
+
+#### Ddl version error
+` DdlVersionError`
+
+#### Ddl check not found
+` DdlCheckNotFound`
+    pass
+
+#### Empty ddl
+` DdlIsEmpty`
+    
+
+#### Ddl parse error
+` DdlParseError`
+    
+
+#### Relation not found
+` DdlRelationsNotFound`
+    
+
+#### Object not found
+` DdlObjectNotFound`
+    
+
+#### Source not found
+` DdlSourceNotFound`
+    
+
+#### ???
+` DdlParentBeforeCommit`
+    
+
+#### Version already exist
+` DdlVersionAlreadyExists`
+    
+
+
+
+### Project exception (base exception)
+` ProjectException`
+    
+
+
+##### Project already exist
+` ProjectAlreadyExists`
+    
+
+##### Project not found
+` ProjectNotFound`
+    
+
+##### Empty project
+
+`ProjectEmpty`
+
+
+##### Invalid project name:
+`ProjectNameIsInvalid`
+   
