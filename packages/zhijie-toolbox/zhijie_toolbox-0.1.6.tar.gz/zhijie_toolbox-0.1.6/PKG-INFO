@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: zhijie_toolbox
+Version: 0.1.6
+Summary: A customized toolbox
+Author-email: Zhijie He <zhijiehe97@gmail.com>
+Project-URL: Homepage, https://github.com/Zhijie-He/toolbox
+Project-URL: Bug Tracker, https://github.com/Zhijie-He/toolbox/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Project description
+
+## Install
+`pip install zhijie_toolbox`
+
+## Method
+- create_package_template(current_path, project_name, version="0.0.1", license_type="MIT")
+
+This will help you to create a package template that speed up publishing package.
+
+Usage:
+```
+from zhijie_toolbox import toolbox
+toolbox.create_package_template(current_path, project_name)
+```
+
+- version_control(current_path, runs_name, not_save_list=[".git", "runs"], log="")
+
+This will help you to copy current codes to a runs folder where we can record our codes locally
+We can define not save list by ourself by specify files name
+
+Usage:
+```
+from zhijie_toolbox import toolbox
+toolbox.version_control(current_path, runs_name)
+```
