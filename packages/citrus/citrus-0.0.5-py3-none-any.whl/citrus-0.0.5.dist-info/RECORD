@@ -1,0 +1,10 @@
+LICENSE,sha256=VOCUWB0uV9CDa5Q0ve-bm8PuXKl2LXPIdftoZj0dr0o,1054
+citrus/__init__.py,sha256=K0kNy26Vm6A-1V5lST3ily6yVsNLUbiqk6AZDFm2nJI,20
+citrus/__version__.py,sha256=XGSOAB3Gnbuv_7rIDJWcTn7lRn2wG_9pqDW6BlX_dUs,63
+citrus/core.py,sha256=QCTKGu5AWFbi-u5a-gete19o_ah4IcxUgn5eTV-z34w,6052
+citrus/errors.py,sha256=Bpd1Ln1PLpteWSW1nO3iWL-RJi3DLvHpHw5dZpULMiA,677
+citrus/tests.py,sha256=w7hUO8HVZLonuvSOOEMWgNdI2-7SzK0U5Qtd6u4F4EI,8526
+citrus-0.0.5.dist-info/LICENSE,sha256=VOCUWB0uV9CDa5Q0ve-bm8PuXKl2LXPIdftoZj0dr0o,1054
+citrus-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+citrus-0.0.5.dist-info/METADATA,sha256=MdoCFBwK5lYswvS6p6nJhSXcDsz_tOqwPTb-A8Rl8zY,4537
+citrus-0.0.5.dist-info/RECORD,,
