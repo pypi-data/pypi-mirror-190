@@ -1,0 +1,10 @@
+{% load base_taglib %}
+
+{% header_nav_tab url="/" label="Home" icon="fa-home" icon_only=True %}
+{% header_nav_tab url="psu:test" label="Status" %}
+{% header_nav_tab url="psu:finti" label="Finti Console" optional=True %}
+
+{# Menus currently do not have an active class/style #}
+<div class="header-nav-item header-menu float-right">
+    {% include '_components/header/developer_menu.html' %}
+</div>
