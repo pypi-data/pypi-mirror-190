@@ -1,0 +1,2 @@
+[console_scripts]
+run_mdao = run_mdao.__main__:main
