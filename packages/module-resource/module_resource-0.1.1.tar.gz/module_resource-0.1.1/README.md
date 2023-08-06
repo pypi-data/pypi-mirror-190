@@ -1,0 +1,1 @@
+load resources from module
