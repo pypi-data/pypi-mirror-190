@@ -1,0 +1,16 @@
+PyMoCapViewer/__init__.py,sha256=c1pwm3zaHWDmEHg2vpcpnKXFVkv8dHyU9C-ZhQ5j9us,38
+PyMoCapViewer/mocap_viewer.py,sha256=yfEcrkvkC911c7plFHSbpAIfO_d4mtcrZ2KUp0Sw_t8,16179
+PyMoCapViewer/utils.py,sha256=1e9PlnNxf3noqQNAQsw0E7MS89tZvgc28hlPCzkvCtk,2866
+PyMoCapViewer/skeletons/__init__.py,sha256=LqAhOjwqh4-IEjM14yzj7pdsaWljLomRc_TSmcXmYQo,64
+PyMoCapViewer/skeletons/azure_kinect.py,sha256=uNV3aDG7Ohk9WfUhx8nyuLRFiGdGNuw-pFUkKbsspbs,1482
+PyMoCapViewer/skeletons/ghum.py,sha256=1B2PEuhGa8s9N7pSaOe-kMjEjGDm7LppVEX5JfeEKUs,2039
+PyMoCapViewer/skeletons/h36m.py,sha256=RVsTR03bgM_jXuIQUUcMxhDT8EvXXpDlUqrksSu7Ksc,413
+PyMoCapViewer/skeletons/kinect_v2.py,sha256=lmua1hmnSZPtf68QLkG3dl0GJDhWVEkKCNIsAwi8DQ0,1332
+PyMoCapViewer/skeletons/skeleton_loader.py,sha256=0hJ8wUtm3qiMrYK9rsZPp-EUHpbsPmxTxoAM90VHGqo,1610
+PyMoCapViewer/skeletons/vicon_plug_in_gait.py,sha256=jDouXhkaHNl2jEt91D0nkYeKEv9Txw5RyJTM7XhAeXg,1453
+PyMoCapViewer/skeletons/vnect.py,sha256=tyGSTZp36YQCSCq_3yGmkyRPZ1UIrDlnDIFsFgrhqTM,694
+PyMoCapViewer-0.0.13.dist-info/LICENSE,sha256=zdw_WbO6uScKm7PmXOORkKJnbJ_npHB342Tx_ow_cjg,1065
+PyMoCapViewer-0.0.13.dist-info/METADATA,sha256=H6KXIrSXV453ngGf2LC5hNT_XbEf2CBcKm6OUiREe_I,342
+PyMoCapViewer-0.0.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PyMoCapViewer-0.0.13.dist-info/top_level.txt,sha256=Y3x2VQW6OXlc6mh2k__jUjHDCo4av9I3zdY3rjlwPaQ,14
+PyMoCapViewer-0.0.13.dist-info/RECORD,,
