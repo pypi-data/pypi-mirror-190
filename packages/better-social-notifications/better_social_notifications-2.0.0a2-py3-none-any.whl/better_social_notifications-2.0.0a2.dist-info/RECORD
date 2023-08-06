@@ -1,0 +1,12 @@
+better_social_notifications/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+better_social_notifications/helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+better_social_notifications/helper/data.py,sha256=pY8HLhItdliuZVv3ulEYOxllGGg4_ChZhxbKaFghimU,706
+better_social_notifications/main.py,sha256=GFKhrudsDmWsNOVPywq8gx24oZAebVjUNdsKLImrE1Y,2139
+better_social_notifications/notification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+better_social_notifications/notification/notify.py,sha256=Z-ShYfYQhBmTY5N84LrAD-NDV-7fdKAnM_VFh3dbGI4,2967
+better_social_notifications/youtube/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+better_social_notifications/youtube/auth.py,sha256=06qnaCSiW9AiFkJfixH3jfneiKZclnOMyav7xLJ9iAo,2854
+better_social_notifications/youtube/uploads.py,sha256=nfyF87K3wHyVIp2GNhX-IJkfF7eAkZ-rJyG-fvbGFSU,7145
+better_social_notifications-2.0.0a2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+better_social_notifications-2.0.0a2.dist-info/METADATA,sha256=AqkLeXP_oNGYWkz7Bvy_H2gZwh8IrvoeoSyeaAIQL-I,1559
+better_social_notifications-2.0.0a2.dist-info/RECORD,,
