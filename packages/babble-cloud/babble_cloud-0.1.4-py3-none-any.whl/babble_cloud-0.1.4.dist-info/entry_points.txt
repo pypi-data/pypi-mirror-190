@@ -1,0 +1,3 @@
+[console_scripts]
+babble=babble.pip_entry:main
+
