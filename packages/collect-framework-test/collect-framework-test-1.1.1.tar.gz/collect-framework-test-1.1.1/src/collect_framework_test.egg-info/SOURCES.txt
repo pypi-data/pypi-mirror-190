@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/check_letters/__init__.py
+src/check_letters/__main__.py
+src/check_letters/main.py
+src/check_letters/tests/__init__.py
+src/check_letters/tests/test_check_letters.py
+src/collect_framework_test.egg-info/PKG-INFO
+src/collect_framework_test.egg-info/SOURCES.txt
+src/collect_framework_test.egg-info/dependency_links.txt
+src/collect_framework_test.egg-info/entry_points.txt
+src/collect_framework_test.egg-info/requires.txt
+src/collect_framework_test.egg-info/top_level.txt
