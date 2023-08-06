@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+numext/__init__.py
+numext/number_extractor.py
+numext.egg-info/PKG-INFO
+numext.egg-info/SOURCES.txt
+numext.egg-info/dependency_links.txt
+numext.egg-info/top_level.txt
