@@ -1,0 +1,8 @@
+tira/__init__.py,sha256=AQdJJdxGGTG0i_nGdajkQNHuHNSal50C1S21y0Rbk0k,24
+tira/io_utils.py,sha256=9k90WZXEgTr6iCcdkX35C6c06svOIHEKVnuITv7561E,1012
+tira/rest_api_client.py,sha256=OMvpx-a--UeKZ5Allgghkmxd-YdqMtxohkGBaCKhhx8,4321
+tira/third_party_integrations.py,sha256=QZ-NEBkQyD8MSacxHUd8ZtX6CXjBr-Ag2tfTt2Earr8,4213
+tira-0.0.10.dist-info/METADATA,sha256=uUKxAuJufVK9Hc2974FaAAfFYiZERxj7W_AkP1za39M,963
+tira-0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tira-0.0.10.dist-info/top_level.txt,sha256=Cmn2jAOjNUnXGPa21lt2J8J076ipDQ9k000fdf_pRs4,5
+tira-0.0.10.dist-info/RECORD,,
