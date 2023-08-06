@@ -1,0 +1,10 @@
+avro-python3>=1.8.2
+ply>=3.11
+pyyaml>=5.1.2
+pytz>=2019.1
+
+[:python_version < "3.6"]
+numpy==1.14.0
+
+[:python_version >= "3.6"]
+numpy<1.20,>=1.15.0
