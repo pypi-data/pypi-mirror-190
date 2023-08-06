@@ -1,0 +1,2 @@
+[console_scripts]
+geohexsimple = geohexviz.simple:main
