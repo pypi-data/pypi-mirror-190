@@ -1,0 +1,3 @@
+[console_scripts]
+korean=pykorean.main:cli
+
