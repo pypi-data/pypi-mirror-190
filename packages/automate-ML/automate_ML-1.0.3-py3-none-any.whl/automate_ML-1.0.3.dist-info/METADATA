@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: automate-ML
+Version: 1.0.3
+Summary: A python module to solve machine learning problems in a mechanized way. The repository is able to preprocess the data and output the results in numerical as well as in the graphical form.
+Home-page: UNKNOWN
+Author: Sohaib Umer
+Author-email: sohaibfccu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-optimize
+Requires-Dist: lightgbm
+Requires-Dist: catboost
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: tabulate
+Requires-Dist: scikit-plot
+
+https://github.com/sohaibunist/automate_ML
+
