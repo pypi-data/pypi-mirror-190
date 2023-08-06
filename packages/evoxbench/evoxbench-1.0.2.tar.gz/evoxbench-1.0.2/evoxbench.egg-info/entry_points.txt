@@ -1,0 +1,2 @@
+[console_scripts]
+evoxbenchrpc = evoxbench.api.rpc:main

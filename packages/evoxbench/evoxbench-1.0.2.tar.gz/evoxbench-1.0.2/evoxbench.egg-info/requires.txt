@@ -1,0 +1,5 @@
+pyyaml
+django
+numpy
+scikit-learn
+scipy
