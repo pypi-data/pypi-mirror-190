@@ -1,0 +1,14 @@
+requests
+SPARQLWrapper
+tqdm
+inflect
+pandas
+aiohttp
+
+[docs]
+mkdocs
+mkdocstrings
+mkdocstrings.python
+
+[tests]
+pytest
