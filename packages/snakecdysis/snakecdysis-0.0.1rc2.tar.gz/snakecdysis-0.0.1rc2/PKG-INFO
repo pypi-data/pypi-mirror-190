@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: snakecdysis
+Version: 0.0.1rc2
+Summary: You want to wrapped your best snakemake workflow to be easy install and run, Snakecdysis is for you !!!!!
+Home-page: https://forge.ird.fr/phim/sravel/snakecdysis
+Download-URL: https://forge.ird.fr/phim/sravel/snakecdysis/archive/0.0.1-RC2.tar.gz
+Author: Ravel Sebastien (CIRAD)
+Author-email: sebastien.ravel@cirad.fr
+License: GPLv3
+Project-URL: Bug Tracker, https://forge.ird.fr/phim/sravel/snakecdysis/issues
+Project-URL: Documentation, https://snakecdysis.readthedocs.io/en/latest/
+Project-URL: Source Code, https://forge.ird.fr/phim/sravel/snakecdysis
+Keywords: snakemake,wrapper,installation
+Platform: unix
+Platform: linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: CeCILL-C Free Software License Agreement (CECILL-C)
+Classifier: License :: Free for non-commercial use
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+
+.. image:: https://forge.ird.fr/phim/sravel/snakecdysis/-/blob/59b3b5fae593e786562e28cad9fa19a31d0ebdae/docs/source/_images/Snakecdysis_logo.png
+   :target: https://forge.ird.fr/phim/sravel/snakecdysis/-/blob/59b3b5fae593e786562e28cad9fa19a31d0ebdae/docs/source/_images/Snakecdysis_logo.png
+   :align: center
+   :alt: Snakecdysis Logo
+
+|PythonVersions| |SnakemakeVersions| |Downloads|
+
+.. contents:: Table of Contents
+    :depth: 2
+
+About Snakecdysis
+=================
+
+|readthedocs|
+
+**Homepage:** `https://snakecdysis.readthedocs.io/en/latest/ <https://snakecdysis.readthedocs.io/en/latest/>`_
+
+
+You want to wrapped your best snakemake workflow to be easy install and run, Snakecdysis is for you !!!!!
+
+Citation
+========
+
+https://forge.ird.fr/phim/sravel/Snakecdysis
+
+Authors
+=======
+
+* Sébastien RAVEL (CIRAD).
+
+Thanks
+======
+
+Thanks to Valentin Guignon how find the name
+Thanks to CulebrONT team's
+
+License
+=======
+
+Licencied under `CeCill-C <http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html>`_ and GPLv3.
+
+Intellectual property belongs to `CIRAD <https://www.cirad.fr/>`_ and authors.
+
+.. |PythonVersions| image:: https://img.shields.io/badge/python-3.7%2B-blue
+   :target: https://www.python.org/downloads
+
+.. |SnakemakeVersions| image:: https://img.shields.io/badge/snakemake-≥6.10.0-brightgreen.svg
+   :target: https://snakemake.readthedocs.io
+
+.. |readthedocs| image:: https://pbs.twimg.com/media/E5oBxcRXoAEBSp1.png
+   :target: https://snakecdysis.readthedocs.io/en/latest
+   :width: 400px
+
+.. |Downloads| image:: https://img.shields.io/pypi/dm/snakecdysis?color=orange&logo=snakecdysis-pypi
+   :target: https://pypi.org/project/snakecdysis
+   :alt: PyPi downloads
+
+
