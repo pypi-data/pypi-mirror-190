@@ -1,0 +1,8 @@
+chembox/__init__.py,sha256=JjBSSQegGAqF1Yioc7j-pGNqspAnBaTPaMYdlulBamA,109
+chembox/chembox.py,sha256=oMhyc9Aj9nedKabbhokOQR6taxsYEfSZBVeacnd5ZMo,10559
+chembox/data/conjugates.csv,sha256=CoiFMxesADh_-HUbdm6KhBYvmjojSYiOy-9_GDx2tUA,143
+chembox/data/elements.csv,sha256=aPbGK5R2sl_J81V5YUTDAxqN2XQB2h1mBVbbp8-JC0g,19942
+chembox-1.1.0.dist-info/METADATA,sha256=4XZ11ZcipK2nNZi2NrFWtKdQYP_V8DEZAZf3kAcCll8,4400
+chembox-1.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+chembox-1.1.0.dist-info/LICENSE,sha256=EMkhhgxIJosR2qTlWvhoo3J-21GE2adgHD9pY5sj_Bs,1115
+chembox-1.1.0.dist-info/RECORD,,
