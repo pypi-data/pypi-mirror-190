@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[spark-config]
+"spark.default.parallelism" = "10"
+"spark.executor.memory" = "56g"
+"spark.executor.instances" = "1"
+"spark.driver.cores" = "5"
+"spark.executor.cores" = "5"
+"spark.driver.memory" = "56g"
+"spark.driver.maxResultSize" = "56g"
+"spark.driver.memoryOverhead" = "5734m"
+"spark.executor.memoryOverhead" = "5734m"
+"spark.dynamicAllocation.enabled" = "false"
+"spark.sql.adaptive.enabled" = "true"
+# Reference: http://spark-configuration.luminousmen.com/
+
+[lab-attributes]
+"project_name" = "pytzen"
+"url_homepage" = "https://www.pytzen.com"
+"url_respository" = "https://www.pytzen.org"
+"url_github" = "https://github.com/pytzen"
+"url_blog" = "https://blog.pytzen.org"
+"url_linkedin" = "https://www.linkedin.com/company/pytzen"
+"path_lab" = "/home/pytzen/lab"
+"path_data" = "/home/pytzen/lab/data"
+"path_package" = "/home/pytzen/lab/pytzen/src"
+
+[pypi-attributes]
+"path_repository" = "/home/pytzen/lab/pytzen"
+"path_setup_file" = "/home/pytzen/lab/pytzen/setup.cfg"
+"path_init_file" = "/home/pytzen/lab/pytzen/src/pytzen/__init__.py"
+"path_distribution_folder" = "/home/pytzen/lab/pytzen/dist"
+"path_egg_folder" = "/home/pytzen/lab/pytzen/src/pytzen.egg-info"
+
+[data-science]
+"random_state" = 137
