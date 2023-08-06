@@ -1,0 +1,23 @@
+[project]
+name = "dwhapi"
+version = "0.0.3"
+authors = [
+  { name="Evgeniy Ilichev", email="developer@example.com" },
+]
+description = "whl api"
+readme = "README.md"
+
+dependencies = [
+    "feedparser >= 5.2.0",
+
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
