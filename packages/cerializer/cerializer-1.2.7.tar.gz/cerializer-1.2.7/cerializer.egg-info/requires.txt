@@ -1,0 +1,7 @@
+Cython<1.0.0,>=0.29.33
+PyYAML<6.0.0,>=5.3.1
+setuptools>=65.5.1
+Jinja2<4.0.0,>=2.11.2
+
+[quantlane]
+ql-qutils<10.0.0,>=9.27.0

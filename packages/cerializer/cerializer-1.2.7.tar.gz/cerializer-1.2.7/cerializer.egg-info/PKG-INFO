@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cerializer
+Version: 1.2.7
+Home-page: https://github.com/matejmicek/Cerializer
+Author: matejmicek.com
+Author-email: matej.micek@quantlane.com
+Provides-Extra: quantlane
