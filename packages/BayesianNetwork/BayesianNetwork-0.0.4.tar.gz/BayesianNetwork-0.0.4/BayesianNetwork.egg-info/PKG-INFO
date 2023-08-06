@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: BayesianNetwork
+Version: 0.0.4
+Summary: Librería simple para crear y resolver redes bayesianas
+Home-page: 
+Author: Christopher Garcia y Gabriel Vicente
+Author-email: 
+License: MIT
+Description-Content-Type: text/markdown
+
+![UVG](https://res.cloudinary.com/webuvg/image/upload/f_auto/v1551291412/WEB/institucional/logouvg.png) <br>
+Facultad de Ingeniería <br>
+Departamento de Ciencias de la Computación <br>
+Inteligencia Artificial <br>
+
+## Descripcion
+
+<br>
+
+**Librería simple que permite la creación de redes bayesianas.** <br>
+<br>
