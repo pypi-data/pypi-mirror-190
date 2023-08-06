@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: chubb_cog_helpers
+Version: 0.0.1
+Summary: Helper functions for Chubb COG
+Home-page: https://www.chubb.com/us-en/
+Author: Nicholas Ciesla (Chubb)
+Author-email: nicholas.ciesla@chubb.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Chubb COG Helpers
+
+Available Helpers:
+    Secret Locker
+
