@@ -1,0 +1,3 @@
+1.1.2
+
+['C:\\Users\\jenkins\\AppData\\Local\\Temp\\2\\build-env-ursi_zcz\\Scripts\\delvewheel', 'repair', '-v', '-w', 'D:\\jenkins\\agent-working-dir\\workspace\\Compile_CPU_Windows_PY39\\mindquantum\\dist\\delocated', '--add-path', 'C:\\Users\\jenkins\\.mslib\\fmt_9.1.0_ce1e5972bbad28ae64a914cfe5a0383f\\lib;C:\\Users\\jenkins\\.mslib\\Boost_1.78.0_b356afa3cf562611ff2b1153a663b8ac\\lib', 'D:\\jenkins\\agent-working-dir\\workspace\\Compile_CPU_Windows_PY39\\mindquantum\\dist\\temp\\mindquantum-0.8.0-cp39-cp39-win_amd64.whl']
