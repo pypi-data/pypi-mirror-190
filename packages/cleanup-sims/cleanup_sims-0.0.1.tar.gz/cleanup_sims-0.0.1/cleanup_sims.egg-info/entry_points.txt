@@ -1,0 +1,2 @@
+[console_scripts]
+cleanup_sims = cleanup_sims.cleanup_sims:main
