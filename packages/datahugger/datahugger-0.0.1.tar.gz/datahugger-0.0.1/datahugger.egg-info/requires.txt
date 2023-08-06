@@ -1,0 +1,17 @@
+natsort
+requests
+scitree
+tqdm
+
+[all]
+datasets
+
+[docs]
+mkdocs-material
+
+[lint]
+flake8
+flake8-import-order
+
+[test]
+pytest
