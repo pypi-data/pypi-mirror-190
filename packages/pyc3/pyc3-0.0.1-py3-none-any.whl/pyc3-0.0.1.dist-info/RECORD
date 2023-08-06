@@ -1,0 +1,7 @@
+pyc3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyc3/c3.py,sha256=Ceq7x2vKP9uxuuYyJyE_--4hvgJf9XzSA_eaxMSyJ9s,6063
+pyc3/data/xkcd/c3_data.json,sha256=0a2HT-f1dkG6Ls_TFMZ32L_2FxA8NnI_WixbSJTgr5g,1661155
+pyc3/data/xkcd/xkcd.csv.gz,sha256=rJPngJUN74gpEj-uaZo9Su7q9H2oTWeSDKoAlOnlycY,22590267
+pyc3-0.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pyc3-0.0.1.dist-info/METADATA,sha256=DatoarYAkHIvYXNTzRTZXRgUXmIwjlZOk0ILq30xflw,1016
+pyc3-0.0.1.dist-info/RECORD,,
