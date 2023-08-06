@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xmlparsing"
+version = "0.0.1"
+authors = [
+  { name="Minetester", email="minetezter@protonmail.com" },
+]
+description = "Converts Python dictionaries to XML, JSON to XML, compiles XML, converts XML to JSON, and a lot more!"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "xmlformatter >= 0.2.4",
+    "xml-to-dict >= 0.1.6"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Minetezter/xmlparsing"
+"Bug Tracker" = "https://github.com/Minetezter/xmlparsing/issues"
