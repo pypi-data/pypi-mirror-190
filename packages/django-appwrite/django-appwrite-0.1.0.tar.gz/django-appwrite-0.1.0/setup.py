@@ -1,0 +1,13 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='django-appwrite',
+    version='0.1.0',
+    description='Django Middleware to authenticate users with Appwrite',
+    packages=find_packages(),
+    package_dir={'django_appwrite': 'django_appwrite'},
+    install_requires=['appwrite', 'django'],
+    license='MIT',
+    author='Yusup Khasbulatov',
+    readme='README.md',
+)

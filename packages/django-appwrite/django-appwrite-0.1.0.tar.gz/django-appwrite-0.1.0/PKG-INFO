@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: django-appwrite
+Version: 0.1.0
+Summary: Django Middleware to authenticate users with Appwrite
+Author: Yusup Khasbulatov
+License: MIT
+License-File: LICENSE
