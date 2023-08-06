@@ -1,0 +1,16 @@
+scan_to_paperless/__init__.py,sha256=ahNbxr845y9p5daRwHfQNSCgOLQvYdp0OWSRszpRM6k,1909
+scan_to_paperless/code.py,sha256=YiDf8gOZ1xHHwWyCEtMT4F1QdmNF1bv_oDBJLei-Mtg,20706
+scan_to_paperless/config.py,sha256=rOPZvknAGGf7UuGGhlVQ5s7p8ZlX-6ZPueML2YQ4ogw,23718
+scan_to_paperless/config_old.py,sha256=KiEmWF8IyAEhttI-LlvCxGqaTrN0QVBxld2BAagxnTk,157
+scan_to_paperless/config_schema.json,sha256=DSvePJC8e0QE7hzAaTUhciktw8nLii8eZkUcM0ubeh0,21431
+scan_to_paperless/process.py,sha256=6w6tTcJR998y_CBn5Co8TbXIsTR8WhSoKoeN0PBvFcs,70630
+scan_to_paperless/process_schema.json,sha256=No6cHICv13C-HkKsXDd5AI3KUsz147X1fdp85rWhoiw,22373
+scan_to_paperless/process_schema.py,sha256=OrgLjQm3cvolrbCnXWY18Fa_c5lT4uhi6OB8MwwK5pE,22594
+scan_to_paperless/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scan_to_paperless/scan.py,sha256=7ib8lD85QjZ5ivR0XPMIr6BAOdM_VB1nm7FWzIrPi_4,9003
+scan_to_paperless/scan_process_status.py,sha256=VMKIqnQu5fZBEoSN92P2C5IuhraSPt_XHr25W788dIk,3578
+scan_to_paperless-1.25.0.dist-info/entry_points.txt,sha256=Fbn7ULcSS6bwe8CSrNvOCoPa8_Oq5qnxrIoLf-jlQVQ,202
+scan_to_paperless-1.25.0.dist-info/METADATA,sha256=5fgnaoUv18nUJfxAMSt7HoK3qPtV5N95F-VuWNSCwYg,11555
+scan_to_paperless-1.25.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+scan_to_paperless-1.25.0.dist-info/LICENSE,sha256=6PrykLA2qfksbPGAu1Ypal7mJlJCF9oJxRee-c5niyk,1289
+scan_to_paperless-1.25.0.dist-info/RECORD,,
