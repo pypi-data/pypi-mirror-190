@@ -1,0 +1,12 @@
+bulk_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bulk_python/command.py,sha256=epIWLIhmSM2oPB8CH3x1kRR5tusZcbJYAKT4w2BeJ7Y,878
+bulk_python/configs/default.json,sha256=7X-PDYOo7cPUY7fZTmiLJnFUFFAuJjDa7_4il34oU4A,85
+bulk_python/init.py,sha256=23n9xDU0AGXbkMiDoqfC4Lc9pH66U6qP9EteLY4OXhU,543
+bulk_python/install.py,sha256=a2UOh9axSztGlKXbNHpe3sslOiOYsDO3PzWsoL7F-A8,2992
+bulk_python/main.py,sha256=-7tfMfCqatBbntPEAIbxFcI1PB-oNsk4MMTUCgsR5xA,1040
+bulk_python/run.py,sha256=eWuMl1v_Bhrundyw4Sh5XZVY59GlvgGQjEFNZXgNWUo,742
+bulk_python-0.1.1.dist-info/entry_points.txt,sha256=y3vkS0pm1sgrsYvZkb27T0rB8kOkXZHSMti4Y_atDPI,45
+bulk_python-0.1.1.dist-info/LICENSE,sha256=fpFDg7rBeiwXkovCK6WneUmUNFv4kFaACNdDlh1iw7I,1095
+bulk_python-0.1.1.dist-info/METADATA,sha256=fanOFJ7VwSMIVLi0cpT1m3c1wem7yERdziwdrAh6Ggs,1566
+bulk_python-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bulk_python-0.1.1.dist-info/RECORD,,
