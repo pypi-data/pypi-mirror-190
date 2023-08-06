@@ -1,0 +1,14 @@
+cython
+numpy
+scipy
+pandas
+astropy
+fiona
+shapely
+h5py
+matplotlib
+PySide2
+PySide2-stubs
+pyvista
+pyvistaqt
+imageio-ffmpeg
