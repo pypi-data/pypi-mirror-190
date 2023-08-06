@@ -1,0 +1,7 @@
+*.egg-info/
+.DS_Store
+__pycache__/
+spotPython.code-workspace
+src/spotPython/_version.py
+*.log
+site/
