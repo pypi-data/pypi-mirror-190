@@ -1,0 +1,9 @@
+telemetrix_aio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+telemetrix_aio/private_constants.py,sha256=iiODGSlnM2HVhZ0vCRyNC9x0BqU_POHINQGyGgp50lo,4131
+telemetrix_aio/telemetrix_aio.py,sha256=611TeHOhsV-ww_86-a8bGXWKliKUQXp1TRhCvAQS2zk,89079
+telemetrix_aio/telemetrix_aio_socket.py,sha256=CJ9vkyIw8dlOMs59Kqrg4z9aKLgUHYuVYK2XidJfJBc,2480
+telemetrix_aio/telemtrix_aio_serial.py,sha256=_7QzQcStH1boc8uSF8IcKsZCsiKq1KYUGLadlUVcFDI,7424
+telemetrix_aio-1.12.dist-info/METADATA,sha256=_4OlB71iPODER_KA2AQL1eoX2NK7qa6uB74P15AuyCM,3043
+telemetrix_aio-1.12.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+telemetrix_aio-1.12.dist-info/top_level.txt,sha256=YiCGk8SVZM_1ELo-bHPd1fFGTo9CJbvNf9oKfG_7hnQ,15
+telemetrix_aio-1.12.dist-info/RECORD,,
