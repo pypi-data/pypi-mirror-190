@@ -1,0 +1,8 @@
+setup.py,sha256=RUCkksmrJfNHgGVx9iZfDs6SZZp0VjNj3AeXSD8kbbg,1351
+pygelf/__init__.py,sha256=ZO3tkJZYgiDHlwuTThRiNvhoeaZ83cuED0XiAZcyvzI,104
+pygelf/gelf.py,sha256=a9HEyqL1_uGtet2Qmgi_rnyZRp7T-sMHiX7J5OMiTPg,3163
+pygelf/handlers.py,sha256=MARVTEvsqiJoXoPBbuG86Ff73VfFAE9Ol5CVcI3J_g4,9300
+pygelf_ex-0.0.3.dist-info/METADATA,sha256=y8XHvxM9-q2zZIUc-YKAE9Q-4ycR3RdIAUEYlnqGHVA,7449
+pygelf_ex-0.0.3.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+pygelf_ex-0.0.3.dist-info/licenses/LICENSE,sha256=n0ZvqfmP8E1DtPgSbYE1WxbqbWiu_FKmn5LR_gXpWMo,1079
+pygelf_ex-0.0.3.dist-info/RECORD,,
