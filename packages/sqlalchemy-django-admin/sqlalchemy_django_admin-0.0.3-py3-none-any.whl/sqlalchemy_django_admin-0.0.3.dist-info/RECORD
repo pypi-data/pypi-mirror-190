@@ -1,0 +1,9 @@
+sqlalchemy_django_admin/__init__.py,sha256=3pNpgm-wNw6Cyfwf0P04Cys_1UDQB2M6QpuNOx88Jtc,5404
+sqlalchemy_django_admin/admin.py,sha256=ks82XBhMPHZEC9pJHgd68egdX_riG8M4hGbolWl7yPc,2797
+sqlalchemy_django_admin/fields/__init__.py,sha256=Qn16qNAH6kzdyAz6lHP_5xuS_0ZVUnabf3GsprVqfQg,692
+sqlalchemy_django_admin/fields/composite.py,sha256=tkX_-IQa8wx7J1yNtiGjvcxq158gYldNhtP_3X2hFgY,4284
+sqlalchemy_django_admin-0.0.3.dist-info/LICENSE,sha256=Q7V7x3MNrL7tj0r5UMSGc6MTVZbVAP2bsZJfhOpYj5U,1063
+sqlalchemy_django_admin-0.0.3.dist-info/METADATA,sha256=f4d2BOgIfoM2iaHbdnNWXNN6AD459pohLnzLrfihQt4,175
+sqlalchemy_django_admin-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sqlalchemy_django_admin-0.0.3.dist-info/top_level.txt,sha256=la4HMl52ZPFXmeRzAkgqddU75YKdl8lFPuvYKDTpxLA,24
+sqlalchemy_django_admin-0.0.3.dist-info/RECORD,,

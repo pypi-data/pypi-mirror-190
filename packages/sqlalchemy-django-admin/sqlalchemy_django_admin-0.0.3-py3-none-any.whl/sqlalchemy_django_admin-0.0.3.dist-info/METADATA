@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-django-admin
+Version: 0.0.3
+Summary: Django Admin for SQLAlchemy
+Author: kartashov
+License-File: LICENSE
+Requires-Dist: django (>=4.0)
+
