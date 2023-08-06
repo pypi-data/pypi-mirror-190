@@ -1,0 +1,10 @@
+setup.py
+distpacktest/Binomialdistribution.py
+distpacktest/Gaussiandistribution.py
+distpacktest/Generaldistribution.py
+distpacktest/__init__.py
+distpacktest.egg-info/PKG-INFO
+distpacktest.egg-info/SOURCES.txt
+distpacktest.egg-info/dependency_links.txt
+distpacktest.egg-info/not-zip-safe
+distpacktest.egg-info/top_level.txt
