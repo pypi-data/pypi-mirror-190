@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: byproxy
+Version: 0.1.5
+Summary: ByProxy is a library to generate proxy dictionaries from a list of urls and gain information about the proxies.
+License: MIT
+Keywords: proxy,ip,host,http,https,socks4,socks5
+Author: uykusuz
+Author-email: vimevim@gmail.com
+Maintainer: uykusuz
+Maintainer-email: vimevim@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# ByProxy
+
+ByProxy is a simple package contains simple tools for proxy management and usage. You can generate proxy dictionaries from a list of urls and gain information about the proxies.
+
+Check out the [byproxy API documentation](https://uykusuzdev.github.io/byproxy/) for more information.
+

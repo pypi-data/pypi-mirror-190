@@ -1,0 +1,8 @@
+byproxy/__init__.py,sha256=CHHVMJ1_Fzb22XTuffTSf8zKisReZ4_NLUt8dbQMFy4,315
+byproxy/proxy_checker/__init__.py,sha256=0ter9r2HLs7k5uNVms3hPdlzXM_bKMPFLtdPe2T_5Bw,3131
+byproxy/proxy_maker/__init__.py,sha256=2lTEz97fCrV2tweTbpG4G8Y9u-VJJcf75fXEtsz7tgs,6087
+CHANGELOG.md,sha256=OKIjbYwSalXg6WVPGpXdzK_gyoclSL3rLg1SZ0Q-kPc,2809
+byproxy-0.1.5.dist-info/LICENSE,sha256=BCTWQ7mXpNdtDz7qPgoTPRMRFxr8LgZuEUlKscQZbGU,1085
+byproxy-0.1.5.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+byproxy-0.1.5.dist-info/METADATA,sha256=is9AkGJUVWpIfSmsg3lDGCyCiSTvCr7zoD8rLHpn5Go,1074
+byproxy-0.1.5.dist-info/RECORD,,
