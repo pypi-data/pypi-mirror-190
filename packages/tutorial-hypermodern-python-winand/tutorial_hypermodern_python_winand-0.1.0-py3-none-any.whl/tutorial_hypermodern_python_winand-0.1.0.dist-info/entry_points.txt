@@ -1,0 +1,3 @@
+[console_scripts]
+hypermodern-python=tutorial_hypermodern_python_winand.console:main
+
