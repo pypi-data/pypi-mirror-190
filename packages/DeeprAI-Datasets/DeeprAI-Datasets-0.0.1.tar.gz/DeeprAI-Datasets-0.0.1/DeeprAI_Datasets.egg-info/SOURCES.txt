@@ -1,0 +1,7 @@
+setup.py
+Datasets/__init__.py
+DeeprAI_Datasets.egg-info/PKG-INFO
+DeeprAI_Datasets.egg-info/SOURCES.txt
+DeeprAI_Datasets.egg-info/dependency_links.txt
+DeeprAI_Datasets.egg-info/requires.txt
+DeeprAI_Datasets.egg-info/top_level.txt
