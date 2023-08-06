@@ -1,0 +1,2 @@
+[console_scripts]
+git-cherry-pick-helper = git_cherry_pick_helper:main
