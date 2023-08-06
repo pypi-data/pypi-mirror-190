@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: digimat.ebus
+Version: 0.1.24
+Summary: Digimat ExternalBus
+Home-page: http://www.digimat.ch
+Author: Frederic Hess
+Author-email: fhess@st-sa.ch
+License: PSF
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
