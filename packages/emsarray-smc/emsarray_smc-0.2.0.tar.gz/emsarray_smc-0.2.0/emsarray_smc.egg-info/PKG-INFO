@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: emsarray-smc
+Version: 0.2.0
+Summary: Support for spherical multiple-cell geometry in emsarray
+Author: "Coastal Environmental Modelling team, Oceans and Atmosphere, CSIRO"
+Author-email: "coasts@csiro.au"
+License: "BSD 3-clause License"
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+Spherical multiple-cell geometry support for emsarray
+=====================================================
+
+Implements support for the spherical multiple-cell (SMC) geometry convention in emsarray.
