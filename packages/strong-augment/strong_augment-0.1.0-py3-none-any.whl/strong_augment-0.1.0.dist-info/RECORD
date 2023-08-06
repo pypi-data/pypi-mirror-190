@@ -1,0 +1,6 @@
+strong_augment/__init__.py,sha256=oJLYbRm_libeQ5F3oVkg_Rw6gZEtdAPxTLVMPNH-g1A,120
+strong_augment/_augment.py,sha256=589P8ZFsWa84COb2PMzkimMcepNOv9SeQIwFFfQMuAA,14162
+strong_augment/_shift.py,sha256=ssLK1k0PmfPNXmvHgwmbzDeEOQgZXyrHFn_YoEGxQrk,1599
+strong_augment-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+strong_augment-0.1.0.dist-info/METADATA,sha256=4TFzpWnZrNZSTp4fwbtr-Q6kDFphxulM2a0K9LTcqsM,2642
+strong_augment-0.1.0.dist-info/RECORD,,
