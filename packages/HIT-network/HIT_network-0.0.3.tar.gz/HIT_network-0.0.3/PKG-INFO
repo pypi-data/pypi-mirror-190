@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: HIT_network
+Version: 0.0.3
+Summary: This is an integrated shortcut network related programming toolkit, the content is still in the development stage
+Home-page: https://github.com/656756130/Network_basementlearning
+Author: Jinyan
+Author-email: duanjinyan8866@outlook.com
+License: MIT-0
+Requires-Python: >=3.5
