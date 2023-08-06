@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcbinspy"
+version = "0.0.3"
+description = "Gold Coast bin days"
+readme = "README.md"
+dependencies = [
+    "requests",
+    "python-dateutil",
+    "beautifulsoup4"
+]
+requires-python = ">=3.10.0"
+authors = [
+  { name="poroping", email="poroping@github.com" },
+]
+
+[project.urls]
+"Homepage" = "https://github.com/poroping/gcbinspy"
