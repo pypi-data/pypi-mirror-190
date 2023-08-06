@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: graph-envs
+Version: 0.0.4
+Summary: Graph Reinforcement Learning Environments
+Home-page: https://github.com/teshnizi/GraphRL
+Author: Teshnizi
+Author-email: teshnizi@stanford.edu
+Project-URL: Bug Tracker, https://github.com/teshnizi/GraphRL/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GraphRL
+Graph Environments for Training and Benchmarking RL Algorithms
