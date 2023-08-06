@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dash_flexlayout/FlexLayout.py
+dash_flexlayout/Tab.py
+dash_flexlayout/__init__.py
+dash_flexlayout/_imports_.py
+dash_flexlayout/dash_flexlayout.js
+dash_flexlayout/metadata.json
+dash_flexlayout/package-info.json
+dash_flexlayout.egg-info/PKG-INFO
+dash_flexlayout.egg-info/SOURCES.txt
+dash_flexlayout.egg-info/dependency_links.txt
+dash_flexlayout.egg-info/top_level.txt
