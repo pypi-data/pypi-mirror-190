@@ -1,0 +1,1 @@
+from Takayasortfile.kanji_sort import sort_file

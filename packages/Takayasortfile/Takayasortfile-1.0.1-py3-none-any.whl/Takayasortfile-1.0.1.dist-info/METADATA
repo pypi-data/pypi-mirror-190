@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Takayasortfile
+Version: 1.0.1
+Summary: Sorting of kanji and kanji numerals according to the kanji numerals and then kanji
+Author: Takaya
+Author-email: sashin_ranjitkar@takaya.co.jp
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+The data type may be kanjiNumeral and Kanji only, Kanji + kanjiNumeral, Kanji Numeral + Kanji.First, This library will sort through kanji Numerals. After sorting Kanji Numerals, it will sort kanji numerals and kanji and so on. 
+
