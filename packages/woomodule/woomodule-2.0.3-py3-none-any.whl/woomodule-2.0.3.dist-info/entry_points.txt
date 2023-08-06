@@ -1,0 +1,4 @@
+[console_scripts]
+main = woomodule.app.app:main
+woomodule = woomodule.__main__:main
+
