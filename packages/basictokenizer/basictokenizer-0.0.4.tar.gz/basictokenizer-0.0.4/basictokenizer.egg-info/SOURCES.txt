@@ -1,0 +1,9 @@
+LICENSE.txt
+README.txt
+pyproject.toml
+setup.py
+basictokenizer.egg-info/PKG-INFO
+basictokenizer.egg-info/SOURCES.txt
+basictokenizer.egg-info/dependency_links.txt
+basictokenizer.egg-info/requires.txt
+basictokenizer.egg-info/top_level.txt
