@@ -1,0 +1,4 @@
+[xblock.v1]
+poll = poll:PollBlock
+survey = poll:SurveyBlock
+
