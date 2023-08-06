@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/__init__.py
+src/holobox.egg-info/PKG-INFO
+src/holobox.egg-info/SOURCES.txt
+src/holobox.egg-info/dependency_links.txt
+src/holobox.egg-info/requires.txt
+src/holobox.egg-info/top_level.txt
