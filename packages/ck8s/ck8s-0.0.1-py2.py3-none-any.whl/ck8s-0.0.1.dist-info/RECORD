@@ -1,0 +1,10 @@
+ck8s/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ck8s/action.py,sha256=T_6JMKLcrEt6OY9yK0YQWmjOinWMldHUndpXXBu2n7I,834
+ck8s/cli.py,sha256=ed3bCzAaCOBRUCYv74nxJMov9iR0dXOL-H2X7rJ_rck,3073
+ck8s/helpers.py,sha256=0cYOVVg0fTie12m5YYoJJ9dhevxQmyzMVoyGmhWgWgM,1862
+ck8s/testAction.py,sha256=aM03iRkabJqCD7rAeiMw949kTPiDCAmwweUJuaBC02U,1148
+ck8s-0.0.1.dist-info/METADATA,sha256=wpTs_kryVG6CJ4E7XDNoY77gsu4z8z2jl4Vk1U6sYh0,373
+ck8s-0.0.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+ck8s-0.0.1.dist-info/entry_points.txt,sha256=R3I9-eMmhRxfUb3pUrXCTmXdPaVu8o7_mCOGIFDWFEw,39
+ck8s-0.0.1.dist-info/top_level.txt,sha256=6M7IGxmhlRqKKF47RVwBfUyl-LDIcsXrtmFnT5h-hG8,5
+ck8s-0.0.1.dist-info/RECORD,,
