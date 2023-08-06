@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "serial_monitor" 
+version = "1.2.0"
+description = "Notifications of adding/removing serial ports."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name="Michael Bridak", email="michael.bridak@gmail.com" },
+]
+dependencies = [
+    "pySerial",
+    "psutil",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: X11 Applications :: Gnome",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: End Users/Desktop",
+    "Natural Language :: English",
+    "Topic :: System :: Monitoring",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mbridak/serial_monitor"
+"Bug Tracker" = "https://github.com/mbridak/serial_monitor/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+"serial_monitor" = ["*.png", "*.desktop",]
+
+[project.scripts]
+serial_monitor = "serial_monitor.__main__:main"

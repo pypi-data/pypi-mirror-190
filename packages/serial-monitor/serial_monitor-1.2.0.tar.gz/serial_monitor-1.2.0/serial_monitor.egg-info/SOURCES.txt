@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+serial_monitor/__init__.py
+serial_monitor/__main__.py
+serial_monitor/k6gte-serial_monitor-32.png
+serial_monitor/k6gte-serial_monitor-64.png
+serial_monitor/k6gte-serial_monitor.desktop
+serial_monitor/usb_plug_connected.png
+serial_monitor/usb_plug_disconnected.png
+serial_monitor.egg-info/PKG-INFO
+serial_monitor.egg-info/SOURCES.txt
+serial_monitor.egg-info/dependency_links.txt
+serial_monitor.egg-info/entry_points.txt
+serial_monitor.egg-info/requires.txt
+serial_monitor.egg-info/top_level.txt
