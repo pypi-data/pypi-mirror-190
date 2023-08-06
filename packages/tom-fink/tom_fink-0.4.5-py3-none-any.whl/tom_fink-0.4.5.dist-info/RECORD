@@ -1,0 +1,14 @@
+tom_fink/__init__.py,sha256=Fu3SPlapyrHJ5UG_Q91O_bq6BMT-vX5_oX3QGlSHcAY,730
+tom_fink/fink.py,sha256=O1G1jdkC6U1vHqc7pWLHtTotbwxnzIoDLRPDwvn2plk,12614
+tom_fink/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tom_fink/tests/boot_django.py,sha256=i70NH9o-cgBpjcL1-8FE2IUzAy2z7uAsMcHlno61bGE,1009
+tom_fink/tests/django_shell.py,sha256=FB7sRcow1rW1KIiWmTsaGWduQsQ59v9qzAEQMEPqAuQ,149
+tom_fink/tests/run_canary_tests.py,sha256=RZCN5fv4V8sELB-tKAOmZHqxe-vfmhep90yrPEyexu4,429
+tom_fink/tests/run_tests.py,sha256=rNPGdWVraoSOS3D1MX3NNTojb6kLMnBBPuuwvsWkxXo,429
+tom_fink/tests/tests.py,sha256=do-BaliZzXtHYOBPmMZcmjmviDTbyU8RB-rn17XU1HQ,541
+tom_fink/tests/tests_canary.py,sha256=y8OrUTklr4zjxF4Ce_-sDbhVQ2MK4_VyTM-yHFsGrCE,344
+tom_fink-0.4.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tom_fink-0.4.5.dist-info/METADATA,sha256=WbNgbxqWtSi8lMQunP23R-BFM8kfRL5sR4qKWFDmKJ0,2790
+tom_fink-0.4.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tom_fink-0.4.5.dist-info/top_level.txt,sha256=xI2Ez8RcssZnFzR2r4zyrkVPybPc-WXxuE0LYqA20U8,9
+tom_fink-0.4.5.dist-info/RECORD,,
