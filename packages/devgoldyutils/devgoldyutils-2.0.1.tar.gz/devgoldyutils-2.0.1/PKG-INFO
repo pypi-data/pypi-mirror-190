@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: devgoldyutils
+Version: 2.0.1
+Summary: My own utils library I use throughout all my python projects.
+Home-page: https://github.com/THEGOLDENPRO/Dev-Goldy-Utils
+Author: Dev Goldy
+Author-email: goldy@devgoldy.me
+License: MIT
+Project-URL: Bug Tracker, https://github.com/THEGOLDENPRO/Dev-Goldy-Utils/issues
+Keywords: Goldy Utils,Dev Goldy Utils,devgoldyutils
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
