@@ -1,0 +1,2 @@
+[console_scripts]
+serial_monitor = serial_monitor.__main__:main

@@ -1,0 +1,13 @@
+serial_monitor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serial_monitor/__main__.py,sha256=RIJSS7K17J5sqJiUqICn1ebDM3wyrfADVDAGV7iv8Fc,2466
+serial_monitor/k6gte-serial_monitor-32.png,sha256=in82LFC9WpOZVf47abKhcUM-OEfezFSsUAMa8_Nhu6s,1760
+serial_monitor/k6gte-serial_monitor-64.png,sha256=Sbv_ln1WFv5RCfHjPbHKatXq9b-hOjltB5WEQNGHqmg,3656
+serial_monitor/k6gte-serial_monitor.desktop,sha256=aRFZ9d0yjhaSCc2R-SKi1DaGONLbDMZDgy2rlWBi_B0,235
+serial_monitor/usb_plug_connected.png,sha256=cy8anrRkV_GX0tu5OQNfmct_mYusnYocBEHbSIU-3jY,4271
+serial_monitor/usb_plug_disconnected.png,sha256=65sg0dO-KoeVeukJhc0gTkEfjP8rr9bXzYX-xH-WRkw,4311
+serial_monitor-1.2.0.dist-info/LICENSE,sha256=XQysgvqkMkwVs3TLkYsnZsd67F7k0kmxe-JVRf21S5w,1071
+serial_monitor-1.2.0.dist-info/METADATA,sha256=XI8VaJ3jV7R8S9bVuH15lnUL70fHFbtcE8kmOrSYM5A,1395
+serial_monitor-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+serial_monitor-1.2.0.dist-info/entry_points.txt,sha256=hDI-mcPC0NJBJv4bIqx43ffTWh3OONff_fx5dyuHYpA,64
+serial_monitor-1.2.0.dist-info/top_level.txt,sha256=ZQpiMHRsmXQrIOwhftG5H7pX3d_7QGkEGCsgfYfO7Wk,15
+serial_monitor-1.2.0.dist-info/RECORD,,

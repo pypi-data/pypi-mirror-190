@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=serial_monitor
+StartupWMClass=serial_monitor
+GenericName=serial_monitor
+Comment=Plugin serial device change monitor
+Exec=serial_monitor
+Icon=k6gte-serial_monitor
+Terminal=false
+Type=Application
+Categories=Utility;
