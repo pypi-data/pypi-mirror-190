@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+operatorlookup/LICENSE
+operatorlookup/README.MD
+operatorlookup/__init__.py
+operatorlookup/requirements.txt
+operatorlookup/thirdparty.json
+operatorlookup.egg-info/PKG-INFO
+operatorlookup.egg-info/SOURCES.txt
+operatorlookup.egg-info/dependency_links.txt
+operatorlookup.egg-info/top_level.txt

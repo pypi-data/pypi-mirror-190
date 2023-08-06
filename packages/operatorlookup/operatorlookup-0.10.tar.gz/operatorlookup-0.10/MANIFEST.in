@@ -1,0 +1,4 @@
+include operatorlookup/requirements.txt
+include operatorlookup/thirdparty.json
+include operatorlookup/README.MD
+include operatorlookup/LICENSE
