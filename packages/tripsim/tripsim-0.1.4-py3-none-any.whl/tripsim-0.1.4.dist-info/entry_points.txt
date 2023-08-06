@@ -1,0 +1,2 @@
+[console_scripts]
+tripsim = tripsim.__main__:main
