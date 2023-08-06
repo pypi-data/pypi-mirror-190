@@ -1,0 +1,11 @@
+joblib==1.2.0
+numpy==1.24.1
+keras==2.10.0
+pandas==1.5.3
+scikit_learn==1.2.1
+nlpaug==1.1.11
+tensorflow==2.10.1
+tensorflow_hub==0.12.0
+threadpoolctl==3.1.0
+tensorflow_intel==2.11.0
+tensorboard==2.10.1
