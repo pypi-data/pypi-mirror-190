@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "setuptools >= 46.4.0",
+    "wheel >= 0.32.0",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.isort]
+profile = "black"
+skip_glob = [
+    "venv*",
+    "local",
+]
+multi_line_output = 3
+
+[tool.towncrier]
+directory = "changes"
+package = "gbulb"
+package_dir = "src"
+filename = "CHANGELOG.rst"
+template = "changes/template.rst"
