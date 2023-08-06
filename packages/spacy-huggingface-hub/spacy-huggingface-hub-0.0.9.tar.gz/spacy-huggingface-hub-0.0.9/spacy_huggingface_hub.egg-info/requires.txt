@@ -1,0 +1,4 @@
+huggingface_hub>=0.8.1
+wasabi<1.2.0,>=0.8.1
+typer<0.8.0,>=0.3.0
+PyYAML
