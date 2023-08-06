@@ -1,0 +1,9 @@
+README.md
+setup.py
+streamydeck/__init__.py
+streamydeck/streamydeck.py
+streamydeck.egg-info/PKG-INFO
+streamydeck.egg-info/SOURCES.txt
+streamydeck.egg-info/dependency_links.txt
+streamydeck.egg-info/requires.txt
+streamydeck.egg-info/top_level.txt
