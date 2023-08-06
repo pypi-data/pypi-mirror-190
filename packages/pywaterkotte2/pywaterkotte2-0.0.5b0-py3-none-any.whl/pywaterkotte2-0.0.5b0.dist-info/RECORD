@@ -1,0 +1,11 @@
+pywaterkotte/__init__.py,sha256=VTBsoeQGQ7YaIty7uuhucxRvAK28WEp_Xr0lFxHVZEI,187
+pywaterkotte/detect.py,sha256=Nf77v6QMYJ9rM2hkFF_cCMsTeLLxQWhI4yN_lX8DYhs,918
+pywaterkotte/easycon.py,sha256=XyFM9QMFcnqF0PFxW4STkDo-lawiCSJS4L7tlDdwMFE,5557
+pywaterkotte/ecotouch.py,sha256=PlNWPnCYJnBw5ptN3xXDoGhhuPHMz3GfVVCPLNqOv8E,38623
+pywaterkotte/test_easycon.py,sha256=hE4jREyxwcvfwGMYwfady3FGr1fGmshLNT3lDJilMMI,1552
+pywaterkotte/test_ecotouch.py,sha256=X7_ZeqkxmoJn8VwJzCE1z0xgbrRIiyQfn4XBhETEnpM,3358
+pywaterkotte2-0.0.5b0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+pywaterkotte2-0.0.5b0.dist-info/METADATA,sha256=jJANEZZZIyQYcxTSKyKZw6nHktW3Kl8wdJ5WpCXSP50,496
+pywaterkotte2-0.0.5b0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pywaterkotte2-0.0.5b0.dist-info/top_level.txt,sha256=Yxrd9FtKeJutOq7Ko0jX0lS3JL03PWZ7-2SRVh8wJkE,13
+pywaterkotte2-0.0.5b0.dist-info/RECORD,,
