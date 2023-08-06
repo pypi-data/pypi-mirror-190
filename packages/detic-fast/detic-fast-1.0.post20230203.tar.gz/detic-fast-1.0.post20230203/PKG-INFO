@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: detic-fast
+Version: 1.0.post20230203
+Summary: Fork of https://github.com/facebookresearch/Detic
+Home-page: https://github.com/wikiwen/Detic
+Provides-Extra: dev
+License-File: LICENSE

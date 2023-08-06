@@ -1,0 +1,14 @@
+opencv-python
+mss
+timm
+dataclasses
+ftfy
+regex
+fasttext
+scikit-learn
+lvis
+nltk
+mmcv
+
+[dev]
+pytest
