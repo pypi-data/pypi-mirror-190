@@ -1,0 +1,15 @@
+
+[:python_version < "3.8"]
+importlib-metadata>=1.7
+
+[audio]
+simpleaudio==1.0.4
+
+[develop]
+black==23.1.0
+coverage==7.1.0
+flake8-pyproject==1.2.2
+
+[packaging]
+build
+twine>=1.11
