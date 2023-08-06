@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+gcbinspy/__init__.py
+gcbinspy/example.py
+gcbinspy/gcbinspy.py
+gcbinspy.egg-info/PKG-INFO
+gcbinspy.egg-info/SOURCES.txt
+gcbinspy.egg-info/dependency_links.txt
+gcbinspy.egg-info/requires.txt
+gcbinspy.egg-info/top_level.txt
