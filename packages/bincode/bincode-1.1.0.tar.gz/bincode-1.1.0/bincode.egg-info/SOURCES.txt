@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+bincode/__init__.py
+bincode/app.py
+bincode.egg-info/PKG-INFO
+bincode.egg-info/SOURCES.txt
+bincode.egg-info/dependency_links.txt
+bincode.egg-info/entry_points.txt
+bincode.egg-info/top_level.txt
+bincode/static/data.json
+tests/test_search.py
