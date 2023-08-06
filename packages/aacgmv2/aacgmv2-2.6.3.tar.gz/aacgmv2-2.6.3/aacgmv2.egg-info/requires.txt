@@ -1,0 +1,10 @@
+numpy
+
+[doc]
+sphinx>=1.3
+sphinx-rtd-theme
+
+[test]
+pytest
+pytest-cov
+pytest-xdist
