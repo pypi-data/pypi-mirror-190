@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/__main__.py
+src/alac.py
+src/alacorder.egg-info/PKG-INFO
+src/alacorder.egg-info/SOURCES.txt
+src/alacorder.egg-info/dependency_links.txt
+src/alacorder.egg-info/requires.txt
+src/alacorder.egg-info/top_level.txt
