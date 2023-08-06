@@ -1,0 +1,3 @@
+[console_scripts]
+snd=sync_network_disk.__main__:main
+
