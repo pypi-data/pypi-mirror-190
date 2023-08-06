@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+drag_dash/DragDash.py
+drag_dash/__init__.py
+drag_dash/_imports_.py
+drag_dash/drag_dash.min.js
+drag_dash/drag_dash.min.js.map
+drag_dash/metadata.json
+drag_dash/package-info.json
+drag_dash.egg-info/PKG-INFO
+drag_dash.egg-info/SOURCES.txt
+drag_dash.egg-info/dependency_links.txt
+drag_dash.egg-info/top_level.txt
