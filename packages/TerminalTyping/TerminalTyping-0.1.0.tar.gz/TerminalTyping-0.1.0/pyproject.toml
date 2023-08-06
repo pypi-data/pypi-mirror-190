@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "TerminalTyping"
+version = "0.0.5"
+description = "Module for typing effects in the terminal"
+authors = ["GreenHexagon <irrelevantpersonindividual@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">3.9"
+numpy = "^1.22.2"
+
+[tool.poetry.dev-dependencies]
+
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "setuptools_scm[toml]>=6.2",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]

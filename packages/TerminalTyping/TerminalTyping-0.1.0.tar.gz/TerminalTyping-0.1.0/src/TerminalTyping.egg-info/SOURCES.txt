@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+.github/workflows/publish.yml
+src/TerminalTyping.egg-info/PKG-INFO
+src/TerminalTyping.egg-info/SOURCES.txt
+src/TerminalTyping.egg-info/dependency_links.txt
+src/TerminalTyping.egg-info/top_level.txt
+src/terminaltyping/init.py
+src/terminaltyping/main.py
