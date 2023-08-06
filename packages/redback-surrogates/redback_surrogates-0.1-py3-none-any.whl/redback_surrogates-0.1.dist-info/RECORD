@@ -1,0 +1,17 @@
+redback_surrogates/__init__.py,sha256=xemv_PsjvWSj0h2mh8Gc_tiUN9XDVywpAiCJ6FU0ZQg,36
+redback_surrogates/afterglowmodels.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redback_surrogates/kilonovamodels.py,sha256=YFSMJ_ouMkjU63MlY3GRVltCP6n7ZXMMmwdccJIYn3U,4748
+redback_surrogates/model_library.py,sha256=JCCSO-DhN9OKn-8c42OXYA5w1QrcyOqSdOzl4o8bKxs,713
+redback_surrogates/supernovamodels.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redback_surrogates/utils.py,sha256=zn-n0Nc4CZ881LyzPxsGcj1zIQ_EnXTIG-nUmCZMJkU,783
+redback_surrogates/surrogate_data/bulla-bhns-latent-2-hidden-500-CV-4.pt,sha256=mnVbLQJ8EZNmk3M4RY_YySe2NPyYi2PM9rMo7trx4Vs,6053535
+redback_surrogates/surrogate_data/bulla-bns-latent-20-hidden-1000-CV-4.pt,sha256=eGSfx8-jjKUQNFKqRIHD8WaAD8oJJ_5BVYxdH9W8jSw,18329679
+redback_surrogates/surrogate_data/kasen-bns-latent-10-hidden-500-CV-4.pt,sha256=YY_6jnADIxOKTEPHPyU9lS1z0UR7_OqPLr2Y3-id--I,12880115
+redback_surrogates/surrogate_data/metadata_bulla_bhns.json,sha256=vEyU_3zs41Sy4nsa9RmJS4kcaLoB29WdpsA7PyQZgDM,360
+redback_surrogates/surrogate_data/metadata_bulla_bns.json,sha256=8B_s32Nw3EQtbLxd8cQRBTb38roiVw4UUmLRYFpIWyA,382
+redback_surrogates/surrogate_data/metadata_kasen_bns.json,sha256=qwWQO8VBbXnIJafB6ZcsaMmTxKD_t6ZDOxgc2QpzH24,400
+redback_surrogates-0.1.dist-info/LICENCE.md,sha256=gx6SgI61UyUAZiYaE4epMjy_MA1FWaQfLHH9NxK9tEo,34903
+redback_surrogates-0.1.dist-info/METADATA,sha256=g0GQwVJAMDFkAQx1hF8EVfJ8goBZTZtJsK8z80buB2U,4144
+redback_surrogates-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+redback_surrogates-0.1.dist-info/top_level.txt,sha256=e-f9k05vYQgyi_Z_OptRReNHneK4FfiMINVkYMHkTzM,19
+redback_surrogates-0.1.dist-info/RECORD,,
