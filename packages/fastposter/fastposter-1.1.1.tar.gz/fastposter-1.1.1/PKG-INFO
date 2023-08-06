@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fastposter
+Version: 1.1.1
+Summary: a package for fastposter cloud client
+Home-page: https://github.com/psoho/fastposter-cloud-client-python
+Author: Alex
+Author-email: service@fastposter.net
+License: MIT License
+Download-URL: https://github.com/psoho/fastposter-cloud-client-python/main.zip
+Platform: UNKNOWN
+License-File: LICENSE
+
+fastposter-cloud python客户端，轻松开发海报。https://cloud.fastposter.net/
+
