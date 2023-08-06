@@ -1,0 +1,16 @@
+arizon_usb_apiserver/Config.py,sha256=n5WoA5XH6D0oy3MBlC0vD4PhkiI9EdhEK3JIwOev3Lc,2104
+arizon_usb_apiserver/Parser.py,sha256=A4kh6R1CgmHBlJvZKYfMwExPV06hN-SnANQIjuOoCbQ,2512
+arizon_usb_apiserver/Sensor.py,sha256=TyTl3GmNvbJsa3pUgY3Y8NvkOQJ1Kr3CScQCnaYm1r0,718
+arizon_usb_apiserver/__init__.py,sha256=Q0bHQQUvHQku0ygiXoAngq4KHKufZduN3B_TaShi594,80
+arizon_usb_apiserver/__main__.py,sha256=1wPYVYKy3jDwwj_eWK4DCH2kFQstHi_LQVmxSJJBlgY,415
+arizon_usb_apiserver/apiserver/__init__.py,sha256=AzIx9Isn5mW9PgrdnShHoq81FXuR-qz2nuSly2J7pHM,37
+arizon_usb_apiserver/apiserver/app.py,sha256=JNvvRSHFOVYn5mnkW-gw8Ci27-a3_qQJ-C39sik3k1s,3945
+arizon_usb_apiserver/client/__init__.py,sha256=sqsyB55QptrijXTCVFQfIJ6uC__vXez1i5KNvYplk5w,151
+arizon_usb_apiserver/client/client.py,sha256=pE1JZjmTEEgjraYuDhiYgI62CLgLrm3BKp4ICyBaHII,1821
+arizon_usb_apiserver/client/types.py,sha256=7V7MhLBIHSVGCKCF_2mZmG5Olzs_EiMRyAwH2ELhStc,974
+arizon_usb_apiserver/cmd/__init__.py,sha256=qwMCp0svx2vcjNlNAIUURlsyEHbYSibkFucgAutmT_A,47
+arizon_usb_apiserver/cmd/configure.py,sha256=knO8B8fq9XRpTpjmMeIeZNhNL7QGqEzwt72_ExP_sI8,1358
+arizon_usb_apiserver-0.1.dist-info/METADATA,sha256=wkDmTl4Noz99kSg5VFKtNYwVM5nHReGw6wjKa4Mn3lk,2203
+arizon_usb_apiserver-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+arizon_usb_apiserver-0.1.dist-info/top_level.txt,sha256=zHr7l8hL8jdckZFysza_P2h-w8HV--QKoC5EHdqteY0,21
+arizon_usb_apiserver-0.1.dist-info/RECORD,,
