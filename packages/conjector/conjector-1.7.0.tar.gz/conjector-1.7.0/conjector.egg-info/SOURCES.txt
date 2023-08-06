@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+conjector/__init__.py
+conjector/config_handler.py
+conjector/dtos.py
+conjector/main.py
+conjector/py.typed
+conjector/type_converter.py
+conjector.egg-info/PKG-INFO
+conjector.egg-info/SOURCES.txt
+conjector.egg-info/dependency_links.txt
+conjector.egg-info/requires.txt
+conjector.egg-info/top_level.txt
