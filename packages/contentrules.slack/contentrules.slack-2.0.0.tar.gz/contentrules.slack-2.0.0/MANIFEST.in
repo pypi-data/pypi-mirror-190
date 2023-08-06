@@ -1,0 +1,7 @@
+graft src/contentrules
+graft docs
+include *.md
+include *.GPL
+include *.txt
+include Makefile
+global-exclude *.pyc
