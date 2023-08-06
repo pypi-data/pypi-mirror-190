@@ -1,0 +1,12 @@
+invisibleroads_macros_web/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+invisibleroads_macros_web/browser.py,sha256=WoIo4Wh_6evyJw-Pc6pL5tazMMN_kU4Rs4GWRxFIhy0,846
+invisibleroads_macros_web/escape.py,sha256=RJqbEW9OLT2H906FBwtHWQ3o_DizyYsQAx7ihsGK55c,290
+invisibleroads_macros_web/jinja.py,sha256=KSadRmk5S0OIbwocyx1Jwp9K1VFyrXheX-ND30i-0fo,1263
+invisibleroads_macros_web/markdown.py,sha256=SRmEdH3egFyzdms9Xk4aRDGoBgdBlOqTy5UFwmvmmcw,377
+invisibleroads_macros_web/port.py,sha256=cab64kqUnBQE2Uqpp6i849Uvyb3l4RXluAR3Kqo6GuI,882
+invisibleroads_macros_web/starlette.py,sha256=U1G95jhVqh2RDQ8zkCIe0qlT_DpJxTx9WJDhO7fqxNw,921
+invisibleroads_macros_web-0.2.3.dist-info/METADATA,sha256=Eq6FQfamjoec1K0zjt4VoejJq5d9r1zQ2GtJXpV702k,2201
+invisibleroads_macros_web-0.2.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+invisibleroads_macros_web-0.2.3.dist-info/top_level.txt,sha256=1GGHjR27j8NuOXL7kIqWCq223TP_Bu3bPT3Dg8pcjyQ,26
+invisibleroads_macros_web-0.2.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+invisibleroads_macros_web-0.2.3.dist-info/RECORD,,
