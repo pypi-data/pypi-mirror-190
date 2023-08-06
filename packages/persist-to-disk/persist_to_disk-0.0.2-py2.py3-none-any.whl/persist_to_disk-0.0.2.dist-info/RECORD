@@ -1,0 +1,11 @@
+persist_to_disk/__init__.py,sha256=I2MTuj2ecxyylNrKM6KULRC3aHDMEhyy_rDUpxgiT5c,6604
+persist_to_disk/_utils.py,sha256=h6OEkGPGhzcFmGvxRWn0NGM7W2kFyN4PhIu5ZFZSMQE,2116
+persist_to_disk/config.py,sha256=ALQRy6GEq2CwofTl4fXicgk--EWsbrzJl0hSRbxKSYI,4412
+persist_to_disk/myfilelock.py,sha256=WbDu_jUYiT1K_odi1GcX3K_9ongqpCsk8mL4SxAjI7s,715
+persist_to_disk/persister.py,sha256=Jr36l7ymhyBGhS2iIoeJ5lQG_XALPxzE8xSkPXAuzDU,11427
+persist_to_disk/test.py,sha256=cmlaRqEmYG4ik0ZUiXj0syaEUXpHtewl-hz1U0cjwfM,634
+persist_to_disk-0.0.2.dist-info/LICENSE,sha256=8eg-ONiPEY2P1JZxTub-waSdExmFywl0y3qfCLdcceE,1086
+persist_to_disk-0.0.2.dist-info/METADATA,sha256=bXrCVhuvJjwuE1t_N4qOohGwAZqvkbRQmSHiou5QOfE,2994
+persist_to_disk-0.0.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+persist_to_disk-0.0.2.dist-info/top_level.txt,sha256=paUXLBAupRE9iMnL7UPMX3RG8iidNHrPkAKfJMXXRC4,16
+persist_to_disk-0.0.2.dist-info/RECORD,,
