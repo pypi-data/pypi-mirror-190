@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+ia_uvg_redes_bayesianas/__init__.py
+ia_uvg_redes_bayesianas/bayesian.py
+ia_uvg_redes_bayesianas.egg-info/PKG-INFO
+ia_uvg_redes_bayesianas.egg-info/SOURCES.txt
+ia_uvg_redes_bayesianas.egg-info/dependency_links.txt
+ia_uvg_redes_bayesianas.egg-info/not-zip-safe
+ia_uvg_redes_bayesianas.egg-info/top_level.txt
