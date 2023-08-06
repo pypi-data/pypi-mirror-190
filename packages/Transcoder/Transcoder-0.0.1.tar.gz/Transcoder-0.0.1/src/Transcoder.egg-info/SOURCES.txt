@@ -1,0 +1,9 @@
+LICENSE.text
+README.md
+pyproject.toml
+src/Transcoder.egg-info/PKG-INFO
+src/Transcoder.egg-info/SOURCES.txt
+src/Transcoder.egg-info/dependency_links.txt
+src/Transcoder.egg-info/top_level.txt
+src/transcoder/Debug.py
+src/transcoder/__init__.py
