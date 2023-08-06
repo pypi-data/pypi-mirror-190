@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: ribdif
+Version: 1.1.2
+Summary: A program to analyse and correct for  the usefulness of amplicon sequences
+Project-URL: Homepage, https://github.com/Rob-murphys/RibDif2
+Project-URL: Bug Tracker, https://github.com/Rob-murphys/RibDif2/issues
+Author-email: Robert Murphy <Robert.murphy@bio.ku.dk>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Requires-Dist: biopython>=1.80
+Requires-Dist: matplotlib>=3.6.2
+Requires-Dist: ncbi-genome-download>=0.3.1
+Requires-Dist: numpy>=1.24.1
+Requires-Dist: pandas>=1.5.2
+Requires-Dist: scipy>=1.10.0
+Requires-Dist: seaborn>=0.12.2
+Description-Content-Type: text/markdown
+
+# RibDif
+
+RibDif evaluates the usefulness of a given amplicon at differentiating within a genus or species
+
+# Installation
+Ribdif is most easily installed with pip inside a virtual environment. Make sure your pip version is up to date
+
+conda
+
+`pip install git+https://github.com/Rob-murphys/ribdif.git`
+
+Next we need to install some dependencies:
+
+`conda install -c bioconda vsearch fasttree muscle barrnap -y`
+
+# Running
+
+`ribdif/ribdif -g <some genus name>`
+
+Use `-h` for full options list.
+
+
+
+
+
+
