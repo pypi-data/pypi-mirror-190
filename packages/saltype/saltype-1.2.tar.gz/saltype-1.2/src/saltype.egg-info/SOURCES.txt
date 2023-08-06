@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/saltype/__init__.py
+src/saltype/datatype.py
+src/saltype/tools.py
+src/saltype.egg-info/PKG-INFO
+src/saltype.egg-info/SOURCES.txt
+src/saltype.egg-info/dependency_links.txt
+src/saltype.egg-info/requires.txt
+src/saltype.egg-info/top_level.txt
