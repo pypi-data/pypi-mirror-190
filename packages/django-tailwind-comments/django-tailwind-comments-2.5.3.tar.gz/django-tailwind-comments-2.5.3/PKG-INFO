@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: django-tailwind-comments
+Version: 2.5.3
+Summary: Django Comment app. It can be associated with any given model.
+Home-page: https://github.com/lordmahyar/django-tailwind-comments
+Author: Mahyar
+Author-email: mmaahhyyaarr@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/lordmahyar/django-tailwind-comments/README.rst
+Project-URL: Source Code, https://github.com/lordmahyar/django-tailwind-comments
+Keywords: django comment comments ajax
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Provides-Extra: markdown
+License-File: LICENSE
+
+UNKNOWN
+
