@@ -1,0 +1,8 @@
+kaioretry/__init__.py,sha256=rsgQiSzulS5FzrqKb-ovYaObsEpbTgdeyNGE_cVN3_M,4537
+kaioretry/context.py,sha256=o8nhOzY3yLaDto2rf-O1nRKeUvApI6DKAT9cKTw3kVA,6458
+kaioretry/decorator.py,sha256=ntf65CSeINUc-mrP1Hmd5r3fwPSnwU52RWC0qawjBmc,7848
+kaioretry/types.py,sha256=9v_YYz5Ht0vP55sze5XBDnRXqYJzwqwI0QlFDGt8FpI,635
+kaioretry-0.8.4.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+kaioretry-0.8.4.dist-info/METADATA,sha256=hpIR2mIUKwSOHbdfcKG8S4nCtHp1_WpWvy1dqUgMhdk,2661
+kaioretry-0.8.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+kaioretry-0.8.4.dist-info/RECORD,,
