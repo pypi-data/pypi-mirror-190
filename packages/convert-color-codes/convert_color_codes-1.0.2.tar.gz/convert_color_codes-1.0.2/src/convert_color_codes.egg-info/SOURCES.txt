@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/convert_color_codes.py
+src/convert_color_codes.egg-info/PKG-INFO
+src/convert_color_codes.egg-info/SOURCES.txt
+src/convert_color_codes.egg-info/dependency_links.txt
+src/convert_color_codes.egg-info/top_level.txt

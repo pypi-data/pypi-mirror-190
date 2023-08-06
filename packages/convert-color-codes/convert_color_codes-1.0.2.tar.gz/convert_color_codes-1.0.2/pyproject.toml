@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convert_color_codes"
+version = "1.0.2"
+description = "Conversion between variations of color codes. HSV/HSB or RGB or CMYK or HSL"
+readme = "README.md"
+authors = [{ name = "PRMPSmart", email = "prmpsmart@gmail.com" }]
+# license = { file = "LICENSE" }
+classifiers = [
+    # "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["color", "color_codes", "convert_color"]
+# requires-python = ">=3.9"
+
+# [project.optional-dependencies]
+# dev = ["black"]
+
+[project.urls]
+Homepage = "https://github.com/prmpsmart/colorcodes"
+
+# [project.scripts]
+# realpython = "reader.__main__:main"
