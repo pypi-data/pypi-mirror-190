@@ -1,0 +1,94 @@
+[tool.black]
+line-length = 110
+target-version = ["py38"]
+
+[tool.mypy]
+python_version = 3.8
+ignore_missing_imports = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+strict = true
+plugins = ["numpy.typing.mypy_plugin"]
+
+[tool.pytest.ini_options]
+pytest_plugins = ["pytest_profiling"]
+
+[tool.poetry]
+name = "scan-to-paperless"
+version = "1.25.0"
+description = "Tool to scan and process documents to paperless"
+readme = "README.md"
+keywords = ["scan", "paperless"]
+license = "BSD-2-Clause"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Typing :: Typed",
+]
+authors = ["Stéphane Brunner <stephane.brunner@gmail.com>"]
+homepage = "https://hub.docker.com/r/sbrunner/scan-to-paperless/"
+repository = "https://github.com/sbrunner/scan-to-paperless"
+
+[tool.poetry.scripts]
+scan = "scan_to_paperless.scan:main"
+scan-process-status = "scan_to_paperless.scan_process_status:main"
+scan-process = "scan_to_paperless.process:main"
+add-codes-page = "scan_to_paperless.code:main"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "1.24.1"
+scipy = "1.10.0"
+scikit-image = "0.19.3"
+opencv-contrib-python-headless = "4.7.0.68"
+deskew = "1.3.3"
+jsonschema-gentypes = "1.4.1"
+"ruamel.yaml" = "0.17.21"
+argcomplete = "2.0.0"
+Pillow = "9.4.0"
+PyPDF2 = "3.0.1"
+pyzbar = "0.1.9"
+reportlab = "3.6.12"
+weasyprint = "57.2"
+cffi = "1.15.1"
+pikepdf = "6.2.9"
+zxing-cpp = "2.0.0"
+pyperclip = "1.8.2"
+tifffile = "2023.1.23.1"
+deepmerge = "1.1.0"
+matplotlib = "3.6.3"
+
+[tool.poetry.dev-dependencies]
+prospector = { version = "1.8.4", extras = ["with_bandit", "with_mypy", "with_pyroma"] }
+pytest = "7.2.1"
+pytest-profiling = "1.7.0"
+pyroma = "4.1"
+typing-extensions = "4.4.0"
+c2cwsgiutils = { version = "5.1.6", extras = ["test_images"] }
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning", "poetry-plugin-tweak-dependencies-version"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+pattern = "^(?P<base>\\d+(\\.\\d+)*)"
+format-jinja = """
+{%- if env.get("VERSION_TYPE") == "version_branch" -%}
+{{serialize_pep440(bump_version(base, 1 if env.get("IS_MASTER") == "TRUE" else 2), dev=distance)}}
+{%- elif distance == 0 -%}
+{{serialize_pep440(base)}}
+{%- else -%}
+{{serialize_pep440(bump_version(base), dev=distance)}}
+{%- endif -%}
+"""
+
+[tool.poetry-plugin-tweak-dependencies-version]
+default = "present"
