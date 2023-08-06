@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+just_because/__init__.py
+just_because/ji2zhiyin.py
+just_because/patterns.py
+just_because/requirements.txt
+just_because/zhiyin2ji.py
+just_because.egg-info/PKG-INFO
+just_because.egg-info/SOURCES.txt
+just_because.egg-info/dependency_links.txt
+just_because.egg-info/top_level.txt
+just_because/words/ji.txt
+just_because/words/yin.txt
+just_because/words/zhi.txt
