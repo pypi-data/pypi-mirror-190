@@ -1,0 +1,10 @@
+autoembedder/__init__.py,sha256=jSytGwGtKPVvg8U1vT_3z_RzWU9cKAJnPAyteEUG0vw,165
+autoembedder/data.py,sha256=uEKcjKGK4JoljGs3g8CnFHCSGlKMHGUgQw9jE3phAfk,2664
+autoembedder/evaluator.py,sha256=NJ6VL0C7GFJ2UP8BlOw3ZuhfQK1wemDY4TbwGi9yJYU,4186
+autoembedder/learner.py,sha256=qhe50HVFbQbFbHN3il_unEl8pUnEF4vFwEQ5_QSFSLE,15118
+autoembedder/model.py,sha256=bjSPARnbkZ3cZhDHkuPoFoyfO6tOsy8jIz0NMKSE5FU,10166
+autoembedder/training.py,sha256=AoB64gpaFBk0o03EZUDOS1UQGzJyVmssmvv637szyKg,7897
+autoembedder-0.2.5.dist-info/METADATA,sha256=OkcayRKz1fFPdaHZmfqipaXWUrh7UUiSTccTQU89YLE,14093
+autoembedder-0.2.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+autoembedder-0.2.5.dist-info/LICENSE,sha256=vVCeuORSw6nl2d0Lz-9dQyFbhkPRHEcU60yPpa-H_hk,1074
+autoembedder-0.2.5.dist-info/RECORD,,
