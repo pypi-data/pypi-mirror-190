@@ -1,0 +1,12 @@
+healpy
+pandas
+setuptools_scm
+
+[dev]
+pytest
+pytest-cov
+pre-commit
+nbconvert
+pylint
+sphinx==5.3.0
+sphinx_rtd_theme==1.1.1
