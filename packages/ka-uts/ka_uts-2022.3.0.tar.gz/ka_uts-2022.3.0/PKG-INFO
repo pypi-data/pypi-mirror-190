@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: ka_uts
+Version: 2022.3.0
+Summary: special Utilities
+Author-email: Bernd Stroehle <bernd.stroehle@dbs29.com>
+License: #
+        # Copyright (c) 2022 Kosakya, GmbH. All rights reserved.
+        #
+        # This program is free software: you can redistribute it and/or modify
+        # it under the terms of the GNU General Public License as published by
+        # the Free Software Foundation, either version 3 of the License, or
+        # (at your option) any later version.
+        #
+        # This program is distributed in the hope that it will be useful,
+        # but WITHOUT ANY WARRANTY; without even the implied warranty of
+        # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        # GNU General Public License for more detail.
+        #
+        # You should have received a copy of the GNU General Public License
+        # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+        #
+        # Person:           		Role:           Email:
+        # Bernd Stroehle                Author          bernd.stroehle@kosakya.de
+        #                               Maintainer
+        
+Project-URL: Source Code, https://kosakya.de/ka_uts
+Project-URL: Homepage, https://kosakya.de/
+Project-URL: Documentation, https://kosakya.de/wiki
+Project-URL: Bug Tracker, https://kosakya.de/issues
+Project-URL: Changelog, https://kosakya.de/ka_uts/blob/master/CHANGELOG.md
+Project-URL: GPLv3 License, https://gitlab.com/kosakya/licenses/gpl-1.0.en.html
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Project description
+
+## ka_uts: special utilities package
+ka_uts ís a collection of interface modules to the follwing python utilities:
+
+### Special Utility Modules:
+
+| Utility</br>Module| Python</br>Link                             | Python</br>Module | Python</br>Library      | Type      |
+|--------|--------------------------------------------------------|-------------------|-------------------------|-----------|
+| csv    | [csv](https://docs.python.org/3.10/library/csv.html)   | Csv               | Python Standard Library | C         |
+| jinja2 | [jinja2](https://pypi.org/project/Jinja2/#files)       |                   | Jinja2                  | Python    |
+| json   | [json](https://docs.python.org/3.10/library/json.html) | Json              | Python Standard Library | C         |
+|        | [ujson](https://pypi.org/project/ujson/)               |                   | ujson                   | C/C++     |
+| numpy  | [numpy](https://pypi.org/project/numpy/)               |                   | numpy                   | C, Python |
+| toml   | [toml](https://docs.python.org/3.10/library/csv.html)  |                   | toml                    | C         |
+| xml    | [xml](https://docs.python.org/3.10/library/csv.html)   | Xml               | Python Standard Library | C         |
+| yml    | [yaml](https://docs.python.org/3.10/library/csv.html)  | Yaml              | Python Standard Library | C         |
+
+# Installation
+
+### Install from PyPi
+* Install ka_uts package: `pip3 install ka_uts`
+
+### Install from GitHub
+
+###### (currently not possible, repository is private)
+* clone the ka_uts git repository: `git clone https://github.com/bs29/ka_uts`
+* Change into the ka_uts source directory: `cd ka_uts`
+* Install ka_uts package: `pip3 install .`
+# Examples 
+
+#### How to use:
+| Utility<br/>Module | How use |
+|--------------------|---------|
+| csv                |         |
+| jinja2             |         |
+| json               |         | 
+| numpy              |         |
+| toml               |         |
+| xml                |         |
+| yml                |         |
