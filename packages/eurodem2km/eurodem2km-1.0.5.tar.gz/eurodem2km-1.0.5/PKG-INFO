@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: eurodem2km
+Version: 1.0.5
+Summary: Provides local API to get Altitude of any point in Europe by Lat/Lon coordinates.
+Author-email: Marco Foi <foimarco@gmail.com>
+Keywords: dem,altitude,2km
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## eurodem2km
+
+Import the DemAPI class as follows:
+
+`from eurodem2km.api import DemAPI`
+
+and use its method "getAltitude(lat: float, lon: float)" to get the location altitude'  
+
+`altitude = DemAPI.getAltitude(44.159,10.386)`
+
+<br/>
+
+### DEVELOPMENT
+
+Clone the code and install as an editable install using:  
+`python -m pip install -e .`
+
+<br/>
+
+### PACKAGING
+Follow this fine tutorial:
+https://realpython.com/pypi-publish-python-package/
+
+Install in virtual environment the build and twine tools:  
+``python -m pip install build twine keyrings.alt``
+
+Build:  
+``python -m build``
+
+Check output:  
+``twine check dist/*``
+
+Upload to PyPI:  
+``twine upload dist/*``

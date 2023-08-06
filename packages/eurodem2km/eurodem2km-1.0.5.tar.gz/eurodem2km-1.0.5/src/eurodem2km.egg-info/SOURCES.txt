@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/eurodem2km/__init__.py
+src/eurodem2km/__main__.py
+src/eurodem2km/api.py
+src/eurodem2km.egg-info/PKG-INFO
+src/eurodem2km.egg-info/SOURCES.txt
+src/eurodem2km.egg-info/dependency_links.txt
+src/eurodem2km.egg-info/entry_points.txt
+src/eurodem2km.egg-info/requires.txt
+src/eurodem2km.egg-info/top_level.txt
+src/eurodem2km/dems/DEM_Europe_2km.zip
+src/eurodem2km/dems/__init__.py
+tests/test.py
