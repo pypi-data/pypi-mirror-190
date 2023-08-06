@@ -1,0 +1,13 @@
+Change Log
+==========
+0.0.3 (2/8/2023)
+----------------
+Read Me Update
+
+0.0.2 (2/8/2023)
+----------------
+Stock Information Function
+
+0.0.1 (2/8/2023)
+----------------
+Initial Release
