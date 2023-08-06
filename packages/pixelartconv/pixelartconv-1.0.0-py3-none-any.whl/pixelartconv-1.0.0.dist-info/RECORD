@@ -1,0 +1,9 @@
+paconv/__init__.py,sha256=dv7iuojs9DHakviD2XxGsQ7a0_IrfSL9qF4bw4CE4MM,73
+paconv/__main__.py,sha256=RFYkdkw7GFLgnBYK4uY6rPIONjIL4bp-fi7PehAIY_I,965
+paconv/file_management.py,sha256=tIDK0Jc8NEtGe3MlfRhug4sFvOnrdWbK0Ak5tdlBUlg,4991
+paconv/logic.py,sha256=7dl3g5NeXSzKogH7xKbXZaBYUHDUTfed9Eic2X9jqe4,3189
+paconv/script.py,sha256=aQ6qbFhGqEbiiEupqmLEZc3sXipo3u_XpLSBhtuiE28,1644
+pixelartconv-1.0.0.dist-info/METADATA,sha256=MMmrYiN6tLbjXCq2uXmZIhhcpd7qmjGL0gNSgc52RLY,3754
+pixelartconv-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pixelartconv-1.0.0.dist-info/top_level.txt,sha256=g89MGeei6ug9ScCDVNR6t-NX9Pi-w2sHDfmbrcqNgDI,7
+pixelartconv-1.0.0.dist-info/RECORD,,
