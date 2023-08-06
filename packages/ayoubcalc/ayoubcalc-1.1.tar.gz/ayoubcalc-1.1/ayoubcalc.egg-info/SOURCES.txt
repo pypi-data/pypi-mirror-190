@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+ayoubcalc.egg-info/PKG-INFO
+ayoubcalc.egg-info/SOURCES.txt
+ayoubcalc.egg-info/dependency_links.txt
+ayoubcalc.egg-info/top_level.txt
+codepy/__init__.py
