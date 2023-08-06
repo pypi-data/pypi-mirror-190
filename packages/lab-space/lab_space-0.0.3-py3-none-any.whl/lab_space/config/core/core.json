@@ -1,0 +1,16 @@
+{
+    "trial_path": "",
+    "trial_name": "",
+    "expt_path": "",
+    "expt_name": "",
+    "save_path": "",
+    "experiments": 
+        {
+        "f":
+            {
+                "module_path": "functions",
+                "module_name": "functions",
+                "function_name": "f"
+            }
+        }
+}
