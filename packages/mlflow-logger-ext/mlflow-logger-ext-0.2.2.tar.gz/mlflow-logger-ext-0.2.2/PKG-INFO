@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mlflow-logger-ext
+Version: 0.2.2
+Summary: Using python decorator to manage MlFlow
+Author: seanyu
+Author-email: weihsiang.yu@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: gitpython
+Requires-Dist: loguru
+Requires-Dist: mlflow (>=2.0,<3.0)
