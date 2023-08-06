@@ -1,0 +1,19 @@
+{% load base_taglib %}
+{%if 'downtime_messages'|feature:True%}{%downtime_messages%}{%endif%}
+
+{%if next_downtime%}
+    {%if active_downtime%}
+        <div class="alert alert-danger">
+            {%fa fa-exclamation-triangle%}
+            This site currently undergoing scheduled maintenance.
+            You may experience errors, and any changes you make may be lost.
+            We recommend you check back later.
+        </div>
+    {%else%}
+        <div class="alert alert-info">
+            {%fa fa-clock-o%}
+            This site will be going offline in {{next_downtime.minutes_until_start}} minutes.<br />
+            <div class="indent" style="padding-top:7px;"><em>{{next_downtime.reason}}</em></div>
+        </div>
+    {%endif%}
+{%endif%}
