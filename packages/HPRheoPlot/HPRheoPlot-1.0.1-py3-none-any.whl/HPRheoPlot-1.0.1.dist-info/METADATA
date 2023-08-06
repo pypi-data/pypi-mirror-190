@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: HPRheoPlot
+Version: 1.0.1
+Summary: ::A tool to automatically plot rheological data obtained from TA Instruments rheometers::
+Home-page: https://pypi.org/project/hprheoplot/
+Author: wjgoarxiv
+Author-email: woo_go@yahoo.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: pyfiglet
+Requires-Dist: tabulate
+Requires-Dist: xlrd
+Requires-Dist: openpyxl
+Requires-Dist: csv
+
+UNKNOWN
+
