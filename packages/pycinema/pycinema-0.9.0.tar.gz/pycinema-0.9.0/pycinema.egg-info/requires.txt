@@ -1,0 +1,10 @@
+numpy
+scipy
+h5py
+matplotlib
+py
+Pillow
+moderngl<6
+opencv-python
+ipycanvas
+ipywidgets
