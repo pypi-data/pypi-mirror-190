@@ -1,0 +1,3 @@
+dist
+docs
+pasta_eln
