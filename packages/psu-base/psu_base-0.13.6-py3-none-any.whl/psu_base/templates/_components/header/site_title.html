@@ -1,0 +1,7 @@
+{% load base_taglib %}
+
+{% app_name %}
+
+{%if is_non_production%}
+<span class="text-warning" style="font-size:.6em;">(Non-Production)</span>
+{%endif%}
