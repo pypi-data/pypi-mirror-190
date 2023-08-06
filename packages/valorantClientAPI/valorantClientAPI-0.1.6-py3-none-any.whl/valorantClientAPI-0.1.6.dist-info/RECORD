@@ -1,0 +1,10 @@
+valorantClientAPI/__init__.py,sha256=J0c3n9d8NLtzD3Rm5iKrGYPhh8nzzOc4-RJVfRCgCYo,75
+valorantClientAPI/client.py,sha256=LOEOC1oEMOk3QrvlGXOxBlQxv1B_nOnkd7tz8q63oGI,26029
+valorantClientAPI/riot_auth.py,sha256=Gq5FgZ-9naHOhGPG5G_4y_sp7Pd-Db0KYQ0ugnIlL0Y,11825
+valorantClientAPI/response/core_game.py,sha256=8dcEiNC-0uRwd5AkAL84AXZW06ny4cvAT9Q8pzDLD5o,2136
+valorantClientAPI/response/pre_game.py,sha256=SldCad7E3zPy9MxrF5bIoY71KzzTmwfM5c7nC1FYFoQ,1862
+valorantClientAPI-0.1.6.dist-info/LICENSE,sha256=q94Lf2eKRUXHbh8CYFacza1FdUzCH6iN7lpQoN0Nu_Y,1084
+valorantClientAPI-0.1.6.dist-info/METADATA,sha256=Rn2GJ-Q0Gcug6cvBNXShDiO11BEr_lqdcdi8f0btLEw,1244
+valorantClientAPI-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+valorantClientAPI-0.1.6.dist-info/top_level.txt,sha256=6YXuiGzd4c9wUaex9_SVuzCE_kuIcaIXHe_NAjulixo,18
+valorantClientAPI-0.1.6.dist-info/RECORD,,
