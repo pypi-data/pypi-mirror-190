@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/db_connector/__init__.py
+src/db_connector/connection_string.py
+src/db_connector/exceptions.py
+src/db_connector/ipython_magic.py
+src/db_connector/main.py
+src/db_connector/settings.py
+src/db_connector/ssh_tunnel.py
+src/nbdbsession.egg-info/PKG-INFO
+src/nbdbsession.egg-info/SOURCES.txt
+src/nbdbsession.egg-info/dependency_links.txt
+src/nbdbsession.egg-info/top_level.txt
