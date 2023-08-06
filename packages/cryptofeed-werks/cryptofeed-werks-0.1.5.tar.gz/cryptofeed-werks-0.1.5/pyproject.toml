@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "cryptofeed-werks"
+version = "0.1.5"
+description = "WebSocket subclasses, and experiments, for data from cryptocurrency exchanges"
+authors = ["Alex <globophobe@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/globophobe/cryptofeed-werks"
+repository = "https://github.com/globophobe/cryptofeed-werks"
+keywords = ["cryptocurrency", "trading"]
+classifiers = [
+    "Operating System :: OS Independent",
+]
+packages = [{ include = "cryptofeed_werks" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+cryptofeed = "*"
+google-cloud-bigquery = { version = "*", optional = true }
+google-cloud-bigquery-storage = { version = "*", optional = true }
+google-cloud-pubsub = { version = "*", optional = true }
+httpx = { version = "*", optional = true }
+pandas = "*"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+isort = "*"
+invoke = "*"
+python-decouple = "*"
+sentry-sdk = "*"
+
+[tool.poetry.extras]
+all = ["google-cloud-bigquery", "google-cloud-bigquery-storage", "google-cloud-pubsub", "httpx"]
+bigquery = ["google-cloud-bigquery", "google-cloud-bigquery-storage"]
+httpx = ["httpx"]
+pubsub = ["google-cloud-pubsub"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
