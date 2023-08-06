@@ -1,0 +1,12 @@
+pimage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pimage/block.py,sha256=DGo0hckSApItApH4YCoDO6ZeBlCozA_xO60bKo9v8yg,6665
+pimage/configuration.py,sha256=v8s7s_bQaSd0YctgtoBTb5WR6wkG8L2vD36YiTpClrM,1502
+pimage/container.py,sha256=tuMmF8mvn1lh-9oGRkEpkDB1uCNQ7PyywPV0PbiVQWQ,1606
+pimage/copy_move.py,sha256=zkFZhK32sY4Bh81uY6udlNrACtafDJUiCeGllqEcpoA,2395
+pimage/image_object.py,sha256=tHIWEltnVhBGgp9BNnoZNUVlR31ymhrWeW1xmlS7RnQ,15624
+pimage-1.0.9.dist-info/LICENSE-APACHE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pimage-1.0.9.dist-info/LICENSE-MIT,sha256=XDlLJCvl_QxonES4MnzuUUnebi6dhIgFBoihzRPafZ8,1077
+pimage-1.0.9.dist-info/METADATA,sha256=Gud4sg2Sr3azLEiOiRlW7WXZteZf_YCTP0nh85GUKZg,1431
+pimage-1.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pimage-1.0.9.dist-info/top_level.txt,sha256=D5X05jNoaM3yg6ZH4xg9YJnCxdiB9YxBZ6Yqc-LVmSg,7
+pimage-1.0.9.dist-info/RECORD,,
