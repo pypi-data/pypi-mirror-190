@@ -1,0 +1,41 @@
+{% load base_taglib %}
+{% load sass_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portland State University</title>
+    <link rel="shortcut icon" href="{%static_content_url%}/images/favicon.ico" type="image/x-icon">
+    {%jquery%}
+    {%bootstrap%}
+    {%font_awesome version='4'%}
+
+    {% wdt_javascript "ajax.js" %}
+
+    <link href="{% sass_src 'css/template.scss' %}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{% static 'js/flash-messages.js' %}"></script>
+
+    {% block scripts %}
+    {% endblock %}
+</head>
+<body>
+    {% include 'template_components/header.html' %}
+    {%if_feature_enabled downtime_messages%}{%downtime_messages%}{%end_if_feature_enabled%}
+    {% include 'template_components/message_container.html' %}
+
+    {% block pagecontent %}
+
+    <br />
+    ...<br />
+    <br />
+
+    {% endblock %}
+
+    {% include 'template_components/footer.html' %}
+
+    {## Run AdminScripts if enabled ##}
+    {%admin_script%}
+</body>
+</html>
