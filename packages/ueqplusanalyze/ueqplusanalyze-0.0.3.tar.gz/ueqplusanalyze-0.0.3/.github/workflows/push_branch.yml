@@ -1,0 +1,9 @@
+name: push-to-branch
+on:
+  push:
+    tags:
+      - !v*
+
+jobs:
+  test:
+    uses: ./.github/workflows/test_code.yml
