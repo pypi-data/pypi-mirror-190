@@ -1,0 +1,5 @@
+google-auth==2.16.0
+google-cloud-logging==3.4.0
+google-cloud-bigquery==3.4.2
+bigquery-schema-generator==1.5.1
+python-dotenv==0.21.1
