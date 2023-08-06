@@ -1,0 +1,13 @@
+ctapipe_io_nectarcam/__init__.py,sha256=XbXcPIyWcZPpR8v2nrgJMmJKV3fDoyoQs9qo7WYUNj4,28515
+ctapipe_io_nectarcam/anyarray_dtypes.py,sha256=6KRpXYK2F2UEIxaO2OXNbTR_8KqLzjZ0-VUlof93wVg,1479
+ctapipe_io_nectarcam/calibration.py,sha256=e7RbkQGhfSIq30yMHDiNrjUsNOL6Z0u6pKxbIo_wecw,7061
+ctapipe_io_nectarcam/constants.py,sha256=GmbPjmXfyTrDmi0yghMTl-0O8s_VhNx45Elk2vUc5tQ,184
+ctapipe_io_nectarcam/containers.py,sha256=CDsh1NzBcKrRHjrSGCgcRyeI3XwjC3BqsV5hcwgWvrY,4359
+ctapipe_io_nectarcam/version.py,sha256=ADzYqYTUruC3UDVro6qAYvcNtYTh0M3CLWno6G7YJHk,757
+ctapipe_io_nectarcam/resources/NectarCam-003.camgeom.fits.gz,sha256=LyKyeNY00llu5vAapnXO74nvkMRAk9B9OgcTIoQem6E,13078
+ctapipe_io_nectarcam/resources/Pulse_template_nectarCam_17042020.dat,sha256=JlYz-YAN2vQatd0n70PeTmKVvsX7SKYszjT65OShWF0,11391
+ctapipe_io_nectarcam/resources/calibrationfile_run3255_pedrun3255_gainrun3155.hdf5,sha256=_HrDwYku-WYQfu_JQsk331azgWWhceVEat4Iwc-iwII,881677
+ctapipe_io_nectarcam-0.0.0.dist-info/METADATA,sha256=4n-_VT8vV3mWixpHVxnYx2x-IyeBAaLFubbLHixwvD0,1789
+ctapipe_io_nectarcam-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ctapipe_io_nectarcam-0.0.0.dist-info/top_level.txt,sha256=r56-zssFhsJfuiioulXLiwXCJV5Z3gRfmmLAZI0vuLg,21
+ctapipe_io_nectarcam-0.0.0.dist-info/RECORD,,
