@@ -1,0 +1,2 @@
+[console_scripts]
+eurodem2km = eurodem2km.__main__:main
