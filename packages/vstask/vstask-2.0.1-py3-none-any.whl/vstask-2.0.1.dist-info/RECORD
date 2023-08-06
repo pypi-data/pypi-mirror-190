@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/sanity_test.py,sha256=eBqDV4LBAfBvruWeBb0hHae9DPGsaHwye24YtmvrRpE,95
+vstask/Timer.py,sha256=7SOuzKErbQgCpNlsFUerZznJw05aDeam4IjRKEi40yY,842
+vstask/__init__.py,sha256=T2qSWzfZI64HXgNg8hrbn2PjYLzGRQ5ZqHLr_f65akM,58
+vstask/__version__.py,sha256=9FO_rljfmEKR9CT_MVdHw3pWIxdnR1qcQl373hfco0k,18
+vstask/cli.py,sha256=RVRXD5l9E9r2qBhUwEDnd95EvVmNHdHfmhUSxybWU8E,1454
+vstask/completion.py,sha256=1dUjvqz5vV9Q99hD-pAdjhX5YY4lkj22yVpovF-xraM,542
+vstask/vstask.py,sha256=X3Lg3OyNHGAnb2aAbo48BXYE1QLXfTKo6adyGtVi4Us,2333
+vstask-2.0.1.dist-info/LICENSE,sha256=VLs1QQgEKhcboiDRnC_2dSap2J-wJE9HEaysjBDxUdk,1055
+vstask-2.0.1.dist-info/METADATA,sha256=NX3qOJYoC7DVdZdnn0xzeyPlbZvonKL_xg_xvgfvOSM,1263
+vstask-2.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vstask-2.0.1.dist-info/entry_points.txt,sha256=UTul_3E_rubpaaCAf9YEgLAG0z4c6NnDkTJkspgOoOU,47
+vstask-2.0.1.dist-info/top_level.txt,sha256=Yd_fy4vDvD86cDXzuZrBylmYQE77OFweyGUGkz6OQnM,13
+vstask-2.0.1.dist-info/RECORD,,
