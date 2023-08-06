@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "a_rename"
+version = "0.1.0"
+description = ""
+authors = ["Matheus Henrique <matheus2hcosta@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+debugpy = "^1.6.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
