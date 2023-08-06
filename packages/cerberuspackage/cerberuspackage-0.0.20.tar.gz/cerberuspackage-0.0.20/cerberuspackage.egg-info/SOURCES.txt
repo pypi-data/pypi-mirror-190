@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+cerberuspackage/__init__.py
+cerberuspackage/arcface.py
+cerberuspackage/scrdf_cbr.py
+cerberuspackage.egg-info/PKG-INFO
+cerberuspackage.egg-info/SOURCES.txt
+cerberuspackage.egg-info/dependency_links.txt
+cerberuspackage.egg-info/requires.txt
+cerberuspackage.egg-info/top_level.txt
+cerberuspackage/adaface/__init__.py
+cerberuspackage/adaface/adaface.py
+cerberuspackage/adaface/net.py
+tests/__init__.py
+tests/test_alignment.py
