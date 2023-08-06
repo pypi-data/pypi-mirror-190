@@ -1,0 +1,13 @@
+setuptools
+zope.i18n
+zope.i18nmessageid
+zope.interface
+zope.schema
+
+[form]
+z3c.form
+
+[test]
+z3c.form
+zope.testing
+zope.testrunner
