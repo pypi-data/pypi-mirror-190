@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/BingGPT.py
+src/revBingGPT.egg-info/PKG-INFO
+src/revBingGPT.egg-info/SOURCES.txt
+src/revBingGPT.egg-info/dependency_links.txt
+src/revBingGPT.egg-info/requires.txt
+src/revBingGPT.egg-info/top_level.txt
