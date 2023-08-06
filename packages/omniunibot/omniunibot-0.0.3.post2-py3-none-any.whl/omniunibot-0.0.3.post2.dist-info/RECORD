@@ -1,0 +1,16 @@
+omniunibot/__init__.py,sha256=Irrx8GpSuZpEKBhw0wCEtREVIDlNaHFs7DOpaZo9cM4,191
+omniunibot/__main__.py,sha256=QHnFbRCtEBv01kxA_oM_u8CQvD9TR-k86GJd4iRLtqo,672
+omniunibot/__version__.py,sha256=_663jDgV4t2f4UhuDAZKEC13OwhhjZg3cHFUwMdOTa8,28
+omniunibot/client.py,sha256=J8W_nJOQ7sH-BaxZDWret_jhoGNd6ejXKJLhhOjRjgw,1566
+omniunibot/server.py,sha256=4qBQzVlN0qBwcyIDAHy8M3zePEzFCxKilESo04PgCis,4408
+omniunibot/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omniunibot/wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omniunibot/wrapper/base.py,sha256=5vXwTw6P_zEgeNMItj53UZBU5HMdpVLhTA_AOg4cB_c,516
+omniunibot/wrapper/dingtalk.py,sha256=z1tyxdXVHcAKQISNaTlDlbBYfBSIG0yJturnVxDSo_g,2825
+omniunibot/wrapper/feishu.py,sha256=izKtjXp8Eb53GZxMfcK9rTvSE4bsuM2s6G92268AVj0,2054
+omniunibot/wrapper/wecom.py,sha256=h8l3rISDFqDVG6-E5ROIivYs-uaUc7295nIRfJwZ9lU,2825
+omniunibot-0.0.3.post2.dist-info/LICENSE,sha256=xLxMv-4gRDqpqksgWOs8G-AX5jai6xfO-pJwgiIw7TY,1065
+omniunibot-0.0.3.post2.dist-info/METADATA,sha256=0M7yul3q6uh02W7RhXXWFUTpxCUWwttxSg9YicR4lho,3093
+omniunibot-0.0.3.post2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+omniunibot-0.0.3.post2.dist-info/top_level.txt,sha256=oInvtRRohTCktM8XgmU3dggZnzTAlZdsYpnULGgYNzs,11
+omniunibot-0.0.3.post2.dist-info/RECORD,,
