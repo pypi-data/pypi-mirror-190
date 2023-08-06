@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pipresqs/__init__.py
+pipresqs/color.py
+pipresqs.egg-info/PKG-INFO
+pipresqs.egg-info/SOURCES.txt
+pipresqs.egg-info/dependency_links.txt
+pipresqs.egg-info/top_level.txt
