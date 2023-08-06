@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nonebot_plugin_maimai/__init__.py
+nonebot_plugin_maimai/public.py
+nonebot_plugin_maimai.egg-info/PKG-INFO
+nonebot_plugin_maimai.egg-info/SOURCES.txt
+nonebot_plugin_maimai.egg-info/dependency_links.txt
+nonebot_plugin_maimai.egg-info/requires.txt
+nonebot_plugin_maimai.egg-info/top_level.txt
+nonebot_plugin_maimai/libraries/__init__.py
+nonebot_plugin_maimai/libraries/image.py
+nonebot_plugin_maimai/libraries/maimai_best_40.py
+nonebot_plugin_maimai/libraries/maimai_best_50.py
+nonebot_plugin_maimai/libraries/maimaidx_music.py
+nonebot_plugin_maimai/libraries/tool.py
