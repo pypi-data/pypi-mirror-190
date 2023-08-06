@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+paqueteseleccioninstancias/__init__.py
+paqueteseleccioninstancias/iselection/__init__.py
+paqueteseleccioninstancias/iselection/mathadvancedfuncs.py
+paqueteseleccioninstancias/iselection/mymathsutils.py
+seleccioninstancias.egg-info/PKG-INFO
+seleccioninstancias.egg-info/SOURCES.txt
+seleccioninstancias.egg-info/dependency_links.txt
+seleccioninstancias.egg-info/requires.txt
+seleccioninstancias.egg-info/top_level.txt
