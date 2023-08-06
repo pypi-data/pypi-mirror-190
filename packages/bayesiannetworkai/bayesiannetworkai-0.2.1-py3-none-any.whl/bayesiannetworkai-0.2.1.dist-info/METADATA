@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: bayesiannetworkai
+Version: 0.2.1
+Summary: A package for using Bayesian Networks
+License: MIT
+Author: GrupoAI
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pgmpy (>=0.1.21,<0.2.0)
+Description-Content-Type: text/markdown
+
+# bayesiannetworkai
+
+A package for using Bayesian Networks
+
+## Installation
+
+```bash
+$ pip install bayesiannetworkai
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`bayesiannetworkai` was created by GrupoAI. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`bayesiannetworkai` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
