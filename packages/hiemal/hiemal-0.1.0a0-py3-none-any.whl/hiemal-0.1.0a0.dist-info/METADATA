@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hiemal
+Version: 0.1.0a0
+Summary: A lightweight audio library
+Home-page: https://www.hiemal.dev/
+Download-URL: https://github.com/hiemal-labs/hiemal
+Author: syzygial
+Author-email: info@hiemal.dev
+License: MIT
+Project-URL: Issue Tracker, https://github.com/hiemal-labs/hiemal/issues
+Project-URL: Source Code, https://github.com/hiemal-labs/hiemal
+Project-URL: Documentation, https://www.hiemal.dev/
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+Hiemal is a lightweight C audio library which aims toprovide a simple interface for building signal chains for low-latency,real-time audio processing including DSP, file i/o, etc. This projectis very young and under active development, so the public API should notbe considered stable and might change with little notice.
+
