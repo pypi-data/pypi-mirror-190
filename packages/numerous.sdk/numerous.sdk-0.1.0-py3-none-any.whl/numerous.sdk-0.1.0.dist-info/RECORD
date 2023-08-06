@@ -1,0 +1,17 @@
+numerous/client/__init__.py,sha256=NWlGhOLbtDZaNdFRYCCL9rEVhEkiXjxOs44BwaAW6pQ,770
+numerous/client/common.py,sha256=tJXFgVZzoutpiXbjfI9PAc6ATkAUqPCUNW3UMQjmzE8,4733
+numerous/client/config.py,sha256=uLk_Yc8-hFH3lJdfM_f30hkAYCFadDA3Bb-roLuU_5M,988
+numerous/client/data_source.py,sha256=1GHAV8vJ_ChS4kJ-3GakS5XJhfkirkANjsFIs8y0qVY,14384
+numerous/client/numerous_admin_client.py,sha256=hlnhxAroqkZdQub7GOVxCAO8QL54xZcGLslwBCZ0VS0,14883
+numerous/client/numerous_buffered_writer.py,sha256=P8Nd5eVwmWedzRJIHhVI7y3tpy68ussgok1JT_aJFfM,2978
+numerous/client/numerous_client.py,sha256=4Xd0ecBIwwGki5eMbdkKMnw697wFq64Wn8pDYK-O124,62542
+numerous/client/numerous_log_handler.py,sha256=W9RdLvGXzUHrAkHo2NWYnns6gy6TZ5kzpBwTzdfPcoA,1830
+numerous/client/optimization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numerous/client/optimization/configuration.py,sha256=iGAOV2vQY9w8iOTLalvd6OG93_2CYg6NM04_-xIrGbw,8676
+numerous/client/optimization/orchestrator.py,sha256=NqWvH-7C59ydcWHpkRoFjM4O3IwtAFj3sU6Phia48-I,9861
+numerous/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numerous.sdk-0.1.0.dist-info/LICENSE.txt,sha256=tcvrfRueX0Y9btx53tKs-tdY9Mchozo1szXlOTAgoEs,1076
+numerous.sdk-0.1.0.dist-info/METADATA,sha256=45f668dJh3I6YabHCiHu24Ka24XbiAr3SzykReyhIeA,3144
+numerous.sdk-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+numerous.sdk-0.1.0.dist-info/top_level.txt,sha256=1GjAtjZ5GuaIsDI4orwN0DN9tV0rzUbgsnrIc5z5hIo,9
+numerous.sdk-0.1.0.dist-info/RECORD,,
