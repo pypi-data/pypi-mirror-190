@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+adjustable_random/__init__.py
+adjustable_random/exceptions.py
+adjustable_random/main.py
+adjustable_random/tests.py
+adjustable_random_package.egg-info/PKG-INFO
+adjustable_random_package.egg-info/SOURCES.txt
+adjustable_random_package.egg-info/dependency_links.txt
+adjustable_random_package.egg-info/requires.txt
+adjustable_random_package.egg-info/top_level.txt
