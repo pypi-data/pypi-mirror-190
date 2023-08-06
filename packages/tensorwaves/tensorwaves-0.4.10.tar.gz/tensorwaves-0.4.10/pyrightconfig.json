@@ -1,0 +1,27 @@
+{
+  "exclude": [
+    "**/__pycache__",
+    "**/_build",
+    "**/.git",
+    "**/.ipynb_checkpoints",
+    "**/.mypy_cache",
+    "**/.pytest_cache",
+    "**/.tox"
+  ],
+  "reportGeneralTypeIssues": false,
+  "reportMissingTypeArgument": false,
+  "reportMissingTypeStubs": false,
+  "reportPrivateImportUsage": false,
+  "reportUnboundVariable": false,
+  "reportUnknownArgumentType": false,
+  "reportUnknownLambdaType": false,
+  "reportUnknownMemberType": false,
+  "reportUnknownParameterType": false,
+  "reportUnknownVariableType": false,
+  "reportUnnecessaryIsInstance": false,
+  "reportUnusedClass": true,
+  "reportUnusedFunction": true,
+  "reportMissingParameterType": false,
+  "reportUnusedImport": true,
+  "reportUnusedVariable": true
+}
