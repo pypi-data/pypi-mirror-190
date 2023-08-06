@@ -1,0 +1,7 @@
+README.md
+setup.py
+pilotbyme.egg-info/PKG-INFO
+pilotbyme.egg-info/SOURCES.txt
+pilotbyme.egg-info/dependency_links.txt
+pilotbyme.egg-info/top_level.txt
+pilotme/__init__.py
