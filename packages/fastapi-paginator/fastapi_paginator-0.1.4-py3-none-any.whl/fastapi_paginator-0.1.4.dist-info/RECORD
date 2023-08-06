@@ -1,0 +1,8 @@
+fastapi_paginator/__init__.py,sha256=JlyIJXGvZuGk4XcoyRmkZoDmRMsxm04NcrhSkjKrHJk,186
+fastapi_paginator/_models.py,sha256=AKVG3ZyxR02o-p5ha1Q5UyOpskvqDY9yKcYNZYTGGA4,4497
+fastapi_paginator/_paginator.py,sha256=pe-qKu2220NbCNskLveXR6QuQDAKGgGmlxKe9-OB8TU,13273
+fastapi_paginator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_paginator-0.1.4.dist-info/METADATA,sha256=SiITaDdJRttCfWCAGDqq2JaYKNZxr-KTX9wgamkfVt0,6386
+fastapi_paginator-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fastapi_paginator-0.1.4.dist-info/LICENSE,sha256=L2N7a3CNFvLq29K6HI4dmX5XO-tUbYPXvun580X0Nbs,1261
+fastapi_paginator-0.1.4.dist-info/RECORD,,
