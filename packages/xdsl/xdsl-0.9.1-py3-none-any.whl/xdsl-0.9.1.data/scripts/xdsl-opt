@@ -1,0 +1,6 @@
+#!python
+
+from xdsl.xdsl_opt_main import xDSLOptMain
+
+if __name__ == "__main__":
+    xDSLOptMain().run()
