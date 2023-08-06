@@ -1,0 +1,10 @@
+saxo_apy/__init__.py,sha256=BHS2yZAng0XDMJ6HpJuIPv1gQ7SH7Qa8b5egj6Fsecs,150
+saxo_apy/client.py,sha256=BwpQH0WO-EYPvIsuaRPv7T6-h31aXNdHBGY-JX3gXAQ,17810
+saxo_apy/models.py,sha256=e-QtCek83XLNQ2TbStTR4lwXHSekUf0n8viIhPUs9QI,6218
+saxo_apy/redirect_server.py,sha256=_geTtAZUp1jc1y1YQMlkK_nOh5e2uAZTybzw32_mgKU,2750
+saxo_apy/utils.py,sha256=16ZIxmFl75a_Ed0yggbOnBbLQOdtQr0aS6OKCehVX2Y,5788
+saxo_apy/version.py,sha256=6NAjsQm54yglvAZX3GjDOkaWA2_rmbp-JRh1pabZCoQ,459
+saxo_apy-0.2.3.dist-info/METADATA,sha256=Ig2IglNxXcIntyI5qf78WYyhID0Fd9QfNFI_RNJ_fhE,5140
+saxo_apy-0.2.3.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+saxo_apy-0.2.3.dist-info/licenses/LICENSE,sha256=6t08cu1ziGGWj7fvnma5ptbIC3XwnZW6VxnbvzhdWkw,1072
+saxo_apy-0.2.3.dist-info/RECORD,,
