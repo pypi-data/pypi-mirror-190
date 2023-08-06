@@ -1,0 +1,16 @@
+aiohttp_msal/__init__.py,sha256=EENbQw1X9Md4BTqLWcMERfh9-RoiFxB4NEoR7xUyDzc,3261
+aiohttp_msal/msal_async.py,sha256=194tsWvx_V0iLR8aZoKLvK7lLAq0CH0f5t8_bLWYtQI,8656
+aiohttp_msal/routes.py,sha256=c-w5wHaLAYGEqZvfZ8PnzzRh60asLqdUa30lvSANdYM,8319
+aiohttp_msal/settings.py,sha256=ZZn7D6QmIyQSvuqCAoTacKRXYfopqK4P74eVdPCw-uI,1231
+aiohttp_msal/settings_base.py,sha256=pmVmzTtaGEgRh-AMGy0HdhF1JvoZhZp42G3PL_ILHLw,2892
+aiohttp_msal/user_info.py,sha256=oIu90lgi71G27MVkw4pGH8wZqjXk8kxmW0fn2LKxOHc,1753
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_init.py,sha256=HPcL6bXaM95b3J908tMKLznHnwVf1fvKM3tuFhSuX84,40
+tests/test_msal_async.py,sha256=31MCoAbUiyUhc4SkebUKpjLDHozEBko-QgEBSHjfSoM,332
+tests/test_settings.py,sha256=z-qtUs1zl5Q9NEux051eebyPnArLZ_OfZu65FKz0N4Y,333
+aiohttp_msal-0.5.2.dist-info/LICENSE,sha256=J6cRBikbciilokG0-Hlz2fO72XET1ebYm4LMEfknoF8,1075
+aiohttp_msal-0.5.2.dist-info/METADATA,sha256=4kfu7BI-LR1MMrBxokTbY1SZ_tNSuObEyEnKbpB6iBk,942
+aiohttp_msal-0.5.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aiohttp_msal-0.5.2.dist-info/top_level.txt,sha256=QPWOi5JtacVEdbaU5bJExc9o-cCT2Lufx0QhUpsv5_E,19
+aiohttp_msal-0.5.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aiohttp_msal-0.5.2.dist-info/RECORD,,
