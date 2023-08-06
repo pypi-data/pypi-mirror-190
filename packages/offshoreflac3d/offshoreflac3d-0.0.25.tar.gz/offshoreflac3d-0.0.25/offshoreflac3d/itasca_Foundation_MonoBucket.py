@@ -1,0 +1,86 @@
+import numpy as np 
+from shapely import geometry as geo
+import itasca as it
+it.command("python-reset-state false")
+
+
+# #coordinates input###################
+# v1 = [[8.0,8.0,24.0]]
+# v2 = [[17.5,17.5,-30.5]]
+# H_list = [24.0,8.0,-10.5,-32.5,-58.7]
+# mudline = -34
+# #GuoDuDuan input####################
+# h_high = 31
+# x_radial = 7.5/2
+# #size of suction caisson############
+# R = 20.0/2
+# L = 22
+
+def SuctionBucket_main(mudline,L,scour_depth):
+    for z in it.zone.list():
+        groups = ['Volume1','Volume2','Volume3']
+        for group in groups:
+            if z.in_group(group):
+                z.set_group('suction caisson','SC')
+    
+        groups = ['Volume4','Volume5','Volume6','Volume7','Volume8','Volume9','Volume10','Volume11']
+        for group in groups:
+            if z.in_group(group):
+                z.set_group('NoSC','SC')
+    
+    
+    command = '''
+    structure liner create by-zone-face id 11 group 'Cap' slot 'SC' element-type=dkt-cst range position-z {} group 'suction caisson' slot 'SC'
+    zone face group 'InterFace' slot '1' internal range group 'NoSC' slot 'SC' group 'suction caisson' slot 'SC' position-z {} {}
+    zone separate by-face new-side group 'InterFace2' range group 'InterFace' slot '1'
+    structure liner create by-face id 11 group 'Skirt' slot 'SC' element-type=dkt-cst embedded range group 'InterFace2'
+    
+    structure liner group 'bucket' range group 'Skirt' slot 'SC'
+    structure liner group 'bucket' range group 'Cap' slot 'SC'
+    '''.format(mudline,mudline-L,mudline)
+    it.command(command)
+    
+    command = '''
+    structure liner property isotropic 2.1e8 0.3
+    structure liner property density 7.85 thickness 0.030 range group 'Skirt' slot 'SC'
+    structure liner property density 0.08 thickness 0.600 range group 'Cap' slot 'SC'
+    structure node join
+    '''
+    it.command(command)
+    
+    command = '''
+    fish define Interaction
+        loop foreach local _se struct.list(struct.group(::struct.list)=='bucket')
+            struct.liner.normal.stiffness(_se,1)=(zone.prop(zone.near(struct.pos(_se)),'bulk')+4*zone.prop(zone.near(struct.pos(_se)),'shear')/3)/0.5*20.0
+            struct.liner.normal.stiffness(_se,2)=(zone.prop(zone.near(struct.pos(_se)),'bulk')+4*zone.prop(zone.near(struct.pos(_se)),'shear')/3)/0.5*20.0
+            struct.liner.shear.stiffness(_se,1)=(zone.prop(zone.near(struct.pos(_se)),'bulk')+4*zone.prop(zone.near(struct.pos(_se)),'shear')/3)/0.5*20.0
+            struct.liner.shear.stiffness(_se,2)=(zone.prop(zone.near(struct.pos(_se)),'bulk')+4*zone.prop(zone.near(struct.pos(_se)),'shear')/3)/0.5*20.0
+            local angle = zone.prop(zone.near(struct.pos(_se)),'friction')
+            struct.liner.shear.friction(_se,1)=math.atan(math.tan(angle*math.pi/180)*0.75)/math.pi*180
+            struct.liner.shear.friction(_se,2)=math.atan(math.tan(angle*math.pi/180)*0.75)/math.pi*180
+            struct.liner.shear.cohesion(_se,1)=zone.prop(zone.near(struct.pos(_se)),'cohesion')*0.75
+            struct.liner.shear.cohesion(_se,2)=zone.prop(zone.near(struct.pos(_se)),'cohesion')*0.75
+        endloop
+    end
+    '''
+    it.command(command)
+    it.fish.call_function('Interaction')
+    
+    command ='''
+    structure liner property slide off
+    structure link tolerance-slide 1.5
+    '''
+    it.command(command)
+    
+    command ='''
+    zone delete range position-z {} {} group 'suction caisson' slot 'SC' not
+    model solve ratio 1e-6
+    model save 'StruProp.sav'
+    '''.format(mudline,mudline-scour_depth)
+    it.command(command)
+
+
+    
+
+
+
