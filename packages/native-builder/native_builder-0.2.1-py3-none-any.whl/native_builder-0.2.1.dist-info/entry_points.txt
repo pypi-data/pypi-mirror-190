@@ -1,0 +1,2 @@
+[console_scripts]
+nb = native_builder.cmd:main
