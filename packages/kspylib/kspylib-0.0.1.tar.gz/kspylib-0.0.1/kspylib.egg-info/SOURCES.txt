@@ -1,0 +1,7 @@
+setup.py
+kspylib/__init__.py
+kspylib/add.py
+kspylib.egg-info/PKG-INFO
+kspylib.egg-info/SOURCES.txt
+kspylib.egg-info/dependency_links.txt
+kspylib.egg-info/top_level.txt
