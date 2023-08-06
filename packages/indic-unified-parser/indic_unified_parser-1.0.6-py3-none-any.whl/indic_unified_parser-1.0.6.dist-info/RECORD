@@ -1,0 +1,12 @@
+indic_unified_parser/__init__.py,sha256=fajUFymTJ4_wtFYN0PSArG-JhD7B59gogqGHBv82kEk,99
+indic_unified_parser/globals.py,sha256=SJGgON_1cTitJRATgZAwzWrYS_eFDL73upckX52PbwI,1999
+indic_unified_parser/helpers.py,sha256=ezTue2IKcebpVPaWTKuNW0OchjlEC9A0nFL9LBGSDCY,40425
+indic_unified_parser/uparser.py,sha256=lZMPpE_DK6gDG35kbU4PT8g1FXPkS-qjCILZai9IR84,6532
+indic_unified_parser/ply/__init__.py,sha256=qYzI7UvXF88KLrem8yYem-K_UGXXc7IuNo1DN6ZStPY,116
+indic_unified_parser/ply/lex.py,sha256=NO9sccmA5vlQYzedOnL2l7Kizy7PCO4VPQAvsiFagxY,4187
+indic_unified_parser/ply/yacc.py,sha256=jtnTQLKDjleAKVO-ogdeA3dGmetRwy2PvEofM_p75J0,98438
+indic_unified_parser-1.0.6.dist-info/LICENSE,sha256=BzNdT10VrFncZGsLbgfQcEI0-1eTSmSwc5lcGtw4L9o,1066
+indic_unified_parser-1.0.6.dist-info/METADATA,sha256=KPTfjr28YlZ_23xGuUIiDWxtlDtS4N-VxYt_TOYcwcY,2955
+indic_unified_parser-1.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+indic_unified_parser-1.0.6.dist-info/top_level.txt,sha256=KUBaCAQfuNrfcpOk-mZn4xKOO9rqAuLyNnfpTIA0jwQ,21
+indic_unified_parser-1.0.6.dist-info/RECORD,,
