@@ -1,0 +1,10 @@
+structpy==0.3
+lark-parser
+regex
+nltk
+importlib_resources
+pytz
+dill
+pathos
+contractions
+num2words
