@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/screenrun/__init__.py
+src/screenrun/__main__.py
+src/screenrun/screenrun.py
+src/screenrun.egg-info/PKG-INFO
+src/screenrun.egg-info/SOURCES.txt
+src/screenrun.egg-info/dependency_links.txt
+src/screenrun.egg-info/entry_points.txt
+src/screenrun.egg-info/top_level.txt
+test/test_screenrun.py

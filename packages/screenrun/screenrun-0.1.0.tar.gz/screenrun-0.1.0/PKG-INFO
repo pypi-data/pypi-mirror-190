@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: screenrun
+Version: 0.1.0
+Summary: Simple process management. Keep a process running in a screen session forever.
+Home-page: https://www.github.com/philiporange/screenrun
+Author: Philip Orange
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ScreenRun
+
+Process management done simple. You can keep a process running forever just by adding a single cron job.
+
+
+# Install
+
+```bash
+pip install screenrun
+```
+
+
+# Usage
+
+```bash
+> screenrun execute --name nap sleep 60
+> screenrun list
+nap
+> screenrun kill --name nap
+> screenrun persist --name nap sleep 60
+> screenrun persist --name nap sleep 60
+```
+
+## Add to cron
+```bash
+* * * * * screenrun cron sleep 60
+```
+
+## Python
+```python3
+from screenrun import ScreenRun
+
+screenrun = ScreenRun()
+
+screenrun.execute('sleep 60')
+```
+
