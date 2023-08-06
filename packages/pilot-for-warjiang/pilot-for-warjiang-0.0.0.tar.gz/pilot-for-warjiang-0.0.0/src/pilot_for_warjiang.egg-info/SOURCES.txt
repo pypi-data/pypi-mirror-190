@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/pilot_for_warjiang.egg-info/PKG-INFO
+src/pilot_for_warjiang.egg-info/SOURCES.txt
+src/pilot_for_warjiang.egg-info/dependency_links.txt
+src/pilot_for_warjiang.egg-info/top_level.txt
