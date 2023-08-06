@@ -1,0 +1,7 @@
+README.md
+setup.py
+tomlibrary.egg-info/PKG-INFO
+tomlibrary.egg-info/SOURCES.txt
+tomlibrary.egg-info/dependency_links.txt
+tomlibrary.egg-info/entry_points.txt
+tomlibrary.egg-info/top_level.txt
