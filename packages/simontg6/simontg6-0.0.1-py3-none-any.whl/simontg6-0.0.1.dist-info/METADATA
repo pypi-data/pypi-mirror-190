@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: simontg6
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: FromageFondu
+Author-email: boumgaga2@gmail.com
+License: GPL V3
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: Licence.txt
+
+# simontg6
+## _In development_
+
+
+> Coming soon !
+
+## Installation
+
+```sh
+pip install simontg6
+```
+
+
