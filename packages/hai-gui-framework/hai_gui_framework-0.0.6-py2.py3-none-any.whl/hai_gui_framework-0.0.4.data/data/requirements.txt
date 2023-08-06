@@ -1,0 +1,13 @@
+
+
+pyside2  # about 137MB
+numpy
+pillow
+opencv-python
+easydict
+pyyaml
+damei
+pyqtgraph
+
+grpcio-tools
+
