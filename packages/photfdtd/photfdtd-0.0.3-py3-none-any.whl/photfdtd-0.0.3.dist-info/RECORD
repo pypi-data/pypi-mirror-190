@@ -1,0 +1,13 @@
+photfdtd/__init__.py,sha256=JnhRJPqKLBiNdyDG5SL-o5Qv5cUs8USKApH3XeDSX3M,112
+photfdtd/arc.py,sha256=tvdr59eI7PffPMyN0xqb0_3Me6tu3PBAtC5PLojzYoo,2479
+photfdtd/directional_coupler.py,sha256=itY5uyQ_TIzZfnpQO_8SmCiYBj5FsnUdGu-6Xp08Txo,7197
+photfdtd/mmi.py,sha256=DzD6tytJQvoZxDGWSmjtb_WnfFakUn7pIar-_b9qqUQ,8075
+photfdtd/mmi_test.py,sha256=SMrC33e1T4ceNUmLk_7RisxDa1qj-LG73X3yVnvg9Cg,4520
+photfdtd/ring.py,sha256=mF13Y64cDGfQmxihPwrftu-0djmmAmI5kWDciCjnTAA,7892
+photfdtd/sbend.py,sha256=-VwuIKMwK5WXh_aaBnRXYUTZ7YqcyD_xBrUlqCyFUAk,3242
+photfdtd/waveguide.py,sha256=dB-3U-IacsJSkXNUSY8hIm0SVdMunqLiJkyalh_qHuM,3743
+photfdtd/ysplitter.py,sha256=4NFlBlm7Wsat3gqfIop8JNA6CUATLcJbQllMJEk-BLI,9325
+photfdtd-0.0.3.dist-info/LICENSE,sha256=k5OgdLkMZAK81PJ4guwiBJfAC4aZRYGY3M50tdhf3_I,1066
+photfdtd-0.0.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+photfdtd-0.0.3.dist-info/METADATA,sha256=jqytyfvA3JOLhK0GzM4A3EExHT1jD4aha65RTBGfjMA,2289
+photfdtd-0.0.3.dist-info/RECORD,,
