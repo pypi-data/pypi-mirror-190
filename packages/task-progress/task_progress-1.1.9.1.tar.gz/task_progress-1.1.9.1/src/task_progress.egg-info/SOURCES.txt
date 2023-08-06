@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/task_progress.egg-info/PKG-INFO
+src/task_progress.egg-info/SOURCES.txt
+src/task_progress.egg-info/dependency_links.txt
+src/task_progress.egg-info/requires.txt
+src/task_progress.egg-info/top_level.txt
+src/task_progress_api/__init__.py
+src/task_progress_api/task_progress_api.py
+src/task_progress_handlers/__init__.py
+src/task_progress_handlers/task_progress_handlers.py
+src/task_progress_handlers/task_progress_handlersTQDM.py
