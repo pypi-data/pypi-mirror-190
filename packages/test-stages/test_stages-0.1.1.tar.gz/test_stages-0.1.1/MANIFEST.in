@@ -1,0 +1,7 @@
+include CHANGELOG.md
+recursive-include .config pyproject.toml
+include .editorconfig
+recursive-include requirements *.txt
+recursive-include stubs *.pyi
+include tox.ini
+recursive-include unit_tests *.py

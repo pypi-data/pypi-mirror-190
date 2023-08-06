@@ -1,0 +1,32 @@
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+select = []
+ignore = [
+  # We know what "self" is... I hope
+  "ANN101",
+
+  # We let the "black" tool take care of most of the formatting
+  "COM812",
+
+  # No blank lines before the class docstring, TYVM
+  "D203",
+
+  # The multi-line docstring summary starts on the same line
+  "D213",
+
+  # Our exceptions are simple enough
+  "EM",
+
+  # ruff does not seem to like the empty line before "from typing import ..."
+  "I",
+
+  # The Tagged and TaggedFrozen classes need to be typedload-compatible
+  "TCH",
+
+  # We are fine with relative imports
+  "TID",
+
+  # Much too restrictive
+  "TRY",
+]
