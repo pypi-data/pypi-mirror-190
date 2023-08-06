@@ -1,0 +1,10 @@
+click<9,>=8.1
+PyYaml<7,>=6
+pillow<10,>=9.4
+imagehash<5,>=4.3
+fpdf2<3,>=2.6
+
+[dev]
+pyinstaller
+build
+twine
