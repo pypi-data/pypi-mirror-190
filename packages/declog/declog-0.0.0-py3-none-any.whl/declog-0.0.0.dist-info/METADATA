@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: declog
+Version: 0.0.0
+Summary: Logger for Python functions which automatically captures input arguments and the return value, plus marked intermediate variables, with minimal boilerplate.
+Author-email: Josh Read <joshua-read@hotmail.co.uk>
+License: MIT License
+        
+        Copyright (c) 2023 Josh Read
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Issues, https://github.com/josh-read/declog/issues
+Project-URL: Source, https://github.com/josh-read/declog
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# **Dec**orator **Log**ger
+
+## The problem
+
+- Existing logging libraries are geared towards logging for
+  long-running services
+- Sometimes we write code to execute a routine, more like a
+  script. This library aims to be a convenient logger for these
+  functions with minimal boilerplate.
+
+- We often repeat the same analysis routine for many datasets.
+- Often we require not only the final output of the routine, but wish to
+  log intermediate values.
+- If we compare two results, we need to know whether the analysis
+  code was the same or different. (Most obvious way to do this is
+  to compare code version, however it is not always this simple.)
+- Logging should be easy and not require the user to have to figure
+  out correct paths to store results.
+
+## The solution
+
+- Decorate the 'main' function which is the top level entry point to the
+  analysis routine.
+- All settings should be managed in the arguments
+  supplied to the function, which allows them to be captured by the decorator.
+- Logging is still achieved simply with the `log` function, which will ascend
+  the call stack until it reaches the `__call__` method of the `Logger` at
+  which point the `Logger` will handle the logged variable.

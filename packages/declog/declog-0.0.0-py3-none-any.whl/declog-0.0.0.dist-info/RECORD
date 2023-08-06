@@ -1,0 +1,9 @@
+_version.py,sha256=UKP2_zgQN5a-0BsfrLhAKQGv3g7QHH-ppuyLsQUxd1o,160
+declog/__init__.py,sha256=r1nC5P3D8kXcpggkmq4rJiHLY7JVuGChYp2hQETcYLw,303
+declog/debug.py,sha256=OlaN9prPD6e5ZX2HmauExEKpHGKXQSHN777RU4WguEU,549
+declog/logger.py,sha256=9xKKxny3Z-RH6H39LfTV7olVe_mAIhyuivz4QaIi2TE,1682
+declog-0.0.0.dist-info/LICENSE,sha256=X-9bGCX9JIA7NUEPzc8zTiAAy9RFDQ1epP5hS8vE2zc,1066
+declog-0.0.0.dist-info/METADATA,sha256=4Ns_IWEepqn1J7d3SyCnKn59lmJ2tn7WjyfNncGC6p4,3223
+declog-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+declog-0.0.0.dist-info/top_level.txt,sha256=uDO4WFrx0JbkNhHSwwxlUY89Oa-KFHFC7Dsic6LKeV4,16
+declog-0.0.0.dist-info/RECORD,,
