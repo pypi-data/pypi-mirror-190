@@ -1,0 +1,10 @@
+bibleref/__init__.py,sha256=6VkJYAS16I_-6tpzYtULSaIeEM7HjvnKEodRFUupf98,5903
+bibleref/data.py,sha256=YgUxPrNlaxgBCw22LBFGf8pzEMUEZSBvWjXgtCgU85s,22521
+bibleref/parser.py,sha256=fHXeywyw4k1kVQVLcaq0YChUBQ3zQz6x8j9mf_DcdUQ,9543
+bibleref/ref.py,sha256=r84H7lw-_HzG7iuBaM_2ZFCpodvLp-0MROBx3zfSjaI,91556
+bibleref/util.py,sha256=8uhvzk90BXLO9TWE_bS1VIw7ZsjbLXlSk9o8JQ2XosY,27565
+bibleref-0.11.0.dist-info/LICENSE,sha256=48dxsP-CytmmVXTrQN9Np0XdkH1hsTxuMa-x0yAvT54,1075
+bibleref-0.11.0.dist-info/METADATA,sha256=jnXSrVUw4z2t7aPkbkKNgMX-PFD2X2L7Ul8qw3gh3d0,5813
+bibleref-0.11.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bibleref-0.11.0.dist-info/top_level.txt,sha256=sjEJAkiLhl7YHLdRPfIOZiHxqYnH_bbEP4NsWRZfG5o,9
+bibleref-0.11.0.dist-info/RECORD,,
