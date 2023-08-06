@@ -1,0 +1,14 @@
+pandas
+fastcore
+tqdm
+openpyxl
+netcdf4
+matplotlib
+tomli
+tomli-w
+papermill
+shapely
+ipykernel
+nbconvert
+
+[dev]
