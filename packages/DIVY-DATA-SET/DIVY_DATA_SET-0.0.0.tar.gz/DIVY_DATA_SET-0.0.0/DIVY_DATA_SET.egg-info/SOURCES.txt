@@ -1,0 +1,6 @@
+README.md
+setup.py
+DIVY_DATA_SET.egg-info/PKG-INFO
+DIVY_DATA_SET.egg-info/SOURCES.txt
+DIVY_DATA_SET.egg-info/dependency_links.txt
+DIVY_DATA_SET.egg-info/top_level.txt
