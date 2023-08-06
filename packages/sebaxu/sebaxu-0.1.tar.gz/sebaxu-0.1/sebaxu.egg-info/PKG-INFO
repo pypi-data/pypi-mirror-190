@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sebaxu
+Version: 0.1
+Summary: simple lib in py for simple MLP
+Author: Sahraoui Tarek Ziad
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
