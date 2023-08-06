@@ -1,0 +1,7 @@
+setuptools
+grpcio-tools~=1.49
+
+[quality]
+doc8
+flake8
+isort
