@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: innodb-optimize
+Version: 0.2.0
+Summary: Automated optimizer for MySQL InnoDB configurations
+Home-page: https://github.com/Scraps23/innodb_optimize
+Author: Ben Nassif
+Author-email: bennassif@gmail.com
+Maintainer: Ben Nassif
+Maintainer-email: bennassif@gmail.com
+License: 
+        The MIT License (MIT)
+        Copyright © 2022 Ben Nassif
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the "Software"), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+        the Software, and to permit persons to whom the Software is furnished to do so,
+        subject to the following conditions:
+        
+            1. The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+        FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+        COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+        IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+        CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: System :: Systems Administration
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: fire
+
+InnoDB Optimize
+===============
+
+|Pypi| |MIT licensed| |GitHub Release Date|
+
+``innodb-optimize`` is a package for automatically calucalating
+optimized InnoDB configurations, and generating an updated ``my.cnf``
+file with those values.
+
+Installation
+------------
+
+.. code:: bash
+
+   # PyPi Installation
+   pip install innodb-optimize
+   # GitHub Installation
+   pip install git+'https://github.com/Scraps23/innodb_optimize.git'
+
+Usage
+-----
+
+Basic Output
+~~~~~~~~~~~~
+
+The following command will output the generated configuration to
+``STDOUT``. This is useful when using this tool in other scripts, such
+as automating system deployments.
+
+.. code:: bash
+
+   innodb-optimize
+
+Standard Commit Loop
+~~~~~~~~~~~~~~~~~~~~
+
+| The ``--commit`` flag should be included for an interactive run. The
+  user is first asked whether the configuration should be saved; there
+  is an option to print the generated config to console.
+| If the configuration is read, the user is prompted for the same
+  question.
+| If the configuration is saved, the user is prompted to restart MySQL;
+  there is an option to schedule the restart using bash’s ``at``
+  program.
+
+.. code:: bash
+
+   innodb-optimize --commit
+
+.. figure:: https://user-images.githubusercontent.com/59057336/192899977-148075e7-cc93-43b1-ac3f-b318c507ec9d.PNG
+   :alt: Standard Loop
+
+   Standard Loop
+
+Available Arguments
+-------------------
+
+-  ``file``: Where the MySQL configuration file is located. Defaults to
+   ``/etc/mysql/my.cnf``.
+-  ``percent``: Determines what percentage of the total memory will be
+   devoted to InnoDB engine usage. Defaults to 75%.
+-  ``memory``: Allows the user to override the total memory amount
+   (i.e. a fixed amount is already pre-allocated which is not easily
+   accounted for in percentages). Only allows for kilobyte unit.
+-  ``commit``: Is required to start the loop which will commit the
+   changes. Without it, the program only outputs the config to standard
+   out to allow for piping/redirecting the output as needed.
+
+.. |Pypi| image:: https://img.shields.io/pypi/v/innodb-optimize
+   :target: https://pypi.org/project/innodb-optimize
+.. |MIT licensed| image:: https://img.shields.io/badge/license-MIT-green.svg
+   :target: https://raw.githubusercontent.com/Scraps23/innodb_optimize/main/LICENSE
+.. |GitHub Release Date| image:: https://img.shields.io/github/release-date/Scraps23/innodb_optimize
+
+
