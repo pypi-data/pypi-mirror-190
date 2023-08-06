@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/isar_robot/__init__.py
+src/isar_robot/robotinterface.py
+src/isar_robot.egg-info/PKG-INFO
+src/isar_robot.egg-info/SOURCES.txt
+src/isar_robot.egg-info/dependency_links.txt
+src/isar_robot.egg-info/requires.txt
+src/isar_robot.egg-info/top_level.txt
+src/isar_robot/config/__init__.py
+src/isar_robot/example_images/for-science-you-monster.jpg
+src/isar_robot/example_images/wheatley-remain-calm.jpg
