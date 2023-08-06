@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: pydantic-xml-extension
+Version: 0.0.11
+Summary: 
+Home-page: https://github.com/pwithams/pydantic-xml-extension
+Author: Patrick Withams
+Author-email: pwithams@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: xmltodict (>=0.13.0,<0.14.0)
+Project-URL: Repository, https://github.com/pwithams/pydantic-xml-extension
+Description-Content-Type: text/markdown
+
+# Pydantic XML Extension
+
+Allows Pydantic models to render to XML.
+
+## Install
+
+`pip install pydantic-xml-extension`
+
+## Examples
+
+### Generating XML from a model
+```python
+from pydantic_xml import XmlBaseModel, XmlAttribute
+
+class ExampleModel(XmlBaseModel):
+    name: Annotated[str, fields.Field(alias="Name")]
+    age: int
+
+model = ExampleModel(Name="test", age=12)
+model.set_xml_attribute("name", XmlAttribute(key="id", value="123"))
+model.set_xml_attribute("age", XmlAttribute(key="custom", value="value"))
+print(model.xml())
+>> <?xml version="1.0" encoding="utf-8"?>
+>> <Model><Name id="123">test</Name><age custom="value">12</age></Model>
+```
+
+### Creating a model from XML
+```python
+from pydantic_xml import XmlBaseModel, XmlAttribute
+
+class ExampleModel(XmlBaseModel):
+    name: Annotated[str, fields.Field(alias="Name")]
+    age: int
+
+input_xml = '<Model><Name id="123">test</Name><age custom="value">12</age></Model>'
+
+model = ExampleModel.parse_xml(input_xml)
+
+print(model)
+>> Model(name="test", age=12)
+
+print(model.dict())
+>> {"Name": "test", "age": 12}
+
+print(model.dict(by_alias=False))
+>> {"name": "test", "age": 12}
+
+print(model.xml())
+>> <?xml version="1.0" encoding="utf-8"?>
+>> <Model><Name id="123">test</Name><age custom="value">12</age></Model>
+```
+
