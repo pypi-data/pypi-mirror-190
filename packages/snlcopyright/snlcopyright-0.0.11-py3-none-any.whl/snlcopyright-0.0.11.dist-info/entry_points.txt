@@ -1,0 +1,7 @@
+[console_scripts]
+commands = snlcopyright.command_line:commands
+copyright = snlcopyright.copyright_crud:copyright
+copyright-info = snlcopyright.command_line:copyright_info
+copyright-show = snlcopyright.copyright_crud:text_block
+copyright-status = snlcopyright.copyright_crud:copyright_status
+copyright-version = snlcopyright.command_line:copyright_version
