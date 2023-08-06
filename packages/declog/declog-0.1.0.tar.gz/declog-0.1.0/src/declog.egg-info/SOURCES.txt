@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+examples/facility_example/logger.py
+src/_version.py
+src/declog/__init__.py
+src/declog/debug.py
+src/declog/logger.py
+src/declog.egg-info/PKG-INFO
+src/declog.egg-info/SOURCES.txt
+src/declog.egg-info/dependency_links.txt
+src/declog.egg-info/top_level.txt
