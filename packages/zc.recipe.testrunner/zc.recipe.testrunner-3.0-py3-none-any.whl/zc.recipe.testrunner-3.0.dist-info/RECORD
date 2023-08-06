@@ -1,0 +1,11 @@
+zc.recipe.testrunner-3.0-py3.9-nspkg.pth,sha256=koBiVvN4SBpGTJgNu5Y-CpHJSTtoQ2EjWx6L11J8h3g,1640
+zc/recipe/testrunner/README.rst,sha256=gh8kAjTFigE4nJtANRztHT09fwTemVwVTMZbcYsigbc,19090
+zc/recipe/testrunner/__init__.py,sha256=7Rks7BUfEyfX1nXRaehyp2LLzE06GE-5fjGH44FdVWQ,3963
+zc/recipe/testrunner/tests.py,sha256=qVF_5t15-vrOtWCsBOka6ZErTIClnuFmAGXGIKZE094,6024
+zc.recipe.testrunner-3.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+zc.recipe.testrunner-3.0.dist-info/METADATA,sha256=kHlhgFq45VZBEL4Siohaa4PSl04gwCrWmILV6bOnYsg,25154
+zc.recipe.testrunner-3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zc.recipe.testrunner-3.0.dist-info/entry_points.txt,sha256=BXJmvVJkUi_CMkUhAVIdbC1b7CD7F3gRulqqzbjuqGY,56
+zc.recipe.testrunner-3.0.dist-info/namespace_packages.txt,sha256=uMzgkrnE7pysjpFc1Bregxb8hDX5ahs4PeMwx341JOE,13
+zc.recipe.testrunner-3.0.dist-info/top_level.txt,sha256=nptwHX5ivUBBZ49av8trjckjjvj_7OZ_f0bSLnluz1k,3
+zc.recipe.testrunner-3.0.dist-info/RECORD,,
