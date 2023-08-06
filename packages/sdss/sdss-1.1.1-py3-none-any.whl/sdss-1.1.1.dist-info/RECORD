@@ -1,0 +1,11 @@
+sdss/__init__.py,sha256=kaxnSlo_o1tzpsccKdAf84EnBMLuh2lAq508mu-oTgM,272
+sdss/objects.py,sha256=XiSax_0ixC9qOXCuUlpcg6vmS2n86sDfQ14IzE7CPgQ,6264
+sdss/photometry.py,sha256=EF54YWDEFBUCEYZuJUmrHCZzHohhy5_Lpy3TCvyObeY,5301
+sdss/refs.py,sha256=0uAr2YPJyimda_kWMo5m-9WriUxTW9TtQ3wCav-titI,1029
+sdss/regions.py,sha256=4N_WX-3bNBkusPYnOkgeuoTcdHgw4WlJj4iOmjHBbds,3510
+sdss/utils.py,sha256=hJDDyyGoF10xIAG7FOz2N7TaWD0-tBZBSbi7ov3Zo10,4274
+sdss-1.1.1.dist-info/LICENSE.txt,sha256=bhm39Hv4dvAV9kPMPucRYiY4OFDcmjuLQneWAdmMV80,1092
+sdss-1.1.1.dist-info/METADATA,sha256=51OPgax63v4hzqsuzJD7PlcRNC4kfCzqRh4J2X03QqU,3638
+sdss-1.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sdss-1.1.1.dist-info/top_level.txt,sha256=ZZFCDSN5ZGAIgrYraZ_mDth8zjAntjze8maTNVfmm_U,5
+sdss-1.1.1.dist-info/RECORD,,
