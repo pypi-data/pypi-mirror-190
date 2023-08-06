@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: fisher-test-python
+Version: 0.2.7
+Summary: Fisher exact test for python
+Home-page: https://github.com/kakaohealthcare/fisher-test-python
+Author: kakaohealthcare
+Author-email: sector.rest@kakaohealthcare.com
+License: LGPL-3.0
+Description: # fisher test python
+        
+        Python version of Fisher's exact test.
+        
+        Based on old FORTRAN codes from
+        
+        - http://netlib.org/toms/
+        - https://people.sc.fsu.edu/~jburkardt/c_src/asa159/asa159.html
+        
+        #### Installation
+        
+        ```
+        pip install fisher-test-python
+        ```
+        
+        #### Usage
+        
+        ```python
+        import nump as np
+        from fisher import fisher_test
+        
+        ary = np.array([[1,2,3], [2,3,4]])
+        p_value = fisher_test(ary)
+        
+        ```
+        
+        ## Contact
+        
+        - Chae, Jungwoo - sector.rest@kakaohealthcare.com
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
