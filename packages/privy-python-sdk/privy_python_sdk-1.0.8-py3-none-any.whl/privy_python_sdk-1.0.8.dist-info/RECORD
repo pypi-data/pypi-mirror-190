@@ -1,0 +1,6 @@
+privy_python_sdk/.gitignore,sha256=ffabCo303lGqV1D5UnkLGaXJW0AKftWisDVTRnvr_1I,12
+privy_python_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+privy_python_sdk/privy.py,sha256=ftDtz61N5cMLlHlVG8Qto-Q7VIGOKGxoFhzkFdkfdM8,8147
+privy_python_sdk-1.0.8.dist-info/METADATA,sha256=xYvSi4VML1bbgitCVxtc3GTkucb2nf2AAds3QXSxYkE,3861
+privy_python_sdk-1.0.8.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+privy_python_sdk-1.0.8.dist-info/RECORD,,
