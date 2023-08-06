@@ -1,0 +1,12 @@
+ntec/Classifiers.py,sha256=46rgZT6PTLRFwoh33Ka-QeK2tCE6HxVeDN_xXnmyQgU,9182
+ntec/__init__.py,sha256=DKfM6HiLcqvIKowfgHRWNusNhFQHRvdb4O9mf4MNm2o,71
+ntec/clean_name.py,sha256=H0MlaKvdctNsNa2bKuIxNX9otgcQoiexjXnUm5Qz8II,1798
+ntec/models/joeg/joeg_architecture.json,sha256=tNzcXggY_5taG426biGEyUYXz9c7S3yF8XjBpABFp-8,3613
+ntec/models/joeg/joeg_classes.json,sha256=ScP_ScK_39Wvg1NZYuFYr5JkPue1KZgqbbjot2DaWWU,329
+ntec/models/joeg/joeg_params.json,sha256=JDgqhse20_8HKFAnHFh19BM-353EZSCmkP04_QTSjho,180
+ntec/models/joeg/joeg_weights.h5,sha256=aTGGGzBoBy9wzV4S0aUD7I6Jn_QgAmtsLY7WhIL7g5g,7938560
+ntec-0.1.0.dist-info/LICENSE,sha256=O_GQFMuiDWNOG2sqz4hWz_kS9BXJ_bVYdwf9T_dYpnM,1093
+ntec-0.1.0.dist-info/METADATA,sha256=HcwaXxIyyjhVKVHswsGuDSu80cNv7Rg16VpsxHfM_MM,11473
+ntec-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ntec-0.1.0.dist-info/top_level.txt,sha256=uNWxhVeeDrF4y-Cj5XHZw7X9U5Yxo0_eqE2nZUunl1c,5
+ntec-0.1.0.dist-info/RECORD,,
