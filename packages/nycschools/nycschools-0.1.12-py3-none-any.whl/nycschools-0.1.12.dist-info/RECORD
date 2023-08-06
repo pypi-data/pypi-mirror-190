@@ -1,0 +1,15 @@
+nycschools/__init__.py,sha256=D4jh2umBogyI_c6PE84sSkhTMcMRCR6DWbw9g17WEjY,2310
+nycschools/class_size.py,sha256=L-S3yzs2nqRGn_E_oWhZOOPAxX_JNhHIn8vCSl0Dg48,1431
+nycschools/dataloader.py,sha256=TgNtVkpn6yjjqi4-FOXYtFfZpY2NktLPvyzS8jL4fD0,5140
+nycschools/datasets.py,sha256=ip4GnwoeOa-Q5-tcURsRnQKsheyN05jF3pBSA_XJCcc,4222
+nycschools/exams.py,sha256=TCpn-43KIk9589UB8BoKj-dXOKrrl6r1FTXVmt-i4Jo,8136
+nycschools/geo.py,sha256=3tK-6ZvDIzPE_wp8KzoSKns6RafXuav2hNWXiLXPTNw,4452
+nycschools/nysed.py,sha256=ambJIS1WXKlqXAyY-YhXHTe_H0Jib86ccBy6HNUbbzA,10917
+nycschools/schools.py,sha256=lVXNQUDVA6zKlYtmjV7i-5Zpi4ZBUYRhJGOvlL6PwA0,13523
+nycschools/tools.py,sha256=nXGhunlyDpqBeRYP-diydOo5XuCCjdKRidH9fGwyEnY,1035
+nycschools/ui.py,sha256=4vUFFIp9Y-4fVO1v4Ho_HMmNRaOeYex67_fgtKZdMxo,5198
+nycschools-0.1.12.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+nycschools-0.1.12.dist-info/METADATA,sha256=H_EbEdBfR02JsLrTz5Bx_ScIIfKUknZPUc4LL4mUM_M,2430
+nycschools-0.1.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nycschools-0.1.12.dist-info/top_level.txt,sha256=suG0w0hSmUOiP8s01Cq-mulRj5pC-q3dG-yJskni4BU,11
+nycschools-0.1.12.dist-info/RECORD,,
