@@ -1,0 +1,11 @@
+sphinx<7,>=1.6
+docutils<0.19
+
+[:python_version > "3"]
+sphinxcontrib-jquery!=3.0.0,>=2.0.0
+
+[dev]
+transifex-client
+sphinxcontrib-httpdomain
+bump2version
+wheel
