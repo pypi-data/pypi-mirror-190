@@ -1,0 +1,10 @@
+zope.mkzeoinstance-5.0-py3.9-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/mkzeoinstance/__init__.py,sha256=52Zh8LUwd3XvXHp7DajZkkKAzJM7-iFijhpjmdVPwwk,6970
+zope/mkzeoinstance/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zope/mkzeoinstance/tests/test_unix.py,sha256=GsL4D0tJkjmsj43rddkQI8iiQ1UD7f4s-zglnxooc9A,18264
+zope.mkzeoinstance-5.0.dist-info/METADATA,sha256=gDH87yRMxhU4Y30U_ogoCJFK96HqRleXO7Pra6hYOEs,2914
+zope.mkzeoinstance-5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zope.mkzeoinstance-5.0.dist-info/entry_points.txt,sha256=99--0EH688L8Dn7gRrBE4ZdD6cNTFfVaUnXzFsB6pO0,58
+zope.mkzeoinstance-5.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.mkzeoinstance-5.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.mkzeoinstance-5.0.dist-info/RECORD,,
