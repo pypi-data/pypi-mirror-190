@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+capitalcom/__init__.py
+capitalcom/client.py
+capitalcom/client_demo.py
+capitalcom/config.py
+capitalcom/tests.py
+python_capitalcom.egg-info/PKG-INFO
+python_capitalcom.egg-info/SOURCES.txt
+python_capitalcom.egg-info/dependency_links.txt
+python_capitalcom.egg-info/requires.txt
+python_capitalcom.egg-info/top_level.txt
