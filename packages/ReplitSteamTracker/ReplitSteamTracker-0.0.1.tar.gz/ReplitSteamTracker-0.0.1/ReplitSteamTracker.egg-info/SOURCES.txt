@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+ReplitSteamTracker/ReplitSteamTracker.py
+ReplitSteamTracker/__init__.py
+ReplitSteamTracker.egg-info/PKG-INFO
+ReplitSteamTracker.egg-info/SOURCES.txt
+ReplitSteamTracker.egg-info/dependency_links.txt
+ReplitSteamTracker.egg-info/top_level.txt
