@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.py
+phmin/__init__.py
+phmin/custom_exceptions.py
+phmin/funcs.py
+phmin/ph_minner.py
+phmin.egg-info/PKG-INFO
+phmin.egg-info/SOURCES.txt
+phmin.egg-info/dependency_links.txt
+phmin.egg-info/not-zip-safe
+phmin.egg-info/requires.txt
+phmin.egg-info/top_level.txt
+tests/__init__.py
+tests/test_ph_minner.py
