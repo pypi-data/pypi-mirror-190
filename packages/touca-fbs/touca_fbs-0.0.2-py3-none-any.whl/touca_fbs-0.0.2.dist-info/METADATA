@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: touca-fbs
+Version: 0.0.2
+Summary: Auto-generated python implementation of Touca FlatBuffers schema
+Home-page: https://github.com/trytouca/trytouca/tree/main/config/flatbuffers/python
+Author: Touca, Inc.
+Author-email: support@touca.io
+License: Apache-2.0
+Download-URL: https://github.com/trytouca/trytouca/tree/main/config/flatbuffers/python/archive/0.0.2.tar.gz
+Project-URL: Documentation, https://touca.io/docs
+Project-URL: Source, https://github.com/trytouca/trytouca/tree/main/config/flatbuffers/python
+Keywords: touca
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black (>=21.6b0) ; extra == 'dev'
+Requires-Dist: isort (>=5.10.1) ; extra == 'dev'
+
+# Touca FBS
+
+Package with auto-generated Python implementation of Touca FlatBuffers schema
+
+
