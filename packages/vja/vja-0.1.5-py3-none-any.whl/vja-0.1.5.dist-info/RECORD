@@ -1,0 +1,14 @@
+vja/__init__.py,sha256=uXRemtumfYxVKEOtbGBrlBc_U6nuZMJ-RhSbbPXsHms,220
+vja/apiclient.py,sha256=p2qevPoXlVyFPzXu-RS7xm5zxNpK-dXmR9TrmnwJH5g,8659
+vja/cli.py,sha256=gm6PY4bzNSg8wgmLQOuSIqJhLB5OVHc2Ij6AVNwdiWk,9756
+vja/config.py,sha256=hhUtwabLayZ09LjVdNL3Xm76lG2CRtM5ib8cIZ1v8R8,1326
+vja/list_service.py,sha256=8P_Gktbp6e9AcTx1w8D_xgIkWrKClh5rPJaPPbAN13Q,1527
+vja/model.py,sha256=QhSquBSig-OFu2TN4jc7Y-fTSpgQT7wmUrt_7K4aCJs,7547
+vja/service_command.py,sha256=no1jqk-eH-eiwPeHsUckxnf68QDDRmn5kff1v80TSeE,5410
+vja/service_query.py,sha256=4opuxI3uUD3w7HPlCDULD1e9C1E2v92ZpiqF0HqEhaQ,5103
+vja-0.1.5.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+vja-0.1.5.dist-info/METADATA,sha256=VDjzZqGnGp7JUBTugRaqE260yTC_mpukfUTq9PVNyuU,2237
+vja-0.1.5.dist-info/WHEEL,sha256=tIy8_2ZxPExwRKcXlg4jzESby3jB9aLsFLrFCKKh88M,92
+vja-0.1.5.dist-info/entry_points.txt,sha256=uY2goCaBrL2TlEeiVmsfwTp-T-iPTkecOaH75CWGz6I,36
+vja-0.1.5.dist-info/top_level.txt,sha256=uCXTRnBcR5DOFR2AuGjri05ZbrN4MzzaXNTTpHOQ4Xk,4
+vja-0.1.5.dist-info/RECORD,,
