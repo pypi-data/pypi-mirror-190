@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: fugue-bigquery
+Version: 0.0.1.dev2
+Summary: Fugue BigQuery integration
+Home-page: http://github.com/fugue-project/fugue-bigquery
+Author: Han Wang
+Author-email: goodwanghan@gmail.com
+License: Apache-2.0
+Keywords: fugue bigquery sql
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fugue[ibis] (==0.8.1.dev3)
+Requires-Dist: fs-gcsfs
+Requires-Dist: pandas-gbq
+Requires-Dist: google-auth
+Requires-Dist: ibis-framework[bigquery]
+Provides-Extra: ray
+Requires-Dist: fugue[ray] (==0.8.1.dev3) ; extra == 'ray'
+
+# fugue-bigquery
+Fugue Bigquery Integration
+
+

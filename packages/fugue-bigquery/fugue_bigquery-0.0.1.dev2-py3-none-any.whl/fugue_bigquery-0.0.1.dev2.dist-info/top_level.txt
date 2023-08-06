@@ -1,0 +1,4 @@
+fugue_bigquery
+fugue_bigquery_version
+fugue_trino
+tests
