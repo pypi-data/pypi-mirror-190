@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: convert_color_codes
+Version: 1.0.3
+Summary: Conversion between variations of color codes. HSV/HSB or RGB or CMYK or HSL
+Author-email: PRMPSmart <prmpsmart@gmail.com>
+Project-URL: Homepage, https://github.com/prmpsmart/convert_color_codes
+Keywords: color,color_codes,convert_color
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# convert_color_codes
+
+The convert_color_codes module deals with the conversion of color codes. Conversion from these codes HSV/HSB, RGB, CMYK, HSL from one to another.
+
+## Installation
+
+You can install _convert_color_codes_ from PyPI:
+
+```
+pip install convert_color_codes
+```
+
+It is supported on Python 2, 3 ...
+
+## How to use
+
+``` python
+from convert_color_codes import *
+```
