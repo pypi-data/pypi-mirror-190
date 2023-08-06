@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: cgepy
+Version: 0.5.10
+Summary: Tools for developing graphical programs inside the console.
+Author: catbox305
+Author-email: lion712yt@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Welcome to cgePy!
+Hi! I'm the creator of cgePy. Thanks for using my template!
+This document will tell you everything you need to know in order to start using cgePy.
+***
+## Licence
+Firstly, I prefer some credit for all programs made with cgePy, though this is your choice.
+Claiming that this library's code is yours is explicitly NOT ALLOWED. If you would like to develop cgePy, please contact me at **lion712yt@gmail.com**.
+***
+## Getting Started
+
+
+
+***
+## Customization
+
+Now that you've set cgePy, you might ask, "Can I change the color of the background" or "How can I change the player to a different color?"  and maybe even "How do I make the grid bigger?"
+
+Well, look no further as your problem is solved!\
+First off, t:
+> ``````
+===
+
+***
+## Standard Methods
+With the recent update, cgePy has been switching to an object-based system.
+
+First off, try this code:
+```py
+grid = cge.Grid()
+grid.Update()
+```
+It will update (show the most recent version of) the grid!\
+Now,
+```py
+grid.write(1,YELLOW+"  ")
+#"  " is a blank pixel on the grid
+#Each pixel must be EXACTLY two characters long
+grid.Update()
+```
+The result will be the same as before, but the 2nd 'pixel' on the grid will be yellow... ish, more of an orange, actually. 
+
+A complete list of these 'functions':
+> clear - resets the grid\
+> write\
+> swap\
+> Update\
+> Self
+***
+
+## Legacy Functions
+Although these methods aren't reccommended, you can still use them.
+
+**Add ```cge.legacy.``` before them, as in ```cgepy.cge.legacy.updategrid()```!**
+***
+### updategrid():
+Prints out the grid that a game uses. This function is basically a frame, and without it any movements or changes won't be shown.\
+Usage:
+```python
+updategrid(my_grid)
+```
+```python
+updategrid() #support for this "context" feature may not work
+```
+
+
+### creategrid():
+Function for creating grids.\
+Usage:
+```python
+my_grid = creategrid()
+```
+
+### updatepos():
+Moves the player's sprite to the position entered in the parameters.\
+Usage:
+```python
+updatepos(position)
+```
+
+### movepos(): 
+Moves the player's sprite one positon to the direction you input.
+ Valid parameters are: "up", "down", "right", "left". No other parameters will work.\
+Usage:
+```python
+movepos("direction")
+```
+
+### paint():
+>This function is a little more complicated than the others.\
+In an older version of the README, I talked about how creating maps and art was repetitive. For example you might have done
+>```python
+>cm[0] = RED+"  " #support for this may not work
+>```
+>```python
+>cm[1] = BLUE+"  " #support for this may not work
+>```
+>in order to set the first two elements in the list to be red and blue.\
+However, when making grids on a larger scale, that would be an issue. After a while, I came up with a solution for this.
+
+Creates a grid using a special string with certain values arranged like an array.
+
+Usage:
+```python
+#In this case, our grid will be 10x10
+my_string = '''
+RE RE RE BG RE RE BG RE RE RE
+RE BG BG BG BG BG BG RE RE RE
+RE BG RE RE RE RE RE RE RE RE
+RE BG BG BG BG BG BG BG BG RE
+RE RE RE RE RE RE RE RE BG RE
+RE RE RE BG BG BG BG BG BG RE
+RE RE RE BG RE RE RE BG RE RE
+RE RE RE BG RE RE RE BG RE RE
+RE RE RE BG BG BG BG BG RE RE
+RE RE RE RE RE BG RE RE RE RE
+'''
+#with RE being RED
+#and BG being BACKGROUND
+my_grid = paint(my_string)
+```
+> Now, for our example,
+```python
+updategrid(my_grid)
+```
+> After running the code shown above, the result would be:
+>![The sprite isn't visible because it's also colored red](/readme-assets/paintresult.png)
+> ###### The sprite isn't visible in this picture because it's also colored red.
+
+You can find a full list of the ID's used for ```paint()``` strings inside of ```cge/init.py```\
+Hopefully this function helps!
+***
+### Functions found in driver-extras.py
+
+>### targetroll():
+>Rolls the position of a target sprite.
+Please note that this does not change the positon or display the sprite, as this requires you to manualy update the grid\
+Usage:
+> ```python
+> targetroll()
+> ``` 
+> ### squaregame(max score, target color):
+> Sends the user into a game where they must capture the target the amount of times you input.
+ Once the user has captured the target enough times, the code will proceed.\
+ Usage:
+>```python
+>squaregame(maxscore,color)
+> ```
+Note that these functions might not work
+***
+
+### That's about it as of now.
+
+#### Happy coding!
