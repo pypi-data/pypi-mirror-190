@@ -1,0 +1,10 @@
+LICENSE
+LICENSE.txt
+setup.py
+Calculator_by_JBarbu.egg-info/PKG-INFO
+Calculator_by_JBarbu.egg-info/SOURCES.txt
+Calculator_by_JBarbu.egg-info/dependency_links.txt
+Calculator_by_JBarbu.egg-info/requires.txt
+Calculator_by_JBarbu.egg-info/top_level.txt
+calc/__init__.py
+calc/calculator.py
