@@ -1,0 +1,10 @@
+scrypt==0.8.13
+appdirs==1.4.3
+graphenelib==1.5.4
+prettytable
+events
+pyyaml
+click
+treelib
+ecdsa==0.18
+websockets>=10.0
