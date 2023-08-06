@@ -1,0 +1,2 @@
+[console_scripts]
+nurin = nurin.__main__:main
