@@ -1,0 +1,12 @@
+version: '{COMPOSE_VERSION}'
+name: {SERVICE}
+services:
+  {SERVICE}:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+        {VOLUMES}
+    environment:
+        {ENVIRONMENT}
+    restart: unless-stopped
