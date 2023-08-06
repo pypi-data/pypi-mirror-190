@@ -1,0 +1,13 @@
+fawltydeps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fawltydeps/check.py,sha256=SmXh0Fr-xiedaDkxavjQRL_HyBXlsFOJGQkvblXgEWA,1348
+fawltydeps/extract_declared_dependencies.py,sha256=lVfJP-5nAFlYc7LbYjuGKJEf6xIcajm-9HdIVRP9Gxo,12268
+fawltydeps/extract_imports.py,sha256=6nrtoEhp3N8VpjCa80HiN7x4REPXbju912Ypgt1gm6c,7533
+fawltydeps/limited_eval.py,sha256=iN9avwRf2OUl9opUapKFyeK13dwspzuii7w7OX9gD3U,4091
+fawltydeps/main.py,sha256=bxff9EcH-41PbQ_WcJHEa_A6lrlDFQ4JoJBUmtlOUB4,8076
+fawltydeps/types.py,sha256=gQVfS5Hp0FyIq3GXIDM1f8uJMvPbjm148ZgdCpfdEkw,5423
+fawltydeps/utils.py,sha256=8CAccDFJma75UDMUWLP7wXHsO4LgJQ2wn0rgJYZuIyE,809
+fawltydeps-0.1.0.dist-info/entry_points.txt,sha256=rDzthBu6zRJrGu1Craxcq6TIFZC40jkdvfkvUBNm6pY,51
+fawltydeps-0.1.0.dist-info/LICENSE,sha256=F_4KhfTL6M7OqgafGonzds3qOFt_TU_zxCp5cAVCnr0,1070
+fawltydeps-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+fawltydeps-0.1.0.dist-info/METADATA,sha256=0d6D3VDzqcRYfC4Kkg8p6suiFuC5vAWCuZKx3ncR4zk,9037
+fawltydeps-0.1.0.dist-info/RECORD,,
