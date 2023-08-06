@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/offsettmpsubs/__init__.py
+src/offsettmpsubs/__main__.py
+src/offsettmpsubs/offsettmpsubs.py
+src/offsettmpsubs.egg-info/PKG-INFO
+src/offsettmpsubs.egg-info/SOURCES.txt
+src/offsettmpsubs.egg-info/dependency_links.txt
+src/offsettmpsubs.egg-info/entry_points.txt
+src/offsettmpsubs.egg-info/top_level.txt
