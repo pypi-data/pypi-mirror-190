@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+datasette_current_actor/__init__.py
+datasette_current_actor.egg-info/PKG-INFO
+datasette_current_actor.egg-info/SOURCES.txt
+datasette_current_actor.egg-info/dependency_links.txt
+datasette_current_actor.egg-info/entry_points.txt
+datasette_current_actor.egg-info/requires.txt
+datasette_current_actor.egg-info/top_level.txt

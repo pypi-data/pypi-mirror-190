@@ -1,0 +1,2 @@
+[datasette]
+current_actor = datasette_current_actor
