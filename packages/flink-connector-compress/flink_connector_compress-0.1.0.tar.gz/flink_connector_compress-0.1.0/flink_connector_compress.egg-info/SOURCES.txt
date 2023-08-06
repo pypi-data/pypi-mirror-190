@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+flink_connector_compress/__init__.py
+flink_connector_compress/compress.py
+flink_connector_compress.egg-info/PKG-INFO
+flink_connector_compress.egg-info/SOURCES.txt
+flink_connector_compress.egg-info/dependency_links.txt
+flink_connector_compress.egg-info/requires.txt
+flink_connector_compress.egg-info/top_level.txt
