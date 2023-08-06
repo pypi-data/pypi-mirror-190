@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "boxobj-image"
+version = "0.1.0"
+description = "Utilities to support working with boxobj classes and Pillow images"
+authors = ["dschultz0 <dave@daveschultzconsulting.com>"]
+readme = "README.md"
+packages = [{include = "boxobj_image"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Pillow = "^9.4.0"
+boxobj = "^0.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
