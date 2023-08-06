@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: NP.Grpc.PythonRelayInterfaces
+Version: 0.99.1
+Summary: Python interface for the Relay Server Client
+Author-email: "Nick Polya, Ph.D." <nick.polyak@verizon.net>
+Project-URL: Homepage, https://github.com/npolyak/NP.Grpc.RelayServer/tree/main/NP.Grpc.PythonRelayInterfaces
+Project-URL: Bug Tracker, https://github.com/npolyak/NP.Grpc.RelayServer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NP.Grpc.PythonRelayInterfaces
+
+This package can be used to provide Python language broadcasting and observing interfaces for the RelayServer described in 
+my https://www.codeproject.com/Articles/5353258/Publish-Subscribe-gRPC-Relay-Server-with-Separatio article
