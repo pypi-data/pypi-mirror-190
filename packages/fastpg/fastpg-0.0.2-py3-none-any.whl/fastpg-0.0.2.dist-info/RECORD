@@ -1,0 +1,8 @@
+fastpg/__init__.py,sha256=1O1G3F2mx00Xaxm83GYIXH5dhGdG9uxmhDM0tEqkXq4,95
+fastpg/core.py,sha256=iX4Xo9xGjEFZqr_UWsjyrQ6stHvMHWY3LZYo6G0uAnQ,7705
+fastpg/exceptions.py,sha256=xLWeSSK7dsIWnwg7bydPfxRDGLP4dpyZigweKMuRVnQ,88
+fastpg/utils.py,sha256=P_x01YUBObmpO9ai53p_4YTLWDKL_kJOaLtgB7OGIS0,1394
+fastpg-0.0.2.dist-info/METADATA,sha256=wpx_GLEgvrsJ-tvIjBxJWFTMamfhzLiWXzszAR2AhaY,2872
+fastpg-0.0.2.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+fastpg-0.0.2.dist-info/licenses/LICENSE,sha256=eFr3lOozZ1mb9Vd4jtBSuBPZ-2gZTWg5UsGYbw-99es,1071
+fastpg-0.0.2.dist-info/RECORD,,
