@@ -1,0 +1,12 @@
+reprozip_jupyter/__init__.py,sha256=zDHxOCIAg81rEqWWMDL7136WyivOm256vOnl7Qz8BGw,433
+reprozip_jupyter/main.py,sha256=XpLQol-kljaUr1aN9MpJasDlftWxBijGyHyYnedD7oA,1598
+reprozip_jupyter/notebook-extension.js,sha256=7FqmBDl6RfMkkk3xwFyTqn4XR2ZpicFy5pVMx8FypgY,4647
+reprozip_jupyter/run.py,sha256=hkRBagkzfiCqPmK_lc8TLsS3wH4yR5uwN3SQNA513lc,3645
+reprozip_jupyter/server_extension.py,sha256=bIJKvxreIjqongBJv0ICVupMQ-GArGL6JgL4QT7rPtg,3614
+reprozip_jupyter/trace.py,sha256=LJ6MxSYlHdW5ps-sFcLApfGJVLncVfnKyAIOvjXBobU,6968
+reprozip_jupyter-1.2.dist-info/LICENSE.txt,sha256=zKfbvN-zpI_7z0zXmAEvt4L3CjHIIrvrr7HVhvOJH1c,1505
+reprozip_jupyter-1.2.dist-info/METADATA,sha256=PxOlAMlFQD_F0T85Iwe5nQQk1CkmT4EKf1tt2iKwSAk,3349
+reprozip_jupyter-1.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+reprozip_jupyter-1.2.dist-info/entry_points.txt,sha256=9FGiBwHKz-mc0lhfQrIY9VWot7SRWBFaVkfwhYTpkec,64
+reprozip_jupyter-1.2.dist-info/top_level.txt,sha256=r42GQ6J_zNwXub1AotmS83vEdCJuzbd3jyrNxcG6OXc,17
+reprozip_jupyter-1.2.dist-info/RECORD,,
