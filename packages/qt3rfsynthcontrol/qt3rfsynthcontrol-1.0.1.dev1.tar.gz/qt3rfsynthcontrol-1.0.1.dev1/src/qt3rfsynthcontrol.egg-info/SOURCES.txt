@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/qt3rfsynthcontrol/__init__.py
+src/qt3rfsynthcontrol/device.py
+src/qt3rfsynthcontrol.egg-info/PKG-INFO
+src/qt3rfsynthcontrol.egg-info/SOURCES.txt
+src/qt3rfsynthcontrol.egg-info/dependency_links.txt
+src/qt3rfsynthcontrol.egg-info/requires.txt
+src/qt3rfsynthcontrol.egg-info/top_level.txt
