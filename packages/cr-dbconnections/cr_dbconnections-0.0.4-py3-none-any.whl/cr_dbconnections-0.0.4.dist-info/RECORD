@@ -1,0 +1,12 @@
+cr_dbconnections/__init__.py,sha256=0RzzjA2C00Wt2Ay05CfVqOnI3rhGXgRfThh9dz1V-mQ,22
+cr_dbconnections/admin_cadastro.py,sha256=VxMCAes72Y5QBGRvY3oma4hHm2oLOU49noJRvDHu7QY,1107
+cr_dbconnections/admin_loja.py,sha256=mf5gTVyWhH-TXsgNgqkx_AYt1uNbfEVNYez5FOsbH68,993
+cr_dbconnections/app_mylist.py,sha256=gQ0jfCC8LKbP3mUefZEYf1DxYvj5W2rAtBvE34kJCxk,1007
+cr_dbconnections/core_mongo.py,sha256=2tybzSDPGYwv57SlnI5r3ozHoUyaMSPbU_4GDIVWv0M,1657
+cr_dbconnections/core_relationalsql.py,sha256=rC2cdx_DkiJv53qZVIrsHcww7L_vEz1yMxHm56T0UGo,1613
+cr_dbconnections/datawarehouse.py,sha256=6wLuxW2flgN4azScR0nTMyLkhtRvOAm7o-77OIAwCc8,1004
+cr_dbconnections/mongo_rd.py,sha256=Fo5zjyPilRFd0wMqfkShBpHp1xxcVy2QsGe_RsKnmFQ,1180
+cr_dbconnections-0.0.4.dist-info/METADATA,sha256=5VVHzeTph-7GI92dpywxRa8rIG8KBua1HMZhf3RgACg,815
+cr_dbconnections-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cr_dbconnections-0.0.4.dist-info/top_level.txt,sha256=FnZT9TH9z9O3iMMFOFcAuubkxZyKg5PBRgo6XtRg0Js,17
+cr_dbconnections-0.0.4.dist-info/RECORD,,
