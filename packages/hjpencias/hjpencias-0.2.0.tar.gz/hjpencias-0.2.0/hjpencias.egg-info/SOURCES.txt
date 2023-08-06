@@ -1,0 +1,10 @@
+setup.py
+hjpencias/PiedraPapelTijeras.py
+hjpencias/TresEnRaya.py
+hjpencias/Wordle.py
+hjpencias/__init__.py
+hjpencias.egg-info/PKG-INFO
+hjpencias.egg-info/SOURCES.txt
+hjpencias.egg-info/dependency_links.txt
+hjpencias.egg-info/requires.txt
+hjpencias.egg-info/top_level.txt
