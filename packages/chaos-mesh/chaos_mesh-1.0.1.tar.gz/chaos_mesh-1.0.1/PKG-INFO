@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: chaos_mesh
+Version: 1.0.1
+Summary: A client to create experiments in ChaosMesh
+Home-page: https://github.com/arkrwn/chaos-python
+Author: Vishrant Gupta
+Author-email: gvishrant@vmware.com
