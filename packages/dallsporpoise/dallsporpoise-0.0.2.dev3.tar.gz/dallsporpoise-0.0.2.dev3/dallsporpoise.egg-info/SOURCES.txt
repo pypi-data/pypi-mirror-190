@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+dallsporpoise/__init__.py
+dallsporpoise/_version.py
+dallsporpoise.egg-info/PKG-INFO
+dallsporpoise.egg-info/SOURCES.txt
+dallsporpoise.egg-info/dependency_links.txt
+dallsporpoise.egg-info/requires.txt
+dallsporpoise.egg-info/top_level.txt
+scripts/motcorrect_vector.py
+scripts/vec2mat.py

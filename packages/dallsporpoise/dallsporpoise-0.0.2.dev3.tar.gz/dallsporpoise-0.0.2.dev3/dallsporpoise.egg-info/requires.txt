@@ -1,0 +1,7 @@
+numpy
+scipy
+h5py
+pyDictH5
+netCDF4
+pandas
+xarray
