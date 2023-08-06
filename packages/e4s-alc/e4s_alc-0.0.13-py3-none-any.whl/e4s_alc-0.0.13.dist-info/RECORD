@@ -1,0 +1,14 @@
+e4s_alc/__init__.py,sha256=zq629f5gWvWO4cvTuIHXqYLRJF9w3y5RzJsNBn7Vgcc,23
+e4s_alc/cli/add.py,sha256=Q3_2EXeCIOZak91C0FrzTmyRuV9uk3WZ2RFN2oPrYzQ,5304
+e4s_alc/cli/cli.py,sha256=VR3sx5mfXxEwuMWncM8izvMryJW98Jo3UCDz89MkCco,1325
+e4s_alc/cli/create.py,sha256=bd6PUuBExUDNwOLXI2Z5uF1iERN4ndxT41oW5j8qwFE,6293
+e4s_alc/cli/list.py,sha256=vJpshbbU7gTbiScyaFqWiMs4WCP0QRYAzUZlFP8je-Q,1139
+e4s_alc/database/__init__.py,sha256=hNaWhJBP2Ni_E_yGU9S8jGWDz_U6Kxn-dWPE3qp9Ahg,40
+e4s_alc/database/create.py,sha256=u4IaARCqDfYcwkdxTV9XOqyTaMT-q1bMjQKeB6AgNIQ,452
+e4s_alc/database/edit.py,sha256=2Ki3qtkcs5YTKUizPyB_Jy5YFe2S4TCjHyL96ndf890,1346
+e4s_alc-0.0.13.dist-info/LICENSE,sha256=IiIiXoHjVSFi8meCxC6Q2l5gaa2OEKRODqCQDjj2KsA,1106
+e4s_alc-0.0.13.dist-info/METADATA,sha256=VyJNCV3Jpd33bXqZoSTcyMlq06pe_FNgYp6ntrc3mN0,2271
+e4s_alc-0.0.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+e4s_alc-0.0.13.dist-info/entry_points.txt,sha256=p7QvYt9zh5LZaTgeLUx63LT8RVM7dE5s8is9Bkq3vfQ,50
+e4s_alc-0.0.13.dist-info/top_level.txt,sha256=9xV2pC2W5tUbb1B4blkUGst8-C3uHI6lI3INZAIncek,8
+e4s_alc-0.0.13.dist-info/RECORD,,
