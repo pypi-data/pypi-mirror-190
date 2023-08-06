@@ -1,0 +1,14 @@
+README.md
+setup.py
+cr_dbconnections/__init__.py
+cr_dbconnections/admin_cadastro.py
+cr_dbconnections/admin_loja.py
+cr_dbconnections/app_mylist.py
+cr_dbconnections/core_mongo.py
+cr_dbconnections/core_relationalsql.py
+cr_dbconnections/datawarehouse.py
+cr_dbconnections.egg-info/PKG-INFO
+cr_dbconnections.egg-info/SOURCES.txt
+cr_dbconnections.egg-info/dependency_links.txt
+cr_dbconnections.egg-info/requires.txt
+cr_dbconnections.egg-info/top_level.txt
