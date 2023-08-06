@@ -1,0 +1,10 @@
+automate_ML/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automate_ML/classification.py,sha256=gjQlcQC85FK5gzXW1ifkt3n64hYvfsIrktsuu5d_bjg,50042
+automate_ML/dry_run.py,sha256=9k7hKgfC9hvJ4MLzL13BAhoMeo8KI-Y0DB5L1SGHl0U,9874
+automate_ML/preprocessing.py,sha256=vELZgamn7U5akQJ3NHhllJqOQhUoK6HL78lVy-syYqM,9390
+automate_ML/regression.py,sha256=I9w3p5xSYWF67VK6iX8Z8CvO7mAdqeH2w3vGFMd3n34,30573
+automate_ML-1.0.2.dist-info/LICENSE,sha256=BG3pTtGUrp7px40EtdWhqDw5vQJuqGDNV0CPvaVBq04,1087
+automate_ML-1.0.2.dist-info/METADATA,sha256=oZFOioPvZ4K7zLkQwB9aNNbahfAix2UWQLjr0xBv4BM,1025
+automate_ML-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+automate_ML-1.0.2.dist-info/top_level.txt,sha256=_eVJwR2tx1PJNm8BBajxbCcA1Vltf0tuxd4vB_NeLjA,12
+automate_ML-1.0.2.dist-info/RECORD,,
