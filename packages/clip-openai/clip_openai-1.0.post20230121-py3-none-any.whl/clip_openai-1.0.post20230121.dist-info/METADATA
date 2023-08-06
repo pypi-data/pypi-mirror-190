@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: clip-openai
+Version: 1.0.post20230121
+Summary: CLIP package of OpenAI
+Home-page: https://github.com/openai/CLIP
+Author: OpenAI
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ftfy
+Requires-Dist: regex
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: torchvision
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+## CLIP python package of OpenAI.
+
+Note: This is unofficial. I change setup.py a little to publish this package including add commit date to version and etc.
