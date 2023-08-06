@@ -1,0 +1,15 @@
+fileformats/medimage/__init__.py,sha256=9ISDZaJXEPNz3daqFtQxp0yIog0Y6wGjFqMHFINE4xE,733
+fileformats/medimage/_version.py,sha256=tyUpHhoao99IzITLyo0uvorLWJ3t-Q6keNmVfFRJSJo,155
+fileformats/medimage/base.py,sha256=OCG8l6_CrLBrZ4v1wpVGsJl3dSdX3Xe6BlkqH2kPP3Q,4000
+fileformats/medimage/converters.py,sha256=ywADYyfNeoOvWhdugoyfQfXCxkMl_hcLdP0RcO2sNTc,6605
+fileformats/medimage/dicom.py,sha256=88PG1b8oRxN8HrsFtu1m8PJhGV4s-pZcCekwITrKqQA,3129
+fileformats/medimage/diffusion.py,sha256=be0CMhHq-nNdx6xOIkR9tns_dRpRG9a53gZlwqigxh0,3358
+fileformats/medimage/misc.py,sha256=16dpOHRWkyu0-ZP2ZIUZ9t3JWcK8ZvAt-2WexZ8yfTo,475
+fileformats/medimage/mrtrix.py,sha256=n0N9fXUZYkM3kntKafmoI4LVZOHDDV9C8QUX9QRQvK0,3484
+fileformats/medimage/nifti.py,sha256=mwLPCvBNyA85xOchc8VVEZSegHXDAEA5s7l65eOk_2Y,2029
+fileformats/medimage/raw.py,sha256=u3KZMWYyDin5qOkm0VM3rTV6LDQLpaWrjm9I2A3Co3E,1535
+fileformats/medimage/tests/test_neuro_converters.py,sha256=MzexGKQitAA548nfy4sUKdMIrbth9MbYLpHRxl4R430,2866
+fileformats_medimage-0.3.dist-info/METADATA,sha256=iT8ZBev0aH8buuTPn7jnbk4FhwgxNt88iRzjaf93nZk,19336
+fileformats_medimage-0.3.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+fileformats_medimage-0.3.dist-info/licenses/LICENSE,sha256=s12hb9VeRlj1uxCx7NSbKwRGyTklVA7omWbTLyMhYIs,14222
+fileformats_medimage-0.3.dist-info/RECORD,,
