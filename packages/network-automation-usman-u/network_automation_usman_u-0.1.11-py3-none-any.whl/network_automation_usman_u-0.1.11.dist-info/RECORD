@@ -1,0 +1,8 @@
+net_automation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+net_automation/j2templates.py,sha256=ILcDPROXU_6NmaKcmETaKEJVPcmtTfF2P7Kao8_hQkU,17424
+net_automation/net_automation.py,sha256=BiGimxygxP66DXLTvqUByVuWz26I24O_P8HagId2EMI,35716
+net_automation/vyosbgp.template,sha256=oxE6jbIbtQ7D-GcMd_y2PH02l-7tfNM8ddURANyhdtc,1585
+network_automation_usman_u-0.1.11.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+network_automation_usman_u-0.1.11.dist-info/METADATA,sha256=l_FpQWsZ9oO55jLnrS3mk0ZtX8mfTBwLOy_vSX9vUN0,638
+network_automation_usman_u-0.1.11.dist-info/LICENSE,sha256=1_70amn8hYgOkG9LXFsWHYHzohH2AbuEsKzqzT0d2tY,1518
+network_automation_usman_u-0.1.11.dist-info/RECORD,,
