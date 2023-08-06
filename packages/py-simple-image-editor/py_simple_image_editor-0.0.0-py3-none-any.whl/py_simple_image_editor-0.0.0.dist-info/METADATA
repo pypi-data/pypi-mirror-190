@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: py-simple-image-editor
+Version: 0.0.0
+Summary: A basic pixel art / pixel gif editor.
+Author-email: Andrew Spangler <AndrewSpangler@users.noreply.github.com>
+License: LICENSE
+Project-URL: homepage, https://GitHub.com/AndrewSpangler/py_simple_image_editor/
+Project-URL: bug tracker, https://GitHub.com/AndrewSpangler/py_simple_image_editor/issues
+Project-URL: documentation, https://GitHub.com/AndrewSpangler/py_simple_image_editor/
+Project-URL: repository, https://GitHub.com/AndrewSpangler/py_simple_image_editor/
+Keywords: image,editor,gif,animated,animation
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: py-simple-ttk
+Requires-Dist: pillow
+Requires-Dist: numpy
+
+# py_simple_image_editor 0.0.0<a name="mark0"></a>
+
+- [About](#mark1)
+- [Requirements](#mark2)
+- [Changelog](#mark3)
+	- [0.0.0](#mark4)
+
+---
+
+# About<a name="mark1"></a>[^](#mark0)
+
+A basic pixel art / pixel gif editor.
+
+# Requirements<a name="mark2"></a>[^](#mark0)
+
+['py_simple_ttk', 'pillow']
+
+# Changelog<a name="mark3"></a>[^](#mark0)
+
+## 0.0.0<a name="mark4"></a>[^](#mark3)
+
+Create Project
+
+
+
+Generated with [py_simple_readme](https://github.com/AndrewSpangler/py_simple_readme)
