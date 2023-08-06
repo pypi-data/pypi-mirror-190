@@ -1,0 +1,3 @@
+[console_scripts]
+kiwi = akiwi.__main__:main
+

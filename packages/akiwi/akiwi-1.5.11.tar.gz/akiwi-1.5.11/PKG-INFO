@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: akiwi
+Version: 1.5.11
+Summary: Automatic code download tool.
+Home-page: https://github.com/shouxieai/tensorRT_Pro
+Author: djw.hope
+Author-email: djw.hope@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: linux
+Requires-Python: >=3.6
