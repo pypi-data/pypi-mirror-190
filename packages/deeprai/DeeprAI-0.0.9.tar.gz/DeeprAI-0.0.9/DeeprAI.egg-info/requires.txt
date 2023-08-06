@@ -1,0 +1,6 @@
+alive_progress
+colorama
+cryptography
+cython
+numpy
+pyndb
