@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: zkmo
+Version: 0.0.2
+Summary: zkmo
+Home-page: https://www.bossjob.ph/
+License: UNKNOWN
+Project-URL: Source, https://github.com/zekeeol/zkmo
+Description: # zkmo
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
