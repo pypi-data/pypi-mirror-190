@@ -1,0 +1,9 @@
+License.txt
+README.md
+setup.py
+birdsMyTest/__init__.py
+birdsMyTest/birds.py
+birdsMyTest.egg-info/PKG-INFO
+birdsMyTest.egg-info/SOURCES.txt
+birdsMyTest.egg-info/dependency_links.txt
+birdsMyTest.egg-info/top_level.txt
