@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "pybird"
+version = "1.2.0"
+description = "BIRD interface handler for Python"
+readme = "README.md"
+repository = "https://github.com/20c/pybird"
+authors = ["20C <code@20c.com>", "Sasha Romijn <github@mxsasha.eu>"]
+license = "Apache-2.0"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+packages = [{ include = "pybird" }]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+# testing
+codecov = ">=2"
+coverage = ">=5"
+pytest = ">=6"
+pytest-cov = "*"
+tox = ">=3.25.1"
+tox-gh-actions = ">=2.9.1"
+
+# linting
+black = ">=20"
+isort = ">=5.7"
+flake8 = ">=3.8"
+mypy = ">=0.950"
+pre-commit = ">=2.13"
+pyupgrade = ">=2.19"
+
+# docs
+markdown-include = ">=0.5"
+mkdocs = "^1.2.3"
+pymdgen = "^1"
+
+# ctl
+# ctl = ">=1"
+ctl = { git = "https://github.com/20c/ctl.git", branch = "prep-release" }
+twine = ">=3"
+
+[tool.poetry.extras]
+docs = ["markdown-include", "mkdocs", "pymdgen"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
