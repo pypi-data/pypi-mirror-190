@@ -1,0 +1,3 @@
+13.1.6.13160021-13.1.6.13160021-
+            GIT_REPOSITORYhttps://gitee.com/dnguyen/boost-source-codeGIT_TAGv1.78.0LIBSserializationVER1.78.0MD5xxxxxPATCHESPRE_CONFIGURE_COMMAND./bootstrap.shSKIP_BUILD_STEPINSTALL_COMMAND./b2--with-headers--prefix=@PREFIX@--with-serializationvariant=debug,release--layout=taggedtoolset=darwininstallTARGET_ALIASmindquantum::boost_headersBoost::headersmindquantum::boost_serializationBoost::serialization - - 
+            ----
