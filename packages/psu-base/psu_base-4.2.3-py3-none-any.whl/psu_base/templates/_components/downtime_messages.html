@@ -1,0 +1,41 @@
+
+<style>
+    .downtime-message {
+        border: 1px solid Maroon;
+        border-radius: 3px;
+        color: #4A2710;
+        background-color: #FFF0E6;
+        padding: 7px;
+        max-width: 99%;
+        text-align: center;
+        margin: 5px auto;
+    }
+</style>
+<div class="downtime-message hidden"></div>
+
+<script type="text/javascript">
+    function getDowntimeMessage(){
+        $.ajax({
+            type:   "GET",
+            url:    "{{finti_downtime_url}}",
+            data:   {env: '{{finti_downtime_env}}', pageName: 'Z_BANWEB', seqNo: 1, sourceInd: 'L'},
+            success:function(data){
+                console.log(data)
+                var start = data.message.p_gurinfo_start_date;
+                var end = data.message.p_gurinfo_end_date;
+                var today = new Date();
+                if(start !== null && start !== undefined && end !== null && end !== undefined){
+                    var startdate = new Date(start);
+                    var enddate = new Date(end);
+                    if(today.getTime() >= startdate.getTime() && today.getTime() <= enddate.getTime()){
+                        $(".downtime-message").html(data.message.p_gurinfo_text);
+                        $(".downtime-message").removeClass('hidden');
+                    }
+                }
+            }
+        });
+    }
+    $(document).ready(function(){
+        getDowntimeMessage();
+    });
+</script>
