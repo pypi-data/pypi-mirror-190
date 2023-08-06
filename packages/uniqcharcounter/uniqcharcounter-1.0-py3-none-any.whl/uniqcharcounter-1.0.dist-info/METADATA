@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: uniqcharcounter
+Version: 1.0
+Summary: Calculate count of uniq chars in string or file
+Home-page: UNKNOWN
+Author: Dihtiar Vadym
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# UniqCharCounter Package
+
+#### - Package for calculate count of unique characters in a string or file
+#### - uniqcharcounter for use from command line
+
+## Installation
+### Using PIP
+```bash
+pip install uniqcharcounter
+```
+
+## Usage in scripts
+`script_name.py`
+```python
+from uniqcharcounter import main
+
+if __name__ == '__main__':
+    data = main()
+```
+
+## Usage from command line
+```bash
+$ python script_name.py --string "string_data"
+$ python script_name.py --data "/path/to/file"
+```
+
+## Usage from command line without imports
+```bash
+$ uniqcharcounter --string "string_data"
+$ uniqcharcounter --data "/path/to/file"
+```
+
+## License
+`uniqcharcounter` is licensed (MIT license).
+

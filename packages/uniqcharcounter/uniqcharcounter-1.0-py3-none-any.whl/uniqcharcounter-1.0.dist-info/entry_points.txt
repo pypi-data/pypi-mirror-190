@@ -1,0 +1,3 @@
+[console_scripts]
+uniqcharcounter = uniqcharcounter.app.app:main
+
