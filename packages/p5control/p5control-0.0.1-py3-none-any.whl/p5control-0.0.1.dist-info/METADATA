@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: p5control
+Version: 0.0.1
+Summary: Measurement control software written in python
+Author-email: mawenzy <39279779+mawenzy@users.noreply.github.com>
+Maintainer-email: mawenzy <39279779+mawenzy@users.noreply.github.com>, schmampf <61253184+schmampf@users.noreply.github.com>
+License: BSD-3-Clause
+Project-URL: homepage, https://github.com/mawenzy/p5control
+Project-URL: documentation, https://p5control.readthedocs.io/en/latest/
+Project-URL: repository, https://github.com/mawenzy/p5control
+Keywords: p5control,measurement toolkit,experimentation platform,physics,science,research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.23.1)
+Requires-Dist: rpyc (>=5.3.0)
+Requires-Dist: h5py (>=3.8.0)
+Requires-Dist: pyvisa (>=1.13.0)
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Provides-Extra: gui
+Requires-Dist: qtpy (>=2.3.0) ; extra == 'gui'
+Requires-Dist: pyside6 (>=6.4.2) ; extra == 'gui'
+Requires-Dist: pyqtgraph (>=0.13.1) ; (platform_machine != "aarch64" and platform_machine != "armv7l") and extra == 'gui'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+# p5control
+
+See the docs: https://p5control.readthedocs.io/en/latest/
+
+Control your instruments using python. This repo provides code to facilitate measurement control and data acquisition, including gui elements.
+
+Heavily inspired by [nspyre](https://github.com/nspyre-org/nspyre) and [hdf5view](https://github.com/marts/hdf5view).
