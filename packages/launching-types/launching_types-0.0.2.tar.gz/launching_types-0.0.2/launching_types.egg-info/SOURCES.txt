@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+launching_types.egg-info/PKG-INFO
+launching_types.egg-info/SOURCES.txt
+launching_types.egg-info/dependency_links.txt
+launching_types.egg-info/top_level.txt
+types/__init__.py
+types/env_types.py
+types/file_types.py
