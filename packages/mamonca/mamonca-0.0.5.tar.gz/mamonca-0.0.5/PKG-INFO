@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mamonca
+Version: 0.0.5
+Summary: mamonca - interactive Magnetic Monte Carlo code
+Home-page: https://github.com/samwaseda/mamonca
+Author: Sam Waseda
+Author-email: waseda@mpie.de
+License: BSD
+License-File: LICENSE.md

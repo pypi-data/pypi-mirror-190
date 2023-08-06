@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mamonca/cMC.cpp
+mamonca/cMC.h
+mamonca/cMC.pxd
+mamonca/mc.cpp
+mamonca/mc.pyx
+mamonca.egg-info/PKG-INFO
+mamonca.egg-info/SOURCES.txt
+mamonca.egg-info/dependency_links.txt
+mamonca.egg-info/top_level.txt
