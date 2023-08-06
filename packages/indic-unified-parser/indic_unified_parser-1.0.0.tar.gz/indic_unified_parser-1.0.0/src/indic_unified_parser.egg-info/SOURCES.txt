@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/IITM_indic_unified_parser/__init__.py
+src/IITM_indic_unified_parser/common.map
+src/IITM_indic_unified_parser/globals.py
+src/IITM_indic_unified_parser/helpers.py
+src/IITM_indic_unified_parser/uparser.py
+src/IITM_indic_unified_parser/ply/__init__.py
+src/IITM_indic_unified_parser/ply/lex.py
+src/IITM_indic_unified_parser/ply/yacc.py
+src/indic_unified_parser.egg-info/PKG-INFO
+src/indic_unified_parser.egg-info/SOURCES.txt
+src/indic_unified_parser.egg-info/dependency_links.txt
+src/indic_unified_parser.egg-info/top_level.txt
