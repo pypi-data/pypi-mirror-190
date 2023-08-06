@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: vlogging
+Version: 0.0.1
+Summary: Easy to use logger.
+Author-email: Yuya Honda <yuyahnd.info@gmail.com>
+Project-URL: Homepage, https://github.com/yuyahnd/vlogging
+Project-URL: Bug Tracker, https://github.com/yuyahnd/vlogging/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest (==7.2.1) ; extra == 'dev'
+
+# vlogging
+Easy to use logger.
+
+## Installation
+```
+$ pip install vlogging
+```
+
+Install from github:
+```
+$ pip install git+https://github.com/yuyahnd/vlogging.git
+```
+
+To develop:
+```
+$ git clone https://github.com/yuyahnd/vlogging.git
+$ pip install -e ./vlogging[dev]
+```
+
+## License
+This repository is licensed under the MIT license. See LICENSE for details.
+
+&copy; 2023 Yuya Honda
