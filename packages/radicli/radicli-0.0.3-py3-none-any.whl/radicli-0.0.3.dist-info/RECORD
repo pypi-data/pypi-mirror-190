@@ -1,0 +1,13 @@
+radicli/__init__.py,sha256=GEzJD4Yo81X8B9YEkDO5u49yHOS5en7SYACFisjuFbQ,12760
+radicli/parser.py,sha256=N_DsuDPJ4M_doh0Hr9gzEMAXRnGwoGQ80OPKC9FUbDA,1820
+radicli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+radicli/util.py,sha256=a1IRZU3eDy9mDgVBpFKNUlSXSdVPoCiJYv1bqBf853k,10464
+radicli/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+radicli/tests/test_cli.py,sha256=L3zx9aDNXwxTdvSXfKL4PT-I86Zdjuj089XaSOBlutU,15432
+radicli/tests/test_parser.py,sha256=nMvXjno1sLfJx91qk42L_3IBMxP5gd0AWFhayQKKzAo,5470
+radicli-0.0.3.dist-info/LICENSE,sha256=OXzXYJYcVrWn-utCmU3bJutWn-WPZS2MtQS1C0U5_fQ,1073
+radicli-0.0.3.dist-info/METADATA,sha256=IF8pSk1QPXcdBOU33QiOtG0G0SGMAUzgGljViD4uHeM,21855
+radicli-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+radicli-0.0.3.dist-info/top_level.txt,sha256=8pKMJymP09dF2LmwIGBd5aqMgy0s0Yk9G002-Kl5ip0,8
+radicli-0.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+radicli-0.0.3.dist-info/RECORD,,
