@@ -1,0 +1,47 @@
+"""Python setup.py for project_name package"""
+import io
+import os
+from setuptools import find_packages, setup
+
+from release_notes.config.env_config import EnvConfig
+from release_notes.config.github_config import GithubAPIConfig
+from release_notes.version import ReleaseVersion
+
+env_config = EnvConfig(".env")
+github_config = GithubAPIConfig("DataWiz40", "gg-release-notes", env_config)
+release_version = ReleaseVersion(github_config).current_version
+
+print(find_packages())
+
+
+def read(*paths, **kwargs):
+    """Read the contents of a text file safely."""
+    content = ""
+    with io.open(
+        os.path.join(os.path.dirname(__file__), *paths),
+        encoding=kwargs.get("encoding", "utf8"),
+    ) as open_file:
+        content = open_file.read().strip()
+    return content
+
+
+def read_requirements(path):
+    return [
+        line.strip()
+        for line in read(path).split("\n")
+        if not line.startswith(('"', "#", "-", "git+"))
+    ]
+
+
+setup(
+    name="gg-release-notes",
+    version=release_version,
+    description="Python Interface for generating release notes for Github Actions",
+    url="https://github.com/DataWiz40/gg-release-notes/",
+    long_description=read("README.md"),
+    long_description_content_type="text/markdown",
+    author="DataWiz40",
+    packages=find_packages(exclude=["tests", ".github"]),
+    install_requires=read_requirements("requirements.txt"),
+    extras_require={"test": read_requirements("requirements-test.txt")},
+)
