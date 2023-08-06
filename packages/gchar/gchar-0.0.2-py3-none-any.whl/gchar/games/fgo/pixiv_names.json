@@ -1,0 +1,2717 @@
+{
+    "names": [
+        {
+            "name": "abigail_williams",
+            "count": 8
+        },
+        {
+            "name": "achilles",
+            "count": 28
+        },
+        {
+            "name": "alexander",
+            "count": 14
+        },
+        {
+            "name": "altera",
+            "count": 57
+        },
+        {
+            "name": "altria_pendragon",
+            "count": 4
+        },
+        {
+            "name": "anastasia",
+            "count": 50
+        },
+        {
+            "name": "arash",
+            "count": 14
+        },
+        {
+            "name": "archer inferno",
+            "count": 20
+        },
+        {
+            "name": "archetype:earth",
+            "count": 2
+        },
+        {
+            "name": "arcueid_brunestud",
+            "count": 2
+        },
+        {
+            "name": "arjuna",
+            "count": 107
+        },
+        {
+            "name": "arjuna_alter",
+            "count": 1
+        },
+        {
+            "name": "asclepius",
+            "count": 5
+        },
+        {
+            "name": "ashiya_douman",
+            "count": 1
+        },
+        {
+            "name": "assassin paraiso",
+            "count": 1
+        },
+        {
+            "name": "asterios",
+            "count": 2
+        },
+        {
+            "name": "astolfo",
+            "count": 699
+        },
+        {
+            "name": "astraea",
+            "count": 8
+        },
+        {
+            "name": "asvatthaman",
+            "count": 1
+        },
+        {
+            "name": "atalanta",
+            "count": 63
+        },
+        {
+            "name": "atalanta_alter",
+            "count": 2
+        },
+        {
+            "name": "avicebron",
+            "count": 1
+        },
+        {
+            "name": "baobhan_sith",
+            "count": 1
+        },
+        {
+            "name": "barghest",
+            "count": 22
+        },
+        {
+            "name": "bb",
+            "count": 8646
+        },
+        {
+            "name": "beastⅲ／l",
+            "count": 3
+        },
+        {
+            "name": "beastⅲ／r",
+            "count": 2
+        },
+        {
+            "name": "bedivere",
+            "count": 34
+        },
+        {
+            "name": "beowulf",
+            "count": 11
+        },
+        {
+            "name": "boudica",
+            "count": 56
+        },
+        {
+            "name": "bradamante",
+            "count": 36
+        },
+        {
+            "name": "britomart",
+            "count": 2
+        },
+        {
+            "name": "brynhild",
+            "count": 54
+        },
+        {
+            "name": "caenis",
+            "count": 40
+        },
+        {
+            "name": "caligula",
+            "count": 9
+        },
+        {
+            "name": "carmilla",
+            "count": 40
+        },
+        {
+            "name": "chacha",
+            "count": 6
+        },
+        {
+            "name": "charlemagne",
+            "count": 8
+        },
+        {
+            "name": "charles_babbage",
+            "count": 2
+        },
+        {
+            "name": "charlotte_corday",
+            "count": 1
+        },
+        {
+            "name": "chen_gong",
+            "count": 1
+        },
+        {
+            "name": "chiron",
+            "count": 14
+        },
+        {
+            "name": "chloe_von_einzbern",
+            "count": 8
+        },
+        {
+            "name": "circe",
+            "count": 30
+        },
+        {
+            "name": "cleopatra",
+            "count": 17
+        },
+        {
+            "name": "cu_chulainn",
+            "count": 5
+        },
+        {
+            "name": "david",
+            "count": 6
+        },
+        {
+            "name": "demon_king_nobunaga",
+            "count": 1
+        },
+        {
+            "name": "diarmuid_ua_duibhne",
+            "count": 1
+        },
+        {
+            "name": "dioscuri",
+            "count": 26
+        },
+        {
+            "name": "dobrynya_nikitich",
+            "count": 1
+        },
+        {
+            "name": "emiya",
+            "count": 168
+        },
+        {
+            "name": "enkidu",
+            "count": 260
+        },
+        {
+            "name": "ereshkigal",
+            "count": 179
+        },
+        {
+            "name": "europa",
+            "count": 4
+        },
+        {
+            "name": "euryale",
+            "count": 10
+        },
+        {
+            "name": "first_hassan",
+            "count": 1
+        },
+        {
+            "name": "florence_nightingale",
+            "count": 3
+        },
+        {
+            "name": "francis_drake",
+            "count": 5
+        },
+        {
+            "name": "frankenstein",
+            "count": 67
+        },
+        {
+            "name": "galatea",
+            "count": 4
+        },
+        {
+            "name": "gareth",
+            "count": 15
+        },
+        {
+            "name": "gawain",
+            "count": 42
+        },
+        {
+            "name": "georgios",
+            "count": 1
+        },
+        {
+            "name": "geronimo",
+            "count": 1
+        },
+        {
+            "name": "gilgamesh",
+            "count": 416
+        },
+        {
+            "name": "gilles_de_rais",
+            "count": 1
+        },
+        {
+            "name": "goetia",
+            "count": 5
+        },
+        {
+            "name": "gorgon",
+            "count": 47
+        },
+        {
+            "name": "gray",
+            "count": 55
+        },
+        {
+            "name": "habetrot",
+            "count": 5
+        },
+        {
+            "name": "helena_blavatsky",
+            "count": 4
+        },
+        {
+            "name": "heracles",
+            "count": 5
+        },
+        {
+            "name": "hessian_lobo",
+            "count": 1
+        },
+        {
+            "name": "hildr",
+            "count": 46
+        },
+        {
+            "name": "himiko",
+            "count": 8
+        },
+        {
+            "name": "ibaraki_douji",
+            "count": 3
+        },
+        {
+            "name": "illyasviel_von_einzbern",
+            "count": 8
+        },
+        {
+            "name": "ishtar",
+            "count": 471
+        },
+        {
+            "name": "iskandar",
+            "count": 46
+        },
+        {
+            "name": "iyo",
+            "count": 185
+        },
+        {
+            "name": "jack_the_ripper",
+            "count": 19
+        },
+        {
+            "name": "jason",
+            "count": 3
+        },
+        {
+            "name": "jinako_carigiri",
+            "count": 2
+        },
+        {
+            "name": "kama",
+            "count": 197
+        },
+        {
+            "name": "karna",
+            "count": 186
+        },
+        {
+            "name": "katsushika_hokusai",
+            "count": 5
+        },
+        {
+            "name": "kingprotea",
+            "count": 52
+        },
+        {
+            "name": "kiyohime",
+            "count": 154
+        },
+        {
+            "name": "kotomine_kirei",
+            "count": 1
+        },
+        {
+            "name": "kriemhild",
+            "count": 1
+        },
+        {
+            "name": "lancelot",
+            "count": 60
+        },
+        {
+            "name": "leonardo_da_vinci",
+            "count": 1
+        },
+        {
+            "name": "mandricardo",
+            "count": 4
+        },
+        {
+            "name": "marie_antoinette",
+            "count": 3
+        },
+        {
+            "name": "martha",
+            "count": 44
+        },
+        {
+            "name": "mash_kyrielight",
+            "count": 20
+        },
+        {
+            "name": "mata_hari",
+            "count": 1
+        },
+        {
+            "name": "medb",
+            "count": 89
+        },
+        {
+            "name": "medea",
+            "count": 35
+        },
+        {
+            "name": "medea_lily",
+            "count": 2
+        },
+        {
+            "name": "medusa",
+            "count": 170
+        },
+        {
+            "name": "meltryllis",
+            "count": 134
+        },
+        {
+            "name": "melusine",
+            "count": 35
+        },
+        {
+            "name": "mephistopheles",
+            "count": 3
+        },
+        {
+            "name": "merlin",
+            "count": 174
+        },
+        {
+            "name": "minamoto_no_raikou",
+            "count": 24
+        },
+        {
+            "name": "miyamoto_musashi",
+            "count": 8
+        },
+        {
+            "name": "mochizuki_chiyome",
+            "count": 5
+        },
+        {
+            "name": "mordred",
+            "count": 757
+        },
+        {
+            "name": "morgan",
+            "count": 120
+        },
+        {
+            "name": "mori_nagayoshi",
+            "count": 1
+        },
+        {
+            "name": "murasaki_shikibu",
+            "count": 3
+        },
+        {
+            "name": "mysterious_heroine_x",
+            "count": 7
+        },
+        {
+            "name": "mysterious_heroine_xx",
+            "count": 1
+        },
+        {
+            "name": "nagao_kagetora",
+            "count": 1
+        },
+        {
+            "name": "napoleon",
+            "count": 71
+        },
+        {
+            "name": "nemo",
+            "count": 14
+        },
+        {
+            "name": "nero_claudius",
+            "count": 22
+        },
+        {
+            "name": "nezha",
+            "count": 5
+        },
+        {
+            "name": "nitocris",
+            "count": 154
+        },
+        {
+            "name": "nitocris_alter",
+            "count": 1
+        },
+        {
+            "name": "oberon",
+            "count": 96
+        },
+        {
+            "name": "oda_nobunaga",
+            "count": 7
+        },
+        {
+            "name": "odysseus",
+            "count": 5
+        },
+        {
+            "name": "okita_souji",
+            "count": 4
+        },
+        {
+            "name": "orion",
+            "count": 15
+        },
+        {
+            "name": "ortlinde",
+            "count": 4
+        },
+        {
+            "name": "osakabehime",
+            "count": 17
+        },
+        {
+            "name": "ozymandias",
+            "count": 79
+        },
+        {
+            "name": "paris",
+            "count": 9
+        },
+        {
+            "name": "parvati",
+            "count": 6
+        },
+        {
+            "name": "passionlip",
+            "count": 102
+        },
+        {
+            "name": "paul_bunyan",
+            "count": 1
+        },
+        {
+            "name": "penthesilea",
+            "count": 24
+        },
+        {
+            "name": "percival",
+            "count": 17
+        },
+        {
+            "name": "qin_liangyu",
+            "count": 1
+        },
+        {
+            "name": "quetzalcoatl",
+            "count": 66
+        },
+        {
+            "name": "rama",
+            "count": 38
+        },
+        {
+            "name": "roland",
+            "count": 1
+        },
+        {
+            "name": "romulus",
+            "count": 1
+        },
+        {
+            "name": "ryougi_shiki",
+            "count": 1
+        },
+        {
+            "name": "sakamoto_ryouma",
+            "count": 1
+        },
+        {
+            "name": "scathach",
+            "count": 431
+        },
+        {
+            "name": "scathach_skadi",
+            "count": 1
+        },
+        {
+            "name": "scheherazade",
+            "count": 36
+        },
+        {
+            "name": "semiramis",
+            "count": 60
+        },
+        {
+            "name": "sen_no_rikyu",
+            "count": 1
+        },
+        {
+            "name": "sessyoin_kiara",
+            "count": 2
+        },
+        {
+            "name": "sherlock_holmes",
+            "count": 1
+        },
+        {
+            "name": "shuten_douji",
+            "count": 43
+        },
+        {
+            "name": "sieg",
+            "count": 34
+        },
+        {
+            "name": "siegfried",
+            "count": 21
+        },
+        {
+            "name": "sigurd",
+            "count": 10
+        },
+        {
+            "name": "sitonai",
+            "count": 11
+        },
+        {
+            "name": "solomon",
+            "count": 22
+        },
+        {
+            "name": "space_ishtar",
+            "count": 1
+        },
+        {
+            "name": "spartacus",
+            "count": 7
+        },
+        {
+            "name": "stheno",
+            "count": 8
+        },
+        {
+            "name": "suzuka_gozen",
+            "count": 1
+        },
+        {
+            "name": "tamamo_cat",
+            "count": 2
+        },
+        {
+            "name": "tamamo_no_mae",
+            "count": 32
+        },
+        {
+            "name": "tezcatlipoca",
+            "count": 1
+        },
+        {
+            "name": "thrud",
+            "count": 1
+        },
+        {
+            "name": "tiamat",
+            "count": 37
+        },
+        {
+            "name": "tlaloc",
+            "count": 2
+        },
+        {
+            "name": "tomoe_gozen",
+            "count": 5
+        },
+        {
+            "name": "tristan",
+            "count": 26
+        },
+        {
+            "name": "ushiwakamaru",
+            "count": 88
+        },
+        {
+            "name": "valkyrie",
+            "count": 14
+        },
+        {
+            "name": "voyager",
+            "count": 74
+        },
+        {
+            "name": "vritra",
+            "count": 4
+        },
+        {
+            "name": "walkure",
+            "count": 1
+        },
+        {
+            "name": "wu_zetian",
+            "count": 2
+        },
+        {
+            "name": "yang_guifei",
+            "count": 2
+        },
+        {
+            "name": "zenobia",
+            "count": 10
+        },
+        {
+            "name": "アイリスフィール〔天の衣〕",
+            "count": 8
+        },
+        {
+            "name": "アキレウス",
+            "count": 1284
+        },
+        {
+            "name": "アサシン・パライソ",
+            "count": 477
+        },
+        {
+            "name": "アシュヴァッターマン",
+            "count": 906
+        },
+        {
+            "name": "アスクレピオス",
+            "count": 1537
+        },
+        {
+            "name": "アステリオス",
+            "count": 1032
+        },
+        {
+            "name": "アストライア",
+            "count": 200
+        },
+        {
+            "name": "アストルフォ",
+            "count": 9987
+        },
+        {
+            "name": "アタランテ",
+            "count": 2794
+        },
+        {
+            "name": "アタランテ〔オルタ〕",
+            "count": 18
+        },
+        {
+            "name": "アナスタシア",
+            "count": 4746
+        },
+        {
+            "name": "アナスタシア＆ヴィイ",
+            "count": 42
+        },
+        {
+            "name": "アビゲイル・ウィリアムズ",
+            "count": 14572
+        },
+        {
+            "name": "アビゲイル・ウィリアムズ〔夏〕",
+            "count": 333
+        },
+        {
+            "name": "アムール〔カレン〕",
+            "count": 18
+        },
+        {
+            "name": "アルクェイド・ブリュンスタッド",
+            "count": 431
+        },
+        {
+            "name": "アルジュナ",
+            "count": 4436
+        },
+        {
+            "name": "アルジュナ〔オルタ〕",
+            "count": 27
+        },
+        {
+            "name": "アルテラ",
+            "count": 2641
+        },
+        {
+            "name": "アルテラ・ザ・サン〔タ〕",
+            "count": 356
+        },
+        {
+            "name": "アルトリア・キャスター",
+            "count": 4236
+        },
+        {
+            "name": "アルトリア・ペンドラゴン",
+            "count": 18841
+        },
+        {
+            "name": "アルトリア・ペンドラゴン〔オルタ〕",
+            "count": 148
+        },
+        {
+            "name": "アルトリア・ペンドラゴン〔サンタオルタ〕",
+            "count": 9
+        },
+        {
+            "name": "アルトリア・ペンドラゴン〔リリィ〕",
+            "count": 15
+        },
+        {
+            "name": "アレキサンダー",
+            "count": 1302
+        },
+        {
+            "name": "アントニオ・サリエリ",
+            "count": 1776
+        },
+        {
+            "name": "アンリマユ",
+            "count": 502
+        },
+        {
+            "name": "アン・ボニー＆メアリー・リード",
+            "count": 469
+        },
+        {
+            "name": "アヴィケブロン",
+            "count": 785
+        },
+        {
+            "name": "アーキタイプ：アース",
+            "count": 229
+        },
+        {
+            "name": "アーサー・ペンドラゴン〔プロトタイプ〕",
+            "count": 25
+        },
+        {
+            "name": "アーチャー・インフェルノ",
+            "count": 2695
+        },
+        {
+            "name": "アーラシュ",
+            "count": 1064
+        },
+        {
+            "name": "イアソン",
+            "count": 708
+        },
+        {
+            "name": "イシュタル",
+            "count": 6711
+        },
+        {
+            "name": "イスカンダル",
+            "count": 842
+        },
+        {
+            "name": "イリヤスフィール・フォン・アインツベルン",
+            "count": 3762
+        },
+        {
+            "name": "イヴァン雷帝",
+            "count": 163
+        },
+        {
+            "name": "ウィツィロポチトリ",
+            "count": 19
+        },
+        {
+            "name": "ウィリアム・シェイクスピア",
+            "count": 49
+        },
+        {
+            "name": "ウィリアム・テル",
+            "count": 66
+        },
+        {
+            "name": "エイリーク・ブラッドアクス",
+            "count": 33
+        },
+        {
+            "name": "エウリュアレ",
+            "count": 1412
+        },
+        {
+            "name": "エウロペ",
+            "count": 249
+        },
+        {
+            "name": "エドワード・ティーチ",
+            "count": 947
+        },
+        {
+            "name": "エミヤ",
+            "count": 3590
+        },
+        {
+            "name": "エミヤ〔アサシン〕",
+            "count": 13
+        },
+        {
+            "name": "エミヤ〔オルタ〕",
+            "count": 10
+        },
+        {
+            "name": "エリザベート・バートリー",
+            "count": 4608
+        },
+        {
+            "name": "エリザベート・バートリー〔シンデレラ〕",
+            "count": 2
+        },
+        {
+            "name": "エリザベート・バートリー〔ハロウィン〕",
+            "count": 4
+        },
+        {
+            "name": "エリザベート・バートリー〔ブレイブ〕",
+            "count": 21
+        },
+        {
+            "name": "エルキドゥ",
+            "count": 5405
+        },
+        {
+            "name": "エルドラドのバーサーカー",
+            "count": 753
+        },
+        {
+            "name": "エレシュキガル",
+            "count": 6817
+        },
+        {
+            "name": "エレナ・ブラヴァツキー",
+            "count": 2455
+        },
+        {
+            "name": "オキタ・ｊ・ソウジ",
+            "count": 124
+        },
+        {
+            "name": "オケアノスのキャスター",
+            "count": 1304
+        },
+        {
+            "name": "オジマンディアス",
+            "count": 2714
+        },
+        {
+            "name": "オデュッセウス",
+            "count": 437
+        },
+        {
+            "name": "オベロン",
+            "count": 6714
+        },
+        {
+            "name": "オリオン",
+            "count": 628
+        },
+        {
+            "name": "オルトリンデ",
+            "count": 617
+        },
+        {
+            "name": "カイニス",
+            "count": 1678
+        },
+        {
+            "name": "カラミティ・ジェーン",
+            "count": 281
+        },
+        {
+            "name": "カリギュラ",
+            "count": 296
+        },
+        {
+            "name": "カルナ",
+            "count": 4921
+        },
+        {
+            "name": "カルナ〔サンタ〕",
+            "count": 231
+        },
+        {
+            "name": "カーマ",
+            "count": 5776
+        },
+        {
+            "name": "カーミラ",
+            "count": 1375
+        },
+        {
+            "name": "ガイウス・ユリウス・カエサル",
+            "count": 133
+        },
+        {
+            "name": "ガウェイン",
+            "count": 3604
+        },
+        {
+            "name": "ガラテア",
+            "count": 137
+        },
+        {
+            "name": "ガレス",
+            "count": 583
+        },
+        {
+            "name": "キルケー",
+            "count": 1851
+        },
+        {
+            "name": "キングプロテア",
+            "count": 1044
+        },
+        {
+            "name": "ギルガメッシュ",
+            "count": 8752
+        },
+        {
+            "name": "クリストファー・コロンブス",
+            "count": 155
+        },
+        {
+            "name": "クリームヒルト",
+            "count": 549
+        },
+        {
+            "name": "クレオパトラ",
+            "count": 630
+        },
+        {
+            "name": "クロエ・フォン・アインツベルン",
+            "count": 1652
+        },
+        {
+            "name": "クー・フーリン",
+            "count": 5278
+        },
+        {
+            "name": "クー・フーリン〔オルタ〕",
+            "count": 48
+        },
+        {
+            "name": "クー・フーリン〔プロトタイプ〕",
+            "count": 19
+        },
+        {
+            "name": "グレイ",
+            "count": 1337
+        },
+        {
+            "name": "グレゴリー・ラスプーチン",
+            "count": 26
+        },
+        {
+            "name": "ケイローン",
+            "count": 477
+        },
+        {
+            "name": "ケツァル・コアトル",
+            "count": 659
+        },
+        {
+            "name": "ケツァル・コアトル〔サンバ／サンタ〕",
+            "count": 45
+        },
+        {
+            "name": "ゲオルギウス",
+            "count": 393
+        },
+        {
+            "name": "ゲーティア",
+            "count": 355
+        },
+        {
+            "name": "コンスタンティノス11世",
+            "count": 117
+        },
+        {
+            "name": "ゴルゴーン",
+            "count": 558
+        },
+        {
+            "name": "サロメ",
+            "count": 213
+        },
+        {
+            "name": "シェヘラザード",
+            "count": 393
+        },
+        {
+            "name": "シグルド",
+            "count": 790
+        },
+        {
+            "name": "シトナイ",
+            "count": 911
+        },
+        {
+            "name": "シバの女王",
+            "count": 805
+        },
+        {
+            "name": "シャルルマーニュ",
+            "count": 421
+        },
+        {
+            "name": "シャルル＝アンリ・サンソン",
+            "count": 1315
+        },
+        {
+            "name": "シャルロット・コルデー",
+            "count": 1135
+        },
+        {
+            "name": "シャーロック・ホームズ",
+            "count": 1281
+        },
+        {
+            "name": "シュヴァリエ・デオン",
+            "count": 864
+        },
+        {
+            "name": "ジェロニモ",
+            "count": 293
+        },
+        {
+            "name": "ジェームズ・モリアーティ",
+            "count": 701
+        },
+        {
+            "name": "ジナコ＝カリギリ",
+            "count": 395
+        },
+        {
+            "name": "ジャガーマン",
+            "count": 329
+        },
+        {
+            "name": "ジャック・ザ・リッパー",
+            "count": 6169
+        },
+        {
+            "name": "ジャック・ド・モレー",
+            "count": 597
+        },
+        {
+            "name": "ジャンヌ・ダルク",
+            "count": 16326
+        },
+        {
+            "name": "ジャンヌ・ダルク〔オルタ〕",
+            "count": 416
+        },
+        {
+            "name": "ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+            "count": 2946
+        },
+        {
+            "name": "ジル・ド・レェ",
+            "count": 519
+        },
+        {
+            "name": "ジーク",
+            "count": 2369
+        },
+        {
+            "name": "ジークフリート",
+            "count": 1420
+        },
+        {
+            "name": "スカサハ",
+            "count": 12099
+        },
+        {
+            "name": "スカサハ＝スカディ",
+            "count": 2441
+        },
+        {
+            "name": "ステンノ",
+            "count": 861
+        },
+        {
+            "name": "スパルタクス",
+            "count": 238
+        },
+        {
+            "name": "スペース・イシュタル",
+            "count": 783
+        },
+        {
+            "name": "スルーズ",
+            "count": 485
+        },
+        {
+            "name": "スーパーバニヤン",
+            "count": 58
+        },
+        {
+            "name": "セミラミス",
+            "count": 1295
+        },
+        {
+            "name": "ゼノビア",
+            "count": 385
+        },
+        {
+            "name": "ソロモン",
+            "count": 1025
+        },
+        {
+            "name": "タマモキャット",
+            "count": 3721
+        },
+        {
+            "name": "ダビデ",
+            "count": 703
+        },
+        {
+            "name": "ダレイオス三世",
+            "count": 58
+        },
+        {
+            "name": "チャールズ・バベッジ",
+            "count": 222
+        },
+        {
+            "name": "ティアマト",
+            "count": 778
+        },
+        {
+            "name": "テスカトリポカ",
+            "count": 146
+        },
+        {
+            "name": "テノチティトラン",
+            "count": 21
+        },
+        {
+            "name": "ディオスクロイ",
+            "count": 685
+        },
+        {
+            "name": "ディルムッド・オディナ",
+            "count": 318
+        },
+        {
+            "name": "トラロック",
+            "count": 176
+        },
+        {
+            "name": "トリスタン",
+            "count": 4209
+        },
+        {
+            "name": "トーマス・エジソン",
+            "count": 179
+        },
+        {
+            "name": "ドブルイニャ・ニキチッチ",
+            "count": 373
+        },
+        {
+            "name": "ドン・キホーテ",
+            "count": 53
+        },
+        {
+            "name": "ナイチンゲール",
+            "count": 5589
+        },
+        {
+            "name": "ナイチンゲール〔サンタ〕",
+            "count": 217
+        },
+        {
+            "name": "ナポレオン",
+            "count": 703
+        },
+        {
+            "name": "ナーサリー・ライム",
+            "count": 2194
+        },
+        {
+            "name": "ニコラ・テスラ",
+            "count": 330
+        },
+        {
+            "name": "ニトクリス",
+            "count": 4697
+        },
+        {
+            "name": "ニトクリス〔オルタ〕",
+            "count": 2
+        },
+        {
+            "name": "ネモ",
+            "count": 1877
+        },
+        {
+            "name": "ネロ・クラウディウス",
+            "count": 11654
+        },
+        {
+            "name": "ネロ・クラウディウス〔ブライド〕",
+            "count": 23
+        },
+        {
+            "name": "ハベトロット",
+            "count": 804
+        },
+        {
+            "name": "ハンス・クリスチャン・アンデルセン",
+            "count": 338
+        },
+        {
+            "name": "バーゲスト",
+            "count": 2196
+        },
+        {
+            "name": "バーソロミュー・ロバーツ",
+            "count": 514
+        },
+        {
+            "name": "バーヴァン・シー",
+            "count": 4327
+        },
+        {
+            "name": "パッションリップ",
+            "count": 2522
+        },
+        {
+            "name": "パリス",
+            "count": 349
+        },
+        {
+            "name": "パーシヴァル",
+            "count": 412
+        },
+        {
+            "name": "パールヴァティー",
+            "count": 554
+        },
+        {
+            "name": "ヒルド",
+            "count": 418
+        },
+        {
+            "name": "ビリー・ザ・キッド",
+            "count": 834
+        },
+        {
+            "name": "ビーストⅲ／l",
+            "count": 5
+        },
+        {
+            "name": "ビーストⅲ／r",
+            "count": 3
+        },
+        {
+            "name": "ビーストⅲ／ｒ",
+            "count": 3
+        },
+        {
+            "name": "ビーストⅳ",
+            "count": 31
+        },
+        {
+            "name": "ファントム・オブ・ジ・オペラ",
+            "count": 477
+        },
+        {
+            "name": "フィン・マックール",
+            "count": 358
+        },
+        {
+            "name": "フェルグス・マック・ロイ",
+            "count": 189
+        },
+        {
+            "name": "フランケンシュタイン",
+            "count": 2536
+        },
+        {
+            "name": "フランシス・ドレイク",
+            "count": 799
+        },
+        {
+            "name": "ブラダマンテ",
+            "count": 1650
+        },
+        {
+            "name": "ブリトマート",
+            "count": 177
+        },
+        {
+            "name": "ブリュンヒルデ",
+            "count": 1630
+        },
+        {
+            "name": "ブーディカ",
+            "count": 2328
+        },
+        {
+            "name": "ヘクトール",
+            "count": 1053
+        },
+        {
+            "name": "ヘシアン・ロボ",
+            "count": 74
+        },
+        {
+            "name": "ヘファイスティオン",
+            "count": 75
+        },
+        {
+            "name": "ヘラクレス",
+            "count": 414
+        },
+        {
+            "name": "ヘンリー・ジキル＆ハイド",
+            "count": 93
+        },
+        {
+            "name": "ベオウルフ",
+            "count": 391
+        },
+        {
+            "name": "ベディヴィエール",
+            "count": 2180
+        },
+        {
+            "name": "ペンテシレイア",
+            "count": 354
+        },
+        {
+            "name": "ボイジャー",
+            "count": 1492
+        },
+        {
+            "name": "ポール・バニヤン",
+            "count": 1640
+        },
+        {
+            "name": "マシュ・キリエライト",
+            "count": 29268
+        },
+        {
+            "name": "マタ・ハリ",
+            "count": 649
+        },
+        {
+            "name": "マナナン・マク・リール〔バゼット〕",
+            "count": 1
+        },
+        {
+            "name": "マリー・アントワネット",
+            "count": 3818
+        },
+        {
+            "name": "マルタ",
+            "count": 2809
+        },
+        {
+            "name": "マルタ〔サンタ〕",
+            "count": 100
+        },
+        {
+            "name": "マンドリカルド",
+            "count": 1522
+        },
+        {
+            "name": "マーリン",
+            "count": 7706
+        },
+        {
+            "name": "ミス・クレーン",
+            "count": 167
+        },
+        {
+            "name": "ミドラーシュのキャスター",
+            "count": 706
+        },
+        {
+            "name": "メアリー・アニング",
+            "count": 55
+        },
+        {
+            "name": "メカエリチャン",
+            "count": 219
+        },
+        {
+            "name": "メカエリチャンⅱ号機",
+            "count": 83
+        },
+        {
+            "name": "メディア",
+            "count": 975
+        },
+        {
+            "name": "メディア〔リリィ〕",
+            "count": 8
+        },
+        {
+            "name": "メドゥーサ",
+            "count": 2638
+        },
+        {
+            "name": "メフィストフェレス",
+            "count": 365
+        },
+        {
+            "name": "メリュジーヌ",
+            "count": 2664
+        },
+        {
+            "name": "メルトリリス",
+            "count": 8956
+        },
+        {
+            "name": "モルガン",
+            "count": 5007
+        },
+        {
+            "name": "モードレッド",
+            "count": 7867
+        },
+        {
+            "name": "ラクシュミー・バーイー",
+            "count": 445
+        },
+        {
+            "name": "ランスロット",
+            "count": 3759
+        },
+        {
+            "name": "ラーマ",
+            "count": 610
+        },
+        {
+            "name": "レオナルド・ダ・ヴィンチ",
+            "count": 1771
+        },
+        {
+            "name": "レオニダス一世",
+            "count": 412
+        },
+        {
+            "name": "レジスタンスのライダー",
+            "count": 270
+        },
+        {
+            "name": "レディ・アヴァロン",
+            "count": 626
+        },
+        {
+            "name": "ロビンフッド",
+            "count": 2993
+        },
+        {
+            "name": "ロムルス",
+            "count": 277
+        },
+        {
+            "name": "ロムルス＝クィリヌス",
+            "count": 139
+        },
+        {
+            "name": "ローラン",
+            "count": 127
+        },
+        {
+            "name": "ワルキューレ",
+            "count": 1115
+        },
+        {
+            "name": "ヴァン・ゴッホ",
+            "count": 1940
+        },
+        {
+            "name": "ヴァン・ホーエンハイム・パラケルスス",
+            "count": 75
+        },
+        {
+            "name": "ヴォルフガング・アマデウス・モーツァルト",
+            "count": 1205
+        },
+        {
+            "name": "ヴラド三世",
+            "count": 1138
+        },
+        {
+            "name": "ヴラド三世〔extra〕",
+            "count": 5
+        },
+        {
+            "name": "ヴリトラ",
+            "count": 306
+        },
+        {
+            "name": "不夜城のアサシン",
+            "count": 1335
+        },
+        {
+            "name": "不夜城のキャスター",
+            "count": 1009
+        },
+        {
+            "name": "不夜城的assassin",
+            "count": 1
+        },
+        {
+            "name": "不夜城的caster",
+            "count": 2
+        },
+        {
+            "name": "両儀式",
+            "count": 1547
+        },
+        {
+            "name": "两仪式",
+            "count": 58
+        },
+        {
+            "name": "乔尔乔斯",
+            "count": 1
+        },
+        {
+            "name": "九紋竜エリザ",
+            "count": 164
+        },
+        {
+            "name": "九纹龙伊丽莎",
+            "count": 1
+        },
+        {
+            "name": "亚历山大",
+            "count": 22
+        },
+        {
+            "name": "伊丽莎白·巴托里",
+            "count": 17
+        },
+        {
+            "name": "伊什塔尔",
+            "count": 109
+        },
+        {
+            "name": "伊吹童子",
+            "count": 838
+        },
+        {
+            "name": "伊斯坎达尔",
+            "count": 4
+        },
+        {
+            "name": "伊莉雅丝菲尔·冯·爱因兹贝伦",
+            "count": 4
+        },
+        {
+            "name": "佐々木小次郎",
+            "count": 455
+        },
+        {
+            "name": "佐佐木小次郎",
+            "count": 5
+        },
+        {
+            "name": "俄里翁",
+            "count": 4
+        },
+        {
+            "name": "俵藤太",
+            "count": 110
+        },
+        {
+            "name": "光のコヤンスカヤ",
+            "count": 1001
+        },
+        {
+            "name": "光之高扬斯卡娅",
+            "count": 1
+        },
+        {
+            "name": "克娄巴特拉",
+            "count": 1
+        },
+        {
+            "name": "克洛伊·冯·爱因兹贝伦",
+            "count": 3
+        },
+        {
+            "name": "克琳希德",
+            "count": 1
+        },
+        {
+            "name": "兰斯洛特",
+            "count": 26
+        },
+        {
+            "name": "兰陵王",
+            "count": 29
+        },
+        {
+            "name": "冈田以藏",
+            "count": 1
+        },
+        {
+            "name": "冲田总司",
+            "count": 224
+        },
+        {
+            "name": "冲田总司〔alter〕",
+            "count": 3
+        },
+        {
+            "name": "凯妮斯",
+            "count": 4
+        },
+        {
+            "name": "出云阿国",
+            "count": 2
+        },
+        {
+            "name": "出雲阿国",
+            "count": 342
+        },
+        {
+            "name": "刑部姫",
+            "count": 2746
+        },
+        {
+            "name": "刑部姬",
+            "count": 27
+        },
+        {
+            "name": "加藤段蔵",
+            "count": 995
+        },
+        {
+            "name": "加藤段藏",
+            "count": 11
+        },
+        {
+            "name": "千利休",
+            "count": 600
+        },
+        {
+            "name": "千子村正",
+            "count": 1833
+        },
+        {
+            "name": "卑弥呼",
+            "count": 784
+        },
+        {
+            "name": "南丁格尔",
+            "count": 37
+        },
+        {
+            "name": "卡利古拉",
+            "count": 1
+        },
+        {
+            "name": "卡米拉",
+            "count": 21
+        },
+        {
+            "name": "卫宫",
+            "count": 39
+        },
+        {
+            "name": "司馬懿〔ライネス〕",
+            "count": 10
+        },
+        {
+            "name": "吉尔·德·雷",
+            "count": 1
+        },
+        {
+            "name": "吉尔伽美什",
+            "count": 118
+        },
+        {
+            "name": "吕布奉先",
+            "count": 1
+        },
+        {
+            "name": "呂布奉先",
+            "count": 29
+        },
+        {
+            "name": "呪腕のハサン",
+            "count": 354
+        },
+        {
+            "name": "呼延灼",
+            "count": 301
+        },
+        {
+            "name": "咒腕哈桑",
+            "count": 1
+        },
+        {
+            "name": "哪吒",
+            "count": 327
+        },
+        {
+            "name": "喀戎",
+            "count": 10
+        },
+        {
+            "name": "喀耳刻",
+            "count": 12
+        },
+        {
+            "name": "土方岁三",
+            "count": 4
+        },
+        {
+            "name": "土方歳三",
+            "count": 1564
+        },
+        {
+            "name": "坂本龍馬",
+            "count": 2247
+        },
+        {
+            "name": "坂本龙马",
+            "count": 3
+        },
+        {
+            "name": "坂田金时",
+            "count": 15
+        },
+        {
+            "name": "坂田金時",
+            "count": 1340
+        },
+        {
+            "name": "埃列什基伽勒",
+            "count": 35
+        },
+        {
+            "name": "壱与",
+            "count": 195
+        },
+        {
+            "name": "大いなる石像神",
+            "count": 39
+        },
+        {
+            "name": "大黑天",
+            "count": 4
+        },
+        {
+            "name": "大黒天",
+            "count": 151
+        },
+        {
+            "name": "天草四郎",
+            "count": 2215
+        },
+        {
+            "name": "太公望",
+            "count": 751
+        },
+        {
+            "name": "太歳星君",
+            "count": 370
+        },
+        {
+            "name": "奥伯龙",
+            "count": 29
+        },
+        {
+            "name": "女王メイヴ",
+            "count": 176
+        },
+        {
+            "name": "妖精騎士ガウェイン",
+            "count": 1611
+        },
+        {
+            "name": "妖精騎士トリスタン",
+            "count": 2752
+        },
+        {
+            "name": "妖精騎士ランスロット",
+            "count": 1736
+        },
+        {
+            "name": "妖精骑士兰斯洛特",
+            "count": 12
+        },
+        {
+            "name": "妖精骑士崔斯坦",
+            "count": 14
+        },
+        {
+            "name": "妖精骑士高文",
+            "count": 1
+        },
+        {
+            "name": "始皇帝",
+            "count": 1092
+        },
+        {
+            "name": "子ギル",
+            "count": 878
+        },
+        {
+            "name": "宇津見エリセ",
+            "count": 1304
+        },
+        {
+            "name": "宇津见绘里濑",
+            "count": 1
+        },
+        {
+            "name": "安哥拉曼纽",
+            "count": 1
+        },
+        {
+            "name": "宝蔵院胤舜",
+            "count": 128
+        },
+        {
+            "name": "宝藏院胤舜",
+            "count": 1
+        },
+        {
+            "name": "宫本武藏",
+            "count": 61
+        },
+        {
+            "name": "宮本武蔵",
+            "count": 6788
+        },
+        {
+            "name": "尤瑞艾莉",
+            "count": 8
+        },
+        {
+            "name": "尼托克丽丝",
+            "count": 15
+        },
+        {
+            "name": "尼禄·克劳狄乌斯",
+            "count": 48
+        },
+        {
+            "name": "尼莫",
+            "count": 7
+        },
+        {
+            "name": "山南敬助",
+            "count": 444
+        },
+        {
+            "name": "山鲁佐德",
+            "count": 2
+        },
+        {
+            "name": "岡田以蔵",
+            "count": 3828
+        },
+        {
+            "name": "岩窟王",
+            "count": 77
+        },
+        {
+            "name": "崔斯坦",
+            "count": 23
+        },
+        {
+            "name": "巌窟王",
+            "count": 1056
+        },
+        {
+            "name": "巴御前",
+            "count": 4235
+        },
+        {
+            "name": "布伦希尔德",
+            "count": 10
+        },
+        {
+            "name": "布拉达曼特",
+            "count": 5
+        },
+        {
+            "name": "布狄卡",
+            "count": 10
+        },
+        {
+            "name": "平景清",
+            "count": 426
+        },
+        {
+            "name": "幼吉尔",
+            "count": 1
+        },
+        {
+            "name": "库·丘林",
+            "count": 10
+        },
+        {
+            "name": "库·丘林〔alter〕",
+            "count": 2
+        },
+        {
+            "name": "开膛手杰克",
+            "count": 100
+        },
+        {
+            "name": "弗兰肯斯坦",
+            "count": 51
+        },
+        {
+            "name": "弗拉德三世",
+            "count": 6
+        },
+        {
+            "name": "弗朗西斯·德雷克",
+            "count": 2
+        },
+        {
+            "name": "張角",
+            "count": 34
+        },
+        {
+            "name": "彭忒西勒亚",
+            "count": 1
+        },
+        {
+            "name": "徐福",
+            "count": 827
+        },
+        {
+            "name": "徴姉妹",
+            "count": 172
+        },
+        {
+            "name": "志度内",
+            "count": 4
+        },
+        {
+            "name": "恩奇都",
+            "count": 155
+        },
+        {
+            "name": "戈耳工",
+            "count": 2
+        },
+        {
+            "name": "所罗门",
+            "count": 12
+        },
+        {
+            "name": "拿破仑",
+            "count": 13
+        },
+        {
+            "name": "提亚马特",
+            "count": 13
+        },
+        {
+            "name": "摩根",
+            "count": 36
+        },
+        {
+            "name": "斋藤一",
+            "count": 1
+        },
+        {
+            "name": "斎藤一",
+            "count": 2149
+        },
+        {
+            "name": "斯卡哈",
+            "count": 229
+        },
+        {
+            "name": "斯卡哈·斯卡蒂",
+            "count": 1
+        },
+        {
+            "name": "斯忒诺",
+            "count": 2
+        },
+        {
+            "name": "斯露德",
+            "count": 1
+        },
+        {
+            "name": "新宿のアサシン",
+            "count": 2208
+        },
+        {
+            "name": "新宿のアヴェンジャー",
+            "count": 504
+        },
+        {
+            "name": "新宿のアーチャー",
+            "count": 2085
+        },
+        {
+            "name": "新宿的archer",
+            "count": 1
+        },
+        {
+            "name": "旅行者",
+            "count": 9
+        },
+        {
+            "name": "曲亭馬琴",
+            "count": 216
+        },
+        {
+            "name": "曲亭马琴",
+            "count": 1
+        },
+        {
+            "name": "曼迪卡尔多",
+            "count": 2
+        },
+        {
+            "name": "望月千代女",
+            "count": 609
+        },
+        {
+            "name": "杀生院祈荒",
+            "count": 30
+        },
+        {
+            "name": "李书文",
+            "count": 16
+        },
+        {
+            "name": "李書文",
+            "count": 879
+        },
+        {
+            "name": "杨贵妃",
+            "count": 45
+        },
+        {
+            "name": "查理曼",
+            "count": 1
+        },
+        {
+            "name": "柳生但馬守宗矩",
+            "count": 140
+        },
+        {
+            "name": "格蕾",
+            "count": 22
+        },
+        {
+            "name": "梅林",
+            "count": 165
+        },
+        {
+            "name": "梅柳齐娜",
+            "count": 2
+        },
+        {
+            "name": "梵高",
+            "count": 7
+        },
+        {
+            "name": "森長可",
+            "count": 888
+        },
+        {
+            "name": "楊貴妃",
+            "count": 2548
+        },
+        {
+            "name": "武则天",
+            "count": 20
+        },
+        {
+            "name": "武則天",
+            "count": 623
+        },
+        {
+            "name": "武蔵坊弁慶",
+            "count": 45
+        },
+        {
+            "name": "殺生院キアラ",
+            "count": 3757
+        },
+        {
+            "name": "汉斯·克里斯蒂安·安徒生",
+            "count": 2
+        },
+        {
+            "name": "沖田総司",
+            "count": 15702
+        },
+        {
+            "name": "沖田総司〔オルタ〕",
+            "count": 29
+        },
+        {
+            "name": "浅上藤乃",
+            "count": 664
+        },
+        {
+            "name": "海伦娜·布拉瓦茨基",
+            "count": 4
+        },
+        {
+            "name": "清姫",
+            "count": 7456
+        },
+        {
+            "name": "清姬",
+            "count": 311
+        },
+        {
+            "name": "清少納言",
+            "count": 2256
+        },
+        {
+            "name": "清少纳言",
+            "count": 8
+        },
+        {
+            "name": "渡边纲",
+            "count": 2
+        },
+        {
+            "name": "渡辺綱",
+            "count": 611
+        },
+        {
+            "name": "源為朝",
+            "count": 92
+        },
+        {
+            "name": "源赖光",
+            "count": 155
+        },
+        {
+            "name": "源頼光",
+            "count": 9079
+        },
+        {
+            "name": "燕青",
+            "count": 464
+        },
+        {
+            "name": "牛若丸",
+            "count": 3283
+        },
+        {
+            "name": "狄俄斯库里",
+            "count": 1
+        },
+        {
+            "name": "玄奘三蔵",
+            "count": 1302
+        },
+        {
+            "name": "玄奘三藏",
+            "count": 21
+        },
+        {
+            "name": "玉藻の前",
+            "count": 10067
+        },
+        {
+            "name": "玉藻前",
+            "count": 512
+        },
+        {
+            "name": "玉藻猫",
+            "count": 29
+        },
+        {
+            "name": "玛丽·安托瓦内特",
+            "count": 11
+        },
+        {
+            "name": "玛修·基列莱特",
+            "count": 120
+        },
+        {
+            "name": "玛尔达",
+            "count": 6
+        },
+        {
+            "name": "瓦尔基里",
+            "count": 5
+        },
+        {
+            "name": "百貌のハサン",
+            "count": 167
+        },
+        {
+            "name": "盖乌斯·尤利乌斯·恺撒",
+            "count": 1
+        },
+        {
+            "name": "盖提亚",
+            "count": 2
+        },
+        {
+            "name": "示巴女王",
+            "count": 3
+        },
+        {
+            "name": "秦良玉",
+            "count": 967
+        },
+        {
+            "name": "童谣",
+            "count": 33
+        },
+        {
+            "name": "紅閻魔",
+            "count": 1639
+        },
+        {
+            "name": "紫式部",
+            "count": 2798
+        },
+        {
+            "name": "織田信勝",
+            "count": 1450
+        },
+        {
+            "name": "織田信長",
+            "count": 6222
+        },
+        {
+            "name": "織田吉法師",
+            "count": 186
+        },
+        {
+            "name": "红阎魔",
+            "count": 24
+        },
+        {
+            "name": "织田信胜",
+            "count": 3
+        },
+        {
+            "name": "织田信长",
+            "count": 72
+        },
+        {
+            "name": "罗宾汉",
+            "count": 6
+        },
+        {
+            "name": "罗摩",
+            "count": 1
+        },
+        {
+            "name": "美杜莎",
+            "count": 36
+        },
+        {
+            "name": "美狄亚",
+            "count": 13
+        },
+        {
+            "name": "美遊・エーデルフェルト",
+            "count": 1192
+        },
+        {
+            "name": "芦屋道满",
+            "count": 2
+        },
+        {
+            "name": "芭万·希",
+            "count": 1
+        },
+        {
+            "name": "茨木童子",
+            "count": 4699
+        },
+        {
+            "name": "茶々",
+            "count": 659
+        },
+        {
+            "name": "茶茶",
+            "count": 4
+        },
+        {
+            "name": "荆轲",
+            "count": 19
+        },
+        {
+            "name": "荊軻",
+            "count": 490
+        },
+        {
+            "name": "莎乐美",
+            "count": 1
+        },
+        {
+            "name": "莫德雷德",
+            "count": 213
+        },
+        {
+            "name": "葛飾北斎",
+            "count": 4991
+        },
+        {
+            "name": "葛饰北斋",
+            "count": 99
+        },
+        {
+            "name": "蘆屋道満",
+            "count": 3378
+        },
+        {
+            "name": "蘭陵王",
+            "count": 1858
+        },
+        {
+            "name": "虞美人",
+            "count": 3710
+        },
+        {
+            "name": "言峰神父",
+            "count": 3
+        },
+        {
+            "name": "言峰綺礼",
+            "count": 411
+        },
+        {
+            "name": "言峰绮礼",
+            "count": 2
+        },
+        {
+            "name": "詹姆斯·莫里亚蒂",
+            "count": 1
+        },
+        {
+            "name": "諸葛孔明〔エルメロイⅱ世〕",
+            "count": 5
+        },
+        {
+            "name": "謎のアイドルx〔オルタ〕",
+            "count": 240
+        },
+        {
+            "name": "謎のアルターエゴ・λ",
+            "count": 1562
+        },
+        {
+            "name": "謎のヒロインx",
+            "count": 7047
+        },
+        {
+            "name": "謎のヒロインxx",
+            "count": 2712
+        },
+        {
+            "name": "謎のヒロインx〔オルタ〕",
+            "count": 78
+        },
+        {
+            "name": "謎のヒロインｘ〔オルタ〕",
+            "count": 78
+        },
+        {
+            "name": "謎の蘭丸x",
+            "count": 469
+        },
+        {
+            "name": "谜之alterego·λ",
+            "count": 2
+        },
+        {
+            "name": "谜之女主角x",
+            "count": 33
+        },
+        {
+            "name": "谜之女主角xx",
+            "count": 3
+        },
+        {
+            "name": "谜之女主角x〔alter〕",
+            "count": 8
+        },
+        {
+            "name": "豹人",
+            "count": 1
+        },
+        {
+            "name": "贝德维尔",
+            "count": 1
+        },
+        {
+            "name": "贞德",
+            "count": 688
+        },
+        {
+            "name": "贞德·alter·santa·lily",
+            "count": 1
+        },
+        {
+            "name": "贞德〔alter〕",
+            "count": 8
+        },
+        {
+            "name": "赤兎馬",
+            "count": 124
+        },
+        {
+            "name": "赤兔马",
+            "count": 1
+        },
+        {
+            "name": "赫拉克勒斯",
+            "count": 1
+        },
+        {
+            "name": "超人オリオン",
+            "count": 159
+        },
+        {
+            "name": "超人俄里翁",
+            "count": 1
+        },
+        {
+            "name": "迦尔纳",
+            "count": 96
+        },
+        {
+            "name": "迦摩",
+            "count": 49
+        },
+        {
+            "name": "酒吞童子",
+            "count": 1534
+        },
+        {
+            "name": "酒呑童子",
+            "count": 9987
+        },
+        {
+            "name": "鈴鹿御前",
+            "count": 1225
+        },
+        {
+            "name": "铃鹿御前",
+            "count": 6
+        },
+        {
+            "name": "長尾景虎",
+            "count": 1189
+        },
+        {
+            "name": "闇のコヤンスカヤ",
+            "count": 465
+        },
+        {
+            "name": "阿周那",
+            "count": 56
+        },
+        {
+            "name": "阿喀琉斯",
+            "count": 4
+        },
+        {
+            "name": "阿塔兰忒",
+            "count": 19
+        },
+        {
+            "name": "阿塔兰忒〔alter〕",
+            "count": 1
+        },
+        {
+            "name": "阿尔托莉雅·卡斯特",
+            "count": 3
+        },
+        {
+            "name": "阿尔托莉雅·潘德拉贡",
+            "count": 38
+        },
+        {
+            "name": "阿拉什",
+            "count": 5
+        },
+        {
+            "name": "阿斯克勒庇俄斯",
+            "count": 8
+        },
+        {
+            "name": "阿斯忒里俄斯",
+            "count": 1
+        },
+        {
+            "name": "阿斯托尔福",
+            "count": 161
+        },
+        {
+            "name": "阿比盖尔·威廉姆斯",
+            "count": 138
+        },
+        {
+            "name": "阿比盖尔·威廉姆斯〔夏〕",
+            "count": 1
+        },
+        {
+            "name": "阿瓦隆女士",
+            "count": 1
+        },
+        {
+            "name": "阿纳斯塔西娅",
+            "count": 21
+        },
+        {
+            "name": "阿蒂拉",
+            "count": 25
+        },
+        {
+            "name": "陳宮",
+            "count": 253
+        },
+        {
+            "name": "雅克·德·莫莱",
+            "count": 1
+        },
+        {
+            "name": "静謐のハサン",
+            "count": 3204
+        },
+        {
+            "name": "静谧哈桑",
+            "count": 3
+        },
+        {
+            "name": "項羽",
+            "count": 258
+        },
+        {
+            "name": "项羽",
+            "count": 5
+        },
+        {
+            "name": "風魔小太郎",
+            "count": 1321
+        },
+        {
+            "name": "駒姫",
+            "count": 229
+        },
+        {
+            "name": "马嘶",
+            "count": 4
+        },
+        {
+            "name": "驹姬",
+            "count": 1
+        },
+        {
+            "name": "骑士迪昂",
+            "count": 2
+        },
+        {
+            "name": "高文",
+            "count": 12
+        },
+        {
+            "name": "鬼一法眼",
+            "count": 306
+        },
+        {
+            "name": "鬼女紅葉",
+            "count": 192
+        },
+        {
+            "name": "鬼女红叶",
+            "count": 3
+        },
+        {
+            "name": "魔王信長",
+            "count": 1353
+        },
+        {
+            "name": "魔王信长",
+            "count": 3
+        },
+        {
+            "name": "黄飛虎",
+            "count": 31
+        },
+        {
+            "name": "齐格",
+            "count": 38
+        },
+        {
+            "name": "齐格飞",
+            "count": 34
+        },
+        {
+            "name": "齐格鲁德",
+            "count": 3
+        },
+        {
+            "name": "ｂｂ",
+            "count": 8646
+        }
+    ],
+    "last_updated": 1675742850.3759863
+}
