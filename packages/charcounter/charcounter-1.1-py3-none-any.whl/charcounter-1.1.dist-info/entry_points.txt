@@ -1,0 +1,3 @@
+[console_scripts]
+charcounter = charcounter.__main__:main
+

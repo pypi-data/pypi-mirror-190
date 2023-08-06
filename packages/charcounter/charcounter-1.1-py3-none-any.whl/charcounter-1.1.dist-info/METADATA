@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: charcounter
+Version: 1.1
+Summary: Calculate count of unique characters in a string or file
+Home-page: UNKNOWN
+Author: Dihtiar Vadym
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pytest (==7.2.0)
+
+# CharCounters Package
+
+#### - Package for calculate count of unique characters in a string or file
+#### - charcounters for use from command line
+
+## Installation
+### Using PIP
+```bash
+pip install charcounters
+```
+
+## Usage from command line
+```bash
+$ charcounters --string "string_data"
+$ charcounters --data "/path/to/file"
+#or
+$ python -m charcounters --string "string_data"
+$ python -m charcounters --data "/path/to/file"
+```
+
+## License
+`charcounters` is licensed (MIT license).
+
