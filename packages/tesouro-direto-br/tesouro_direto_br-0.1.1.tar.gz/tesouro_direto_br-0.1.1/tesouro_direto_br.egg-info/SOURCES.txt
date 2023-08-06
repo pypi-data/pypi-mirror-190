@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+poetry.lock
+pyproject.toml
+requirements.txt
+setup.py
+src/tesouro_direto_br/.gitignore
+src/tesouro_direto_br/__init__.py
+src/tesouro_direto_br/tabela_iof_investimentos.xlsx
+src/tesouro_direto_br/tesouro_direto_br.py
+src/tesouro_direto_br/version.py
+tesouro_direto_br.egg-info/PKG-INFO
+tesouro_direto_br.egg-info/SOURCES.txt
+tesouro_direto_br.egg-info/dependency_links.txt
+tesouro_direto_br.egg-info/requires.txt
+tesouro_direto_br.egg-info/top_level.txt
+tests/test_tesouro_direto_br.py
