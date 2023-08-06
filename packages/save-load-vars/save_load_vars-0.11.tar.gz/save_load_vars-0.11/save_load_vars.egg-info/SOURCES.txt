@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+save_load_vars/LICENSE
+save_load_vars/README.MD
+save_load_vars/__init__.py
+save_load_vars/requirements.txt
+save_load_vars/thirdparty.json
+save_load_vars.egg-info/PKG-INFO
+save_load_vars.egg-info/SOURCES.txt
+save_load_vars.egg-info/dependency_links.txt
+save_load_vars.egg-info/requires.txt
+save_load_vars.egg-info/top_level.txt
