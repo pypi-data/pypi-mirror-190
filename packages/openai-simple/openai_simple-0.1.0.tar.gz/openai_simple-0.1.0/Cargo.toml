@@ -1,0 +1,14 @@
+[package]
+name = "openai-simple"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "openai_simple"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.18.0", features = ["extension-module"] }
+actix-rt = "2.8.0"
+openai_api_client = "0.4.0"
