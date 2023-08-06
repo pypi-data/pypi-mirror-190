@@ -1,0 +1,7 @@
+LICENCE.txt
+setup.py
+SUSspLbrr_0.1.egg-info/PKG-INFO
+SUSspLbrr_0.1.egg-info/SOURCES.txt
+SUSspLbrr_0.1.egg-info/dependency_links.txt
+SUSspLbrr_0.1.egg-info/top_level.txt
+code/__init__.py
