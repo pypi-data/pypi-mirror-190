@@ -1,0 +1,12 @@
+mvs/__init__.py,sha256=aMRtf0v63jVTs_8uifZ2aCPjqw8chyKSjgXDdcwmaps,93
+mvs/cli.py,sha256=QxaGNd3U4ig9eyGQwybYsGL3HzDxpufz2uJatxQliY4,22554
+mvs/plan.py,sha256=bQfy7gzj7yRLVkGQF9EyyQYUIWEzGHp9NKNqWHf8csA,21701
+mvs/problems.py,sha256=9IYbfQMswOfRYXTch-_9MeA7WJk9302i61teBdZti1Y,3045
+mvs/utils.py,sha256=LNmJ8T48q5XwUfNRC0iqoLQtKc_CNjrY3D3uneALBL4,4655
+mvs/version.py,sha256=eJIiVTKvshwRqBCzqfJOiJwmYYTZkPA-nQ1po_XxDO8,23
+mvs-1.0.0.dist-info/LICENSE,sha256=ZTRCicZCJg7_8KUB9DZXsqNnhcLXcfjOujGDDR0sFdE,1071
+mvs-1.0.0.dist-info/METADATA,sha256=ox6n1W6kGNqU_Zbtrk9HJ2kEnFiHRWHmAPRUhbzupf8,8358
+mvs-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mvs-1.0.0.dist-info/entry_points.txt,sha256=NbkoAIef1mqmR60_tl35ca-ZkpyRaMZgXUcnV1KiGW0,37
+mvs-1.0.0.dist-info/top_level.txt,sha256=gzosBWREA8RP_mBhQ47eLZCAq5CcHakwBaazsIkELiw,4
+mvs-1.0.0.dist-info/RECORD,,
