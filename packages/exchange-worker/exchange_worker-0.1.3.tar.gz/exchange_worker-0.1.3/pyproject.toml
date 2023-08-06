@@ -1,0 +1,29 @@
+[project]
+name = "exchange_worker"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[tool.poetry]
+name = "exchange_worker"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.scripts]
+format = "poetry_deps_formatter:formatter"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+maturin = "^0.14.12"
+ipython = "^8.9.0"
+poetry-deps-formatter = "^0.1.1"
