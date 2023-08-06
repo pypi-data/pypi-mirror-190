@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+ntec/Classifiers.py
+ntec/__init__.py
+ntec/clean_name.py
+ntec.egg-info/PKG-INFO
+ntec.egg-info/SOURCES.txt
+ntec.egg-info/dependency_links.txt
+ntec.egg-info/not-zip-safe
+ntec.egg-info/requires.txt
+ntec.egg-info/top_level.txt
+ntec/models/joeg/joeg_architecture.json
+ntec/models/joeg/joeg_classes.json
+ntec/models/joeg/joeg_params.json
+ntec/models/joeg/joeg_weights.h5
