@@ -1,0 +1,2 @@
+[console_scripts]
+me-deploy = me_deploy.main:main
