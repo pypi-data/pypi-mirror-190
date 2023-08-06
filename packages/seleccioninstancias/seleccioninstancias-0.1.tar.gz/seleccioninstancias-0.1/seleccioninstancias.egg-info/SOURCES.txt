@@ -1,0 +1,9 @@
+README.md
+is/__init__.py
+is/mathadvancedfuncs.py
+is/mymathsutils.py
+seleccioninstancias.egg-info/PKG-INFO
+seleccioninstancias.egg-info/SOURCES.txt
+seleccioninstancias.egg-info/dependency_links.txt
+seleccioninstancias.egg-info/requires.txt
+seleccioninstancias.egg-info/top_level.txt
