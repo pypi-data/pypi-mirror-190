@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import "./bulma/bulma.sass";
+
+@import "./fontawesome6/scss/fontawesome.scss";
+@import "./fontawesome6/scss/solid.scss";
+@import "./fontawesome6/scss/brands.scss";
+
+/* Start common styles */
+a {
+    @extend .is-underlined;
+}
+/* End common styles */
+
+/* Start Theme switcher from https://lukeliutingchun.medium.com/scss-implement-styles-for-multiple-themes-with-the-content-directive-272da62e875a */
+$themes: (
+    "light": (
+        "text-color": $dark,
+        "background-color": $light
+    ),
+    "dark": (
+        "text-color": $light,
+        "background-color": $dark
+    )
+);
+
+@mixin theme($themes: $themes) {
+    @each $theme, $colors in $themes {
+        .theme-#{$theme} & {
+            @content($colors);
+        }
+    }
+}
+
+body {
+    @include theme using ($colors) {
+        background-color: map-get($map: $colors, $key: "background-color");
+        color: map-get($map: $colors, $key: "text-color");
+    }
+}
+
+.container {
+    @include theme using ($colors) {
+        background-color: map-get($map: $colors, $key: "background-color");
+        color: map-get($map: $colors, $key: "text-color");
+    }
+}
+/* End Theme switcher from https://lukeliutingchun.medium.com/scss-implement-styles-for-multiple-themes-with-the-content-directive-272da62e875a */
+
+/* Start my theme switching */
+.theme-light {
+    & a {
+        @extend .has-text-dark;
+    }
+
+    & body, .section {
+        @extend .has-background-light;
+    }
+
+    & .button {
+        @extend .has-background-dark;
+        @extend .has-text-light;
+    }
+
+    & footer {
+        @extend .has-background-light;
+        @extend .has-text-dark;
+    }
+
+    & h1, h2, h3, h4, h5, h6 {
+        @extend .has-text-dark;
+    }
+
+    & pre {
+        @extend pre;
+        @extend .has-background-dark;
+        @extend .has-text-light;
+        margin: 1em;
+    }
+
+    & strong {
+        @extend .has-text-dark;
+    }
+
+    & .navbar {
+        @extend .is-light;
+
+        & .navbar-dropdown {
+            @extend .has-background-light;
+            @extend .has-text-dark;
+
+            & .navbar-item {
+                @extend .has-background-light;
+                @extend .has-text-dark;
+            
+                & a {
+                    @extend .has-background-light;
+                    @extend .has-text-dark;
+                }
+            }
+        }
+    }
+}
+
+.theme-dark {
+    & a {
+        @extend .has-text-light;
+    }
+
+    & body, .section {
+        @extend .has-background-dark;
+    }
+
+    & .button {
+        @extend .has-background-light;
+        @extend .has-text-dark;
+    }
+
+    & footer {
+        @extend .has-background-dark;
+        @extend .has-text-light;
+    }
+
+    & h1, h2, h3, h4, h5, h6 {
+        @extend .has-text-light;
+    }
+
+    & pre {
+        @extend pre;
+        margin: 1em;
+    }
+
+    & strong {
+        @extend .has-text-light;
+    }
+
+    & .navbar {
+        @extend .is-dark;
+
+        & .navbar-dropdown {
+            @extend .has-background-dark;
+            @extend .has-text-light;
+
+            & .navbar-item {
+                @extend .has-background-dark;
+                @extend .has-text-light;
+            
+                & a {
+                    @extend .has-background-dark;
+                    @extend .has-text-light;
+                }
+            }
+        }
+    }
+    
+}
+/* End my theme switching */
