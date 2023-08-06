@@ -1,0 +1,6 @@
+# Test
+flit
+pytest
+tox
+# Documentation
+pdoc
