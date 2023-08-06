@@ -1,0 +1,8 @@
+setup.py
+astbil_calculator/__init__.py
+astbil_calculator/astbil_calculator.py
+astbil_calculator.egg-info/PKG-INFO
+astbil_calculator.egg-info/SOURCES.txt
+astbil_calculator.egg-info/dependency_links.txt
+astbil_calculator.egg-info/not-zip-safe
+astbil_calculator.egg-info/top_level.txt
