@@ -1,0 +1,43 @@
+"""
+Convenience function for getting info about the current OS platform
+"""
+import sys
+
+
+def is_linux():
+    return sys.platform == 'linux' or sys.platform == 'linux2'
+
+
+def is_mac():
+    return sys.platform == 'darwin'
+
+
+def is_windows():
+    return sys.platform == 'win32'
+
+
+def expand_user_home_path(path, user, platform):
+    if path.startswith('~'):
+        if platform == 'darwin':
+            path = path.replace('~/', f'/Users/{user}/')
+        elif platform == 'windows':
+            path = path.replace('~/', f'C:/Users/{user}/')
+        else:
+            path = path.replace('~/', f'/home/{user}/')
+    else:
+        if platform == 'darwin':
+            if path.startswith('/home/'):
+                path = path.replace('/home/', '/Users/')
+            elif path.startswith('C:/Users/'):
+                path = path.replace('C:/Users/', '/Users/')
+        elif platform == 'windows':
+            if path.startswith('/Users/'):
+                path = path.replace('/Users/', 'C:/Users/')
+            elif path.startswith('/home/'):
+                path = path.replace('/home/', 'C:/Users/')
+        else:
+            if path.startswith('/Users/'):
+                path = path.replace('/Users/', '/home/')
+            elif path.startswith('C:/Users/'):
+                path = path.replace('C:/Users/', '/home/')
+    return path
