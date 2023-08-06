@@ -1,0 +1,79 @@
+{
+  "format": 2,
+  "version": "7.1.0",
+  "globals": "70420d44e0863bd11531c563f3c9f4bd",
+  "files": {
+    "d_f25c9827fc58450d___init___py": {
+      "hash": "ca2411bb2d5283cba14da3ce60f5feec",
+      "index": {
+        "nums": [0, 1, 0, 0, 0, 0, 0, 0],
+        "html_filename": "d_f25c9827fc58450d___init___py.html",
+        "relative_filename": "nurin/__init__.py"
+      }
+    },
+    "d_f25c9827fc58450d___main___py": {
+      "hash": "5341b7eb4fd1626654f8df7a69cfbfa9",
+      "index": {
+        "nums": [0, 1, 3, 2, 3, 0, 0, 0],
+        "html_filename": "d_f25c9827fc58450d___main___py.html",
+        "relative_filename": "nurin/__main__.py"
+      }
+    },
+    "d_f25c9827fc58450d_cli_py": {
+      "hash": "19b289c8f3106cc5634e712de414c459",
+      "index": {
+        "nums": [0, 1, 23, 0, 0, 24, 0, 0],
+        "html_filename": "d_f25c9827fc58450d_cli_py.html",
+        "relative_filename": "nurin/cli.py"
+      }
+    },
+    "d_f25c9827fc58450d_helpers_py": {
+      "hash": "a81776856a4754d32afbfdfdb7ab78e1",
+      "index": {
+        "nums": [0, 1, 4, 0, 0, 0, 0, 0],
+        "html_filename": "d_f25c9827fc58450d_helpers_py.html",
+        "relative_filename": "nurin/helpers.py"
+      }
+    },
+    "d_f25c9827fc58450d_models_py": {
+      "hash": "0adb89aa5f116a79f7e974883e28956e",
+      "index": {
+        "nums": [0, 1, 18, 0, 0, 4, 0, 0],
+        "html_filename": "d_f25c9827fc58450d_models_py.html",
+        "relative_filename": "nurin/models.py"
+      }
+    },
+    "d_f25c9827fc58450d_network_py": {
+      "hash": "03f3a95c7af38928d348fc09194699b9",
+      "index": {
+        "nums": [0, 1, 36, 0, 8, 10, 4, 4],
+        "html_filename": "d_f25c9827fc58450d_network_py.html",
+        "relative_filename": "nurin/network.py"
+      }
+    },
+    "d_f25c9827fc58450d_run_py": {
+      "hash": "3bf570f8fbc3462bd45f7f1d96b319c9",
+      "index": {
+        "nums": [0, 1, 45, 0, 18, 16, 5, 9],
+        "html_filename": "d_f25c9827fc58450d_run_py.html",
+        "relative_filename": "nurin/run.py"
+      }
+    },
+    "d_a44f0ac069e85531___init___py": {
+      "hash": "f50ad047ce90ffc5ba1a37a576bd039a",
+      "index": {
+        "nums": [0, 1, 0, 0, 0, 0, 0, 0],
+        "html_filename": "d_a44f0ac069e85531___init___py.html",
+        "relative_filename": "tests/__init__.py"
+      }
+    },
+    "d_a44f0ac069e85531_test_nurin_py": {
+      "hash": "2bec110b79bd78221ce00343ae3bd02b",
+      "index": {
+        "nums": [0, 1, 10, 0, 0, 2, 0, 0],
+        "html_filename": "d_a44f0ac069e85531_test_nurin_py.html",
+        "relative_filename": "tests/test_nurin.py"
+      }
+    }
+  }
+}

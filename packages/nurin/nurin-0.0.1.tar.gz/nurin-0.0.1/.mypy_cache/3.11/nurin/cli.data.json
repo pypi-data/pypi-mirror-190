@@ -1,0 +1,208 @@
+{
+  ".class": "MypyFile",
+  "_fullname": "nurin.cli",
+  "future_import_flags": ["annotations"],
+  "is_partial_stub_package": false,
+  "is_stub": false,
+  "names": {
+    ".class": "SymbolTable",
+    "Config": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "nurin.models.Config",
+      "kind": "Gdef"
+    },
+    "__annotations__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.cli.__annotations__",
+        "name": "__annotations__",
+        "type": {
+          ".class": "Instance",
+          "args": [
+            "builtins.str",
+            {
+              ".class": "AnyType",
+              "missing_import_name": null,
+              "source_any": null,
+              "type_of_any": 6
+            }
+          ],
+          "type_ref": "builtins.dict"
+        }
+      }
+    },
+    "__doc__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.cli.__doc__",
+        "name": "__doc__",
+        "type": "builtins.str"
+      }
+    },
+    "__file__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.cli.__file__",
+        "name": "__file__",
+        "type": "builtins.str"
+      }
+    },
+    "__name__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.cli.__name__",
+        "name": "__name__",
+        "type": "builtins.str"
+      }
+    },
+    "__package__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.cli.__package__",
+        "name": "__package__",
+        "type": "builtins.str"
+      }
+    },
+    "__version__": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "nurin.__about__.__version__",
+      "kind": "Gdef"
+    },
+    "annotations": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "__future__.annotations",
+      "kind": "Gdef"
+    },
+    "cli": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Decorator",
+        "func": {
+          ".class": "FuncDef",
+          "abstract_status": 0,
+          "arg_kinds": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+          "arg_names": [
+            "debug",
+            "down_actions",
+            "down_check_interval",
+            "down_count",
+            "ping_targets",
+            "regular_check_interval",
+            "reset_after_down_action",
+            "sleep_jitter",
+            "up_actions",
+            "max_cycles"
+          ],
+          "flags": ["is_decorated"],
+          "fullname": "nurin.cli.cli",
+          "name": "cli",
+          "type": {
+            ".class": "CallableType",
+            "arg_kinds": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+            "arg_names": [
+              "debug",
+              "down_actions",
+              "down_check_interval",
+              "down_count",
+              "ping_targets",
+              "regular_check_interval",
+              "reset_after_down_action",
+              "sleep_jitter",
+              "up_actions",
+              "max_cycles"
+            ],
+            "arg_types": [
+              "builtins.bool",
+              {
+                ".class": "Instance",
+                "args": ["builtins.str"],
+                "type_ref": "builtins.tuple"
+              },
+              "builtins.int",
+              "builtins.int",
+              {
+                ".class": "Instance",
+                "args": ["builtins.str"],
+                "type_ref": "builtins.tuple"
+              },
+              "builtins.int",
+              "builtins.bool",
+              "builtins.float",
+              {
+                ".class": "Instance",
+                "args": ["builtins.str"],
+                "type_ref": "builtins.tuple"
+              },
+              {
+                ".class": "UnionType",
+                "items": ["builtins.int", { ".class": "NoneType" }]
+              }
+            ],
+            "bound_args": [],
+            "def_extras": { "first_arg": null },
+            "fallback": "builtins.function",
+            "from_concatenate": false,
+            "implicit": false,
+            "is_ellipsis_args": false,
+            "name": "cli",
+            "ret_type": { ".class": "NoneType" },
+            "type_guard": null,
+            "unpack_kwargs": false,
+            "variables": []
+          }
+        },
+        "is_overload": false,
+        "var": {
+          ".class": "Var",
+          "flags": ["is_ready", "is_inferred"],
+          "fullname": "nurin.cli.cli",
+          "name": "cli",
+          "type": "click.core.Command"
+        }
+      }
+    },
+    "click": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "click",
+      "kind": "Gdef"
+    },
+    "log": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_inferred", "has_explicit_value"],
+        "fullname": "nurin.cli.log",
+        "name": "log",
+        "type": "logging.Logger"
+      }
+    },
+    "logging": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "logging",
+      "kind": "Gdef"
+    },
+    "run": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "nurin.run.run",
+      "kind": "Gdef"
+    }
+  },
+  "path": "./nurin/cli.py"
+}

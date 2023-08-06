@@ -1,0 +1,427 @@
+{
+  ".class": "MypyFile",
+  "_fullname": "nurin.network",
+  "future_import_flags": [],
+  "is_partial_stub_package": false,
+  "is_stub": false,
+  "names": {
+    ".class": "SymbolTable",
+    "PingResult": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "TypeInfo",
+        "_promote": [],
+        "abstract_attributes": [],
+        "bases": ["builtins.object"],
+        "declared_metaclass": null,
+        "defn": {
+          ".class": "ClassDef",
+          "fullname": "nurin.network.PingResult",
+          "name": "PingResult",
+          "type_vars": []
+        },
+        "deletable_attributes": [],
+        "flags": [],
+        "fullname": "nurin.network.PingResult",
+        "has_param_spec_type": false,
+        "metaclass_type": null,
+        "metadata": {
+          "dataclass": {
+            "attributes": [
+              {
+                "column": 4,
+                "has_default": false,
+                "is_in_init": true,
+                "is_init_var": false,
+                "kw_only": false,
+                "line": 13,
+                "name": "target",
+                "type": "builtins.str"
+              },
+              {
+                "column": 4,
+                "has_default": false,
+                "is_in_init": true,
+                "is_init_var": false,
+                "kw_only": false,
+                "line": 14,
+                "name": "count",
+                "type": "builtins.int"
+              },
+              {
+                "column": 4,
+                "has_default": false,
+                "is_in_init": true,
+                "is_init_var": false,
+                "kw_only": false,
+                "line": 15,
+                "name": "packet_timeout",
+                "type": "builtins.float"
+              },
+              {
+                "column": 4,
+                "has_default": false,
+                "is_in_init": true,
+                "is_init_var": false,
+                "kw_only": false,
+                "line": 16,
+                "name": "duration",
+                "type": "builtins.float"
+              },
+              {
+                "column": 4,
+                "has_default": false,
+                "is_in_init": true,
+                "is_init_var": false,
+                "kw_only": false,
+                "line": 17,
+                "name": "success",
+                "type": "builtins.bool"
+              }
+            ],
+            "frozen": false
+          },
+          "dataclass_tag": {}
+        },
+        "module_name": "nurin.network",
+        "mro": ["nurin.network.PingResult", "builtins.object"],
+        "names": {
+          ".class": "SymbolTable",
+          "__dataclass_fields__": {
+            ".class": "SymbolTableNode",
+            "kind": "Mdef",
+            "node": {
+              ".class": "Var",
+              "flags": ["is_classvar", "is_ready"],
+              "fullname": "nurin.network.PingResult.__dataclass_fields__",
+              "name": "__dataclass_fields__",
+              "type": {
+                ".class": "Instance",
+                "args": [
+                  "builtins.str",
+                  {
+                    ".class": "Instance",
+                    "args": [
+                      {
+                        ".class": "AnyType",
+                        "missing_import_name": null,
+                        "source_any": null,
+                        "type_of_any": 2
+                      }
+                    ],
+                    "type_ref": "dataclasses.Field"
+                  }
+                ],
+                "type_ref": "builtins.dict"
+              }
+            },
+            "plugin_generated": true
+          },
+          "__init__": {
+            ".class": "SymbolTableNode",
+            "kind": "Mdef",
+            "node": {
+              ".class": "FuncDef",
+              "abstract_status": 0,
+              "arg_kinds": [0, 0, 0, 0, 0, 0],
+              "arg_names": [
+                "self",
+                "target",
+                "count",
+                "packet_timeout",
+                "duration",
+                "success"
+              ],
+              "flags": [],
+              "fullname": "nurin.network.PingResult.__init__",
+              "name": "__init__",
+              "type": {
+                ".class": "CallableType",
+                "arg_kinds": [0, 0, 0, 0, 0, 0],
+                "arg_names": [
+                  "self",
+                  "target",
+                  "count",
+                  "packet_timeout",
+                  "duration",
+                  "success"
+                ],
+                "arg_types": [
+                  "nurin.network.PingResult",
+                  "builtins.str",
+                  "builtins.int",
+                  "builtins.float",
+                  "builtins.float",
+                  "builtins.bool"
+                ],
+                "bound_args": [],
+                "def_extras": {},
+                "fallback": "builtins.function",
+                "from_concatenate": false,
+                "implicit": false,
+                "is_ellipsis_args": false,
+                "name": "__init__ of PingResult",
+                "ret_type": { ".class": "NoneType" },
+                "type_guard": null,
+                "unpack_kwargs": false,
+                "variables": []
+              }
+            },
+            "plugin_generated": true
+          },
+          "__match_args__": {
+            ".class": "SymbolTableNode",
+            "kind": "Mdef",
+            "node": {
+              ".class": "Var",
+              "flags": ["is_ready", "allow_incompatible_override"],
+              "fullname": "nurin.network.PingResult.__match_args__",
+              "name": "__match_args__",
+              "type": {
+                ".class": "TupleType",
+                "implicit": false,
+                "items": [
+                  {
+                    ".class": "LiteralType",
+                    "fallback": "builtins.str",
+                    "value": "target"
+                  },
+                  {
+                    ".class": "LiteralType",
+                    "fallback": "builtins.str",
+                    "value": "count"
+                  },
+                  {
+                    ".class": "LiteralType",
+                    "fallback": "builtins.str",
+                    "value": "packet_timeout"
+                  },
+                  {
+                    ".class": "LiteralType",
+                    "fallback": "builtins.str",
+                    "value": "duration"
+                  },
+                  {
+                    ".class": "LiteralType",
+                    "fallback": "builtins.str",
+                    "value": "success"
+                  }
+                ],
+                "partial_fallback": {
+                  ".class": "Instance",
+                  "args": [
+                    {
+                      ".class": "AnyType",
+                      "missing_import_name": null,
+                      "source_any": null,
+                      "type_of_any": 6
+                    }
+                  ],
+                  "type_ref": "builtins.tuple"
+                }
+              }
+            },
+            "plugin_generated": true
+          },
+          "count": {
+            ".class": "SymbolTableNode",
+            "implicit": true,
+            "kind": "Mdef",
+            "node": {
+              ".class": "Var",
+              "flags": ["is_initialized_in_class", "is_ready"],
+              "fullname": "nurin.network.PingResult.count",
+              "name": "count",
+              "type": "builtins.int"
+            }
+          },
+          "duration": {
+            ".class": "SymbolTableNode",
+            "implicit": true,
+            "kind": "Mdef",
+            "node": {
+              ".class": "Var",
+              "flags": ["is_initialized_in_class", "is_ready"],
+              "fullname": "nurin.network.PingResult.duration",
+              "name": "duration",
+              "type": "builtins.float"
+            }
+          },
+          "packet_timeout": {
+            ".class": "SymbolTableNode",
+            "implicit": true,
+            "kind": "Mdef",
+            "node": {
+              ".class": "Var",
+              "flags": ["is_initialized_in_class", "is_ready"],
+              "fullname": "nurin.network.PingResult.packet_timeout",
+              "name": "packet_timeout",
+              "type": "builtins.float"
+            }
+          },
+          "success": {
+            ".class": "SymbolTableNode",
+            "implicit": true,
+            "kind": "Mdef",
+            "node": {
+              ".class": "Var",
+              "flags": ["is_initialized_in_class", "is_ready"],
+              "fullname": "nurin.network.PingResult.success",
+              "name": "success",
+              "type": "builtins.bool"
+            }
+          },
+          "target": {
+            ".class": "SymbolTableNode",
+            "implicit": true,
+            "kind": "Mdef",
+            "node": {
+              ".class": "Var",
+              "flags": ["is_initialized_in_class", "is_ready"],
+              "fullname": "nurin.network.PingResult.target",
+              "name": "target",
+              "type": "builtins.str"
+            }
+          }
+        },
+        "self_type": null,
+        "slots": null,
+        "tuple_type": null,
+        "type_vars": [],
+        "typeddict_type": null
+      }
+    },
+    "__annotations__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.network.__annotations__",
+        "name": "__annotations__",
+        "type": {
+          ".class": "Instance",
+          "args": [
+            "builtins.str",
+            {
+              ".class": "AnyType",
+              "missing_import_name": null,
+              "source_any": null,
+              "type_of_any": 6
+            }
+          ],
+          "type_ref": "builtins.dict"
+        }
+      }
+    },
+    "__doc__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.network.__doc__",
+        "name": "__doc__",
+        "type": "builtins.str"
+      }
+    },
+    "__file__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.network.__file__",
+        "name": "__file__",
+        "type": "builtins.str"
+      }
+    },
+    "__name__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.network.__name__",
+        "name": "__name__",
+        "type": "builtins.str"
+      }
+    },
+    "__package__": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_ready"],
+        "fullname": "nurin.network.__package__",
+        "name": "__package__",
+        "type": "builtins.str"
+      }
+    },
+    "dataclasses": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "dataclasses",
+      "kind": "Gdef"
+    },
+    "log": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "Var",
+        "flags": ["is_inferred", "has_explicit_value"],
+        "fullname": "nurin.network.log",
+        "name": "log",
+        "type": "logging.Logger"
+      }
+    },
+    "logging": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "logging",
+      "kind": "Gdef"
+    },
+    "ping": {
+      ".class": "SymbolTableNode",
+      "kind": "Gdef",
+      "node": {
+        ".class": "FuncDef",
+        "abstract_status": 0,
+        "arg_kinds": [0, 5, 5],
+        "arg_names": ["ping_target", "packet_timeout", "count"],
+        "flags": [],
+        "fullname": "nurin.network.ping",
+        "name": "ping",
+        "type": {
+          ".class": "CallableType",
+          "arg_kinds": [0, 5, 5],
+          "arg_names": ["ping_target", "packet_timeout", "count"],
+          "arg_types": ["builtins.str", "builtins.float", "builtins.int"],
+          "bound_args": [],
+          "def_extras": { "first_arg": null },
+          "fallback": "builtins.function",
+          "from_concatenate": false,
+          "implicit": false,
+          "is_ellipsis_args": false,
+          "name": "ping",
+          "ret_type": "nurin.network.PingResult",
+          "type_guard": null,
+          "unpack_kwargs": false,
+          "variables": []
+        }
+      }
+    },
+    "shlex": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "shlex",
+      "kind": "Gdef"
+    },
+    "subprocess": {
+      ".class": "SymbolTableNode",
+      "cross_ref": "subprocess",
+      "kind": "Gdef"
+    },
+    "sys": { ".class": "SymbolTableNode", "cross_ref": "sys", "kind": "Gdef" },
+    "time": { ".class": "SymbolTableNode", "cross_ref": "time", "kind": "Gdef" }
+  },
+  "path": "./nurin/network.py"
+}

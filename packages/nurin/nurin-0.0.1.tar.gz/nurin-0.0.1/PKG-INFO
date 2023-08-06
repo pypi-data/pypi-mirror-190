@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: nurin
+Version: 0.0.1
+Summary: Taasko se netti on nurin
+Project-URL: Documentation, https://github.com/akx/nurin#readme
+Project-URL: Issues, https://github.com/akx/nurin/issues
+Project-URL: Source, https://github.com/akx/nurin
+Author-email: Aarni Koskela <akx@iki.fi>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: click
+Description-Content-Type: text/markdown
+
+# nurin
+
+[![PyPI - Version](https://img.shields.io/pypi/v/nurin.svg)](https://pypi.org/project/nurin)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/nurin.svg)](https://pypi.org/project/nurin)
+
+---
+
+## Installation
+
+```console
+pip install nurin
+```
+
+## Usage
+
+TODO. Please see `nurin --help` for now...
+
+## License
+
+`nurin` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
