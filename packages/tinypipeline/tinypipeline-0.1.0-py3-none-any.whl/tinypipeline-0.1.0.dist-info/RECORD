@@ -1,0 +1,8 @@
+tinypipeline/__init__.py,sha256=HkVZP7A1Ot3vh3RsWXtzp5oSrjpHR5EP_eogGQzhJ04,56
+tinypipeline/pipeline.py,sha256=fHKgf0Zw6U4ov-4BF7KyRYypkjMSuB-HY7FyE5mAAGk,3618
+tinypipeline/step.py,sha256=35L-6GjoF-GID8oI14aFPSRwX6tKaA07xjoBgUSF2co,1405
+tinypipeline-0.1.0.dist-info/LICENSE,sha256=Lk9zikMg9PPTbNrGs9TxHxHOVo3V4tIOTPYYs5eainY,1090
+tinypipeline-0.1.0.dist-info/METADATA,sha256=iiH61vuT2oK3jRY3-t5hWe2FkdPgDQpGc_VTzE3Tb6w,2638
+tinypipeline-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tinypipeline-0.1.0.dist-info/top_level.txt,sha256=nzZNYZTwGklS6WVy7cJfc9XqDG7hdZG0z5ycqk6Fvp8,13
+tinypipeline-0.1.0.dist-info/RECORD,,
