@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['specvizitor',
+ 'specvizitor.io',
+ 'specvizitor.menu',
+ 'specvizitor.utils',
+ 'specvizitor.widgets']
+
+package_data = \
+{'': ['*'], 'specvizitor': ['data/*']}
+
+install_requires = \
+['astropy>=5.2.1,<6.0.0',
+ 'dictdiffer>=0.9.0,<0.10.0',
+ 'matplotlib>=3.6.3,<4.0.0',
+ 'pgcolorbar>=1.1.3,<2.0.0',
+ 'platformdirs>=3.0.0,<4.0.0',
+ 'pyqt5>=5.15.9,<6.0.0',
+ 'pyqtgraph>=0.13.1,<0.14.0']
+
+entry_points = \
+{'console_scripts': ['specvizitor = specvizitor.gui:main']}
+
+setup_kwargs = {
+    'name': 'specvizitor',
+    'version': '0.1.0',
+    'description': 'Python GUI application for a visual inspection of astronomical spectroscopic data',
+    'long_description': '## Installing `SpecVizitor` from source\n    \n1. Clone the public repository:\n\n        $ git clone https://github.com/ivkram/specvizitor\n        $ cd specvizitor\n\n2. Set up a local environment and run\n    \n        $ pip install .\n\n    for regular install, or\n\n        $ pip install -e .\n\n    for developer install.\n\n## Starting `SpecVizitor`\n    \nTo start `SpecVizitor`, run this command in your terminal:    \n\n    $ specvizitor',
+    'author': 'Ivan Kramarenko',
+    'author_email': 'im.kramarenko@gmail.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/ivkram/specvizitor',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.8,<4.0',
+}
+
+
+setup(**setup_kwargs)
