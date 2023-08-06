@@ -1,0 +1,12 @@
+pyomexmeta/OmexMetaCAPI-1.2.13.dll,sha256=i95XzkUySeAAtePIxMbR1eUJ0iTs8G9b7ZACc66IMe4,5537280
+pyomexmeta/__init__.py,sha256=jCtPvSbKkJabZDkEhWWKV6bSHvlKP3fRkOGbOV94JAc,634
+pyomexmeta/api_tests.py,sha256=VJ3R7j2R8OrkN_dIbtxdBmtGi0OQM-bLmM9bp0a62bc,81196
+pyomexmeta/pyomexmeta.py,sha256=4KlFiR0esGN9Oa4WPcaB6ebqUQHWDP0p5fKg8J6-W10,117643
+pyomexmeta/pyomexmeta_api.py,sha256=vAxBHJyN55Ec1GJshtdDhaEfyNCh6MbNn0HYYAc_EUQ,44687
+pyomexmeta/pyomexmeta_tests.py,sha256=N7eZ4bsOJTGMUnrpwu998FZIP973n1jIWcF3VODaC0o,77611
+pyomexmeta/test_strings.py,sha256=m6K5cSTZKbeYBHWM3Uxba4Q2ucuD_rvgObrkEcV6vEA,12662
+pyomexmeta-1.2.13.dist-info/LICENCE.txt,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+pyomexmeta-1.2.13.dist-info/METADATA,sha256=Xn68Naamr1FEZ7wOIHPB_qpjQ2w7uE7kSQMbWxPZd5w,6892
+pyomexmeta-1.2.13.dist-info/WHEEL,sha256=rneS2j8QNmAwdNKHN86s6-qP7AMcWZgqiEoH3bdbh_Y,102
+pyomexmeta-1.2.13.dist-info/top_level.txt,sha256=aii0l5bNUh8ZC2epa7gK0DFxxl9yW9WSnStISUh0Tew,11
+pyomexmeta-1.2.13.dist-info/RECORD,,
