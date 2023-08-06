@@ -1,0 +1,5 @@
+typer
+requests
+rich
+loguru
+huggingface-hub
