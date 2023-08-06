@@ -1,0 +1,107 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "demo-it-analyze"
+description = ''
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Mattia Di Gangi", email = "mattiadg@users.noreply.github.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "flask",
+  "pydantic",
+  "spacy",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/unknown/demo-it-analyze#readme"
+Issues = "https://github.com/unknown/demo-it-analyze/issues"
+Source = "https://github.com/unknown/demo-it-analyze"
+
+[tool.hatch.version]
+path = "demo_it_analyze/__about__.py"
+
+[tool.hatch.envs.default.env-vars]
+  FLASK_APP = "demo_it_analyze/app.py"
+
+[tool.hatch.envs.default]
+extra-dependencies = [
+  "pytest",
+  "pytest-cov",
+  "mypy",
+]
+
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=demo_it_analyze --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+download_ita = "python -m spacy download it_core_news_sm"
+serve = "flask --app demo_it_analyze.app run"
+
+[tool.hatch.envs.train]
+template = "default"
+extra-dependencies = [
+  "spacy[cuda-autodetect,transformers,lookups]"
+]
+
+[tool.hatch.envs.test]
+template = "default"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "demo_it_analyze/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.hatch.envs.style]
+detached = true
+template = "default"
+dependencies = [
+  "black",
+  "ruff >= 0.0.238"
+]
+[tool.hatch.envs.style.scripts]
+check = [
+  "black --check .",
+  "ruff check .",
+]
+fmt = [
+  "black .",
+  "ruff --fix .",
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/docs",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["demo_it_analyze"]
