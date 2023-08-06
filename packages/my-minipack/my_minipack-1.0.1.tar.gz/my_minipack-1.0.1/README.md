@@ -1,0 +1,53 @@
+The goal of the exercise is to learn how to build a package and understand the magnificence of PyPi.
+
+# https://www.blog.pythonlibrary.org/2021/09/23/python-101-how-to-create-a-python-package/
+# https://www.geeksforgeeks.org/how-to-build-a-python-package/
+# https://www.freecodecamp.org/news/build-your-first-python-package/
+# https://betterscientificsoftware.github.io/python-for-hpc/tutorials/python-pypi-packaging/
+
+
+### 1 - Bringing out the __init__s ###
+
+Something that you’ll always find in every Python package is an __init__.py file. This file will tell Python to treat directories as modules (or sub-modules).
+Inside that package directory, alongside your python files, create a file called __init__.py. This file can be empty, and it denotes the directory as a python package. When you pip install, this directory will be installed and become importable.
+
+Very simply, it can be empty or it will hold the names of all the methods in all the Python files that are in its immediate directory.
+
+A typical __init__.py file has the following format:
+
+> from file import method 
+
+'method' is a function that is present in a file called 'file.py'
+
+When building packages in Python, you are required to add an __init__.py file in every sub-directory in your package. These sub-directories are the sub-modules of your package.
+
+
+### 2 - How to set up setup.py ###
+
+Within the base-verysimplemodule folder (and in the same directory as our module verysimplemodule ), we need to add a setup.py file. This file is essential if you intend to build the actual module in question.
+
+The setup.py file will contain information about your package, specifically the name of the package, its version, platform-dependencies and a whole lot more.
+
+
+With that done, all we have to do next is run the following command in the same directory as base-verysimplemodule:
+
+> python setup.py sdist bdist_wheel
+
+This will build all the necessary packages that Python will require. The sdist and bdist_wheel commands will create a source distribution and a wheel that you can later upload to PyPi.
+
+
+### 3 - How to upload your package to PyPi ###
+
+PyPi is the official Python repository where all Python packages are stored. You can think of it as the Github for Python Packages.
+
+To make your Python package available to people around the world, you’ll need to have an account with PyPi.
+
+With that done, we’re all set to upload our package on PyPi. Remember the source distribution and wheel that were built when we ran python setup.py ? Well, those are what will actually be uploaded to PyPi.
+
+But before you do that, you need to install twine if you don’t already have it installed. 
+
+> pip install twine.
+
+> twine upload dist/*
+
+### 4 ###
