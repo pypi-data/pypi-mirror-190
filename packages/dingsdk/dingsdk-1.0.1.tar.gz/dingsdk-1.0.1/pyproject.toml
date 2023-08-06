@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "dingsdk"
+version = "1.0.1"
+readme = "README.md"
+description = "DingTalk Mini SDK"
+requires-python = ">=3.7"
+dependencies = [
+    "httpx==0.23.*",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Office/Business :: Office Suites",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+authors = [
+    {name="Mr.LLT", email="384605850@qq.com"}
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["docs"]
