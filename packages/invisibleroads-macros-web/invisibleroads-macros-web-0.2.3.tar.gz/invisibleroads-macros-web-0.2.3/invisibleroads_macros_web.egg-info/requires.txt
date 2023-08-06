@@ -1,0 +1,15 @@
+invisibleroads-macros-disk>=1.2.2
+invisibleroads-macros-process>=0.1.1
+
+[jinja]
+jinja2
+
+[markdown]
+markdown
+
+[starlette]
+starlette
+
+[test]
+pytest
+pytest-cov
