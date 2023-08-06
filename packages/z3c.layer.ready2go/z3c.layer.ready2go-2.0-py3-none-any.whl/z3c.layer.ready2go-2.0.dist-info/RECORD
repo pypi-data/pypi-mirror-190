@@ -1,0 +1,14 @@
+z3c.layer.ready2go-2.0-py3.9-nspkg.pth,sha256=N2_SUgnJvVwpF2jDRTW-ycoX828lLde-JFxgNSLUOwg,1650
+z3c/layer/ready2go/README.txt,sha256=Ltovii0gXS88gqIh_VwdBbhEo9T9I5TNTa3Rg7h7qFM,14006
+z3c/layer/ready2go/__init__.py,sha256=vBeHUjkOYZQ_8L7IvlwMXD5cvX1pswfl1eHAF-ktcUM,1309
+z3c/layer/ready2go/configure.zcml,sha256=hY5QrHvThfztC412c0NbhN4e52ASHW7aKu-z4LYgMko,342
+z3c/layer/ready2go/ftesting.zcml,sha256=u7G3Gr-CgVQtj0uWziyElbVyS9F09gLkuq6M6E7gqX0,3860
+z3c/layer/ready2go/outputchecker.py,sha256=O_4uYqfWrLG4FPs5nV1_DZ3ycS7YAeWpTxCHI61kpv4,4032
+z3c/layer/ready2go/tests.py,sha256=XPalnxHwJyQU0T7ovTLo6jlWwg82K94w8i0oWwA3yZg,1518
+z3c/layer/ready2go/z3c.layer.ready2go-configure.zcml,sha256=nT6CVZh5ozZRBltmKOQ-CAncwYPKLpGRH1Uss3aimoI,41
+z3c.layer.ready2go-2.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+z3c.layer.ready2go-2.0.dist-info/METADATA,sha256=i8fITcs2b5B5bRq5ZTVriVGBvcPSLJWZxzaug8cvZ6I,17440
+z3c.layer.ready2go-2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+z3c.layer.ready2go-2.0.dist-info/namespace_packages.txt,sha256=UbJF8YubDkXtZx8fSeOKlaNH1WNPv3MC1FzbJd6x2Hs,14
+z3c.layer.ready2go-2.0.dist-info/top_level.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.layer.ready2go-2.0.dist-info/RECORD,,
