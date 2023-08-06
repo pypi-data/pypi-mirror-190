@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+fly_book_bot_sender/__init__.py
+fly_book_bot_sender.egg-info/PKG-INFO
+fly_book_bot_sender.egg-info/SOURCES.txt
+fly_book_bot_sender.egg-info/dependency_links.txt
+fly_book_bot_sender.egg-info/top_level.txt
