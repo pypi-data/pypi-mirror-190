@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mclass/__init__.py
+mclass.egg-info/PKG-INFO
+mclass.egg-info/SOURCES.txt
+mclass.egg-info/dependency_links.txt
+mclass.egg-info/top_level.txt
