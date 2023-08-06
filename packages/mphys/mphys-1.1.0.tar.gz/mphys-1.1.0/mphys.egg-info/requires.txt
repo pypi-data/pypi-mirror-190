@@ -1,0 +1,2 @@
+numpy
+openmdao>=3.25
