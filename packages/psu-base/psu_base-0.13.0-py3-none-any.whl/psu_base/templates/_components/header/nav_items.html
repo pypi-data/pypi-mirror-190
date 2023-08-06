@@ -1,0 +1,22 @@
+{% load base_taglib %}
+
+<nav class="navbar navbar-expand-sm">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-tabs">
+        {%fa fa-bars%}
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-tabs">
+        <ul class="navbar-nav nav nav-fill ">
+
+            {### YOUR NAVIGATION TABS GO HERE. (Samples provided below) ###}
+            {% header_nav_tab url="/" label="Home" icon="fa-home" icon_only=True %}
+            {% header_nav_tab url="psu:test" label="Status" %}
+            {% header_nav_tab url="psu:finti" label="Finti Console" optional=True authorities="developer" %}
+
+            {### DEVELOPER MENU ###}
+            <li class="nav-item header-nav-item developer-nav-tab">
+                {# You may override the developer menu items by copying the template into your project #}
+                {% include '_components/header/developer_menu.html' %}
+            </li>
+        </ul>
+    </div>
+</nav>
