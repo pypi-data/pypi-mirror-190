@@ -1,0 +1,11 @@
+ops/manifests/__init__.py,sha256=uEUSaAxDCnX8HUzCwvlmPNeXL86ZKeUBVmkzLuJJ_y0,522
+ops/manifests/collector.py,sha256=9Qb_IiHtBkFMNamA1czHmgnT-8LqulTqnfQmpweZ-NU,6614
+ops/manifests/exceptions.py,sha256=spYzgEy-D-3_N_qWEmAB5nn5QG_pnLDTXP9lxJrC5XA,197
+ops/manifests/manifest.py,sha256=X_FOCIEzwJvRcup-_R5iND2bALUET9BRaXx9zgHKIRM,10984
+ops/manifests/manipulations.py,sha256=EDL2u14tAvvc6xocQ3vCt9rDYPu1oRBbNUgqUvUrV5o,9005
+ops.manifest-1.0.1.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+ops.manifest-1.0.1.dist-info/METADATA,sha256=bPfyE9iP_6i444gV7OY4Z4JVylfnLsj7SzshKP0PJXw,23817
+ops.manifest-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ops.manifest-1.0.1.dist-info/top_level.txt,sha256=enC05wWafSg8iDKIvj3gvtAtEP2kYCyN5Gmd689q-_I,4
+ops.manifest-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ops.manifest-1.0.1.dist-info/RECORD,,
