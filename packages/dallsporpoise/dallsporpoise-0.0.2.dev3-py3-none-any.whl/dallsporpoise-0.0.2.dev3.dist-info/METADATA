@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dallsporpoise
+Version: 0.0.2.dev3
+Summary: Lightweight fork of lkilchers dolfyn that parses corrupt 2019 vec files straight to netcdf.
+Home-page: http://github.com/iosonobert/dallsporpoise
+Author: iosonobert modifying lkilcher's dolfyn
+Author-email: 
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Provides: dallsporpoise
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: h5py
+Requires-Dist: pyDictH5
+Requires-Dist: netCDF4
+Requires-Dist: pandas
+Requires-Dist: xarray
+
