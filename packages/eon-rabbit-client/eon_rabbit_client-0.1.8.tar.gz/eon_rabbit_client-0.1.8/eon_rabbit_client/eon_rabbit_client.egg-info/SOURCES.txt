@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+eon_rabbit_client/eon_rabbit_client.egg-info/PKG-INFO
+eon_rabbit_client/eon_rabbit_client.egg-info/SOURCES.txt
+eon_rabbit_client/eon_rabbit_client.egg-info/dependency_links.txt
+eon_rabbit_client/eon_rabbit_client.egg-info/requires.txt
+eon_rabbit_client/eon_rabbit_client.egg-info/top_level.txt
