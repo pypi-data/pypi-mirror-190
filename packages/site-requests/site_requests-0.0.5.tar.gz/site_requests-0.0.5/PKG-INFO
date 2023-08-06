@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: site_requests
+Version: 0.0.5
+Summary: A small site requests package
+Project-URL: Homepage, https://github.com/your-name/site-requests
+Project-URL: Bug Tracker, https://github.com/your-name/site-requests/issues
+Author-email: your name <you_mail@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: bs4==0.0.1
+Requires-Dist: requests>=2.28.2
+Description-Content-Type: text/markdown
+
+# Webスクレイピングツール
+
+スクレイピングを行いたいサイトのURLとタグ名を指定し、欲しい情報をゲットしてきます。
+
+# 使用方法
+
+pipをアップグレードしてからインストールします
+
+```
+$ pip install --upgrade pip
+
+$ pip install site-requests
+```
+
+Pythonインタプリタでの実装
+
+```shell
+>>> from site_request import example
+>>>
+>>> url = 'https://zerofromlight.com/blogs'
+>>> tag = 'h5'
+>>>
+>>> for tag in example.get_data(url, tag):
+...     print(tag)
+...
+【Python】音声合成ライブラリのPyttsx3を使ってサクッと文章から音声生成
+【Python】音声認識ライブラリのSpeechRecognitionでサクッと文字起こし
+...
+...
+>>>
+```
