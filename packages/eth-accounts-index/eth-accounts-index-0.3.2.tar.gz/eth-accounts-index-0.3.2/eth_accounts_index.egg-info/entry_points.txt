@@ -1,0 +1,6 @@
+[console_scripts]
+eth-accounts-index-add = eth_accounts_index.runnable.add:main
+eth-accounts-index-deploy = eth_accounts_index.runnable.deploy:main
+eth-accounts-index-list = eth_accounts_index.runnable.list:main
+eth-accounts-index-writer = eth_accounts_index.runnable.writer:main
+
