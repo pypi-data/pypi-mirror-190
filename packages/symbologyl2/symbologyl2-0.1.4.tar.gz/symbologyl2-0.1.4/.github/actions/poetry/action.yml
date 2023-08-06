@@ -1,0 +1,39 @@
+name: "Setup poetry"
+description: "Setup poetry and install/cache dependencies"
+runs:
+  using: "composite"
+  steps:
+    - name: Install Poetry
+      uses: snok/install-poetry@v1
+      with:
+        virtualenvs-create: true
+        virtualenvs-in-project: true
+        installer-parallel: true
+
+    - name: Load cached venv
+      id: cached-poetry-dependencies
+      uses: actions/cache@v3
+      with:
+        path: .venv
+        key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
+    - name: Load pre-commit cache
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pre-commit
+        key: pre-commit|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
+
+    - name: Install dependencies
+      if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+      shell: bash
+      run: poetry install --no-interaction --no-root
+
+    - name: Install project
+      shell: bash
+      run: poetry install --no-interaction
+
+    - name: Install rust toolchain
+      uses: dtolnay/rust-toolchain@stable
+
+    - name: Cache rust build artifacts
+      uses: Swatinem/rust-cache@v2

@@ -1,0 +1,20 @@
+name: pre-commit
+
+on:
+  workflow_call:
+
+jobs:
+  pre_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Poetry
+        uses: ./.github/actions/poetry
+
+      - name: Run maturin develop
+        run: poetry run maturin develop
+
+      - name: Run pre-commit
+        run: poetry run pre-commit run --all-files

@@ -1,0 +1,15 @@
+[package]
+name = "symbologyl2-py"
+version = "0.1.4"
+edition = "2021"
+
+[package.metadata.maturin]
+name = "symbologyl2._symbologyl2"
+
+[lib]
+name = "symbologyl2"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17.3", features = ["extension-module"] }
+symbologyl2 = "0.1.1"

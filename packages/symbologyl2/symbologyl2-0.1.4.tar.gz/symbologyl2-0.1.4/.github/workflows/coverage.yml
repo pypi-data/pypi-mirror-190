@@ -1,0 +1,30 @@
+name: code coverage
+
+on:
+  - push
+
+jobs:
+  test:
+    name: Code coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Poetry
+        uses: ./.github/actions/poetry
+
+      - name: Run maturin develop
+        run: poetry run maturin develop
+
+      - name: Run tests
+        run:  poetry run coverage run -m pytest
+
+      - name: Generate coverage file
+        run: poetry run coverage lcov
+
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: coverage.lcov
