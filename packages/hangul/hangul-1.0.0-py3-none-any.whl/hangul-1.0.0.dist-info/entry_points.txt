@@ -1,0 +1,2 @@
+[console_scripts]
+hangul = hangul.__init__:romanize
