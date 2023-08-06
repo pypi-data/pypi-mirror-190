@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: odd-collector
+Version: 0.1.18
+Summary: ODD Collector
+Home-page: https://github.com/opendatadiscovery/odd-collector
+Keywords: Open Data Discovery,Metadata,Data Discovery,Data Observability
+Author: Open Data Discovery
+Author-email: pypi@opendatadiscovery.org
+Requires-Python: >=3.9.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (==1.26.32)
+Requires-Dist: cassandra-driver (==3.25.0)
+Requires-Dist: clickhouse-driver (==0.2.3)
+Requires-Dist: confluent-kafka (==1.9.2)
+Requires-Dist: elasticsearch (==7.14.0)
+Requires-Dist: fastavro (>=1.7.1,<2.0.0)
+Requires-Dist: feast (==0.26.0)
+Requires-Dist: flatdict (==4.0.1)
+Requires-Dist: funcy (==1.17)
+Requires-Dist: hive-metastore-client (==1.0.9)
+Requires-Dist: lark-parser (==0.11.1)
+Requires-Dist: llvmlite (>=0.39.1,<0.40.0)
+Requires-Dist: mlflow (==2.0.1)
+Requires-Dist: more-itertools (==8.13.0)
+Requires-Dist: mysql-connector-python (==8.0.28)
+Requires-Dist: neo4j (==4.3.7)
+Requires-Dist: numba (>=0.56.4,<0.57.0)
+Requires-Dist: odd-collector-sdk (==0.3.11)
+Requires-Dist: odd-models (==2.0.10)
+Requires-Dist: oddrn-generator (>=0.1.67,<0.2.0)
+Requires-Dist: oracledb (==1.2.1)
+Requires-Dist: presto-python-client (==0.8.2)
+Requires-Dist: psycopg2-binary (==2.9.3)
+Requires-Dist: pyaml-env (>=1.2.1,<2.0.0)
+Requires-Dist: pyhumps (==3.0.2)
+Requires-Dist: pymongo[srv] (==4.0.2)
+Requires-Dist: pymssql (==2.2.5)
+Requires-Dist: pyodbc (==4.0.35)
+Requires-Dist: pytest (==7.1.2)
+Requires-Dist: pytest-asyncio (>=0.20.3,<0.21.0)
+Requires-Dist: pytz (>=2022.7,<2023.0)
+Requires-Dist: snowflake-connector-python (==2.8.1)
+Requires-Dist: sql-metadata (>=2.6.0,<3.0.0)
+Requires-Dist: sqlalchemy (>=1.4.45,<2.0.0)
+Requires-Dist: tableauserverclient (==0.19.0)
+Requires-Dist: tarantool (==0.8.0)
+Requires-Dist: trino (==0.315.0)
+Requires-Dist: vertica-python (==1.1.1)
+Project-URL: Repository, https://github.com/opendatadiscovery/odd-collector
