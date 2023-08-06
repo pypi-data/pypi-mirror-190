@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+propertree/__init__.py
+propertree/propertree.py
+propertree.egg-info/PKG-INFO
+propertree.egg-info/SOURCES.txt
+propertree.egg-info/dependency_links.txt
+propertree.egg-info/requires.txt
+propertree.egg-info/top_level.txt
