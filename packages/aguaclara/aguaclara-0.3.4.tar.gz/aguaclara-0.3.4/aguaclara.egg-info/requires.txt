@@ -1,0 +1,7 @@
+matplotlib
+urllib3
+pint
+pandas
+scipy
+onshape_client
+numpy==1.22.1
