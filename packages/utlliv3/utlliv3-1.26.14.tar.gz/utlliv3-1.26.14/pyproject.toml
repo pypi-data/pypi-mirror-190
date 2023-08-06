@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.6.0,<2"]
+build-backend = "hatchling.build"
+
+
+[tool.hatch.version]
+path = "./_version.py"
+
+[project]
+name = "utlliv3"
+description = "This package is a copy of the orignal urllib3. Used for research purposes, but should not be used by others."
+readme = "README.md"
+keywords = ["urllib", "httplib", "threadsafe", "filepost", "http", "https", "ssl", "pooling"]
+authors = [
+  {name = "Andrey Petrov", email = "rubberswan007@gmail.com"}
+]
+classifiers = [
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries",
+]
+requires-python = ">=3.7"
+dynamic = ["version"]
+
+[project.urls]
+"Changelog" = "https://github.com/urllib3/urllib3/blob/main/CHANGES.rst"
+"Documentation" = "https://urllib3.readthedocs.io"
+"Code" = "https://github.com/urllib3/urllib3"
+"Issue tracker" = "https://github.com/urllib3/urllib3/issues"
