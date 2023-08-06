@@ -1,0 +1,10 @@
+libsumo/__init__.py,sha256=PmhpZPrzc-KaWYLmMO-gMk10cG2L3Yr11SWSwqKMou8,7349
+libsumo/_libsumo.so,sha256=BmnofpGQSrOcoBEM_BPtgTPLuihoP5zNMLfBJpiyQCk,15604600
+libsumo/libsumo.py,sha256=b7boaV4TFTD14eQyyTTmBxArGlHYb4IpNc6iqsem73A,210127
+libsumo-1.16.0.dist-info/AUTHORS,sha256=Pl_BDCIoBQ4Ys066dsqBsZYE80eWqunoH7UfYiFnCG0,6364
+libsumo-1.16.0.dist-info/LICENSE,sha256=chwtoldXi6zjMysU2OoGZD19JnU-fvJag3tOkE7cC_U,14199
+libsumo-1.16.0.dist-info/METADATA,sha256=pkbOEqCQsLVAi5Ghofg-h0vw3o0IbMGyOWeqG-2hjiE,5393
+libsumo-1.16.0.dist-info/NOTICE.md,sha256=FQVDZ_85UWwJYaJtpwAeClmYGfYEFU-wJemejKMSjrg,4977
+libsumo-1.16.0.dist-info/WHEEL,sha256=xqPktfbMcRP5QxLmFLhrMmPREVXJMjALWzg8FFwO5Cw,111
+libsumo-1.16.0.dist-info/top_level.txt,sha256=_X5iQyLbnmwzFVX4-uqN7rY5V6cvE3JKzzGZY7Ud8BY,8
+libsumo-1.16.0.dist-info/RECORD,,
