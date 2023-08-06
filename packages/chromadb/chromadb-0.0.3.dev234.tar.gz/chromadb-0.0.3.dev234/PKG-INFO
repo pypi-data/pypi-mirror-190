@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: chromadb
+Version: 0.0.3.dev234
+Summary: Chroma.
+Author-email: Jeff Huber <jeff@trychroma.com>, Anton Troynikov <anton@trychroma.com>
+Project-URL: Homepage, https://github.com/chroma-core/chroma
+Project-URL: Bug Tracker, https://github.com/chroma-core/chroma/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Chroma
+Chroma is a python library for implementing active learning.
+
+> ⚠️ Chroma is currently in alpha and the API may incur rapid breaking changes. 
+
+To be notified of future releases:
+- Follow Chroma on Twitter [@trychroma](https://twitter.com/trychroma) 
+- Sign up for our [Newsletter](https://www.trychroma.com/)
