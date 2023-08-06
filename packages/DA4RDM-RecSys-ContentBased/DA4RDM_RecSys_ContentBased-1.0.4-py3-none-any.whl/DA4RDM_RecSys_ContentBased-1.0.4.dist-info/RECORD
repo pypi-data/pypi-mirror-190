@@ -1,0 +1,9 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+da4rdm_contentbased/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+da4rdm_contentbased/distance_similarity_calculator.py,sha256=Jw_uCo1SQ4z4HjVyEn2g3XNNolQvg6TtINnWtOudFSE,5920
+da4rdm_contentbased/preprocessor.py,sha256=wVkJNJN_ujKHihxxr3ZSosROVGNwRvddAwasC3HOwgA,29628
+DA4RDM_RecSys_ContentBased-1.0.4.dist-info/LICENSE,sha256=4WpKN1xQ0TTjgXTD7v4CLlOodNCIPkezGMW9YYniMBQ,1089
+DA4RDM_RecSys_ContentBased-1.0.4.dist-info/METADATA,sha256=0FVPNcqtdvpFua8w8ySLnqNkX2OmIAVlvTuVvg0marw,1054
+DA4RDM_RecSys_ContentBased-1.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+DA4RDM_RecSys_ContentBased-1.0.4.dist-info/top_level.txt,sha256=-f-DSjRgzL2PDqfObPjP4bcPHSlu6NJLXWWiKF8qVwQ,29
+DA4RDM_RecSys_ContentBased-1.0.4.dist-info/RECORD,,
