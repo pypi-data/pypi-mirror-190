@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ObjStore
+Version: 0.2
+Summary: Python interface to objectstore
+Author-email: GWHG <Gordon.German@csiro.au>
+Project-URL: Homepage, https://github.com/AusSRC/Objectstore
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Objectstore
+## Intro
+There are various methods and protocols available for storing and retrieving data when using an objectstore resource (rather than a local POSIX-compliant file system). This document describes several modules written by AusSRC that streamline API calls to the S3 protocol, as implemented by the Python Boto3 library, as well as a json structure for holding objectstore certificates and keys. The modules are based on a parent class specific for handling FITS datasets, but the basic upload and download will work for any file. These can be used to programatically access an objectstore and are easily used within an existing workflow/pipeline.
+
+## Install
+You can clone the code from here to have access to the source. Alternatively you can install via pipas:
+
+    pip3 install ObjStore

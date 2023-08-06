@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+ObjStore/ObjStore.egg-info/PKG-INFO
+ObjStore/ObjStore.egg-info/SOURCES.txt
+ObjStore/ObjStore.egg-info/dependency_links.txt
+ObjStore/ObjStore.egg-info/requires.txt
+ObjStore/ObjStore.egg-info/top_level.txt
