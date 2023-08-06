@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "simple-pymq"
+version = "0.1.0"
+description = "Simple python message queue framework is ready to serve."
+authors = ["Allen Chou <f1470891079@gmail.com>"]
+readme = "README.md"
+packages = [{include = "simple_pymq"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.0,<3.11.0"
+rich = "*"
+croniter = {version = "*", extras = ["cron"]}
+pytz = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+flake9 = "*"
+pytest = "*"
+pytest-asyncio = "*"
+yapf = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
