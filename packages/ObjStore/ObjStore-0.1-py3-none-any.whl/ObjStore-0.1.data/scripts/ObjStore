@@ -1,0 +1,4 @@
+#!python
+
+echo "Python package for interfacing with an objectstore"
+
