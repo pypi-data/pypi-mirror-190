@@ -1,0 +1,12 @@
+agraffe/__init__.py,sha256=Xfb4587VBL8cxx9mOVlRXCHP-mD8c69WLi4xclyfRNo,2103
+agraffe/types.py,sha256=Ryjqd6IoWTnEyTohQ_7oulVj-3NSPN0Vte-IjG5UJnw,854
+agraffe/utils.py,sha256=wrSvEjJAbLDJUUJNMpASvtFe7HeZiaNxlrweyhhSq5o,820
+agraffe/services/__init__.py,sha256=qVR9VHctQ1lmQUTxvbUxEbUEp-6ntvB5ZqzoIxNlDik,174
+agraffe/services/aws_lambda.py,sha256=WhgeC3tb-XP51Fi8awRPRjpxHjNFsJjYgS8xBrKBEDM,3330
+agraffe/services/azure_functions.py,sha256=xOPGprkLAUHae9ifLe7kkvi90qwJlQ1Ht0JBT2iM5to,1222
+agraffe/services/base.py,sha256=3AdS3mhTZy689-homMjq0yijX_HsDihV1EY7jnslyKI,1355
+agraffe/services/google_cloud_functions.py,sha256=ZM-Kx7Tbpc0zAUqB1t_Zymfk2W8LUy9WFZVQNv416Po,1775
+agraffe-0.6.0.dist-info/LICENSE,sha256=ePkux18Ul7W1kGmnQVn0GlnkRzeiqkImJW690HS7mwE,1070
+agraffe-0.6.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+agraffe-0.6.0.dist-info/METADATA,sha256=pQEniU5QG_U4nbAul_C7YqsHY-5eE8KhgNWSOHeWbAY,3484
+agraffe-0.6.0.dist-info/RECORD,,
