@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "et-stopwatch"
+version = "1.3.1"
+description = "A class for timing code (start/stop, context manager, decorator)."
+authors = ["Engelbert Tijskens <engelbert.tijskens@uantwerpen.be>"]
+license = "MIT"
+
+readme = 'README.rst'
+
+repository = "https://github.com/etijskens/et-stopwatch"
+homepage = "https://github.com/etijskens/et-stopwatch"
+
+keywords = ['packaging', 'poetry']
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.4.2"
+numpy = "^1.18.1"
+
+[tool.poetry.scripts]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
