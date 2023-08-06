@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Aquar
+Version: 1.0.6
+Summary: a simple package for CTA backtest
+Home-page: UNKNOWN
+Author: Andy Lee
+Author-email: 1245824150@qq.com
+License: MIT
+Keywords: CTA,GTJA,BACKTEST
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: clickhouse-driver (>=0.2.0)
+Requires-Dist: colorlog (>=4.6.2)
+Requires-Dist: matplotlib (>=3.3.4)
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: pandas (>=1.2.2)
+Requires-Dist: prettytable (>=2.0.0)
+Requires-Dist: PyMySQL (>=0.10.1)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: seaborn (>=0.11.1)
+
+UNKNOWN
+
+
