@@ -1,0 +1,16 @@
+vowpal_wabbit_next/delta.py,sha256=KWkYWzSAU2fAhILd4wcczjmPpE9xv-KWtnu1YckVyq4,2313
+vowpal_wabbit_next/text_format.py,sha256=BOIfJCY1jfso_WOX7mCjmUUym1tSRwwCiDkyyOfp8Ro,3004
+vowpal_wabbit_next/_core.pyi,sha256=fBPF-elfwNQcwnop6s4juSzT8si7ZnCmCJ-Vk5j7eJk,7768
+vowpal_wabbit_next/example.py,sha256=IbrY_jycpnlOKf1N_5UtXsQUXOqf1rUClICUxXGwaiY,45
+vowpal_wabbit_next/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vowpal_wabbit_next/cache_format.py,sha256=jj6hUAfKdIUmAbz63NFzKqnLvfPbTMD0zs8EaWpnhMs,4361
+vowpal_wabbit_next/dsjson_format.py,sha256=JA7V-gJfnvGpXfW9D0_FFQtgIjzasDWVZRzuz8Yns28,3167
+vowpal_wabbit_next/__init__.py,sha256=inrrHzcc2CqEQeRCZQdfk0Dw4ULoaSoFckdKus-SX5Q,1054
+vowpal_wabbit_next/cli_driver.py,sha256=1jwmp7_F1xmWkqHEf_uvJ4DWnptet7XgEdrsyFTh26Y,2866
+vowpal_wabbit_next/_core.cpython-37m-x86_64-linux-gnu.so,sha256=t457tCEnwpI8HNLI_UyWQ-YDwf0rxCeB6-0wBWCkkyM,7832640
+vowpal_wabbit_next/workspace.py,sha256=hs6pdSZ-yRGo_4yKZvEkcWEDKtr6AiJcD-8HbsuHpmU,12511
+vowpal_wabbit_next-0.1.1.dist-info/METADATA,sha256=kTHeqBNfyFZ2O7aNCYbrE88a3M5YW7vPmPxIdlxeV3Y,1809
+vowpal_wabbit_next-0.1.1.dist-info/WHEEL,sha256=kwD2pcebXxxyXMub0L6uaPj7SS581liu_t-dxJe8QHc,144
+vowpal_wabbit_next-0.1.1.dist-info/RECORD,,
+vowpal_wabbit_next-0.1.1.dist-info/top_level.txt,sha256=qpt5-V6QyxisbmemgJBQ5_KwDrZP5etmNIL8twZSfCg,19
+vowpal_wabbit_next-0.1.1.dist-info/LICENSE,sha256=QUbwRdZmTYW87u0hIuISRepv2pGOHdqegRF-YhAfb54,1559
