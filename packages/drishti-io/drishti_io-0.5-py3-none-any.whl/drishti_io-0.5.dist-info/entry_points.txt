@@ -1,0 +1,2 @@
+[console_scripts]
+drishti = drishti.main:main
