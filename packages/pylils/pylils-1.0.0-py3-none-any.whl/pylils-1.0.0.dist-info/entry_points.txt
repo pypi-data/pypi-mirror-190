@@ -1,0 +1,4 @@
+[console_scripts]
+lils=lils.__main__:main
+lils-dbus=lils.dbus:main
+
