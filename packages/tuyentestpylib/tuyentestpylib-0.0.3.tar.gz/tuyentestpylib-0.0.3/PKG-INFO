@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tuyentestpylib
+Version: 0.0.3
+Summary: Test upload python lib
+Home-page: 
+Author: Nhat Tuyen
+Author-email: nhattuyen0414@gmail.com
+License: MIT
+Keywords: keyword_npf
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+README.txt
+
+Change Log
+==========
+
+0.0.1 (09/02/2023)
+-------------------
+- First Release
