@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+src/qcsapphire/__init__.py
+src/qcsapphire/pulser.py
+src/qcsapphire.egg-info/PKG-INFO
+src/qcsapphire.egg-info/SOURCES.txt
+src/qcsapphire.egg-info/dependency_links.txt
+src/qcsapphire.egg-info/requires.txt
+src/qcsapphire.egg-info/top_level.txt
