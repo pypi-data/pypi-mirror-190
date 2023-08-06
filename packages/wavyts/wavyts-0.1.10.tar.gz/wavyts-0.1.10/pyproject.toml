@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "wavyts"
+version = "0.1.10"
+description = "Wavy is a library to facilitate time series analysis"
+authors = ["Ibis Prevedello <ibiscp@gmail.com>",
+"Rodrigo Nader <rodrigosilvanader@gmail.com>",
+"Gabriel Almeida <gabrielf.almeida90@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/logspace-ai/wavy"
+repository = "https://github.com/logspace-ai/wavy"
+include = ["LICENSE"]
+packages = [{include = "wavy", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+pandas = "1.4.3"
+sklearn = "^0.0"
+plotly = "^5.7.0"
+tensorflow = "^2.8.0"
+numpy = "^1.22.3"
+tqdm = "^4.64.0"
+plotlab = "^0.1.0"
+toml = "^0.10.2"
+ipykernel = "^6.15.1"
+nbformat = "^5.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pylint = "*"
+pre-commit = "*"
+flake8 = "*"
+black = "*"
+isort = "*"
+ipykernel = "*"
+yfinance = "^0.1.70"
+matplotlib = "^3.5.2"
+Sphinx = "^5.0.1"
+sphinx-rtd-theme = "^1.0.0"
+sphinxcontrib-napoleon = "^0.7"
+sphinx-automodapi = "^0.14.1"
+nbsphinx = "^0.8.9"
+pandoc = "^2.2"
+seaborn = "^0.11.2"
+openpyxl = "^3.0.10"
+kaleido = "0.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.pytest]
+python_files = ["test_*.py"]
