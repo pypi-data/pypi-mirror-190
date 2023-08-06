@@ -1,0 +1,14 @@
+da4rdm_userbased/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+da4rdm_userbased/create_matrix.py,sha256=Zaox1NhEQetWvunT09J5Bdfo8-RrJdAl2iVm_X2e2Sc,3315
+da4rdm_userbased/evaluate_interest_rating.py,sha256=66bcqzq_1c2kKoAwRGr0aqOoOce7cSbxoh6k6y6FyQA,2909
+da4rdm_userbased/evaluate_weight.py,sha256=mzixF3_RtBuUnHJcAIvr6uxuL04kyOBKosOF5pLDOuU,4243
+da4rdm_userbased/extract_data.py,sha256=3bIZR0H_goo8s7QDAmv2TaFHh4ZY0WoOAGwNKBHObXk,278
+da4rdm_userbased/get_recommendation.py,sha256=Vi-dmqtNlY07BKe0UZFXy2KQN8E7Y-vYZU1FAiWp3GY,1745
+da4rdm_userbased/get_roles.py,sha256=2c0HMHm54QAhvUYcDpP8u5DJeHXgeaA6UpXo6akeqv4,641
+da4rdm_userbased/recommendation.py,sha256=4VrQ2gzs1zen9byXCHnfGRtZA-8www-iBT5Wfy1fDNc,3306
+da4rdm_userbased/remove_outliers.py,sha256=YsAjmj6A4okutufnqwGFiJkPv_pCP7hkURhFsp4rh9s,1724
+DA4RDM_RecSys_UserBased-1.0.5.dist-info/LICENSE,sha256=4WpKN1xQ0TTjgXTD7v4CLlOodNCIPkezGMW9YYniMBQ,1089
+DA4RDM_RecSys_UserBased-1.0.5.dist-info/METADATA,sha256=GdEhZYLuIA5_i6MZbIuyqNvm-ZunNnZbFsoMyVd9W10,746
+DA4RDM_RecSys_UserBased-1.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+DA4RDM_RecSys_UserBased-1.0.5.dist-info/top_level.txt,sha256=5J6X8RmumE6gZ-ltcJvdvVk4TmmngIn3VM_SV1s1qYo,17
+DA4RDM_RecSys_UserBased-1.0.5.dist-info/RECORD,,
