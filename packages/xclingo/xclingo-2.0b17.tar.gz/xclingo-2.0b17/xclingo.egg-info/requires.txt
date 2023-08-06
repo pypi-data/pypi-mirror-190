@@ -1,0 +1,4 @@
+clingo>=5.5.0.post3
+argparse
+importlib_resources
+clingraph
