@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pytyped-curry
+Version: 1.0.0
+Summary: Function currying that can be statically typed.
+License: mit
+Project-URL: Bug Tracker, https://github.com/SimpleArt/pytyped-curry/issues
+Project-URL: Repository, https://github.com/SimpleArt/pytyped-curry
+Keywords: pretty,print,format,indent,dataclass
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Printing
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pytyped-curry
+ Function currying that can be statically typed.
