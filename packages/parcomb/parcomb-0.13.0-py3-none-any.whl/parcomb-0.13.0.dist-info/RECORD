@@ -1,0 +1,14 @@
+parcomb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parcomb/char.py,sha256=waJ0GrdZtN1CV2WIlf4n9OoxTfUzycqlbzLr5bbqmhE,1778
+parcomb/combinator.py,sha256=PBa5izWRv3DvSVqDpp_2mwFdrHpwOXyQXJYkgWGa0xQ,5249
+parcomb/common.py,sha256=JGOCtc3HXblV3eFe8JS8xxXkQk6mo7pko94UQpBFSLE,281
+parcomb/number.py,sha256=fEn3zzI4WDdqG3vCc1Zizce7fJDNJmjFn_Xw6LmGoWc,779
+parcomb/parsing.py,sha256=dxhicEYPsZ_bT2nSxnlYQiOM0d7U3MuqffkIDILpSSg,2807
+parcomb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parcomb/regex.py,sha256=uQjyJGDBeU26KySgXvHPYjikf8Pdth6l9wPOpllVHb8,1329
+parcomb/response.py,sha256=Gdrppug6Y1bdbXCsNBG4oFOHD_5DG40PrDlXmK141gU,1800
+parcomb/string.py,sha256=mUFVp_QoNY3J0OzAXyAKWkYqXTsmqH0PShRHN623rgQ,747
+parcomb-0.13.0.dist-info/LICENSE,sha256=F-6xEaBSRitk3ppaVpg_jXMpIthmbsvyDt6Pd2tMTfQ,1022
+parcomb-0.13.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+parcomb-0.13.0.dist-info/METADATA,sha256=N9NJzfrsBdDeBcftwRoKpqTdwRqBOzrgGyz2cmmgMsA,10686
+parcomb-0.13.0.dist-info/RECORD,,
