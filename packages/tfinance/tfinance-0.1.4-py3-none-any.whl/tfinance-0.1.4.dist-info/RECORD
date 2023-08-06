@@ -1,0 +1,16 @@
+tfinance/__init__.py,sha256=y5XUcI7qzvy4GbPMxvWcaZkD1Df56uzzQSpWf15pJRE,225
+tfinance/market.py,sha256=ltQJG8A9ZCo4nIAJ_08cBGc13N7t-IC1wMowrDNCGRM,2291
+tfinance/ticker.py,sha256=Qj5aVD9NGK1GUbDeBq4m7LeA15-d3353rs3Tyx1A3mo,1005
+tfinance/tse_scrapper.py,sha256=vfLBQeclDEQPXkwKe__BRownbfQRfbfm8N6LyjsoAoo,12305
+tfinance/abc/base_scrapper.py,sha256=m6JRuv08bxlHHktiHBvbG6jYKni7doAu-pKTTfY4C04,311
+tfinance/meta/singleton_meta.py,sha256=nzoYCFfzVKIYjy3aNAEfZsg23XPbmgOEQnj28m7nznk,301
+tfinance/models/__init__.py,sha256=kKMQcsdvQMEa5bdhWuy0dYGVNCg6DMcT_1SD9YNAmFo,394
+tfinance/models/meta.py,sha256=AHOkaoNO_CV1gC8j27RBgcuiwfqvF0SpO31yNDUGYg8,146
+tfinance/models/sector_model.py,sha256=Iy8edaUWWatZE1WcJ5CAyCMqmDANhbKhrkv3YQ7Hgis,314
+tfinance/models/ticker_history_mixin.py,sha256=UZCGo6qe7lMr_OFbuLTAHAVhvCVBd6M2eW5hc4oQRPU,1069
+tfinance/models/ticker_model.py,sha256=RQaO5bmNfS0A-zj5HT2NJKq2A4LD0LrPYxQWgQpFNnY,805
+tfinance-0.1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tfinance-0.1.4.dist-info/METADATA,sha256=SbdAyutZYjhyjJDyQjiVT0jP2XUw5Oc3WvccJLHd6rs,3375
+tfinance-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tfinance-0.1.4.dist-info/top_level.txt,sha256=nZm6rgJQMTCD750pi21HVDdPJjau4p3hGH_nBR5cDYs,9
+tfinance-0.1.4.dist-info/RECORD,,
