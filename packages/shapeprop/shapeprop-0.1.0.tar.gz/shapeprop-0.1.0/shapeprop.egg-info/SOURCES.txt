@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+shapeprop/__init__.py
+shapeprop.egg-info/PKG-INFO
+shapeprop.egg-info/SOURCES.txt
+shapeprop.egg-info/dependency_links.txt
+shapeprop.egg-info/top_level.txt
+shapeprop/circle/__init__.py
+shapeprop/circle/shape.py
+shapeprop/triangle/__init__.py
+shapeprop/triangle/shape.py
+shapeprop/triangle/types.py

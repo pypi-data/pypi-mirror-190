@@ -1,0 +1,18 @@
+[project]
+name = "shapeprop"
+version = "0.1.0"
+authors = [
+  { name="Ferdy", email="ferdymosca@gmail.com" },
+]
+description = "A package on shape properties"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fsmosca/shapeprop"
+"Bug Tracker" = "https://github.com/fsmosca/shapeprop/issues"
