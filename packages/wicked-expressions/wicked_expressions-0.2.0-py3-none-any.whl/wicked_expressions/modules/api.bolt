@@ -1,0 +1,18 @@
+from bolt_expressions.node import ExpressionNode
+from bolt_expressions import Expression
+
+from ./comparison import ExpressionComparison
+from ./sources import ScoreSource, DataSource
+
+import ./internal_api as internal_api
+
+
+Scoreboard = ctx.inject(internal_api.Scoreboard)
+Data = ctx.inject(internal_api.Data)
+
+this = Data.entity('@s')
+
+def is_expression(value) -> bool:
+    return isinstance(value, ExpressionNode)
+
+ExpressionComparison.initialize_temp_expressions(Scoreboard, Data)
