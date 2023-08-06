@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: CodeKit
+Version: 0.3
+Summary: Codekit provides functions and decorators to assist developers in coding.
+Home-page: https://github.com/ErickRen2023/CodeKit
+Author: ErickRen
+Author-email: erickren2022@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+License-File: license
+
+CodeKit
+=========
+
+A useful library for python,inspired by Lombok.
+
+Codekit provides functions and decorators to assist developers in coding.
+
+Click https://github.com/ErickRen2023/CodeKit to get more information.
+

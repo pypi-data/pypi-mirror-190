@@ -1,0 +1,13 @@
+license
+setup.cfg
+setup.py
+CodeKit/__init__.py
+CodeKit/builder.py
+CodeKit/ignore_exception.py
+CodeKit/retry.py
+CodeKit/timer.py
+CodeKit/to_string.py
+CodeKit.egg-info/PKG-INFO
+CodeKit.egg-info/SOURCES.txt
+CodeKit.egg-info/dependency_links.txt
+CodeKit.egg-info/top_level.txt
