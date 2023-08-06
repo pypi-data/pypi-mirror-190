@@ -1,0 +1,8 @@
+Readme.md
+setup.py
+touca_fbs/__init__.py
+touca_fbs.egg-info/PKG-INFO
+touca_fbs.egg-info/SOURCES.txt
+touca_fbs.egg-info/dependency_links.txt
+touca_fbs.egg-info/requires.txt
+touca_fbs.egg-info/top_level.txt
