@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: cerberus-package-1
+Version: 0.0.5
+Summary: first version of package scrfd
+Home-page: https://github.com/itachi176/cerberus-face-recognition
+Author: HoangLM
+Author-email: lhoang17062000@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: onnx
+Requires-Dist: onnxruntime
+Requires-Dist: opencv-python
+
+# borrow many code from: https://github.com/deepinsight/insightface/tree/master/detection/scrfd
+
+
+## How to install: 
+
+- pip install cerberuspackage
+
+## code python:
+
+``
+from cerberuspackage import SCRFD
+detector = SCRFD("your onnx model")
+
+#bboxes: [top_left_x, top_left_y, bottom_right_x, bottom_right_y], 
+#kpss: corrdinate 5 point on the face (left_eye, right_eye, nose, left_lip, right_lip)
+
+bboxes, kpss = detector(img) 
+#your postprocess with data predict by dcrfd 
+``
