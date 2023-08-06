@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ipaddr-range"
+version = "0.0.1"
+description = "Generating a list of IP addresses of IPv4 and IPv6 versions."
+authors = ["Ivan Migunov <im@fckg.ru>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ipaddr_range"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
