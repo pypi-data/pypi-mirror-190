@@ -1,0 +1,1 @@
+"""Awattar API API library."""
