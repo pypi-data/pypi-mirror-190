@@ -1,0 +1,2 @@
+[gui_scripts]
+p5control-viewer = p5control.gui.viewer:main
