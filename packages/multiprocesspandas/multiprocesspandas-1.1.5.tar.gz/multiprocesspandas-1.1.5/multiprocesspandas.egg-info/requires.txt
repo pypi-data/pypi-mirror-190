@@ -1,0 +1,4 @@
+multiprocess==0.70.11.1
+pandas
+tqdm
+numpy
