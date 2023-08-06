@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: autograde.py
+Version: 0.0.1
+Summary: Run tests written with unittest against a specified module.
+Author-email: Geoff Cramer <cramerg@purdue.edu>
+Project-URL: Homepage, https://github.com/PurdueECE/grader
+Project-URL: Bug Tracker, https://github.com/PurdueECE/grader/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Module Interface
+Run tests written with [`unittest`](https://docs.python.org/3/library/unittest.html) against a specified module.
+Additional options:
+* location of tests (if not in the current directory),
+* fallback module to run the tests against,
+* where to save a CSV of the test results, and
+* config file to specify how results are processed
+
+```
+usage: grader [-h] [--fallback FALLBACK] [--submission SUBMISSION] [--tests TESTS]
+              [--test-pattern TEST_PATTERN] [--output OUTPUT] [--log LOG] [--config CONFIG]
+              path
+
+positional arguments:
+  path                  Module to grade
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --fallback FALLBACK   Fallback module to grade
+  --submission SUBMISSION
+                        Submission name to grade.
+  --tests TESTS         Path of tests to run. Defaults to ./
+  --test-pattern TEST_PATTERN
+                        Test name pattern to match. Defaults to "test*.py"
+  --output OUTPUT       Output file for report. Defaults to stdout.
+  --log LOG             Log file to use. Defaults to stdout.
+  --config CONFIG       Config file to use.
+```
+
+# Tests Discovery
+Tests to run can be located anywhere using a combination of the `--tests` and `--test-pattern` args.
+By default, they are searched for under the current directory and match the `test*.py` pattern.
+Tests are discovered using the [`unittest`](https://docs.python.org/3/library/unittest.html) module.
+
+# Running Tests
+While tests are running, the script will change to the directory of `path`.
+This means that file locations in tests should be relative to the provided `path`.
+`--fallback` helps the module determine all tests that should be run.
+This is helpful when the code located at `path` is untrusted and may totally fail the test discovery step.
+
+# Config
+The grader config can be specified with the `--config` arg. It is a json file that can specify what happens when a certain test runs or when a certain submission is graded. Individual test configs should be under the `"tests"` map and the key should be of the form: `testFunction (test_filename.TestCaseName)`. Inividual submission configs should be under the `"submissions"` map and match the name of the submission. An example format is below:
+
+```json
+{
+    "tests": {
+        "testSimple1 (test_simple.TestSimpleTestCase)": {
+            "name": "Simple Test 1",
+            "weight": 2
+        }
+    },
+    "names": {
+        "submission_name": {
+            "name": "custom label here"
+        }
+    }
+}
+```
