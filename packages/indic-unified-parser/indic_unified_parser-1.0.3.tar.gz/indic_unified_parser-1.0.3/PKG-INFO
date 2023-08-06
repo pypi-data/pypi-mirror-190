@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: indic_unified_parser
+Version: 1.0.3
+Summary: The Unified Parser unifies Indian languages using a common label set and syllable structure. It converts text to a common label set, generates phoneme sequences and improves natural language understanding in Indian languages. The method requires basic language knowledge and can achieve more than 95% accuracy with good lexicons. New Indian language parsers can be easily developed using this unified approach.
+Home-page: https://github.com/vikram-kv/Unified_Parser
+Author: Vikram K V
+Author-email: vikram.kv2001@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
