@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+pyproject.toml
+requirements-dev.txt
+skyr.py
+tox.ini
+.github/workflows/main.yml
+skyr.egg-info/PKG-INFO
+skyr.egg-info/SOURCES.txt
+skyr.egg-info/dependency_links.txt
+skyr.egg-info/entry_points.txt
+skyr.egg-info/top_level.txt
+tests/__init__.py
+tests/ruff.toml
+tests/skyr_test.py
