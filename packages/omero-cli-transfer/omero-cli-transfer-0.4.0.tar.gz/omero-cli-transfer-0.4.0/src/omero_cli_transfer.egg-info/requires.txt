@@ -1,0 +1,5 @@
+ezomero==1.2.1
+ome-types==0.3.3
+
+[rocrate]
+rocrate==0.7.0
