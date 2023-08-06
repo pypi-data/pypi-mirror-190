@@ -1,0 +1,121 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"GCID - @KarimKhanQC reconsider OTP-CR-117/19"
+
+
+import os
+import readline
+import sys
+import termios
+import time
+import traceback
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from gcid.default import Default
+from gcid.objects import format
+from gcid.storage import Wd
+
+
+from gcid.runtime.bus import Bus
+from gcid.runtime.config import Config
+from gcid.runtime.command import Command
+from gcid.runtime.event import Event
+from gcid.runtime.handler import Handler
+from gcid.runtime.scanner import scan
+from gcid.runtime.thread import launch
+from gcid.runtime.utils import privileges, wait
+from gcid.modules import cmd, irc, mdl, req, rss
+
+
+Cfg = Config()
+Wd.workdir = "/var/lib/gcid/"
+
+
+scan(cmd)
+scan(irc)
+scan(mdl)
+scan(req)
+scan(rss)
+
+
+class CLI(Handler):
+
+    @staticmethod
+    def announce(txt):
+        pass
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+class Console(CLI):
+
+    def handle(self, event):
+        Command.dispatch(event)
+        event.wait()
+
+    def poll(self):
+        event = Event()
+        event.orig = repr(self)
+        event.txt = input("> ")
+        return event
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    sis = open("/dev/null", 'r')
+    os.dup2(sis.fileno(), sys.stdin.fileno())
+    sos = open("/dev/null", 'a+')
+    ses = open("/dev/null", 'a+')
+    os.dup2(sos.fileno(), sys.stdout.fileno())
+    os.dup2(ses.fileno(), sys.stderr.fileno())
+
+
+def waiter():
+    got = []
+    for ex in Command.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Command.errors.remove(exc)
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+        waiter()
+
+
+def main():
+    Cfg.parse(" ".join(sys.argv[1:]))
+    privileges("gcid")
+    #daemon()
+    irc.init()
+    mdl.init()
+    rss.init()
+    wait(waiter)
+
+
+wrap(main)
