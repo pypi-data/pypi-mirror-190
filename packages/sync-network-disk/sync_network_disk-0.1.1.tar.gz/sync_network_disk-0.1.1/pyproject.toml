@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sync-network-disk"
+version = "0.1.1"
+description = ""
+authors = ["jawide <596929059@qq.com>"]
+readme = "README.md"
+packages = [{include = "sync_network_disk"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+configloaders = "^0.3.2"
+aligo = "^5.5.13"
+watchdog = "^2.2.1"
+flask = "^2.2.2"
+
+[tool.poetry.scripts]
+snd = "sync_network_disk.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
