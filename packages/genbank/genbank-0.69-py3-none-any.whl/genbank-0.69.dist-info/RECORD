@@ -1,0 +1,12 @@
+genbank/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genbank/codons.py,sha256=Jq7k7iL7fX-QGn-cj6dqxAUIrdUsLTNqVWDtR5-vDSY,3235
+genbank/feature.py,sha256=2rvdAKTzzbMiG8mCRLIIcBW427F7pbUHE98QZ5CbxPA,6129
+genbank/file.py,sha256=nkpd8ULjm-JkfRxemUXJmcq9vCFW1W6mme3ZQCbIJQs,2918
+genbank/locus.py,sha256=ekc7osWJcQGDkTnmY523eWPyrNK0dbyYTyusudwd_2I,11416
+genbank/translate.py,sha256=tWudxPsenSHQLmgG3iDCtDoHA-G2J6QTrMDoSZBWr0Y,2726
+genbank-0.69.data/scripts/genbank.py,sha256=lOk8jO7iT-kiXEv6P6an1XJYu54R7e5vC4i2qaYNWS8,5957
+genbank-0.69.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+genbank-0.69.dist-info/METADATA,sha256=UgjgzqUiAHc86uYeQ4X5ACdfBxRctoUMMwvztDFtsek,3209
+genbank-0.69.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+genbank-0.69.dist-info/top_level.txt,sha256=d3Vkg-3KjI24TRPDa9OfMoqLAp2lKpXW695m9R-C8QY,8
+genbank-0.69.dist-info/RECORD,,
