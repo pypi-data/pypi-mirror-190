@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pychargecloud
+Version: 0.1.0
+Summary: Access public ev charger information via chargecloud.de
+Author-email: functionpointer <suspendfunction@gmail.com>
+License: GNU General Public License v3 or later (GPLv3+)
+Project-URL: homepage, https://github.com/functionpointer/pychargecloud
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: aiohttp
+Requires-Dist: yarl
+Requires-Dist: pydantic
+
+pychargecloud
+=============
+
+Fetches data about public ev charge points from chargecloud.de
+
+Example:
+```python
+import sys
+import chargecloudapi
+import aiohttp
+import asyncio
+import logging
+
+
+async def main():
+    async with aiohttp.ClientSession() as session:
+        api = chargecloudapi.Api(session)
+        locations = await api.location_by_evse_id("DECCH*ECCH1800155EBG*2")
+        print(locations)
+
+
+if __name__ == "__main__":
+    logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+    loop = asyncio.new_event_loop()
+    loop.run_until_complete(main())
+
+```
+
+See also src/main.py
