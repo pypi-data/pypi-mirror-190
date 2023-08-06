@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+awattar_api/__init__.py
+awattar_api/awattar_api.py
+awattar_api/validations.py
+smart_energy.awattar_api.egg-info/PKG-INFO
+smart_energy.awattar_api.egg-info/SOURCES.txt
+smart_energy.awattar_api.egg-info/dependency_links.txt
+smart_energy.awattar_api.egg-info/requires.txt
+smart_energy.awattar_api.egg-info/top_level.txt
+tests/test_green_energy_api.py
+tests/test_validations.py
