@@ -1,0 +1,2 @@
+[nbdev]
+cjm_psl_utils = cjm_psl_utils._modidx:d
