@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "quantpiler"
+version = "0.2.0"
+description = "Quantum compiler and common circuits library"
+license = "Apache-2.0"
+authors = ["AveryanAlex <alex@averyan.ru>"]
+readme = "README.md"
+homepage = "https://github.com/averyanalex/quantpiler"
+repository = "https://github.com/averyanalex/quantpiler"
+documentation = "https://quantpiler.readthedocs.io/en/latest/"
+keywords = ["qiskit", "quantum"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Scientific/Engineering",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+qiskit = "^0.41"
+
+[tool.poetry.group.dev.dependencies]
+black = { extras = ["jupyter"], version = "^23" }
+pytest = "^7"
+pytest-xdist = "^3"
+pytest-cov = "^4"
+coverage = "^7"
+
+[tool.poetry.group.jupyter]
+optional = true
+
+[tool.poetry.group.jupyter.dependencies]
+jupyterlab = "^3.6"
+matplotlib = "^3.6"
+pylatexenc = "^2.10"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^6.1"
+furo = "^2022.12.7"
+nbsphinx = "^0.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
