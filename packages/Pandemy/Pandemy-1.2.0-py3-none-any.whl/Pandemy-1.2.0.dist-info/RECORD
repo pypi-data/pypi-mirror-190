@@ -1,0 +1,11 @@
+pandemy/__init__.py,sha256=AZXY83LmNZcqlrPvx-8eYodjSHFj9HxXwoUdNA78s28,3008
+pandemy/_dataframe.py,sha256=4t_Pdgn8tbiYKa1-CIwGLY1COXLw9mDV1uYPGlJI-rU,3027
+pandemy/_datetime.py,sha256=SAla2j6VMfNqNJOBryhGGAnsSJTqSAKw_DCTlZe-ur0,7672
+pandemy/databasemanager.py,sha256=JUloot0yI4sZ-I54wEOxLNWPmUDXiPYwKdTdAi5jjt4,104414
+pandemy/exceptions.py,sha256=dDW06cQp8wIdj2KjIqjv6p3C3UN5uc4rjr-PB1ru54c,3345
+pandemy/sqlcontainer.py,sha256=Etq4N9IZnd2dl4f1_YXSaprlN3-V8sHzTCGGtFK_MZY,15855
+Pandemy-1.2.0.dist-info/LICENSE,sha256=f_JeaDiuMMv82ossEd1NacRYOt67tR57PtN4J5qPIdQ,1095
+Pandemy-1.2.0.dist-info/METADATA,sha256=jCfiQNfmAGfJXrmIk_4L7zGtd9IbuvbGnIEaC4sb8Cs,11891
+Pandemy-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Pandemy-1.2.0.dist-info/top_level.txt,sha256=ALMi5hcXCwzkOVEJH7551YvMcKW-uNIEPu4fcNKxw8Y,8
+Pandemy-1.2.0.dist-info/RECORD,,
