@@ -1,0 +1,3 @@
+[console_scripts]
+oxt_generator=oxt_generator.cli_app:app
+

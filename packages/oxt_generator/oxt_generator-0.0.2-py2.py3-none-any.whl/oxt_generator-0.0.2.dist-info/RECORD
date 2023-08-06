@@ -1,0 +1,13 @@
+oxt_generator/README_extension_owner.txt,sha256=J6XlbQX5AH5UHlR355OP6_y2Ce1ioVKLDXC5MOTQCf0,91
+oxt_generator/__init__.py,sha256=haG0cI__mRwb0lSxqnjSVpEIo76uxI3gDV8f6jZWcCs,119
+oxt_generator/cli_app.py,sha256=5vRRZ0-v8mn7Y8pBMOSnJqB1ZS0c5bommIdkOPdTFTg,400
+oxt_generator/en_US_private.aff,sha256=QfXetoLCXD0anF--KlOLXhEt4AhKGp_ozrTE3-QArw8,64145
+oxt_generator/file_generator.py,sha256=pcci9uEChNpPDEFSdzI2poWNqlI1fp-hJmmnpjCMUgc,4019
+oxt_generator/license.txt,sha256=tvN5AB7q5aElvdk-sQIpw7N3_OqlkUzu1_BTmyTYz2Q,15123
+oxt_generator/package.py,sha256=vKSUV8XOLr_lOIjs8CevPNoqCvifXwtF7aHEwk6Z63g,1011
+oxt_generator/word_list.py,sha256=JHgSfO2gbQhiC-T3SlMvQfTQxg-M0115ukGXvoxf-cQ,1681
+oxt_generator-0.0.2.dist-info/entry_points.txt,sha256=S4mhkoM0OlpmOquNkHZTz7zBAcnstxq1qwFY1HJb6OY,59
+oxt_generator-0.0.2.dist-info/LICENSE,sha256=sHOBmrMwc7ayYTppcEXEmfXI9n8c6Ix0epH9APstXVQ,1100
+oxt_generator-0.0.2.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+oxt_generator-0.0.2.dist-info/METADATA,sha256=o-cmv-Fk0xgY1sB8ARdyD3pgUD9Vt61DkrgjfCQ8Rl4,3439
+oxt_generator-0.0.2.dist-info/RECORD,,
