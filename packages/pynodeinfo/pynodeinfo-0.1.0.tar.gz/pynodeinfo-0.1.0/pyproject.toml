@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pynodeinfo"
+version = "0.1.0"
+description = "Python Nodeinfo Library"
+authors = ["CSDUMMI <csdummi.misquality@simplelogin.co>"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+packages = [
+    { include = "nodeinfo", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.2"
+aiohttp = "^3.8.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
