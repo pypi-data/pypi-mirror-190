@@ -1,0 +1,49 @@
+dist: trusty
+
+language: python
+
+# specify the python versions for which you want to run travis
+python:
+  - 3.8
+
+install:
+  # install the package
+  - pip install -U pip
+  - pip install --progress-bar off -r requirements.txt
+  - pip install --progress-bar off -r dev_requirements.txt
+  - pip install .
+
+script:
+  # test import
+  - python -c "import dataset"
+
+
+# the following stages only start if the "test" stage above all succeed
+jobs:
+  include:
+    - stage: Documentation
+      python: 3.8
+      before_install: skip
+      install:
+        - pip install --progress-bar off -r requirements.txt
+        - pip install --progress-bar off -r dev_requirements.txt
+      before_script: skip
+      script:
+        # build documentation pages
+        - cd docs && make html && cd ..
+      deploy:
+        - provider: pages
+          skip_cleanup: true
+          repo: ai4scr/dataset-dev
+          github_url: github.ibm.com  # defaults to github.com
+          github_token: $GITHUB_TOKEN
+          local_dir: docs/_build/html
+          on:
+            branch: master
+
+#notifications:
+#  slack:
+#    rooms:
+#      - ibm-research:z9S4zBzMdiTWeLeqO0kOl4TJ  # generate here https://ibm-research.slack.com/apps/new/A0F81FP4N-travis-ci
+#    on_success: false
+#    on_failure: always

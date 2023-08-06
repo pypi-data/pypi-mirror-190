@@ -1,0 +1,29 @@
+.gitignore
+.travis.yml
+LICENSE
+README.md
+py.typed
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+troubleshooting.md
+docs/Makefile
+docs/api.rst
+docs/conf.py
+docs/index.rst
+docs/make.bat
+docs/quickstart.rst
+docs/_autosummary/dataset.datasets.rst
+docs/_autosummary/<-- add this line/dataset.datasets.AI4SCRDataset.rst
+docs/_autosummary/<-- add this line/dataset.datasets.BaseDataset.rst
+docs/_autosummary/<-- add this line/dataset.datasets.CacheMixIn.rst
+docs/_autosummary/<-- add this line/dataset.datasets.DownloadMixIn.rst
+docs/_autosummary/<-- add this line/dataset.datasets.RecipeMixIn.rst
+docs/_templates/class.rst
+docs/_templates/module.rst
+src/ai4scr_data_utility.egg-info/PKG-INFO
+src/ai4scr_data_utility.egg-info/SOURCES.txt
+src/ai4scr_data_utility.egg-info/dependency_links.txt
+src/ai4scr_data_utility.egg-info/requires.txt
+src/ai4scr_data_utility.egg-info/top_level.txt
