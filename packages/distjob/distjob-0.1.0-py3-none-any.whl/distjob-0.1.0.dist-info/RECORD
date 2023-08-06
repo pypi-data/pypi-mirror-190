@@ -1,0 +1,11 @@
+distjob/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+distjob/distjob_api.py,sha256=sHXieOqMuwN7YFXH2ucthxESL7lvAJ544TLC8OwzZKg,6832
+distjob/distjob_context.py,sha256=EIRyHjZPMzP5IwZvSpLEEkpw1bq2V03N6P8ynh_piqo,10295
+distjob/distjob_core.py,sha256=STQsD_V5iXvVFJWCWCQ40Pw0HWCyB77ANYdoiHr5IdM,3067
+distjob/distjob_worker.py,sha256=MOryQR_opXW1X_m7ysAqIbj_J5KLzbCZnnGpn4OEP-4,1732
+distjob/test.py,sha256=qNJeTlRfM5PghnYM5dBtuZFTKdqZD89qtixeYJCxy0g,575
+distjob-0.1.0.dist-info/LICENSE,sha256=h8KmLOW_IYyoDOcN2v0kRWQNOvx5apLVwzZXyJVg2Ho,1090
+distjob-0.1.0.dist-info/METADATA,sha256=6Mv_UhrTe1pVXCJkmPmAdjbliXlc11J3YMSsXkjd-5o,852
+distjob-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+distjob-0.1.0.dist-info/top_level.txt,sha256=WY2Uv8RS76DVXmfM0FsvMiYHRWtJ6kUCs_R_571anP4,8
+distjob-0.1.0.dist-info/RECORD,,
