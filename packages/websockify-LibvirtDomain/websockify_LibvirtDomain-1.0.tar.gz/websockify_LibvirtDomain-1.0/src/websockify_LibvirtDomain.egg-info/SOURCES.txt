@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/websockify_LibvirtDomain/__init__.py
+src/websockify_LibvirtDomain.egg-info/PKG-INFO
+src/websockify_LibvirtDomain.egg-info/SOURCES.txt
+src/websockify_LibvirtDomain.egg-info/dependency_links.txt
+src/websockify_LibvirtDomain.egg-info/top_level.txt
