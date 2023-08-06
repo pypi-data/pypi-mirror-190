@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "tapshex"
+version = "0.2.3"
+description = "Converts TAP/CSV into ShEx Schema"
+authors = [
+    "Tom Baker <tom@tombaker.org>",
+    "Nishad Thalhath <nishad@thalhath.org>",
+]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://pypi.org/project/tapshex/"
+repository = "https://github.com/tombaker/tapshex"
+documentation = "https://tapshex.readthedocs.io/en/latest"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+include = ["CHANGELOG.rst", "LICENSE", "README.rst"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+Jinja2 = "^3.1.2"
+pip-tools = "^6.12.1"
+ipykernel = "^6.20.1"
+ipython = "8.8.0"
+pre-commit = "^2.21.0"
+black = "^22.12.0"
+ipdb = "^0.13.11"
+# dctap = {path = "../dctap-python", develop = true}
+dctap = "^0.4.4"
+pyshexc = "^0.9.1"
+jinja2-cli = "^0.8.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^4.0.0"
+coverage = "^7.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^5.1.1"
+sphinx_rtd_theme = "^1.0.0"
+
+[tool.pytest.ini_options]
+addopts = "-s -rf -v --showlocals --tb=short --ignore-glob='_*.py' --ignore=notes --capture=sys --ignore=tests/tests_dctap --ignore=tests_dctap"
+testpaths = ["tests", "tests_primer", "tests_dctap"]
+filterwarnings = ["ignore::PendingDeprecationWarning", "ignore::DeprecationWarning"]
+markers = [
+  "done: tests pass and are considered done",
+  "todo: tests to do eventually",
+  "now: tests to do soon",
+]
