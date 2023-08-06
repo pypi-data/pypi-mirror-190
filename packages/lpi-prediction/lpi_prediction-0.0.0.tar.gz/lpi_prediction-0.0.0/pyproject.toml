@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lpi_prediction"
+version = "0.0.0"
+authors = [
+  { name="Iñaki Amatria-Barral", email="i.amatria@udc.es" },
+]
+description = "A template library to build lncRNA-protein interaction prediction algorithms"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/amatria/lpi_prediction"
+"Bug Tracker" = "https://github.com/amatria/lpi_prediction/issues"

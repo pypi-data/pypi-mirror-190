@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lpi-prediction
+Version: 0.0.0
+Summary: A template library to build lncRNA-protein interaction prediction algorithms
+Author-email: Iñaki Amatria-Barral <i.amatria@udc.es>
+Project-URL: Homepage, https://github.com/amatria/lpi_prediction
+Project-URL: Bug Tracker, https://github.com/amatria/lpi_prediction/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
