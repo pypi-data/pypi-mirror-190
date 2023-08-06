@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: agraffe
+Version: 0.6.0
+Summary: Agraffe, build API with ASGI in Serverless services (e.g AWS lambda, Google Cloud Functions and Azure Functions). 
+Author-email: odd <odd12258053@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: typing-extensions >=4.0.0, <5.0.0
+Requires-Dist: mypy ==0.931 ; extra == "dev"
+Requires-Dist: flake8 >=4.0.1, <5.0.0 ; extra == "dev"
+Requires-Dist: black ==22.3.0 ; extra == "dev"
+Requires-Dist: isort >=5.10.1, <6.0.0 ; extra == "dev"
+Requires-Dist: azure-functions >=1.5.0, <2.0 ; extra == "dev"
+Requires-Dist: pytest >=6.2.5, <7.0.0 ; extra == "test"
+Requires-Dist: mypy ==0.931 ; extra == "test"
+Requires-Dist: flake8 >=4.0.1, <5.0.0 ; extra == "test"
+Requires-Dist: black ==22.3.0 ; extra == "test"
+Requires-Dist: isort >=5.10.1, <6.0.0 ; extra == "test"
+Requires-Dist: azure-functions >=1.5.0, <2.0 ; extra == "test"
+Requires-Dist: functions-framework ==3.0.0 ; extra == "test"
+Requires-Dist: fastapi >=0.89.1 ; extra == "test"
+Requires-Dist: pydantic >=1.10.4 ; extra == "test"
+Requires-Dist: python-multipart >=0.0.5 ; extra == "test"
+Project-URL: Home, https://github.com/odd12258053/agraffe
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+
+![icon](./resources/icon.png)
+
+[![PyPI version](https://badge.fury.io/py/agraffe.svg)](https://badge.fury.io/py/agraffe)
+![Test](https://github.com/odd12258053/agraffe/workflows/Test/badge.svg)
+
+Agraffe, build API with ASGI in Serverless services (e.g AWS lambda, Google Cloud Functions and Azure Functions).
+
+## Support Services
+- [x] Google Cloud Functions
+  - Python 3.7, 3.8, 3.9, 3.10, 3.11(preview)
+- [x] AWS lambda (with API Gateway HTTP API or REST API, or with Function URL)
+  - Python 3.7, 3.8, 3.9
+- [x] Azure Functions
+  - Python 3.7, 3.8, 3.9, 3.10(preview)
+
+## Requirements
+
+Python 3.7+
+
+## Installation
+```sh
+$ pip install agraffe
+```
+
+## Example
+Create it
+
+- Create a file `main.py` with:
+
+```python
+from agraffe import Agraffe
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: str | None = None):
+    return {"item_id": item_id, "q": q}
+
+entry_point = Agraffe.entry_point(app)
+```
+```python
+# or, for on GCP
+from agraffe.services.google_cloud_functions import HttpCycle
+
+def entry_point(request):
+    return Agraffe(app, HttpCycle)(request=request)
+```
+
+Deploy it
+
+- Deploy the api with:
+
+```sh
+$ gcloud functions deploy {FUNCTION NAME} --entry-point entry_point --runtime python310 --trigger-http --allow-unauthenticated
+```
+
+See `/example` for other services.
+
+## License
+This project is licensed under the terms of the MIT license.
+
