@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: bem-vindo
+Version: 0.1.0
+Summary: 
+Author: Matheus
+Author-email: matheus2hcosta@gmail.comr
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
