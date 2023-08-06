@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: folder2dataset_dicom
+Version: 0.1
+Summary: Create Pytorch Dataset from a folder with dicom images
+Home-page: UNKNOWN
+Author: Thedoropoulos Dimitrios
+Author-email: dimitheodoro@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

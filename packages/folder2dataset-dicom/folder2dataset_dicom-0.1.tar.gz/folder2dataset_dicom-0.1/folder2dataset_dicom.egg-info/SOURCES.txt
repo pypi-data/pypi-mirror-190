@@ -1,0 +1,6 @@
+folder2dataset_dicom.py
+setup.py
+folder2dataset_dicom.egg-info/PKG-INFO
+folder2dataset_dicom.egg-info/SOURCES.txt
+folder2dataset_dicom.egg-info/dependency_links.txt
+folder2dataset_dicom.egg-info/top_level.txt
