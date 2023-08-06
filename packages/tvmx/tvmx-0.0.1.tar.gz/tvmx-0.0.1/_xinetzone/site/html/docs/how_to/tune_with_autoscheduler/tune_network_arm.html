@@ -1,0 +1,2019 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Auto-scheduling a Neural Network for ARM CPU &#8212; TVM  文档</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <link rel="icon" href="../../../_static/tvm-logo-square.png"/>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Auto-scheduling a Neural Network for mali GPU" href="tune_network_mali.html" />
+    <link rel="prev" title="Auto-scheduling a Neural Network for NVIDIA GPU" href="tune_network_cuda.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh-CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      <img src="../../../_static/../../../_static/tvm-logo-small.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">TVM  文档</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   TVM Documentation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../start.html">
+   Getting Started
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../install/index.html">
+     Installing TVM
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../install/from_source.html">
+       Install from Source
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../install/nnpack.html">
+         NNPACK Contrib Installation
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../install/docker.html">
+       Docker Images
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../install/nnpack.html">
+       NNPACK Contrib Installation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../contribute/index.html">
+     Contributor Guide
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/community.html">
+       TVM Community Guidelines
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/pull_request.html">
+       Submit a Pull Request
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/code_review.html">
+       Code Reviews
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/committer_guide.html">
+       Committer Guide
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/document.html">
+       Documentation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/code_guide.html">
+       Code Guide and Tips
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/git_howto.html">
+       Git Usage Tips
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/ci.html">
+       Using TVM’s CI
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/release_process.html">
+       Release Process
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../contribute/error_handling.html">
+       Error Handling Guide
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../user-guide.html">
+   用户手册
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../tutorial/index.html">
+     用户指南
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/introduction.html">
+       TVM 和模型优化的概述
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/tvmc_command_line_driver.html">
+       用 TVMC 编译和优化模型
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/tvmc_python.html">
+       开始使用 TVMC Python：TVM 的高级 API
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/autotvm_relay_x86.html">
+       用 Python 接口编译和优化模型（AutoTVM）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/tensor_expr_get_started.html">
+       使用张量表达式处理算子
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/autotvm_matmul_x86.html">
+       用调度模板和 AutoTVM 优化算子
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/auto_scheduler_matmul_x86.html">
+       使用自动调度优化运算
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/tensor_ir_blitz_course.html">
+       TensorIR 的突击课程
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/cross_compilation_and_rpc.html">
+       交叉编译和RPC
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/relay_quick_start.html">
+       编译深度学习模型的快速入门教程
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/intro_topi.html">
+       TOPI 简介
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../tutorial/uma.html">
+       通过 UMA 使您的硬件加速器 TVM-ready
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../index.html">
+     How To 指南
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../compile_models/index.html">
+       编译深度学习模型
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+      <label for="toctree-checkbox-8">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_pytorch.html">
+         编译 PyTorch 模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_tensorflow.html">
+         Compile Tensorflow Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_mxnet.html">
+         编译 MXNet 模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_onnx.html">
+         Compile ONNX Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_keras.html">
+         Compile Keras Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_tflite.html">
+         Compile TFLite Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_coreml.html">
+         Compile CoreML Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_darknet.html">
+         Compile YOLO-V2 and YOLO-V3 in DarkNet Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_caffe2.html">
+         Compile Caffe2 Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_oneflow.html">
+         Compile OneFlow Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../compile_models/from_paddle.html">
+         Compile PaddlePaddle Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../deploy/index.html">
+       部署模型并集成到 TVM
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy/cpp_deploy.html">
+         使用 C++ API 部署 TVM Module
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy/android.html">
+         Deploy to Android
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy/adreno.html">
+         Deploy to Adreno GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy/integrate.html">
+         集成 TVM 到你的项目
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy/hls.html">
+         HLS Backend Example
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy/arm_compute_lib.html">
+         集成 Relay Arm
+         <sup>
+          ®
+         </sup>
+         计算库
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy/tensorrt.html">
+         Relay TensorRT Integration
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy/vitis_ai.html">
+         Vitis AI Integration
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy/bnns.html">
+         Relay BNNS Integration
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../deploy_models/index.html">
+       部署深度学习模型
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy_models/deploy_model_on_android.html">
+         Deploy the Pretrained Model on Android
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy_models/deploy_model_on_rasp.html">
+         Deploy the Pretrained Model on Raspberry Pi
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy_models/deploy_object_detection_pytorch.html">
+         编译 PyTorch 目标检测模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy_models/deploy_prequantized.html">
+         使用 TVM 部署框架预量化模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy_models/deploy_prequantized_tflite.html">
+         Deploy a Framework-prequantized Model with TVM - Part 3 (TFLite)
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy_models/deploy_quantized.html">
+         在 CUDA 上部署已量化模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy_models/deploy_sparse.html">
+         Deploy a Hugging Face Pruned Model on CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../deploy_models/deploy_ssd_gluoncv.html">
+         部署 Single Shot Multibox Detector(SSD) 模型
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../work_with_relay/index.html">
+       使用 Relay
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+      <label for="toctree-checkbox-11">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_relay/build_gcn.html">
+         构建图卷积网络
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_relay/using_external_lib.html">
+         在 Relay 中使用外部库
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_relay/using_pipeline_executor.html">
+         在 Relay 中使用管道执行器
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_relay/using_relay_viz.html">
+         使用 Relay Visualizer 可视化 Relay
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../work_with_schedules/index.html">
+       使用 Tensor Expression 和 Schedules
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+      <label for="toctree-checkbox-12">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_schedules/schedule_primitives.html">
+         TVM 中的调度原语
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_schedules/reduction.html">
+         Reduction
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_schedules/intrin_math.html">
+         Intrinsics and Math Functions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_schedules/scan.html">
+         Scan and Recurrent Kernel
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_schedules/extern_op.html">
+         外部张量函数
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_schedules/tensorize.html">
+         Use Tensorize to Leverage Hardware Intrinsics
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_schedules/tuple_inputs.html">
+         Compute and Reduce with Tuple Inputs
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_schedules/tedd.html">
+         使用 TEDD 进行可视化
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../optimize_operators/index.html">
+       优化张量算子
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../optimize_operators/opt_gemm.html">
+         How to optimize GEMM on CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../optimize_operators/opt_conv_cuda.html">
+         How to optimize convolution on GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../optimize_operators/opt_conv_tensorcore.html">
+         How to optimize convolution using TensorCores
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../tune_with_autotvm/index.html">
+       Auto-Tune with Templates and AutoTVM
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../tune_with_autotvm/tune_conv2d_cuda.html">
+         Tuning High Performance Convolution on NVIDIA GPUs
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../tune_with_autotvm/tune_relay_cuda.html">
+         Auto-tuning a Convolutional Network for NVIDIA GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../tune_with_autotvm/tune_relay_x86.html">
+         Auto-tuning a Convolutional Network for x86 CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../tune_with_autotvm/tune_relay_arm.html">
+         Auto-tuning a Convolutional Network for ARM CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../tune_with_autotvm/tune_relay_mobile_gpu.html">
+         Auto-tuning a Convolutional Network for Mobile GPU
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="index.html">
+       使用自动调度器进行无模板调度
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+      <label for="toctree-checkbox-15">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4">
+        <a class="reference internal" href="tune_conv2d_layer_cuda.html">
+         Auto-scheduling a Convolution Layer for GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="tune_network_x86.html">
+         Auto-scheduling a Neural Network for x86 CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="tune_network_cuda.html">
+         Auto-scheduling a Neural Network for NVIDIA GPU
+        </a>
+       </li>
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Auto-scheduling a Neural Network for ARM CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="tune_network_mali.html">
+         Auto-scheduling a Neural Network for mali GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="tune_sparse_x86.html">
+         Auto-scheduling Sparse Matrix Multiplication on CPU with Custom Sketch Rule
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../work_with_microtvm/index.html">
+       使用 microTVM
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+      <label for="toctree-checkbox-16">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_microtvm/micro_aot.html">
+         microTVM Host-Driven AoT
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_microtvm/micro_autotune.html">
+         使用 microTVM Autotuning
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_microtvm/micro_ethosu.html">
+         在 bare metal Arm® Cortex®-M55 CPU 和 Ethos™-U55 NPU 上运行 TVM
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_microtvm/micro_reference_vm.html">
+         microTVM 参考虚拟机
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_microtvm/micro_tflite.html">
+         microTVM with TFLite Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_microtvm/micro_train.html">
+         Training Vision Models for microTVM on Arduino
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../work_with_microtvm/micro_tvmc.html">
+         Executing a Tiny Model with TVMC Micro
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../extend_tvm/index.html">
+       拓展 TVM
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+      <label for="toctree-checkbox-17">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../extend_tvm/low_level_custom_pass.html">
+         编写定制 Pass
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../extend_tvm/use_pass_infra.html">
+         如何使用 TVM Pass Infra
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../extend_tvm/use_pass_instrument.html">
+         如何使用 TVM Pass Instrument
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../extend_tvm/bring_your_own_datatypes.html">
+         自定义 TVM 数据类型
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../profile/index.html">
+       模型剖析
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+      <label for="toctree-checkbox-18">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../profile/papi.html">
+         PAPI 快速上手
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../errors.html">
+       Handle TVM Errors
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../faq.html">
+       Frequently Asked Questions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../developer-guide.html">
+   Developer Guide
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../dev/tutorial/index.html">
+     Developer Tutorial
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dev/tutorial/codebase_walkthrough.html">
+       TVM Codebase Walkthrough by Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../dev/how_to/how_to.html">
+     Developer How-To Guide
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dev/how_to/debugging_tvm.html">
+       Debugging TVM
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dev/how_to/relay_add_op.html">
+       Adding an Operator to Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dev/how_to/relay_add_pass.html">
+       Adding a Compiler Pass to Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dev/how_to/relay_bring_your_own_codegen.html">
+       Bring Your Own Codegen To TVM
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../dev/how_to/pytest_target_parametrization.html">
+       Python Target Parametrization
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../arch/index.html">
+   Design and Architecture
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/runtime.html">
+     TVM Runtime System
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/debugger.html">
+     Debugger
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/virtual_machine.html">
+     将 VM 放入 TVM：Relay Virtual Machine
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/introduction_to_module_serialization.html">
+     模块序列化简介
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/pass_infra.html">
+     Pass Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/device_target_interactions.html">
+     Device/Target Interactions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/inferbound.html">
+     InferBound Pass
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/hybrid_script.html">
+     Hybrid Frontend Developer Guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/relay_intro.html">
+     Relay IR 简介
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/relay_op_strategy.html">
+     Relay 算子策略
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/convert_layout.html">
+     Convert Layout Pass
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/benchmark.html">
+     基准性能日志格式
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/frontend/tensorflow.html">
+     TensorFlow Frontend
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/security.html">
+     安全指南
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/microtvm_design.html">
+     microTVM Design Document
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/microtvm_project_api.html">
+     microTVM Project API
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arch/model_library_format.html">
+     Model 库格式
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../topic-guides.html">
+   Topic Guides
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../topic/microtvm/index.html">
+     microTVM: TVM on bare-metal
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../topic/vta/index.html">
+     VTA: Versatile Tensor Accelerator
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../topic/vta/install.html">
+       VTA Installation Guide
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../topic/vta/dev/index.html">
+       VTA Design and Developer Guide
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../topic/vta/dev/config.html">
+         VTA Configuration
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../topic/vta/dev/hardware.html">
+         VTA Hardware Guide
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../../topic/vta/tutorials/index.html">
+       VTA 教程
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+      <label for="toctree-checkbox-26">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../topic/vta/tutorials/vta_get_started.html">
+         VTA 入门
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../topic/vta/tutorials/matrix_multiply.html">
+         简单的矩阵乘法
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../topic/vta/tutorials/frontend/index.html">
+         编译深度学习模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../topic/vta/tutorials/optimize/index.html">
+         优化 Tensor 算子
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../topic/vta/tutorials/autotvm/index.html">
+         自动调优
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../reference-guide.html">
+   Reference Guide
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/>
+  <label for="toctree-checkbox-27">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../reference/langref/index.html">
+     Language Reference
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/>
+    <label for="toctree-checkbox-28">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/langref/relay_expr.html">
+       Expressions in Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/langref/relay_type.html">
+       Relay’s Type System
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/langref/relay_adt.html">
+       Algebraic Data Types in Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/langref/relay_op.html">
+       Relay Core Tensor Operators
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/langref/relay_pattern.html">
+       Pattern Matching in Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/langref/hybrid_script.html">
+       Hybrid Frontend Language Reference
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../reference/api/python/index.html">
+     Python API
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/>
+    <label for="toctree-checkbox-29">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/runtime.html">
+       tvm.runtime
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/ndarray.html">
+       tvm.runtime.ndarray
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/error.html">
+       tvm.error
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/ir/module.html">
+       tvm.ir.module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/ir/index.html">
+       tvm.ir
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/target.html">
+       tvm.target
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/tir.html">
+       tvm.tir
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/te.html">
+       tvm.te
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/driver.html">
+       tvm.driver
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/index.html">
+       tvm.relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/frontend.html">
+       tvm.relay.frontend
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/nn.html">
+       tvm.relay.nn
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/vision.html">
+       tvm.relay.vision
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/image.html">
+       tvm.relay.image
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/transform.html">
+       tvm.relay.transform
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/analysis.html">
+       tvm.relay.analysis
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/backend.html">
+       tvm.relay.backend
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/dataflow_pattern.html">
+       tvm.relay.dataflow_pattern
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/relay/testing.html">
+       tvm.relay.testing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/autotvm.html">
+       tvm.autotvm
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/auto_scheduler.html">
+       tvm.auto_scheduler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/rpc.html">
+       tvm.rpc
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/micro.html">
+       tvm.micro
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/contrib.html">
+       tvm.contrib
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/graph_executor.html">
+       tvm.contrib.graph_executor
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/topi.html">
+       tvm.topi
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../reference/api/python/vta/index.html">
+       vta
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../reference/api/links.html">
+     Other APIs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../reference/publications.html">
+     Publications
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../refs/index.html">
+   参考
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/>
+  <label for="toctree-checkbox-30">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../../refs/_ffi/index.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       _ffi
+      </span>
+     </code>
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" type="checkbox"/>
+    <label for="toctree-checkbox-31">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../refs/_ffi/base.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi.base
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../refs/_ffi/libinfo.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi.libinfo
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../refs/_ffi/object.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi._ctypes.object
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../refs/_ffi/registry.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi.registry
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../../refs/_ffi/runtime_ctypes.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi.runtime_ctypes
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/docs/how_to/tune_with_autoscheduler/tune_network_arm.ipynb.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> 导航
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#define-a-network">
+   Define a Network
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#start-rpc-tracker">
+   Start RPC Tracker
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#register-devices-to-rpc-tracker">
+   Register Devices to RPC Tracker
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#set-tuning-options">
+   Set Tuning Options
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extract-search-tasks">
+   Extract Search Tasks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tuning-and-evaluation">
+   Tuning and Evaluation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-tips">
+   Other Tips
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Auto-scheduling a Neural Network for ARM CPU</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 导航 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#define-a-network">
+   Define a Network
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#start-rpc-tracker">
+   Start RPC Tracker
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#register-devices-to-rpc-tracker">
+   Register Devices to RPC Tracker
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#set-tuning-options">
+   Set Tuning Options
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extract-search-tasks">
+   Extract Search Tasks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tuning-and-evaluation">
+   Tuning and Evaluation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-tips">
+   Other Tips
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%matplotlib inline
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="auto-scheduling-a-neural-network-for-arm-cpu">
+<h1>Auto-scheduling a Neural Network for ARM CPU<a class="headerlink" href="#auto-scheduling-a-neural-network-for-arm-cpu" title="此标题的永久链接">#</a></h1>
+<p><strong>Author</strong>: <a class="reference external" href="https://github.com/tmoreau89">Thierry Moreau</a>,             <a class="reference external" href="https://github.com/merrymercy">Lianmin Zheng</a>,             <a class="reference external" href="https://github.com/jcf94/">Chengfan Jia</a></p>
+<p>Auto-tuning for specific devices and workloads is critical for getting the
+best performance. This is a tutorial on how to tune a whole neural
+network for ARM CPU with the auto-scheduler via RPC.</p>
+<p>To auto-tune a neural network, we partition the network into small subgraphs and
+tune them independently. Each subgraph is treated as one search task.
+A task scheduler slices the time and dynamically allocates time resources to
+these tasks. The task scheduler predicts the impact of each task on the end-to-end
+execution time and prioritizes the one that can reduce the execution time the most.</p>
+<p>For each subgraph, we use the compute declaration in :code:<code class="docutils literal notranslate"><span class="pre">tvm/python/topi</span></code> to
+get the computational DAG in the tensor expression form.
+We then use the auto-scheduler to construct a search space of this DAG and search
+for good schedules (low-level optimizations).</p>
+<p>Different from the template-based <code class="docutils literal notranslate"><span class="pre">autotvm</span> <span class="pre">&lt;tutorials-autotvm-sec&gt;</span></code> which relies on
+manual templates to define the search space, the auto-scheduler does not require any
+schedule templates. In other words, the auto-scheduler only uses the compute declarations
+in :code:<code class="docutils literal notranslate"><span class="pre">tvm/python/topi</span></code> and does not use existing schedule templates.</p>
+<p>Note that this tutorial will not run on Windows or recent versions of macOS. To
+get it to run, you will need to wrap the body of this tutorial in a :code:<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">&quot;__main__&quot;:</span></code> block.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import numpy as np
+import os
+
+import tvm
+from tvm import relay, auto_scheduler
+from tvm.relay import data_dep_optimization as ddo
+import tvm.relay.testing
+from tvm.contrib import graph_executor
+from tvm.contrib.utils import tempdir
+</pre></div>
+</div>
+</div>
+</div>
+<section id="define-a-network">
+<h2>Define a Network<a class="headerlink" href="#define-a-network" title="此标题的永久链接">#</a></h2>
+<p>First, we need to define the network with relay frontend API.
+We can load some pre-defined network from :code:<code class="docutils literal notranslate"><span class="pre">tvm.relay.testing</span></code>.
+We can also load models from MXNet, ONNX, PyTorch, and TensorFlow
+(see <code class="docutils literal notranslate"><span class="pre">front</span> <span class="pre">end</span> <span class="pre">tutorials&lt;tutorial-frontend&gt;</span></code>).</p>
+<p>For convolutional neural networks, although auto-scheduler can work correctly
+with any layout, we found the best performance is typically achieved with NHWC layout.
+We also implemented more optimizations for NHWC layout with the auto-scheduler.
+So it is recommended to convert your models to NHWC layout to use the auto-scheduler.
+You can use <code class="docutils literal notranslate"><span class="pre">ConvertLayout</span> <span class="pre">&lt;convert-layout-usage&gt;</span></code> pass to do the layout conversion in TVM.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_network(name, batch_size, layout=&quot;NHWC&quot;, dtype=&quot;float32&quot;, use_sparse=False):
+    &quot;&quot;&quot;Get the symbol definition and random weight of a network&quot;&quot;&quot;
+
+    # auto-scheduler prefers NHWC layout
+    if layout == &quot;NHWC&quot;:
+        image_shape = (224, 224, 3)
+    elif layout == &quot;NCHW&quot;:
+        image_shape = (3, 224, 224)
+    else:
+        raise ValueError(&quot;Invalid layout: &quot; + layout)
+
+    input_shape = (batch_size,) + image_shape
+    output_shape = (batch_size, 1000)
+
+    if name.startswith(&quot;resnet-&quot;):
+        n_layer = int(name.split(&quot;-&quot;)[1])
+        mod, params = relay.testing.resnet.get_workload(
+            num_layers=n_layer,
+            batch_size=batch_size,
+            layout=layout,
+            dtype=dtype,
+            image_shape=image_shape,
+        )
+    elif name.startswith(&quot;resnet3d-&quot;):
+        n_layer = int(name.split(&quot;-&quot;)[1])
+        mod, params = relay.testing.resnet.get_workload(
+            num_layers=n_layer,
+            batch_size=batch_size,
+            layout=layout,
+            dtype=dtype,
+            image_shape=image_shape,
+        )
+    elif name == &quot;mobilenet&quot;:
+        mod, params = relay.testing.mobilenet.get_workload(
+            batch_size=batch_size, layout=layout, dtype=dtype, image_shape=image_shape
+        )
+    elif name == &quot;squeezenet_v1.1&quot;:
+        assert layout == &quot;NCHW&quot;, &quot;squeezenet_v1.1 only supports NCHW layout&quot;
+        mod, params = relay.testing.squeezenet.get_workload(
+            version=&quot;1.1&quot;,
+            batch_size=batch_size,
+            dtype=dtype,
+            image_shape=image_shape,
+        )
+    elif name == &quot;inception_v3&quot;:
+        input_shape = (batch_size, 3, 299, 299) if layout == &quot;NCHW&quot; else (batch_size, 299, 299, 3)
+        mod, params = relay.testing.inception_v3.get_workload(batch_size=batch_size, dtype=dtype)
+    elif name == &quot;mxnet&quot;:
+        # an example for mxnet model
+        from mxnet.gluon.model_zoo.vision import get_model
+
+        assert layout == &quot;NCHW&quot;
+
+        block = get_model(&quot;resnet50_v1&quot;, pretrained=True)
+        mod, params = relay.frontend.from_mxnet(block, shape={&quot;data&quot;: input_shape}, dtype=dtype)
+        net = mod[&quot;main&quot;]
+        net = relay.Function(
+            net.params, relay.nn.softmax(net.body), None, net.type_params, net.attrs
+        )
+        mod = tvm.IRModule.from_expr(net)
+    elif name == &quot;mlp&quot;:
+        mod, params = relay.testing.mlp.get_workload(
+            batch_size=batch_size, dtype=dtype, image_shape=image_shape, num_classes=1000
+        )
+    else:
+        raise ValueError(&quot;Network not found.&quot;)
+
+    if use_sparse:
+        from tvm.topi.sparse.utils import convert_model_dense_to_sparse
+
+        mod, params = convert_model_dense_to_sparse(mod, params, random_params=True)
+
+    return mod, params, input_shape, output_shape
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="start-rpc-tracker">
+<h2>Start RPC Tracker<a class="headerlink" href="#start-rpc-tracker" title="此标题的永久链接">#</a></h2>
+<p>TVM uses RPC session to communicate with ARM boards.
+During tuning, the tuner will send the generated code to the board and
+measure the speed of code on the board.</p>
+<p>To scale up the tuning, TVM uses RPC Tracker to manage distributed devices.
+The RPC Tracker is a centralized controller node. We can register all devices to
+the tracker. For example, if we have 10 phones, we can register all of them
+to the tracker, and run 10 measurements in parallel, accelerating the tuning process.</p>
+<p>To start an RPC tracker, run this command on the host machine. The tracker is
+required during the whole tuning process, so we need to open a new terminal for
+this command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>tvm.exec.rpc_tracker<span class="w"> </span>--host<span class="o">=</span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="o">=</span><span class="m">9190</span>
+</pre></div>
+</div>
+<p>The expected output is</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>INFO:RPCTracker:bind<span class="w"> </span>to<span class="w"> </span><span class="m">0</span>.0.0.0:9190
+</pre></div>
+</div>
+</section>
+<section id="register-devices-to-rpc-tracker">
+<h2>Register Devices to RPC Tracker<a class="headerlink" href="#register-devices-to-rpc-tracker" title="此标题的永久链接">#</a></h2>
+<p>Now we can register our devices to the tracker. The first step is to
+build the TVM runtime for the ARM devices.</p>
+<ul class="simple">
+<li><p>For Linux:
+Follow this section <code class="docutils literal notranslate"><span class="pre">build-tvm-runtime-on-device</span></code> to build
+the TVM runtime on the device. Then register the device to tracker by</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>tvm.exec.rpc_server<span class="w"> </span>--tracker<span class="o">=[</span>HOST_IP<span class="o">]</span>:9190<span class="w"> </span>--key<span class="o">=</span>rasp4b-64
+</pre></div>
+</div>
+<p>(replace :code:<code class="docutils literal notranslate"><span class="pre">[HOST_IP]</span></code> with the IP address of your host machine)</p>
+<ul class="simple">
+<li><p>For Android:
+Follow this <a class="reference external" href="https://github.com/apache/tvm/tree/main/apps/android_rpc">readme page</a> to
+install the TVM RPC APK on the android device. Make sure you can pass the android rpc test.
+Then you have already registered your device. During tuning, you have to go to developer option
+and enable “Keep screen awake during changing” and charge your phone to make it stable.</p></li>
+</ul>
+<p>After registering devices, we can confirm it by querying rpc_tracker</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>tvm.exec.query_rpc_tracker<span class="w"> </span>--host<span class="o">=</span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="o">=</span><span class="m">9190</span>
+</pre></div>
+</div>
+<p>For example, if we have 2 Huawei mate10 pro, 11 Raspberry Pi 4B with 64bit OS, and 2 rk3399,
+the output can be</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Queue<span class="w"> </span>Status
+----------------------------------
+key<span class="w">          </span>total<span class="w">  </span>free<span class="w">  </span>pending
+----------------------------------
+mate10pro<span class="w">    </span><span class="m">2</span><span class="w">      </span><span class="m">2</span><span class="w">     </span><span class="m">0</span>
+rk3399<span class="w">       </span><span class="m">2</span><span class="w">      </span><span class="m">2</span><span class="w">     </span><span class="m">0</span>
+rasp4b-64<span class="w">    </span><span class="m">11</span><span class="w">     </span><span class="m">11</span><span class="w">    </span><span class="m">0</span>
+----------------------------------
+</pre></div>
+</div>
+<p>You can register multiple devices to the tracker to accelerate the measurement in tuning.</p>
+</section>
+<section id="set-tuning-options">
+<h2>Set Tuning Options<a class="headerlink" href="#set-tuning-options" title="此标题的永久链接">#</a></h2>
+<p>Before tuning, we should apply some configurations. Here I use a Raspberry Pi 4b 4GB board
+as example with a 64bit OS (Ubuntu 20.04). In your setting, you should modify the target
+and device_key accordingly.
+set :code:<code class="docutils literal notranslate"><span class="pre">use_ndk</span></code> to True if you use android phone.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>#### DEVICE CONFIG ####
+
+# Replace &quot;aarch64-linux-gnu&quot; with the correct target of your board.
+# This target is used for cross compilation. You can query it by :code:`gcc -v` on your device.
+# FIXME(tmoreau89, merrymercy): We leave &#39;-device=arm_cpu&#39; out of the target string
+#                               because we&#39;re sharing x86 op strategy.
+target = tvm.target.Target(&quot;llvm -mtriple=aarch64-linux-gnu -mattr=+neon&quot;)
+
+# Also replace this with the device key, rpc host and rpc port in your tracker
+device_key = &quot;rasp4b-64&quot;
+rpc_host = &quot;127.0.0.1&quot;
+rpc_port = 9190
+
+# Set this to True if you use ndk tools for cross compiling
+# And also set the environment variable below to point to the cross compiler
+use_ndk = False
+# os.environ[&quot;TVM_NDK_CC&quot;] = &quot;/usr/bin/aarch64-linux-gnu-g++&quot;
+
+#### TUNING OPTION ####
+network = &quot;mobilenet&quot;
+use_sparse = False
+batch_size = 1
+layout = &quot;NHWC&quot;
+dtype = &quot;float32&quot;
+log_file = &quot;%s-%s-B%d-%s.json&quot; % (network, layout, batch_size, target.kind.name)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="extract-search-tasks">
+<h2>Extract Search Tasks<a class="headerlink" href="#extract-search-tasks" title="此标题的永久链接">#</a></h2>
+<p>Next, we extract the search tasks and their weights from a network.
+The weight of a task is the number of appearances of the task’s subgraph
+in the whole network.
+By using the weight, we can approximate the end-to-end latency of the network
+as :code:<code class="docutils literal notranslate"><span class="pre">sum(latency[t]</span> <span class="pre">*</span> <span class="pre">weight[t])</span></code>, where :code:<code class="docutils literal notranslate"><span class="pre">latency[t]</span></code> is the
+latency of a task and :code:<code class="docutils literal notranslate"><span class="pre">weight[t]</span></code> is the weight of the task.
+The task scheduler will just optimize this objective.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Extract tasks from the network
+print(&quot;Get model...&quot;)
+mod, params, input_shape, output_shape = get_network(
+    network, batch_size, layout, dtype=dtype, use_sparse=use_sparse
+)
+print(&quot;Extract tasks...&quot;)
+tasks, task_weights = auto_scheduler.extract_tasks(mod[&quot;main&quot;], params, target)
+
+for idx, task in enumerate(tasks):
+    print(&quot;========== Task %d  (workload key: %s) ==========&quot; % (idx, task.workload_key))
+    print(task.compute_dag)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="tuning-and-evaluation">
+<h2>Tuning and Evaluation<a class="headerlink" href="#tuning-and-evaluation" title="此标题的永久链接">#</a></h2>
+<p>Now, we set some options for tuning and launch the search tasks</p>
+<ul class="simple">
+<li><p>:code:<code class="docutils literal notranslate"><span class="pre">num_measure_trials</span></code> is the number of measurement trials we can use during the tuning.
+You can set it to a small number (e.g., 200) for a fast demonstrative run.
+In practice, we recommend setting it around :code:<code class="docutils literal notranslate"><span class="pre">800</span> <span class="pre">*</span> <span class="pre">len(tasks)</span></code>,
+which is typically enough for the search to converge.
+For example, there are 29 tasks in resnet-50, so we can set it as 20000.
+You can adjust this parameter according to your time budget.</p></li>
+<li><p>In addition, we use :code:<code class="docutils literal notranslate"><span class="pre">RecordToFile</span></code> to dump measurement records into a log file,
+The measurement records can be used to query the history best, resume the search,
+and do more analyses later.</p></li>
+<li><p>see :any:<code class="docutils literal notranslate"><span class="pre">auto_scheduler.TuningOptions</span></code>,
+:any:<code class="docutils literal notranslate"><span class="pre">auto_scheduler.LocalRunner</span></code> for more parameters.</p></li>
+</ul>
+<p>After auto-tuning, we can compile the network with the best schedules we found.
+All measurement records are dumped into the log file during auto-tuning,
+so we can read the log file and load the best schedules.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def tune_and_evaluate():
+    print(&quot;Begin tuning...&quot;)
+    tuner = auto_scheduler.TaskScheduler(tasks, task_weights)
+    tune_option = auto_scheduler.TuningOptions(
+        num_measure_trials=200,  # change this to 20000 to achieve the best performance
+        builder=auto_scheduler.LocalBuilder(build_func=&quot;ndk&quot; if use_ndk else &quot;default&quot;),
+        runner=auto_scheduler.RPCRunner(
+            device_key,
+            host=rpc_host,
+            port=rpc_port,
+            timeout=30,
+            repeat=1,
+            min_repeat_ms=200,
+            enable_cpu_cache_flush=True,
+        ),
+        measure_callbacks=[auto_scheduler.RecordToFile(log_file)],
+    )
+
+    tuner.tune(tune_option)
+
+    # Compile with the history best
+    print(&quot;Compile...&quot;)
+    with auto_scheduler.ApplyHistoryBest(log_file):
+        with tvm.transform.PassContext(
+            opt_level=3, config={&quot;relay.backend.use_auto_scheduler&quot;: True}
+        ):
+            lib = relay.build(mod, target=target, params=params)
+
+    # Export library
+    tmp = tempdir()
+    if use_ndk:
+        from tvm.contrib import ndk
+
+        filename = &quot;net.so&quot;
+        lib.export_library(tmp.relpath(filename), ndk.create_shared)
+    else:
+        filename = &quot;net.tar&quot;
+        lib.export_library(tmp.relpath(filename))
+
+    # Upload module to device
+    print(&quot;Upload...&quot;)
+    remote = auto_scheduler.utils.request_remote(device_key, rpc_host, rpc_port, timeout=10000)
+    remote.upload(tmp.relpath(filename))
+    rlib = remote.load_module(filename)
+
+    # Create graph executor
+    dev = remote.cpu()
+    module = graph_executor.GraphModule(rlib[&quot;default&quot;](dev))
+    data_tvm = tvm.nd.array((np.random.uniform(size=input_shape)).astype(dtype))
+    module.set_input(&quot;data&quot;, data_tvm)
+
+    # Evaluate
+    print(&quot;Evaluate inference time cost...&quot;)
+    print(module.benchmark(dev, repeat=3, min_repeat_ms=500))
+
+
+# We do not run the tuning in our webpage server since the server doesn&#39;t have a Raspberry Pi,
+# or device tracker running.
+# Uncomment the following line to run it by yourself.
+
+# tune_and_evaluate()
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-info"><h4>Note</h4><p>Explaining the printed information during tuning
+<p>During the tuning, a lot of information will be printed on the console.
+They are used for debugging purposes. The most important info is the output
+of the task scheduler. The following table is a sample output.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">----------------------------------------------------------------------</span>
+<span class="o">------------------------------</span><span class="w">  </span><span class="p">[</span><span class="w"> </span><span class="n">Task</span><span class="w"> </span><span class="n">Scheduler</span><span class="w"> </span><span class="p">]</span>
+<span class="o">----------------------------------------------------------------------</span>
+<span class="o">|</span><span class="w">  </span><span class="n">ID</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="n">Latency</span><span class="w"> </span><span class="p">(</span><span class="n">ms</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Speed</span><span class="w"> </span><span class="p">(</span><span class="n">GFLOPS</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Trials</span><span class="w"> </span><span class="o">|</span>
+<span class="o">-------------------------------------------------</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">0</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.013</span><span class="w"> </span><span class="o">|</span><span class="w">           </span><span class="mf">0.31</span><span class="w"> </span><span class="o">|</span><span class="w">     </span><span class="mi">64</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">1</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.845</span><span class="w"> </span><span class="o">|</span><span class="w">           </span><span class="mf">2.43</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">448</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">2</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.046</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">-0.00</span><span class="w"> </span><span class="o">|</span><span class="w">     </span><span class="mi">64</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">3</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">4.194</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">24.53</span><span class="w"> </span><span class="o">|</span><span class="w">   </span><span class="mi">2112</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">4</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.109</span><span class="w"> </span><span class="o">|</span><span class="w">           </span><span class="mf">9.21</span><span class="w"> </span><span class="o">|</span><span class="w">     </span><span class="mi">64</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">5</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">1.759</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">29.27</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">896</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">6</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.083</span><span class="w"> </span><span class="o">|</span><span class="w">           </span><span class="mf">6.01</span><span class="w"> </span><span class="o">|</span><span class="w">     </span><span class="mi">64</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">7</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">3.084</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">33.38</span><span class="w"> </span><span class="o">|</span><span class="w">   </span><span class="mi">7680</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">8</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.136</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">14.78</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">384</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">    </span><span class="mi">9</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">1.349</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">38.23</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">768</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">10</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.133</span><span class="w"> </span><span class="o">|</span><span class="w">           </span><span class="mf">7.55</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">128</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">11</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">2.747</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">37.56</span><span class="w"> </span><span class="o">|</span><span class="w">   </span><span class="mi">1536</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">12</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.338</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">11.87</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">192</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">13</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">1.295</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">40.00</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">704</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">14</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.482</span><span class="w"> </span><span class="o">|</span><span class="w">           </span><span class="mf">4.16</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">256</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">15</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">2.686</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">38.56</span><span class="w"> </span><span class="o">|</span><span class="w">   </span><span class="mi">1344</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">16</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.884</span><span class="w"> </span><span class="o">|</span><span class="w">           </span><span class="mf">9.08</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">448</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">17</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">1.332</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">39.18</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">704</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">18</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">1.045</span><span class="w"> </span><span class="o">|</span><span class="w">           </span><span class="mf">3.84</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">576</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">19</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">1.391</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">38.09</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">704</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">20</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.777</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">10.34</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">448</span><span class="w"> </span><span class="o">|</span>
+<span class="o">|</span><span class="w">   </span><span class="mi">21</span><span class="w"> </span><span class="o">|</span><span class="w">        </span><span class="mf">0.739</span><span class="w"> </span><span class="o">|</span><span class="w">          </span><span class="mf">30.97</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="mi">448</span><span class="w"> </span><span class="o">|</span>
+<span class="o">-------------------------------------------------</span>
+<span class="w"> </span><span class="n">Estimated</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="n">latency</span><span class="o">:</span><span class="w"> </span><span class="mf">38.347</span><span class="w"> </span><span class="n">ms</span><span class="w">      </span><span class="n">Trials</span><span class="o">:</span><span class="w"> </span><span class="mi">19992</span><span class="w">   </span><span class="n">Used</span><span class="w"> </span><span class="n">time</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mi">19260</span><span class="w"> </span><span class="n">s</span><span class="w">     </span><span class="n">Next</span><span class="w"> </span><span class="n">ID</span><span class="o">:</span><span class="w"> </span><span class="mi">3</span>
+</pre></div>
+</div>
+<p>This table lists the latency and (estimated) speed of all tasks.
+It also lists the allocation of measurement trials for all tasks.
+The last line prints the total weighted latency of these tasks,
+which can be a rough estimation of the end-to-end execution time
+of the network.
+The last line also prints the total number of measurement trials,
+total time spent on auto-tuning and the id of the next task to tune.</p>
+<p>There will also be some “dmlc::Error”s errors, because the
+auto-scheduler will try some invalid schedules.
+You can safely ignore them if the tuning can continue, because these
+errors are isolated from the main process.</p></div></p>
+<div class="alert alert-info"><h4>Note</h4><p>Terminate the tuning earlier
+<p>You can terminate the tuning earlier by forcibly killing this process.
+As long as you get at least one valid schedule for each task in the log file,
+you should be able to do the compilation (the secion below).</p></div></p>
+</section>
+<section id="other-tips">
+<h2>Other Tips<a class="headerlink" href="#other-tips" title="此标题的永久链接">#</a></h2>
+<ol class="arabic simple">
+<li><p>During the tuning, the auto-scheduler needs to compile many programs and
+extract feature from them. This part is CPU-intensive,
+so a high-performance CPU with many cores is recommended for faster search.</p></li>
+<li><p>You can use :code:<code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">tvm.auto_scheduler.measure_record</span> <span class="pre">--mode</span> <span class="pre">distill</span> <span class="pre">-i</span> <span class="pre">log.json</span></code>
+to distill the large log file and only save the best useful records.</p></li>
+<li><p>You can resume a search from the previous log file. You just need to
+add a new argument :code:<code class="docutils literal notranslate"><span class="pre">load_log_file</span></code> when creating the task scheduler
+in function :code:<code class="docutils literal notranslate"><span class="pre">run_tuning</span></code>. Say,
+:code:<code class="docutils literal notranslate"><span class="pre">tuner</span> <span class="pre">=</span> <span class="pre">auto_scheduler.TaskScheduler(tasks,</span> <span class="pre">task_weights,</span> <span class="pre">load_log_file=log_file)</span></code></p></li>
+<li><p>If you have multiple target CPUs, you can use all of them for measurements to
+parallelize the measurements. Check this <code class="docutils literal notranslate"><span class="pre">section</span> <span class="pre">&lt;tutorials-autotvm-scale-up-rpc-tracker&gt;</span></code>
+to learn how to use the RPC Tracker and RPC Server.
+To use the RPC Tracker in auto-scheduler, replace the runner in :code:<code class="docutils literal notranslate"><span class="pre">TuningOptions</span></code>
+with :any:<code class="docutils literal notranslate"><span class="pre">auto_scheduler.RPCRunner</span></code>.</p></li>
+</ol>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="tune_network_cuda.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Auto-scheduling a Neural Network for NVIDIA GPU</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="tune_network_mali.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Auto-scheduling a Neural Network for mali GPU</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By xinetzone<br/>
+  
+      &copy; Copyright 2022, xinetzone.<br/>
+    Last updated on 2023-02-02, 20:15:57.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

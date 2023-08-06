@@ -1,0 +1,136 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+[tool.black]
+line-length = 100
+target-version = ['py36']
+include = '(\.pyi?$)'
+exclude = '''
+(
+  /(
+      \.github
+    | \.tvm
+    | \.tvm_test_data
+    | \.vscode
+    | \.venv
+    | 3rdparty
+    | build\/
+    | cmake\/
+    | conda\/
+    | docker\/
+    | docs\/
+    | golang\/
+    | include\/
+    | jvm\/
+    | licenses\/
+    | nnvm\/
+    | rust\/
+    | src\/
+    | vta\/
+    | web\/
+  )/
+)
+'''
+
+[tool.pdm]
+allow_prereleases = true
+[tool.pdm.dev-dependencies]
+
+[tool.hatch.version]
+path = "xinetzone/src/tvmx/__about__.py"
+
+[project]
+name = "tvmx"
+dynamic = ["version"]
+authors = [
+    {name = "xinetzone", email = "xinzone@outlook.com"},
+]
+dependencies = [
+  "d2py",
+  "attrs",
+  "decorator",
+  "psutil",
+  "typing_extensions",
+  "scipy>=1.9.3",
+  "graphviz",
+  "importlib-metadata>=4.12"
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Home = "https://github.com/xinetzone/tvm"
+
+# [project.entry-points]
+# "sphinx.html_themes" = {tvm_book = "tvm_book"}
+
+[project.optional-dependencies]
+doc = [
+  "sphinx_book_theme",
+  "autodocsumm",
+  "sphinx_copybutton",
+  "tlcpack-sphinx-addon",
+  "babel",
+  "synr",
+  "pytest",
+  "cloudpickle",
+  "jupyter-sphinx",
+  "myst-nb",
+  "sphinx-thebe",
+  "sphinx_design",
+  "sphinxext-rediraffe",
+  "pydata-sphinx-theme==0.8.1",
+  "sphinxcontrib-mermaid",
+  "plotly"
+]
+# dev = [
+#   "scipy"
+# ]
+
+
+[tool.pdm.build]
+package-dir = "xinetzone"
+# includes = ["src"]
+# excludes = ["./**/.git"]
+source-includes = ["build/*.so", "tests", "CHANGELOG.md", 
+                  #  "3rdparty/vta-hw/config/",
+                   "LICENSE", "README.md"]
+# editables backend doesn't work well with namespace packages
+editable-backend = "path" # "editables", "path"
+artifacts = [
+  "*.so",
+  "*.dll",
+]
+
+[tool.hatch.build.force-include]
+"vta/python/vta" = "vta"
+"python/tvm" = "tvm"
+"build/libtvm.so" = "tvm/libtvm.so"
+"build/libtvm_runtime.so" = "tvm/libtvm_runtime.so"
+"xinetzone/src/tvmx" = "tvmx"
+"build/libvta_fsim.so" = "../../3rdparty/vta-hw/build/libvta_fsim.so"
+"build/libvta_tsim.so" = "../../3rdparty/vta-hw/build/libvta_tsim.so"
+"3rdparty/vta-hw/config/" = "../../3rdparty/vta-hw/config"
+
+[pypi.extra]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple "
+# verify_ssl = false

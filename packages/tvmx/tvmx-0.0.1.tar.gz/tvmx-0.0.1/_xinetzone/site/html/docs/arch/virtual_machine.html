@@ -1,0 +1,2075 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>将 VM 放入 TVM：Relay Virtual Machine &#8212; TVM  文档</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <link rel="icon" href="../../_static/tvm-logo-square.png"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="模块序列化简介" href="introduction_to_module_serialization.html" />
+    <link rel="prev" title="Debugger" href="debugger.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh-CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      <img src="../../_static/../../_static/tvm-logo-small.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">TVM  文档</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../README.html">
+   TVM Documentation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../start.html">
+   Getting Started
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../install/index.html">
+     Installing TVM
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../install/from_source.html">
+       Install from Source
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../install/nnpack.html">
+         NNPACK Contrib Installation
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../install/docker.html">
+       Docker Images
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../install/nnpack.html">
+       NNPACK Contrib Installation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../contribute/index.html">
+     Contributor Guide
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/community.html">
+       TVM Community Guidelines
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/pull_request.html">
+       Submit a Pull Request
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/code_review.html">
+       Code Reviews
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/committer_guide.html">
+       Committer Guide
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/document.html">
+       Documentation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/code_guide.html">
+       Code Guide and Tips
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/git_howto.html">
+       Git Usage Tips
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/ci.html">
+       Using TVM’s CI
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/release_process.html">
+       Release Process
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../contribute/error_handling.html">
+       Error Handling Guide
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../user-guide.html">
+   用户手册
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../tutorial/index.html">
+     用户指南
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/introduction.html">
+       TVM 和模型优化的概述
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/tvmc_command_line_driver.html">
+       用 TVMC 编译和优化模型
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/tvmc_python.html">
+       开始使用 TVMC Python：TVM 的高级 API
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/autotvm_relay_x86.html">
+       用 Python 接口编译和优化模型（AutoTVM）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/tensor_expr_get_started.html">
+       使用张量表达式处理算子
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/autotvm_matmul_x86.html">
+       用调度模板和 AutoTVM 优化算子
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/auto_scheduler_matmul_x86.html">
+       使用自动调度优化运算
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/tensor_ir_blitz_course.html">
+       TensorIR 的突击课程
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/cross_compilation_and_rpc.html">
+       交叉编译和RPC
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/relay_quick_start.html">
+       编译深度学习模型的快速入门教程
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/intro_topi.html">
+       TOPI 简介
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../tutorial/uma.html">
+       通过 UMA 使您的硬件加速器 TVM-ready
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../how_to/index.html">
+     How To 指南
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/compile_models/index.html">
+       编译深度学习模型
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+      <label for="toctree-checkbox-8">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_pytorch.html">
+         编译 PyTorch 模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_tensorflow.html">
+         Compile Tensorflow Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_mxnet.html">
+         编译 MXNet 模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_onnx.html">
+         Compile ONNX Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_keras.html">
+         Compile Keras Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_tflite.html">
+         Compile TFLite Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_coreml.html">
+         Compile CoreML Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_darknet.html">
+         Compile YOLO-V2 and YOLO-V3 in DarkNet Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_caffe2.html">
+         Compile Caffe2 Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_oneflow.html">
+         Compile OneFlow Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/compile_models/from_paddle.html">
+         Compile PaddlePaddle Models
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/deploy/index.html">
+       部署模型并集成到 TVM
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+      <label for="toctree-checkbox-9">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy/cpp_deploy.html">
+         使用 C++ API 部署 TVM Module
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy/android.html">
+         Deploy to Android
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy/adreno.html">
+         Deploy to Adreno GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy/integrate.html">
+         集成 TVM 到你的项目
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy/hls.html">
+         HLS Backend Example
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy/arm_compute_lib.html">
+         集成 Relay Arm
+         <sup>
+          ®
+         </sup>
+         计算库
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy/tensorrt.html">
+         Relay TensorRT Integration
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy/vitis_ai.html">
+         Vitis AI Integration
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy/bnns.html">
+         Relay BNNS Integration
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/deploy_models/index.html">
+       部署深度学习模型
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy_models/deploy_model_on_android.html">
+         Deploy the Pretrained Model on Android
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy_models/deploy_model_on_rasp.html">
+         Deploy the Pretrained Model on Raspberry Pi
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy_models/deploy_object_detection_pytorch.html">
+         编译 PyTorch 目标检测模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy_models/deploy_prequantized.html">
+         使用 TVM 部署框架预量化模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy_models/deploy_prequantized_tflite.html">
+         Deploy a Framework-prequantized Model with TVM - Part 3 (TFLite)
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy_models/deploy_quantized.html">
+         在 CUDA 上部署已量化模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy_models/deploy_sparse.html">
+         Deploy a Hugging Face Pruned Model on CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/deploy_models/deploy_ssd_gluoncv.html">
+         部署 Single Shot Multibox Detector(SSD) 模型
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/work_with_relay/index.html">
+       使用 Relay
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+      <label for="toctree-checkbox-11">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_relay/build_gcn.html">
+         构建图卷积网络
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_relay/using_external_lib.html">
+         在 Relay 中使用外部库
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_relay/using_pipeline_executor.html">
+         在 Relay 中使用管道执行器
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_relay/using_relay_viz.html">
+         使用 Relay Visualizer 可视化 Relay
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/work_with_schedules/index.html">
+       使用 Tensor Expression 和 Schedules
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+      <label for="toctree-checkbox-12">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_schedules/schedule_primitives.html">
+         TVM 中的调度原语
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_schedules/reduction.html">
+         Reduction
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_schedules/intrin_math.html">
+         Intrinsics and Math Functions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_schedules/scan.html">
+         Scan and Recurrent Kernel
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_schedules/extern_op.html">
+         外部张量函数
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_schedules/tensorize.html">
+         Use Tensorize to Leverage Hardware Intrinsics
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_schedules/tuple_inputs.html">
+         Compute and Reduce with Tuple Inputs
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_schedules/tedd.html">
+         使用 TEDD 进行可视化
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/optimize_operators/index.html">
+       优化张量算子
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+      <label for="toctree-checkbox-13">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/optimize_operators/opt_gemm.html">
+         How to optimize GEMM on CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/optimize_operators/opt_conv_cuda.html">
+         How to optimize convolution on GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/optimize_operators/opt_conv_tensorcore.html">
+         How to optimize convolution using TensorCores
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/tune_with_autotvm/index.html">
+       Auto-Tune with Templates and AutoTVM
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+      <label for="toctree-checkbox-14">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autotvm/tune_conv2d_cuda.html">
+         Tuning High Performance Convolution on NVIDIA GPUs
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autotvm/tune_relay_cuda.html">
+         Auto-tuning a Convolutional Network for NVIDIA GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autotvm/tune_relay_x86.html">
+         Auto-tuning a Convolutional Network for x86 CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autotvm/tune_relay_arm.html">
+         Auto-tuning a Convolutional Network for ARM CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autotvm/tune_relay_mobile_gpu.html">
+         Auto-tuning a Convolutional Network for Mobile GPU
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/tune_with_autoscheduler/index.html">
+       使用自动调度器进行无模板调度
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+      <label for="toctree-checkbox-15">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autoscheduler/tune_conv2d_layer_cuda.html">
+         Auto-scheduling a Convolution Layer for GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autoscheduler/tune_network_x86.html">
+         Auto-scheduling a Neural Network for x86 CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autoscheduler/tune_network_cuda.html">
+         Auto-scheduling a Neural Network for NVIDIA GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autoscheduler/tune_network_arm.html">
+         Auto-scheduling a Neural Network for ARM CPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autoscheduler/tune_network_mali.html">
+         Auto-scheduling a Neural Network for mali GPU
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/tune_with_autoscheduler/tune_sparse_x86.html">
+         Auto-scheduling Sparse Matrix Multiplication on CPU with Custom Sketch Rule
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/work_with_microtvm/index.html">
+       使用 microTVM
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+      <label for="toctree-checkbox-16">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_microtvm/micro_aot.html">
+         microTVM Host-Driven AoT
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_microtvm/micro_autotune.html">
+         使用 microTVM Autotuning
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_microtvm/micro_ethosu.html">
+         在 bare metal Arm® Cortex®-M55 CPU 和 Ethos™-U55 NPU 上运行 TVM
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_microtvm/micro_reference_vm.html">
+         microTVM 参考虚拟机
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_microtvm/micro_tflite.html">
+         microTVM with TFLite Models
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_microtvm/micro_train.html">
+         Training Vision Models for microTVM on Arduino
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/work_with_microtvm/micro_tvmc.html">
+         Executing a Tiny Model with TVMC Micro
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/extend_tvm/index.html">
+       拓展 TVM
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+      <label for="toctree-checkbox-17">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/extend_tvm/low_level_custom_pass.html">
+         编写定制 Pass
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/extend_tvm/use_pass_infra.html">
+         如何使用 TVM Pass Infra
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/extend_tvm/use_pass_instrument.html">
+         如何使用 TVM Pass Instrument
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/extend_tvm/bring_your_own_datatypes.html">
+         自定义 TVM 数据类型
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../how_to/profile/index.html">
+       模型剖析
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+      <label for="toctree-checkbox-18">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../how_to/profile/papi.html">
+         PAPI 快速上手
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../errors.html">
+       Handle TVM Errors
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../faq.html">
+       Frequently Asked Questions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../developer-guide.html">
+   Developer Guide
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../dev/tutorial/index.html">
+     Developer Tutorial
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../dev/tutorial/codebase_walkthrough.html">
+       TVM Codebase Walkthrough by Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../dev/how_to/how_to.html">
+     Developer How-To Guide
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../dev/how_to/debugging_tvm.html">
+       Debugging TVM
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../dev/how_to/relay_add_op.html">
+       Adding an Operator to Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../dev/how_to/relay_add_pass.html">
+       Adding a Compiler Pass to Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../dev/how_to/relay_bring_your_own_codegen.html">
+       Bring Your Own Codegen To TVM
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../dev/how_to/pytest_target_parametrization.html">
+       Python Target Parametrization
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Design and Architecture
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="runtime.html">
+     TVM Runtime System
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="debugger.html">
+     Debugger
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     将 VM 放入 TVM：Relay Virtual Machine
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introduction_to_module_serialization.html">
+     模块序列化简介
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pass_infra.html">
+     Pass Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="device_target_interactions.html">
+     Device/Target Interactions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="inferbound.html">
+     InferBound Pass
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="hybrid_script.html">
+     Hybrid Frontend Developer Guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="relay_intro.html">
+     Relay IR 简介
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="relay_op_strategy.html">
+     Relay 算子策略
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="convert_layout.html">
+     Convert Layout Pass
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="benchmark.html">
+     基准性能日志格式
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="frontend/tensorflow.html">
+     TensorFlow Frontend
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="security.html">
+     安全指南
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="microtvm_design.html">
+     microTVM Design Document
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="microtvm_project_api.html">
+     microTVM Project API
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="model_library_format.html">
+     Model 库格式
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../topic-guides.html">
+   Topic Guides
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../topic/microtvm/index.html">
+     microTVM: TVM on bare-metal
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../topic/vta/index.html">
+     VTA: Versatile Tensor Accelerator
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topic/vta/install.html">
+       VTA Installation Guide
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../topic/vta/dev/index.html">
+       VTA Design and Developer Guide
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+      <label for="toctree-checkbox-25">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../topic/vta/dev/config.html">
+         VTA Configuration
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../topic/vta/dev/hardware.html">
+         VTA Hardware Guide
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../topic/vta/tutorials/index.html">
+       VTA 教程
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+      <label for="toctree-checkbox-26">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../topic/vta/tutorials/vta_get_started.html">
+         VTA 入门
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../topic/vta/tutorials/matrix_multiply.html">
+         简单的矩阵乘法
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../topic/vta/tutorials/frontend/index.html">
+         编译深度学习模型
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../topic/vta/tutorials/optimize/index.html">
+         优化 Tensor 算子
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../topic/vta/tutorials/autotvm/index.html">
+         自动调优
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../reference-guide.html">
+   Reference Guide
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/>
+  <label for="toctree-checkbox-27">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../reference/langref/index.html">
+     Language Reference
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/>
+    <label for="toctree-checkbox-28">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/langref/relay_expr.html">
+       Expressions in Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/langref/relay_type.html">
+       Relay’s Type System
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/langref/relay_adt.html">
+       Algebraic Data Types in Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/langref/relay_op.html">
+       Relay Core Tensor Operators
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/langref/relay_pattern.html">
+       Pattern Matching in Relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/langref/hybrid_script.html">
+       Hybrid Frontend Language Reference
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../reference/api/python/index.html">
+     Python API
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/>
+    <label for="toctree-checkbox-29">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/runtime.html">
+       tvm.runtime
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/ndarray.html">
+       tvm.runtime.ndarray
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/error.html">
+       tvm.error
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/ir/module.html">
+       tvm.ir.module
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/ir/index.html">
+       tvm.ir
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/target.html">
+       tvm.target
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/tir.html">
+       tvm.tir
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/te.html">
+       tvm.te
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/driver.html">
+       tvm.driver
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/index.html">
+       tvm.relay
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/frontend.html">
+       tvm.relay.frontend
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/nn.html">
+       tvm.relay.nn
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/vision.html">
+       tvm.relay.vision
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/image.html">
+       tvm.relay.image
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/transform.html">
+       tvm.relay.transform
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/analysis.html">
+       tvm.relay.analysis
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/backend.html">
+       tvm.relay.backend
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/dataflow_pattern.html">
+       tvm.relay.dataflow_pattern
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/relay/testing.html">
+       tvm.relay.testing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/autotvm.html">
+       tvm.autotvm
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/auto_scheduler.html">
+       tvm.auto_scheduler
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/rpc.html">
+       tvm.rpc
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/micro.html">
+       tvm.micro
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/contrib.html">
+       tvm.contrib
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/graph_executor.html">
+       tvm.contrib.graph_executor
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/topi.html">
+       tvm.topi
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reference/api/python/vta/index.html">
+       vta
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/api/links.html">
+     Other APIs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/publications.html">
+     Publications
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../refs/index.html">
+   参考
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/>
+  <label for="toctree-checkbox-30">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../refs/_ffi/index.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       _ffi
+      </span>
+     </code>
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" type="checkbox"/>
+    <label for="toctree-checkbox-31">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../refs/_ffi/base.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi.base
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../refs/_ffi/libinfo.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi.libinfo
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../refs/_ffi/object.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi._ctypes.object
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../refs/_ffi/registry.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi.registry
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../refs/_ffi/runtime_ctypes.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         _ffi.runtime_ctypes
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/arch/virtual_machine.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> 导航
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   设计
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     指令集
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ret">
+     Ret
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invokepacked">
+     InvokePacked
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#alloctensor">
+     AllocTensor
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#alloctensorreg">
+     AllocTensorReg
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#allocstorage">
+     AllocStorage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#allocadt">
+     AllocADT
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#allocclosure">
+     AllocClosure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getfield">
+     GetField
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if">
+     If
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gettag">
+     GetTag
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fatal">
+     Fatal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goto">
+     Goto
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invoke">
+     Invoke
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invokeclosure">
+     InvokeClosure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loadconst">
+     LoadConst
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loadconsti">
+     LoadConsti
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#object">
+   Object 表示
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stack-and-state">
+   Stack and State
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dispatch-loop">
+   Dispatch Loop
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vm-compiler">
+   VM Compiler
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   优化
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   序列化
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   未解决的问题
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     如何处理动态形状？
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vm-jit">
+     如何修改 VM 以支持 JIT 编译某些代码路径？
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     如何支持异构执行？
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>将 VM 放入 TVM：Relay Virtual Machine</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 导航 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   设计
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     指令集
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ret">
+     Ret
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invokepacked">
+     InvokePacked
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#alloctensor">
+     AllocTensor
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#alloctensorreg">
+     AllocTensorReg
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#allocstorage">
+     AllocStorage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#allocadt">
+     AllocADT
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#allocclosure">
+     AllocClosure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getfield">
+     GetField
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if">
+     If
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gettag">
+     GetTag
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fatal">
+     Fatal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goto">
+     Goto
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invoke">
+     Invoke
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invokeclosure">
+     InvokeClosure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loadconst">
+     LoadConst
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loadconsti">
+     LoadConsti
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#object">
+   Object 表示
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stack-and-state">
+   Stack and State
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dispatch-loop">
+   Dispatch Loop
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vm-compiler">
+   VM Compiler
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   优化
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   序列化
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   未解决的问题
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     如何处理动态形状？
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vm-jit">
+     如何修改 VM 以支持 JIT 编译某些代码路径？
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     如何支持异构执行？
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="vm-tvm-relay-virtual-machine">
+<h1>将 VM 放入 TVM：Relay Virtual Machine<a class="headerlink" href="#vm-tvm-relay-virtual-machine" title="此标题的永久链接">#</a></h1>
+<p>Relay是一种新的程序表示方法，它实现了大量机器学习程序的表示和优化。不幸的是，通过支持更有表现力的程序集，引入了一些新的执行挑战。</p>
+<p>Relay 的解释器可以执行完整的语言，但是有明显的限制，这使得它不适合生产部署。它被构造成执行 AST 遍历来执行程序的低效解释器。这种方法在概念上很简单，但效率很低，因为 AST 遍历严重依赖于其间接性。</p>
+<p>在编译动态代码方面还有更多的挑战，比如动态调度（dynamic scheduling）和分配（allocation）、全动态张量形状（fully dynamic tensor shapes）和控制流（control flow）。解释器为这些提供了简单的解决方案，但没有足够引人注目或优化的。</p>
+<p>第二种执行机制是现有的图执行程序。为了使 Relay 程序达到这个目标，将它们中的一小部分编译成旧的图格式，并在运行时执行它们。图执行器提供了快速执行体验，但只适用于非常有限的 Relay 程序子集。</p>
+<p>另一种替代的但不是标准的方法是 Relay 的提前编译器（ahead-of-time compiler），它将 Relay 程序编译到包含提前实现的共享库中。提前编译器提供了令人信服的性能，但是很难扩展和使用，这只能通过修改代码生成和优化机制来实现。</p>
+<p>Relay 虚拟机旨在成为平衡这些相互竞争的方法的框架，提供动态执行环境，可以通过灵活的扩展机制进行扩展、插装，并与其他方法(如提前编译)集成。</p>
+<p>设计虚拟机是为了在部署和执行 Relay 程序时在性能和灵活性之间取得平衡，而不放弃 TVM 的好处。</p>
+<p>在编程语言和系统中，虚拟机(VM)设计是得到充分研究的领域，已经有各种成熟的和嵌入式编程语言的虚拟机设计。</p>
+<p>以前的语言 VM 设计都是针对传统程序的执行配置文件进行了大量的定制。传统程序操作小标量值，由大量低级指令组成。指令的数量要求指令的执行和调度非常高效。在机器学习的背景下，主要使用张量值，使用(相对)少量的高级指令。ML 程序的成本中心是在大输入上昂贵的 operator 调用，例如 GEMM 或卷积。由于 ML 程序所展示的执行概要，在标量 vm 中进行微优化的重要性大大降低。</p>
+<p>TVM 为视觉模型提供了强有力的支持，但我们希望发展到支持更广泛的模型。图执行器能够利用输入图的完全静态特性来执行主动优化，例如完全静态分配和最佳内存重用。当引入使用控制流、递归、动态形状（dynamic shapes）和动态分配（dynamic allocation）的模型时，必须改变执行的工作方式。Relay 的虚拟机是自然的选择。</p>
+<p>本文档的其余部分提供了 Relay 虚拟机设计及其指令集的高级概述。</p>
+<section id="id1">
+<h2>设计<a class="headerlink" href="#id1" title="此标题的永久链接">#</a></h2>
+<p>VM 的设计注重简单性，而不牺牲性能。为了实现这一点，着重设计了张量 VM，而不是标量 VM。</p>
+<p>在张量 VM 设置中，优化了对象的廉价“allocation”(通过尝试避免真正的 allocation)、静态片段（static fragments）的重用和动态形状(即 jagged tensors)的能力。</p>
+<section id="id2">
+<h3>指令集<a class="headerlink" href="#id2" title="此标题的永久链接">#</a></h3>
+<p>指令集和指令（instruction）表示的选择是虚拟机最关键的设计决策。指令的当前表示形式是 tagged union，包含 op-code 和 data payload。</p>
+<p>重要的设计决策是指令的抽象级别（RISC vs. CISC）以及它们如何获取数据（固定宽度指令编码（fixed-width instruction encoding） vs.可变长度指令编码（variable-length encoding））。当前版本更接近 CISC，使用了像 AllocTensor 这样的复杂指令，并且由于在指令中包含了形状，所以是可变长度的。当前的指令集是非常高级的，大致对应于 Relay 中的高级运算。</p>
+</section>
+<section id="ret">
+<h3>Ret<a class="headerlink" href="#ret" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName dst</p></li>
+<li><p>RegName result</p></li>
+</ul>
+<p>将 <code class="docutils literal notranslate"><span class="pre">result</span></code> 寄存器（register）中的对象返回给调用者的 <code class="docutils literal notranslate"><span class="pre">dst</span></code> 寄存器。</p>
+</section>
+<section id="invokepacked">
+<h3>InvokePacked<a class="headerlink" href="#invokepacked" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>Index packed_index</p></li>
+<li><p>Index arity</p></li>
+<li><p>Index output_size</p></li>
+<li><p>RegName* packed_args</p></li>
+</ul>
+<p>调用 <code class="docutils literal notranslate"><span class="pre">packed_index</span></code> 所表示的打包函数。<code class="docutils literal notranslate"><span class="pre">arity</span></code> 和 <code class="docutils literal notranslate"><span class="pre">output_size</span></code> 用来告诉虚拟机预期有多少输入和输出。<code class="docutils literal notranslate"><span class="pre">packed_args</span></code> 存储参数寄存器（register）列表。注意 <code class="docutils literal notranslate"><span class="pre">Index</span></code> 是 <code class="docutils literal notranslate"><span class="pre">int64_t</span></code> 的别名，它也会在其他指令中使用。</p>
+</section>
+<section id="alloctensor">
+<h3>AllocTensor<a class="headerlink" href="#alloctensor" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName dst</p></li>
+<li><p>RegName storage</p></li>
+<li><p>uint32_t ndim</p></li>
+<li><p>int64_t* shape</p></li>
+<li><p>DLDataType dtype</p></li>
+</ul>
+<p>从给定的存储块（storage block）<code class="docutils literal notranslate"><span class="pre">storage</span></code> 中分配使用常量 shape（存储在 <code class="docutils literal notranslate"><span class="pre">shape</span></code> 中）和 <code class="docutils literal notranslate"><span class="pre">dtype</span></code> 的张量值。结果保存在 register <code class="docutils literal notranslate"><span class="pre">dst</span></code>。</p>
+</section>
+<section id="alloctensorreg">
+<h3>AllocTensorReg<a class="headerlink" href="#alloctensorreg" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName dst</p></li>
+<li><p>RegName storage</p></li>
+<li><p>RegName shape_register</p></li>
+<li><p>DLDataType dtype</p></li>
+</ul>
+<p>从给定的存储块（存储在 <code class="docutils literal notranslate"><span class="pre">storage</span></code>）中分配适当形状的张量值（存储在 <code class="docutils literal notranslate"><span class="pre">shape_register</span></code> 中）和 <code class="docutils literal notranslate"><span class="pre">dtype</span></code>。结果保存在 register <code class="docutils literal notranslate"><span class="pre">dst</span></code>。</p>
+</section>
+<section id="allocstorage">
+<h3>AllocStorage<a class="headerlink" href="#allocstorage" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName dst</p></li>
+<li><p>RegName size</p></li>
+<li><p>RegName alignment</p></li>
+<li><p>DLDataType dtype_hint</p></li>
+</ul>
+<p>使用给定的 <code class="docutils literal notranslate"><span class="pre">size</span></code>、<code class="docutils literal notranslate"><span class="pre">alignment</span></code>，数据类型和 <code class="docutils literal notranslate"><span class="pre">dtype_hint</span></code> 分配存储块。分配的存储块存储在寄存器 <code class="docutils literal notranslate"><span class="pre">dst</span></code> 中。</p>
+</section>
+<section id="allocadt">
+<h3>AllocADT<a class="headerlink" href="#allocadt" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName dst</p></li>
+<li><p>Index tag</p></li>
+<li><p>Index num_fields</p></li>
+<li><p>RegName* datatype_fields</p></li>
+</ul>
+<p>使用来自注册表（register）<code class="docutils literal notranslate"><span class="pre">datatype_fields</span></code> 的 <code class="docutils literal notranslate"><span class="pre">num_fields</span></code> 条目分配带有标记 <code class="docutils literal notranslate"><span class="pre">tag</span></code> 的数据类型。结果保存在 register <code class="docutils literal notranslate"><span class="pre">dst</span></code>。</p>
+</section>
+<section id="allocclosure">
+<h3>AllocClosure<a class="headerlink" href="#allocclosure" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName dst</p></li>
+<li><p>Index clo_index</p></li>
+<li><p>Index num_freevar</p></li>
+<li><p>RegName* free_vars;</p></li>
+</ul>
+<p>分配闭包，将 VMFunction 在 <code class="docutils literal notranslate"><span class="pre">clo_index</span></code> 处作为其代码，并从 <code class="docutils literal notranslate"><span class="pre">free_vars</span></code> 寄存器中分配 <code class="docutils literal notranslate"><span class="pre">num_freevar</span></code> 条目。结果保存在 register <code class="docutils literal notranslate"><span class="pre">dst</span></code>。</p>
+</section>
+<section id="getfield">
+<h3>GetField<a class="headerlink" href="#getfield" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName dst</p></li>
+<li><p>RegName object</p></li>
+<li><p>Index field_index</p></li>
+</ul>
+<p>用索引 <code class="docutils literal notranslate"><span class="pre">field_index</span></code> 从 <code class="docutils literal notranslate"><span class="pre">object</span></code> 获取字段值。结果保存在 register <code class="docutils literal notranslate"><span class="pre">dst</span></code>。</p>
+</section>
+<section id="if">
+<h3>If<a class="headerlink" href="#if" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName test</p></li>
+<li><p>RegName target</p></li>
+<li><p>Index true_offset</p></li>
+<li><p>Index false_offset</p></li>
+</ul>
+<p>检查寄存器 <code class="docutils literal notranslate"><span class="pre">test</span></code> 处的对象是否等于 <code class="docutils literal notranslate"><span class="pre">target</span></code>。如果相等，则相对跳转为 <code class="docutils literal notranslate"><span class="pre">true_offset</span></code>，否则相对跳转为 <code class="docutils literal notranslate"><span class="pre">false_offset</span></code>。</p>
+</section>
+<section id="gettag">
+<h3>GetTag<a class="headerlink" href="#gettag" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName object</p></li>
+<li><p>RegName dst</p></li>
+</ul>
+<p>在寄存器 <code class="docutils literal notranslate"><span class="pre">object</span></code> 中获取 ADT 对象的对象 tag。结果保存在 register <code class="docutils literal notranslate"><span class="pre">dst</span></code>。</p>
+</section>
+<section id="fatal">
+<h3>Fatal<a class="headerlink" href="#fatal" title="此标题的永久链接">#</a></h3>
+<p>虚拟机执行失败。</p>
+</section>
+<section id="goto">
+<h3>Goto<a class="headerlink" href="#goto" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>Index pc_offset</p></li>
+</ul>
+<p>通过 <code class="docutils literal notranslate"><span class="pre">pc_offset</span></code> 进行相对无条件跳转。</p>
+</section>
+<section id="invoke">
+<h3>Invoke<a class="headerlink" href="#invoke" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>Index func_index</p></li>
+</ul>
+<p>在 <code class="docutils literal notranslate"><span class="pre">func_index</span></code> 调用函数，消耗 VMFunction 的 arity 字段中包含的参数数量。</p>
+</section>
+<section id="invokeclosure">
+<h3>InvokeClosure<a class="headerlink" href="#invokeclosure" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName closure</p></li>
+<li><p>Index num_closure_args</p></li>
+<li><p>RegName* closure_args</p></li>
+</ul>
+<p>调用 <code class="docutils literal notranslate"><span class="pre">closure</span></code>，消耗闭包的 VMFunction 中声明的参数数量。</p>
+</section>
+<section id="loadconst">
+<h3>LoadConst<a class="headerlink" href="#loadconst" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>RegName dst</p></li>
+<li><p>Index const_index</p></li>
+</ul>
+<p>从常量池中加载常量 <code class="docutils literal notranslate"><span class="pre">const_index</span></code>。结果保存在 register <code class="docutils literal notranslate"><span class="pre">dst</span></code>。</p>
+</section>
+<section id="loadconsti">
+<h3>LoadConsti<a class="headerlink" href="#loadconsti" title="此标题的永久链接">#</a></h3>
+<p><strong>参数</strong>：</p>
+<ul class="simple">
+<li><p>Index val</p></li>
+<li><p>RegName dst</p></li>
+</ul>
+<p>加载常量整数 <code class="docutils literal notranslate"><span class="pre">val</span></code> 来注册 <code class="docutils literal notranslate"><span class="pre">dst</span></code>。结果是 0-rank 阶张量。</p>
+</section>
+</section>
+<section id="object">
+<h2>Object 表示<a class="headerlink" href="#object" title="此标题的永久链接">#</a></h2>
+<p>利用对象协议来表示 VM 使用的对象。</p>
+<p>目前，有三种类型的对象 <code class="docutils literal notranslate"><span class="pre">NDArray</span></code>、<code class="docutils literal notranslate"><span class="pre">ADT</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Closure</span></code> 对象，分别用来表示张量、元组/列表和闭包数据。它们的详细信息可以分别在 <a class="reference external" href="https://github.com/apache/tvm/blob/main/include/tvm/runtime/ndarray.h">include/tvm/runtime/ndarray.h</a>、<a class="reference external" href="https://github.com/apache/tvm/blob/main/include/tvm/runtime/vm/vm.h">include/tvm/runtime/vm/vm.h</a> 和 <a class="reference external" href="https://github.com/apache/tvm/blob/main/include/tvm/runtime/container.h">include/tvm/runtime/container.h</a> 中找到。</p>
+</section>
+<section id="stack-and-state">
+<h2>Stack and State<a class="headerlink" href="#stack-and-state" title="此标题的永久链接">#</a></h2>
+<p>Relay VM 维护了 stack frame，其中包含关于如何恢复前一个调用的信息。在连续空间（虚拟 register 文件）中为每个函数分配 register。</p>
+<p>跟踪已调用的一组 Relay 函数，一个指向其字节码的指针，一个指向字节码的偏移量（称为程序计数器（program counter））。</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span><span class="w"> </span><span class="nc">VirtualMachine</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">VMFrame</span><span class="o">&gt;</span><span class="w"> </span><span class="n">frames</span><span class="p">;</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="c1">// Current function.</span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">func_index</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Pointer into the current function&#39;s instructions.</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Instruction</span><span class="o">*</span><span class="w"> </span><span class="n">code</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Current program counter relative to the code pointer.</span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">pc</span><span class="p">;</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</section>
+<section id="dispatch-loop">
+<h2>Dispatch Loop<a class="headerlink" href="#dispatch-loop" title="此标题的永久链接">#</a></h2>
+<p>VM 的关键部分是 dispatch loop。dispatch loop 通常支配虚拟机的执行时间，但通过实验发现，对于 Relay 来说并非如此。刚刚实现了简单的 <code class="docutils literal notranslate"><span class="pre">switch</span></code>/<code class="docutils literal notranslate"><span class="pre">goto</span></code> dispatch loop，它基于 instruction op code 进行 dispatch。</p>
+<p>此循环由 <code class="docutils literal notranslate"><span class="pre">VirtualMachine::Run()</span></code> 实现。</p>
+</section>
+<section id="vm-compiler">
+<h2>VM Compiler<a class="headerlink" href="#vm-compiler" title="此标题的永久链接">#</a></h2>
+<p>这个基础结构的一个重要部分是编译器，从 Relay 的完整 IR 到 bytecode 序列。VM 编译器会将 <code class="docutils literal notranslate"><span class="pre">tvm::relay::Module</span></code> 变换为 <code class="docutils literal notranslate"><span class="pre">tvm::relay::vm::Executable</span></code>。可执行文件包含一组编译函数，编译函数包含在 <code class="docutils literal notranslate"><span class="pre">tvm::relay::vm::Function</span></code> 中。函数包含关于函数的元数据以及已编译的字节码。然后，发出的可执行对象可以通过 <code class="docutils literal notranslate"><span class="pre">tvm::relay::vm::VirtualMachine</span></code> 对象加载和运行。有关数据结构的完整定义，请参见 <a class="reference external" href="https://github.com/apache/tvm/blob/main/include/tvm/runtime/vm/executable.h">include/tvm/runtime/vm/executable.h</a> 和 <a class="reference external" href="https://github.com/apache/tvm/blob/main/include/tvm/runtime/vm/vm.h">include/tvm/runtime/vm/vm.h</a>。</p>
+</section>
+<section id="id3">
+<h2>优化<a class="headerlink" href="#id3" title="此标题的永久链接">#</a></h2>
+<p>VM 编译器需要相当多的优化。它们中的每一个都被实现为由 Relay pass manager 管理的 pass。</p>
+<p>标记为 <code class="docutils literal notranslate"><span class="pre">TODO</span></code> 的优化还没有实现。</p>
+<ul class="simple">
+<li><p>A-Normal Form</p></li>
+<li><p>Lambda Lift (see <a class="reference external" href="https://github.com/apache/tvm/blob/main/src/relay/backend/vm/lambda_lift.cc">src/relay/vm/lambda_lift.cc</a>)</p></li>
+<li><p>Inline Primitives (see <a class="reference external" href="https://github.com/apache/tvm/blob/main/src/relay/backend/vm/inline_primitives.cc">src/relay/vm/inline_primitives.cc</a>)</p></li>
+<li><p>Constant Pool Layout (see <a class="reference external" href="https://github.com/apache/tvm/blob/main/src/relay/backend/vm/compiler.cc">src/relay/backend/vm/compiler.cc</a>)</p></li>
+<li><p>Tail Call Optimization (TODO)</p></li>
+<li><p>Liveness Analysis (TODO)</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>序列化<a class="headerlink" href="#id4" title="此标题的永久链接">#</a></h2>
+<p>序列化和反序列化由 Relay VM 编译器生成的可执行文件是必须的，因为可能想要将模型保存到磁盘上，然后执行推断。之前，Relay 已经在 json 文件中为图执行器生成了序列化的形式。但是，同样的格式并不直接适用于 VM，因为它会发出字节码，而不是图风格的程序。可执行文件的序列化本质上需要处理模型特定的（如 weights 和 kernels）和 VM 相关的（如字节码和全局函数名）数据。</p>
+<p>对于 kernels，可以方便地利用现有的 TVM infra 来保存和加载已编译的库模块。这里只关注以二进制格式序列化其他几个组件，这些二进制格式按照以下部分的顺序组织。</p>
+<ul class="simple">
+<li><p>全局部分：包含虚拟机使用的全局变量（函数名）。</p></li>
+<li><p>Constant 部分：用于存储虚拟机的 constant pool（即模型的 weights）。</p></li>
+<li><p>原语名称部分：为了适应将由虚拟机调用的原语算子名称列表（即以 <code class="docutils literal notranslate"><span class="pre">fused_</span></code> 开头的名称）引入。原语名称被用作在编译后的 kernel 库中查找函数指针的符号。</p></li>
+<li><p>Code 部分：VM 函数，包括字节码，都在这个部分。dispatching 循环遍历本部分以获取执行指令。</p></li>
+</ul>
+<p>因此，与包含权重（<code class="docutils literal notranslate"><span class="pre">.params</span></code>）、graph json （.json）和编译的 kernel 库（<code class="docutils literal notranslate"><span class="pre">.so</span></code>）的图执行器工件不同，序列化的可执行工件是由 Relay 对象文件（<code class="docutils literal notranslate"><span class="pre">.ro</span></code>）和编译的 kernel 库（<code class="docutils literal notranslate"><span class="pre">.so</span></code>）组成的。</p>
+<p>实现了 <code class="docutils literal notranslate"><span class="pre">save</span></code> 函数来将可执行文件存储到磁盘并将其序列化为上述格式。同时，使用 <code class="docutils literal notranslate"><span class="pre">load_exec</span></code> 函数加载序列化的 kernel 二进制和可执行的相关二进制代码，这些代码将再次用于实例化 VM 对象。更多示例请参考 <a class="reference external" href="https://github.com/apache/tvm/blob/main/tests/python/relay/test_vm_serialization.py">test_vm_serialization.py</a>。</p>
+</section>
+<section id="id5">
+<h2>未解决的问题<a class="headerlink" href="#id5" title="此标题的永久链接">#</a></h2>
+<section id="id6">
+<h3>如何处理动态形状？<a class="headerlink" href="#id6" title="此标题的永久链接">#</a></h3>
+<p>动态形状支持是 TVM 升级 Relay，TVM 编译器正在进行的工作。关于动态形状支持的最新更新，建议在 TVM 的讨论<a class="reference external" href="https://discuss.tvm.apache.org/">论坛</a>中进行追踪更新。</p>
+</section>
+<section id="vm-jit">
+<h3>如何修改 VM 以支持 JIT 编译某些代码路径？<a class="headerlink" href="#vm-jit" title="此标题的永久链接">#</a></h3>
+<p>在代码生成空间中，仍然有许多需要分析的权衡，VM 被设计得非常灵活，所以可以为未来的实验修改它。</p>
+</section>
+<section id="id7">
+<h3>如何支持异构执行？<a class="headerlink" href="#id7" title="此标题的永久链接">#</a></h3>
+<p>异构执行应该是开箱即用的，假设已经注解了适当的设备副本。为了正确地做到这一点，需要运行设备 annotation 和 copying passes。</p>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="debugger.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Debugger</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="introduction_to_module_serialization.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">模块序列化简介</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By xinetzone<br/>
+  
+      &copy; Copyright 2022, xinetzone.<br/>
+    Last updated on 2023-02-02, 20:15:57.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
