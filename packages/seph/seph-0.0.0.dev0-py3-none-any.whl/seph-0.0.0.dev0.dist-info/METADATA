@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: seph
+Version: 0.0.0.dev0
+Summary: Satellite Ephemerides
+Author-email: "Rafael R. L. Benevides" <rafael.rl.benevides@gmail.com>
+Keywords: orbit,TLE,satellite,mission analysis,sgp4,propagator,astrodynamics
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Telecommunications Industry
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# seph
+Satellite Ephemerides
