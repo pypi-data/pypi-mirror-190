@@ -1,0 +1,14 @@
+compute-capacity-report
+***********************
+
+
+Description
+===========
+
+The availability domain for which the report was generated.
+
+
+Available Commands
+==================
+
+* create
