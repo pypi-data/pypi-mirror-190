@@ -1,0 +1,8 @@
+sanic_mail/__init__.py,sha256=gKd1iBSAQY0XnT7qVYqBGxv-f7nqmyoO38pRXiMeDLk,6463
+sanic_mail/exceptions.py,sha256=c8Bfr39K4CwPf9N7e7uf7D3RXXkQIZq_c6zVwPdZ430,83
+sanic_mail/utils.py,sha256=AskDLXfl8dlF_tQZCd3DH8e0GVtk3xnOMsqmeACRdI8,3652
+sanic_mail-0.0.3.dist-info/LICENSE,sha256=W2BUhL5Ku9qEZmKfXlxnOuaXbuchNNOH0YzjzqKtClI,1081
+sanic_mail-0.0.3.dist-info/METADATA,sha256=C5Sutx-tnk8K5bqLx2NWdjDLiAP15mrV9Ku4MD4QgrE,5068
+sanic_mail-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sanic_mail-0.0.3.dist-info/top_level.txt,sha256=Tmiw6ZCkCQDP57XXPSqwePy-i0mLiL3qd5vRV8JUGi4,11
+sanic_mail-0.0.3.dist-info/RECORD,,
