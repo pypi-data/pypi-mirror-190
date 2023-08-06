@@ -1,0 +1,5 @@
+taxonomy-0.10.0.dist-info/METADATA,sha256=WqQ_csbsHMLge3an2S5k4aLARJIHVTBo33hGZFbWvKE,8449
+taxonomy-0.10.0.dist-info/WHEEL,sha256=FN7GagouQErKQgVpIu3oZGgk_m5XuMMMRiIDAAzfLTg,133
+taxonomy/__init__.py,sha256=cETNYXpxDr_vOnagFDciCmpzzLgObnI1TdPFZil9W-Q,115
+taxonomy/taxonomy.cpython-311-aarch64-linux-gnu.so,sha256=1FMMRMFh0-U0BSKlroUPuLhUkWhtaChwsHR75LKogpU,920216
+taxonomy-0.10.0.dist-info/RECORD,,
