@@ -1,0 +1,825 @@
+{
+    "names": [
+        {
+            "name": "albedo",
+            "count": 1749
+        },
+        {
+            "name": "alhaitham",
+            "count": 875
+        },
+        {
+            "name": "aloy",
+            "count": 57
+        },
+        {
+            "name": "amber",
+            "count": 2161
+        },
+        {
+            "name": "arataki_itto",
+            "count": 13
+        },
+        {
+            "name": "barbara",
+            "count": 1301
+        },
+        {
+            "name": "beidou",
+            "count": 1040
+        },
+        {
+            "name": "bennett",
+            "count": 482
+        },
+        {
+            "name": "candace",
+            "count": 277
+        },
+        {
+            "name": "chongyun",
+            "count": 943
+        },
+        {
+            "name": "collei",
+            "count": 438
+        },
+        {
+            "name": "cyno",
+            "count": 735
+        },
+        {
+            "name": "diluc",
+            "count": 2479
+        },
+        {
+            "name": "diona",
+            "count": 655
+        },
+        {
+            "name": "dori",
+            "count": 166
+        },
+        {
+            "name": "eula",
+            "count": 3648
+        },
+        {
+            "name": "faruzan",
+            "count": 427
+        },
+        {
+            "name": "fischl",
+            "count": 2046
+        },
+        {
+            "name": "ganyu",
+            "count": 8754
+        },
+        {
+            "name": "gorou",
+            "count": 958
+        },
+        {
+            "name": "hu_tao",
+            "count": 55
+        },
+        {
+            "name": "jean",
+            "count": 1847
+        },
+        {
+            "name": "kaedehara_kazuha",
+            "count": 8
+        },
+        {
+            "name": "kaeya",
+            "count": 1939
+        },
+        {
+            "name": "kamisato_ayaka",
+            "count": 11
+        },
+        {
+            "name": "kamisato_ayato",
+            "count": 2
+        },
+        {
+            "name": "keqing",
+            "count": 4114
+        },
+        {
+            "name": "klee",
+            "count": 2570
+        },
+        {
+            "name": "kujou_sara",
+            "count": 100
+        },
+        {
+            "name": "kuki_shinobu",
+            "count": 19
+        },
+        {
+            "name": "layla",
+            "count": 566
+        },
+        {
+            "name": "lisa",
+            "count": 1265
+        },
+        {
+            "name": "mona",
+            "count": 3984
+        },
+        {
+            "name": "nahida",
+            "count": 2976
+        },
+        {
+            "name": "nilou",
+            "count": 2149
+        },
+        {
+            "name": "ningguang",
+            "count": 1047
+        },
+        {
+            "name": "noelle",
+            "count": 1411
+        },
+        {
+            "name": "qiqi",
+            "count": 1000
+        },
+        {
+            "name": "raiden_shogun",
+            "count": 124
+        },
+        {
+            "name": "razor",
+            "count": 642
+        },
+        {
+            "name": "rosaria",
+            "count": 783
+        },
+        {
+            "name": "sangonomiya_kokomi",
+            "count": 10
+        },
+        {
+            "name": "sayu",
+            "count": 386
+        },
+        {
+            "name": "shenhe",
+            "count": 2396
+        },
+        {
+            "name": "shikanoin_heizou",
+            "count": 1
+        },
+        {
+            "name": "sucrose",
+            "count": 898
+        },
+        {
+            "name": "tartaglia",
+            "count": 3074
+        },
+        {
+            "name": "thoma",
+            "count": 954
+        },
+        {
+            "name": "tighnari",
+            "count": 980
+        },
+        {
+            "name": "traveler",
+            "count": 243
+        },
+        {
+            "name": "venti",
+            "count": 4191
+        },
+        {
+            "name": "wanderer",
+            "count": 967
+        },
+        {
+            "name": "xiangling",
+            "count": 708
+        },
+        {
+            "name": "xiao",
+            "count": 5047
+        },
+        {
+            "name": "xingqiu",
+            "count": 908
+        },
+        {
+            "name": "xinyan",
+            "count": 640
+        },
+        {
+            "name": "yae_miko",
+            "count": 84
+        },
+        {
+            "name": "yanfei",
+            "count": 1122
+        },
+        {
+            "name": "yaoyao",
+            "count": 282
+        },
+        {
+            "name": "yelan",
+            "count": 2071
+        },
+        {
+            "name": "yoimiya",
+            "count": 1979
+        },
+        {
+            "name": "yun_jin",
+            "count": 2
+        },
+        {
+            "name": "zhongli",
+            "count": 4263
+        },
+        {
+            "name": "あらたきいっと",
+            "count": 32
+        },
+        {
+            "name": "うんきん",
+            "count": 11
+        },
+        {
+            "name": "えんひ",
+            "count": 13
+        },
+        {
+            "name": "かえではらかずは",
+            "count": 13
+        },
+        {
+            "name": "かみさとあやか",
+            "count": 49
+        },
+        {
+            "name": "かみさとあやと",
+            "count": 6
+        },
+        {
+            "name": "かんう",
+            "count": 72
+        },
+        {
+            "name": "ぎょうこう",
+            "count": 11
+        },
+        {
+            "name": "くじょうさら",
+            "count": 14
+        },
+        {
+            "name": "こくせい",
+            "count": 53
+        },
+        {
+            "name": "さゆ",
+            "count": 37
+        },
+        {
+            "name": "さんごのみやここみ",
+            "count": 43
+        },
+        {
+            "name": "しかのいんへいぞう",
+            "count": 4
+        },
+        {
+            "name": "しょう",
+            "count": 135
+        },
+        {
+            "name": "しょうり",
+            "count": 24
+        },
+        {
+            "name": "しんえん",
+            "count": 2
+        },
+        {
+            "name": "しんかく",
+            "count": 35
+        },
+        {
+            "name": "たびびと",
+            "count": 1
+        },
+        {
+            "name": "ちょううん",
+            "count": 2
+        },
+        {
+            "name": "なな",
+            "count": 16
+        },
+        {
+            "name": "ほくと",
+            "count": 7
+        },
+        {
+            "name": "やえみこ",
+            "count": 82
+        },
+        {
+            "name": "ゆくあき",
+            "count": 10
+        },
+        {
+            "name": "よいみや",
+            "count": 75
+        },
+        {
+            "name": "らいでんしょうぐん",
+            "count": 23
+        },
+        {
+            "name": "アルハイゼン",
+            "count": 1577
+        },
+        {
+            "name": "アルベド",
+            "count": 3943
+        },
+        {
+            "name": "アンバー",
+            "count": 6846
+        },
+        {
+            "name": "アーロイ",
+            "count": 64
+        },
+        {
+            "name": "イェラン",
+            "count": 300
+        },
+        {
+            "name": "ウェンティ",
+            "count": 8162
+        },
+        {
+            "name": "エウルア",
+            "count": 8447
+        },
+        {
+            "name": "ガイア",
+            "count": 4322
+        },
+        {
+            "name": "キャンディス",
+            "count": 766
+        },
+        {
+            "name": "クレー",
+            "count": 9671
+        },
+        {
+            "name": "コレイ",
+            "count": 1345
+        },
+        {
+            "name": "ゴロー",
+            "count": 2061
+        },
+        {
+            "name": "シャンリン",
+            "count": 168
+        },
+        {
+            "name": "ジン",
+            "count": 6038
+        },
+        {
+            "name": "スクロース",
+            "count": 2684
+        },
+        {
+            "name": "セノ",
+            "count": 1637
+        },
+        {
+            "name": "タルタリヤ",
+            "count": 9398
+        },
+        {
+            "name": "ティナリ",
+            "count": 2081
+        },
+        {
+            "name": "ディオナ",
+            "count": 2642
+        },
+        {
+            "name": "ディルック",
+            "count": 5312
+        },
+        {
+            "name": "トーマ",
+            "count": 1907
+        },
+        {
+            "name": "ドリー",
+            "count": 463
+        },
+        {
+            "name": "ナヒーダ",
+            "count": 8701
+        },
+        {
+            "name": "ニィロウ",
+            "count": 4522
+        },
+        {
+            "name": "ノエル",
+            "count": 4382
+        },
+        {
+            "name": "バーバラ",
+            "count": 8231
+        },
+        {
+            "name": "ファルザン",
+            "count": 910
+        },
+        {
+            "name": "フィッシュル",
+            "count": 6204
+        },
+        {
+            "name": "フータオ",
+            "count": 1573
+        },
+        {
+            "name": "ベネット",
+            "count": 1293
+        },
+        {
+            "name": "モナ",
+            "count": 12354
+        },
+        {
+            "name": "ヨォーヨ",
+            "count": 763
+        },
+        {
+            "name": "リサ",
+            "count": 4036
+        },
+        {
+            "name": "レイラ",
+            "count": 1215
+        },
+        {
+            "name": "レザー",
+            "count": 1683
+        },
+        {
+            "name": "ロサリア",
+            "count": 2803
+        },
+        {
+            "name": "七七",
+            "count": 5903
+        },
+        {
+            "name": "丽莎",
+            "count": 629
+        },
+        {
+            "name": "久岐忍",
+            "count": 1976
+        },
+        {
+            "name": "九条裟罗",
+            "count": 350
+        },
+        {
+            "name": "九条裟羅",
+            "count": 3094
+        },
+        {
+            "name": "云堇",
+            "count": 1131
+        },
+        {
+            "name": "五郎",
+            "count": 561
+        },
+        {
+            "name": "优菈",
+            "count": 3129
+        },
+        {
+            "name": "八重神子",
+            "count": 16831
+        },
+        {
+            "name": "凝光",
+            "count": 3879
+        },
+        {
+            "name": "凯亚",
+            "count": 401
+        },
+        {
+            "name": "刻晴",
+            "count": 15244
+        },
+        {
+            "name": "北斗",
+            "count": 2899
+        },
+        {
+            "name": "可莉",
+            "count": 2876
+        },
+        {
+            "name": "坎蒂丝",
+            "count": 187
+        },
+        {
+            "name": "埃洛伊",
+            "count": 4
+        },
+        {
+            "name": "多莉",
+            "count": 193
+        },
+        {
+            "name": "夜兰",
+            "count": 1680
+        },
+        {
+            "name": "夜蘭",
+            "count": 5290
+        },
+        {
+            "name": "妮露",
+            "count": 2207
+        },
+        {
+            "name": "安柏",
+            "count": 1220
+        },
+        {
+            "name": "宵宫",
+            "count": 1885
+        },
+        {
+            "name": "宵宮",
+            "count": 4230
+        },
+        {
+            "name": "托马",
+            "count": 178
+        },
+        {
+            "name": "提纳里",
+            "count": 385
+        },
+        {
+            "name": "放浪者",
+            "count": 2259
+        },
+        {
+            "name": "旅人",
+            "count": 1241
+        },
+        {
+            "name": "旅行者",
+            "count": 724
+        },
+        {
+            "name": "早柚",
+            "count": 1840
+        },
+        {
+            "name": "枫原万叶",
+            "count": 896
+        },
+        {
+            "name": "柯莱",
+            "count": 344
+        },
+        {
+            "name": "楓原万葉",
+            "count": 4769
+        },
+        {
+            "name": "流浪者",
+            "count": 338
+        },
+        {
+            "name": "温迪",
+            "count": 2136
+        },
+        {
+            "name": "烟绯",
+            "count": 614
+        },
+        {
+            "name": "煙緋",
+            "count": 2972
+        },
+        {
+            "name": "珊瑚宫心海",
+            "count": 1347
+        },
+        {
+            "name": "珊瑚宮心海",
+            "count": 5615
+        },
+        {
+            "name": "珐露珊",
+            "count": 290
+        },
+        {
+            "name": "班尼特",
+            "count": 248
+        },
+        {
+            "name": "琴",
+            "count": 1164
+        },
+        {
+            "name": "瑶瑶",
+            "count": 592
+        },
+        {
+            "name": "甘雨",
+            "count": 31220
+        },
+        {
+            "name": "申鶴",
+            "count": 6503
+        },
+        {
+            "name": "申鹤",
+            "count": 2624
+        },
+        {
+            "name": "砂糖",
+            "count": 763
+        },
+        {
+            "name": "神里綾人",
+            "count": 3529
+        },
+        {
+            "name": "神里綾華",
+            "count": 13002
+        },
+        {
+            "name": "神里绫人",
+            "count": 359
+        },
+        {
+            "name": "神里绫华",
+            "count": 3719
+        },
+        {
+            "name": "纳西妲",
+            "count": 3338
+        },
+        {
+            "name": "罗莎莉亚",
+            "count": 393
+        },
+        {
+            "name": "胡桃",
+            "count": 22516
+        },
+        {
+            "name": "艾尔海森",
+            "count": 185
+        },
+        {
+            "name": "芭芭拉",
+            "count": 2761
+        },
+        {
+            "name": "荒泷一斗",
+            "count": 310
+        },
+        {
+            "name": "荒瀧一斗",
+            "count": 1808
+        },
+        {
+            "name": "莫娜",
+            "count": 2995
+        },
+        {
+            "name": "莱依拉",
+            "count": 366
+        },
+        {
+            "name": "菲谢尔",
+            "count": 1636
+        },
+        {
+            "name": "行秋",
+            "count": 3599
+        },
+        {
+            "name": "诺艾尔",
+            "count": 1350
+        },
+        {
+            "name": "赛诺",
+            "count": 256
+        },
+        {
+            "name": "辛炎",
+            "count": 702
+        },
+        {
+            "name": "辛焱",
+            "count": 261
+        },
+        {
+            "name": "达达利亚",
+            "count": 1061
+        },
+        {
+            "name": "迪卢克",
+            "count": 753
+        },
+        {
+            "name": "迪奥娜",
+            "count": 645
+        },
+        {
+            "name": "重云",
+            "count": 641
+        },
+        {
+            "name": "重雲",
+            "count": 2890
+        },
+        {
+            "name": "鍾離",
+            "count": 9354
+        },
+        {
+            "name": "钟离",
+            "count": 2765
+        },
+        {
+            "name": "阿贝多",
+            "count": 603
+        },
+        {
+            "name": "雲菫",
+            "count": 1307
+        },
+        {
+            "name": "雷泽",
+            "count": 364
+        },
+        {
+            "name": "雷电将军",
+            "count": 4359
+        },
+        {
+            "name": "雷電将軍",
+            "count": 21687
+        },
+        {
+            "name": "香菱",
+            "count": 2794
+        },
+        {
+            "name": "魈",
+            "count": 10715
+        },
+        {
+            "name": "鹿野院平蔵",
+            "count": 1428
+        },
+        {
+            "name": "鹿野院平藏",
+            "count": 217
+        }
+    ],
+    "last_updated": 1675749241.7241673
+}

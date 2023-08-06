@@ -1,0 +1,5593 @@
+{
+    "names": [
+        {
+            "name": "22",
+            "count": 139
+        },
+        {
+            "name": "33",
+            "count": 21
+        },
+        {
+            "name": "abercrombie",
+            "count": 2
+        },
+        {
+            "name": "acasta",
+            "count": 2
+        },
+        {
+            "name": "achilles",
+            "count": 1
+        },
+        {
+            "name": "admiral_graf_spee",
+            "count": 1
+        },
+        {
+            "name": "admiral_hipper",
+            "count": 16
+        },
+        {
+            "name": "agano",
+            "count": 1
+        },
+        {
+            "name": "agir",
+            "count": 13
+        },
+        {
+            "name": "ajax",
+            "count": 19
+        },
+        {
+            "name": "akagi",
+            "count": 157
+        },
+        {
+            "name": "akashi",
+            "count": 41
+        },
+        {
+            "name": "alabama",
+            "count": 7
+        },
+        {
+            "name": "albacore",
+            "count": 4
+        },
+        {
+            "name": "albion",
+            "count": 2
+        },
+        {
+            "name": "algerie",
+            "count": 1
+        },
+        {
+            "name": "allen_m_sumner",
+            "count": 1
+        },
+        {
+            "name": "amagi",
+            "count": 139
+        },
+        {
+            "name": "amazon",
+            "count": 7
+        },
+        {
+            "name": "anchorage",
+            "count": 15
+        },
+        {
+            "name": "aquila",
+            "count": 8
+        },
+        {
+            "name": "arashio",
+            "count": 1
+        },
+        {
+            "name": "archerfish",
+            "count": 1
+        },
+        {
+            "name": "arethusa",
+            "count": 1
+        },
+        {
+            "name": "arizona",
+            "count": 4
+        },
+        {
+            "name": "ark_royal",
+            "count": 2
+        },
+        {
+            "name": "arkhangelsk",
+            "count": 1
+        },
+        {
+            "name": "asashio",
+            "count": 2
+        },
+        {
+            "name": "ashigara",
+            "count": 1
+        },
+        {
+            "name": "astoria",
+            "count": 2
+        },
+        {
+            "name": "atago",
+            "count": 350
+        },
+        {
+            "name": "atlanta",
+            "count": 2
+        },
+        {
+            "name": "august_von_parseval",
+            "count": 2
+        },
+        {
+            "name": "aurora",
+            "count": 4
+        },
+        {
+            "name": "avrora",
+            "count": 13
+        },
+        {
+            "name": "ayanami",
+            "count": 243
+        },
+        {
+            "name": "azuma",
+            "count": 24
+        },
+        {
+            "name": "bache",
+            "count": 42
+        },
+        {
+            "name": "bailey",
+            "count": 2
+        },
+        {
+            "name": "baltimore",
+            "count": 58
+        },
+        {
+            "name": "bataan",
+            "count": 11
+        },
+        {
+            "name": "beagle",
+            "count": 1
+        },
+        {
+            "name": "belfast",
+            "count": 341
+        },
+        {
+            "name": "benson",
+            "count": 9
+        },
+        {
+            "name": "biloxi",
+            "count": 9
+        },
+        {
+            "name": "birmingham",
+            "count": 3
+        },
+        {
+            "name": "bismarck",
+            "count": 126
+        },
+        {
+            "name": "black_prince",
+            "count": 1
+        },
+        {
+            "name": "blanc",
+            "count": 4
+        },
+        {
+            "name": "blucher",
+            "count": 1
+        },
+        {
+            "name": "bogue",
+            "count": 1
+        },
+        {
+            "name": "boise",
+            "count": 8
+        },
+        {
+            "name": "bremerton",
+            "count": 197
+        },
+        {
+            "name": "brest",
+            "count": 1
+        },
+        {
+            "name": "brooklyn",
+            "count": 7
+        },
+        {
+            "name": "brunhilde",
+            "count": 2
+        },
+        {
+            "name": "bulldog",
+            "count": 1
+        },
+        {
+            "name": "bush",
+            "count": 1
+        },
+        {
+            "name": "california",
+            "count": 3
+        },
+        {
+            "name": "carabiniere",
+            "count": 1
+        },
+        {
+            "name": "casablanca",
+            "count": 3
+        },
+        {
+            "name": "cassin",
+            "count": 2
+        },
+        {
+            "name": "centaur",
+            "count": 1
+        },
+        {
+            "name": "champagne",
+            "count": 26
+        },
+        {
+            "name": "chapayev",
+            "count": 21
+        },
+        {
+            "name": "charybdis",
+            "count": 3
+        },
+        {
+            "name": "chaser",
+            "count": 2
+        },
+        {
+            "name": "chen_hai",
+            "count": 1
+        },
+        {
+            "name": "cheshire",
+            "count": 80
+        },
+        {
+            "name": "chikuma",
+            "count": 1
+        },
+        {
+            "name": "chitose",
+            "count": 4
+        },
+        {
+            "name": "chiyoda",
+            "count": 1
+        },
+        {
+            "name": "chkalov",
+            "count": 3
+        },
+        {
+            "name": "chokai",
+            "count": 1
+        },
+        {
+            "name": "clevelad",
+            "count": 2
+        },
+        {
+            "name": "cleveland",
+            "count": 75
+        },
+        {
+            "name": "colorado",
+            "count": 1
+        },
+        {
+            "name": "columbia",
+            "count": 4
+        },
+        {
+            "name": "comet",
+            "count": 4
+        },
+        {
+            "name": "concord",
+            "count": 2
+        },
+        {
+            "name": "craven",
+            "count": 1
+        },
+        {
+            "name": "crescent",
+            "count": 3
+        },
+        {
+            "name": "curacoa",
+            "count": 2
+        },
+        {
+            "name": "curlew",
+            "count": 1
+        },
+        {
+            "name": "cygnet",
+            "count": 7
+        },
+        {
+            "name": "dace",
+            "count": 2
+        },
+        {
+            "name": "denver",
+            "count": 2
+        },
+        {
+            "name": "deutschland",
+            "count": 32
+        },
+        {
+            "name": "dewey",
+            "count": 2
+        },
+        {
+            "name": "dido",
+            "count": 53
+        },
+        {
+            "name": "downes",
+            "count": 1
+        },
+        {
+            "name": "drake",
+            "count": 9
+        },
+        {
+            "name": "dunkerque",
+            "count": 26
+        },
+        {
+            "name": "eagle",
+            "count": 9
+        },
+        {
+            "name": "echo",
+            "count": 2
+        },
+        {
+            "name": "edinburgh",
+            "count": 1
+        },
+        {
+            "name": "elbe",
+            "count": 14
+        },
+        {
+            "name": "elbing",
+            "count": 3
+        },
+        {
+            "name": "eldridge",
+            "count": 35
+        },
+        {
+            "name": "emden",
+            "count": 12
+        },
+        {
+            "name": "emile_bertin",
+            "count": 1
+        },
+        {
+            "name": "enterprise",
+            "count": 254
+        },
+        {
+            "name": "erebus",
+            "count": 11
+        },
+        {
+            "name": "eskimo",
+            "count": 1
+        },
+        {
+            "name": "essex",
+            "count": 47
+        },
+        {
+            "name": "fiji",
+            "count": 1
+        },
+        {
+            "name": "fletcher",
+            "count": 6
+        },
+        {
+            "name": "foch",
+            "count": 3
+        },
+        {
+            "name": "foote",
+            "count": 1
+        },
+        {
+            "name": "formidable",
+            "count": 203
+        },
+        {
+            "name": "fortune",
+            "count": 3
+        },
+        {
+            "name": "foxhound",
+            "count": 3
+        },
+        {
+            "name": "friedrich_der_grosse",
+            "count": 6
+        },
+        {
+            "name": "fubuki",
+            "count": 12
+        },
+        {
+            "name": "fumizuki",
+            "count": 7
+        },
+        {
+            "name": "furutaka",
+            "count": 1
+        },
+        {
+            "name": "fuso",
+            "count": 6
+        },
+        {
+            "name": "gangut",
+            "count": 13
+        },
+        {
+            "name": "gascogne",
+            "count": 17
+        },
+        {
+            "name": "georgia",
+            "count": 10
+        },
+        {
+            "name": "glasgow",
+            "count": 40
+        },
+        {
+            "name": "glorious",
+            "count": 9
+        },
+        {
+            "name": "gloucester",
+            "count": 4
+        },
+        {
+            "name": "glowworm",
+            "count": 2
+        },
+        {
+            "name": "gneisenau",
+            "count": 5
+        },
+        {
+            "name": "graf_zeppelin",
+            "count": 13
+        },
+        {
+            "name": "green_heart",
+            "count": 1
+        },
+        {
+            "name": "gremyashchy",
+            "count": 2
+        },
+        {
+            "name": "gridley",
+            "count": 2
+        },
+        {
+            "name": "gromky",
+            "count": 1
+        },
+        {
+            "name": "grozny",
+            "count": 2
+        },
+        {
+            "name": "haguro",
+            "count": 1
+        },
+        {
+            "name": "hakuryu",
+            "count": 16
+        },
+        {
+            "name": "hamakaze",
+            "count": 2
+        },
+        {
+            "name": "hammann",
+            "count": 66
+        },
+        {
+            "name": "hanazuki",
+            "count": 5
+        },
+        {
+            "name": "harbin",
+            "count": 2
+        },
+        {
+            "name": "hardy",
+            "count": 1
+        },
+        {
+            "name": "haruna",
+            "count": 1
+        },
+        {
+            "name": "hatakaze",
+            "count": 1
+        },
+        {
+            "name": "hatsuharu",
+            "count": 1
+        },
+        {
+            "name": "helena",
+            "count": 81
+        },
+        {
+            "name": "hermes",
+            "count": 1
+        },
+        {
+            "name": "hermione",
+            "count": 11
+        },
+        {
+            "name": "hibiki",
+            "count": 5
+        },
+        {
+            "name": "hiei",
+            "count": 15
+        },
+        {
+            "name": "hiryu",
+            "count": 11
+        },
+        {
+            "name": "hiyo",
+            "count": 5
+        },
+        {
+            "name": "hobby",
+            "count": 1
+        },
+        {
+            "name": "honoka",
+            "count": 5
+        },
+        {
+            "name": "honolulu",
+            "count": 95
+        },
+        {
+            "name": "hood",
+            "count": 80
+        },
+        {
+            "name": "hornet",
+            "count": 14
+        },
+        {
+            "name": "houston",
+            "count": 2
+        },
+        {
+            "name": "howe",
+            "count": 8
+        },
+        {
+            "name": "hunter",
+            "count": 6
+        },
+        {
+            "name": "i13",
+            "count": 1
+        },
+        {
+            "name": "i19",
+            "count": 4
+        },
+        {
+            "name": "i26",
+            "count": 1
+        },
+        {
+            "name": "i56",
+            "count": 1
+        },
+        {
+            "name": "ibuki",
+            "count": 13
+        },
+        {
+            "name": "icarus",
+            "count": 2
+        },
+        {
+            "name": "ikazuchi",
+            "count": 1
+        },
+        {
+            "name": "illustrious",
+            "count": 89
+        },
+        {
+            "name": "impero",
+            "count": 3
+        },
+        {
+            "name": "inazuma",
+            "count": 1
+        },
+        {
+            "name": "independence",
+            "count": 4
+        },
+        {
+            "name": "indianapolis",
+            "count": 10
+        },
+        {
+            "name": "indomitable",
+            "count": 14
+        },
+        {
+            "name": "ingraham",
+            "count": 2
+        },
+        {
+            "name": "intrepid",
+            "count": 2
+        },
+        {
+            "name": "ise",
+            "count": 310
+        },
+        {
+            "name": "isuzu",
+            "count": 1
+        },
+        {
+            "name": "izumo",
+            "count": 5
+        },
+        {
+            "name": "jamaica",
+            "count": 1
+        },
+        {
+            "name": "janus",
+            "count": 2
+        },
+        {
+            "name": "javelin",
+            "count": 177
+        },
+        {
+            "name": "jean_bart",
+            "count": 3
+        },
+        {
+            "name": "jenkins",
+            "count": 2
+        },
+        {
+            "name": "jersey",
+            "count": 51
+        },
+        {
+            "name": "jervis",
+            "count": 6
+        },
+        {
+            "name": "jintsu",
+            "count": 2
+        },
+        {
+            "name": "joffre",
+            "count": 4
+        },
+        {
+            "name": "juneau",
+            "count": 3
+        },
+        {
+            "name": "juno",
+            "count": 8
+        },
+        {
+            "name": "jupiter",
+            "count": 1
+        },
+        {
+            "name": "kaga",
+            "count": 132
+        },
+        {
+            "name": "kagero",
+            "count": 1
+        },
+        {
+            "name": "kako",
+            "count": 18
+        },
+        {
+            "name": "kamikaze",
+            "count": 1
+        },
+        {
+            "name": "karlsruhe",
+            "count": 1
+        },
+        {
+            "name": "kashino",
+            "count": 35
+        },
+        {
+            "name": "kasumi",
+            "count": 9
+        },
+        {
+            "name": "katsuragi",
+            "count": 3
+        },
+        {
+            "name": "kawakaze",
+            "count": 27
+        },
+        {
+            "name": "kazagumo",
+            "count": 1
+        },
+        {
+            "name": "kent",
+            "count": 35
+        },
+        {
+            "name": "kiev",
+            "count": 5
+        },
+        {
+            "name": "kii",
+            "count": 162
+        },
+        {
+            "name": "kimberly",
+            "count": 1
+        },
+        {
+            "name": "king_george_v",
+            "count": 1
+        },
+        {
+            "name": "kinu",
+            "count": 4
+        },
+        {
+            "name": "kirishima",
+            "count": 3
+        },
+        {
+            "name": "kirov",
+            "count": 3
+        },
+        {
+            "name": "kisaragi",
+            "count": 19
+        },
+        {
+            "name": "kitakaze",
+            "count": 5
+        },
+        {
+            "name": "kizuna",
+            "count": 19
+        },
+        {
+            "name": "kongo",
+            "count": 4
+        },
+        {
+            "name": "kronshtadt",
+            "count": 9
+        },
+        {
+            "name": "kumano",
+            "count": 6
+        },
+        {
+            "name": "kuybyshev",
+            "count": 1
+        },
+        {
+            "name": "laffey",
+            "count": 311
+        },
+        {
+            "name": "langley",
+            "count": 1
+        },
+        {
+            "name": "le_malin",
+            "count": 7
+        },
+        {
+            "name": "le_triomphant",
+            "count": 1
+        },
+        {
+            "name": "leander",
+            "count": 4
+        },
+        {
+            "name": "leipzig",
+            "count": 6
+        },
+        {
+            "name": "lena",
+            "count": 81
+        },
+        {
+            "name": "leonardo_da_vinci",
+            "count": 1
+        },
+        {
+            "name": "lexington",
+            "count": 6
+        },
+        {
+            "name": "libeccio",
+            "count": 4
+        },
+        {
+            "name": "littorio",
+            "count": 40
+        },
+        {
+            "name": "london",
+            "count": 7
+        },
+        {
+            "name": "long_island",
+            "count": 9
+        },
+        {
+            "name": "maestrale",
+            "count": 1
+        },
+        {
+            "name": "magdeburg",
+            "count": 1
+        },
+        {
+            "name": "mainz",
+            "count": 14
+        },
+        {
+            "name": "marblehead",
+            "count": 4
+        },
+        {
+            "name": "marco_polo",
+            "count": 1
+        },
+        {
+            "name": "marie_rose",
+            "count": 18
+        },
+        {
+            "name": "maryland",
+            "count": 1
+        },
+        {
+            "name": "massachusetts",
+            "count": 20
+        },
+        {
+            "name": "matsukaze",
+            "count": 2
+        },
+        {
+            "name": "maya",
+            "count": 12
+        },
+        {
+            "name": "mccall",
+            "count": 2
+        },
+        {
+            "name": "memphis",
+            "count": 2
+        },
+        {
+            "name": "michishio",
+            "count": 6
+        },
+        {
+            "name": "mikasa",
+            "count": 6
+        },
+        {
+            "name": "mikazuki",
+            "count": 1
+        },
+        {
+            "name": "mikuma",
+            "count": 1
+        },
+        {
+            "name": "minneapolis",
+            "count": 15
+        },
+        {
+            "name": "minsk",
+            "count": 2
+        },
+        {
+            "name": "misaki",
+            "count": 2
+        },
+        {
+            "name": "mogami",
+            "count": 3
+        },
+        {
+            "name": "monarch",
+            "count": 21
+        },
+        {
+            "name": "monica",
+            "count": 2
+        },
+        {
+            "name": "montpelier",
+            "count": 16
+        },
+        {
+            "name": "morrison",
+            "count": 1
+        },
+        {
+            "name": "mullany",
+            "count": 1
+        },
+        {
+            "name": "murmansk",
+            "count": 10
+        },
+        {
+            "name": "musashi",
+            "count": 27
+        },
+        {
+            "name": "mutsu",
+            "count": 11
+        },
+        {
+            "name": "mutsuki",
+            "count": 6
+        },
+        {
+            "name": "nagato",
+            "count": 87
+        },
+        {
+            "name": "nagisa",
+            "count": 2
+        },
+        {
+            "name": "naka",
+            "count": 3
+        },
+        {
+            "name": "nautilus",
+            "count": 2
+        },
+        {
+            "name": "nekone",
+            "count": 9
+        },
+        {
+            "name": "nelson",
+            "count": 11
+        },
+        {
+            "name": "neptune",
+            "count": 12
+        },
+        {
+            "name": "new_jersey",
+            "count": 6
+        },
+        {
+            "name": "newcastle",
+            "count": 1
+        },
+        {
+            "name": "nicholas",
+            "count": 6
+        },
+        {
+            "name": "niizuki",
+            "count": 1
+        },
+        {
+            "name": "noire",
+            "count": 1
+        },
+        {
+            "name": "noshiro",
+            "count": 35
+        },
+        {
+            "name": "nowaki",
+            "count": 1
+        },
+        {
+            "name": "nurnberg",
+            "count": 2
+        },
+        {
+            "name": "nyotengu",
+            "count": 6
+        },
+        {
+            "name": "odin",
+            "count": 11
+        },
+        {
+            "name": "oklahoma",
+            "count": 2
+        },
+        {
+            "name": "omaha",
+            "count": 3
+        },
+        {
+            "name": "oshio",
+            "count": 5
+        },
+        {
+            "name": "oyashio",
+            "count": 1
+        },
+        {
+            "name": "pamiat_merkuria",
+            "count": 3
+        },
+        {
+            "name": "penelope",
+            "count": 3
+        },
+        {
+            "name": "pennsylvania",
+            "count": 6
+        },
+        {
+            "name": "pensacola",
+            "count": 4
+        },
+        {
+            "name": "perseus",
+            "count": 33
+        },
+        {
+            "name": "phoenix",
+            "count": 31
+        },
+        {
+            "name": "plymouth",
+            "count": 2
+        },
+        {
+            "name": "pola",
+            "count": 27
+        },
+        {
+            "name": "portland",
+            "count": 8
+        },
+        {
+            "name": "prince_of_wales",
+            "count": 4
+        },
+        {
+            "name": "princeton",
+            "count": 2
+        },
+        {
+            "name": "prinz_eugen",
+            "count": 28
+        },
+        {
+            "name": "purple_heart",
+            "count": 1
+        },
+        {
+            "name": "queen_elizabeth",
+            "count": 5
+        },
+        {
+            "name": "quincy",
+            "count": 2
+        },
+        {
+            "name": "radford",
+            "count": 1
+        },
+        {
+            "name": "ranger",
+            "count": 6
+        },
+        {
+            "name": "reno",
+            "count": 31
+        },
+        {
+            "name": "renown",
+            "count": 8
+        },
+        {
+            "name": "repulse",
+            "count": 28
+        },
+        {
+            "name": "revenge",
+            "count": 1
+        },
+        {
+            "name": "richelieu",
+            "count": 43
+        },
+        {
+            "name": "rodney",
+            "count": 5
+        },
+        {
+            "name": "roma",
+            "count": 9
+        },
+        {
+            "name": "roon",
+            "count": 97
+        },
+        {
+            "name": "saint_louis",
+            "count": 9
+        },
+        {
+            "name": "sakawa",
+            "count": 1
+        },
+        {
+            "name": "san_diego",
+            "count": 1
+        },
+        {
+            "name": "san_juan",
+            "count": 1
+        },
+        {
+            "name": "saratoga",
+            "count": 16
+        },
+        {
+            "name": "scharnhorst",
+            "count": 6
+        },
+        {
+            "name": "seattle",
+            "count": 7
+        },
+        {
+            "name": "seydlitz",
+            "count": 6
+        },
+        {
+            "name": "sheffield",
+            "count": 21
+        },
+        {
+            "name": "shigure",
+            "count": 8
+        },
+        {
+            "name": "shimakaze",
+            "count": 38
+        },
+        {
+            "name": "shinano",
+            "count": 56
+        },
+        {
+            "name": "shiranui",
+            "count": 1
+        },
+        {
+            "name": "shiratsuyu",
+            "count": 1
+        },
+        {
+            "name": "shokaku",
+            "count": 5
+        },
+        {
+            "name": "sims",
+            "count": 6
+        },
+        {
+            "name": "sirius",
+            "count": 144
+        },
+        {
+            "name": "smalley",
+            "count": 5
+        },
+        {
+            "name": "soryu",
+            "count": 1
+        },
+        {
+            "name": "south_dakota",
+            "count": 2
+        },
+        {
+            "name": "sovetskaya_rossiya",
+            "count": 4
+        },
+        {
+            "name": "spence",
+            "count": 3
+        },
+        {
+            "name": "st_louis",
+            "count": 7
+        },
+        {
+            "name": "stanly",
+            "count": 2
+        },
+        {
+            "name": "stephen_potter",
+            "count": 1
+        },
+        {
+            "name": "suffolk",
+            "count": 2
+        },
+        {
+            "name": "surcouf",
+            "count": 5
+        },
+        {
+            "name": "suruga",
+            "count": 5
+        },
+        {
+            "name": "sussex",
+            "count": 2
+        },
+        {
+            "name": "suzutsuki",
+            "count": 6
+        },
+        {
+            "name": "suzuya",
+            "count": 9
+        },
+        {
+            "name": "swiftsure",
+            "count": 4
+        },
+        {
+            "name": "tai_yuan",
+            "count": 1
+        },
+        {
+            "name": "taiho",
+            "count": 157
+        },
+        {
+            "name": "takao",
+            "count": 156
+        },
+        {
+            "name": "tallinn",
+            "count": 5
+        },
+        {
+            "name": "tanikaze",
+            "count": 1
+        },
+        {
+            "name": "tartu",
+            "count": 6
+        },
+        {
+            "name": "tashkent",
+            "count": 34
+        },
+        {
+            "name": "tennessee",
+            "count": 3
+        },
+        {
+            "name": "terror",
+            "count": 8
+        },
+        {
+            "name": "thatcher",
+            "count": 2
+        },
+        {
+            "name": "ting_an",
+            "count": 1
+        },
+        {
+            "name": "tirpitz",
+            "count": 115
+        },
+        {
+            "name": "torricelli",
+            "count": 14
+        },
+        {
+            "name": "tosa",
+            "count": 39
+        },
+        {
+            "name": "trento",
+            "count": 5
+        },
+        {
+            "name": "trieste",
+            "count": 2
+        },
+        {
+            "name": "u-101",
+            "count": 49
+        },
+        {
+            "name": "u-110",
+            "count": 162
+        },
+        {
+            "name": "u-1206",
+            "count": 20
+        },
+        {
+            "name": "u-37",
+            "count": 31
+        },
+        {
+            "name": "u-410",
+            "count": 41
+        },
+        {
+            "name": "u-47",
+            "count": 537
+        },
+        {
+            "name": "u-522",
+            "count": 18
+        },
+        {
+            "name": "u-556",
+            "count": 207
+        },
+        {
+            "name": "u-557",
+            "count": 54
+        },
+        {
+            "name": "u-73",
+            "count": 44
+        },
+        {
+            "name": "u-81",
+            "count": 152
+        },
+        {
+            "name": "u-96",
+            "count": 65
+        },
+        {
+            "name": "ulrich_von_hutten",
+            "count": 7
+        },
+        {
+            "name": "unicorn",
+            "count": 214
+        },
+        {
+            "name": "urakaze",
+            "count": 2
+        },
+        {
+            "name": "uranami",
+            "count": 1
+        },
+        {
+            "name": "uzuki",
+            "count": 2
+        },
+        {
+            "name": "valiant",
+            "count": 2
+        },
+        {
+            "name": "vampire",
+            "count": 19
+        },
+        {
+            "name": "vanguard",
+            "count": 3
+        },
+        {
+            "name": "vauquelin",
+            "count": 5
+        },
+        {
+            "name": "vert",
+            "count": 2
+        },
+        {
+            "name": "vestal",
+            "count": 8
+        },
+        {
+            "name": "victorious",
+            "count": 13
+        },
+        {
+            "name": "vincennes",
+            "count": 3
+        },
+        {
+            "name": "vittorio_veneto",
+            "count": 1
+        },
+        {
+            "name": "volga",
+            "count": 4
+        },
+        {
+            "name": "warspite",
+            "count": 31
+        },
+        {
+            "name": "washington",
+            "count": 30
+        },
+        {
+            "name": "wasp",
+            "count": 3
+        },
+        {
+            "name": "weser",
+            "count": 11
+        },
+        {
+            "name": "west_virginia",
+            "count": 1
+        },
+        {
+            "name": "wichita",
+            "count": 1
+        },
+        {
+            "name": "yamashiro",
+            "count": 27
+        },
+        {
+            "name": "yat_sen",
+            "count": 1
+        },
+        {
+            "name": "yorck",
+            "count": 6
+        },
+        {
+            "name": "york",
+            "count": 32
+        },
+        {
+            "name": "yorktown",
+            "count": 28
+        },
+        {
+            "name": "yudachi",
+            "count": 3
+        },
+        {
+            "name": "yukikaze",
+            "count": 18
+        },
+        {
+            "name": "z1",
+            "count": 617
+        },
+        {
+            "name": "z16",
+            "count": 29
+        },
+        {
+            "name": "z18",
+            "count": 86
+        },
+        {
+            "name": "z19",
+            "count": 175
+        },
+        {
+            "name": "z2",
+            "count": 3131
+        },
+        {
+            "name": "z20",
+            "count": 83
+        },
+        {
+            "name": "z21",
+            "count": 59
+        },
+        {
+            "name": "z23",
+            "count": 2779
+        },
+        {
+            "name": "z24",
+            "count": 58
+        },
+        {
+            "name": "z25",
+            "count": 40
+        },
+        {
+            "name": "z26",
+            "count": 33
+        },
+        {
+            "name": "z28",
+            "count": 52
+        },
+        {
+            "name": "z35",
+            "count": 126
+        },
+        {
+            "name": "z36",
+            "count": 46
+        },
+        {
+            "name": "z46",
+            "count": 1175
+        },
+        {
+            "name": "zara",
+            "count": 44
+        },
+        {
+            "name": "zeppy",
+            "count": 3
+        },
+        {
+            "name": "zuikaku",
+            "count": 34
+        },
+        {
+            "name": "あかぎ",
+            "count": 26
+        },
+        {
+            "name": "あかし",
+            "count": 40
+        },
+        {
+            "name": "あたご",
+            "count": 45
+        },
+        {
+            "name": "あまぎ",
+            "count": 7
+        },
+        {
+            "name": "あやなみ",
+            "count": 43
+        },
+        {
+            "name": "いかづち",
+            "count": 1
+        },
+        {
+            "name": "いすず",
+            "count": 5
+        },
+        {
+            "name": "いずも",
+            "count": 1
+        },
+        {
+            "name": "いせ",
+            "count": 8
+        },
+        {
+            "name": "いなづま",
+            "count": 1
+        },
+        {
+            "name": "いぶき",
+            "count": 3
+        },
+        {
+            "name": "うづき",
+            "count": 2
+        },
+        {
+            "name": "おいて",
+            "count": 3
+        },
+        {
+            "name": "おやしお",
+            "count": 1
+        },
+        {
+            "name": "かが",
+            "count": 270
+        },
+        {
+            "name": "かこ",
+            "count": 1
+        },
+        {
+            "name": "かしの",
+            "count": 37
+        },
+        {
+            "name": "かすみ",
+            "count": 21
+        },
+        {
+            "name": "かわかぜ",
+            "count": 5
+        },
+        {
+            "name": "きい",
+            "count": 4
+        },
+        {
+            "name": "きさらぎ",
+            "count": 250
+        },
+        {
+            "name": "きよなみ",
+            "count": 1
+        },
+        {
+            "name": "きりしま",
+            "count": 1
+        },
+        {
+            "name": "こんごう",
+            "count": 8
+        },
+        {
+            "name": "しぐれ",
+            "count": 2
+        },
+        {
+            "name": "しなの",
+            "count": 11
+        },
+        {
+            "name": "しまかぜ",
+            "count": 9
+        },
+        {
+            "name": "しょうかく",
+            "count": 4
+        },
+        {
+            "name": "しょうほう",
+            "count": 2
+        },
+        {
+            "name": "しらつゆ",
+            "count": 1
+        },
+        {
+            "name": "じゅんよう",
+            "count": 1
+        },
+        {
+            "name": "すずつき",
+            "count": 1
+        },
+        {
+            "name": "するが",
+            "count": 1
+        },
+        {
+            "name": "ずいかく",
+            "count": 4
+        },
+        {
+            "name": "そうりゅう",
+            "count": 1
+        },
+        {
+            "name": "たいほう",
+            "count": 28
+        },
+        {
+            "name": "たかお",
+            "count": 231
+        },
+        {
+            "name": "ちとせ",
+            "count": 3
+        },
+        {
+            "name": "ちょうかい",
+            "count": 8
+        },
+        {
+            "name": "なか",
+            "count": 147
+        },
+        {
+            "name": "ながと",
+            "count": 8
+        },
+        {
+            "name": "ながら",
+            "count": 107
+        },
+        {
+            "name": "なぎさ",
+            "count": 15
+        },
+        {
+            "name": "のしろ",
+            "count": 5
+        },
+        {
+            "name": "のわき",
+            "count": 1
+        },
+        {
+            "name": "はっす",
+            "count": 4
+        },
+        {
+            "name": "はつしも",
+            "count": 1
+        },
+        {
+            "name": "はるな",
+            "count": 2
+        },
+        {
+            "name": "ひえい",
+            "count": 2
+        },
+        {
+            "name": "ひびき",
+            "count": 2
+        },
+        {
+            "name": "ひよう",
+            "count": 1
+        },
+        {
+            "name": "ひりゅう",
+            "count": 1
+        },
+        {
+            "name": "ふそう",
+            "count": 1
+        },
+        {
+            "name": "ふぶき",
+            "count": 1
+        },
+        {
+            "name": "ほうしょう",
+            "count": 1
+        },
+        {
+            "name": "ほのか",
+            "count": 160
+        },
+        {
+            "name": "まきなみ",
+            "count": 1
+        },
+        {
+            "name": "まや",
+            "count": 1
+        },
+        {
+            "name": "みさき",
+            "count": 20
+        },
+        {
+            "name": "みゆき",
+            "count": 40
+        },
+        {
+            "name": "みょうこう",
+            "count": 2
+        },
+        {
+            "name": "むさし",
+            "count": 5
+        },
+        {
+            "name": "むつ",
+            "count": 51
+        },
+        {
+            "name": "むつき",
+            "count": 2
+        },
+        {
+            "name": "もがみ",
+            "count": 1
+        },
+        {
+            "name": "やましろ",
+            "count": 21
+        },
+        {
+            "name": "ゆうだち",
+            "count": 9
+        },
+        {
+            "name": "ゆきかぜ",
+            "count": 18
+        },
+        {
+            "name": "ゆら",
+            "count": 23
+        },
+        {
+            "name": "よいづき",
+            "count": 1
+        },
+        {
+            "name": "わかば",
+            "count": 1
+        },
+        {
+            "name": "アウグスト・フォン・パーセヴァル",
+            "count": 977
+        },
+        {
+            "name": "アカスタ",
+            "count": 94
+        },
+        {
+            "name": "アカネ",
+            "count": 85
+        },
+        {
+            "name": "アキリーズ",
+            "count": 58
+        },
+        {
+            "name": "アストリア",
+            "count": 75
+        },
+        {
+            "name": "アトランタ",
+            "count": 142
+        },
+        {
+            "name": "アドミラル・グラーフ・シュペー",
+            "count": 1849
+        },
+        {
+            "name": "アドミラル・ヒッパー",
+            "count": 1155
+        },
+        {
+            "name": "アドミラル・ヒッパー（μ兵装）",
+            "count": 59
+        },
+        {
+            "name": "アバークロンビー",
+            "count": 159
+        },
+        {
+            "name": "アマゾン",
+            "count": 188
+        },
+        {
+            "name": "アラバマ",
+            "count": 201
+        },
+        {
+            "name": "アリシューザ",
+            "count": 63
+        },
+        {
+            "name": "アリゾナ",
+            "count": 125
+        },
+        {
+            "name": "アリゾナ(meta)",
+            "count": 1
+        },
+        {
+            "name": "アルジェリー",
+            "count": 326
+        },
+        {
+            "name": "アルハンゲリスク",
+            "count": 63
+        },
+        {
+            "name": "アルバコア",
+            "count": 422
+        },
+        {
+            "name": "アルバコア(μ兵装)",
+            "count": 24
+        },
+        {
+            "name": "アルビオン",
+            "count": 120
+        },
+        {
+            "name": "アルフレード・オリアーニ",
+            "count": 13
+        },
+        {
+            "name": "アレン・m・サムナー",
+            "count": 89
+        },
+        {
+            "name": "アンカレッジ",
+            "count": 395
+        },
+        {
+            "name": "アヴローラ",
+            "count": 231
+        },
+        {
+            "name": "アーク・ロイヤル",
+            "count": 891
+        },
+        {
+            "name": "アーク・ロイヤル(meta)",
+            "count": 16
+        },
+        {
+            "name": "アーチャーフィッシュ",
+            "count": 59
+        },
+        {
+            "name": "アーデント",
+            "count": 58
+        },
+        {
+            "name": "イ13",
+            "count": 1
+        },
+        {
+            "name": "イ168",
+            "count": 1
+        },
+        {
+            "name": "イ19",
+            "count": 1
+        },
+        {
+            "name": "イ25",
+            "count": 1
+        },
+        {
+            "name": "イカルス",
+            "count": 124
+        },
+        {
+            "name": "イラストリアス",
+            "count": 5352
+        },
+        {
+            "name": "イラストリアス(μ兵装)",
+            "count": 103
+        },
+        {
+            "name": "イングラハム",
+            "count": 51
+        },
+        {
+            "name": "インディアナポリス",
+            "count": 624
+        },
+        {
+            "name": "インディペンデンス",
+            "count": 112
+        },
+        {
+            "name": "イントレピッド",
+            "count": 233
+        },
+        {
+            "name": "インドミタブル",
+            "count": 821
+        },
+        {
+            "name": "インペロ",
+            "count": 81
+        },
+        {
+            "name": "イーグル",
+            "count": 37
+        },
+        {
+            "name": "ウィチタ",
+            "count": 63
+        },
+        {
+            "name": "ウェストバージニア",
+            "count": 90
+        },
+        {
+            "name": "ウォースパイト",
+            "count": 1411
+        },
+        {
+            "name": "ウルゥル",
+            "count": 6
+        },
+        {
+            "name": "ウルリッヒ・フォン・フッテン",
+            "count": 440
+        },
+        {
+            "name": "エイジャックス",
+            "count": 546
+        },
+        {
+            "name": "エクセター",
+            "count": 65
+        },
+        {
+            "name": "エコー",
+            "count": 22
+        },
+        {
+            "name": "エスキモー",
+            "count": 26
+        },
+        {
+            "name": "エセックス",
+            "count": 1049
+        },
+        {
+            "name": "エディンバラ",
+            "count": 262
+        },
+        {
+            "name": "エマヌエーレ・ペッサーニョ",
+            "count": 31
+        },
+        {
+            "name": "エミール・ベルタン",
+            "count": 68
+        },
+        {
+            "name": "エムデン",
+            "count": 236
+        },
+        {
+            "name": "エルドリッジ",
+            "count": 1438
+        },
+        {
+            "name": "エルビング",
+            "count": 171
+        },
+        {
+            "name": "エルベ",
+            "count": 588
+        },
+        {
+            "name": "エレバス",
+            "count": 592
+        },
+        {
+            "name": "エンタープライズ",
+            "count": 6329
+        },
+        {
+            "name": "エーギル",
+            "count": 1228
+        },
+        {
+            "name": "エールウィン",
+            "count": 87
+        },
+        {
+            "name": "オクラホマ",
+            "count": 169
+        },
+        {
+            "name": "オマハ",
+            "count": 54
+        },
+        {
+            "name": "オーディン",
+            "count": 151
+        },
+        {
+            "name": "オーリック",
+            "count": 97
+        },
+        {
+            "name": "オーロラ",
+            "count": 237
+        },
+        {
+            "name": "カサブランカ",
+            "count": 103
+        },
+        {
+            "name": "カッシン",
+            "count": 254
+        },
+        {
+            "name": "カラビニエーレ",
+            "count": 33
+        },
+        {
+            "name": "カラ・イデアス",
+            "count": 4
+        },
+        {
+            "name": "カリフォルニア",
+            "count": 132
+        },
+        {
+            "name": "カリブディス",
+            "count": 217
+        },
+        {
+            "name": "カヴァラ",
+            "count": 46
+        },
+        {
+            "name": "カーク",
+            "count": 133
+        },
+        {
+            "name": "カーリュー",
+            "count": 35
+        },
+        {
+            "name": "カールスルーエ",
+            "count": 43
+        },
+        {
+            "name": "カール・ガルスター",
+            "count": 1
+        },
+        {
+            "name": "ガスコーニュ",
+            "count": 617
+        },
+        {
+            "name": "ガスコーニュ（μ兵装）",
+            "count": 61
+        },
+        {
+            "name": "ガラティア",
+            "count": 18
+        },
+        {
+            "name": "ガングート",
+            "count": 262
+        },
+        {
+            "name": "キエフ",
+            "count": 128
+        },
+        {
+            "name": "キズナアイ",
+            "count": 99
+        },
+        {
+            "name": "キズナアイ・アニバーサリー",
+            "count": 8
+        },
+        {
+            "name": "キズナアイ・エレガント",
+            "count": 5
+        },
+        {
+            "name": "キズナアイ・スーパーゲーマー",
+            "count": 18
+        },
+        {
+            "name": "キュラソー",
+            "count": 47
+        },
+        {
+            "name": "キングジョージ5世",
+            "count": 39
+        },
+        {
+            "name": "キンバリー",
+            "count": 26
+        },
+        {
+            "name": "キーロフ",
+            "count": 59
+        },
+        {
+            "name": "クイビシェフ",
+            "count": 27
+        },
+        {
+            "name": "クインシー",
+            "count": 57
+        },
+        {
+            "name": "クイーン・エリザベス",
+            "count": 1302
+        },
+        {
+            "name": "クオン",
+            "count": 9
+        },
+        {
+            "name": "クラウディア・バレンツ",
+            "count": 12
+        },
+        {
+            "name": "クリーブランド",
+            "count": 2175
+        },
+        {
+            "name": "クリーブランド（μ兵装）",
+            "count": 42
+        },
+        {
+            "name": "クレイヴン",
+            "count": 74
+        },
+        {
+            "name": "クレセント",
+            "count": 334
+        },
+        {
+            "name": "クロンシュタット",
+            "count": 194
+        },
+        {
+            "name": "クーパー",
+            "count": 109
+        },
+        {
+            "name": "グナイゼナウ",
+            "count": 337
+        },
+        {
+            "name": "グナイゼナウ(meta)",
+            "count": 12
+        },
+        {
+            "name": "グラスゴー",
+            "count": 180
+        },
+        {
+            "name": "グラーフ・ツェッペリン",
+            "count": 1852
+        },
+        {
+            "name": "グリッドレイ",
+            "count": 162
+        },
+        {
+            "name": "グリーンハート",
+            "count": 10
+        },
+        {
+            "name": "グレミャーシュチ",
+            "count": 62
+        },
+        {
+            "name": "グレンヴィル",
+            "count": 178
+        },
+        {
+            "name": "グロスター",
+            "count": 130
+        },
+        {
+            "name": "グロズヌイ",
+            "count": 122
+        },
+        {
+            "name": "グロリアス",
+            "count": 313
+        },
+        {
+            "name": "グローウォーム",
+            "count": 144
+        },
+        {
+            "name": "グロームキィ",
+            "count": 37
+        },
+        {
+            "name": "ケルン",
+            "count": 61
+        },
+        {
+            "name": "ケント",
+            "count": 1459
+        },
+        {
+            "name": "ケーニヒスベルク",
+            "count": 71
+        },
+        {
+            "name": "コメット",
+            "count": 153
+        },
+        {
+            "name": "コロラド",
+            "count": 329
+        },
+        {
+            "name": "コロンビア",
+            "count": 154
+        },
+        {
+            "name": "コンコード",
+            "count": 71
+        },
+        {
+            "name": "サウサンプトン",
+            "count": 162
+        },
+        {
+            "name": "サウスダコタ",
+            "count": 486
+        },
+        {
+            "name": "サセックス",
+            "count": 72
+        },
+        {
+            "name": "サッチャー",
+            "count": 76
+        },
+        {
+            "name": "サフォーク",
+            "count": 230
+        },
+        {
+            "name": "サラァナ",
+            "count": 5
+        },
+        {
+            "name": "サラトガ",
+            "count": 904
+        },
+        {
+            "name": "サンディエゴ",
+            "count": 787
+        },
+        {
+            "name": "サンフアン",
+            "count": 30
+        },
+        {
+            "name": "サンフランシスコ",
+            "count": 110
+        },
+        {
+            "name": "サン・ルイ",
+            "count": 552
+        },
+        {
+            "name": "ザイドリッツ",
+            "count": 80
+        },
+        {
+            "name": "ザラ",
+            "count": 1639
+        },
+        {
+            "name": "シアトル",
+            "count": 132
+        },
+        {
+            "name": "シェフィールド",
+            "count": 1267
+        },
+        {
+            "name": "シェフィールド（μ兵装）",
+            "count": 48
+        },
+        {
+            "name": "シカゴ",
+            "count": 98
+        },
+        {
+            "name": "シグニット",
+            "count": 1034
+        },
+        {
+            "name": "シムス",
+            "count": 537
+        },
+        {
+            "name": "シャルンホルスト",
+            "count": 187
+        },
+        {
+            "name": "シャルンホルスト(meta)",
+            "count": 1
+        },
+        {
+            "name": "シャングリラ",
+            "count": 211
+        },
+        {
+            "name": "シャンパーニュ",
+            "count": 226
+        },
+        {
+            "name": "シュペーちゃん",
+            "count": 21
+        },
+        {
+            "name": "シュルクーフ",
+            "count": 236
+        },
+        {
+            "name": "シュロップシャー",
+            "count": 220
+        },
+        {
+            "name": "シリアス",
+            "count": 6400
+        },
+        {
+            "name": "シーシュース",
+            "count": 15
+        },
+        {
+            "name": "ジェンキンス",
+            "count": 59
+        },
+        {
+            "name": "ジェーナス",
+            "count": 150
+        },
+        {
+            "name": "ジャベリン",
+            "count": 4387
+        },
+        {
+            "name": "ジャマイカ",
+            "count": 82
+        },
+        {
+            "name": "ジャンヌ・ダルク",
+            "count": 219
+        },
+        {
+            "name": "ジャン・バール",
+            "count": 739
+        },
+        {
+            "name": "ジャージー",
+            "count": 1273
+        },
+        {
+            "name": "ジャーヴィス",
+            "count": 147
+        },
+        {
+            "name": "ジュノー",
+            "count": 369
+        },
+        {
+            "name": "ジュピター",
+            "count": 56
+        },
+        {
+            "name": "ジョッフル",
+            "count": 130
+        },
+        {
+            "name": "ジョージア",
+            "count": 150
+        },
+        {
+            "name": "スウィフトシュア",
+            "count": 373
+        },
+        {
+            "name": "スタンリー",
+            "count": 41
+        },
+        {
+            "name": "ステフェン・ポッター",
+            "count": 67
+        },
+        {
+            "name": "ストレミテルヌイ",
+            "count": 44
+        },
+        {
+            "name": "スペンス",
+            "count": 121
+        },
+        {
+            "name": "スモーリー",
+            "count": 97
+        },
+        {
+            "name": "セントルイス",
+            "count": 3308
+        },
+        {
+            "name": "セントー",
+            "count": 132
+        },
+        {
+            "name": "ソビエツカヤ・ベラルーシア",
+            "count": 241
+        },
+        {
+            "name": "ソビエツカヤ・ロシア",
+            "count": 452
+        },
+        {
+            "name": "ソルトレイクシティ",
+            "count": 27
+        },
+        {
+            "name": "タイコンデロガ",
+            "count": 108
+        },
+        {
+            "name": "タシュケント",
+            "count": 1302
+        },
+        {
+            "name": "タシュケント(μ兵装)",
+            "count": 103
+        },
+        {
+            "name": "タリン",
+            "count": 132
+        },
+        {
+            "name": "タルテュ",
+            "count": 167
+        },
+        {
+            "name": "ダイドー",
+            "count": 2381
+        },
+        {
+            "name": "ダイドー(μ兵装)",
+            "count": 88
+        },
+        {
+            "name": "ダウンズ",
+            "count": 288
+        },
+        {
+            "name": "ダンケルク",
+            "count": 709
+        },
+        {
+            "name": "チェイサー",
+            "count": 52
+        },
+        {
+            "name": "チェシャー",
+            "count": 1973
+        },
+        {
+            "name": "チカロフ",
+            "count": 48
+        },
+        {
+            "name": "チャパエフ",
+            "count": 594
+        },
+        {
+            "name": "チャールズ・オースバーン",
+            "count": 94
+        },
+        {
+            "name": "ツェッペリンちゃん",
+            "count": 275
+        },
+        {
+            "name": "ティルピッツ",
+            "count": 904
+        },
+        {
+            "name": "テネシー",
+            "count": 127
+        },
+        {
+            "name": "テューリンゲン",
+            "count": 17
+        },
+        {
+            "name": "テラー",
+            "count": 424
+        },
+        {
+            "name": "デイス",
+            "count": 54
+        },
+        {
+            "name": "デューイ",
+            "count": 79
+        },
+        {
+            "name": "デューク・オブ・ヨーク",
+            "count": 298
+        },
+        {
+            "name": "デンバー",
+            "count": 170
+        },
+        {
+            "name": "トリエステ",
+            "count": 150
+        },
+        {
+            "name": "トリチェリ",
+            "count": 144
+        },
+        {
+            "name": "トレント",
+            "count": 145
+        },
+        {
+            "name": "トレント(meta)",
+            "count": 3
+        },
+        {
+            "name": "ドイッチュラント",
+            "count": 1218
+        },
+        {
+            "name": "ドゥーカ・デッリ・アブルッツィ",
+            "count": 125
+        },
+        {
+            "name": "ドレイク",
+            "count": 246
+        },
+        {
+            "name": "ドーセットシャー",
+            "count": 44
+        },
+        {
+            "name": "ニコラス",
+            "count": 262
+        },
+        {
+            "name": "ニコロソ・ダ・レッコ",
+            "count": 26
+        },
+        {
+            "name": "ニュルンベルク",
+            "count": 211
+        },
+        {
+            "name": "ニューオリンズ",
+            "count": 75
+        },
+        {
+            "name": "ニューカッスル",
+            "count": 208
+        },
+        {
+            "name": "ニュージャージー",
+            "count": 1211
+        },
+        {
+            "name": "ネコネ",
+            "count": 6
+        },
+        {
+            "name": "ネバダ",
+            "count": 55
+        },
+        {
+            "name": "ネプチューン",
+            "count": 450
+        },
+        {
+            "name": "ネプテューヌ",
+            "count": 153
+        },
+        {
+            "name": "ネルソン",
+            "count": 822
+        },
+        {
+            "name": "ノワール",
+            "count": 26
+        },
+        {
+            "name": "ノーザンプトン",
+            "count": 154
+        },
+        {
+            "name": "ノーザンプトンii",
+            "count": 15
+        },
+        {
+            "name": "ノースカロライナ",
+            "count": 566
+        },
+        {
+            "name": "ノーチラス",
+            "count": 64
+        },
+        {
+            "name": "ノーフォーク",
+            "count": 248
+        },
+        {
+            "name": "ハウ",
+            "count": 427
+        },
+        {
+            "name": "ハムマン",
+            "count": 1956
+        },
+        {
+            "name": "ハムマンii",
+            "count": 24
+        },
+        {
+            "name": "ハルゼー・パウエル",
+            "count": 66
+        },
+        {
+            "name": "ハルビン",
+            "count": 68
+        },
+        {
+            "name": "ハンス・リューデマン",
+            "count": 2
+        },
+        {
+            "name": "ハンター",
+            "count": 104
+        },
+        {
+            "name": "ハンター(meta)",
+            "count": 3
+        },
+        {
+            "name": "ハーディ",
+            "count": 60
+        },
+        {
+            "name": "ハーマイオニー",
+            "count": 341
+        },
+        {
+            "name": "ハーミーズ",
+            "count": 130
+        },
+        {
+            "name": "バターン",
+            "count": 181
+        },
+        {
+            "name": "バッチ",
+            "count": 1467
+        },
+        {
+            "name": "バンカー・ヒル",
+            "count": 98
+        },
+        {
+            "name": "バーミンガム",
+            "count": 72
+        },
+        {
+            "name": "パトリツィア・アーベルハイム",
+            "count": 7
+        },
+        {
+            "name": "パーシュース",
+            "count": 1138
+        },
+        {
+            "name": "パープルハート",
+            "count": 11
+        },
+        {
+            "name": "パーミャチ・メルクーリヤ",
+            "count": 1131
+        },
+        {
+            "name": "ヒューストン",
+            "count": 101
+        },
+        {
+            "name": "ビスマルク",
+            "count": 1446
+        },
+        {
+            "name": "ビロクシ",
+            "count": 44
+        },
+        {
+            "name": "ビーグル",
+            "count": 38
+        },
+        {
+            "name": "フィジー",
+            "count": 37
+        },
+        {
+            "name": "フェニックス",
+            "count": 128
+        },
+        {
+            "name": "フォックスハウンド",
+            "count": 220
+        },
+        {
+            "name": "フォッシュ",
+            "count": 97
+        },
+        {
+            "name": "フォルバン",
+            "count": 102
+        },
+        {
+            "name": "フォーチュン",
+            "count": 196
+        },
+        {
+            "name": "フォーチュン(meta)",
+            "count": 6
+        },
+        {
+            "name": "フォーミダブル",
+            "count": 8247
+        },
+        {
+            "name": "フッド",
+            "count": 963
+        },
+        {
+            "name": "フミルィル",
+            "count": 8
+        },
+        {
+            "name": "フリードリヒ・デア・グローセ",
+            "count": 926
+        },
+        {
+            "name": "フレッチャー",
+            "count": 192
+        },
+        {
+            "name": "フート",
+            "count": 251
+        },
+        {
+            "name": "ブッシュ",
+            "count": 48
+        },
+        {
+            "name": "ブラックハート",
+            "count": 8
+        },
+        {
+            "name": "ブラック・プリンス",
+            "count": 129
+        },
+        {
+            "name": "ブラン",
+            "count": 2447
+        },
+        {
+            "name": "ブリストル",
+            "count": 31
+        },
+        {
+            "name": "ブリュッヒャー",
+            "count": 133
+        },
+        {
+            "name": "ブリュンヒルデ",
+            "count": 107
+        },
+        {
+            "name": "ブルックリン",
+            "count": 190
+        },
+        {
+            "name": "ブルドッグ",
+            "count": 76
+        },
+        {
+            "name": "ブルーギル",
+            "count": 34
+        },
+        {
+            "name": "ブレスト",
+            "count": 152
+        },
+        {
+            "name": "ブレマートン",
+            "count": 6047
+        },
+        {
+            "name": "プリマス",
+            "count": 216
+        },
+        {
+            "name": "プリンストン",
+            "count": 53
+        },
+        {
+            "name": "プリンス・オブ・ウェールズ",
+            "count": 643
+        },
+        {
+            "name": "プリンツ・アーダルベルト",
+            "count": 115
+        },
+        {
+            "name": "プリンツ・オイゲン",
+            "count": 7264
+        },
+        {
+            "name": "プリンツ・オイゲンちゃん",
+            "count": 110
+        },
+        {
+            "name": "プリンツ・ハインリヒ",
+            "count": 634
+        },
+        {
+            "name": "プリンツ・ループレヒト",
+            "count": 164
+        },
+        {
+            "name": "ヘイゼルウッド",
+            "count": 21
+        },
+        {
+            "name": "ヘルマン・キュンネ",
+            "count": 4
+        },
+        {
+            "name": "ヘレナ",
+            "count": 1058
+        },
+        {
+            "name": "ヘレナ(meta)",
+            "count": 118
+        },
+        {
+            "name": "ベアルン",
+            "count": 39
+        },
+        {
+            "name": "ベイリー",
+            "count": 68
+        },
+        {
+            "name": "ベルちゃん",
+            "count": 566
+        },
+        {
+            "name": "ベルファスト",
+            "count": 7484
+        },
+        {
+            "name": "ベローナ",
+            "count": 46
+        },
+        {
+            "name": "ベンソン",
+            "count": 132
+        },
+        {
+            "name": "ベール",
+            "count": 37
+        },
+        {
+            "name": "ペネロピ",
+            "count": 65
+        },
+        {
+            "name": "ペンサコーラ",
+            "count": 52
+        },
+        {
+            "name": "ペンシルベニア",
+            "count": 101
+        },
+        {
+            "name": "ペーター・シュトラッサー",
+            "count": 233
+        },
+        {
+            "name": "ホノルル",
+            "count": 2586
+        },
+        {
+            "name": "ホビー",
+            "count": 191
+        },
+        {
+            "name": "ホワイトハート",
+            "count": 3
+        },
+        {
+            "name": "ホーネット",
+            "count": 622
+        },
+        {
+            "name": "ホーネットii",
+            "count": 24
+        },
+        {
+            "name": "ボイシ",
+            "count": 144
+        },
+        {
+            "name": "ボルチモア",
+            "count": 2135
+        },
+        {
+            "name": "ボルチモア(μ兵装)",
+            "count": 102
+        },
+        {
+            "name": "ボルツァーノ",
+            "count": 11
+        },
+        {
+            "name": "ボーグ",
+            "count": 205
+        },
+        {
+            "name": "ポンペオ・マーニョ",
+            "count": 44
+        },
+        {
+            "name": "ポートランド",
+            "count": 760
+        },
+        {
+            "name": "ポーラ",
+            "count": 795
+        },
+        {
+            "name": "マイレ・ブレゼ",
+            "count": 76
+        },
+        {
+            "name": "マインツ",
+            "count": 228
+        },
+        {
+            "name": "マエストラーレ",
+            "count": 72
+        },
+        {
+            "name": "マクデブルク",
+            "count": 29
+        },
+        {
+            "name": "マサチューセッツ",
+            "count": 626
+        },
+        {
+            "name": "マスケティーア",
+            "count": 11
+        },
+        {
+            "name": "マッコール",
+            "count": 171
+        },
+        {
+            "name": "マッチレス",
+            "count": 33
+        },
+        {
+            "name": "マラニー",
+            "count": 51
+        },
+        {
+            "name": "マリー・ローズ",
+            "count": 391
+        },
+        {
+            "name": "マルコ・ポーロ",
+            "count": 91
+        },
+        {
+            "name": "マンチェスター",
+            "count": 67
+        },
+        {
+            "name": "マーブルヘッド",
+            "count": 215
+        },
+        {
+            "name": "ミネアポリス",
+            "count": 350
+        },
+        {
+            "name": "ミンスク",
+            "count": 89
+        },
+        {
+            "name": "ムジナ",
+            "count": 5
+        },
+        {
+            "name": "ムルマンスク",
+            "count": 165
+        },
+        {
+            "name": "メリーランド",
+            "count": 73
+        },
+        {
+            "name": "メンフィス",
+            "count": 82
+        },
+        {
+            "name": "メンフィス(meta)",
+            "count": 8
+        },
+        {
+            "name": "モナーク",
+            "count": 424
+        },
+        {
+            "name": "モニカ",
+            "count": 26
+        },
+        {
+            "name": "モリソン",
+            "count": 23
+        },
+        {
+            "name": "モントピリア",
+            "count": 408
+        },
+        {
+            "name": "モーリー",
+            "count": 264
+        },
+        {
+            "name": "ユニコーン",
+            "count": 7334
+        },
+        {
+            "name": "ヨルク",
+            "count": 86
+        },
+        {
+            "name": "ヨーク",
+            "count": 1002
+        },
+        {
+            "name": "ヨークタウン",
+            "count": 602
+        },
+        {
+            "name": "ヨークタウンii",
+            "count": 111
+        },
+        {
+            "name": "ライザリン・シュタウト",
+            "count": 104
+        },
+        {
+            "name": "ライプツィヒ",
+            "count": 190
+        },
+        {
+            "name": "ラドフォード",
+            "count": 37
+        },
+        {
+            "name": "ラフィー",
+            "count": 6194
+        },
+        {
+            "name": "ラングレー",
+            "count": 212
+        },
+        {
+            "name": "ラングレーii",
+            "count": 6
+        },
+        {
+            "name": "ランドンターブル",
+            "count": 63
+        },
+        {
+            "name": "ラ・ガリソニエール",
+            "count": 100
+        },
+        {
+            "name": "リアンダー",
+            "count": 270
+        },
+        {
+            "name": "リシュリュー",
+            "count": 650
+        },
+        {
+            "name": "リッチモンド",
+            "count": 52
+        },
+        {
+            "name": "リットリオ",
+            "count": 316
+        },
+        {
+            "name": "リトル・イラストリアス",
+            "count": 203
+        },
+        {
+            "name": "リトル・エンタープライズ",
+            "count": 96
+        },
+        {
+            "name": "リトル・クリーブランド",
+            "count": 40
+        },
+        {
+            "name": "リトル・サンディエゴ",
+            "count": 24
+        },
+        {
+            "name": "リトル・チェシャー",
+            "count": 72
+        },
+        {
+            "name": "リトル・ヘレナ",
+            "count": 71
+        },
+        {
+            "name": "リトル・レナウン",
+            "count": 107
+        },
+        {
+            "name": "リノ",
+            "count": 643
+        },
+        {
+            "name": "リベッチオ",
+            "count": 125
+        },
+        {
+            "name": "リュッツォウ",
+            "count": 185
+        },
+        {
+            "name": "リラ・ディザイアス",
+            "count": 15
+        },
+        {
+            "name": "リヴェンジ",
+            "count": 24
+        },
+        {
+            "name": "ルピニャート",
+            "count": 48
+        },
+        {
+            "name": "ルルティエ",
+            "count": 8
+        },
+        {
+            "name": "ル・テメレール",
+            "count": 172
+        },
+        {
+            "name": "ル・テリブル",
+            "count": 86
+        },
+        {
+            "name": "ル・トリオンファン",
+            "count": 181
+        },
+        {
+            "name": "ル・マラン",
+            "count": 2984
+        },
+        {
+            "name": "ル・マラン(μ兵装)",
+            "count": 104
+        },
+        {
+            "name": "ル・マルス",
+            "count": 49
+        },
+        {
+            "name": "レオナルド・ダ・ヴィンチ",
+            "count": 85
+        },
+        {
+            "name": "レキシントン",
+            "count": 173
+        },
+        {
+            "name": "レナウン",
+            "count": 495
+        },
+        {
+            "name": "レナウン(meta)",
+            "count": 8
+        },
+        {
+            "name": "レパルス",
+            "count": 593
+        },
+        {
+            "name": "レパルス(meta)",
+            "count": 19
+        },
+        {
+            "name": "レンジャー",
+            "count": 351
+        },
+        {
+            "name": "レーベレヒト・マース",
+            "count": 29
+        },
+        {
+            "name": "ロイヤル・フォーチュン",
+            "count": 109
+        },
+        {
+            "name": "ロドニー",
+            "count": 461
+        },
+        {
+            "name": "ロング・アイランド",
+            "count": 908
+        },
+        {
+            "name": "ロンドン",
+            "count": 317
+        },
+        {
+            "name": "ローマ",
+            "count": 45
+        },
+        {
+            "name": "ローリー",
+            "count": 49
+        },
+        {
+            "name": "ローン",
+            "count": 1848
+        },
+        {
+            "name": "ローン(μ兵装)",
+            "count": 82
+        },
+        {
+            "name": "ワシントン",
+            "count": 382
+        },
+        {
+            "name": "ワスプ",
+            "count": 29
+        },
+        {
+            "name": "ヴァリアント",
+            "count": 135
+        },
+        {
+            "name": "ヴァンガード",
+            "count": 105
+        },
+        {
+            "name": "ヴァンパイア",
+            "count": 1180
+        },
+        {
+            "name": "ヴィクトリアス",
+            "count": 644
+        },
+        {
+            "name": "ヴィットリオ・ヴェネト",
+            "count": 403
+        },
+        {
+            "name": "ヴィルヘルム・ハイドカンプ",
+            "count": 1
+        },
+        {
+            "name": "ヴィンセンス",
+            "count": 43
+        },
+        {
+            "name": "ヴィンチェンツォ・ジョベルティ",
+            "count": 15
+        },
+        {
+            "name": "ヴェスタル",
+            "count": 205
+        },
+        {
+            "name": "ヴェーザー",
+            "count": 75
+        },
+        {
+            "name": "ヴォルガ",
+            "count": 101
+        },
+        {
+            "name": "ヴォークラン",
+            "count": 120
+        },
+        {
+            "name": "三日月",
+            "count": 103
+        },
+        {
+            "name": "三浦あずさ",
+            "count": 9
+        },
+        {
+            "name": "三笠",
+            "count": 703
+        },
+        {
+            "name": "三隈",
+            "count": 21
+        },
+        {
+            "name": "不屈",
+            "count": 5
+        },
+        {
+            "name": "不挠",
+            "count": 75
+        },
+        {
+            "name": "不知火",
+            "count": 340
+        },
+        {
+            "name": "丹佛",
+            "count": 1
+        },
+        {
+            "name": "乌尔里希·冯·胡滕",
+            "count": 17
+        },
+        {
+            "name": "五十鈴",
+            "count": 225
+        },
+        {
+            "name": "五十铃",
+            "count": 14
+        },
+        {
+            "name": "亚利桑那",
+            "count": 4
+        },
+        {
+            "name": "亚特兰大",
+            "count": 3
+        },
+        {
+            "name": "什罗普郡",
+            "count": 5
+        },
+        {
+            "name": "企业",
+            "count": 219
+        },
+        {
+            "name": "伊13",
+            "count": 156
+        },
+        {
+            "name": "伊168",
+            "count": 118
+        },
+        {
+            "name": "伊19",
+            "count": 613
+        },
+        {
+            "name": "伊25",
+            "count": 116
+        },
+        {
+            "name": "伊26",
+            "count": 229
+        },
+        {
+            "name": "伊56",
+            "count": 46
+        },
+        {
+            "name": "伊58",
+            "count": 69
+        },
+        {
+            "name": "伊丽莎白女王",
+            "count": 29
+        },
+        {
+            "name": "伊势",
+            "count": 2
+        },
+        {
+            "name": "伊勢",
+            "count": 79
+        },
+        {
+            "name": "伊吹",
+            "count": 405
+        },
+        {
+            "name": "伏尔加",
+            "count": 4
+        },
+        {
+            "name": "休斯敦",
+            "count": 1
+        },
+        {
+            "name": "伦敦",
+            "count": 4
+        },
+        {
+            "name": "伯明翰",
+            "count": 1
+        },
+        {
+            "name": "佐治亚",
+            "count": 13
+        },
+        {
+            "name": "佩内洛珀",
+            "count": 2
+        },
+        {
+            "name": "信浓",
+            "count": 41
+        },
+        {
+            "name": "信濃",
+            "count": 1835
+        },
+        {
+            "name": "俾斯麦",
+            "count": 37
+        },
+        {
+            "name": "光荣",
+            "count": 39
+        },
+        {
+            "name": "光辉",
+            "count": 407
+        },
+        {
+            "name": "克利夫兰",
+            "count": 179
+        },
+        {
+            "name": "克雷文",
+            "count": 1
+        },
+        {
+            "name": "兰利",
+            "count": 4
+        },
+        {
+            "name": "内华达",
+            "count": 1
+        },
+        {
+            "name": "凉月",
+            "count": 5
+        },
+        {
+            "name": "凤翔",
+            "count": 1
+        },
+        {
+            "name": "凯旋",
+            "count": 21
+        },
+        {
+            "name": "出云",
+            "count": 4
+        },
+        {
+            "name": "出雲",
+            "count": 126
+        },
+        {
+            "name": "列克星敦",
+            "count": 17
+        },
+        {
+            "name": "初春",
+            "count": 88
+        },
+        {
+            "name": "初霜",
+            "count": 68
+        },
+        {
+            "name": "利安得",
+            "count": 13
+        },
+        {
+            "name": "利托里奥",
+            "count": 15
+        },
+        {
+            "name": "前卫",
+            "count": 14
+        },
+        {
+            "name": "加古",
+            "count": 90
+        },
+        {
+            "name": "加斯科涅",
+            "count": 28
+        },
+        {
+            "name": "加賀",
+            "count": 4701
+        },
+        {
+            "name": "加贺",
+            "count": 136
+        },
+        {
+            "name": "勇敢",
+            "count": 1
+        },
+        {
+            "name": "勒马尔",
+            "count": 5
+        },
+        {
+            "name": "北卡罗来纳",
+            "count": 19
+        },
+        {
+            "name": "北風",
+            "count": 129
+        },
+        {
+            "name": "北风",
+            "count": 6
+        },
+        {
+            "name": "千代田",
+            "count": 105
+        },
+        {
+            "name": "千歳",
+            "count": 140
+        },
+        {
+            "name": "半人马",
+            "count": 2
+        },
+        {
+            "name": "华甲",
+            "count": 8
+        },
+        {
+            "name": "华盛顿",
+            "count": 14
+        },
+        {
+            "name": "南夢芽",
+            "count": 8
+        },
+        {
+            "name": "南达科他",
+            "count": 12
+        },
+        {
+            "name": "博格",
+            "count": 4
+        },
+        {
+            "name": "卡律布狄斯",
+            "count": 5
+        },
+        {
+            "name": "卡萨布兰卡",
+            "count": 1
+        },
+        {
+            "name": "卡辛",
+            "count": 12
+        },
+        {
+            "name": "卯月",
+            "count": 119
+        },
+        {
+            "name": "印第安纳波利斯",
+            "count": 12
+        },
+        {
+            "name": "卷波",
+            "count": 5
+        },
+        {
+            "name": "厌战",
+            "count": 49
+        },
+        {
+            "name": "双海亜美",
+            "count": 1
+        },
+        {
+            "name": "双海真美",
+            "count": 4
+        },
+        {
+            "name": "反击",
+            "count": 14
+        },
+        {
+            "name": "古比雪夫",
+            "count": 1
+        },
+        {
+            "name": "古鷹",
+            "count": 183
+        },
+        {
+            "name": "可怖",
+            "count": 10
+        },
+        {
+            "name": "可畏",
+            "count": 535
+        },
+        {
+            "name": "吕佐夫",
+            "count": 5
+        },
+        {
+            "name": "君主",
+            "count": 26
+        },
+        {
+            "name": "吸血鬼",
+            "count": 92
+        },
+        {
+            "name": "吹雪",
+            "count": 625
+        },
+        {
+            "name": "吾妻",
+            "count": 638
+        },
+        {
+            "name": "命运女神",
+            "count": 6
+        },
+        {
+            "name": "哈尔滨",
+            "count": 4
+        },
+        {
+            "name": "哈曼",
+            "count": 137
+        },
+        {
+            "name": "响",
+            "count": 9
+        },
+        {
+            "name": "哥伦比亚",
+            "count": 5
+        },
+        {
+            "name": "唐斯",
+            "count": 7
+        },
+        {
+            "name": "喀琅施塔得",
+            "count": 4
+        },
+        {
+            "name": "回声",
+            "count": 1
+        },
+        {
+            "name": "土佐",
+            "count": 489
+        },
+        {
+            "name": "圣地亚哥",
+            "count": 29
+        },
+        {
+            "name": "圣女贞德",
+            "count": 3
+        },
+        {
+            "name": "圣路易斯",
+            "count": 183
+        },
+        {
+            "name": "埃克塞特",
+            "count": 2
+        },
+        {
+            "name": "埃吉尔",
+            "count": 110
+        },
+        {
+            "name": "埃塞克斯",
+            "count": 40
+        },
+        {
+            "name": "埃姆登",
+            "count": 23
+        },
+        {
+            "name": "埃尔宾",
+            "count": 5
+        },
+        {
+            "name": "埃尔德里奇",
+            "count": 64
+        },
+        {
+            "name": "埃米尔·贝尔汀",
+            "count": 2
+        },
+        {
+            "name": "基洛夫",
+            "count": 1
+        },
+        {
+            "name": "基辅",
+            "count": 12
+        },
+        {
+            "name": "塔什干",
+            "count": 140
+        },
+        {
+            "name": "塔尔图",
+            "count": 3
+        },
+        {
+            "name": "塔林",
+            "count": 5
+        },
+        {
+            "name": "塞德利茨",
+            "count": 4
+        },
+        {
+            "name": "声望",
+            "count": 26
+        },
+        {
+            "name": "夕张",
+            "count": 4
+        },
+        {
+            "name": "夕張",
+            "count": 173
+        },
+        {
+            "name": "夕暮",
+            "count": 130
+        },
+        {
+            "name": "夕立",
+            "count": 2318
+        },
+        {
+            "name": "大凤",
+            "count": 229
+        },
+        {
+            "name": "大潮",
+            "count": 224
+        },
+        {
+            "name": "大青花鱼",
+            "count": 7
+        },
+        {
+            "name": "大鳳",
+            "count": 7360
+        },
+        {
+            "name": "大鳳(μ兵装)",
+            "count": 162
+        },
+        {
+            "name": "大黄蜂",
+            "count": 4
+        },
+        {
+            "name": "大黄蜂ii",
+            "count": 1
+        },
+        {
+            "name": "天后",
+            "count": 9
+        },
+        {
+            "name": "天城",
+            "count": 1762
+        },
+        {
+            "name": "天城ちゃん",
+            "count": 471
+        },
+        {
+            "name": "天海春香",
+            "count": 9
+        },
+        {
+            "name": "天狼星",
+            "count": 252
+        },
+        {
+            "name": "天鹰",
+            "count": 8
+        },
+        {
+            "name": "太原",
+            "count": 143
+        },
+        {
+            "name": "奥丁",
+            "count": 5
+        },
+        {
+            "name": "奥古斯特·冯·帕塞瓦尔",
+            "count": 33
+        },
+        {
+            "name": "奥马哈",
+            "count": 14
+        },
+        {
+            "name": "女天狗",
+            "count": 52
+        },
+        {
+            "name": "女将",
+            "count": 6
+        },
+        {
+            "name": "女灶神",
+            "count": 13
+        },
+        {
+            "name": "如月",
+            "count": 1483
+        },
+        {
+            "name": "如月千早",
+            "count": 10
+        },
+        {
+            "name": "妙高",
+            "count": 95
+        },
+        {
+            "name": "威严",
+            "count": 9
+        },
+        {
+            "name": "威奇塔",
+            "count": 5
+        },
+        {
+            "name": "威尔士亲王",
+            "count": 66
+        },
+        {
+            "name": "威悉",
+            "count": 1
+        },
+        {
+            "name": "孟菲斯",
+            "count": 4
+        },
+        {
+            "name": "宁海",
+            "count": 67
+        },
+        {
+            "name": "安克雷奇",
+            "count": 26
+        },
+        {
+            "name": "定安",
+            "count": 32
+        },
+        {
+            "name": "宝多六花",
+            "count": 66
+        },
+        {
+            "name": "宵月",
+            "count": 180
+        },
+        {
+            "name": "宾夕法尼亚",
+            "count": 5
+        },
+        {
+            "name": "富特",
+            "count": 3
+        },
+        {
+            "name": "寧海",
+            "count": 758
+        },
+        {
+            "name": "射水鱼",
+            "count": 1
+        },
+        {
+            "name": "小企业",
+            "count": 5
+        },
+        {
+            "name": "小光辉",
+            "count": 11
+        },
+        {
+            "name": "小声望",
+            "count": 6
+        },
+        {
+            "name": "小天城",
+            "count": 26
+        },
+        {
+            "name": "小天鹅",
+            "count": 88
+        },
+        {
+            "name": "小柴郡",
+            "count": 9
+        },
+        {
+            "name": "小欧根",
+            "count": 10
+        },
+        {
+            "name": "小海伦娜",
+            "count": 2
+        },
+        {
+            "name": "小猎兔犬",
+            "count": 1
+        },
+        {
+            "name": "小贝法",
+            "count": 9
+        },
+        {
+            "name": "小赤城",
+            "count": 4
+        },
+        {
+            "name": "小齐柏林",
+            "count": 1
+        },
+        {
+            "name": "尼古拉斯",
+            "count": 16
+        },
+        {
+            "name": "山城",
+            "count": 2726
+        },
+        {
+            "name": "山城(meta)",
+            "count": 36
+        },
+        {
+            "name": "山風",
+            "count": 68
+        },
+        {
+            "name": "山风",
+            "count": 2
+        },
+        {
+            "name": "岛风",
+            "count": 34
+        },
+        {
+            "name": "島風",
+            "count": 1252
+        },
+        {
+            "name": "川内",
+            "count": 79
+        },
+        {
+            "name": "巴丹",
+            "count": 1
+        },
+        {
+            "name": "巴尔的摩",
+            "count": 25
+        },
+        {
+            "name": "巻波",
+            "count": 32
+        },
+        {
+            "name": "布什",
+            "count": 1
+        },
+        {
+            "name": "布伦希尔德",
+            "count": 5
+        },
+        {
+            "name": "布兰",
+            "count": 1
+        },
+        {
+            "name": "布吕歇尔",
+            "count": 6
+        },
+        {
+            "name": "布莱默顿",
+            "count": 112
+        },
+        {
+            "name": "布雷斯特",
+            "count": 25
+        },
+        {
+            "name": "布鲁克林",
+            "count": 5
+        },
+        {
+            "name": "希佩尔海军上将",
+            "count": 10
+        },
+        {
+            "name": "帝国",
+            "count": 22
+        },
+        {
+            "name": "平海",
+            "count": 989
+        },
+        {
+            "name": "库拉索",
+            "count": 1
+        },
+        {
+            "name": "库珀",
+            "count": 8
+        },
+        {
+            "name": "应瑞",
+            "count": 24
+        },
+        {
+            "name": "庞培·马格诺",
+            "count": 1
+        },
+        {
+            "name": "弗莱彻",
+            "count": 5
+        },
+        {
+            "name": "彗星",
+            "count": 6
+        },
+        {
+            "name": "彭萨科拉",
+            "count": 1
+        },
+        {
+            "name": "彼得·史特拉塞",
+            "count": 8
+        },
+        {
+            "name": "德意志",
+            "count": 25
+        },
+        {
+            "name": "德雷克",
+            "count": 7
+        },
+        {
+            "name": "忒修斯",
+            "count": 1
+        },
+        {
+            "name": "応瑞",
+            "count": 110
+        },
+        {
+            "name": "恐怖",
+            "count": 26
+        },
+        {
+            "name": "恰巴耶夫",
+            "count": 37
+        },
+        {
+            "name": "恶毒",
+            "count": 378
+        },
+        {
+            "name": "愛宕",
+            "count": 7571
+        },
+        {
+            "name": "戦艦加賀",
+            "count": 28
+        },
+        {
+            "name": "扎拉",
+            "count": 20
+        },
+        {
+            "name": "扶桑",
+            "count": 575
+        },
+        {
+            "name": "扶桑(meta)",
+            "count": 34
+        },
+        {
+            "name": "抚顺",
+            "count": 7
+        },
+        {
+            "name": "拉德福特",
+            "count": 1
+        },
+        {
+            "name": "拉菲",
+            "count": 415
+        },
+        {
+            "name": "提尔比茨",
+            "count": 33
+        },
+        {
+            "name": "摩尔曼斯克",
+            "count": 9
+        },
+        {
+            "name": "摩耶",
+            "count": 323
+        },
+        {
+            "name": "撫順",
+            "count": 64
+        },
+        {
+            "name": "敦刻尔克",
+            "count": 30
+        },
+        {
+            "name": "文月",
+            "count": 204
+        },
+        {
+            "name": "文森斯",
+            "count": 2
+        },
+        {
+            "name": "斯佩伯爵海军上将",
+            "count": 31
+        },
+        {
+            "name": "斯坦利",
+            "count": 1
+        },
+        {
+            "name": "斯彭斯",
+            "count": 5
+        },
+        {
+            "name": "斯莫利",
+            "count": 2
+        },
+        {
+            "name": "新奥尔良",
+            "count": 6
+        },
+        {
+            "name": "新月",
+            "count": 118
+        },
+        {
+            "name": "新月jp",
+            "count": 1
+        },
+        {
+            "name": "新条",
+            "count": 58
+        },
+        {
+            "name": "新泽西",
+            "count": 51
+        },
+        {
+            "name": "旗風",
+            "count": 56
+        },
+        {
+            "name": "无敌",
+            "count": 1
+        },
+        {
+            "name": "无畏",
+            "count": 9
+        },
+        {
+            "name": "日向",
+            "count": 132
+        },
+        {
+            "name": "旧金山",
+            "count": 1
+        },
+        {
+            "name": "时雨",
+            "count": 14
+        },
+        {
+            "name": "昆西",
+            "count": 2
+        },
+        {
+            "name": "明尼阿波利斯",
+            "count": 9
+        },
+        {
+            "name": "明斯克",
+            "count": 4
+        },
+        {
+            "name": "明石",
+            "count": 2163
+        },
+        {
+            "name": "易北",
+            "count": 8
+        },
+        {
+            "name": "春月",
+            "count": 124
+        },
+        {
+            "name": "時雨",
+            "count": 1208
+        },
+        {
+            "name": "晓",
+            "count": 2
+        },
+        {
+            "name": "普利茅斯",
+            "count": 11
+        },
+        {
+            "name": "暁",
+            "count": 541
+        },
+        {
+            "name": "曼彻斯特",
+            "count": 4
+        },
+        {
+            "name": "最上",
+            "count": 122
+        },
+        {
+            "name": "有明",
+            "count": 53
+        },
+        {
+            "name": "朝潮",
+            "count": 238
+        },
+        {
+            "name": "本森",
+            "count": 4
+        },
+        {
+            "name": "朱诺",
+            "count": 4
+        },
+        {
+            "name": "杜威",
+            "count": 1
+        },
+        {
+            "name": "杰金斯",
+            "count": 1
+        },
+        {
+            "name": "松風",
+            "count": 135
+        },
+        {
+            "name": "松风",
+            "count": 4
+        },
+        {
+            "name": "柴郡",
+            "count": 240
+        },
+        {
+            "name": "标枪",
+            "count": 157
+        },
+        {
+            "name": "格伦维尔",
+            "count": 1
+        },
+        {
+            "name": "格奈森瑙",
+            "count": 7
+        },
+        {
+            "name": "格里德利",
+            "count": 13
+        },
+        {
+            "name": "棘鳍",
+            "count": 3
+        },
+        {
+            "name": "榛名",
+            "count": 367
+        },
+        {
+            "name": "樫野",
+            "count": 2775
+        },
+        {
+            "name": "欧根亲王",
+            "count": 296
+        },
+        {
+            "name": "欧若拉",
+            "count": 17
+        },
+        {
+            "name": "武蔵",
+            "count": 876
+        },
+        {
+            "name": "武藏",
+            "count": 52
+        },
+        {
+            "name": "比叡",
+            "count": 493
+        },
+        {
+            "name": "比叡ちゃん",
+            "count": 75
+        },
+        {
+            "name": "水无月",
+            "count": 2
+        },
+        {
+            "name": "水星纪念",
+            "count": 13
+        },
+        {
+            "name": "水瀬伊織",
+            "count": 10
+        },
+        {
+            "name": "水無月",
+            "count": 116
+        },
+        {
+            "name": "汎用型ブリ",
+            "count": 231
+        },
+        {
+            "name": "江風",
+            "count": 1301
+        },
+        {
+            "name": "江风",
+            "count": 93
+        },
+        {
+            "name": "沃克兰",
+            "count": 2
+        },
+        {
+            "name": "沙恩霍斯特",
+            "count": 11
+        },
+        {
+            "name": "泛用型布里",
+            "count": 11
+        },
+        {
+            "name": "波拉",
+            "count": 9
+        },
+        {
+            "name": "波特兰",
+            "count": 14
+        },
+        {
+            "name": "波特兰.改",
+            "count": 1
+        },
+        {
+            "name": "泽西",
+            "count": 52
+        },
+        {
+            "name": "洪亮",
+            "count": 1
+        },
+        {
+            "name": "浜風",
+            "count": 181
+        },
+        {
+            "name": "浦波",
+            "count": 46
+        },
+        {
+            "name": "浦風",
+            "count": 109
+        },
+        {
+            "name": "浦风",
+            "count": 2
+        },
+        {
+            "name": "海伦娜",
+            "count": 75
+        },
+        {
+            "name": "海伦娜·meta",
+            "count": 2
+        },
+        {
+            "name": "海咲",
+            "count": 2
+        },
+        {
+            "name": "海因里希亲王",
+            "count": 6
+        },
+        {
+            "name": "海圻",
+            "count": 2
+        },
+        {
+            "name": "海天",
+            "count": 28
+        },
+        {
+            "name": "海王星",
+            "count": 15
+        },
+        {
+            "name": "海風",
+            "count": 129
+        },
+        {
+            "name": "海风",
+            "count": 4
+        },
+        {
+            "name": "涼月",
+            "count": 219
+        },
+        {
+            "name": "深雪",
+            "count": 72
+        },
+        {
+            "name": "清波",
+            "count": 34
+        },
+        {
+            "name": "満潮",
+            "count": 80
+        },
+        {
+            "name": "滨风",
+            "count": 1
+        },
+        {
+            "name": "火奴鲁鲁",
+            "count": 58
+        },
+        {
+            "name": "热心",
+            "count": 1
+        },
+        {
+            "name": "熊野",
+            "count": 344
+        },
+        {
+            "name": "爱丁堡",
+            "count": 11
+        },
+        {
+            "name": "爱宕",
+            "count": 362
+        },
+        {
+            "name": "爱斯基摩人",
+            "count": 2
+        },
+        {
+            "name": "特伦托",
+            "count": 1
+        },
+        {
+            "name": "特装型ブリmkiii",
+            "count": 34
+        },
+        {
+            "name": "特装型布里mkiii",
+            "count": 3
+        },
+        {
+            "name": "独立",
+            "count": 5
+        },
+        {
+            "name": "独角兽",
+            "count": 453
+        },
+        {
+            "name": "猎人",
+            "count": 1
+        },
+        {
+            "name": "瑞鶴",
+            "count": 1779
+        },
+        {
+            "name": "瑞鹤",
+            "count": 51
+        },
+        {
+            "name": "甘古特",
+            "count": 8
+        },
+        {
+            "name": "由良",
+            "count": 31
+        },
+        {
+            "name": "电",
+            "count": 14
+        },
+        {
+            "name": "白雪",
+            "count": 78
+        },
+        {
+            "name": "白露",
+            "count": 239
+        },
+        {
+            "name": "白龍",
+            "count": 196
+        },
+        {
+            "name": "白龙",
+            "count": 7
+        },
+        {
+            "name": "的里雅斯特",
+            "count": 5
+        },
+        {
+            "name": "皇家方舟",
+            "count": 30
+        },
+        {
+            "name": "皇家财富号",
+            "count": 4
+        },
+        {
+            "name": "盐湖城",
+            "count": 2
+        },
+        {
+            "name": "睦月",
+            "count": 931
+        },
+        {
+            "name": "确捷",
+            "count": 8
+        },
+        {
+            "name": "磯風",
+            "count": 200
+        },
+        {
+            "name": "神通",
+            "count": 264
+        },
+        {
+            "name": "神速",
+            "count": 5
+        },
+        {
+            "name": "神風",
+            "count": 156
+        },
+        {
+            "name": "神风",
+            "count": 3
+        },
+        {
+            "name": "祥凤",
+            "count": 4
+        },
+        {
+            "name": "祥鳳",
+            "count": 293
+        },
+        {
+            "name": "福尔班",
+            "count": 7
+        },
+        {
+            "name": "福煦",
+            "count": 1
+        },
+        {
+            "name": "秋月律子",
+            "count": 2
+        },
+        {
+            "name": "科尔克",
+            "count": 1
+        },
+        {
+            "name": "科罗拉多",
+            "count": 8
+        },
+        {
+            "name": "穗香",
+            "count": 10
+        },
+        {
+            "name": "突击者",
+            "count": 10
+        },
+        {
+            "name": "竞技神",
+            "count": 3
+        },
+        {
+            "name": "筑摩",
+            "count": 197
+        },
+        {
+            "name": "紀伊",
+            "count": 95
+        },
+        {
+            "name": "絮库夫",
+            "count": 18
+        },
+        {
+            "name": "綾波",
+            "count": 8015
+        },
+        {
+            "name": "约克",
+            "count": 56
+        },
+        {
+            "name": "约克公爵",
+            "count": 18
+        },
+        {
+            "name": "约克城",
+            "count": 29
+        },
+        {
+            "name": "约克城ii",
+            "count": 1
+        },
+        {
+            "name": "纪伊",
+            "count": 2
+        },
+        {
+            "name": "纳尔逊",
+            "count": 7
+        },
+        {
+            "name": "纽伦堡",
+            "count": 2
+        },
+        {
+            "name": "纽卡斯尔",
+            "count": 4
+        },
+        {
+            "name": "绊爱",
+            "count": 1
+        },
+        {
+            "name": "绫波",
+            "count": 168
+        },
+        {
+            "name": "维托里奥·维内托",
+            "count": 6
+        },
+        {
+            "name": "罗利",
+            "count": 1
+        },
+        {
+            "name": "罗德尼",
+            "count": 14
+        },
+        {
+            "name": "罗恩",
+            "count": 44
+        },
+        {
+            "name": "罗马",
+            "count": 2
+        },
+        {
+            "name": "美因茨",
+            "count": 11
+        },
+        {
+            "name": "羽黑",
+            "count": 2
+        },
+        {
+            "name": "羽黒",
+            "count": 38
+        },
+        {
+            "name": "翔鶴",
+            "count": 1723
+        },
+        {
+            "name": "翔鹤",
+            "count": 50
+        },
+        {
+            "name": "肇和",
+            "count": 88
+        },
+        {
+            "name": "肯特",
+            "count": 1
+        },
+        {
+            "name": "胜利",
+            "count": 31
+        },
+        {
+            "name": "胡德",
+            "count": 115
+        },
+        {
+            "name": "能代",
+            "count": 1201
+        },
+        {
+            "name": "腓特烈大帝",
+            "count": 59
+        },
+        {
+            "name": "艾尔温",
+            "count": 1
+        },
+        {
+            "name": "芙米露露",
+            "count": 1
+        },
+        {
+            "name": "芝加哥",
+            "count": 2
+        },
+        {
+            "name": "花月",
+            "count": 503
+        },
+        {
+            "name": "苍龙",
+            "count": 5
+        },
+        {
+            "name": "苏维埃罗西亚",
+            "count": 14
+        },
+        {
+            "name": "苏维埃贝拉罗斯",
+            "count": 7
+        },
+        {
+            "name": "若叶",
+            "count": 1
+        },
+        {
+            "name": "若月",
+            "count": 9
+        },
+        {
+            "name": "若葉",
+            "count": 41
+        },
+        {
+            "name": "英仙座",
+            "count": 102
+        },
+        {
+            "name": "英勇",
+            "count": 7
+        },
+        {
+            "name": "英格拉罕",
+            "count": 1
+        },
+        {
+            "name": "荒潮",
+            "count": 201
+        },
+        {
+            "name": "莫妮卡",
+            "count": 2
+        },
+        {
+            "name": "莫里",
+            "count": 3
+        },
+        {
+            "name": "莫里森",
+            "count": 1
+        },
+        {
+            "name": "莱昂纳多·达·芬奇",
+            "count": 3
+        },
+        {
+            "name": "莱比锡",
+            "count": 2
+        },
+        {
+            "name": "菲尼克斯",
+            "count": 2
+        },
+        {
+            "name": "萤火虫",
+            "count": 11
+        },
+        {
+            "name": "萨拉托加",
+            "count": 90
+        },
+        {
+            "name": "萨福克",
+            "count": 7
+        },
+        {
+            "name": "葛城",
+            "count": 72
+        },
+        {
+            "name": "蒙彼利埃",
+            "count": 79
+        },
+        {
+            "name": "蒼龍",
+            "count": 530
+        },
+        {
+            "name": "蒼龍(meta)",
+            "count": 5
+        },
+        {
+            "name": "衣笠",
+            "count": 49
+        },
+        {
+            "name": "西北风",
+            "count": 1
+        },
+        {
+            "name": "西南风",
+            "count": 1
+        },
+        {
+            "name": "西姆斯",
+            "count": 10
+        },
+        {
+            "name": "西弗吉尼亚",
+            "count": 5
+        },
+        {
+            "name": "西雅图",
+            "count": 3
+        },
+        {
+            "name": "親潮",
+            "count": 69
+        },
+        {
+            "name": "試作型ブリmkii",
+            "count": 126
+        },
+        {
+            "name": "让·巴尔",
+            "count": 12
+        },
+        {
+            "name": "试作型布里mkii",
+            "count": 8
+        },
+        {
+            "name": "诺福克",
+            "count": 4
+        },
+        {
+            "name": "谢菲尔德",
+            "count": 14
+        },
+        {
+            "name": "谷風",
+            "count": 63
+        },
+        {
+            "name": "豪",
+            "count": 17
+        },
+        {
+            "name": "贝亚恩",
+            "count": 1
+        },
+        {
+            "name": "贝利",
+            "count": 6
+        },
+        {
+            "name": "贝奇",
+            "count": 32
+        },
+        {
+            "name": "贝尔法斯特",
+            "count": 233
+        },
+        {
+            "name": "贾维斯",
+            "count": 4
+        },
+        {
+            "name": "赤城",
+            "count": 5415
+        },
+        {
+            "name": "赤城(μ兵装)",
+            "count": 50
+        },
+        {
+            "name": "赤城ちゃん",
+            "count": 452
+        },
+        {
+            "name": "赤城（μ兵装）",
+            "count": 50
+        },
+        {
+            "name": "赫敏",
+            "count": 5
+        },
+        {
+            "name": "足柄",
+            "count": 75
+        },
+        {
+            "name": "路易九世",
+            "count": 46
+        },
+        {
+            "name": "进取",
+            "count": 1
+        },
+        {
+            "name": "追赶者",
+            "count": 1
+        },
+        {
+            "name": "追風",
+            "count": 31
+        },
+        {
+            "name": "逸仙",
+            "count": 248
+        },
+        {
+            "name": "那智",
+            "count": 41
+        },
+        {
+            "name": "那珂",
+            "count": 41
+        },
+        {
+            "name": "邦克山",
+            "count": 4
+        },
+        {
+            "name": "酒匂",
+            "count": 102
+        },
+        {
+            "name": "里士满",
+            "count": 4
+        },
+        {
+            "name": "里诺",
+            "count": 26
+        },
+        {
+            "name": "野分",
+            "count": 67
+        },
+        {
+            "name": "金刚",
+            "count": 2
+        },
+        {
+            "name": "金剛",
+            "count": 349
+        },
+        {
+            "name": "鈴谷",
+            "count": 395
+        },
+        {
+            "name": "鎮海",
+            "count": 253
+        },
+        {
+            "name": "铃谷",
+            "count": 1
+        },
+        {
+            "name": "镇海",
+            "count": 78
+        },
+        {
+            "name": "長春",
+            "count": 181
+        },
+        {
+            "name": "長月",
+            "count": 56
+        },
+        {
+            "name": "長波",
+            "count": 83
+        },
+        {
+            "name": "長良",
+            "count": 382
+        },
+        {
+            "name": "長門",
+            "count": 2036
+        },
+        {
+            "name": "长岛",
+            "count": 30
+        },
+        {
+            "name": "长春",
+            "count": 30
+        },
+        {
+            "name": "长月",
+            "count": 1
+        },
+        {
+            "name": "长波",
+            "count": 2
+        },
+        {
+            "name": "长良",
+            "count": 2
+        },
+        {
+            "name": "长门",
+            "count": 78
+        },
+        {
+            "name": "阳炎",
+            "count": 2
+        },
+        {
+            "name": "阿基里斯",
+            "count": 1
+        },
+        {
+            "name": "阿尔及利亚",
+            "count": 4
+        },
+        {
+            "name": "阿尔弗雷多·奥里亚尼",
+            "count": 2
+        },
+        {
+            "name": "阿尔比恩",
+            "count": 6
+        },
+        {
+            "name": "阿布鲁齐公爵",
+            "count": 1
+        },
+        {
+            "name": "阿拉巴马",
+            "count": 2
+        },
+        {
+            "name": "阿斯托利亚",
+            "count": 2
+        },
+        {
+            "name": "阿武隈",
+            "count": 107
+        },
+        {
+            "name": "阿芙乐尔",
+            "count": 15
+        },
+        {
+            "name": "阿賀野",
+            "count": 121
+        },
+        {
+            "name": "阿贝克隆比",
+            "count": 5
+        },
+        {
+            "name": "阿贺野",
+            "count": 3
+        },
+        {
+            "name": "阿贾克斯",
+            "count": 14
+        },
+        {
+            "name": "阿达尔伯特亲王",
+            "count": 1
+        },
+        {
+            "name": "陆奥",
+            "count": 5
+        },
+        {
+            "name": "陸奥",
+            "count": 352
+        },
+        {
+            "name": "陽炎",
+            "count": 93
+        },
+        {
+            "name": "隼鷹",
+            "count": 76
+        },
+        {
+            "name": "隼鷹(meta)",
+            "count": 3
+        },
+        {
+            "name": "雅努斯",
+            "count": 13
+        },
+        {
+            "name": "雪風",
+            "count": 1408
+        },
+        {
+            "name": "雪风",
+            "count": 246
+        },
+        {
+            "name": "雷",
+            "count": 400
+        },
+        {
+            "name": "雷鸣",
+            "count": 2
+        },
+        {
+            "name": "電",
+            "count": 487
+        },
+        {
+            "name": "霍比",
+            "count": 5
+        },
+        {
+            "name": "霞",
+            "count": 351
+        },
+        {
+            "name": "霞飞",
+            "count": 8
+        },
+        {
+            "name": "霧島",
+            "count": 198
+        },
+        {
+            "name": "青葉",
+            "count": 155
+        },
+        {
+            "name": "鞍山",
+            "count": 86
+        },
+        {
+            "name": "響",
+            "count": 345
+        },
+        {
+            "name": "風雲",
+            "count": 90
+        },
+        {
+            "name": "风云",
+            "count": 9
+        },
+        {
+            "name": "飛鳥川ちせ",
+            "count": 2
+        },
+        {
+            "name": "飛鷹",
+            "count": 35
+        },
+        {
+            "name": "飛鷹(meta)",
+            "count": 4
+        },
+        {
+            "name": "飛龍",
+            "count": 639
+        },
+        {
+            "name": "飛龍(meta)",
+            "count": 44
+        },
+        {
+            "name": "飞龙",
+            "count": 7
+        },
+        {
+            "name": "香格里拉",
+            "count": 3
+        },
+        {
+            "name": "香槟",
+            "count": 16
+        },
+        {
+            "name": "駿河",
+            "count": 241
+        },
+        {
+            "name": "马布尔黑德",
+            "count": 5
+        },
+        {
+            "name": "马耶·布雷泽",
+            "count": 2
+        },
+        {
+            "name": "马萨诸塞",
+            "count": 9
+        },
+        {
+            "name": "马里兰",
+            "count": 1
+        },
+        {
+            "name": "骏河",
+            "count": 1
+        },
+        {
+            "name": "高雄",
+            "count": 4457
+        },
+        {
+            "name": "鬼怒",
+            "count": 170
+        },
+        {
+            "name": "鲁普雷希特亲王",
+            "count": 10
+        },
+        {
+            "name": "鲦鱼",
+            "count": 1
+        },
+        {
+            "name": "鳥海",
+            "count": 252
+        },
+        {
+            "name": "鳳翔",
+            "count": 136
+        },
+        {
+            "name": "鸟海",
+            "count": 7
+        },
+        {
+            "name": "鹦鹉螺",
+            "count": 3
+        },
+        {
+            "name": "鹰",
+            "count": 14
+        },
+        {
+            "name": "麦考尔",
+            "count": 14
+        },
+        {
+            "name": "黎塞留",
+            "count": 81
+        },
+        {
+            "name": "黑太子",
+            "count": 8
+        },
+        {
+            "name": "黑暗界",
+            "count": 34
+        },
+        {
+            "name": "黒潮",
+            "count": 77
+        },
+        {
+            "name": "黛朵",
+            "count": 70
+        },
+        {
+            "name": "齐柏林伯爵",
+            "count": 44
+        },
+        {
+            "name": "龍驤",
+            "count": 288
+        },
+        {
+            "name": "龍鳳",
+            "count": 93
+        },
+        {
+            "name": "龙凤",
+            "count": 2
+        },
+        {
+            "name": "龙骑兵",
+            "count": 1
+        },
+        {
+            "name": "龙骧",
+            "count": 10
+        }
+    ],
+    "last_updated": 1675747355.4270568
+}
