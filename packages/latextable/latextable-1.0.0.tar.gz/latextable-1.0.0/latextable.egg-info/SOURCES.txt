@@ -1,0 +1,10 @@
+LICENSE
+README.md
+latextable.py
+pyproject.toml
+test_latextable.py
+latextable.egg-info/PKG-INFO
+latextable.egg-info/SOURCES.txt
+latextable.egg-info/dependency_links.txt
+latextable.egg-info/requires.txt
+latextable.egg-info/top_level.txt
