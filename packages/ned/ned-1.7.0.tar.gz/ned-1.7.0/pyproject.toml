@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ned"
+version = "1.7.0"
+description = "entity linking, named-entity disambiguation, record linkage"
+authors = ["Binh Vu <binh@toan2.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sem-desc = "^4.2.1"
+nptyping = "^2.3.1"
+pyarrow = "^9.0.0"
+serde2 = "^1.5.0"
+ream2 = "^1.7.0"
+hugedict = "^2.8.0"
+kgdata = "^3.3.1"
+torch = "^1.12.1"
+torchvision = "^0.13.1"
+torchaudio = "^0.12.1"
+osin = "^1.9.2"
+sm-datasets = "^1.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

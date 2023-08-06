@@ -1,0 +1,254 @@
+from dataclasses import dataclass
+from typing import List, Optional, Literal, Tuple
+from ned.candidate_ranking.cr_method import CandidateRankingMethod, ModelOutput
+from ned.candidate_ranking.helpers.dataset import MyDataset
+from ned.candidate_ranking.cr_dataset import (
+    N_EXTRA_FEATURES,
+    N_PAIRWISE_FEATURES,
+    CRDataset,
+    NoCacheCRDataset,
+)
+from ned.data_models.prelude import NEDExample, DatasetCandidateEntities
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.utils.data import Dataset, random_split, DataLoader
+from sm.prelude import M
+from tqdm import tqdm
+from pathlib import Path
+
+
+@dataclass
+class ColumnwiseModelArgs:
+    loss: Literal["nll", "triplet"] = "nll"
+    class_weight: int = 0  # 0 means balanced, 1 means uniform.
+    training_add_missing_gold: Literal["no", "singleonly", "multiple"] = "multiple"
+    training_topk: Optional[int] = 20
+    feature_matched_prop: bool = True
+
+
+class ColumnwiseModel(CandidateRankingMethod):
+    """CHANGELOG:
+    - 101: change step2_columnwise to instead of return dict to return list
+    - 103: return new dict
+    """
+
+    VERSION = 201
+    EXPECTED_ARGS = {"label", "features", "types"}
+
+    def __init__(self, xdim: int, args: ColumnwiseModelArgs):
+        super().__init__()
+
+        self.args = args
+        assert args.loss == "nll"
+
+        self.logits_s_ij = nn.Sequential(
+            nn.Linear(xdim, 2 * xdim),
+            nn.ReLU(),
+            nn.Linear(2 * xdim, xdim),
+            nn.ReLU(),
+            nn.Linear(xdim, xdim),
+            nn.ReLU(),
+            nn.Linear(xdim, 1),
+        )
+        aug_xdim = xdim + 1
+        self.logits_f_ij = nn.Sequential(
+            nn.Linear(aug_xdim, 2 * aug_xdim),
+            nn.ReLU(),
+            nn.Linear(2 * aug_xdim, aug_xdim),
+            nn.ReLU(),
+            nn.Linear(aug_xdim, aug_xdim),
+            nn.ReLU(),
+            nn.Linear(aug_xdim, 2),
+        )
+        self.class_weights = torch.FloatTensor([1, 1])
+
+    @staticmethod
+    def from_args(args: ColumnwiseModelArgs):
+        if args.feature_matched_prop:
+            n_features = N_PAIRWISE_FEATURES + N_EXTRA_FEATURES + 1
+        else:
+            n_features = N_PAIRWISE_FEATURES + N_EXTRA_FEATURES
+        return ColumnwiseModel(xdim=n_features, args=args)
+
+    def to(self, device):
+        out = super().to(device)
+        out.class_weights = out.class_weights.to(device)
+        return out
+
+    def forward(
+        self,
+        features: torch.Tensor,
+        types: torch.Tensor,
+        label: Optional[torch.Tensor] = None,
+    ):
+        """Make a forward pass and compute column types as well as linked entities
+
+        Arguments:
+            features: 1 x (IxJ) x F
+        """
+        features = features.squeeze(0)
+        types = types.squeeze(0)
+        logits_s_ij = self.logits_s_ij(features)
+
+        logits_t_given_x = (logits_s_ij * types).sum(0)
+        logits_t_given_x.shape
+        # T x 1
+        p_t_given_x = F.softmax(logits_t_given_x, dim=0)
+        p_t_given_x.shape
+
+        transpose_cand_types = types
+        # (IxJ) x T x 1
+        transpose_cand_types = torch.unsqueeze(transpose_cand_types, 2)
+        transpose_cand_types.shape
+
+        new_feats = features.reshape(features.shape[0], 1, features.shape[1])
+        new_feats = new_feats.expand(
+            features.shape[0], transpose_cand_types.shape[1], features.shape[1]
+        )
+        new_feats.shape
+
+        # (IxJ) x T x (F+1)
+        merged_feat = torch.cat([new_feats, transpose_cand_types], dim=2)
+        merged_feat.shape
+
+        p_y_given_tx = F.softmax(self.logits_f_ij(merged_feat), dim=2)
+        p_y_given_tx.shape
+        probs = (p_y_given_tx * p_t_given_x.reshape(1, p_t_given_x.shape[0], 1)).sum(1)
+        probs.shape
+
+        if label is None:
+            loss = None
+        else:
+            label = torch.squeeze(label, dim=0)
+            loss = F.cross_entropy(probs, label, weight=self.class_weights)
+
+        return ModelOutput(loss=loss, probs=probs[:, 1])
+
+    def generate_dataset(
+        self,
+        examples: List[NEDExample],
+        candidates: DatasetCandidateEntities,
+        num_proc: Optional[int] = None,
+        for_training: bool = False,
+        cache_dir: Optional[Path] = None,
+    ) -> Dataset:
+        crds = CRDataset(cache_dir) if cache_dir is not None else NoCacheCRDataset()
+        obj = crds.columnwise_1(
+            candidates=candidates,
+            crents=crds.base_ent(examples, candidates),
+            crcans=crds.base_can(examples, candidates),
+            crcan_features=crds.can_features(examples, candidates),
+            crcan_types=crds.can_types(candidates),
+            top_k=self.args.training_topk if for_training else None,
+        )
+        ds = MyDataset(obj)
+        return ds
+
+    def get_generating_dataset_args(self):
+        return {"feature_matched_prop": self.args.feature_matched_prop}
+
+    def rank_datasets(
+        self,
+        examples: List[NEDExample],
+        candidates: DatasetCandidateEntities,
+        dataset: Dataset,
+    ) -> DatasetCandidateEntities:
+        self.eval()
+        params = next(self.parameters())
+        device = params.device
+        dloader = DataLoader(
+            dataset, batch_size=1, shuffle=False, pin_memory=params.is_cuda
+        )
+
+        with torch.no_grad():
+            probs = []
+            cell_ids = []
+            for batch in dloader:
+                features = batch["features"].to(device)
+                types = batch["types"].to(device)
+                label = batch["label"].to(device)
+                # self.generate_dataset(
+                #     examples, candidates, keep_in_memory=False, for_training=False
+                # )
+                output = self.forward(features=features, types=types, label=label)
+                # output = self.forward(features=features, types=types)
+                probs.append(output.probs.cpu())
+                # cell_ids.append(batch["cell"])
+
+            probs = torch.cat(probs)
+            # cell_ids = torch.cat(cell_ids)
+        return candidates.replace("score", probs.numpy())
+
+
+class ColumnwiseDataset(Dataset):
+    def __init__(
+        self,
+        examples,
+        # infile: Path,
+        # examples,
+        # stage: Literal["train", "dev", "test", "none"] = "none",
+    ):
+        # self.infile = infile
+        # self.examples = M.deserialize_jl(self.get_file(stage))
+        self.examples = examples
+        self.feats = list(
+            self.examples[0]["columns"][0]["rows"][0][0]["sim_features"].keys()
+        )
+
+        self.index = {}
+        for ei, example in enumerate(self.examples):
+            for ci, col in enumerate(example["columns"]):
+                self.index[len(self.index)] = (ei, ci)
+
+    # def get_file(self, stage: Literal["train", "dev", "test", "none"]):
+    #     if stage == None:
+    #         return self.infile
+    #     return self.infile.parent / f"{self.infile.stem}.{stage}{self.infile.suffix}"
+
+    def __len__(self):
+        return len(self.index)
+
+    def __getitem__(self, idx: int):
+        ei, ci = self.index[idx]
+
+        X = []
+        y = []
+        cell_ids = []
+        cand_cells = []
+        cand_types = []
+
+        type2index = {}
+        for row in self.examples[ei]["columns"][ci]["rows"]:
+            for can_cell in row:
+                for ctype in can_cell["candidate_types"]:
+                    if ctype["id"] not in type2index:
+                        type2index[ctype["id"]] = len(type2index)
+
+        type_vector = torch.zeros(len(type2index))
+
+        for row in self.examples[ei]["columns"][ci]["rows"]:
+            for can_cell in row:
+                X.append([can_cell["sim_features"][feat] for feat in self.feats])
+                y.append(can_cell["label"])
+                cell_ids.append(can_cell["cell_id"])
+                cand_cells.append(can_cell["candidate_id"])
+
+                T_dij = type_vector.clone()
+                for ctype in can_cell["candidate_types"]:
+                    T_dij[type2index[ctype["id"]]] = 1
+                cand_types.append(T_dij)
+
+        X = torch.FloatTensor(X)
+        y = torch.LongTensor(y)
+        cell_ids = torch.LongTensor(cell_ids)
+        cand_cells = torch.LongTensor(cand_cells)
+        cand_types = torch.stack(cand_types, dim=0)
+
+        return {
+            "columns": X,
+            "labels": y,
+            "cells": cell_ids,
+            "cand_cells": cand_cells,
+            "cand_types": cand_types,
+        }
