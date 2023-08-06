@@ -1,0 +1,8 @@
+make_password.py
+setup.py
+mkpw.egg-info/PKG-INFO
+mkpw.egg-info/SOURCES.txt
+mkpw.egg-info/dependency_links.txt
+mkpw.egg-info/entry_points.txt
+mkpw.egg-info/requires.txt
+mkpw.egg-info/top_level.txt

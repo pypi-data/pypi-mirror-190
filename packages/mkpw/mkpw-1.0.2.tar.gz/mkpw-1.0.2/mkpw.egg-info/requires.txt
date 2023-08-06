@@ -1,0 +1,4 @@
+typer>=0.3.2
+rich>=10.2.2
+memorable>=1.0.3
+pyperclip>=1.8.2
