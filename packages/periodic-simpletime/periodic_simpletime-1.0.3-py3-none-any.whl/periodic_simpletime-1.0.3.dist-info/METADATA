@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: periodic-simpletime
+Version: 1.0.3
+Summary: A periodic event time management helper
+Author-email: trueToastedCode <truetoastedcode@gmail.com>
+Project-URL: Homepage, https://github.com/trueToastedCode/PeriodicSimpleTime
+Project-URL: Bug Tracker, https://github.com/trueToastedCode/PeriodicSimpleTime/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PeriodicSimpleTime
+
+This package helps to manage periodic events.
+
+### Calculate next periodic datetime
+```
+from periodic_simpletime import *
+
+# for this example, current utc time is 2023-01-01 11:56:02
+period = PeriodicSimpleTime(minute=5)
+next_end_dt = get_next_periodic_dt(period)
+> 2023-01-01 12:00:00 (utc)
+```
