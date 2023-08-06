@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mess-client-2023
+Version: 0.0.1
+Summary: mess_client_proj
+Author: Mihanyga
+Author-email: volk.mixail@gmail.com
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
