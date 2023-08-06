@@ -1,0 +1,150 @@
+Metadata-Version: 2.1
+Name: fairsense
+Version: 0.0.1
+Summary: This library allow to compute global sensitivity indices in the context of fairness measurements.
+Home-page: https://github.com/deel-ai/FairSense
+Author: Thibaut BOISSIN, Alexandre LANGLADE
+Author-email: thibaut.boissin@irt-saintexupery.com, alexandre.langlade@irt-saintexupery.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: tqdm
+Provides-Extra: all
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: scikit-learn ; extra == 'all'
+Requires-Dist: seaborn ; extra == 'all'
+Requires-Dist: tqdm ; extra == 'all'
+Requires-Dist: setuptools ; extra == 'all'
+Requires-Dist: pre-commit ; extra == 'all'
+Requires-Dist: tox ; extra == 'all'
+Requires-Dist: black ; extra == 'all'
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: flake8-black ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pylint ; extra == 'all'
+Requires-Dist: bump2version ; extra == 'all'
+Requires-Dist: mkdocs ; extra == 'all'
+Requires-Dist: mkdocs-material ; extra == 'all'
+Requires-Dist: mkdocstrings[python] ; extra == 'all'
+Requires-Dist: mknotebooks ; extra == 'all'
+Requires-Dist: ipython ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'docs'
+Requires-Dist: mknotebooks ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+
+<img src="docs/assets/banner_light.png#gh-light-mode-only" alt="logo fairsense" style="width:500px;"/>
+<img src="docs/assets/banner_dark.png#gh-dark-mode-only" alt="logo fairsense" style="width:500px;"/>
+
+FairSense
+===========
+
+This library allow to compute global sensitivity indices in the context of fairness measurements.
+The paper `Fairness seen as Global Sensitivity Analysis` bridges the gap between 
+global sensitivity analysis (GSA) and fairness. It states that for each sensitivity 
+analysis, there is a fairness measure, and vice-versa.
+
+    @misc{https://doi.org/10.48550/arxiv.2103.04613,
+      doi = {10.48550/ARXIV.2103.04613},  
+      url = {https://arxiv.org/abs/2103.04613},  
+      author = {Bénesse, Clément and Gamboa, Fabrice and Loubes, Jean-Michel and Boissin, Thibaut},
+      keywords = {Statistics Theory (math.ST), Methodology (stat.ME), FOS: Mathematics, FOS: Mathematics, FOS: Computer and information sciences, FOS: Computer and information sciences},
+      title = {Fairness seen as Global Sensitivity Analysis},
+
+This library is a toolbox which ease the computation of fairness and GSA indices.
+
+The problem
+----------
+
+Each index has it's characteristics: some can be applied on continuous variables and 
+some cannot. Some can handle regression problems and some handle classification 
+problems. Some can handle variable groups and some cannot. Finally some can only be
+applied on the predictions of a model while some can be applied on the error made by
+the model.
+
+The objective is then to provide a tool to investigate the fairness of an ML problem
+by computing the GSA indices while avoiding the aforementioned issues.
+
+The strategy
+------------
+
+The library allows to formulate a fairness problem which is stated as following:
+
+- a dataset describing the training distribution
+- a model which can be a function or a machine learning model
+- a fairness objective which indicate what should be studied : one can study the
+ intrinsic bias of a dataset, or the bias of the model or the bias of the model's
+  errors
+
+These elements are encapsulated in an object called `IndicesInput`.
+
+Then it becomes possible to compute GSA indices (in a interchangeable way) using the
+functions provided in `fairsense.indices`.
+
+These functions output `IndicesOutput` objects that encapsulate the values of the
+indices. These results can finally be visualized with the functions available in the 
+`fairsense.visualization` module.
+
+
+install fairsense
+-------------------
+
+### for users
+
+```bash
+pip install fairsense
+```
+
+### for developpers
+
+After cloning the repository
+```bash
+pip install -e .[dev]
+```
+
+to clean code, at the root of the lib:
+```bash
+black .
+```
+
+### for docs
+
+```bash
+pip install -e .[docs]
+```
+
+build rst files, in the docs folder:
+```bash
+sphinx-apidoc ..\libfairness -o source
+```
+the generate html docs:
+```bash
+make html
+```
+Warning: the library must be installed to generate the doc.
