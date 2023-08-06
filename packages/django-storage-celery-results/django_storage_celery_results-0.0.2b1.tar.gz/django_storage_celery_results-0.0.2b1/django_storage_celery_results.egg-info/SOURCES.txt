@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+django_storage_celery_results/__init__.py
+django_storage_celery_results/backends.py
+django_storage_celery_results.egg-info/PKG-INFO
+django_storage_celery_results.egg-info/SOURCES.txt
+django_storage_celery_results.egg-info/dependency_links.txt
+django_storage_celery_results.egg-info/entry_points.txt
+django_storage_celery_results.egg-info/not-zip-safe
+django_storage_celery_results.egg-info/top_level.txt
