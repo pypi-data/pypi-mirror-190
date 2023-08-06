@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: patch-denoise
+Version: 1.3.0
+Summary: Denoising method for sequence of images or volumes. Primarly targeting fMRI data.
+Author-email: Pierre-antoine Comby <pierre-antoine.comby@crans.org>
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: pydata-sphinx-theme ; extra == 'doc'
+Requires-Dist: numpydoc ; extra == 'doc'
+Requires-Dist: sphinx-gallery ; extra == 'doc'
+Requires-Dist: sphinx (<5) ; extra == 'doc'
+Provides-Extra: optional
+Requires-Dist: modopt ; extra == 'optional'
+Requires-Dist: nipype ; extra == 'optional'
+Requires-Dist: numba ; extra == 'optional'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: pytest-sugar ; extra == 'test'
+
+========================
+Patch Denoising Methods
+========================
+.. list-table:: 
+   :widths: 25 25 25
+   :header-rows: 0
+
+   * - .. image:: https://img.shields.io/codecov/c/github/paquiteau/patch-denoising
+        :target: https://app.codecov.io/gh/paquiteau/patch-denoising
+     - .. image:: https://github.com/paquiteau/patch-denoising/workflows/CI/badge.svg
+     - .. image:: https://github.com/paquiteau/patch-denoising/workflows/CD/badge.svg
+   * - .. image:: https://img.shields.io/badge/style-black-black
+     - .. image:: https://img.shields.io/badge/docs-Sphinx-blue
+        :target: https://paquiteau.github.io/patch-denoising
+     - .. image:: https://img.shields.io/pypi/v/patch-denoise
+        :target: https://pypi.org/project/patch-denoise/
+
+
+This repository implements patch-denoising methods, with a particular focus on local-low rank methods.
+
+The target application is functional MRI thermal noise removal, but this methods can be applied to a wide range of image modalities.
+
+It includes several local-low-rank based denoising methods:
+
+1. MP-PCA
+2. Hybrid-PCA
+3. NORDIC
+4. Optimal Thresholding
+5. Raw Singular Value Thresholding
+
+A mathematical description of theses methods is available in the documentation.
+
+
+
+Installation
+============
+
+patch-denoise requires Python>=3.8
+
+
+Quickstart
+==========
+
+After installing you can use the ``patch-denoise`` command-line.
+
+.. code::
+
+   $ patch-denoise input_file.nii output_file.nii --mask="auto"
+
+See ``patch-denoise --help`` for detailled options.
+
+Documentation and Examples
+==========================
+
+Documentation and examples are available at https://paquiteau.github.io/patch-denoising/
+
+
+Development version
+===================
+
+.. code::
+
+   $ git clone https://github.com/paquiteau/patch-denoising
+   $ pip install -e patch-denoising[dev,doc,test,optional]
