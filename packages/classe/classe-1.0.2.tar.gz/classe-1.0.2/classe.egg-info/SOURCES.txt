@@ -1,0 +1,14 @@
+setup.py
+./HttpReq/Fetch/__init__.py
+./HttpReq/nutsFetchGet/__init__.py
+./HttpReq/nutsPUTupdate/__init__.py
+./HttpReq/nutsSendPost/__init__.py
+./ObjectOrganization/contact_info/__init__.py
+./ObjectOrganization/organizationDetails/__init__.py
+./ObjectOrganization/vendorDetails/__init__.py
+./methods/nutsOrganizationMethods/__init__.py
+./methods/nutsVendorMethods/__init__.py
+classe.egg-info/PKG-INFO
+classe.egg-info/SOURCES.txt
+classe.egg-info/dependency_links.txt
+classe.egg-info/top_level.txt
