@@ -1,0 +1,3 @@
+[console_scripts]
+neon-homeassistant-skill=neon_homeassistant_skill:NeonHomeAssistantSkill
+
