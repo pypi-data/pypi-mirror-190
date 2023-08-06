@@ -1,0 +1,14 @@
+argparse
+configargparse
+numpy
+numba
+h5py
+pandas
+pyqtgraph
+PyOpenGL
+PyQt5
+matplotlib
+geant4_pybind
+uproot
+nupropagator
+mumpropagator

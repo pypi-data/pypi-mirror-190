@@ -1,0 +1,45 @@
+image: docker:latest
+services:
+  - docker:dind
+
+stages:          # List of stages for jobs, and their order of execution
+  - install
+  - tests
+  - publish
+
+variables:
+  DOCKER_DRIVER: overlay2
+  # Use TLS https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#tls-enabled
+  DOCKER_HOST: tcp://docker:2376
+  DOCKER_TLS_CERTDIR: "/certs"
+  CONTAINER_TEST_IMAGE: $CI_REGISTRY_IMAGE:master
+  CONTAINER_LATEST_IMAGE: $CI_REGISTRY_IMAGE:latest
+  
+before_script:
+  - echo "$CI_REGISTRY_USER" "$CI_REGISTRY_PASSWORD" $CI_REGISTRY 
+  - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+
+install-job:
+  stage: install
+  script:
+    - echo "Getting software..."
+    - docker build -t $CONTAINER_TEST_IMAGE .
+    - docker push $CONTAINER_TEST_IMAGE
+    - echo "Software installed."
+
+
+test-job:
+  stage: tests
+  script:
+    - echo "Running unit tests..."
+    - docker run $CONTAINER_TEST_IMAGE /workdir/run_tests.sh
+    - echo "All tests passed"
+
+publish-job:
+  stage: publish
+  script:
+    - docker pull $CONTAINER_TEST_IMAGE
+    - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_LATEST_IMAGE
+    - docker push $CONTAINER_LATEST_IMAGE
+  only:
+    - main

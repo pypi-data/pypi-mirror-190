@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: ntsim
+Version: 0.0.7
+Project-URL: Documentation, https://git.jinr.ru/Baikal/ntsim#readme
+Project-URL: Issues, https://git.jinr.ru/Baikal/ntsim/issues
+Project-URL: Source, https://git.jinr.ru/Baikal/ntsim
+Author-email: "Dmitry V.Naumov" <dmitryvnaumov@gmail.com>
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: argparse
+Requires-Dist: configargparse
+Requires-Dist: g4camp>=0.1.5
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: nupropagator>=0.0.2
+Requires-Dist: pandas
+Requires-Dist: particle
+Requires-Dist: pyopengl
+Requires-Dist: pyqt5
+Requires-Dist: pyqtgraph
+Requires-Dist: uproot
+Description-Content-Type: text/markdown
+
+# NeutrinoTelescopeSimulation
+
+[![PyPI - Version](https://img.shields.io/pypi/v/ntsim.svg)](https://pypi.org/project/ntsim)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ntsim.svg)](https://pypi.org/project/ntsim)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+- [Documentation](https://git.jinr.ru/Baikal/ntsim/-/wikis/home)
+
+## Basic Installation
+
+```console
+pip install ntsim
+```
+
+## License
+
+`ntsim` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
