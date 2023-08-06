@@ -1,0 +1,8 @@
+"""
+Implements tests for the waveform classes.
+"""
+
+import unittest
+
+class TestWaveforms(unittest.TestCase):
+    pass
