@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/dwhapi/__init__.py
+src/dwhapi/ddl.py
+src/dwhapi/exceptions.py
+src/dwhapi/project.py
+src/dwhapi.egg-info/PKG-INFO
+src/dwhapi.egg-info/SOURCES.txt
+src/dwhapi.egg-info/dependency_links.txt
+src/dwhapi.egg-info/top_level.txt
