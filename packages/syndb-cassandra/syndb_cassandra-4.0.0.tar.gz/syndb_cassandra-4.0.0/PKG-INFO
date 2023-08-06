@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: syndb-cassandra
+Version: 4.0.0
+Summary: Casssandra driver assembly for SynDB
+License: BSD-4-Clause
+Author: Can H. Tartanoglu
+Author-email: canhtart@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: driver
+Requires-Dist: cassandra-driver (>=3.21.0,<4.0.0) ; extra == "driver"
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: orjson ; extra == "driver"
+Requires-Dist: pydantic (>=1.10.2,<2.0.0) ; extra == "driver"
+Description-Content-Type: text/markdown
+
+# SynapseDB: Cassandra init
+
+The following scripts initialize the tables used by SynapseDB on the designated Cassandra through CQLSH
+
+## Developers
+For poetry users:
+```shell
+poetry install -E driver --with dev_monolithic
+```
+
