@@ -1,0 +1,11 @@
+math_spec_mapping/__init__.py,sha256=g93v9Ed0qVkkDki8-imoOckz6RblY-titvs7P66xC1Y,845
+math_spec_mapping/classes.py,sha256=BTQRgwaU-u79JDgobh941T7aEtrAvh4tbXSyEcZ2NAA,7345
+math_spec_mapping/functions.py,sha256=JsZvmAaGnkU7A1A-VoRfZzZUbgkek2J721sGad3-B08,10274
+math_spec_mapping/reports/__init__.py,sha256=Wk_kPI5MXXKYMUbRN7rPjyTy4OTvZAk7o-5PAJilP9U,80
+math_spec_mapping/reports/html.py,sha256=7i6OZT6NFV9Ml7uVBt1YS0akc0wh-OLQhZAhERt6dTA,756
+math_spec_mapping/reports/image.py,sha256=o6VgmfUZaHwkNKjsidoalR2f2EcaVZqEMsAuSitw5nE,1042
+math_spec_mapping-0.0.2.dist-info/LICENSE,sha256=dsx0VlJZP5DI64ranPoTdQuDmNvrABI9QNm-PctMmM4,1055
+math_spec_mapping-0.0.2.dist-info/METADATA,sha256=4jWSOU12sUbA7XXA6tNP6EcEJ_Q25nv-DdMf61b7HV8,615
+math_spec_mapping-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+math_spec_mapping-0.0.2.dist-info/top_level.txt,sha256=AImhn9wgazkdV0a9vfiphtQR8uGe2nq-ZIOp-6yUk9o,18
+math_spec_mapping-0.0.2.dist-info/RECORD,,
