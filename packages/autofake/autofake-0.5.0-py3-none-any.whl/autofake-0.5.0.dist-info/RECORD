@@ -1,0 +1,9 @@
+autofake/__init__.py,sha256=YZ17sTKNURpiypfN6YXjAs2ONGm3nPwkGKb8c3cA4HY,202
+autofake/backend.py,sha256=_AlLl5w-4eXvZYVAMN5ixJREuUPDZMWZ1NIdWkfBzR0,2631
+autofake/exceptions.py,sha256=xdfbdRGhJNmGKnJ8IeABsnMxcycRS8eg_YN7t2Hl-2c,142
+autofake/fakeit.py,sha256=WubB8Y8dXn2ehJIQLTOr_Dilrwdr6VSdGE5hmnBlG3g,1964
+autofake/models.py,sha256=J9N9DbPkbIFibZsMidlWEW05vC2vHzJffMx6i4K4tC8,388
+autofake-0.5.0.dist-info/LICENSE,sha256=b3EKytGxq1Z7Io7lEEg6DHaOM-iN4C-ek3ng5D2GBds,1072
+autofake-0.5.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+autofake-0.5.0.dist-info/METADATA,sha256=MinxiVZW5A-Q6un_SLGSkbRvsuOx4iWYnEfUvO2vmJU,453
+autofake-0.5.0.dist-info/RECORD,,
