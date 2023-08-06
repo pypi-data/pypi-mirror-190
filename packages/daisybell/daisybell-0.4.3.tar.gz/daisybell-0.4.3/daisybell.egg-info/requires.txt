@@ -1,0 +1,9 @@
+dataframe-image
+datasets
+pandas
+seqeval
+tabulate
+tensorboard
+torch
+transformers
+types-tabulate
