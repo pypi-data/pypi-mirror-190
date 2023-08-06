@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: phmin
+Version: 0.1.2
+Summary: A basic python package for identifying frequencies present in time series data based on the principles of phase dispersion minimization. 
+Home-page: https://www.github.com/erikstacey/PHMIN
+Author: Erik William Stacey
+Author-email: Erik Stacey <erik@erikstacey.com>
+License: MIT
+Project-URL: Homepage, https://github.com/erikstacey/phmin
+Project-URL: Bug Tracker, https://github.com/erikstacey/phmin/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+# phmin
+
+A basic python package for determining periods in time series data through phase dispersion minimization.  
+Author: Erik William Stacey  
+Date: 6 Feb, 2023  
+
+## Installation
+
+phmin is available through pip:  
+```
+pip install phmin
+```
+
+Or, alternatively, download and install directly from this repo:
+
+```
+git clone https://github.com/erikstacey/phmin.git ./phmin
+cd phmin
+pip install .
+```
+## Usage
+
+The ph_minner class is used to store and operate on time series data. Here's a basic example snippit setting up a ph_minner:  
+```
+import numpy as np
+from phmin import ph_minner
+
+x, y, y_err = np.loadtxt("sample.txt", unpack=True)
+example_minner = ph_minner(x=x, y=y, err=y_err)
+```
+The above code will automatically generate a period grid. To run the minimizer, call the run method:  
+```
+example_minner.run()
+```
+
+To print or plot the results, call
+
+```
+example_minner.print_results()
+example_minner.plot_results()
+```
+
+## Advanced Usage
+The ph_minner class can be initialized with optional parameters periods and t0. Setting periods manually defines the period grid, and setting t0 manually sets the reference time for the phasing.
+```
+manual_period_grid = np.linspace(4.4, 4.8, 500)
+example_minner = ph_minner(x=x, y=y, err=y_err, periods=manual_period_grid, t0=2457000.0)
+```
+
+The results can be directly accessed through attributes of the ph_minner class.  
+```example_minner.periods``` - Array of periods  
+```example_minner.red_chisqs``` - Array of reduced chi squared values corresponding to the best fit achieved at each period  
+```example_minner.chisqs``` - Array of (unreduced) chi squared values corresponding to the best fit achieved at each period  
+```example_minner.best_amps``` - Array of the optimized amplitude at each period  
+```example_minner.best_phcorrs``` - Array of the optimized phase at each period. This defines the signal phase relative to t0.  
+
+## Method
+This package is intended to solve the problem of determining the principal frequency present in time series data through 
+phase dispersion minimization. Once the ph_minner has been initialized and run, it iterates over all candidate periods and
+in each iteration:
+1) Converts the timeseries time stamps to phases
+2) Optimizes a sinusoidal model using scipy minimize in amplitude and phase
+3) Measures a reduced chi squared of the optimized sinusoidal model
+4) Stores the reduced chi squared and optimized amplitude/phase
+
+Then, after iterating over all candidate periods, the results can be examined and the best-fit period can be determined by
+finding the candidate period corresponding to the minimum reduced chi squared. Alternatively, the relationship between
+period and goodness of fit can be examined by plotting candidate period v. red chi squared.
+
+
+### Changelog
+V0.1.2 (6 Feb, 2023)  
+-Fixed label in ph_minner.plot_results()
+
+V0.1.0 (6 Feb, 2023)  
+-Added methods to ph_minner for printing and plotting results
+-Throws an exception if the user tries to plot or print without running first
+
+V0.0.1 6 Feb, 2023  
+-Working package published on github
