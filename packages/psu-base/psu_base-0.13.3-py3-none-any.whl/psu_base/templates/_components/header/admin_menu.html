@@ -1,0 +1,27 @@
+{% load base_taglib %}
+
+{# The following only displays for developers and administrators #}
+{%check_admin_menu %}
+{% if has_admin_menu %}
+    <div class="dropdown float-right">
+        <button class="dropbtn">
+            <span class="fa fa-cog xlg" title="Admin Menu"></span>
+            <i class="fa fa-caret-down" title="Expand" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-content">
+            <div class="menu-top">
+                <span style="font-weight: bold;">{%app_name%}</span>
+                {% if is_developer %}
+                    <span onclick="window.open('{%url 'psu:versions'%}');" style="cursor:pointer;" class="float-right">
+                        {%app_version%}
+                    </span>
+                {% endif %}
+            </div>
+
+            {# Plugin Items #}
+            {% for plugin_link in plugin_admin_links %}
+                {% header_nav_menu_item attributes=plugin_link %}
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
