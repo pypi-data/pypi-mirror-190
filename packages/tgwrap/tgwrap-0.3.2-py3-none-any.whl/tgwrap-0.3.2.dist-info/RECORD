@@ -1,0 +1,10 @@
+tgwrap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgwrap/cli.py,sha256=IJf59fS4C8Mm8BZEhQ7FcklYC6l4kJCqVj5b0wawY2I,22287
+tgwrap/main.py,sha256=2hmxdMukx3M914AI0kb0DajJP57PCh9jYbJpz5BWn_I,38343
+tgwrap/printer.py,sha256=dkcOCPIPB-IP6pn8QMpa06xlcqPFVaDvxnz-QEpDJV0,2663
+tgwrap/terrasafe.py,sha256=qSusXLlqBe2kWO0w_OITlkwip_3uXvCTOHZ8I7cm-Xk,4435
+tgwrap-0.3.2.dist-info/entry_points.txt,sha256=H8X0PMPmd4aW7Y9iyChZ0Ug6RWGXqhRUvHH-6f6Mxz0,42
+tgwrap-0.3.2.dist-info/LICENSE,sha256=VT-AVxIXt3EQTC-7Hy1uPGnrDNJLqfcgLgJD78fiyx4,1065
+tgwrap-0.3.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+tgwrap-0.3.2.dist-info/METADATA,sha256=3B5cin9H3iwN5xW8va2nD0yrQWHrZXIA3wI-bhsGjpI,6366
+tgwrap-0.3.2.dist-info/RECORD,,
