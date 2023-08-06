@@ -1,0 +1,13 @@
+monokel/__init__.py,sha256=vucW-Fe97d2P_nl7TMRJ2Cp458lb7VTRk6EckM_ozdM,23
+monokel/build.py,sha256=WD01tVarYBHnbDnLJ83eCI2asBVWVdODgWJ80f9ImlQ,5575
+monokel/cli.py,sha256=ziZOYACQPBdZG2PXuU0nUSG4IjdJ-xvlWKDINx7EWNU,3451
+monokel/run.py,sha256=qE84-yCKhHeBmewQKp1SK6xidEDq_CMdMxleH-444u8,4999
+monokel/templates/Dockerfile,sha256=B8WRPbOW2YtvamDD_EnzAQ3UYZj6Krc8MkH6OTJfCHg,281
+monokel/templates/docker-compose.yml,sha256=uixYz-n43MTzHDVhDjcrnT-e9ScMzYrcNvcXRovZtik,222
+monokel/templates/requirements.txt,sha256=P3TYIyTR7Rp_x4vo2ud3vwrvSgjiLnBUcfQ1sCrpNSg,17
+monokel-0.0.5.dist-info/LICENSE.md,sha256=yCsaRg8sUfQncYBNVjoXEe0OindFQsp_GNVkSYhT0Ko,1094
+monokel-0.0.5.dist-info/METADATA,sha256=fICroqw_zAhsS6FDS3f_vO6xX6oaxH7gbGTPskh4aoI,3869
+monokel-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+monokel-0.0.5.dist-info/entry_points.txt,sha256=eTRaauv6l2C86TfPrz91RqKhUA6iY_DpiqA9e6XNsmA,44
+monokel-0.0.5.dist-info/top_level.txt,sha256=oGwiP1pgtF6FRk5g5MTqCnQGAkIZ1NBVA0RJ2DC4tPg,8
+monokel-0.0.5.dist-info/RECORD,,
