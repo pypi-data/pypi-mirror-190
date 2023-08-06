@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: irrigation_calc
+Version: 0.0.1
+Summary: samacontrol irrigation calculate project
+Author-email: mansore kafash <tech.leader.rayanarvin@gmail.com>
+Project-URL: Homepage, https://hamgit.ir/samacontrol/irrigation/irrigation_calc
+Project-URL: Bug Tracker, https://hamgit.ir/samacontrol/irrigation/irrigation_calc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# samacontrol irrigation calculate packages
