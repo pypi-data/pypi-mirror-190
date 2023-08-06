@@ -1,0 +1,9 @@
+transude/__init__.py,sha256=Kovo7fhLuR58b3kYuVqUe7i8mlSNdybGrMtzkj46Cw8,6101
+transude/data_frame_filter.py,sha256=WbXPktyzbVlTyYL_fBupExROEfrblWqnFu0gw383Ino,5457
+transude/data_frame_filter_factory.py,sha256=au8LTqRBaBDUq1JwpnaNS9IUnxs_vF4PHxcNoNKJctA,5938
+transude/data_frame_filter_manager.py,sha256=D0RaWNtbhosZeRmj49Hwzez3HlFgXLz3kb1-8zXSc1k,7318
+transude-2.0.0.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+transude-2.0.0.dist-info/METADATA,sha256=Bkpgu59TaUCe5zvY0T9xtvhumlizdemi7P9lfgFpggM,2575
+transude-2.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+transude-2.0.0.dist-info/top_level.txt,sha256=qxX1bOxkBC2VRcLzrqMJnvkxDcNyEN_A710ynpiBjxQ,9
+transude-2.0.0.dist-info/RECORD,,
