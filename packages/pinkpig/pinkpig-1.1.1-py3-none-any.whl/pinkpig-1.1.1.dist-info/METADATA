@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pinkpig
+Version: 1.1.1
+Summary: a package for your bert using
+Home-page: https://github.com/boss2020/tfbert
+Author: sanye
+Author-email: 201419490@qq.com
+License: Apache License 2.0
+Download-URL: https://github.com/boss2020/tfbert/master.zip
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+使用keras实现你的bert项目
+
