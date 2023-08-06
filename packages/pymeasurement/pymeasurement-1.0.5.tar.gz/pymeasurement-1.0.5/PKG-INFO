@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pymeasurement
+Version: 1.0.5
+Summary: A Measurement Calculator with Fixed Point Precision, Uncertainties, and Units
+Project-URL: Homepage, https://github.com/Saptak625/pymeasurement
+Project-URL: Bug Tracker, https://github.com/Saptak625/pymeasurement/issues
+Author-email: Saptak Das <saptak.das625@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pymeasurement
+A Measurement Calculator with Fixed Point Precision, Uncertainties, and Units.
+
+View on PyPi at https://pypi.org/project/pymeasurement/ and on Github at https://github.com/Saptak625/pymeasurement.
+
+## Usage
+```
+pip install pymeasurement
+```
+
+## Documentation
+To Come Soon...
