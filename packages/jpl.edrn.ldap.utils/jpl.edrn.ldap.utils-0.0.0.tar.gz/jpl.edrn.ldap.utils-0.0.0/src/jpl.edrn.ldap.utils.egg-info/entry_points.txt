@@ -1,0 +1,2 @@
+[console_scripts]
+create-users = jpl.edrn.ldap.utils.users:create
