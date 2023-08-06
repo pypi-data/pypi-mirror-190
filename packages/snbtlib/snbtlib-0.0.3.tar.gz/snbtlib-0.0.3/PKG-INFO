@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: snbtlib
+Version: 0.0.3
+Summary: a formatter for snbt from minecraft
+Home-page: 
+Author: Tryanks
+Author-email: tryanks@outlook.com
+License: MIT License
+Keywords: minecraft
+Platform: any
+License-File: LICENSE
+
+Snbtlib
+=========
+
+Installation
+--------------------------
+
+::
+
+    pip install snbtlib
+
+Usage
+--------------------------
+
+Reading Text to Json
+
+::
+
+    snbtlib.loads(snbt_text)
+
+Dumping Json to Text
+
+::
+
+    snbtlib.dumps(snbt)
