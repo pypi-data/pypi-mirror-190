@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+wis_s3api/__init__.py
+wis_s3api/era5.py
+wis_s3api/gpm.py
+wis_s3api/wis_s3api.py
+wis_s3api.egg-info/PKG-INFO
+wis_s3api.egg-info/SOURCES.txt
+wis_s3api.egg-info/dependency_links.txt
+wis_s3api.egg-info/not-zip-safe
+wis_s3api.egg-info/requires.txt
+wis_s3api.egg-info/top_level.txt
