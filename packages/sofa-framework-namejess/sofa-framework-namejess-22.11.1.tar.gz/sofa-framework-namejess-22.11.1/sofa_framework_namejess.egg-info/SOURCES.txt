@@ -1,0 +1,8 @@
+Authors.txt
+LICENSE.LGPL.txt
+README.md
+pyproject.toml
+sofa_framework_namejess.egg-info/PKG-INFO
+sofa_framework_namejess.egg-info/SOURCES.txt
+sofa_framework_namejess.egg-info/dependency_links.txt
+sofa_framework_namejess.egg-info/top_level.txt
