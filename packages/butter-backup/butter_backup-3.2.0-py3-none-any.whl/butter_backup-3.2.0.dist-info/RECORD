@@ -1,0 +1,12 @@
+butter_backup/__init__.py,sha256=7ydjF4UllAT6cth-WrZHqehyZQyff7mX_Ib2SIgbixM,73
+butter_backup/backup_backends.py,sha256=hQi1y6q9zYmyU5cbvedtZaRhqVLMCT_7H--wfMSHV8M,4971
+butter_backup/cli.py,sha256=sV8j_AZS7ba_D6-hagt2FPDSlW5cnuup8TkR3FhrhvA,7448
+butter_backup/config_parser.py,sha256=pZcjFibKkzgvbIBLy8_ZSCEOfh5odoYjBWjWczatfsc,5144
+butter_backup/device_managers.py,sha256=hDukt24kF3qzWGkksjrNp4KQtxxfZu2bKivfGmKGpRQ,7466
+butter_backup/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+butter_backup/shell_interface.py,sha256=7bHfSR_dKxSYbWdxf8qblX9vpiOAN_DtapDFLrfSPr4,1851
+butter_backup-3.2.0.dist-info/entry_points.txt,sha256=_GT3NTxs_Il006gkpIDZp77KxhIkkVLnidwcVcppfnY,55
+butter_backup-3.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+butter_backup-3.2.0.dist-info/METADATA,sha256=Mdp0mMbTkx4xQTIgPo_zSW0SaZcTkax-86exNcxSLlQ,659
+butter_backup-3.2.0.dist-info/LICENSE,sha256=gEghqRcfbrDg0mY1kiSAv0ecLWRsJgn2JzqFGRlJuN8,35106
+butter_backup-3.2.0.dist-info/RECORD,,
