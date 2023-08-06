@@ -1,0 +1,7 @@
+pyyaml
+
+[dev]
+black==22.10.0
+flake8
+pytest
+pytest-cov
