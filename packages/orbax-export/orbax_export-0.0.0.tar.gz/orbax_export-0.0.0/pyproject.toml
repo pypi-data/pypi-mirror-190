@@ -1,0 +1,17 @@
+[project]
+name = "orbax_export"
+version = "0.0.0"
+authors = [
+  { name="Orbax Authors", email="orbax-dev@google.com" },
+]
+description = "Orbax export library"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/google/orbax"
