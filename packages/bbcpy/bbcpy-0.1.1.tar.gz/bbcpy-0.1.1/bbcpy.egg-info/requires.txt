@@ -1,0 +1,8 @@
+scikit-learn
+pyriemann
+numpy
+scipy
+matplotlib
+
+[tests]
+pytest
