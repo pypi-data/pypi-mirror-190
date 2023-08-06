@@ -1,0 +1,13 @@
+IITM_indic_unified_parser/__init__.py,sha256=fajUFymTJ4_wtFYN0PSArG-JhD7B59gogqGHBv82kEk,99
+IITM_indic_unified_parser/common.map,sha256=kXPY_rPfol3rjy-Ai2iZmdGI2tLPPUTWKbDr6vkElM0,4485
+IITM_indic_unified_parser/globals.py,sha256=SJGgON_1cTitJRATgZAwzWrYS_eFDL73upckX52PbwI,1999
+IITM_indic_unified_parser/helpers.py,sha256=W86qtY2-to84xaDfKSOz8Y2C4l96PUoCIFPELFjJ1_M,32473
+IITM_indic_unified_parser/uparser.py,sha256=91JbQ3oGLApojo6kr1nCIsfe4FjmLbl3UZYPmRItRXY,6538
+IITM_indic_unified_parser/ply/__init__.py,sha256=qYzI7UvXF88KLrem8yYem-K_UGXXc7IuNo1DN6ZStPY,116
+IITM_indic_unified_parser/ply/lex.py,sha256=NO9sccmA5vlQYzedOnL2l7Kizy7PCO4VPQAvsiFagxY,4187
+IITM_indic_unified_parser/ply/yacc.py,sha256=jtnTQLKDjleAKVO-ogdeA3dGmetRwy2PvEofM_p75J0,98438
+indic_unified_parser-1.0.0.dist-info/LICENSE,sha256=BzNdT10VrFncZGsLbgfQcEI0-1eTSmSwc5lcGtw4L9o,1066
+indic_unified_parser-1.0.0.dist-info/METADATA,sha256=YCk4xK-IQGVEA2Tk4ePmT0uzGaFfTXl0E5eO5vWYlq4,2953
+indic_unified_parser-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+indic_unified_parser-1.0.0.dist-info/top_level.txt,sha256=qg5G3HWPU2OUoSIbc0N6CIi1Qc0aw8izGI-x-ACYUPU,26
+indic_unified_parser-1.0.0.dist-info/RECORD,,
