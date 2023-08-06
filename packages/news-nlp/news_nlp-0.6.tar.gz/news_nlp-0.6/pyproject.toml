@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "News_NLP"
+version = "0.6"
+description = "This package aims to collect news data via Google News API, preporcessing, implement pretrained news type classifer and sentiment classifier and perform predictive model for news event and then implememnt multiple geolocator."
+authors = ["Jason Lu <luzhenxian@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "News_NLP"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+newsapi-python ="^0.2.6"
+spacy = "^2.1.1"
+nltk = "^3.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
