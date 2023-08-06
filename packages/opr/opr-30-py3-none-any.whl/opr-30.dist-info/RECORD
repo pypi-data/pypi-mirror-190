@@ -1,0 +1,13 @@
+opr/__init__.py,sha256=615OosKlh_snhQRL_IhCGDUco0owaiP5-bJQ45jJ0eM,144
+opr/clocked.py,sha256=GwaPKjThz2JoyjrLBZCyRe1fkmYpn_baCwajZXQa3Ns,1248
+opr/command.py,sha256=OCPj5h6p5i8SKmNXps59gy1UZdeU3AI0mut5b_-xpJw,291
+opr/handler.py,sha256=fIFRuZb_y8duplTFLZYyBTtcLPHl06C2i1RVgrTeP08,1911
+opr/listens.py,sha256=uQfBVG7lZ_W74Sqmd1RMWFuvmx95YCChkxkLj3Mk2QY,869
+opr/message.py,sha256=hkt-Iu0W8tr4yGK7GvyaR9bH269wPA5Xm2BKaVofZrs,1300
+opr/parsers.py,sha256=Rer30WhZ38TPsJgeR0uCYDxnhyQgKihHc2LWidHDX2M,1690
+opr/threads.py,sha256=Koa9Rm_EaLBhz3HxQrYWcKdlRpEfJZRswCumpQv1hXQ,1036
+opr/utility.py,sha256=EJhCvHJjig_1abq_vCxSp8VMRJi05Ylao3xlPSKm9dQ,765
+opr-30.dist-info/METADATA,sha256=7PaGhGO2qitq1felon-kjuzVwnV6tQH2BIC_u5d43vg,1544
+opr-30.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+opr-30.dist-info/top_level.txt,sha256=8r5uOiRf8Eq5eVo2Z0Z_f0HIy7hfrOpXUxpdWBeypYk,4
+opr-30.dist-info/RECORD,,
