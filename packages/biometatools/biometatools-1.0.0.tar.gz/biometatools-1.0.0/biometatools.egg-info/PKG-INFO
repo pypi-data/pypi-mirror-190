@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: biometatools
+Version: 1.0.0
+Summary: Package for meta-analysis of reads compared to features
+Home-page: https://github.com/maragkakislab/metatools
+Author: MaragkakisLab
+Author-email: emmanouil.maragkakis@nih.gov
+Project-URL: Bug Tracker, https://github.com/maragkakislab/metatools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# metatools
+Repository for meta tools
