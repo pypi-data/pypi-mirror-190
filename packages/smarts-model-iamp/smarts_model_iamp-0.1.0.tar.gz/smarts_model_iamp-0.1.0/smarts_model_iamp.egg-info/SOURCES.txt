@@ -1,0 +1,10 @@
+MANIFEST.in
+predictor_5000_0.6726.pth
+setup.cfg
+setup.py
+smarts_model_iamp.egg-info/PKG-INFO
+smarts_model_iamp.egg-info/SOURCES.txt
+smarts_model_iamp.egg-info/dependency_links.txt
+smarts_model_iamp.egg-info/requires.txt
+smarts_model_iamp.egg-info/top_level.txt
+smarts_model_iamp.egg-info/zip-safe
