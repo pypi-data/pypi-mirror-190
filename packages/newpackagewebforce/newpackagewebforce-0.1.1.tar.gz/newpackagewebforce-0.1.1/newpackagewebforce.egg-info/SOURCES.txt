@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+newpackage/__init__.py
+newpackage/fourthpackage.py
+newpackage/newpackage.py
+newpackage/seconpackage.py
+newpackage/thirdpackage.py
+newpackagewebforce.egg-info/PKG-INFO
+newpackagewebforce.egg-info/SOURCES.txt
+newpackagewebforce.egg-info/dependency_links.txt
+newpackagewebforce.egg-info/requires.txt
+newpackagewebforce.egg-info/top_level.txt

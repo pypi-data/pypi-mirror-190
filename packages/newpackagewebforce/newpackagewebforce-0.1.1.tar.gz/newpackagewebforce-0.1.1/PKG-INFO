@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: newpackagewebforce
+Version: 0.1.1
+Summary: Python package for my newpackagewebforce.
+Home-page: https://github.com/danielmen-mx/newpackagewebforce
+Download-URL: https://github.com/danielmen-mx/newpackagewebforce/archive/0.1.1.tar.gz
+Author: D.Mendez
+Author-email: pablomen1131@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# newpackage
+
+### Install newpackage from PyPi.
+```bash
+pip install newpackage
+```
+
+#### Example
+```python
+    # Import library
+    from newpackage.newpackage import Newpackage
+    from newpackage.seconpackage import Newsito
+    from newpackage.thirdpackage import Newnewsito
+
+    # Initialize & run functions
+    model = Newpackage('Daniel')
+    model.use_logger()
+    model.show()
+
+    Newsito("Hello World")
+
+    Newnewsito()
+
+```
