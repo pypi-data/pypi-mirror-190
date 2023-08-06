@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+    "setuptools"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "car-model"
+version = "0.0.0"
+authors = [
+    {name = "Paulo Sanchez", email = "dev.szblzpaulo@gmail.com"}
+]
+description = "TODO."
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/erlete/car-model"
+"Bug Tracker" = "https://github.com/erlete/car-model/issues"
