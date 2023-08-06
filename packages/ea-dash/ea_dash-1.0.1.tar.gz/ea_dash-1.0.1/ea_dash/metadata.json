@@ -1,0 +1,100 @@
+{
+  "src/lib/components/EaDash.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "EaDash",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The value displayed in the input."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/Layout.react.js": {
+    "description": "DashEA is prepared Layout used by Energy Aspects apps",
+    "displayName": "Layout",
+    "methods": [],
+    "props": {
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Layout wrapper className"
+      },
+      "drawerContent": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Contents of drawer"
+      },
+      "headerContent": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Contents of header"
+      },
+      "sidebarContent": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Contents of sidebar"
+      },
+      "open": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Signifies if drawer of Layout is open"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Main content"
+      },
+      "showLeftHandNav": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Toggle off and on the drawer and sidebar"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}
