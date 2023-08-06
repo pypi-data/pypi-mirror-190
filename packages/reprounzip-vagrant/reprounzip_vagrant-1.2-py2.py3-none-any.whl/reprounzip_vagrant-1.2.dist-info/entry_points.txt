@@ -1,0 +1,2 @@
+[reprounzip.unpackers]
+vagrant = reprounzip.unpackers.vagrant:setup
