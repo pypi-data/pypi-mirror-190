@@ -1,0 +1,9 @@
+kafka_rest/__init__.py,sha256=hNPaGHSVDW_wT4nEWA2Bhd2FKKp-bBsCr5CQcp4VOdk,53
+kafka_rest/__main__.py,sha256=NWrPl5ijpCmdGdaG6We_LCsd9QzjafQZhnTCb-9AQLE,4747
+kafka_rest/kafka_rest.py,sha256=ykWazoAKYBmTyvAQGd0ZE34_zZDfERDsMuhm4SDQNjk,9692
+nlp_kafka_rest_api-0.6.0.dist-info/LICENSE,sha256=wJVuW0Ptz6hh5hz5Ofey4-Gf_kIMaZ8tJQ4mqh2mulc,1073
+nlp_kafka_rest_api-0.6.0.dist-info/METADATA,sha256=jwmuZxEN2MsY9__fXulAZresexVxu0efUHev6zUaWx8,5053
+nlp_kafka_rest_api-0.6.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nlp_kafka_rest_api-0.6.0.dist-info/entry_points.txt,sha256=y4RzpNq0XXK0D-tzSzF3Oz2uwotLVQVc8w4beyNeLkQ,56
+nlp_kafka_rest_api-0.6.0.dist-info/top_level.txt,sha256=1Bl8Dz8hCH4w-tzRRWAzii68DLMyoz9_33lK9NQ1bkU,11
+nlp_kafka_rest_api-0.6.0.dist-info/RECORD,,
