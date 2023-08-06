@@ -1,0 +1,115 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        python_version:
+          - '3.8'
+          - '3.9'
+          - '3.10'
+        os:
+          - 'ubuntu'
+          - 'macos'
+          # poetry is failing on windows: https://github.com/python-poetry/poetry/issues/1031
+          # - 'windows'
+
+    runs-on: ${{ matrix.os }}-latest
+    timeout-minutes: 20
+
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    concurrency:
+      group: ci-${{ matrix.os }}-${{ matrix.python_version }}-${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install MacOS extra tools and add extra config
+      if: ${{ matrix.os == 'macos' }}
+      run: |
+        brew install gnu-sed
+        echo 'export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.bashrc
+        echo 'export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"' >> ~/.bash_profile
+
+    - name: Prepare conda environment (windows)
+      if: ${{ matrix.os == 'windows' }}
+      run: |
+        $env:Path += ";C:\Program Files\Git\usr\bin"
+        sed -i s/python\ 3\.8/python\ ${{ matrix.python_version }}/ conda/dev.yaml
+        cat conda/dev.yaml
+
+    - name: Prepare conda environment
+      if: ${{ matrix.os != 'windows' }}
+      run: |
+        sed -i s/python\ 3\.8/python\ ${{ matrix.python_version }}/ conda/dev.yaml
+        cat conda/dev.yaml
+
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        miniconda-version: "latest"
+        environment-file: conda/dev.yaml
+        channels: conda-forge,nodefaults
+        activate-environment: makim
+        use-mamba: true
+        miniforge-variant: Mambaforge
+
+    - name: Install dependencies
+      run: poetry install
+
+    - name: Run tests using simple makim file
+      env:
+        MAKIM_FILE_ARG: "--makim-file tests/.makim-simple.yaml"
+      run: |
+        makim ${MAKIM_FILE_ARG} --help
+        makim ${MAKIM_FILE_ARG} --version
+        makim ${MAKIM_FILE_ARG} clean
+        makim ${MAKIM_FILE_ARG} default.clean
+        makim ${MAKIM_FILE_ARG} build
+        makim ${MAKIM_FILE_ARG} default.build
+        makim ${MAKIM_FILE_ARG} build --clean
+
+    - name: Run tests using complex makim file
+      env:
+        MAKIM_FILE_ARG: "--makim-file tests/.makim-complex.yaml"
+      run: |
+        makim ${MAKIM_FILE_ARG} --help
+        makim ${MAKIM_FILE_ARG} --version
+        makim ${MAKIM_FILE_ARG} default.lint --verbose
+        makim ${MAKIM_FILE_ARG} build.clean-gcda --verbose
+        makim ${MAKIM_FILE_ARG} build.clean --verbose
+        makim ${MAKIM_FILE_ARG} build.install --verbose
+        makim ${MAKIM_FILE_ARG} build.release --verbose
+        makim ${MAKIM_FILE_ARG} build.release --build-type debug --verbose
+        makim ${MAKIM_FILE_ARG} build.release --extras '-D' --verbose
+        makim ${MAKIM_FILE_ARG} build.release --clean --verbose
+        makim ${MAKIM_FILE_ARG} build.dev --verbose
+        makim ${MAKIM_FILE_ARG} env.create-file --verbose
+        makim ${MAKIM_FILE_ARG} conda.build --verbose
+        makim ${MAKIM_FILE_ARG} release.ci --verbose
+        makim ${MAKIM_FILE_ARG} release.dry --verbose
+        makim ${MAKIM_FILE_ARG} docs.api --verbose
+        makim ${MAKIM_FILE_ARG} docs.build --verbose
+        makim ${MAKIM_FILE_ARG} docs.clean --verbose
+        makim ${MAKIM_FILE_ARG} docs.preview --verbose
+        makim ${MAKIM_FILE_ARG} tests.sanitizer --verbose
+        makim ${MAKIM_FILE_ARG} tests.code-coverage --verbose
+        makim ${MAKIM_FILE_ARG} tests.gen-object --verbose
+        makim ${MAKIM_FILE_ARG} tests.gen-ast --verbose
+        makim ${MAKIM_FILE_ARG} tests.gen-llvm-ir --verbose
+        makim ${MAKIM_FILE_ARG} tests.examples --verbose
+        makim ${MAKIM_FILE_ARG} tests.all --verbose
+        makim ${MAKIM_FILE_ARG} debug.fibonacci --verbose
+
+    - name: Test documentation generation
+      run: makim docs.build
+
+    - name: Run style checks
+      if: success() || failure()
+      run: |
+        pre-commit install
