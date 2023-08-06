@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: detic-fast
+Version: 1.0.post20230203
+Summary: Fork of https://github.com/facebookresearch/Detic
+Home-page: https://github.com/wikiwen/Detic
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: mss
+Requires-Dist: timm
+Requires-Dist: dataclasses
+Requires-Dist: ftfy
+Requires-Dist: regex
+Requires-Dist: fasttext
+Requires-Dist: scikit-learn
+Requires-Dist: lvis
+Requires-Dist: nltk
+Requires-Dist: mmcv
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
