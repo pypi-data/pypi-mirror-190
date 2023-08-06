@@ -1,0 +1,9 @@
+scons517-0.0.1.dist-info/METADATA,sha256=K_h2b33F1dCvpwCEE6oAFF5n9wgmL991OmHBXMqY1rk,3723
+scons517-0.0.1.dist-info/WHEEL,sha256=ob6tugy9mmVk3b_bRQnWGE4BhYHzKpCyu8_8y3rcsIw,80
+scons517-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scons517/__init__.py,sha256=3yZjg8TdGyjd_dLmbSYZ8WqH1fuMV7p3f6TVftiY0gI,1658
+scons517/api.py,sha256=ML2DWNxM62X5cv-oUPGleuMHsOZkFOj3Npn-fBbGpzg,1416
+scons517/extension.py,sha256=e4nzTsHUqVVLjPkvpxbrKnMU8TBk28gVGuBpG-qeASg,3380
+scons517/pytar.py,sha256=YKYRiqRdAc7F1PeS2UkrEroXk2TlALxYkWz-9HXeGAc,3695
+scons517/wheel.py,sha256=8Wo5xR3EGe9ts2We_WBUq2YsakhEgGcym9UdF5Fcpvo,25115
+scons517-0.0.1.dist-info/RECORD,,
