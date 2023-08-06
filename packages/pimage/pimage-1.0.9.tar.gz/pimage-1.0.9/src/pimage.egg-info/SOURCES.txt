@@ -1,0 +1,16 @@
+LICENSE-APACHE
+LICENSE-MIT
+README-PYPI.md
+README.md
+pyproject.toml
+src/pimage/__init__.py
+src/pimage/block.py
+src/pimage/configuration.py
+src/pimage/container.py
+src/pimage/copy_move.py
+src/pimage/image_object.py
+src/pimage.egg-info/PKG-INFO
+src/pimage.egg-info/SOURCES.txt
+src/pimage.egg-info/dependency_links.txt
+src/pimage.egg-info/requires.txt
+src/pimage.egg-info/top_level.txt
