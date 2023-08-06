@@ -1,0 +1,13 @@
+pyproject.toml
+readme.md
+setup.cfg
+alicona_converter/__init__.py
+alicona_converter/__main__.py
+alicona_converter/plot_surface.py
+alicona_converter/py.typed
+alicona_converter.egg-info/PKG-INFO
+alicona_converter.egg-info/SOURCES.txt
+alicona_converter.egg-info/dependency_links.txt
+alicona_converter.egg-info/requires.txt
+alicona_converter.egg-info/top_level.txt
+tests/test_alicona_converter.py

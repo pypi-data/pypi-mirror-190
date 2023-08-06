@@ -1,0 +1,11 @@
+numpy
+matplotlib
+numba
+scientific-plots
+
+[dev]
+mypy
+typing-extensions
+pylint
+flake8
+pytest

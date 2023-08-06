@@ -1,0 +1,77 @@
+[project]
+name = "alicona_converter"
+requires-python = ">=3.9"
+description = "Convert data between the output format of the alicona microscope and the tribo-x input format"
+readme = "readme.md"
+authors = [{name = "Felix Fischer", email = "f.fischer@ifas.rwth-aachen.de"}]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3"
+]
+
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "numba",
+    "scientific-plots"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "typing-extensions",
+    "pylint",
+    "flake8",
+    "pytest"
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "alicona_converter.__version__"}
+
+[tool.mypy]
+python_version = "3.9"
+warn_unused_configs = true
+follow_imports_for_stubs = true
+warn_redundant_casts = true
+plugins = "numpy.typing.mypy_plugin"
+strict = true
+warn_unused_ignores = false
+
+[tool.pylint.MASTER]
+fail-under = 9.0
+
+[tool.pylint.BASIC]
+good-names = ["i", "j", "k", "ex", "Run", "_", "ax", "e", "f", "n", "N",
+              "M", "q", "C", "A", "R", "d"]
+good-names-rgxs = [
+    '_?x\d?', '_?X\d?', '_?y\d?', '_?Y\d?', 'v\d?',
+    '_?z\d?', '_?Z\d?',
+    '_?[a-zA-Z]'
+]
+
+[tool.pylint.DESIGN]
+max-args = "8"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "not-an-iterable"
+]
+
+# flake8 is not actually supported yet
+# but might be in the future
+[tool.flake8]
+extend-exclude = [
+    ".git",
+    ".gitignore",
+    "*.pot",
+    "*.py[co]",
+    "__pycache__",
+    "venv",
+    ".env"
+]
