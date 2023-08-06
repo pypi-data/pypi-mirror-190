@@ -1,0 +1,11 @@
+license.txt
+setup.py
+hidewavinjpg/__init__.py
+hidewavinjpg/audio_obj.py
+hidewavinjpg/base.py
+hidewavinjpg/hide_wavinjpg.py
+hidewavinjpg/img_obj.py
+hidewavinjpg.egg-info/PKG-INFO
+hidewavinjpg.egg-info/SOURCES.txt
+hidewavinjpg.egg-info/dependency_links.txt
+hidewavinjpg.egg-info/top_level.txt
