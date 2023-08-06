@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+src/vlogging/__init__.py
+src/vlogging/formatters.py
+src/vlogging/logger.py
+src/vlogging.egg-info/PKG-INFO
+src/vlogging.egg-info/SOURCES.txt
+src/vlogging.egg-info/dependency_links.txt
+src/vlogging.egg-info/requires.txt
+src/vlogging.egg-info/top_level.txt
+tests/vlogging/test___init__.py
+tests/vlogging/test_formatters.py
