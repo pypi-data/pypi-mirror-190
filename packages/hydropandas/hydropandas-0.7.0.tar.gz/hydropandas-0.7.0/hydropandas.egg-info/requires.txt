@@ -1,0 +1,17 @@
+scipy
+pandas
+tqdm
+requests
+zeep
+colorama
+
+[full]
+geopandas
+pastastore
+bokeh
+branca
+folium
+flopy
+xarray
+shapely
+pyproj
