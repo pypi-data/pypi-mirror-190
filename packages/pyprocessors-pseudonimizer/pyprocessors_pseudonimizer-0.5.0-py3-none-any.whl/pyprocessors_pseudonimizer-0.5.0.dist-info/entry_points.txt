@@ -1,0 +1,3 @@
+[pyprocessors.plugins]
+pseudonimizer=pyprocessors_pseudonimizer.pseudonimizer:PseudonimizerProcessor
+
