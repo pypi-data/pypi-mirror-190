@@ -1,0 +1,9 @@
+mxpi_pycocotools/__init__.py,sha256=0C6R_hJbgubl8GQriX90OQlFBtBvMncbQNABcN646uE,21
+mxpi_pycocotools/_mask.cp310-win_amd64.pyd,sha256=mVvisNtbrh7WuRja9XmdrhNkRW8blRp4O_dSKl8AJHc,132096
+mxpi_pycocotools/coco.py,sha256=oczA3hLVZvSPNpwW4CnExaYgaPzHcXdCmoY7kgj8bgI,18655
+mxpi_pycocotools/cocoeval.py,sha256=vBL6XFTjd8ERhbemwMxTNtTtMSG90DaALPoiY7A8dY0,24167
+mxpi_pycocotools/mask.py,sha256=SDjhyNysbGjeBIeidwaUkmBTr0Vhxsh8dUsZ-Id9SgM,4596
+mxpi_pycocotools-5.1.dist-info/METADATA,sha256=7dSxUMYYlFYdKtW8ppx8t49WE_erHnOWhL28OMSp5lU,59
+mxpi_pycocotools-5.1.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+mxpi_pycocotools-5.1.dist-info/top_level.txt,sha256=_b0y4rTMXUqElr_RKZox-kkY3lWeZvm08zgF0Jyv2Lo,17
+mxpi_pycocotools-5.1.dist-info/RECORD,,
