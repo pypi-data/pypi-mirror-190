@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: save-load-vars
+Version: 0.11
+Summary: Save and load vars, functions ...
+Home-page: https://github.com/hansalemaos/save_load_vars
+Author: Johannes Fischer
+Author-email: <aulasparticularesdealemaosp@gmail.com>
+License: MIT
+Keywords: pickle,dill
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: cloudpickle
+Requires-Dist: cprinter
+Requires-Dist: dill
+Requires-Dist: windows-filepath
+
+
+# Save and load vars, functions, objects ...
+
+
+
+
+
+### How to save the global vars (or any other variable)
+
+```python
+
+# Create a file
+
+
+
+import pandas as pd
+
+from save_load_vars import save_vars_pkl
+
+
+
+df = pd.read_csv(
+
+    "https://raw.githubusercontent.com/pandas-dev/pandas/main/doc/data/titanic.csv"
+
+)
+
+
+
+
+
+def myfunction(x):
+
+    return str(x) + "bbbb"
+
+
+
+
+
+myfunction2 = lambda k: myfunction(k)
+
+partofframe = df.Name.copy()[:50]
+
+
+
+# Save the global vars 
+
+save_vars_pkl(g=globals(), folder=f"f:\\pklsavetest", interface="dill", protocol=None)
+
+
+
+```
+
+
+
+
+
+### How to load the saved data
+
+```python
+
+from save_load_vars import load_vars_pkl
+
+
+
+
+
+load_vars_pkl(folder=f'f:\\pklsavetest',
+
+              name=__name__,interface='dill')
+
+
+
+print(df)
+
+print(myfunction(44))
+
+print(partofframe)
+
+print(df.Cabin.apply(myfunction2))
+
+```
+
+
+
+
+
+### How to create global variables from a dict
+
+```python
+
+from save_load_vars import globals_from_dict
+
+didi={
+
+    'a':'bobo',
+
+    'b':'bobao',
+
+    'c': [4,3,3]
+
+}
+
+globals_from_dict(didi,__name__)
+
+print(a)
+
+print(b)
+
+print(c)
+
+```
