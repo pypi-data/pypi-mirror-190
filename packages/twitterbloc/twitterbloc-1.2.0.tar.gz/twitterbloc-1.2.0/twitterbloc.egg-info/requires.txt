@@ -1,0 +1,6 @@
+numpy
+osometweet
+requests-oauthlib
+scipy
+scikit-learn
+textblob
