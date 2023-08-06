@@ -1,0 +1,3 @@
+[console_scripts]
+bsn=better_social_notifications.main:run
+
