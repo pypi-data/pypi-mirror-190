@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: versionedfunction
+Version: 0.8.33
+Summary: Sometimes you want to be able to dynamically call different versions of a function
+Author: John Heintz
+Author-email: john@gistlabs.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
