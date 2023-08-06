@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: NewareNDA
+Version: 2023.2.1.post1
+Summary: Neware nda binary file reader.
+Home-page: https://github.com/Solid-Energy-Systems/NewareNDA
+Author: Daniel Cogswell
+Author-email: danielcogswell@ses.ai
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+
+# NewareNDA
+
+© 2023 Copyright SES AI
+<br>Author: Daniel Cogswell
+<br>Email: danielcogswell@ses.ai
+
+Neware NDA binary file reader.
+
+# Installation
+```
+cd NewareNDA
+pip install .
+```
+
+# Usage
+```
+import NewareNDA
+df = NewareNDA.read('filename.nda')
+```
+## Command-line interface:
+```
+NewareNDA-cli.py in_file.nda --format feather out_file.ftr
+```
+The following `--format` options are supported: `csv, excel, feather, hdf, json, parquet, pickle, stata`
