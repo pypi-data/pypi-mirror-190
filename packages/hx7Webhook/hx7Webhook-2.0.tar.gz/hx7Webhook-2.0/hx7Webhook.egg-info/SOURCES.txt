@@ -1,0 +1,7 @@
+LICENCE.txt
+setup.py
+code/__init__.py
+hx7Webhook.egg-info/PKG-INFO
+hx7Webhook.egg-info/SOURCES.txt
+hx7Webhook.egg-info/dependency_links.txt
+hx7Webhook.egg-info/top_level.txt

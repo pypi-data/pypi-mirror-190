@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hx7Webhook
+Version: 2.0
+Summary: A webhook sender (for discord webhook)
+Author: hx7 cyber team owner
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENCE.txt
