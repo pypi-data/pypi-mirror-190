@@ -1,0 +1,20 @@
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            {% if config.site_author %}
+            {{ config.site_author }}
+            {% endif %}
+        </p>
+        <p>
+            {% if config.copyright %}
+            {{ config.copyright }}
+            {% endif %}
+        </p>
+        <p>
+            Documentation build with <a href="https://www.mkdocs.org/">MkDocs</a>.<br />
+            Consider to theme author on <a href="https://www.github.com/daniele-tentoni">Github</a> to help him to give more <i
+                class="fa-regular fa-clock fa-spin"></i> and <i
+                class="fa-regular fa-heart fa-beat"></i>.
+        </p>
+    </div>
+</footer>
