@@ -1,0 +1,30 @@
+{% load base_taglib %}
+{% load sass_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+{%include '_base_head.html'%}
+
+<body>
+    {% include '_components/header/grid.html' %}
+    {% include '_base_downtime.html' %}
+
+    <div id="breadcrumb-container" class="breadcrumbs">{% block breadcrumbs %}{% endblock %}</div>
+    {% include '_components/message_container.html' %}
+
+    <div id="psu-main-content-block">
+    {% block pagecontent %}{% endblock %}
+    </div>
+
+    {% include '_components/footer.html' %}
+
+    <script type="text/javascript">
+        {%include '_components/template.js'%}
+    </script>
+
+    {## Run AdminScripts if enabled ##}
+    {%admin_script%}
+</body>
+</html>
+
