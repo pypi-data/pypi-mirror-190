@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: xblock-poll
+Version: 1.13.0
+Summary: An XBlock for polling users.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: XBlock
+Requires-Dist: markdown
+Requires-Dist: bleach
+
+UNKNOWN
+
+
