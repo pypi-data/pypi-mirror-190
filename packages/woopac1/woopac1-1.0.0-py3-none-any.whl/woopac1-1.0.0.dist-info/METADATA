@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: woopac1
+Version: 1.0.0
+Summary: Count of uniq chars in string package
+Home-page: UNKNOWN
+Author: Dihtiar Vadym
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pytest (==7.2.0)
+
+# uniqchars
+
+Module for getting the number of unique characters in a string.
+Implemented methods for a string and for a list of strings, supports working with the command line.
+Methods return cache the results, so that when the method is given a string previously encountered, it will simply retrieve the stored result.
+
+## Contents
+
+* [Example](#example)
+* [Installation](#installation)
+* [License](#license)
+
+## Example
+
+count_uniq_chars_in_string example:
+
+```python
+count_uniq_chars_in_string("test_string")
+```
+
+count_uniq_chars_in_list example:
+
+```python
+count_uniq_chars_in_list(["test_string1", "test_string1"])
+```
+
+execute `main` from command line after installation example:
+
+```python
+import uniqchars
+uniqchars.main()
+```
+
+```lua
+main --string "string" --data "file_path"
+```
+
+
+## Installation
+
+### Using PIP
+
+Installing uniqchars using `pip`:
+
+```bash
+$ pip install charcounter228
+```
+
+## License
+
+`uniqchars` is licensed (MIT license).
+
+
+
+# project_name 
+
+## project_description 
+
+## Install it from PyPI 
+
+```bash
+pip install woomodule
+```
+
+## Usage in code
+
+```py
+from woomodule.app import app
+app.main()
+BaseClass().base_method()
+base_function()
+```
+
+## Usage in command line 
+```bash
+$ python -m project_name
+#or
+$ project_name
+```
+
