@@ -1,0 +1,9 @@
+torch>1.12.1
+transformers
+pip==23.0
+pytest
+coverage
+build
+twine
+hatchling
+toml
