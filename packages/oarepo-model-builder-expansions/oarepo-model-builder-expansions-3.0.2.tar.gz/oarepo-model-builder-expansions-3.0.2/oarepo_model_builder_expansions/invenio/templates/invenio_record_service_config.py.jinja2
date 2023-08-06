@@ -1,0 +1,23 @@
+{% for expandable_field_class in expandable_fields_classes %}
+from {{ expandable_field_class|package_name }} import {{ expandable_field_class|base_name }}
+{% endfor %}
+{% for expandable_field in expandable_fields_context %}
+from {{ expandable_field.service|package_name }} import {{ expandable_field.service|base_name }} as {{ expandable_field.service_alias }}
+{% endfor %}
+
+
+
+class {{ current_model.record_service_config_class|base_name }}:
+    @property
+    def expandable_fields(self):
+        return [
+            {% for expandable_field in expandable_fields_context %}
+                    {{expandable_field.expandable_field_class|base_name}}(
+                                                field_name="{{ expandable_field.field_name }}",
+                                                keys={{ expandable_field.referenced_keys }},
+                                                service= {{ expandable_field.service_alias }}{% if expandable_field.pid_field %},
+                                                pid_field = "{{ expandable_field.pid_field }}"
+                                                {% endif %}
+                                                ),
+            {% endfor %}
+        ]
