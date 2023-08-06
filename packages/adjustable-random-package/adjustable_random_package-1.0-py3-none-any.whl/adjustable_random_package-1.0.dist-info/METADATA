@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: adjustable-random-package
+Version: 1.0
+Summary: Adjustable random number generator
+Home-page: https://github.com/dinosaurtirex/adjustable-random
+Author: dinosaurtirex
+Author-email: sneakybeaky18@gmail.com
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+
+# More adjustable random functions
+
+Generating adjustable random values,
+from min to max with numbers to adjust.
+
+For example, we have values from 1 to 10.
+
+If number 2 and 3 will be in numbers to adjust with k=5,
+final array will look like this:
+
+```
+[1,2,2,2,2,2,3,3,3,3,3,4,5,6,7,8,9,10]
+```
+
+and chance of random.choice for those values
+will be increased 
