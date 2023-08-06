@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: aesedb
+Version: 0.1.2
+Summary: NTDS parser toolkit
+Home-page: https://github.com/skelsec/aesedb
+Author: Tamas Jos
+Author-email: Tamas Jos <skelsec@skelsecprojects.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: prompt-toolkit (>=3.0.2)
+Requires-Dist: unicrypto (>=0.0.9)
+Requires-Dist: aiowinreg (>=0.0.8)
+Requires-Dist: tqdm
+Requires-Dist: colorama
+
+# aesedb
+async parser for JET
+
+# What is this
+This project is mainly aims to provide an async parsing option for NTDS.dit database file for obtaining user secrets.  
+It might also useful for parsing random JET databases.
+
+# Install
+`pip install aesedb` or via cloning from github
+
+# Usage
+Either use it as a library (check the example on how) or if you wanna jump in parsing NTDS.dit use the following commands  
+
+### Basic
+`antdsparse <SYSTEM reg hive> <NTDS.dit>`
+### User friendly
+`antdsparse <bootkey> <NTDS.dit> -o <outputfile> --progress`  
+`antdsparse <SYSTEM reg hive> <NTDS.dit> -o <outputfile> --progress`  
+
+# Kudos
+Core components of this library are from the awesome [impacket](https://github.com/SecureAuthCorp/impacket) toolkit.
