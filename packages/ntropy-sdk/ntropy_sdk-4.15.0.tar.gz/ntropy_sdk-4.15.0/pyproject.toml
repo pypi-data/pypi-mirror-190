@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ntropy-sdk"
+version = "0.1.0"
+description = ""
+authors = ["André Santos <17305792+adgsantos@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "ntropy_sdk"}]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+pytest = "^7.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
