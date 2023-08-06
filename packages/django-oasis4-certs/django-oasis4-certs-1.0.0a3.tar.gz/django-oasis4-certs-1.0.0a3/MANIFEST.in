@@ -1,0 +1,4 @@
+﻿#Do None
+#Do None
+recursive-include oasis_certs/templates/ *
+recursive-include oasis_certs/locale/ *
