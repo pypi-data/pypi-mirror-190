@@ -1,0 +1,14 @@
+flashlight/lib/text/__init__.py,sha256=kOgjHaAMp6m232Cf0_DubB43bw5fi1rIGXGJ4hAg6V4,325
+flashlight/lib/text/decoder.py,sha256=dkscMg2ejarLIaGcUT3BrJ52MaOMvRF6J6Q1ZXfurM0,863
+flashlight/lib/text/dictionary.py,sha256=RWs_FS46AEK8EfL_C_Z6gxzORyKjMVxFxnKFIDWW4eA,352
+flashlight/lib/text/flashlight_lib_text_decoder.pypy38-pp73-darwin.so,sha256=sopM7Hvh96UUjwmi3ceYs6uY2wT6SGl76CQwFB2th-0,410824
+flashlight/lib/text/flashlight_lib_text_dictionary.pypy38-pp73-darwin.so,sha256=HYAiuWIsqgYEHcNsXhWqS0CavVIroD9GufU1XMjsieY,171616
+flashlight/lib/text/libflashlight-text.0.1.dylib,sha256=2bH3a4zyN0JzphCrU6FVwX4FuA0Ok9nYSx0IOJhgSPs,306152
+flashlight/lib/text/libflashlight-text.0.dylib,sha256=2bH3a4zyN0JzphCrU6FVwX4FuA0Ok9nYSx0IOJhgSPs,306152
+flashlight/lib/text/libflashlight-text.dylib,sha256=2bH3a4zyN0JzphCrU6FVwX4FuA0Ok9nYSx0IOJhgSPs,306152
+flashlight/lib/text/version.py,sha256=Ioe9jI7c73j6ET0MhxUJrPtIZC_JV7z1xWZyHNgWYvk,35
+flashlight_text-0.0.1.dist-info/LICENSE,sha256=UkEte8fOQVfqYou6rLiCngqcs8WPV_mRdhJryM8r_IU,1086
+flashlight_text-0.0.1.dist-info/METADATA,sha256=uINA2ZZvJyDxjDGx7oLaT4IGuG1aIMHHzeUEi3l-Peg,10155
+flashlight_text-0.0.1.dist-info/WHEEL,sha256=eMXieGdYIPAvPgWZuPjv3Y7MrdPX-HD5sJnupwu3tEk,116
+flashlight_text-0.0.1.dist-info/top_level.txt,sha256=QRfU-FrmCQTrTy_oa-DevSQpGQIrqTpQHb0b-OuJUyk,11
+flashlight_text-0.0.1.dist-info/RECORD,,
