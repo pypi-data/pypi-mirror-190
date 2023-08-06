@@ -1,0 +1,29 @@
+[project]
+name = "exchange_worker"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[tool.poetry]
+name = "py_exchange_worker"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.scripts]
+format = "poetry_deps_formatter:formatter"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+maturin = "^0.14.12"                              # Build and publish crates with pyo3, rust-cpython and cffi bindings as well as rust binaries as python packages ·· https://pypi.org/project/maturin/ 
+ipython = "^8.9.0"                                # IPython: Productive Interactive Computing ·· https://pypi.org/project/ipython/ 
+poetry-deps-formatter = "^0.1.1"                  # Beautify dependencies in pyproject.yaml based on poetry.lock ·· https://pypi.org/project/poetry-deps-formatter/ 
