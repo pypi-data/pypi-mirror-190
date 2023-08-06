@@ -1,0 +1,10 @@
+README.md
+setup.py
+mkdocs_link_marker.egg-info/PKG-INFO
+mkdocs_link_marker.egg-info/SOURCES.txt
+mkdocs_link_marker.egg-info/dependency_links.txt
+mkdocs_link_marker.egg-info/entry_points.txt
+mkdocs_link_marker.egg-info/requires.txt
+mkdocs_link_marker.egg-info/top_level.txt
+mkdocs_link_marker_plugin/__init__.py
+mkdocs_link_marker_plugin/plugin.py
