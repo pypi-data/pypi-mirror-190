@@ -1,0 +1,2 @@
+[console_scripts]
+porn-cli = porn_cli.__main__:porncli
