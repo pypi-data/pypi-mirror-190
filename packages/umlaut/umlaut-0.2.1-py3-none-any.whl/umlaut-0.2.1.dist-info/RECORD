@@ -1,0 +1,9 @@
+umlaut/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umlaut/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umlaut/examples/query_model_example.py,sha256=0yNL-2_jKtL9x6QaNe3J9nlWyuP64hhC0D0vS3hImrk,463
+umlaut/examples/track_model_example.py,sha256=g5eis_xcy5YQmvhc43AwvlgLzLH6eEhdp4gUSML5moI,743
+umlaut/umlaut.py,sha256=xcNb2QjQRaRx4VWUuthVCqQcqjwPXCwHMqRKGLxAdpw,6878
+umlaut-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+umlaut-0.2.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+umlaut-0.2.1.dist-info/METADATA,sha256=hPAvyAsXchOomEKyx3y1LddinjTKbuPBN8tXocNTN-0,4407
+umlaut-0.2.1.dist-info/RECORD,,
