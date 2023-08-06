@@ -1,0 +1,2 @@
+[console_scripts]
+screenrun = screenrun.__main__:main
