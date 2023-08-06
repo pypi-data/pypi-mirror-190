@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mathactive"
+version = "0.0.1"
+description = "Conversational math active learning."
+authors = ["hobs <hobson@totalgood.com>"]
+license = "AGPLv3"
+
+[tool.poetry.dependencies]
+python = "^3.7,<3.10"
+pandas = "^1.5"
+spacy = "^3.5.0"
+fastapi = "^0.89.1"
+jupyter = "^1.0"
+scikit-learn = "^1.2"
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
