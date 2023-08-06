@@ -1,0 +1,3 @@
+[console_scripts]
+panama=panama.parallel_run:cli
+
