@@ -1,0 +1,140 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"object programming version"
+
+
+import os
+import readline
+import sys
+import termios
+import time
+import traceback
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from opv.default import Default
+from opv.objects import update
+from opv.storage import Storage
+
+
+from opr.command import Command
+from opr.handler import Handler, scan
+from opr.parsers import Parsed
+from opr.threads import launch
+from opr.utility import privileges, wait
+
+
+from mod import cmd, fnd, irc, log, rss
+
+
+Cfg = Default()
+Storage.workdir = os.path.expanduser("~/.opv")
+
+
+scan(cmd)
+scan(fnd)
+scan(irc)
+scan(log)
+scan(rss)
+
+
+class CLI(Handler):
+
+    def __init__(self):
+        Handler.__init__(self)
+        self.register("command", self.dispatch)
+
+    def announce(self, txt):
+        pass
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+class Console(CLI):
+
+    def handle(self, event):
+        self.dispatch(event)
+        event.wait()
+
+    def poll(self):
+        event = Command()
+        event.txt = input("> ")
+        return event
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    sis = open("/dev/null", 'r')
+    os.dup2(sis.fileno(), sys.stdin.fileno())
+    sos = open("/dev/null", 'a+')
+    ses = open("/dev/null", 'a+')
+    os.dup2(sos.fileno(), sys.stdout.fileno())
+    os.dup2(ses.fileno(), sys.stderr.fileno())
+
+
+def waiter():
+    got = []
+    for ex in Handler.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Handler.errors.remove(exc)
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+        waiter()
+
+
+def main():
+    p = Parsed()
+    p.parse(" ".join(sys.argv[1:]))
+    update(Cfg, p)
+    if Cfg.txt:
+        e = Command()
+        e.type = "command"
+        e.txt = Cfg.otxt
+        e.parse(e.txt)
+        cli = CLI()
+        cli.handle(e)
+        Cfg.wait = False
+        e.wait()
+    elif "d" in Cfg.opts:
+        privileges("opv")
+        daemon()
+        Cfg.wait = True
+    elif "c" in Cfg.opts:
+        date = time.ctime(time.time()).replace("  ", " ")
+        print(f"OPI started {date}")
+        irc.init()
+        rss.init()
+        csl = Console()
+        csl.start()
+        Cfg.wait = True
+    if Cfg.wait:
+        wait(waiter)
+
+
+wrap(main)

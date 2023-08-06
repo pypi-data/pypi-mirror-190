@@ -1,0 +1,13 @@
+opv/__init__.py,sha256=j2AlKSX5cbx3Ikp3pDnA_md53D-O9V0-NpSVraOrqVA,680
+opv/decoder.py,sha256=ie0Rs9JxGf36IoZi9hK8PT5P8ziUc9ETOA1e00cUkwM,602
+opv/default.py,sha256=zMbcReUSTwa9qBsvFY2DHJGBGmbe45-AtK7xiTSn4g8,407
+opv/encoder.py,sha256=a8eNIhA4kJZzNqKenJvkDuYlzL6UWX4eCqhGJQYdx_M,1096
+opv/objects.py,sha256=RAt0Jqp7T7zYFShA2MkMksBGWraIsQuq1wY-7tziUbE,2813
+opv/storage.py,sha256=0gtegrerrm2jfjMg89Y_NIo24IfwyEbyGgxQ44K69OY,2621
+opv/utility.py,sha256=W4k_59eADwKt7SN_N12gndAgoMOvoojPOY1isYYsJho,2899
+opv-1.data/scripts/opv,sha256=igCGN0WjZJBfvkRQ13gTF9V1Je7-Vzk-vLWbHnp5xcE,2632
+opv-1.dist-info/METADATA,sha256=dNrN1yWJtQTXdpVae_sH_28_9G4w646JQhHEPtFBxpw,1880
+opv-1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+opv-1.dist-info/top_level.txt,sha256=NYgMA6PBx0pDhzvL5gV4HD0NMu8ldgqKaqCSzKNxqCk,4
+opv-1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+opv-1.dist-info/RECORD,,
