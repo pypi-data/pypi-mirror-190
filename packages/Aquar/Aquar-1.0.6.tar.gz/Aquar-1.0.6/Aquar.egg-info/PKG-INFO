@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: Aquar
+Version: 1.0.6
+Summary: a simple package for CTA backtest
+Home-page: UNKNOWN
+Author: Andy Lee
+Author-email: 1245824150@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: CTA,GTJA,BACKTEST
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
