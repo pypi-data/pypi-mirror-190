@@ -1,0 +1,5 @@
+pandas
+pyotp
+requests
+openpyxl
+cloudscraper
