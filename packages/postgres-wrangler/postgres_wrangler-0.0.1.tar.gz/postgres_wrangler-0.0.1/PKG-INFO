@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: postgres-wrangler
+Version: 0.0.1
+Summary: Convenience package for working with AWS and psycopg2
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Daniel Donovan <spitfiredd@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: awswrangler==2.19.0
+Requires-Dist: psycopg2==2.9.5
+Description-Content-Type: text/markdown
+
+# Postgres Wrangler
+
+Postgres Wrangler is a convience backage build on top of `psycopg2`, `boto3` and `awswrangler`. It provides some convience functions to facilitate your ETL pipelines.

@@ -1,0 +1,26 @@
+[project]
+name = "postgres-wrangler"
+version = "0.0.1"
+authors = [
+  { name="Daniel Donovan", email="spitfiredd@gmail.com" },
+]
+description = "Convenience package for working with AWS and psycopg2"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "awswrangler==2.19.0",
+  "psycopg2==2.9.5"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
