@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/spacy_download/__init__.py
+src/spacy_download/load.py
+src/spacy_download.egg-info/PKG-INFO
+src/spacy_download.egg-info/SOURCES.txt
+src/spacy_download.egg-info/dependency_links.txt
+src/spacy_download.egg-info/requires.txt
+src/spacy_download.egg-info/top_level.txt
