@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+MyClickUp/MyClickUp.py
+MyClickUp/__init__.py
+MyClickUp.egg-info/PKG-INFO
+MyClickUp.egg-info/SOURCES.txt
+MyClickUp.egg-info/dependency_links.txt
+MyClickUp.egg-info/top_level.txt
