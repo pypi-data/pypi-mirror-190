@@ -1,0 +1,2 @@
+[console_scripts]
+realpython = kafka_rest.__main__:main
