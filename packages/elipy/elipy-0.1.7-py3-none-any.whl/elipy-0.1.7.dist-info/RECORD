@@ -1,0 +1,13 @@
+elipy/__init__.py,sha256=xjs34Nl971CTv_3HsvrQ41gWIEzcbi-ABocX0WQGnbA,1002
+elipy/core/a2f_calculator.py,sha256=g4cgqPPKhXoOOJ1Na7l4pvp3ItOXscLwlBNkinn_Qe8,6235
+elipy/core/constants.py,sha256=D-kqxNmOLihNuSekicVUJyM8NVW3-AbAHnN_lhIH0IY,841
+elipy/core/eliashberg.py,sha256=iJLiL2NLVQtqgGHNzI7ou9iyAvNqIRSWQCxmfD0S16s,11382
+elipy/core/files_handling.py,sha256=qVIoTqvqtU_pPtCbrPzwj4u5kelWgBc13uv2dA5wDXY,7499
+elipy/core/grid.py,sha256=nTmg2LoXowDKT05fsJsMD1XMLMyX_m509hEqb8LJrBU,1301
+elipy/core/kpt_utils.py,sha256=3iA_IE7Z4CarcLguoDzY_UUBMxMyjvagBHbnToRkTdc,3583
+elipy/core/messages.py,sha256=7HcVLrxJntIfpWKiurrDUHYPDaKWsTUTS8Ta0dkcgzs,2795
+elipy/core/mpi.py,sha256=o6rrNKukyZMExbgMp9TWcMcIlA3cPWT2gtHcQeWOXhs,1391
+elipy-0.1.7.dist-info/LICENSE.txt,sha256=imUYgjIjixj2bKtx0VRcatHpVOQR7it6vsSouSrSNtw,1090
+elipy-0.1.7.dist-info/METADATA,sha256=siMDnrwOkMZr3mGaVZCwxVjhTiPmJG7COk-4TSlpcNA,3050
+elipy-0.1.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+elipy-0.1.7.dist-info/RECORD,,
