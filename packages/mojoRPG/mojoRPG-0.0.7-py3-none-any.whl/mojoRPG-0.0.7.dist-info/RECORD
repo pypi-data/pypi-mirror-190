@@ -1,0 +1,12 @@
+mojoRPG/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mojoRPG/__main__.py,sha256=aEE0DYdJbrsaxElmD-mi_5a6oYH9Ealwpj8KgiiaEps,41
+mojoRPG/mojo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mojoRPG/mojo/character.py,sha256=rhbNM-IUp1qkQSzifCZtU5s5sipWzfWfyXpQZK_4u2A,7643
+mojoRPG/mojo/game.py,sha256=gvYfLFBKE63hVafB08DumfSO2rAc57-ErPhA6Op8F4k,7470
+mojoRPG/mojo/mojo.py,sha256=zKabeG6yCRSgthwzCJvhBQIXCDTaTwMKrZySwHl6NKk,10738
+mojoRPG/mojo/mojo1.py,sha256=jSHkvmfgrvp7s8ZWBAFjitsgBCkgIT_ZSyh5ph3_Rv4,19419
+mojoRPG/mojo/mojocore.py,sha256=bcTYMIePjYsZvq41sC7yIiEyPTWVQiUYsh7JXsFMjHc,3879
+mojoRPG-0.0.7.dist-info/METADATA,sha256=tcF70OTabtP53KKNS5tmrjt-C6mqUNJQbq8DEGhL7HE,547
+mojoRPG-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mojoRPG-0.0.7.dist-info/top_level.txt,sha256=YxP5FHP0-EkfK1SlwhoahpNqiHQnIak-taqEsjQqAGQ,8
+mojoRPG-0.0.7.dist-info/RECORD,,

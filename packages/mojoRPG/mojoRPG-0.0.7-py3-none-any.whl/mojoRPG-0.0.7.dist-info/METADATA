@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mojoRPG
+Version: 0.0.7
+Summary: Mojo RPG test game
+Home-page: UNKNOWN
+Author: Alex Iannicelli
+Author-email: atiannicelli@gmail.com
+License: MIT
+Keywords: mojo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: pandas
+
+A package demonstrates mojo rpg combat
+
+
