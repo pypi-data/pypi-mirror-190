@@ -1,0 +1,61 @@
+#[tool.poetry]
+#name = "wsslack.py"
+#version = "1.4.3"
+#description = "An APIwrapper for slack with python."
+#authors = ["peco2282"]
+#license = "MIT"
+#readme = "README.md"
+#packages = [{include = "slack"}]
+#
+#[tool.poetry.dependencies]
+#python = "^3.10"
+#aiohttp = "^3.8.3"
+#typing-extensions = "^4.4.0"
+
+[project]
+name = "wsslack.py"
+version = "1.4.3"
+description = "An APIwrapper for slack with python."
+authors = ["peco2282"]
+license = "MIT"
+readme = "README.md"
+requires-python = "^3.10"
+#aiohttp = "^3.8.3"
+#typing-extensions = "^4.4.0"
+
+[project.url]
+Source = "https://github.com/peco2282/slack.py"
+Documentation = "https://slack-py.readthedocs.io/en/"
+
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools_scm"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "slack",
+    "slack.types",
+    "slack.commands",
+    "slack.view",
+]
+
+[tool.setuptools.dynamic]
+dependencies = { file = "requirements.txt" }
+
+[tool.setuptools_scm]
+
+[tool.black]
+target-version = ['py38', 'py39', 'py310']
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+namespace_packages = true
+install_types = true
+strict = true
+show_error_codes = true
+ignore_errors = true
