@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: crowdsourcephoto
+Version: 0.5.9
+Summary: Crowded field photometry pipeline
+Home-page: https://github.com/schlafly/crowdsource
+Download-URL: https://github.com/schlafly/crowdsource/archive/refs/tags/v0.5.9.tar.gz
+Author: Andrew Saydjari
+Author-email: aksaydjari@gmail.com
+License: MIT
+License-File: LICENSE
