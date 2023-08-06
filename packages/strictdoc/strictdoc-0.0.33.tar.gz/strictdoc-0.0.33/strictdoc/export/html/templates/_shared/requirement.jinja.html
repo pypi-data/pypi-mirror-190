@@ -1,0 +1,48 @@
+<turbo-frame id="article-{{requirement.node_id}}">
+
+{%- set anchor=link_renderer.render_local_anchor(requirement) -%}
+
+<article class="requirement"
+{%- if requirement.status %}
+data-status='{{ requirement.status.lower() }}'
+{%- endif %}>
+
+  <section class="requirement_section" data-section='meta'>
+
+    {% include "_shared/requirement_block/anchor.jinja.html" %}
+
+    {%- if requirement.title %}
+    {% include "_shared/requirement_block/h_title.jinja.html" %}
+    {%- endif %}
+
+    {% include "_shared/requirement_block/meta.jinja.html" %}
+    {% include "_shared/requirement_block/related.jinja.html" %}
+    {% include "_shared/requirement_block/files_list.jinja.html" %}
+
+  </section>
+  <section class="requirement_section" data-section='statement'>
+
+    {% include "_shared/requirement_block/statement.jinja.html" %}
+
+  </section>
+  <section class="requirement_section" data-section='comment'>
+
+    {% include "_shared/requirement_block/rationale.jinja.html" %}
+    {% include "_shared/requirement_block/comment.jinja.html" %}
+    {% include "_shared/requirement_block/multi_line_metas.jinja.html" %}
+
+  </section>
+
+  {%- if config.is_running_on_server -%}
+    <a href="/actions/document/edit_requirement/{{requirement.node_id}}" data-turbo-action="replace" data-turbo="true">Edit</a>,
+    <a href="/actions/document/delete_section/{{requirement.node_id}}" data-turbo-method="delete" data-turbo="true">Delete</a>,
+
+    <a href="/actions/document/new_section?reference_mid={{requirement.node_id}}&whereto=before" data-turbo-action="replace" data-turbo="true">+S⬆</a>,
+    <a href="/actions/document/new_section?reference_mid={{requirement.node_id}}&whereto=after" data-turbo-action="replace" data-turbo="true">+S⬇</a>,
+    <a href="/actions/document/new_requirement?reference_mid={{requirement.node_id}}&whereto=before" data-turbo-action="replace" data-turbo="true">+R⬆</a>,
+    <a href="/actions/document/new_requirement?reference_mid={{requirement.node_id}}&whereto=after" data-turbo-action="replace" data-turbo="true">+R⬇</a>
+  {%- endif -%}
+
+</article>
+
+</turbo-frame>

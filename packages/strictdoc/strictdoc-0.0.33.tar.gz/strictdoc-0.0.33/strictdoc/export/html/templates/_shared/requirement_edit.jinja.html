@@ -1,0 +1,76 @@
+{%- if is_new_requirement -%}
+  {%- set url="/actions/document/create_requirement" %}
+{%- else -%}
+  {%- set url="/actions/document/update_requirement" %}
+{%- endif -%}
+
+<turbo-frame id="article-{{form_object.requirement_mid}}">
+
+<form data-controller="hello" class="std-form" action="{{url}}" method="POST" data-turbo="true">
+  {%- if is_new_requirement -%}
+    <input type="hidden" id="reference_mid" name="reference_mid" value="{{reference_mid}}" />
+    <input type="hidden" id="whereto" name="whereto" value="{{whereto}}" />
+  {%- endif -%}
+  <input type="hidden" id="requirement_mid" name="requirement_mid" value="{{form_object.requirement_mid}}" />
+
+  {%- for field in form_object.enumerate_fields() -%}
+    {%- if field.is_singleline() -%}
+    {{field.field_name}}:<br/>
+    <div data-section="edit-section-TBD" class="std-form-row">
+      <div
+        role="textbox"
+        data-editable="single"
+        contenteditable="true"
+        class="std-form-fileld-title"
+        id="requirement_{{field.field_name}}"
+        placeholder="Enter requirement's {{field.field_name}} here..."
+      >
+        {%- if true -%}
+        {{ field.field_value }}
+        {%- endif -%}
+      </div>
+      <input type="hidden" class="std-input-hidden" name="requirement[{{field.field_name}}]" value="{{ field.field_value }}"/>
+      {%- if form_object.has_errors(field.field_name) -%}
+        <div class="std-form-error">
+        {%- for error in form_object.get_errors(field.field_name) -%}
+          {{ error }}
+        {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+    {%- elif field.is_multiline() -%}
+    {{field.field_name}}:<br/>
+    <div class="std-form-row requirement_statement">
+      <div role="textbox" data-editable="multiline" contenteditable="true" class="std-form-field-rst" id="requirement_{{field.field_name}}" placeholder="Enter statement text here...">
+        {%- if true -%}
+        {{field.field_value}}
+        {%- endif -%}
+      </div>
+      <textarea hidden class="std-input-hidden" name="requirement[{{field.field_name}}]">
+        {%- if true -%}
+        {{field.field_value}}
+        {%- endif -%}
+      </textarea>
+
+      {%- if form_object.has_errors(field.field_name) -%}
+        <div class="std-form-error">
+        {%- for error in form_object.get_errors(field.field_name) -%}
+          {{ error }}
+        {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+  {%- endfor -%}
+
+  <div class="std-form-footer">
+    <button class="std-form-btn" type="submit">Save</button>
+    {%- if is_new_requirement -%}
+      <a class="std-form-btn" href="/actions/document/cancel_new_requirement?requirement_mid={{form_object.requirement_mid}}" data-turbo="true">Cancel</a>
+    {%- else -%}
+      <a class="std-form-btn" href="/actions/document/cancel_edit_requirement?requirement_mid={{form_object.requirement_mid}}" data-turbo="true">Cancel</a>
+    {%- endif -%}
+  </div>
+</form>
+
+</turbo-frame>

@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8"/>
+
+  <link rel="shortcut icon" href="../_static/favicon.ico" type="image/x-icon"/>
+
+  
+  
+  <link rel="stylesheet" href="../_static/_base.css"/>
+  <link rel="stylesheet" href="../_static/_layout.css"/>
+  <link rel="stylesheet" href="../_static/_content.css"/>
+  <link rel="stylesheet" href="../_static/_requirement.css"/>
+  <link rel="stylesheet" href="../_static/_element.css"/>
+  <link rel="stylesheet" href="../_static/_form.css"/>
+  
+  <link rel="stylesheet" href="../_static/_requirement-tree.css"/>
+
+
+  
+  <script type="text/javascript" src="../_static/toc.js"></script>
+  
+  
+  
+
+
+  <title>Developer Guide - Traceability</title>
+
+  
+</head>
+
+<body class="traceability-view withtoc">
+<script>document.body.dataset.state = sessionStorage.getItem('tocState') || 'open';</script><div class="layout" id="layout">
+
+    <aside class="layout_aside-header">
+      
+  <a class="index-link" href="../index.html">To Index</a>
+
+    </aside>
+
+    <aside class="layout_aside">
+      
+  <turbo-frame id="frame-toc">
+    <div>Table of Contents</div>
+    <ul class="toc"><li><a href="#1-Getting-started" data-turbo="false">
+              <span class="section-number">1</span>
+              Getting started
+            </a><ul><li><a href="#1.1-Installing-StrictDoc-from-GitHub-developer-mode-" data-turbo="false">
+              <span class="section-number">1.1</span>
+              Installing StrictDoc from GitHub (developer mode)
+            </a></li></ul>
+            </li><li><a href="#2-Invoke-for-development-tasks" data-turbo="false">
+              <span class="section-number">2</span>
+              Invoke for development tasks
+            </a></li><li><a href="#3-Frontend-development" data-turbo="false">
+              <span class="section-number">3</span>
+              Frontend development
+            </a></li><li><a href="#4-Running-integration-tests" data-turbo="false">
+              <span class="section-number">4</span>
+              Running integration tests
+            </a></li><li><a href="#5-Generating-documentation-locally" data-turbo="false">
+              <span class="section-number">5</span>
+              Generating documentation locally
+            </a></li></ul>
+</turbo-frame>
+
+    </aside>
+
+    
+  <a class="layout_toggler layout_button" id="layout_toggle"></a><nav class="layout_nav">
+    <a
+    class="layout_nav-btn layout_button btn-document"
+    title="Go to Document view"
+    href="../docs/strictdoc_11_developer_guide.html">
+    DOC
+  </a>
+  <a
+    class="layout_nav-btn layout_button btn-table"
+    title="Go to Table view"
+    href="../docs/strictdoc_11_developer_guide-TABLE.html">
+    TBL
+  </a>
+  <a
+    class="layout_nav-btn layout_button btn-traceability"
+    title="Go to Traceability view"
+    href="../docs/strictdoc_11_developer_guide-TRACE.html">
+    TR
+  </a>
+  <a
+    class="layout_nav-btn layout_button btn-deep-traceability"
+    title="Go to Deep Traceability view"
+    href="../docs/strictdoc_11_developer_guide-DEEP-TRACE.html">
+    DTR
+  </a>
+  </nav>
+
+
+    <header class="layout_header">
+      
+  <p>Developer Guide <span class="document-view-type">Traceability</span></p>
+
+    </header>
+
+    <main class="layout_main">
+      
+
+      
+
+      <div class="content">
+        <section class="content_section">
+
+          <div class="content_item" data-role="parents"></div>
+          <div class="content_item" data-role="current"><turbo-frame id="article-262c0bec522945008fac88f1dc09901d"><article class="docsection" data-controller="document">
+
+  <section data-section="meta" class="docsection_section">
+
+    <div data-role='anchor' id="1-Getting-started"></div>
+
+    
+        <h1
+class="section-title"
+data-level="1">
+  1.&nbsp;Getting started
+</h1>
+    
+
+  </section>
+
+  </article>
+
+</turbo-frame></div>
+          <div class="content_item" data-role="children"></div>
+        </section>
+        <section class="content_section">
+
+          <div class="content_item" data-role="parents"></div>
+          <div class="content_item" data-role="current"><turbo-frame id="article-f73934339fed45fbab36f8d75637b155"><article class="docsection" data-controller="document">
+
+  <section data-section="meta" class="docsection_section">
+
+    <div data-role='anchor' id="1.1-Installing-StrictDoc-from-GitHub-developer-mode-"></div>
+
+    
+        <h2
+class="section-title"
+data-level="1.1">
+  1.1.&nbsp;Installing StrictDoc from GitHub (developer mode)
+</h2>
+    
+
+  </section>
+
+  <section data-section="description" class="docsection_section"><div class="free-text">
+      <div class="document">
+<p><strong>Note:</strong> Use this way of installing StrictDoc only if you want to make changes
+in StrictDoc's source code. Otherwise, install StrictDoc as a Pip package
+(see above).</p>
+<pre class="code literal-block">
+git clone https://github.com/strictdoc-project/strictdoc.git &amp;&amp; cd strictdoc
+pip install -r requirements.txt
+python3 strictdoc/cli/main.py
+</pre>
+<p>All development tasks are managed using
+<a class="reference external" href="https://www.pyinvoke.org/">Invoke</a> in the <tt class="docutils literal">tasks.py</tt> file. On macOS and
+Linux, all tasks run in dedicated virtual environments. On Windows, invoke uses
+the parent pip environment which can be a system environment or a user's virtual
+environment.</p>
+<pre class="code literal-block">
+pip install invoke  # macOS and Linux
+invoke setup-development-deps  # macOS and Linux
+pip install -r requirements.development.txt  # Windows only
+invoke --list  # See the available tasks
+</pre>
+</div>
+
+    </div></section></article>
+
+</turbo-frame></div>
+          <div class="content_item" data-role="children"></div>
+        </section>
+        <section class="content_section">
+
+          <div class="content_item" data-role="parents"></div>
+          <div class="content_item" data-role="current"><turbo-frame id="article-40fe233441a84b08a1f73ab3dcb5c47f"><article class="docsection" data-controller="document">
+
+  <section data-section="meta" class="docsection_section">
+
+    <div data-role='anchor' id="2-Invoke-for-development-tasks"></div>
+
+    
+        <h1
+class="section-title"
+data-level="2">
+  2.&nbsp;Invoke for development tasks
+</h1>
+    
+
+  </section>
+
+  <section data-section="description" class="docsection_section"><div class="free-text">
+      <div class="document">
+<p>Make sure to familiarize yourself with the available developer tasks by running:</p>
+<pre class="code bash literal-block">
+invoke --list
+</pre>
+</div>
+
+    </div></section></article>
+
+</turbo-frame></div>
+          <div class="content_item" data-role="children"></div>
+        </section>
+        <section class="content_section">
+
+          <div class="content_item" data-role="parents"></div>
+          <div class="content_item" data-role="current"><turbo-frame id="article-e220f7db950842668a7e171f6ba783af"><article class="docsection" data-controller="document">
+
+  <section data-section="meta" class="docsection_section">
+
+    <div data-role='anchor' id="3-Frontend-development"></div>
+
+    
+        <h1
+class="section-title"
+data-level="3">
+  3.&nbsp;Frontend development
+</h1>
+    
+
+  </section>
+
+  <section data-section="description" class="docsection_section"><div class="free-text">
+      <div class="document">
+<p>The shortest path to run the server when the StrictDoc's source code is cloned:</p>
+<pre class="code bash literal-block">
+invoke server
+</pre>
+</div>
+
+    </div></section></article>
+
+</turbo-frame></div>
+          <div class="content_item" data-role="children"></div>
+        </section>
+        <section class="content_section">
+
+          <div class="content_item" data-role="parents"></div>
+          <div class="content_item" data-role="current"><turbo-frame id="article-c570db40b4674d549ea465b8ad8e25d1"><article class="docsection" data-controller="document">
+
+  <section data-section="meta" class="docsection_section">
+
+    <div data-role='anchor' id="4-Running-integration-tests"></div>
+
+    
+        <h1
+class="section-title"
+data-level="4">
+  4.&nbsp;Running integration tests
+</h1>
+    
+
+  </section>
+
+  <section data-section="description" class="docsection_section"><div class="free-text">
+      <div class="document">
+<p>The integration tests are run using Invoke:</p>
+<pre class="code bash literal-block">
+invoke test-integration
+</pre>
+<p>The <tt class="docutils literal"><span class="pre">--focus</span></tt> parameter can be used to run only selected tests that match a given substring. This helps to avoid running all tests all the time.</p>
+<pre class="code bash literal-block">
+invoke test-integration --focus &lt;keyword&gt;
+</pre>
+</div>
+
+    </div></section></article>
+
+</turbo-frame></div>
+          <div class="content_item" data-role="children"></div>
+        </section>
+        <section class="content_section">
+
+          <div class="content_item" data-role="parents"></div>
+          <div class="content_item" data-role="current"><turbo-frame id="article-11307326b75341fda75f69bfcae17921"><article class="docsection" data-controller="document">
+
+  <section data-section="meta" class="docsection_section">
+
+    <div data-role='anchor' id="5-Generating-documentation-locally"></div>
+
+    
+        <h1
+class="section-title"
+data-level="5">
+  5.&nbsp;Generating documentation locally
+</h1>
+    
+
+  </section>
+
+  <section data-section="description" class="docsection_section"><div class="free-text">
+      <div class="document">
+<p>The following Invoke task generates StrictDoc's documentation to StrictDoc and Sphinx:</p>
+<pre class="code bash literal-block">
+invoke sphinx
+</pre>
+</div>
+
+    </div></section></article>
+
+</turbo-frame></div>
+          <div class="content_item" data-role="children"></div>
+        </section>
+      </div>
+
+
+    </main>
+
+  </div>
+  
+</body>
+</html>

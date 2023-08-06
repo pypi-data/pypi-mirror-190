@@ -1,0 +1,7 @@
+[
+  "test_traceability_index.py::test__adding_parent_link__01__two_requirements",
+  "test_traceability_index.py::test__adding_parent_link__02__two_requirements_in_two_documents",
+  "test_traceability_index.py::test__adding_parent_link__03__two_requirements_disallow_cycle",
+  "test_traceability_index.py::test__adding_parent_link__04__two_requirements_remove_parent_link",
+  "test_traceability_index.py::test_valid_02_one_document_with_1req"
+]

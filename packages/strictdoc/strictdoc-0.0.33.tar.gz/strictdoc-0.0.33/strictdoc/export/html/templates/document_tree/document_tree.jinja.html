@@ -1,0 +1,44 @@
+{% set root_path = "" %}
+{% set template_type = "Project index" %}
+
+{% extends "base.jinja.html" %}
+
+{% block head_css %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{static_path}}/_tree.css"/>
+{% endblock head_css %}
+
+{% block head_scripts %}
+  <script type="module">
+      import hotwiredTurbo from "{{root_path}}/_static/turbo.js";
+      import { Application } from "{{root_path}}/_static/stimulus.js";
+      window.Stimulus = Application.start();
+  </script>
+  <script type="module" src="{{root_path}}/_static/std-forms.js"></script>
+{% endblock head_scripts %}
+
+{% block title %}
+  {{ config.project_title }} - {{template_type}}
+{% endblock title %}
+
+{% block viewtype %}document-tree-view{% endblock %}
+
+{% block layout_nav %}
+  {# {% include "_shared/doc_nav.jinja.html" %} #}
+{% endblock layout_nav %}
+
+{% block aside_header_content %}
+  {# {% include "_shared/aside_header.jinja.html" %} #}
+{% endblock aside_header_content %}
+
+{% block aside_content %}
+  {% include "_shared/nav.jinja.html" %}
+{% endblock aside_content %}
+
+{% block header_content %}
+  <p>{{config.project_title}} <span class="document-view-type">{{template_type}}</span></p>
+{% endblock header_content %}
+
+{% block content %}
+  {% include "document_tree/frame_document_tree.jinja.html" %}
+{% endblock content %}
