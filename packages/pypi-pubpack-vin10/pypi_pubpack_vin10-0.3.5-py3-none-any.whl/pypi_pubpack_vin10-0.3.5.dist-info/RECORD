@@ -1,0 +1,6 @@
+pypi_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_demo/np_arr_test.py,sha256=Lh4r_kFbzg0paM7g6_QU7clGPYMCj2Y9NuwFEl7Gj6s,88
+pypi_demo/np_arr_test_dev.py,sha256=qck8AiohpXqtunOynwA3QLQQYaQIM7L4faJPoMKpVlc,124
+pypi_pubpack_vin10-0.3.5.dist-info/METADATA,sha256=Wf5xoVEy8W42SI2Inx0-ZxcxaO4_OdfpndC4yGQQpX0,590
+pypi_pubpack_vin10-0.3.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pypi_pubpack_vin10-0.3.5.dist-info/RECORD,,
