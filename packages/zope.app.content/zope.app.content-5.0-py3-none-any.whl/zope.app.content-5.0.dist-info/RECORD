@@ -1,0 +1,11 @@
+zope.app.content-5.0-py3.9-nspkg.pth,sha256=mFrea7mE79_2It1-azEL4M6kw3QSE7YHotppVv8wmDk,1654
+zope/app/content/__init__.py,sha256=L9zakRadneAERDqTA1ExEaUIrr73ASXO1y4PLbKWtFA,3573
+zope/app/content/configure.zcml,sha256=WY4PK3J3Sr4aHMqCOZgpWCk7_loaDHo2yOcb5BWWKwo,299
+zope/app/content/interfaces.py,sha256=1vzwJc7tncHU5HqsqzwP5SnudH_IyrAUFyA8wKDr2jc,982
+zope/app/content/tests.py,sha256=C8e5N-mvsfjRLp380iP6iwCD6ep_b0e_Rowk73gieHs,1314
+zope.app.content-5.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+zope.app.content-5.0.dist-info/METADATA,sha256=Q7nG-RtHSUBIwvdQ2kZSXka2yNEgOFmyOm1Y0BHI0Dc,2213
+zope.app.content-5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zope.app.content-5.0.dist-info/namespace_packages.txt,sha256=r6aK6cD3E8sauTTUzxacRZgRABu10IbRNuKvC6IEnCc,14
+zope.app.content-5.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.app.content-5.0.dist-info/RECORD,,
