@@ -1,0 +1,8 @@
+my_minipack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_minipack/logger.py,sha256=anjTf2DmvPazjyUCD5Nejtm7MIYSOV126NbGFST2aLs,1530
+my_minipack/progress.py,sha256=cQgyge7yJdF1xubWIw8eQJSnprad8xE3pTFqLfD5Ryk,438
+my_minipack-1.0.1.dist-info/LICENSE.md,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+my_minipack-1.0.1.dist-info/METADATA,sha256=spAFuZljmrOpJO_U9mo33ushPBPmgyhy-5Ci4S_QO9U,3287
+my_minipack-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+my_minipack-1.0.1.dist-info/top_level.txt,sha256=Jh86kYbqV3Rpt1HSMV3TJqsV63rVS4X4OSALUeofO4g,12
+my_minipack-1.0.1.dist-info/RECORD,,
