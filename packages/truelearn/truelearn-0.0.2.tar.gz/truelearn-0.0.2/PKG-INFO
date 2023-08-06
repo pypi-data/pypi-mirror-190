@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: truelearn
+Version: 0.0.2
+Home-page: 
+Author: KD-7
+Author-email: 
+License: MIT
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+
+
+
+TrueLearn
+===============
+Project for the Truelearn python library
+
+Installing
+============
+
+.. code-block:: bash
+
+    pip install truelearn
+
+Usage
+=====
+To be added
