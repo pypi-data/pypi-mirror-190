@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: DeeprAI-Datasets
+Version: 0.0.1
+Summary: A collection of datasets to use with DeeprAI
+Home-page: https://github.com/Deepr-ai/DeeprAI-Datasets
+Author: Kieran Carter
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Dist: compress-pickle
+Requires-Dist: numpy
+Requires-Dist: pyndb
+
