@@ -1,0 +1,5 @@
+[console_scripts]
+pp-converter-versions = pp.client.python.converter_versions:main
+pp-converters = pp.client.python.converter:main
+pp-pdf = pp.client.python.pdf:main
+pp-version = pp.client.python.version:main
