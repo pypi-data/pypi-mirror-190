@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "input-svrp-v3"
+version = "2.3"
+authors = [
+  { name="Nosense", email="uchihanosense@gmail.com" },
+]
+description = "Seed input data for testing and debugging"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Blog" = "https://www.facebook.com/nosense.mlem"
+"Github" = "https://github.com/bot-nosense"

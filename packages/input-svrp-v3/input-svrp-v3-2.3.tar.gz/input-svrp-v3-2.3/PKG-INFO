@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: input-svrp-v3
+Version: 2.3
+Summary: Seed input data for testing and debugging
+Author-email: Nosense <uchihanosense@gmail.com>
+Project-URL: Blog, https://www.facebook.com/nosense.mlem
+Project-URL: Github, https://github.com/bot-nosense
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# input-SVRP-v3
+create input SVRP v3, pass unit test SME
