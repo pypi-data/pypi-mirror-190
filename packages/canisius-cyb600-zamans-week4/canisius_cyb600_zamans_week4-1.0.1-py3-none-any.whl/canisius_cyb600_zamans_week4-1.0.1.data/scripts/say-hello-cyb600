@@ -1,0 +1,4 @@
+#!python
+from canisius_cyb600_zamans_week4.main import say_hello_class
+
+say_hello_class()
