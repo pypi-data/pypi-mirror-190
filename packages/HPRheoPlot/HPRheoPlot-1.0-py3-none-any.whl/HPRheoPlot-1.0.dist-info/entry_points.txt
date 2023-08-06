@@ -1,0 +1,3 @@
+[console_scripts]
+hprheoplot = HPRheoPlot.__main__:main
+
