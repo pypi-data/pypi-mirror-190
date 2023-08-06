@@ -1,0 +1,10 @@
+matplotlib
+sunpy
+astropy
+h5py
+pyqt5
+pandas
+scipy
+numpy
+python-casacore
+scikit-image
