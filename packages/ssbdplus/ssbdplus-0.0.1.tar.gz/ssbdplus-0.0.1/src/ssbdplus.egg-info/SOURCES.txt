@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ssbdplus.egg-info/PKG-INFO
+src/ssbdplus.egg-info/SOURCES.txt
+src/ssbdplus.egg-info/dependency_links.txt
+src/ssbdplus.egg-info/top_level.txt
