@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pykorean"
+version = "0.1.0"
+description = ""
+authors = ["codemke <altoformula@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.2.1"
+
+[tool.poetry.scripts]
+# package.submodule:function
+korean = "pykorean.main:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
