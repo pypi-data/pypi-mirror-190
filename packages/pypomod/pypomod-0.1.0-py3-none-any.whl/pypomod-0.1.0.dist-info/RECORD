@@ -1,0 +1,8 @@
+pypomod/__init__.py,sha256=Uc2mbaQtwzWcsOqVZLPa9Q5ubc2C3uA6zHoid6sfSjM,46
+pypomod/main.py,sha256=s5SvxWZLFg8yDVHyTpaJgnr7icnk0zTyKh7_vAk8c5o,895
+pypomod/pomodoro.py,sha256=nSmyyfLDd-OcPWkVYM8gKQZptPCpI0lxrJnIci_C-v4,5459
+pypomod/tools.py,sha256=N50k7rsvgFpMCN9GX2Cs5eaLVrpqT6iCXrUZE3SWKm8,2687
+pypomod-0.1.0.dist-info/entry_points.txt,sha256=-vd2IRRnWs74EZkEYK39RH8dZn02kTJkdOkm8Rl1DAM,46
+pypomod-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pypomod-0.1.0.dist-info/METADATA,sha256=kZKtUZY4C0xQzW7xLojV4-BzJiwsBGr6vEPbL_FtQac,1279
+pypomod-0.1.0.dist-info/RECORD,,
