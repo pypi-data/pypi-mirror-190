@@ -1,0 +1,12 @@
+click
+rich
+inquirerpy
+eventlet
+lastversion
+requests
+semantic_version
+escapejson
+watchdog
+
+[dev]
+black==22.*
