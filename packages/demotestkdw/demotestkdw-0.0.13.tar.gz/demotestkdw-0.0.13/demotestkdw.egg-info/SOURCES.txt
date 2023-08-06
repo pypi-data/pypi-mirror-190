@@ -1,0 +1,7 @@
+setup.py
+demotestkdw.egg-info/PKG-INFO
+demotestkdw.egg-info/SOURCES.txt
+demotestkdw.egg-info/dependency_links.txt
+demotestkdw.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
