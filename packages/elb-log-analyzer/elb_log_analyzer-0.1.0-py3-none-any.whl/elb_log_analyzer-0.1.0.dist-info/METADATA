@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: elb-log-analyzer
+Version: 0.1.0
+Summary: AWB ELB log analyzer
+License: MIT
+Author: Dhrumil Mistry
+Author-email: 56185972+dmdhrumilmistry@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
