@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: views-py
+Version: 2.0.0
+Summary: Views and related utilities for generic sequence types.
+Author: Braedyn L
+License: MIT License
+Project-URL: Homepage, https://github.com/braedynl/views-py
+Project-URL: Source, https://github.com/braedynl/views-py
+Project-URL: Bug Tracker, https://github.com/braedynl/views-py/issues
+Keywords: view,views,windowing,sequences,sequence-viewer
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Views-Py
+
+Views and related utilities for generic sequence types.
+
+## Getting Started
+
+This project is available through pip (requires Python 3.9 or higher):
+
+```
+pip install views-py
+```
+
+**External documentation (i.e., documentation that exists beyond in-code) is currently under development, and will be linked here when finalized.**
+
+## Contributing
+
+This project is currently maintained by [Braedyn L](https://github.com/braedynl). Feel free to report bugs or make a pull request through this repository.
+
+## License
+
+Distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
