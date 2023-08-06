@@ -1,0 +1,10 @@
+README.md
+setup.py
+lightorm/__init__.py
+lightorm/core.py
+lightorm.egg-info/PKG-INFO
+lightorm.egg-info/SOURCES.txt
+lightorm.egg-info/dependency_links.txt
+lightorm.egg-info/not-zip-safe
+lightorm.egg-info/requires.txt
+lightorm.egg-info/top_level.txt
