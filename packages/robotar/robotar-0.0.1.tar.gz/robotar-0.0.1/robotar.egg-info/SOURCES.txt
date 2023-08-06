@@ -1,0 +1,6 @@
+setup.py
+robotar/__init__.py
+robotar.egg-info/PKG-INFO
+robotar.egg-info/SOURCES.txt
+robotar.egg-info/dependency_links.txt
+robotar.egg-info/top_level.txt
