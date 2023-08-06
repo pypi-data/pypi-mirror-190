@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+tesouro_direto_br.egg-info/PKG-INFO
+tesouro_direto_br.egg-info/SOURCES.txt
+tesouro_direto_br.egg-info/dependency_links.txt
+tesouro_direto_br.egg-info/requires.txt
+tesouro_direto_br.egg-info/top_level.txt
+tests/test_tesouro_direto_br.py
