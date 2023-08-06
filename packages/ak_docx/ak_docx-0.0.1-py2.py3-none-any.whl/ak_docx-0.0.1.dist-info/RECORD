@@ -1,0 +1,8 @@
+ak_docx/__init__.py,sha256=o4GiixMkBpY-0nvC7uhvlVsH6f59jr86h4LdrSrGnnQ,81
+ak_docx/main.py,sha256=3G_EGVPNHBculHz5ZwMTYGPi10iBwYM9sw_9XTSoT20,638
+ak_docx/read.py,sha256=wfdVzAIXiMjWPTVrom1XDOfydkRjpF5xEg50ffYLsXI,125
+ak_docx/write.py,sha256=CcPwf4s1Yvw1JKNGDxDiArrrPPPl7rPPBbdxmqlkvd4,11
+ak_docx-0.0.1.dist-info/LICENSE,sha256=sHOBmrMwc7ayYTppcEXEmfXI9n8c6Ix0epH9APstXVQ,1100
+ak_docx-0.0.1.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+ak_docx-0.0.1.dist-info/METADATA,sha256=TAwdBPx0Lfu17zeK4znJgmCGOTa1AIygVLlU_5xgo4o,2909
+ak_docx-0.0.1.dist-info/RECORD,,
