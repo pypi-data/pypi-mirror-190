@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shp2jvmapgen"
+version = "0.0.2"
+authors = [
+  { name="Waiz Al Qorni", email="waiz.aq21@gmail.com" },
+]
+description = "Library for generating Jvectormap based maps from shapefiles and geojson, Works on Python 3"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+'fiona >= 1.9.0',
+'pyshp >= 2.3.1',
+'beautifulsoup4 >= 4.11.1',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/waizaq/shp2jvmapgen"
+"Bug Tracker" = "https://github.com/waizaq/shp2jvmapgen/issues"
