@@ -1,0 +1,5 @@
+evervault_attestation_bindings-0.1.0a4.dist-info/METADATA,sha256=ZbS8pn0dVH23I5imCpaER6QadoUZQrDOvAEotCO2oMQ,753
+evervault_attestation_bindings-0.1.0a4.dist-info/WHEEL,sha256=qAr4_2SzUKGFNDLnvDbhR-nfNr1kkmNUtWscGEZIBbU,131
+python_attestation_bindings/__init__.py,sha256=RT2vsccGzNQqiz2etHXRjGccsdbL3hgPgxnfZX8kyHo,191
+python_attestation_bindings/python_attestation_bindings.cpython-310-x86_64-linux-gnu.so,sha256=UXNLdoQHRNYjv4zs7hZoSQNx8DLsraToyFxaWEWKvYQ,3723200
+evervault_attestation_bindings-0.1.0a4.dist-info/RECORD,,
