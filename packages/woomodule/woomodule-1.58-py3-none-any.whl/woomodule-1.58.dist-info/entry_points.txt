@@ -1,0 +1,4 @@
+[console_scripts]
+get_number = woomodule.app.app:get_number
+woomodule = package_project.__main__:main
+

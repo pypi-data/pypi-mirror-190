@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: woomodule
+Version: 1.58
+Summary: Package for practice
+Home-page: UNKNOWN
+Author: Dihtiar Vadym
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pytest (==7.2.0)
+
+# project_name
+
+## project_description
+
+## Install it from PyPI
+
+```bash
+pip install woomodule
+```
+
+## Usage in code
+
+```py
+from woomodule.app import app
+app.get_number()
+BaseClass().base_method()
+base_function()
+```
+
+## Usage in command line
+```bash
+$ python -m project_name
+#or
+$ project_name
+```
+
+## Development
+
+Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
