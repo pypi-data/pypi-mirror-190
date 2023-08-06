@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: qwertyenv
+Version: 0.0.2
+Summary: Gym environments (Reinforcement Learning)
+Home-page: https://github.com/zbenmo/qwertyenv
+Author: Oren Zeev-Ben-Mordehai
+Author-email: zbenmo@gmail.com
+License: BSD 3-Clause License
+Keywords: Gym,Gym environments,Black Jack,Collect Coins (Chesss like),Reinforcement Learning,Gym Wrappers
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: gym (<=0.22,>=0.21.0)
+Provides-Extra: examples
+Requires-Dist: jupyterlab ; extra == 'examples'
+Requires-Dist: matplotlib ; extra == 'examples'
+Requires-Dist: stable-baselines3[extra] ; extra == 'examples'
+Requires-Dist: ipywidgets ; extra == 'examples'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# qwertyenv
+Gym environments (Reinforcement Learning)
+
+Black Jack (from RLBook2018)
+Collect Coins (Chess like)
+
+"Ensure Valid Action" Gym wrapper.
+"Up/Down/Left/Right" Gym wrapper - relevant for example for the Collect Coins environment when the piece is a rock.
+
+> pip install qwertyenv
+
+Example usages for the Black Jack environment and for the Collect Coins environment can be found on github (the project's home).
