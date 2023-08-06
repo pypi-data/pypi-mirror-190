@@ -1,0 +1,8 @@
+SpatialTransform/__init__.py,sha256=7Y5Kjusfw-i3NxMdShdFTwTye_bfOzFFDGRtjOCb194,93
+SpatialTransform/lib/euler.py,sha256=5lPPhMYLmVwxvIXhHBGd6UncbZ8MCYC4wnVSGCVHkts,4126
+SpatialTransform/lib/pose.py,sha256=0_soiWaoTKTBToN4PaOOW5XoXiNsEOo5cID8DxmaKYA,4243
+SpatialTransform/lib/transform.py,sha256=aT_lZnygspUe9REUyDyzyI8HfeRJG7LZZxv7LjSiLLA,17990
+spatial_transform-1.2.8.dist-info/METADATA,sha256=SH4Odj0zO0F9-TFBZ74QpH_fRGvdNpGlMCLGk-0gwsQ,8560
+spatial_transform-1.2.8.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+spatial_transform-1.2.8.dist-info/licenses/LICENSE,sha256=kjhWhFExvF0kSu4FvzSAhKY4sJlx-irGp6cj_Be6DFA,1069
+spatial_transform-1.2.8.dist-info/RECORD,,
