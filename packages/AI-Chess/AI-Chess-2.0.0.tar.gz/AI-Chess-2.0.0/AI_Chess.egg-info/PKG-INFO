@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AI-Chess
+Version: 2.0.0
+Summary: Basic chess features that includes an AI for decision making
+Author: mtootoonchi (Matthew Faraz Tootoonchi)
+Author-email: <mftootoonchi@gmail.com>
+Keywords: python,chess,AI,Artificial Intelligence,game,puzzle
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
