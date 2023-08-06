@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: simple-pymq
+Version: 0.1.0
+Summary: Simple python message queue framework is ready to serve.
+Author: Allen Chou
+Author-email: f1470891079@gmail.com
+Requires-Python: >=3.8.0,<3.11.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: croniter[cron]
+Requires-Dist: pytz
+Requires-Dist: rich
+Description-Content-Type: text/markdown
+
+# simple-pymq #
+Simple python message queue framework is ready to serve.
+
+## Installation ##
+
+```bash
+pip install simple-pymq
+```
+
+## Usage ##
+
+Simple message queue pipeline in memory:
+
+```python
+import asyncio
+from simple_pymq import (
+    PrintConsumer,
+    QueueBroker,
+    SimpleMessageQueue,
+    TimeCounterProducer,
+)
+
+
+async def main():
+    q = QueueBroker(maxsize=32)
+    p = TimeCounterProducer(
+        count_seconds=1.0, max_produce_count=3, put_value="Message here."
+    )
+    c = PrintConsumer(max_consume_count=3)
+    mq = SimpleMessageQueue()
+
+    await mq.run(broker=q, producers=p, consumers=c)
+    print("All tasks done!")
+
+
+asyncio.run(main())
+```
+
