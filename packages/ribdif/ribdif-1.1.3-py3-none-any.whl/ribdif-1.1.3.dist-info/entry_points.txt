@@ -1,0 +1,2 @@
+[console_scripts]
+ribdif = ribdif.__main__:main
