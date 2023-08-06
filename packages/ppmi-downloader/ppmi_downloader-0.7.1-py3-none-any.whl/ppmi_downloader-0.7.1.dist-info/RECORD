@@ -1,0 +1,12 @@
+ppmi_downloader/__init__.py,sha256=QQNlvt-ls_yOYMOeJLzHFdP3-KWipUh0n9CnIZTbLEE,65
+ppmi_downloader/guessed_to_real.json,sha256=4BFWLF2N_SoPg573eAzLe0wlVbxkob50qk9kq0dfppU,41898
+ppmi_downloader/ppmi_downloader.py,sha256=u2aZloQjsX857lDmP_ctU1y2Dzlkl7ZGztYwjandhCo,26548
+ppmi_downloader/ppmi_logger.py,sha256=d6h1lVx3kqJXXJhf5BSXynXGTw__KVENvQf4SafuWOc,957
+ppmi_downloader/ppmi_navigator.py,sha256=ExfguHCIPB94CqxjU_OMPo6UGEZk_dZb0EYlC1t422g,26087
+ppmi_downloader/selenium_grid_utils.py,sha256=OSI_uFqHd1u1pBlqHPfer4gAS5ch3Ywrruy63eDMZtU,4727
+ppmi_downloader/tests/test_ppmi_downloader.py,sha256=_-VA-ejruQyHHIyipbJTi4vowRBc_2ZGqn5EV1CX62I,2943
+ppmi_downloader-0.7.1.dist-info/METADATA,sha256=Mmoq6CJ11kymiXsdJfQpPDcffUDay7cIGZEp3tFtLS8,3922
+ppmi_downloader-0.7.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+ppmi_downloader-0.7.1.dist-info/entry_points.txt,sha256=0NYYVSeWERMWKiVxkFhqhF361qAUnW4sDbsGX7YLh1I,132
+ppmi_downloader-0.7.1.dist-info/licenses/LICENSE,sha256=FPG2Pm4JWZQnVIJe0LVdgOZ3BdqYjkDEMiSVRGL-tsM,1087
+ppmi_downloader-0.7.1.dist-info/RECORD,,
