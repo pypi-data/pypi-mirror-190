@@ -1,0 +1,13 @@
+sqlalchemy_bind_manager/__init__.py,sha256=SoOrFNTaiN4wt8vw5lHRAZFdFgf7YW3sxnhKniIrVz4,300
+sqlalchemy_bind_manager/_bind_manager.py,sha256=RZDJon9Y1cIlR6IyplG83IiXtJxWZk8qAPH-i-_Muo0,5166
+sqlalchemy_bind_manager/_repository/__init__.py,sha256=nHXs2segqFGdZw9o5lMbmMX6h4xVAbKgXkxNLA5XA2s,119
+sqlalchemy_bind_manager/_repository/async_.py,sha256=kfJx1mTPmDUcSngByLejpPr2CrX2IcLSLd36X-O2FQo,4745
+sqlalchemy_bind_manager/_repository/common.py,sha256=vaP0OvflNRmCqSoRH9kdTjKKDXpd4fZAxoEc-Ut0UWQ,3937
+sqlalchemy_bind_manager/_repository/sync.py,sha256=Uf9NSwt8msNS0Mf_1XZPXe1kMcB2jVrTvL1PlP6_GNE,4465
+sqlalchemy_bind_manager/_unit_of_work.py,sha256=x7zxYh1fONuWn1lQQh8OtqmBDy1JwewCGMiTXYtIyDs,2886
+sqlalchemy_bind_manager/exceptions.py,sha256=jqx2i-_FZhnrm3QETOMODX7ZFSHF1g2HsNhyFDXFdno,310
+sqlalchemy_bind_manager/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_bind_manager-0.0.1.dist-info/LICENSE,sha256=W6ZVElKbeo3el3-NFpWrZFIagox9yyZS9Ws2zVB3Myo,1073
+sqlalchemy_bind_manager-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sqlalchemy_bind_manager-0.0.1.dist-info/METADATA,sha256=zdnMZPDlsAqqHMwqRLhieSaBkez4U-jCA1OqCCgJ9hI,12891
+sqlalchemy_bind_manager-0.0.1.dist-info/RECORD,,
