@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+automate_ML/__init__.py
+automate_ML/classification.py
+automate_ML/dry_run.py
+automate_ML/preprocessing.py
+automate_ML/regression.py
+automate_ML.egg-info/PKG-INFO
+automate_ML.egg-info/SOURCES.txt
+automate_ML.egg-info/dependency_links.txt
+automate_ML.egg-info/requires.txt
+automate_ML.egg-info/top_level.txt
