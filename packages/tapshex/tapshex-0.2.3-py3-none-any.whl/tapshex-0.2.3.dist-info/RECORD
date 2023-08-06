@@ -1,0 +1,14 @@
+LICENSE,sha256=mhZNWp68GYLbjpS9Z96oC5Xa915yTDYW4d0ZIMCZcTs,1066
+README.rst,sha256=T85fam13klWOlDRIo51AJlP9nsELG_XGJYzMXHOdFdA,82
+tapshex/__init__.py,sha256=jSJhQnIbE-ydjwKffof4zkiB_ZcdhZB1QLL9BaNpZzQ,364
+tapshex/classes.py,sha256=wbtssbNnfwH7Qilj0K3ASAbIRRziJDqTm6toxEAQJk0,1511
+tapshex/config.py,sha256=NJg8EbuOM6psZ37DcdRFIogp9l53vfDxyf2jwe_fUaw,922
+tapshex/csvreader.py,sha256=cTyCg2V3n_ESXq5VKBTeebmEqYUT-76oCyETGyCco8M,557
+tapshex/defaults.py,sha256=LPggtIWvhJJblZz08TCj03HO6Q-qW02RFJftoj8v_8c,870
+tapshex/shexify.py,sha256=-opoj1Z01eIU0I_rdC_od18FrB9wCXh6wLMHUsl-JMg,605
+tapshex/template.py,sha256=0koxRVUzw8blsWf5nNe8aWs9IotlyHxuaD2xEPk3Ubo,1940
+tapshex/utils.py,sha256=1QyvuiJexxXHh3kfPWCwE-E4DxtaN3mbmjmyhQima4w,725
+tapshex-0.2.3.dist-info/LICENSE,sha256=mhZNWp68GYLbjpS9Z96oC5Xa915yTDYW4d0ZIMCZcTs,1066
+tapshex-0.2.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tapshex-0.2.3.dist-info/METADATA,sha256=5bLlcPUPBvePSdkV9fI8L-pcMQbcm9Gnbxe1Wt2zcgE,1371
+tapshex-0.2.3.dist-info/RECORD,,
