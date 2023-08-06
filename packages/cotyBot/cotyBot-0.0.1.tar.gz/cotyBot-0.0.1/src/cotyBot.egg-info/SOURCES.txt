@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/cotyBot/__init__.py
+src/cotyBot/cotyBotConsole.py
+src/cotyBot.egg-info/PKG-INFO
+src/cotyBot.egg-info/SOURCES.txt
+src/cotyBot.egg-info/dependency_links.txt
+src/cotyBot.egg-info/entry_points.txt
+src/cotyBot.egg-info/requires.txt
+src/cotyBot.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+coty = cotyBot.cotyBotConsole:main
