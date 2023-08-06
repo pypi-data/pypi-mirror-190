@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+src/publishagain_to_pypi/__init__.py
+src/publishagain_to_pypi.egg-info/PKG-INFO
+src/publishagain_to_pypi.egg-info/SOURCES.txt
+src/publishagain_to_pypi.egg-info/dependency_links.txt
+src/publishagain_to_pypi.egg-info/requires.txt
+src/publishagain_to_pypi.egg-info/top_level.txt
+src/publishagain_to_pypi/demo/__init__.py
+src/publishagain_to_pypi/demo/custom_sklearn.py
