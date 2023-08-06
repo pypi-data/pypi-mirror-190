@@ -1,0 +1,13 @@
+Datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Datasets/BostonHousing/__init__.py,sha256=qq86r3ZYPDzKB4QprWgx-PYmV_P9Z2Q970tF86SklOM,150
+Datasets/BostonHousing/boston_housing.py,sha256=RXdAmOFhcfI9OUG3_nfw_L5_QmLZ8nqtC7Tm_eoWldU,464
+Datasets/FashionMNIST/__init__.py,sha256=qq86r3ZYPDzKB4QprWgx-PYmV_P9Z2Q970tF86SklOM,150
+Datasets/FashionMNIST/fashion_mnist.py,sha256=ITroKyWeQIk9CDHB7AzkABkuFpcPmL7toWGUYP5PcKU,544
+Datasets/Iris/__init__.py,sha256=X2Ph-efQ08K1yT0Wj5BAOKUIwlpB-W33jnUom-ndZc8,151
+Datasets/Iris/iris.py,sha256=COUDNv848tq6bNYy5c8rZ_8J5IcORhnwpNhRun2Zqos,531
+Datasets/MNIST/__init__.py,sha256=mpTV1vmoFBAeVW2YrRcsEdHpVowMKfwajDvY_f8bZYc,232
+Datasets/MNIST/mnist.py,sha256=MffqXDgZ3a4iK8lrWC9Tothyx1SlBXOz-nWsz-aZKDc,536
+DeeprAI_Datasets-0.0.2.dist-info/METADATA,sha256=msvH88iWgemDeaIFAJ2Ag58MsA0lMEizswCkzN1nl1k,424
+DeeprAI_Datasets-0.0.2.dist-info/WHEEL,sha256=i9qQj8KaD8_YEW0Vc2oS56fKju23RkQ-FVz-QmzVakQ,98
+DeeprAI_Datasets-0.0.2.dist-info/top_level.txt,sha256=EyuosWJd7USzXOps-NmvMCZx3kU1e0c038JM1ac7rKA,9
+DeeprAI_Datasets-0.0.2.dist-info/RECORD,,
