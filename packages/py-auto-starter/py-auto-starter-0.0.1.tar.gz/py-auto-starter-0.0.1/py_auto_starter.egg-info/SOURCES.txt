@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+py_auto_starter/__init__.py
+py_auto_starter/linux.py
+py_auto_starter/mac.py
+py_auto_starter/windows.py
+py_auto_starter.egg-info/PKG-INFO
+py_auto_starter.egg-info/SOURCES.txt
+py_auto_starter.egg-info/dependency_links.txt
+py_auto_starter.egg-info/not-zip-safe
+py_auto_starter.egg-info/top_level.txt
+test/test.py
