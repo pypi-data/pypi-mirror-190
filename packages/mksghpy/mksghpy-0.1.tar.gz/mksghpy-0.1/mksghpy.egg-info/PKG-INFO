@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mksghpy
+Version: 0.1
+Summary: py packahe to test skill
+Author: mksgh
+Author-email: <mksgh@hmail.com>
+Keywords: python
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows

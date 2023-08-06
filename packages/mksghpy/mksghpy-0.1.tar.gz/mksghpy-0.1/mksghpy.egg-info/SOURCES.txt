@@ -1,0 +1,10 @@
+README.md
+setup.py
+mksghpy/__init__.py
+mksghpy/output.py
+mksghpy/stringsplay.py
+mksghpy.egg-info/PKG-INFO
+mksghpy.egg-info/SOURCES.txt
+mksghpy.egg-info/dependency_links.txt
+mksghpy.egg-info/requires.txt
+mksghpy.egg-info/top_level.txt
