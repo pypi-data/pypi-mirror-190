@@ -1,0 +1,3 @@
+[console_scripts]
+devcellpy = devcellpy.devcellpy:main
+
