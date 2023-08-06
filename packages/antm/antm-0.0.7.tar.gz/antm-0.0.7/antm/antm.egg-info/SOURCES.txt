@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+antm/antm.egg-info/PKG-INFO
+antm/antm.egg-info/SOURCES.txt
+antm/antm.egg-info/dependency_links.txt
+antm/antm.egg-info/top_level.txt
+tests/test.py
