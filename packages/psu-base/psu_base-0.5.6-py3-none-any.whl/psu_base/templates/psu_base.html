@@ -1,0 +1,49 @@
+{% load base_taglib %}
+{% load sass_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Portland State University{% endblock %}</title>
+    <link rel="shortcut icon" href="{%static_content_url%}/images/favicon.ico" type="image/x-icon">
+    {%jquery%}
+    {%bootstrap%}
+    {%font_awesome version='4'%}
+
+    {% wdt_javascript "ajax.js" %}
+
+    <link href="{% sass_src 'css/template.scss' %}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{% static 'js/flash-messages.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/filter-generator.js' %}"></script>
+
+    {% block head %}{% endblock %}
+    {% block scripts %}{% endblock %}
+</head>
+<body>
+    {% include '_components/header/grid.html' %}
+    {%if_feature_enabled downtime_messages%}{%downtime_messages%}{%end_if_feature_enabled%}
+    {% include '_components/message_container.html' %}
+
+    {% block pagecontent %}
+
+    <br />
+    ...<br />
+    <br />
+
+    {% endblock %}
+
+    {% include '_components/footer.html' %}
+
+    {# Set the color of the PSU logo #}
+    <script type="text/javascript">
+    if(typeof setPsuLogoColor === "function"){
+        setPsuLogoColor();
+    }
+    </script>
+
+    {## Run AdminScripts if enabled ##}
+    {%admin_script%}
+</body>
+</html>

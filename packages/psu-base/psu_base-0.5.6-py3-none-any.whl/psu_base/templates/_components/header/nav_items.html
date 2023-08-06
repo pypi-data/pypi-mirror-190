@@ -1,0 +1,24 @@
+{% load base_taglib %}
+
+{# The Homepage requires a special check to accommodate potential URL_CONTEXT #}
+{% with home_url as this_page %}
+<div class="header-nav-item {% ifequal request.path this_page %}header-nav-item-active{% endifequal %}">
+    <a href="{{home_url}}">Home</a>
+</div>
+{%endwith%}
+
+{% url 'psu:test' as this_page %}
+<div class="header-nav-item {% ifequal request.path this_page %}header-nav-item-active{% endifequal %}">
+    <a href="{%url 'psu:test'%}">Status</a>
+</div>
+
+{# This demonstrates showing an optional item on small screens only when active #}
+{% url 'psu:finti' as this_page %}
+<div class="header-nav-item {% if request.path == this_page %}header-nav-item-active{%else%}header-nav-item-optional{% endif %}">
+    <a href="{%url 'psu:finti'%}">Finti Console</a>
+</div>
+
+{# Menus currently do not have an active class/style #}
+<div class="header-nav-item header-menu float-right">
+    {% include '_components/header/developer_menu.html' %}
+</div>

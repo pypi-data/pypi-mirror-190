@@ -1,0 +1,10 @@
+<div id="message-container">
+  {% include '_components/messages.html' %}
+</div>
+<script>
+  $(document).ajaxComplete(function(e, xhr, settings){
+    if (!settings.bypassGlobalComplete){
+      flash_messages("{% url 'psu:messages' %}");
+    }
+  });
+</script>

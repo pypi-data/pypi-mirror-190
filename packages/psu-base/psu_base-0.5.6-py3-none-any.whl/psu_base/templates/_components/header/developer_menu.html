@@ -1,0 +1,59 @@
+{% load base_taglib %}
+
+{# The following only displays for developers #}
+{% if_has_authority developer %}
+
+    {# ToDo: Find a way to include items from supplemental plugins to this menu #}
+
+    <div class="dropdown float-right">
+        <button class="dropbtn">
+            <span class="fa fa-cog xlg" title="Developer Menu"></span>
+            <i class="fa fa-caret-down" title="Expand" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-content">
+            <div class="menu-top">
+                <span style="font-weight: bold;">{%app_name%}</span>
+                <span onclick="window.open('{%url 'psu:versions'%}');" style="cursor:pointer;" class="float-right">
+                    {%app_version%}
+                </span>
+            </div>
+
+            {% url 'psu:test' as this_page %}
+            <a class="header-menu-item {% ifequal request.path this_page %}header-menu-item-active{% endifequal %}" href="{%url 'psu:test'%}">
+                <span class="fa fa-medkit" aria-hidden="true"></span>
+                Status Page
+            </a>
+            <a class="header-menu-item" href="{%url 'psu:session'%}">
+                <span class="fa fa-microchip" aria-hidden="true"></span>
+                Session Contents
+            </a>
+            <a class="header-menu-item" href="{%url 'psu:finti'%}">
+                <span class="fa fa-laptop" aria-hidden="true"></span>
+                Finti Interface
+            </a>
+            <a class="header-menu-item" href="{%url 'psu:features'%}">
+                <span class="fa fa-plug" aria-hidden="true"></span>
+                Feature Toggles
+            </a>
+            <a class="header-menu-item" href="{%url 'psu:emails'%}">
+                <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                Email Log
+            </a>
+            <a class="header-menu-item" href="{%url 'psu:email'%}">
+                <span class="fa fa-paper-plane-o" aria-hidden="true"></span>
+                Send Test Email
+            </a>
+            <a class="header-menu-item" href="{%url 'psu:audit'%}">
+                <span class="fa fa-id-card-o" aria-hidden="true"></span>
+                Audit Events
+            </a>
+            {%if_feature_enabled admin_script%}
+            <a class="header-menu-item" href="{%url 'psu:scripts'%}">
+                <span class="fa fa-code" aria-hidden="true"></span>
+                Admin Script
+            </a>
+            {%end_if_feature_enabled%}
+        </div>
+    </div>
+
+{% end_if_has_authority %}
