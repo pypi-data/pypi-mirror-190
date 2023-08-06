@@ -1,0 +1,4 @@
+pipreqs==0.4.11
+
+[watchdog]
+watchdog==2.2.1
