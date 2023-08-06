@@ -1,0 +1,6 @@
+xlwings
+daff
+pandas
+openpyxl
+xlrd
+termcolor

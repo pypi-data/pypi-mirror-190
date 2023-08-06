@@ -1,0 +1,4 @@
+[console_scripts]
+xlmerge = xllib.xlmerge:main
+xlstyle = xllib.xlstyle:main
+
