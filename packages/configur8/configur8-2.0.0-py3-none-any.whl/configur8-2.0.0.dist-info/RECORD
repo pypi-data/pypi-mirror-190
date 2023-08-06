@@ -1,0 +1,14 @@
+configur8/__about__.py,sha256=Lq3eVODRZN5wTK5hz2iIQ1GjsNUXhYhax4CZLatARqc,140
+configur8/__init__.py,sha256=zQlv9Z-7B2pUD_GvxBHI7YuFs35VqOb7vikY3zTxLTk,356
+configur8/cfg.py,sha256=8bWRs3Jon7o3hqulmn8RB7qtK7oTItKNNNPrqUxmWR4,7362
+configur8/core.py,sha256=plfYe-OquGTRttkODvfG7f2KP2fn0S7NkHKHdZg5K6E,136
+configur8/email.py,sha256=JJxDF7ttLVBy63ic33n1t4C_hKYwdTJCwvdUoFIuPSM,469
+configur8/env.py,sha256=e2Zahr0xfYCWr4HVWYeXz-BhggxlyhHRLsG8YgkVi-4,4884
+configur8/path.py,sha256=-_divdOkZzXfIVzQwFPmB538LuWz44INozR2NpKGagY,1528
+configur8/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configur8/types.py,sha256=IwTGwJmA9uLhJ3QM_PRHBi0SGmuqGP_ErqnoRg7UlTw,2007
+configur8/url.py,sha256=F4RHYXbL2IEUyq-QnprMJNhsjh-o-2bt8AfMR8mv4aE,2502
+configur8/util.py,sha256=VQ0cDfpxDaOWVh3t867Hqnn0HQfntMhHb1wYHVgB-Q0,177
+configur8-2.0.0.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+configur8-2.0.0.dist-info/METADATA,sha256=Icqy0gypBbrG9o9YHrcB2pVyLxwV67SlmNAyi7lbnbU,4659
+configur8-2.0.0.dist-info/RECORD,,
