@@ -1,0 +1,12 @@
+charsi/__init__.py,sha256=TdpBt2wY9VecAURQtAty-_SJDr14uhz1pX1Tgsveaog,78
+charsi/__main__.py,sha256=x1au6unN0b9rzBhOOB1thqcZKilx7-Q38LyRktZ5V6c,1078
+charsi/exceptions.py,sha256=2PN_rI-uurbkL6kT5MRRH2RbPS1O5aTJUugzfTUip8s,290
+charsi/instruction.py,sha256=zIsO6TEBwgIqPF4OBaIXMUlqCbpSL0m429l-GD9uH4o,1820
+charsi/recipe.py,sha256=9vNGOwpTCG2h8znD0Idrq3Nsyxg-GlZD30ZQT3CBnQc,757
+charsi/strings.py,sha256=Gze-VDBFoT6w7kEwg9vlJnbnQhA_EunkzQLzBxFyeIY,2104
+charsi/utils.py,sha256=UDnpy_G3W4SBWt5vVGYnrBNJGQxrg05HA1y3q2TtC1A,334
+charsi-0.2.0.dist-info/entry_points.txt,sha256=C73YEGMmROkYiHZkYJzaqRhsc69AybrQQHSjfild4Zo,46
+charsi-0.2.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+charsi-0.2.0.dist-info/METADATA,sha256=yYJDM9dmwz1lrkrzoG1lsw7KKTq-UkuXrMTXwr5isXk,1572
+charsi-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+charsi-0.2.0.dist-info/RECORD,,
