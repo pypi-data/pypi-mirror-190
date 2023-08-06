@@ -1,0 +1,3 @@
+[console_scripts]
+add_cos_s_region = costools.add_cos_s_region:call_main
+timefilter = costools.timefilter:main
