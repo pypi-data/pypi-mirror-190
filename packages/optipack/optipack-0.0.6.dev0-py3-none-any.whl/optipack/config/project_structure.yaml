@@ -1,0 +1,13 @@
+project_structure: 
+  - asset
+  - builder
+  - checkpoint
+  - experiment
+  - log
+  - logger
+  - model
+  - optimizer: 
+    - loss
+    - optimize_algo
+  - util
+  - trainer
