@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hangul"
+version = "1.1.0"
+description = "The official Korean language romanization system in Python."
+readme = "README.md"
+authors = [{ name = "joumaico", email = "joumaico@gmx.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/joumaico/hangul"
+
+[project.scripts]
+hangul = "hangul.__init__:romanize"
+
+[tool.setuptools.package-data]
+hangul = ["static/data.json"]
