@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: peerplays
+Version: 0.5.0
+Summary: Python library for PEERPLAYS
+Home-page: https://gitlab.com/PBSA/tools-libs/python-peerplays
+Author: PBSA and contributors. Original by Fabian Schuh.
+Author-email: info@pbsa.info
+Maintainer: PBSA
+Maintainer-email: info@pbsa.info
+Keywords: peerplays,library,api,rpc
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Games/Entertainment
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: scrypt (==0.8.13)
+Requires-Dist: appdirs (==1.4.3)
+Requires-Dist: graphenelib (==1.5.4)
+Requires-Dist: prettytable
+Requires-Dist: events
+Requires-Dist: pyyaml
+Requires-Dist: click
+Requires-Dist: treelib
+Requires-Dist: ecdsa (==0.18)
+Requires-Dist: websockets (>=10.0)
+
+# Python Library for PeerPlays
+
+
+
+This is a communications library which allows interface with the Peerplays blockchain directly and without the need for a cli_wallet. It provides a wallet interface and can construct any kind of transactions and properly sign them for broadcast.
+
+When installed with pip3, also provides a command-line interface invocable at the command line as `peerplays`.
+
+## Installation
+
+The python-peerplays library has following dependencies
+  python3-dev
+  build-essential
+  libssl-dev
+  libffi-dev
+  libxml2-dev
+  libxslt1-dev
+  zlib1g-dev
+
+Make sure that the above dependencies are installed, if not install with:
+
+    $ sudo apt-get install <dependency name>
+
+Install with `pip3`:
+
+    $ pip3 install peerplays
+
