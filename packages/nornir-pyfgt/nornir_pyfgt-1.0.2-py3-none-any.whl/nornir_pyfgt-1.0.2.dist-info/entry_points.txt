@@ -1,0 +1,3 @@
+[nornir.plugins.connections]
+pyfgt=nornir_pyfgt.plugins.connections:Pyfgt
+
