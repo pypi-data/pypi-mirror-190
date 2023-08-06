@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gans-eval
+Version: 0.0.1
+Summary: A Python package to evaluate GANs
+Home-page: https://github.com/GiangHLe/gans-evals
+Author: Giang Le
+Author-email: lhgiang149@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: timm
+Requires-Dist: torch (>=1.7.0)
+Requires-Dist: torchvision (>=0.8.0)
+
+UNKNOWN
+
