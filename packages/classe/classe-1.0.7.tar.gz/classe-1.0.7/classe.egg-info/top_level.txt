@@ -1,0 +1,9 @@
+Fetch
+contact_info
+nutsFetchGet
+nutsOrganizationMethods
+nutsPUTupdate
+nutsSendPost
+nutsVendorMethods
+organizationDetails
+vendorDetails
