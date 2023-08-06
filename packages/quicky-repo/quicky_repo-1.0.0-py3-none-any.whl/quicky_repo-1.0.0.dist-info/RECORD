@@ -1,0 +1,9 @@
+src/commands/init.py,sha256=_DMkaKa-sGzlKdAg_nPVidPCKbmXw6EBYN1_x-oZTqw,390
+src/core/settings.py,sha256=qqfSwT4UzbapeRMlXNuGp89j1VNIjMz-09rXFvPdtxI,66
+src/main.py,sha256=iqXflMaTmUaLTaIWHlijRdqFDgSac0jJZXOPgHwB7S8,376
+src/ui/header.py,sha256=Hatp5gp_XS7xQXMo1IJC69S-v-mzO1Pw-ucrJcq0RJc,222
+src/ui/icons.py,sha256=Y4AmVCGwWVazdLOLl5h0xybISUm7tw26ofaactuqtII,306
+quicky_repo-1.0.0.dist-info/METADATA,sha256=WZNUzsYVwW5RZiXnsptlgg7EUATFSHxtsFhx5w-f7m8,3215
+quicky_repo-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+quicky_repo-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+quicky_repo-1.0.0.dist-info/RECORD,,
