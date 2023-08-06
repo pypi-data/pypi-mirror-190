@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: auto-archiver
+Version: 0.2.22
+Summary: Easily archive online media content
+Author: Bellingcat
+Author-email: tech@bellingcat.com
+License: MIT
+Project-URL: Source Code, https://github.com/bellingcat/auto-archiver
+Project-URL: Bug Tracker, https://github.com/bellingcat/auto-archiver/issues
+Keywords: archive,oosi,osint,scraping
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Auto Archiver
+Read the [article about Auto Archiver on bellingcat.com](https://www.bellingcat.com/resources/2022/09/22/preserve-vital-online-content-with-bellingcats-auto-archiver-tool/).
+
+
+Python tool to automatically archive social media posts, videos, and images from a Google Sheets, the console, and more. Uses different archivers depending on the platform, and can save content to local storage, S3 bucket (Digital Ocean Spaces, AWS, ...), and Google Drive. If using Google Sheets as the source for links, it will be updated with information about the archived content. It can be run manually or on an automated basis.
+
+There are 3 ways to use the auto-archiver
+1. (simplest) via docker `docker ... TODO`
+2. (pypi) `pip install auto-archiver`
+3. (legacy) clone and manually install from repo (see legacy [tutorial video](https://youtu.be/VfAhcuV2tLQ))
+
