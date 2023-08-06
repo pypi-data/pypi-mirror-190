@@ -1,0 +1,22 @@
+<div id="message-container">
+  {% include '_components/messages.html' %}
+</div>
+<script>
+  $(document).ajaxComplete(function(e, xhr, settings){
+    if (!settings.bypassGlobalComplete){
+      flash_messages("{% url 'psu:messages' %}");
+    }
+  });
+</script>
+
+{%if flash_message_position == 'BOTTOM'%}
+<style>
+  #message-container{
+    position: fixed;
+    width: 300px;
+    bottom: 20px;
+    right: 0;
+
+  }
+</style>
+{%endif%}
