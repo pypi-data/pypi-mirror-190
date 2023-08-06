@@ -1,0 +1,12 @@
+wdcuration/__init__.py,sha256=FShZEThNJZZfQQKJnPSX4UNx8TF_qxH8KFmIlo-CCWI,937
+wdcuration/api_searches.py,sha256=XvK83vw3nSOMuHAtbRaepcODXrlzGR_L-dTI2wim1ps,6277
+wdcuration/dict_handler.py,sha256=MPo_4ZCrkES2GipKUF9DQlXKH4ksIvsyi7uDKmAT7xw,6090
+wdcuration/quickstatements.py,sha256=y46lqTWBarIJaGgiDCiy12J8q9KBW6rL2wnfmGldgZo,723
+wdcuration/sheet_based_curation.py,sha256=-52Wpsk0qFsUtcSOqnDDCR-gzRj-_KxysJNMXeD_uBk,9625
+wdcuration/sparql.py,sha256=6_nwONzmRePFfuKRMnSYmff06SDJfDkQUa9VG0eSVwk,6015
+wdcuration/utils.py,sha256=niz2l_Y7QsqAkP74YG7he-bqk6jfGhSWF9Ls5uNtohM,351
+wdcuration-0.2.1.dist-info/LICENSE,sha256=woFcTTRbzXf1JmPltSqF09ZN8PIc5JthXD5RPqOlbf0,1072
+wdcuration-0.2.1.dist-info/METADATA,sha256=RG0YhZTvS9_KszkIQ_bBwZg2lsVyOy5i0BRwOr0yx8U,3452
+wdcuration-0.2.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+wdcuration-0.2.1.dist-info/top_level.txt,sha256=LG3vSNiO_F0UlW3JB8Ys0wj4yf5pDw1UCbgCOW8Upyk,11
+wdcuration-0.2.1.dist-info/RECORD,,
