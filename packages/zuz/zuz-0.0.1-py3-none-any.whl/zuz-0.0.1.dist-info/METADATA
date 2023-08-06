@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: zuz
+Version: 0.0.1
+Summary: Dezabin aba bitrei zuzei
+Home-page: https://github.com/gialdetti/zuz
+Author: Eyal Gal
+Author-email: eyalgl@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# zuz
+Two zuzim 
