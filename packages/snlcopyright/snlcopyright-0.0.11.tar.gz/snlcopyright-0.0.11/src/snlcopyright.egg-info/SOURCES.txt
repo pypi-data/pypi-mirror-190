@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/snlcopyright/__init__.py
+src/snlcopyright/command_line.py
+src/snlcopyright/copyright.txt
+src/snlcopyright/copyright_crud.py
+src/snlcopyright.egg-info/PKG-INFO
+src/snlcopyright.egg-info/SOURCES.txt
+src/snlcopyright.egg-info/dependency_links.txt
+src/snlcopyright.egg-info/entry_points.txt
+src/snlcopyright.egg-info/requires.txt
+src/snlcopyright.egg-info/top_level.txt
