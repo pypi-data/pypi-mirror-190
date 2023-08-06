@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+CustomizableSocketServer/BaseClient.py
+CustomizableSocketServer/BaseServer.py
+CustomizableSocketServer/SocketOperations.py
+CustomizableSocketServer/__init__.py
+CustomizableSocketServer/exceptions.py
+CustomizableSocketServer/schemas.py
+CustomizableSocketServer.egg-info/PKG-INFO
+CustomizableSocketServer.egg-info/SOURCES.txt
+CustomizableSocketServer.egg-info/dependency_links.txt
+CustomizableSocketServer.egg-info/entry_points.txt
+CustomizableSocketServer.egg-info/requires.txt
+CustomizableSocketServer.egg-info/top_level.txt
