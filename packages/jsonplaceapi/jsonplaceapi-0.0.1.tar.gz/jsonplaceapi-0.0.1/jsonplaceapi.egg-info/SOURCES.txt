@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+jsonplaceapi/__init__.py
+jsonplaceapi/apptypes.py
+jsonplaceapi/apputils.py
+jsonplaceapi/main.py
+jsonplaceapi/subtypes.py
+jsonplaceapi.egg-info/PKG-INFO
+jsonplaceapi.egg-info/SOURCES.txt
+jsonplaceapi.egg-info/dependency_links.txt
+jsonplaceapi.egg-info/not-zip-safe
+jsonplaceapi.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonplaceapi"
+version = "0.0.1"
+authors = [
+  { name="Defloppka", email="defloppka@gmail.com" },
+]
+description = "A simple REST client to work with jsonplaceholder.typicode.com"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/defloppka/jsonplaceapi"
+"Bug Tracker" = "https://github.com/defloppka/jsonplaceapi/issues"

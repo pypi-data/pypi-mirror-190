@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: jsonplaceapi
+Version: 0.0.1
+Summary: A simple REST client to work with jsonplaceholder.typicode.com
+Home-page: https://github.com/defloppka/jsonplaceapi
+Author: defloppka
+Author-email: Defloppka <defloppka@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/defloppka/jsonplaceapi
+Project-URL: Bug Tracker, https://github.com/defloppka/jsonplaceapi/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Jsonplaceapi
+
+## Simple library to interact with [Jsonplaceholder](https://jsonplaceholder.typicode.com)
+
+
+![Example](./code.png)
