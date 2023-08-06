@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+multilingual_translation/__init__.py
+multilingual_translation/translation.py
+multilingual_translation.egg-info/PKG-INFO
+multilingual_translation.egg-info/SOURCES.txt
+multilingual_translation.egg-info/dependency_links.txt
+multilingual_translation.egg-info/requires.txt
+multilingual_translation.egg-info/top_level.txt
