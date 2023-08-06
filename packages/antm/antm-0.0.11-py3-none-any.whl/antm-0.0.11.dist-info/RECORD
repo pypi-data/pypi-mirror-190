@@ -1,0 +1,14 @@
+antm/__init__.py,sha256=3dC-WdeceCzvu_PR2vD_yLm2NqHrzZXACBDqzNmydW4,25
+antm/aligned_clustering_layer.py,sha256=-NBJRUiR5No4e1mnOIhBSWbQsmGhomz1U0lv8ES6pjE,5074
+antm/contextual_embedding_layer.py,sha256=l9uQk-n8KctltkUOmX_JjoWlPTU-4F59SAc32fJz7Fs,386
+antm/ctfidf.py,sha256=y1b-gBDYu-n-UFJDF27uO3fYCd13mP1rrZDa-vPUKgs,2700
+antm/data2vec.py,sha256=GYOK1MxVBwlCd-BFlBATQjuC7yHTwvqN9-vgGjtD_E0,1285
+antm/main.py,sha256=-IIUMGGCkxtwMeVA0RCcuHjb1FgfPG3m0VVL2jsBLOU,10213
+antm/sws.py,sha256=9J6MQOiiEOyGNqXv53zDtceE6YeW_ZO4A_yo9WV5tGg,2131
+antm/text_processing.py,sha256=owlFSo-258jpDbUlMSrJIPhw7tSOVzy9XOvedG7GggE,1334
+antm/topic_representation_layer.py,sha256=_7dR-rsUF7YvmAsMK94-ULFzmIFYXjabPqqlBnnHygc,2489
+antm-0.0.11.dist-info/LICENSE,sha256=do4DWNy8RRO7FyTZloQGe_-FKoXaoN1MPHqLveNtz5c,1068
+antm-0.0.11.dist-info/METADATA,sha256=UoDmYB-v6IcZVPj-_T7l2MiIkmxebpF0FIbeJ9gCsHU,4683
+antm-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+antm-0.0.11.dist-info/top_level.txt,sha256=0bxJT6OXP1NJUWOx5Gj9IYfTDVlczY-regX-YpM-blI,5
+antm-0.0.11.dist-info/RECORD,,
