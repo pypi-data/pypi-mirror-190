@@ -1,0 +1,5 @@
+unicrypto>=0.0.9
+aiowinreg>=0.0.7
+tqdm
+colorama
+pycryptodomex
