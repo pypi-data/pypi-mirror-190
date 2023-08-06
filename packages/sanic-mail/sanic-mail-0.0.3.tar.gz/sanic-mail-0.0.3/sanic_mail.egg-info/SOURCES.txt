@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sanic_mail/__init__.py
+sanic_mail/exceptions.py
+sanic_mail/utils.py
+sanic_mail.egg-info/PKG-INFO
+sanic_mail.egg-info/SOURCES.txt
+sanic_mail.egg-info/dependency_links.txt
+sanic_mail.egg-info/not-zip-safe
+sanic_mail.egg-info/requires.txt
+sanic_mail.egg-info/top_level.txt
