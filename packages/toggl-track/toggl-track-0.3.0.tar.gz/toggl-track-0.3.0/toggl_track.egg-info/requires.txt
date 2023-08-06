@@ -1,0 +1,8 @@
+click
+pydantic
+requests
+rich
+
+[test]
+pytest
+pytest-recording
