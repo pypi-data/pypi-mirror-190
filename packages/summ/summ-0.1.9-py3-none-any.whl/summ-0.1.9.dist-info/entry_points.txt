@@ -1,0 +1,2 @@
+[console_scripts]
+summ-example = summ.example:main
