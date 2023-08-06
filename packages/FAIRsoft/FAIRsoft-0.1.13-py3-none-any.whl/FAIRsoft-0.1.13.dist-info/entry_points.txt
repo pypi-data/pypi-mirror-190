@@ -1,0 +1,3 @@
+[console_scripts]
+FAIRsoft_integrate = FAIRsoft.integration.cli:main
+FAIRsoft_transform = FAIRsoft.transformation.cli:main
