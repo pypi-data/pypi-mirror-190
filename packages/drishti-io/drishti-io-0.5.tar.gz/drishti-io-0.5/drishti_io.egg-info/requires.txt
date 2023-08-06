@@ -1,0 +1,4 @@
+argparse
+pandas
+darshan
+rich==12.5.1
