@@ -1,0 +1,2 @@
+[nbdev]
+jps_gallery_tools = jps_gallery_tools._modidx:d
