@@ -1,0 +1,9 @@
+[
+  "tests/tests.py::test_batch",
+  "tests/tests.py::test_entropy",
+  "tests/tests.py::test_format_orf",
+  "tests/tests.py::test_internal_stops",
+  "tests/tests.py::test_len",
+  "tests/tests.py::test_prot",
+  "tests/tests.py::test_rg"
+]
