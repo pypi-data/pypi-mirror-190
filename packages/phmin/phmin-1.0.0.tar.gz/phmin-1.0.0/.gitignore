@@ -1,0 +1,5 @@
+.pytest_cache/
+phmin.egg-info/
+build/
+dist/
+phmin_erikstacey.egg-info/
