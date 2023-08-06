@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: qiskit-qutree-cloud-provider
+Version: 0.4.1
+Requires-Python: >=3.7
+Requires-Dist: qiskit
+Requires-Dist: qiskit-terra (>=0.22)
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+Requires-Dist: numpy
+Requires-Dist: attrs
+Provides-Extra: dev
+Requires-Dist: grpcio-tools ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
