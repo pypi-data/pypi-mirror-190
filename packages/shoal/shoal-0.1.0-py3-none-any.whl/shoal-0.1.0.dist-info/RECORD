@@ -1,0 +1,11 @@
+shoal/__init__.py,sha256=CPrC0iy6fZ-DyoO7i3gJ4T8O7x6PmkT1QAMiFAVLzC0,476
+shoal/_private/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shoal/_private/cli.py,sha256=b3KZAxfPzVzzGuq-b4cel6C6Bx7sBNlaSxPCpbTSRMU,461
+shoal/ling.py,sha256=QW2RLFMZwiviZGHUiN2nDy6QngBjKEdPV0nf4HajR7o,1268
+shoal/shell.py,sha256=2VDhGjeUEe0QCTYTvbfwJJAQ8OkgxG88eSf15baOdrA,2010
+shoal/tang.py,sha256=worRSpp1On8yb0tqCPo1NQRMe4eUm4GTMx4BVPP7SYM,1193
+shoal/tangs.py,sha256=R_SMqtPlqBVFMOTFhCa9D_ooAKYTBvwiU2jAhR-xjdE,909
+shoal-0.1.0.dist-info/LICENSE,sha256=6BEhl-fpSLPiesxz-36Fh4cpdMLfbgBwMPvDh3Yayuc,1066
+shoal-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+shoal-0.1.0.dist-info/METADATA,sha256=rNiQWA0quxhYQ-bzd3z3oPvDN0muUAcKPGLdFVcFOjU,3559
+shoal-0.1.0.dist-info/RECORD,,
