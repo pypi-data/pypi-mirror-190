@@ -1,0 +1,3 @@
+<server lobbyname="Lobby" default_role="Player" boot="" >
+  <service port="6774" />
+</server>
