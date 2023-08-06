@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: demon-gptcli
+Version: 0.1.1
+Summary: CLI interface to OpenAI's GPT-3 based on DaVinci Model.
+License: GPLv3.0
+Author: DemonKingSwarn
+Author-email: rockingswarn@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: openai (>=0.26.5,<0.27.0)
+Description-Content-Type: text/plain
+
+
