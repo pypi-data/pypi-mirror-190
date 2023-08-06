@@ -1,0 +1,9 @@
+directory/__init__.py,sha256=ry5O5SW74ugwOUMKSV2_LbWjYa8B0IEvUm7S-lHPA2c,23
+directory/procedures.py,sha256=lV89xxxR5dcQ7tQaVMOhRiTFUaKbELe_wkT-8nWlW_0,11420
+directory/settings.py,sha256=FsG_Fr_Kuz35RL0MEf9TaxocEPOabUeWeJfsxdjKDcU,1108
+directory/test_procedures.py,sha256=zb2ThmTlB0Lt6PewCstnNheCPk-wo6yG-TgP9E4rxXA,1735
+sysnet_ident-1.0.0.dist-info/LICENSE.md,sha256=YFtyd777_YKGM3WflbnNBiV7do6wx92gDSShXhg7Ihs,12425
+sysnet_ident-1.0.0.dist-info/METADATA,sha256=dSsyLj6MZpOc6XveN8ZBvg4oT8_-6LDLr362jP4_XW0,16412
+sysnet_ident-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sysnet_ident-1.0.0.dist-info/top_level.txt,sha256=H9xnnMY9OhJSyN2YS8Vd4xukUOXX2BisRoOIWs0jadw,10
+sysnet_ident-1.0.0.dist-info/RECORD,,
