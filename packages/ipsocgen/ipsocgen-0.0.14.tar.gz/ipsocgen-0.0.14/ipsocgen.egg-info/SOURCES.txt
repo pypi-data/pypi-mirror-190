@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ipsocgen/__init__.py
+ipsocgen/constants.py
+ipsocgen/ipsocgen_cli.py
+ipsocgen.egg-info/PKG-INFO
+ipsocgen.egg-info/SOURCES.txt
+ipsocgen.egg-info/dependency_links.txt
+ipsocgen.egg-info/entry_points.txt
+ipsocgen.egg-info/requires.txt
+ipsocgen.egg-info/top_level.txt
