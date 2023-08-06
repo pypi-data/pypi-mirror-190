@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "trifle"
+version = "0.1.0"
+license = "MIT"
+description = "Generate docker images using Python"
+authors = ["Maxwell Koo <mjkoo90@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/mjkoo/trifle"
+repository = "https://github.com/mjkoo/trifle"
+keywords = ["docker", "oci", "container", "build"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

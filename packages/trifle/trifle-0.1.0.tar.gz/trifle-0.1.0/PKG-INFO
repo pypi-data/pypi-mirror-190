@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: trifle
+Version: 0.1.0
+Summary: Generate docker images using Python
+Home-page: https://github.com/mjkoo/trifle
+License: MIT
+Keywords: docker,oci,container,build
+Author: Maxwell Koo
+Author-email: mjkoo90@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Project-URL: Repository, https://github.com/mjkoo/trifle
+Description-Content-Type: text/markdown
+
+# Trifle
+
+Generate docker images using Python.
+
+WIP, more info to come.
+
