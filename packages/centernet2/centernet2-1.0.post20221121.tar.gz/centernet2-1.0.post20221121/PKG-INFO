@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: centernet2
+Version: 1.0.post20221121
+Summary: CenterNet2 python package
+Home-page: https://github.com/xingyizhou/CenterNet2
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+## CenterNet2 python package
+
+Note: This is unofficial. I add a setup.py to publish this package including add commit date to version and etc.
