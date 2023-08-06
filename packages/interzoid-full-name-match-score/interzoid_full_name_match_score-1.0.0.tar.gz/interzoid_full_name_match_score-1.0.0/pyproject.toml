@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "interzoid_full_name_match_score"
+version = "1.0.0"
+authors = [
+  { name="Interzoid", email="support@interzoid.com" },
+]
+description = "Provides an AI-based match score as to how likely two person names are the same."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://www.interzoid.com/apis/individual-match-score"
