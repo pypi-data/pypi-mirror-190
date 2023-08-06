@@ -1,0 +1,10 @@
+sw_product_lib/__init__.py,sha256=u0iklMaOU6vgW3v-lOQUxThfgJ3xAT_EBzzhIEMDmVY,87
+sw_product_lib/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sw_product_lib/client/backend.py,sha256=1fllp1D_PdAbLKBp0s2zHGxFJYMc4OlVJE16QFu8Uxk,8890
+sw_product_lib/client/billing.py,sha256=2Os-gucPF_LPV5KSCply7BR-uQwlUSDO711TfGy3Vag,3885
+sw_product_lib/client/job.py,sha256=nHpNA83cdwRPQgFJUPvj_bhYUM022GXuvZyBtpgIi5g,17663
+sw_product_lib/client/resource.py,sha256=vQ85Uc83GVLVKs8WlD9zv1J0zUe7zPtJuZjqfY-HDeY,8702
+sw_product_lib/service.py,sha256=csQLXpKgLIMQlTr_Is_dxNWdsciqPghZf90rESJDtX8,14733
+sw_product_lib-0.5.0rc1.dist-info/METADATA,sha256=C4g6cFMAndXuk1Ol3rwRupLRnxjzBaVI9BDh5qsUFwI,886
+sw_product_lib-0.5.0rc1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sw_product_lib-0.5.0rc1.dist-info/RECORD,,
