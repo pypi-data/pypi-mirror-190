@@ -1,0 +1,37 @@
+{% load base_taglib %}
+
+{# The following only displays for developers #}
+{% if is_developer %}
+
+    {# ToDo: Find a way to include items from supplemental plugins to this menu #}
+
+    <div class="dropdown float-right">
+        <button class="dropbtn">
+            <span class="fa fa-cog xlg" title="Developer Menu"></span>
+            <i class="fa fa-caret-down" title="Expand" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-content">
+            <div class="menu-top">
+                <span style="font-weight: bold;">{%app_name%}</span>
+                <span onclick="window.open('{%url 'psu:versions'%}');" style="cursor:pointer;" class="float-right">
+                    {%app_version%}
+                </span>
+            </div>
+
+            {% header_nav_menu_item url="psu:test" label="Status Page" icon="fa-medkit" %}
+            {% header_nav_menu_item url="psu:finti" label="Finti Interface" icon="fa-laptop" %}
+            {% header_nav_menu_item url="psu:session" label="Session Contents" icon="fa-microchip" %}
+            {% header_nav_menu_item url="psu:features" label="Feature Toggles" icon="fa-plug" %}
+            {% header_nav_menu_item url="psu:emails" label="Email Log" icon="fa-envelope-o" %}
+            {% header_nav_menu_item url="psu:email" label="Send Test Email" icon="fa-paper-plane-o" %}
+            {% header_nav_menu_item url="psu:audit" label="Audit Events" icon="fa-id-card-o" %}
+            {% header_nav_menu_item url="psu:audit_xss" label="XSS Attempts" icon="fa-user-secret" %}
+
+            {%check_feature 'admin_script'%}
+            {%if admin_script_enabled%}
+                {% header_nav_menu_item url="psu:scripts" label="Admin Script" icon="fa-code" %}
+            {%endif%}
+        </div>
+    </div>
+
+{% endif %}
