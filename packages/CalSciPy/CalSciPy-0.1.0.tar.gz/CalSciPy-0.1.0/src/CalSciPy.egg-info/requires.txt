@@ -1,0 +1,8 @@
+imageio
+imageio[ffmpeg]
+numpy
+pillow
+PPVD
+prettytable
+tifffile
+tqdm
