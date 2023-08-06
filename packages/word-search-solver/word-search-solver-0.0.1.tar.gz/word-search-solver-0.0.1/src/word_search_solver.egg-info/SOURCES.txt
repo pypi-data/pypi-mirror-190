@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/word_search/__init__.py
+src/word_search/solver.py
+src/word_search_solver.egg-info/PKG-INFO
+src/word_search_solver.egg-info/SOURCES.txt
+src/word_search_solver.egg-info/dependency_links.txt
+src/word_search_solver.egg-info/top_level.txt
