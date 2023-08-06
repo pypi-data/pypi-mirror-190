@@ -1,0 +1,11 @@
+igl/__init__.py,sha256=5_CclkN-7vBtlzbr-uQTG9N0FLx0J8enGYyQ9MX_Jfo,111
+igl/_version.py,sha256=yWHJCD_hf9X5yXnCZlBXlISsGXKJ60iR5naN2xiMJwE,26
+igl/helpers.py,sha256=bO4T9yhY0fE7Y_O_08kAzkkEpvCXxKPWhCjnzE3C1zs,2086
+igl/pyigl.cp311-win_amd64.pyd,sha256=nvLqxB4Gl2R_TejZ1exrX-H9bxoxiCre3ifisNNO6Sk,32291840
+igl/pyigl_classes.cp311-win_amd64.pyd,sha256=j0wiJ0cx4Od7ca_83V8OILCKXryLwQ7jEZMA2wulxbs,688640
+igl/pyigl_copyleft_cgal.cp311-win_amd64.pyd,sha256=lTXJNps2qbmeKmycHLfb5_bUUpbXo_jocGs8PBWw8WA,2075648
+igl/copyleft/cgal/__init__.py,sha256=NJ2qNq7xwEOa5a4Ra09v8ADkIgrNvBjz6whcz3C0QPk,34
+libigl-2.5.0.dev0.dist-info/METADATA,sha256=sj946Fi9evwVSFyDS3bodg4ATyJFD48gCN1Z45UcsUw,2196
+libigl-2.5.0.dev0.dist-info/WHEEL,sha256=wklNeoByNLhdCl-oEQTdaHIeDl4q9zaQVqAlPxUEgLU,102
+libigl-2.5.0.dev0.dist-info/top_level.txt,sha256=TF1tYDKDOv891WW8VMKHYFbUMW0bi_1a2OKWpZzoVUQ,10
+libigl-2.5.0.dev0.dist-info/RECORD,,
