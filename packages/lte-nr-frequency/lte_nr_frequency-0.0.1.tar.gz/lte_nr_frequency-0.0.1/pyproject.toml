@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lte-nr-frequency"
+version = "0.0.1"
+authors = [
+    { name="Rulin Xing", email="xingrulin@gmail.com" },
+    { name="Wang Xiang", email="ramwin@qq.com" },
+]
+description = "A python package to calculate the lte and nr frequency"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pandas",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/aloha9876/LTE_NR_Frequency"
