@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mathactive
+Version: 0.0.1
+Summary: Conversational math active learning.
+License: AGPLv3
+Author: hobs
+Author-email: hobson@totalgood.com
+Requires-Python: >=3.7,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.89.1,<0.90.0)
+Requires-Dist: jupyter (>=1.0,<2.0)
+Requires-Dist: pandas (>=1.5,<2.0)
+Requires-Dist: scikit-learn (>=1.2,<2.0)
+Requires-Dist: spacy (>=3.5.0,<4.0.0)
