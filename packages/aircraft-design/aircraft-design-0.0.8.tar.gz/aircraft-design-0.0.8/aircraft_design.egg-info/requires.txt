@@ -1,0 +1,5 @@
+avlwrapper
+matplotlib
+numpy
+requests
+scipy
