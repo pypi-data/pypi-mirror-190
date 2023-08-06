@@ -1,0 +1,9 @@
+kopisapi/__init__.py,sha256=VUm-XDJsAscNToyfuklRahxUpJXSqjB_2MblkP0x0Ok,3038
+kopisapi/constants.py,sha256=qf3-ECiWiG6evBBQ4_nQg8gmBC-wFZNYZT-EC4FMU-s,909
+kopisapi/get_request.py,sha256=2PzVttTv8GD43ktRC4IQQeGhLmn4qxjNGTIQDSa7GLM,760
+kopisapi/kopis_api_requester.py,sha256=TIxvA-dRWC7gcxNflzBiq8amzC83Esky1bvImZJTPMA,2698
+kopisapi/parser.py,sha256=8Qbdi4zu0n3ANVz5fItQSQ_aHr3QId_I9PKb0emN6HM,1166
+kopisapi-0.1.2.dist-info/METADATA,sha256=2jlhveOLwrcbXgEpWnQw0hpqNmj6xYpK5xZ48Tjna88,364
+kopisapi-0.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+kopisapi-0.1.2.dist-info/top_level.txt,sha256=neRUOR5jji-BTWpSWlz468dPjgk-3BHq9T0uKCWuTYA,9
+kopisapi-0.1.2.dist-info/RECORD,,
