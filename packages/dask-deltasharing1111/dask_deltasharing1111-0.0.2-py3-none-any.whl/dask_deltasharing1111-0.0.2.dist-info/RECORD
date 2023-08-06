@@ -1,0 +1,7 @@
+setup.py,sha256=mQMRGjb6pOGMfcYn713uKjsmeQZYzeufgPM5vZLAnZ8,119
+dask_deltasharing/__init__.py,sha256=8irAI4044pzBi5Idq54-QWDCMQUib69KIEsL5tVMFgc,92
+dask_deltasharing/dask_deltasharing.py,sha256=ChAD_LPLZvU8cbLrPWjMiDlViV1uFSZsQsONFuNdXKM,8573
+demo/incremental.py,sha256=yeBHxjV06sdqkkxI_Fv8TW0clpaYsTxWgGlGqT8S3Wc,9162
+dask_deltasharing1111-0.0.2.dist-info/METADATA,sha256=f5-1pm3I76CDaQ7vV5EiAjsjpv1fQqEqWwHGLF9sq2E,861
+dask_deltasharing1111-0.0.2.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+dask_deltasharing1111-0.0.2.dist-info/RECORD,,
