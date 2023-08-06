@@ -1,0 +1,4 @@
+[console_scripts]
+DrPlotter=drtransformer.plotting:main
+DrTransformer=drtransformer.drtransformer:main
+
