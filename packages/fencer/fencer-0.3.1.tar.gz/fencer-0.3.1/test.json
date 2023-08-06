@@ -1,0 +1,3748 @@
+{
+  "paths": {
+    "/api/v2/forecast": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dataset"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dataset"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adjustments"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/shares-totals": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SharesTotals"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SharesTotals"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adjustments"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/scenario/{scenario_id}/shares-totals": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SharesTotals"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "parameters": [
+        {
+          "in": "path",
+          "name": "scenario_id",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      ]
+    },
+    "/api/v2/daily-breakdown": {
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DailyBreakdown"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adjustments"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/raw_export": {
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK"
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adjustments"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/raw_export_fulfilment": {
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK"
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adjustments"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/new-store": {
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dataset"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adjustments"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/new-store-shares-totals": {
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SharesTotals"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adjustments"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/year-end-trend": {
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/YearEndTrend"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adjustments"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/countries": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LabelValue"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/countries/{country_code}/markets": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Markets"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "parameters": [
+        {
+          "in": "path",
+          "name": "country_code",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      ]
+    },
+    "/api/v2/markets": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Markets"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/ranges": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LabelValue"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/periods": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LabelValue"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/hfbs": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LabelValue"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/dimensions": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdjustmentDimensions"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/scenario-statuses": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LabelValue"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/scenario-submission-date-codes": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LabelValue"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/user": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "summary": "get basic user info (test_user if no authorization)",
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/scenarios": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "exclude_all_markets",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "market_name",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "proposed_submission_date",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "status",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "sort_field",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "sort_time",
+              "enum": [
+                "scenario_name",
+                "financial_year",
+                "sort_time",
+                "id",
+                "range",
+                "name",
+                "hfo_total",
+                "ifs_total",
+                "prs_total",
+                "proposed_submission_date",
+                "status",
+                "market_name"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "order",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "desc",
+              "enum": [
+                "asc",
+                "desc"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "per_page",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "page",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "financial_year",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SavedScenarios"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "summary": "retrieve all scenarios",
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "post": {
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "201": {
+            "description": "Created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ScenarioCreated"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaveNewScenario"
+              }
+            }
+          }
+        },
+        "summary": "save current scenario",
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/scenario/{scenario_id}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SavedScenario"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "put": {
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SavedScenario"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateScenario"
+              }
+            }
+          }
+        },
+        "summary": "update given scenario",
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "delete": {
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "parameters": [
+        {
+          "in": "path",
+          "name": "scenario_id",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      ]
+    },
+    "/api/v2/scenario/{scenario_id}/dataset": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetWithAdjustments"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "parameters": [
+        {
+          "in": "path",
+          "name": "scenario_id",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      ]
+    },
+    "/api/v2/market-breakdown": {
+      "post": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "similar_store_2",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_1",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "hfo_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "ifs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "prs_total",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "similar_store_3",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "in": "query",
+            "name": "business",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MarketBreakdownPerMarket"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Adjustments"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/scenario/market-aggregation": {
+      "post": {
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "202": {
+            "description": "Accepted",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunningJob"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MarketAggregationRequest"
+              }
+            }
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      }
+    },
+    "/api/v2/job/{job_id}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunningJob"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "parameters": [
+        {
+          "in": "path",
+          "name": "job_id",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      ]
+    },
+    "/api/v2/aggregated-scenario/{scenario_id}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "retail",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "range",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "fulfilment_flow",
+                "hfb_breakdown",
+                "hfb_flow",
+                "daily_breakdown",
+                "sales_channels"
+              ]
+            }
+          },
+          {
+            "in": "query",
+            "name": "period",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "frequency",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "MONTH",
+              "enum": [
+                "DAY",
+                "WEEK",
+                "MONTH",
+                "TERTIAL",
+                "YEAR"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "422": {
+            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
+          },
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AggregatedDataset"
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "parameters": [
+        {
+          "in": "path",
+          "name": "scenario_id",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      ]
+    },
+    "/api/v2/job_list/{ru_code}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RunningJob"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DEFAULT_ERROR"
+          }
+        },
+        "tags": [
+          "api_v2"
+        ]
+      },
+      "parameters": [
+        {
+          "in": "path",
+          "name": "ru_code",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      ]
+    }
+  },
+  "info": {
+    "title": "Framtid API",
+    "version": "v1"
+  },
+  "tags": [
+    {
+      "name": "api_v2",
+      "description": ""
+    }
+  ],
+  "openapi": "3.0.3",
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "Error code"
+          },
+          "message": {
+            "type": "string",
+            "description": "Error message"
+          },
+          "status": {
+            "type": "string",
+            "description": "Error name"
+          },
+          "errors": {
+            "type": "object",
+            "description": "Errors"
+          }
+        }
+      },
+      "PaginationMetadata": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "integer"
+          },
+          "total_pages": {
+            "type": "integer"
+          },
+          "first_page": {
+            "type": "integer"
+          },
+          "last_page": {
+            "type": "integer"
+          },
+          "page": {
+            "type": "integer"
+          },
+          "previous_page": {
+            "type": "integer"
+          },
+          "next_page": {
+            "type": "integer"
+          }
+        }
+      },
+      "Columns": {
+        "type": "object",
+        "properties": {
+          "first_row": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "second_row": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "first_row",
+          "second_row"
+        ]
+      },
+      "Dataset": {
+        "type": "object",
+        "properties": {
+          "prs_data": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "market_unit_name": {
+            "type": "string"
+          },
+          "retail_unit_name": {
+            "type": "string"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "columns": {
+            "$ref": "#/components/schemas/Columns"
+          },
+          "ifs_data": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "market_unit": {
+            "type": "string"
+          },
+          "last_actual": {
+            "type": "string",
+            "format": "date"
+          },
+          "format": {
+            "type": "string"
+          },
+          "range_structure": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "adjustments_error": {
+            "type": "string"
+          },
+          "retail_unit": {
+            "type": "string"
+          },
+          "frequency": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "format",
+          "frequency",
+          "market_unit",
+          "market_unit_name",
+          "period",
+          "range_structure",
+          "retail_unit",
+          "retail_unit_name"
+        ]
+      },
+      "DateRange": {
+        "type": "object",
+        "properties": {
+          "start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "forecast_period": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "forecast-period",
+              "specific-dates"
+            ]
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "Adjustment": {
+        "type": "object",
+        "properties": {
+          "notes": {
+            "type": "string"
+          },
+          "cannibalizing": {
+            "type": "boolean"
+          },
+          "date_range": {
+            "$ref": "#/components/schemas/DateRange"
+          },
+          "apply_to": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "filters": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "target_value": {
+            "type": "object"
+          },
+          "adjustment_type": {
+            "type": "string",
+            "enum": [
+              "absolute",
+              "individual-share",
+              "shares",
+              "ratio_complete"
+            ]
+          },
+          "apply": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "adjustment_type",
+          "apply",
+          "apply_to",
+          "date_range",
+          "name"
+        ]
+      },
+      "Adjustments": {
+        "type": "object",
+        "properties": {
+          "adjustments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adjustment"
+            }
+          }
+        },
+        "required": [
+          "adjustments"
+        ]
+      },
+      "Share": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "value"
+        ]
+      },
+      "Shares": {
+        "type": "object",
+        "properties": {
+          "totals": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Share"
+            }
+          },
+          "hfbs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Share"
+            }
+          },
+          "sales_channels": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Share"
+            }
+          },
+          "flows": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Share"
+            }
+          }
+        },
+        "required": [
+          "flows",
+          "hfbs",
+          "sales_channels",
+          "totals"
+        ]
+      },
+      "SimilarStores": {
+        "type": "object",
+        "properties": {
+          "similar_store_1": {
+            "type": "string"
+          },
+          "similar_store_3": {
+            "type": "string"
+          },
+          "similar_store_2": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "similar_store_1"
+        ]
+      },
+      "SharesTotals": {
+        "type": "object",
+        "properties": {
+          "shares": {
+            "$ref": "#/components/schemas/Shares"
+          },
+          "hfo_total": {
+            "type": "number"
+          },
+          "food_total": {
+            "type": "number"
+          },
+          "services_total": {
+            "type": "number"
+          },
+          "total": {
+            "type": "number"
+          },
+          "similar_stores": {
+            "$ref": "#/components/schemas/SimilarStores"
+          }
+        },
+        "required": [
+          "food_total",
+          "hfo_total",
+          "services_total",
+          "shares",
+          "total"
+        ]
+      },
+      "DailyBreakdownDaySalesIndex": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "number"
+          },
+          "sales": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "index",
+          "sales"
+        ]
+      },
+      "DailyBreakdownWeekdays": {
+        "type": "object",
+        "properties": {
+          "Total": {
+            "$ref": "#/components/schemas/DailyBreakdownDaySalesIndex"
+          },
+          "Thursday": {
+            "$ref": "#/components/schemas/DailyBreakdownDaySalesIndex"
+          },
+          "business_date": {
+            "type": "string"
+          },
+          "Wednesday": {
+            "$ref": "#/components/schemas/DailyBreakdownDaySalesIndex"
+          },
+          "Saturday": {
+            "$ref": "#/components/schemas/DailyBreakdownDaySalesIndex"
+          },
+          "Sunday": {
+            "$ref": "#/components/schemas/DailyBreakdownDaySalesIndex"
+          },
+          "Tuesday": {
+            "$ref": "#/components/schemas/DailyBreakdownDaySalesIndex"
+          },
+          "Friday": {
+            "$ref": "#/components/schemas/DailyBreakdownDaySalesIndex"
+          },
+          "Monday": {
+            "$ref": "#/components/schemas/DailyBreakdownDaySalesIndex"
+          }
+        },
+        "required": [
+          "Friday",
+          "Monday",
+          "Saturday",
+          "Sunday",
+          "Thursday",
+          "Total",
+          "Tuesday",
+          "Wednesday",
+          "business_date"
+        ]
+      },
+      "DailyBreakdown": {
+        "type": "object",
+        "properties": {
+          "last_actual": {
+            "type": "string",
+            "format": "date"
+          },
+          "daily_ifs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DailyBreakdownWeekdays"
+            }
+          },
+          "daily": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DailyBreakdownWeekdays"
+            }
+          },
+          "monthly": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DailyBreakdownWeekdays"
+            }
+          },
+          "monthly_prs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DailyBreakdownWeekdays"
+            }
+          },
+          "daily_prs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DailyBreakdownWeekdays"
+            }
+          },
+          "monthly_ifs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DailyBreakdownWeekdays"
+            }
+          }
+        },
+        "required": [
+          "daily",
+          "daily_ifs",
+          "daily_prs",
+          "monthly",
+          "monthly_ifs",
+          "monthly_prs"
+        ]
+      },
+      "YearEndTrendDataPointTrends": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "integer"
+          },
+          "window_size": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "value",
+          "window_size"
+        ]
+      },
+      "YearEndTrendDataPoint": {
+        "type": "object",
+        "properties": {
+          "trends": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/YearEndTrendDataPointTrends"
+            }
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "required": [
+          "date",
+          "trends"
+        ]
+      },
+      "YearEndTrend": {
+        "type": "object",
+        "properties": {
+          "ifs_trend_values": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/YearEndTrendDataPoint"
+            }
+          },
+          "last_actual": {
+            "type": "string",
+            "format": "date"
+          },
+          "year_end_trend": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/YearEndTrendDataPoint"
+            }
+          },
+          "prs_trend_values": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/YearEndTrendDataPoint"
+            }
+          },
+          "scenario_total": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "ifs_trend_values",
+          "last_actual",
+          "prs_trend_values",
+          "scenario_total",
+          "year_end_trend"
+        ]
+      },
+      "LabelValue": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "value"
+        ]
+      },
+      "Market": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "has_data": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "string"
+          },
+          "full_name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "country",
+          "full_name",
+          "has_data",
+          "label",
+          "value"
+        ]
+      },
+      "Markets": {
+        "type": "object",
+        "properties": {
+          "markets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Market"
+            }
+          }
+        },
+        "required": [
+          "markets"
+        ]
+      },
+      "AdjustmentDimension": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "internal_id": {
+            "type": "string"
+          },
+          "dimension": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "dimension",
+          "id",
+          "internal_id",
+          "name"
+        ]
+      },
+      "AdjustmentDimensions": {
+        "type": "object",
+        "properties": {
+          "dimensions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AdjustmentDimension"
+            }
+          }
+        },
+        "required": [
+          "dimensions"
+        ]
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "country": {
+            "type": "string"
+          },
+          "job_title": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "first_name": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "country",
+          "first_name",
+          "id",
+          "job_title",
+          "last_name"
+        ]
+      },
+      "StoreScenarioSelection": {
+        "type": "object",
+        "properties": {
+          "scenario_id": {
+            "type": "integer"
+          },
+          "store_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "scenario_id",
+          "store_id"
+        ]
+      },
+      "ScenarioProperties": {
+        "type": "object",
+        "properties": {
+          "ifs_total": {
+            "type": "number"
+          },
+          "hfo_total": {
+            "type": "number"
+          },
+          "proposed_submission_date": {
+            "type": "string"
+          },
+          "prs_total": {
+            "type": "number"
+          },
+          "adjustments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adjustment"
+            }
+          },
+          "starred": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string"
+          },
+          "aggregation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StoreScenarioSelection"
+            }
+          }
+        },
+        "required": [
+          "adjustments",
+          "hfo_total",
+          "ifs_total",
+          "proposed_submission_date",
+          "prs_total",
+          "starred",
+          "status"
+        ]
+      },
+      "ScenarioEditorBy": {
+        "type": "object",
+        "properties": {
+          "last_name": {
+            "type": "string"
+          },
+          "first_name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "first_name",
+          "id",
+          "last_name"
+        ]
+      },
+      "SavedScenario": {
+        "type": "object",
+        "properties": {
+          "ru_name": {
+            "type": "string"
+          },
+          "properties": {
+            "$ref": "#/components/schemas/ScenarioProperties"
+          },
+          "market_name": {
+            "type": "string"
+          },
+          "market_code": {
+            "type": "string"
+          },
+          "sort_time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "ru_code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "range_structure": {
+            "type": "string"
+          },
+          "created_by": {
+            "$ref": "#/components/schemas/ScenarioEditorBy"
+          },
+          "updated_by": {
+            "$ref": "#/components/schemas/ScenarioEditorBy"
+          },
+          "financial_year": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "created_by",
+          "financial_year",
+          "id",
+          "market_code",
+          "market_name",
+          "name",
+          "properties",
+          "range_structure",
+          "ru_code",
+          "ru_name",
+          "sort_time"
+        ]
+      },
+      "SavedScenarios": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "integer"
+          },
+          "scenarios": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SavedScenario"
+            }
+          }
+        },
+        "required": [
+          "count",
+          "scenarios"
+        ]
+      },
+      "SaveNewScenario": {
+        "type": "object",
+        "properties": {
+          "similar_store_2": {
+            "type": "string",
+            "nullable": true
+          },
+          "retail": {
+            "type": "string"
+          },
+          "hfo_total": {
+            "type": "integer"
+          },
+          "range": {
+            "type": "string"
+          },
+          "ifs_total": {
+            "type": "integer"
+          },
+          "proposed_submission_date": {
+            "type": "string"
+          },
+          "similar_store_1": {
+            "type": "string",
+            "nullable": true
+          },
+          "prs_total": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "similar_store_3": {
+            "type": "string",
+            "nullable": true
+          },
+          "business": {
+            "type": "string"
+          },
+          "adjustments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adjustment"
+            }
+          },
+          "period": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "is_auto_generated": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "business",
+          "hfo_total",
+          "ifs_total",
+          "period",
+          "prs_total",
+          "range",
+          "retail"
+        ]
+      },
+      "ScenarioCreated": {
+        "type": "object",
+        "properties": {
+          "scenario_id": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "scenario_id"
+        ]
+      },
+      "UpdateScenario": {
+        "type": "object",
+        "properties": {
+          "retail": {
+            "type": "string"
+          },
+          "hfo_total": {
+            "type": "integer"
+          },
+          "range": {
+            "type": "string"
+          },
+          "ifs_total": {
+            "type": "integer"
+          },
+          "proposed_submission_date": {
+            "type": "string"
+          },
+          "prs_total": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "business": {
+            "type": "string"
+          },
+          "adjustments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adjustment"
+            }
+          },
+          "starred": {
+            "type": "boolean"
+          },
+          "period": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "AdjustmentWithIds": {
+        "type": "object",
+        "properties": {
+          "notes": {
+            "type": "string"
+          },
+          "cannibalizing": {
+            "type": "boolean"
+          },
+          "date_range": {
+            "$ref": "#/components/schemas/DateRange"
+          },
+          "apply_to": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string"
+          },
+          "filters": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "target_value": {
+            "type": "object"
+          },
+          "adjustment_type": {
+            "type": "string",
+            "enum": [
+              "absolute",
+              "individual-share",
+              "shares",
+              "ratio_complete"
+            ]
+          },
+          "apply": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "adjustment_type",
+          "apply",
+          "apply_to",
+          "date_range",
+          "id",
+          "name"
+        ]
+      },
+      "DatasetWithAdjustments": {
+        "type": "object",
+        "properties": {
+          "prs_data": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "market_unit_name": {
+            "type": "string"
+          },
+          "retail_unit_name": {
+            "type": "string"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "columns": {
+            "$ref": "#/components/schemas/Columns"
+          },
+          "ifs_data": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "market_unit": {
+            "type": "string"
+          },
+          "last_actual": {
+            "type": "string",
+            "format": "date"
+          },
+          "format": {
+            "type": "string"
+          },
+          "range_structure": {
+            "type": "string"
+          },
+          "adjustments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AdjustmentWithIds"
+            }
+          },
+          "period": {
+            "type": "string"
+          },
+          "adjustments_error": {
+            "type": "string"
+          },
+          "retail_unit": {
+            "type": "string"
+          },
+          "frequency": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "adjustments",
+          "format",
+          "frequency",
+          "market_unit",
+          "market_unit_name",
+          "period",
+          "range_structure",
+          "retail_unit",
+          "retail_unit_name"
+        ]
+      },
+      "MarketBreakdownDataPoint": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "integer"
+          },
+          "code": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "title",
+          "value"
+        ]
+      },
+      "MarketBreakdownData": {
+        "type": "object",
+        "properties": {
+          "totals": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MarketBreakdownDataPoint"
+            }
+          },
+          "hfbs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MarketBreakdownDataPoint"
+            }
+          },
+          "sales_channels": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MarketBreakdownDataPoint"
+            }
+          },
+          "flows": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MarketBreakdownDataPoint"
+            }
+          }
+        },
+        "required": [
+          "flows",
+          "hfbs",
+          "sales_channels",
+          "totals"
+        ]
+      },
+      "MarketBreakdownPerMarket": {
+        "type": "object",
+        "properties": {
+          "market_name": {
+            "type": "string"
+          },
+          "breakdown": {
+            "$ref": "#/components/schemas/MarketBreakdownData"
+          },
+          "market": {
+            "type": "string"
+          },
+          "adjustment_payloads": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AdjustmentWithIds"
+            }
+          }
+        },
+        "required": [
+          "adjustment_payloads",
+          "breakdown",
+          "market",
+          "market_name"
+        ]
+      },
+      "AggregationRequest": {
+        "type": "object",
+        "properties": {
+          "scenario_id": {
+            "type": "integer"
+          },
+          "market_code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "market_code",
+          "scenario_id"
+        ]
+      },
+      "MarketAggregationRequest": {
+        "type": "object",
+        "properties": {
+          "retail": {
+            "type": "string"
+          },
+          "range": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "aggregation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AggregationRequest"
+            }
+          }
+        },
+        "required": [
+          "aggregation",
+          "period",
+          "range",
+          "retail"
+        ]
+      },
+      "RunningJob": {
+        "type": "object",
+        "properties": {
+          "scenario_id": {
+            "type": "integer"
+          },
+          "job_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "submitted",
+              "started",
+              "running",
+              "failed",
+              "not_found"
+            ]
+          },
+          "created": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "created",
+          "job_id",
+          "status"
+        ]
+      },
+      "AggregatedDataset": {
+        "type": "object",
+        "properties": {
+          "prs_data": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "retail_unit_name": {
+            "type": "string"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "columns": {
+            "$ref": "#/components/schemas/Columns"
+          },
+          "ifs_data": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "last_actual": {
+            "type": "string",
+            "format": "date"
+          },
+          "format": {
+            "type": "string"
+          },
+          "range_structure": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "aggregated_scenario_id": {
+            "type": "integer"
+          },
+          "retail_unit": {
+            "type": "string"
+          },
+          "frequency": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "aggregated_scenario_id",
+          "format",
+          "frequency",
+          "period",
+          "range_structure",
+          "retail_unit",
+          "retail_unit_name"
+        ]
+      }
+    },
+    "responses": {
+      "UNPROCESSABLE_ENTITY": {
+        "description": "Unprocessable Entity",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "DEFAULT_ERROR": {
+        "description": "Default error response",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      }
+    }
+  }
+}
