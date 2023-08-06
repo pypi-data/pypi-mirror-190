@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+FedDCM.egg-info/PKG-INFO
+FedDCM.egg-info/SOURCES.txt
+FedDCM.egg-info/dependency_links.txt
+FedDCM.egg-info/top_level.txt
+FedDCM1/__init__.py
+FedDCM1/client_matrix.py
+FedDCM1/client_single.py
+FedDCM1/dcm.py
+FedDCM1/functions.py
+FedDCM1/server.py

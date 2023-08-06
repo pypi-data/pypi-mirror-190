@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: FedDCM
+Version: 0.0.2
+Summary: Federated Discrete Choice Model
+Home-page: https://github.com/kx-36/FedDCM
+Author: hejunshu,chenkunxu
+Author-email: 2676133653@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# FedDCM
+
+This is a Federated Discrete Choice Model. You can use it to process travel data
+,such as the publicly available dataset Swiss Metro (https://biogeme.epfl.ch/data.html) 
+which is accessed on 9 August 2022
