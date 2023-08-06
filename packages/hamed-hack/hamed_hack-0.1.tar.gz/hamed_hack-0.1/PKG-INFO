@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hamed_hack
+Version: 0.1
+Summary: Simple library in python for test
+Author: hamed_sarhan
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
