@@ -1,0 +1,103 @@
+{% load base_taglib %}
+<div class="header-container">
+
+    {# External Links #}
+    <div class="header-links">
+        {% include '_components/header/external_links.html' %}
+    </div>
+
+    {# Unused Space #}
+    <div class="header-space">&nbsp;</div>
+
+    {# SSO Menu #}
+    <div class="header-menu" id="sso-menu">
+        {% include '_components/header/sso_menu.html' %}
+    </div>
+
+
+    {# PSU Logo #}
+    <div class="header-logo">
+        <picture>
+            <source srcset="{% static_content_url %}/images/psu_knot.png" media="(max-width: 768px)" class="psu-logo">
+            {% image src="psu_logo.png" alt="PSU Logo" class="psu-logo" %}
+        </picture>
+    </div>
+
+
+    {# Site Title #}
+    <div class="header-title">
+        {% include '_components/header/site_title.html' %}
+    </div>
+
+
+    {# Search Bar #}
+    <div class="header-search">
+        {% include '_components/header/search_bar.html' %}
+    </div>
+
+
+    {# Navigation Tabs #}
+    <div class="header-nav">
+        {% include '_components/header/nav_items.html' %}
+    </div>
+
+
+    <!-- Hamburger Icon -->
+    <div class="menu-responsive">
+        <a href="javascript:void(0);" class="icon nav-icon">
+            <i style="line-height:40px;font-size:1.2em;" class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<script>
+    // Show dropdown on click
+    $('.dropbtn').click(function(e) {
+        e.stopPropagation();  // prevents dropdown closed
+
+        var thisId = $(this).parents('.header-menu').attr('id');
+
+        // Find the other dropdowns
+        var otherDropdowns = $(this).parents('.header-right').find('.header-menu');
+
+        // Close any other open dropdowns
+        otherDropdowns.toArray().forEach(function (e) {
+            console.log(e)
+            if (e.id != thisId) {
+                console.log(e.id);
+                $('#'+e.id).find('.dropdown-content').hide();
+            }
+        })
+        $(this).siblings('.dropdown-content').toggle('medium');
+        // console.log('click!');
+    })
+
+    // Clicking an item in an open dropdown should not close the dropdown
+    $('.dropdown-content a').click(function(e) {
+        e.stopPropagation();
+    })
+    $(document).click( function(event) {
+        // Hides dropdown by clicking anywhere outside the dropdown
+        $('.dropdown-content:visible').toggle('slow');
+        resetDisplay();
+    });
+
+    $(window).on('resize', function(){
+        // $('.header-right').css('display', '');
+        // $('.dropdown-content').css('display', '');
+        resetDisplay();
+    });
+
+    $('.nav-icon').click(function(e) {
+        e.stopPropagation();
+
+        $('.header-right').toggle('medium');
+        $('.dropdown-content').delay(240).toggle('slow');
+        console.log('expandMenu! ' + $('.header-right').attr('class'));
+    });
+
+    var resetDisplay = function() {
+        $('.header-right').css('display', '');
+        $('.dropdown-content').css('display', '');
+    }
+</script>
