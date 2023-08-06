@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+palopdf.egg-info/PKG-INFO
+palopdf.egg-info/SOURCES.txt
+palopdf.egg-info/dependency_links.txt
+palopdf.egg-info/top_level.txt
