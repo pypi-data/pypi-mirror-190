@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sordid"
+version = "0.1.0"
+description = "This is just a small description"
+authors = ["François Proulx <francois@boostsecurity.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+twine = "^4.0.2"
+build = "^0.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
