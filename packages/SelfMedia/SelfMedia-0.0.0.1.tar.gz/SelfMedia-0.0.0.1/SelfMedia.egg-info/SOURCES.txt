@@ -1,0 +1,12 @@
+__.py
+SelfMedia.egg-info/PKG-INFO
+SelfMedia.egg-info/SOURCES.txt
+SelfMedia.egg-info/dependency_links.txt
+SelfMedia.egg-info/top_level.txt
+__/A_Roll.py
+__/_AI.py
+__/_Audio.py
+__/_Stamp.py
+__/_Texture.py
+__/__.py
+__/__init__.py
