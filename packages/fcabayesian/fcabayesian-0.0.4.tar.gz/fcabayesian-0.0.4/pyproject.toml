@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "fcaBayesian"
+version = "0.0.4"
+description = ""
+authors = ["JuanDiegoAvila <avi20090@uvg.edu.gt>", "Juan Angel Carrera <car20593@uvg.edu.gt>", "Diego Jose Franco <fra20240@uvg.edu.gt>"]
+readme = "README.md"
+packages = [{include = "fcaBayesian"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pgmpy = "^0.1.15"
+
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^7.33.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+fcaBayesian = 'fcaBayesian:main'
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "poetry build"
+dist_path = "dist/"
+upload_to_release = true
+upload_to_pypi = false
+remove_dist = false
+patch_without_tag = true
