@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ituscraper_py.egg-info/PKG-INFO
+ituscraper_py.egg-info/SOURCES.txt
+ituscraper_py.egg-info/dependency_links.txt
+ituscraper_py.egg-info/requires.txt
+ituscraper_py.egg-info/top_level.txt
+ituscraperpy/__init__.py
+ituscraperpy/sis/__init__.py
+ituscraperpy/sis/classes.py
+ituscraperpy/sis/scraper.py
