@@ -1,0 +1,9 @@
+HIT_network/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+HIT_network/draw_networks.py,sha256=4kFic7NlPSobELPD7HzZcMEkyP7ZjrK-anxZqa1yofQ,851
+HIT_network/random_networks.py,sha256=JfP8R0mahs3gILhou1Z95UhwHmcTDv2AUfRx6pCB8LQ,1051
+HIT_network/read_txt_networks.py,sha256=0YzWlC5GQGpi6w0Iz1goaWH5-CiBiMfaXZi0dbQEcbw,707
+HIT_network/scale_of_network.py,sha256=iRhWGXqSh6uU34d8tBTIgiiespekGYU6CCW5o5UCFrY,1698
+HIT_network-0.0.3.dist-info/METADATA,sha256=8Dubl2hK8IgDTGE7eUaJOETMwVFnO6REyzV1BA67I_g,450
+HIT_network-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+HIT_network-0.0.3.dist-info/top_level.txt,sha256=QQMRnRy_pDyZ4o7G8Ak3wfz2wf2a00Vu2-03_NmVv3U,12
+HIT_network-0.0.3.dist-info/RECORD,,
