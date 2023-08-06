@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fonema
+Version: 1.0.8
+Summary: Simple library, to transform names into phonemes in the Portuguese language of Brazil.
+Home-page: https://github.com/rodrigopmatias/fonema
+Author: Rodrigo Pinheiro Matias
+Author-email: rodrigopmatias@gmail.com
+License-File: LICENSE.txt
