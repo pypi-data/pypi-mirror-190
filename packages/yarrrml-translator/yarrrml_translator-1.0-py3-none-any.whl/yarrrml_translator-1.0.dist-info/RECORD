@@ -1,0 +1,15 @@
+yarrrml_translator/__init__.py,sha256=Fz3oHV4WanM-imCwLvagr8KKtTY36Dmjc9g80hOPeuc,4773
+yarrrml_translator/__main__.py,sha256=QsI9lce5gB6u9CEbKMA8bBkGzfwVVTBt6BaX_AXwb5Y,2851
+yarrrml_translator/constants.py,sha256=ypDlM6lAoOBWHHWDM9WO72zZ4FBts5t9Ud9V8cRM9oA,7560
+yarrrml_translator/function.py,sha256=jkfGygP7vSzxb2e0vefn1fnlv4GpgGVozKZWOp8Ovwk,6482
+yarrrml_translator/graph.py,sha256=OJQmmE9FQQ4ZxokVuqBvf60s9haQqCBCeQpdVTWCASk,473
+yarrrml_translator/mapping.py,sha256=3TlKMlWCOQ-es0zymkmZ8LfUoY-8YoyZDdA8V2ROUzc,4916
+yarrrml_translator/predicateobject.py,sha256=P9EkONqVvklaWP51D0Qz6uZW8SABVVGngYmvN-FVFc4,20392
+yarrrml_translator/source.py,sha256=TVKmpK8JYGqxhcbRzHw9yFQi-OwXPy_YhqyWDFUKdnE,13682
+yarrrml_translator/subject.py,sha256=PpIugQNjWMbI5XVl6Wx2uvwpIHJ6c8q2_IihoCOv07s,5689
+yarrrml_translator/target.py,sha256=MjACXwsanDmmQw6muVwLdavLiUIkLLD2-5SmSljHVmA,4434
+yarrrml_translator/termmap.py,sha256=8NakymLSYsiz_WkEGEWorcsjHq7MwCOzKtWeCH--6AQ,2466
+yarrrml_translator-1.0.dist-info/METADATA,sha256=n-7qTRBt67dGp1zmH-sWpDDxzlAn6X3x_WYqPyAbEhE,4217
+yarrrml_translator-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+yarrrml_translator-1.0.dist-info/top_level.txt,sha256=bkCRo7-r-C4Gwzrz4KgqZbmJULCIQkH2oHUrNkj6fM0,19
+yarrrml_translator-1.0.dist-info/RECORD,,
