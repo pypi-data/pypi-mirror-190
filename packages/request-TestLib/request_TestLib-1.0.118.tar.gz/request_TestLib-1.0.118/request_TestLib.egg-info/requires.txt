@@ -1,0 +1,8 @@
+colorama
+pyfiglet
+pyfiglet
+pygments
+pyperclip
+pyyaml
+requests
+termcolor
