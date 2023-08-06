@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: orbittools
+Version: 0.0.1
+Summary: Some tools to generate and manipulate orbit ephemeris of satellites, mostly aimed at low Earth orbit
+Project-URL: Homepage, https://gitlab.com/eelcodoornbos/orbittools/
+Project-URL: Bug Tracker, https://gitlab.com/eelcodoornbos/orbittools/-/issues
+Author-email: Eelco Doornbos <eelco.doornbos@knmi.nl>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# orbittools
+
+This is a simple python package for generating and manipulating orbit ephemeris, for satellites in low Earth orbit.
