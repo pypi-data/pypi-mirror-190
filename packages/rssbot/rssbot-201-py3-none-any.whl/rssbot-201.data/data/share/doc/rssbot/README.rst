@@ -1,0 +1,76 @@
+**NAME**
+
+
+``rssbot`` - feeding rss into your irc channel.
+
+
+**SYNOPSIS**
+
+
+| ``rssctl cfg server=<server> channel=<channel>``
+| ``rssctl rss <url>``
+|
+
+**INSTALL**
+
+
+| ``sudo python3 -m pip install rssbot``
+|
+
+**DESCRIPTION**
+
+
+``rssbot`` is a rss feed fetching bot, that runs under systemd as a 24/7
+background service and starts the bot after reboot. It is written in a
+static, only code, no popen, no imports and no reading
+modules from a directory, way to have it as secure as possible.
+
+``rssbot`` is a "only messenger bot" which means it only feeds rss into your
+irc channel and does not have commands that can be used in the channel. A
+seperate program is provided to do the actual configuration of the bot and
+other management function (like adding feed urls).
+
+
+github: <http://github.com/bthate/rssbot> pypi: <http://pypi.org/project/rssbot>
+
+
+**CONFIGURATION**
+
+
+*systemd*
+
+
+| ``sudo cp /usr/local/rssbot/rssbot.service /etc/systemd/system``
+| ``sudo systemctl enable rssbot --now``
+|
+| ``* default channel/server is #rssbot on localhost``
+| 
+
+*irc*
+
+
+| ``sudo rssctl cfg server=<server> channel=<channel>``
+| 
+
+*sasl*
+
+ 
+| ``sudo rssctl pwd <nickservnick> <nickservpass>``
+| ``sudo rssctl cfg password=<outputfrompwd>``
+|
+ 
+*rss*
+
+
+| ``sudo rssctl rss <url>``
+|
+
+**AUTHOR**
+
+
+| B.H.J Thate
+|
+
+**LICENSE**
+
+| ``rssbot`` is placed in the Public Domain.
