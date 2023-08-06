@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: basictokenizer
+Version: 0.0.3
+Summary: A basic and useful tokenizer.
+Home-page: UNKNOWN
+Author: UesleiDev
+Author-email: uesleibros@gmail.com
+License: MIT
+Description: A basic, fast, optimized, useful Tokenizer.
+Keywords: tokenizer, token,basic-tokenizer,basic,easy-and-useful
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
