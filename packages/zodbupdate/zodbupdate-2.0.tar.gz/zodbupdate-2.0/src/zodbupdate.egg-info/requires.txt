@@ -1,0 +1,9 @@
+ZODB
+setuptools
+transaction
+zodbpickle
+
+[test]
+persistent
+zope.interface
+relstorage
