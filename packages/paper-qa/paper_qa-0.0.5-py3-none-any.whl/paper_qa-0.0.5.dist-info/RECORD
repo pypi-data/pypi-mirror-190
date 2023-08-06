@@ -1,0 +1,11 @@
+paperqa/__init__.py,sha256=_nEEchMOP8GAnWNvsvEFj6M7MDw_rGkbyRNhU7-5Q9U,73
+paperqa/docs.py,sha256=TJX1w3OqmeE76550M3g6sBt9tYoS7c8o5dJ4M6XpBAA,5795
+paperqa/qaprompts.py,sha256=6a4jFpgMq-vPPt-AmoGy4wSrqcPh5-VFpa9x2WxR6wg,2025
+paperqa/readers.py,sha256=Ms73FHsbmuvV9hFerFiV8VpKK3MOPJW-NbSqAa9NsL4,1930
+paperqa/utils.py,sha256=v8AvMnoX61lSlJ_mhyyVTtBB9axwP17jBCbwBqbgzY0,603
+paperqa/version.py,sha256=vucW-Fe97d2P_nl7TMRJ2Cp458lb7VTRk6EckM_ozdM,23
+paper_qa-0.0.5.dist-info/LICENSE,sha256=4YBXgoHsnGeXyohXNRidSEDOaasrt1wMg-uuZ797BxI,1069
+paper_qa-0.0.5.dist-info/METADATA,sha256=wR5MPITcDrTcSC0mPjYnjSYES3MU-tUKkR3OAgdzBhU,7295
+paper_qa-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+paper_qa-0.0.5.dist-info/top_level.txt,sha256=R5cvunn_PkShDcFsruYPefBTBPjEPnWXh1NU0Ox8-e8,8
+paper_qa-0.0.5.dist-info/RECORD,,
