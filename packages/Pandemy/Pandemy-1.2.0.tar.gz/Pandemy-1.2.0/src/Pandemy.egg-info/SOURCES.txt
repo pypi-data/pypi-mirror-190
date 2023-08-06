@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+pyproject.toml
+src/Pandemy.egg-info/PKG-INFO
+src/Pandemy.egg-info/SOURCES.txt
+src/Pandemy.egg-info/dependency_links.txt
+src/Pandemy.egg-info/requires.txt
+src/Pandemy.egg-info/top_level.txt
+src/pandemy/__init__.py
+src/pandemy/_dataframe.py
+src/pandemy/_datetime.py
+src/pandemy/databasemanager.py
+src/pandemy/exceptions.py
+src/pandemy/sqlcontainer.py
