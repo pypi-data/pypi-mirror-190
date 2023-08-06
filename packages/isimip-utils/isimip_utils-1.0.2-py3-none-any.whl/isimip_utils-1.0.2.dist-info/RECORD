@@ -1,0 +1,14 @@
+isimip_utils/__init__.py,sha256=FQEJvYMSSV0zpCNKc9BzkNRx5Q6cHfsCpU7S0xijYuk,32
+isimip_utils/checksum.py,sha256=VCHAEJCRanGnxj9qwKXKTM3xD8ZJ9ncG_lJf2qnpa6g,486
+isimip_utils/config.py,sha256=M7lj7RMXefxv_54aneX5gyq20GG1dwUG68hi7hM1tEI,2678
+isimip_utils/decorators.py,sha256=StZ6ytTNvFec4OX5UNkxMNtBQJpAbRnF1KuW1SQox28,616
+isimip_utils/exceptions.py,sha256=IG6q76ky0xsonTH6IWvzazZI592E_EdKXcqzkVsBbR4,42
+isimip_utils/fetch.py,sha256=jp2c6R7ELVRmzMWcgQnpVCTtigH3FZGG2wIvVmmlYFI,4153
+isimip_utils/netcdf.py,sha256=TXEkPwWcPF5FE3uhYugHJ1OjOEiukafiFbeodlat9vA,2118
+isimip_utils/patterns.py,sha256=yGT9dcsxXrCo05LA30dAXGuACxufEwlZPGkqg7zNVcc,2565
+isimip_utils/utils.py,sha256=uNSUbXjA_4FjOjF44N1zYSQzVxGnnRGrxvGopMgyO5o,669
+isimip_utils-1.0.2.dist-info/LICENSE,sha256=NgdUWzbJOWLx4VXMtxEKoQbRn0KJa2S7SGdQ094DbCk,1102
+isimip_utils-1.0.2.dist-info/METADATA,sha256=2xp7ypGnvZYhwrR_X-a1ArvxFCoP236h-oglF2grGUk,2629
+isimip_utils-1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+isimip_utils-1.0.2.dist-info/top_level.txt,sha256=_QTioHena--WXH1D2HU-tJ0M1TBaaONyZfu7Pk2CPxI,13
+isimip_utils-1.0.2.dist-info/RECORD,,
