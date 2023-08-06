@@ -1,0 +1,13 @@
+dextrusion/DeXtrusion.py,sha256=takE2C3wH1oXFnZ7kngTfceMJiwKCWN50tp8XSraAL4,32410
+dextrusion/DialogDeXtrusion.py,sha256=UsPm--CpKQ65K0DYAbc-2V8d8t2HIPD8mZdAAaFJ_9o,9883
+dextrusion/DialogParameters.py,sha256=fIXP3oEmAiQtyu_Rk7IqgTF91vMh9rMtfH8dlR1F_tc,2505
+dextrusion/MovieGeneratorFromROI.py,sha256=Z7ByMJN-BsZWS4ReFJcInBXiSIF2can1QjxuSc1VGmw,17382
+dextrusion/Network.py,sha256=nQFozo_HoXJrNTR1YwrGINxl2ezhx130cafuWGwdRiQ,9928
+dextrusion/RoiUtils.py,sha256=Cj6sdlOnnZXYkaG01DbqIZSzdz4XlUjhCcUytozEoi4,6879
+dextrusion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dextrusion/__main__.py,sha256=7q-LdI1C5i4oE7Eh4on_6fLnc7EQVL5w-Ps7m0ivt5g,4663
+dextrusion-0.0.5.dist-info/LICENSE,sha256=xghEDfE3vSLzZWSq3vvZ6KBzzSQqYHqlaIvup8GKRvA,1542
+dextrusion-0.0.5.dist-info/METADATA,sha256=PlUKU5Vr788lknToYTdO2CX_8Ji0nyCp5mLjWDZc9Jo,15530
+dextrusion-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dextrusion-0.0.5.dist-info/top_level.txt,sha256=dtcbFHflAfSOOwbUbV6nTcEi_KGDiJjA2zVsBQw1_E8,11
+dextrusion-0.0.5.dist-info/RECORD,,
