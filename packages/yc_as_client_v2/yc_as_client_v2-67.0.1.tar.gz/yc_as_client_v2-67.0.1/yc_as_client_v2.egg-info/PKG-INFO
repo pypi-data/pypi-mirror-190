@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: yc-as-client-v2
+Version: 67.0.1
+Summary: A package to prevent Dependency Confusion attacks against Yandex.
+Home-page: https://ya.ru
+Author: Yandex
+Author-email: security@yandex-team.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/plain
+
+This is a security placeholder package.
+
