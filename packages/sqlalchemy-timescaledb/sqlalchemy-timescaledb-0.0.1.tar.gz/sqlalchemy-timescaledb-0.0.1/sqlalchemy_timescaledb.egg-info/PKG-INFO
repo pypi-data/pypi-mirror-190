@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-timescaledb
+Version: 0.0.1
+Summary: Integration of timescaledb in sqlalchemy
+Author-email: Andrei Kliatsko <andrey.daraschenka@gmail.com>
+Project-URL: Homepage, https://github.com/dorosch/sqlalchemy-timescaledb
+License-File: LICENSE

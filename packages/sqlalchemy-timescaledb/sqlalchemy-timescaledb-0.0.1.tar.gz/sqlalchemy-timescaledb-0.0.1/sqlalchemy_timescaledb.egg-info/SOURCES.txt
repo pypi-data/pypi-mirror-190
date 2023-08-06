@@ -1,0 +1,6 @@
+LICENSE
+pyproject.toml
+sqlalchemy_timescaledb.egg-info/PKG-INFO
+sqlalchemy_timescaledb.egg-info/SOURCES.txt
+sqlalchemy_timescaledb.egg-info/dependency_links.txt
+sqlalchemy_timescaledb.egg-info/top_level.txt
