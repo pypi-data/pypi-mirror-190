@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: base_ouro
+Version: 10.1
+Summary: Conversor utilizado para a geração da Base Ouro
+Author: Gabriel Ernesto Barboza Pereira
+Author-email: ernesto.gabriel@pucpr.br
+License: MIT
+Keywords: conversor base_ouro
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Base Ouro
+
+## RelatÃ³rio do vÃ­nculo de todos os alunos e disciplinas.
+
+### Recebe como entrada os seguintes relatÃ³rios extraÃ­dos do sistema Prime:
+
+#### - RelatÃ³rio de Alunos / Pais exportaÃ§Ã£o; 
+#### - RelatÃ³rio de Disciplinas (Consulta SQL); 
+#### - RelatÃ³rio de Carga HorÃ¡ria por turma / disciplina.
+
+### Ã‰ utilizado pela equipe de OperaÃ§Ãµes AcadÃªmicas durante o perÃ­odo de Ajuste AcadÃªmico
