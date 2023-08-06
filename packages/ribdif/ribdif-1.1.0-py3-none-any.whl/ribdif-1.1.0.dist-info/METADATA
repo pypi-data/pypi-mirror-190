@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ribdif
+Version: 1.1.0
+Summary: A program to analyse and correct for  the usefulness of amplicon sequences
+Project-URL: Homepage, https://github.com/Rob-murphys/RibDif2
+Project-URL: Bug Tracker, https://github.com/Rob-murphys/RibDif2/issues
+Author-email: Robert Murphy <Robert.murphy@bio.ku.dk>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Requires-Dist: biopython>=1.80
+Requires-Dist: matplotlib>=3.6.2
+Requires-Dist: numpy>=1.24.1
+Requires-Dist: pandas>=1.5.2
+Requires-Dist: scipy>=1.10.0
+Requires-Dist: seaborn>=0.12.2
+Description-Content-Type: text/markdown
+
+# RibDif
+
+Just some place holder text
