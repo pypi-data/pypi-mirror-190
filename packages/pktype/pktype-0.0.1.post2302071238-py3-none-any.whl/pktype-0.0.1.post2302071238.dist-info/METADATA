@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pktype
+Version: 0.0.1-2302071238
+Summary: A library for checking Pokemon type compatibility
+Home-page: https://twitter.com/qr1x_while :
+Author: roa0831
+Author-email: 
+License: MIT
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# pkTypeChecker
+ポケモンのタイプ相性を確認する為のライブラリです
