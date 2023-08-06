@@ -1,0 +1,313 @@
+# ETpay Python SDK
+
+Official ETpay SDK for Python
+
+## Installation
+
+### Using [pypi](https://pypi.org/)
+
+```bash
+pip install etpay_sdk
+```
+
+### Testing with whl file
+
+```bash
+pip install path/to/whlfile/etpay_sdk-1.0.1-py3-none-any.whl
+```
+
+
+## How to use
+
+#### Configure ETpay module:
+
+Method: **`ETpay.Configs(args: ConfigsArgs)`**
+
+Parameters: **`ConfigsArgs`**
+
+| Parameter         | Type    | Required  | Description
+|-------------------|---------|-----------|--------------------------------------
+| merchant_code     | string  | false     | Merchant code of the client
+| merchant_api_token| string  | false     | Merchant api token of the client
+| api_url           | string  | false     | Api url of the client
+
+**`Example code`**
+
+```py
+# Import ETpay module
+import etpay_sdk as Etpay
+
+# Declare global vars
+
+# Commerce identifier provided by ETpay.
+MERCHANT_CODE = "valid_code"
+# Secret token used to authenticate against the API provided by ETpay.
+MERCHANT_API_TOKEN = "valid_api_key"
+# Api url provided by ETpay.
+API_URL = "valid_api_url"
+
+# Configure module
+configs = Etpay.Configs(MERCHANT_CODE, MERCHANT_API_TOKEN, API_URL)
+```
+
+#### Metadata ETpay module:
+
+Method: **`ETpay.Metadata(args: [MetadataParams])`**
+
+Parameters: **`MetadataParams`**
+
+| Parameter    | Type    | Required  | Description
+|--------------|---------|-----------|-------------------------
+| name         | string  | true      | JSON key called "name"
+| value        | string  | true      | JSON key called "value"
+| show         | boolean | true      | JSON key called "show"
+
+**`Example code`**
+
+```py
+# Import ETpay module
+import etpay_sdk as Etpay
+
+# Creation of Metadata Object
+metadata = Etpay.Metadata([
+    {
+        "name":"NAME", 
+        "value": "VALUE", 
+        "show": True
+    },
+])
+```
+
+#### TransactionParams ETpay module:
+
+Method: **`ETpay.TransactionParams(args: CreateTransactionArgs)`**
+
+Parameters: **`CreateTransactionArgs`**
+
+| Parameter                 |   Type        | Required  | Description
+|---------------------------|:-------------:|:----------|:----------
+| merchant_order_id         |  string       | true      | Id used by the merchant to identify the transaction.
+| order_amount              |  string       | true      | Transaction amount.
+| customer_email            |  string       | false     | Customer email.
+| payment_completed_url     |  string       | true      | URL to which the API will redirect in the event of a successful payment.
+| payment_cancellation_url  |  string       | true      | URL to which the API will redirect in the event that the payer explicitly cancels the payment, or an unforeseen error occurs.
+| user_bank_code            |  string       | false     | If this field is sent, the session starts with the bank already selected.
+| user_rut                  |  string       | false     | If this field is sent, the session starts with the client's RUT already entered in the respective field.
+| is_rut_block              |  string       | false     | If this field is sent, the session starts with the client's RUT field already blocked. Important to consider sending `user_rut` together wit this attribute.
+| concat                    |  string       | false     | When merchants have URLs that vary based on different inputs, this value is what ETpay uses to recognize the character/symbol that concatenates those inputs.
+| metadata                  |  Metadata   | false     | Data showing on transaction process
+
+**`Example code`**
+
+```py
+# Import ETpay module
+import etpay_sdk as Etpay
+
+# Obligatory Params
+MERCHANT_ORDER_ID = "{ORDER_ID}"
+ORDER_AMOUNT = 500
+PAYMENT_COMPLETED_URL = "{URL_SUCCESS}"
+PAYMENT_CANCELLATION_URL = "{URL_CANCEL}"
+
+# Optional Params
+CUSTOMER_EMAIL = "email@email.com"
+USER_BANK_CODE = "USER_BANK_CODE"
+USER_RUT = "USER_RUT"
+IS_RUT_BLOCK = "IS_RUT_BLOCK"
+CONCAT = "{“&”}"
+METADATA = Etpay.Metadata([
+    {
+        "name":"NAME", 
+        "value": "VALUE", 
+        "show": True
+    },
+])
+
+
+# TransactionParams module
+TransactionParams = Etpay.TransactionParams(
+  MERCHANT_ORDER_ID, 
+  ORDER_AMOUNT,
+  CUSTOMER_EMAIL, 
+  PAYMENT_COMPLETED_URL,
+  PAYMENT_CANCELLATION_URL, 
+  USER_BANK_CODE,
+  USER_RUT,
+  IS_RUT_BLOCK, 
+  CONCAT,
+  METADATA)
+```
+
+#### Create transaction Object:
+
+Method: **`ETpay.Transaction.create()`**
+
+#### Retrieve transaction status:
+
+Method: **`ETpay.Transaction.status(args: TransactionStatusArgs)`**
+
+Parameters: **`TransactionStatusArgs`**
+
+| Parameter         | Type    | Required  | Description
+|-------------------|---------|-----------|--------------------------------------
+| session_token     | string  | false     | Received when transaction was created
+| merchant_order_id | string  | false     | Internal merchant order identifier
+| payment_token     | string  | false     | Received when transaction was created
+
+#### Validate a transaction result:
+
+Method: **`ETpay.Transaction.verify(token: string, signature_token: string)`**
+
+Parameters:
+
+| Parameter       | Type    | Required  | Description
+|-----------------|---------|-----------|--------------------------------------
+| token           | string  | true      | Received token on transaction succeed
+| signature_token | string  | true      | Signature Received when transaction was created
+
+
+**`Example code`**
+
+```py
+#Definition of client data
+merchantcode= "MERCHANT_CODE"
+merchantapitoken= "MERCHANT_API_TOKEN"
+apiurl= "API_URL"
+
+# Creation of Metadata Object. Usefull in TransactionParams Object to create JSON for '/session/initialize' consult
+metadata = Etpay.Metadata([
+    {
+        "name":"NAME", 
+        "value": "VALUE", 
+        "show": True
+    },
+])
+
+# Creation of TransactionParams. Work for containt the parameters for '/session/initialize' JSON
+transaction_param = Etpay.TransactionParams(order_amount=1, 
+                                            merchant_order_id="merchant_order_id", 
+                                            customer_email="example@example.com",
+                                            payment_completed_url="https://www.google.com",
+                                            payment_cancellation_url="https://www.google.com",
+                                            metadata=metadata)
+
+# Creation of Configs. Contain configurations parameters of Client
+configure = Etpay.Configs(merchantcode, merchantapitoken, apiurl)
+
+
+# Creation of Transactions Object. Contain configurations and parameters for consult methods
+transaction = Etpay.Transactions(configure, transaction_param)
+
+# Method to make de '/merchant/check_payment_status' consult and obtain the correct JSON
+create_response = transaction.create()
+print(create_response.json())
+
+# Method to make de '/session/initialize' consult and obtain the correct JSON
+status_response = transaction.status(merchant_order_id="MERCHANT_ORDER_ID")
+print(status_response.json())
+
+# Method to verify a JWT using the signature token as a key
+jwt_decode = transaction.verify("eyJh[...]dHxE", "ZPfh[...]GqPl")
+print(jwt_decode)
+```
+
+**`Response Object to "create"`**
+
+```json
+{
+  "token": "LnA0o[...]UaDgTa",
+  "signature_token": "J1Bdd[...]jzsLD5",
+  // terms_url can be null when module is configured with ETpay MX api
+  "terms_url": "https://<etpay-terms-url>"
+}
+```
+
+**`Response Object to "status"`**
+
+```json
+{
+  "session_token": "wWkob[...]wC0L5",
+  "merchant_account_bank": "cl_estado",
+  "merchant_account_type": "cuenta_vista",
+  "merchant_account": "19687526",
+  "merchant_name": "Sandbox Developer Merchant",
+  "merchant_currency": "CLP",
+  "merchant_order_id": "oc1234566",
+  "merchant_amount": 1,
+  "user_bank": "Banco de prueba",
+  "user_rut": "111111111",
+  "user_account": "Cuenta Corriente 12345678",
+  "payment_token": "prNZK[...]yuPfd",
+  "payment_status": true,
+  "payment_process": "auto",
+  "iat": 1643663332
+}
+```
+
+**`Response Object to "verify"`**
+
+```json
+[
+  {
+    "session_token": "wWkob[...]wC0L5",
+    "merchant_account_bank": "cl_estado",
+    "merchant_account_type": "cuenta_vista",
+    "merchant_account": "19687526",
+    "merchant_name": "Sandbox Developer Merchant",
+    "merchant_currency": "CLP",
+    "merchant_order_id": "oc1234566",
+    "merchant_amount": 1,
+    "user_bank": "Banco de prueba",
+    "user_rut": "111111111",
+    "user_account": "Cuenta Corriente 12345678",
+    "payment_token": "prNZK[...]yuPfd",
+    "payment_status": true,
+    "payment_process": "auto",
+    "iat": 1643663332
+  }
+]
+```
+
+## Error Handler
+
+### Etpay error
+
+In the very unlikely case of a system error, with a disconnection with the ETpay backend, a redirect to the failure URL will be made, with a JWT signed with the session_token (instead of the signature_token).
+
+```json
+{
+    "session_token": "08Zyd[...]Abv9Z",
+    "system_error": true,
+    "iat": 1564667797
+}
+```
+
+### SDK common errors Transaction
+
+| Error                                                    | Common Cause
+|----------------------------------------------------------|-------------------------------------------------
+| TypeError: Type use in 'configure' is incorrect          | Configure argument recive it's not Config Object
+| TypeError: Type use in 'transaction_params' is incorrect | Transaction_params argument recive it's not TransactionParams Object
+
+### SDK common errors Transaction.status()
+
+| Error                                                   | Common Cause
+|---------------------------------------------------------|-------------------------------------------------
+| ValueError: The function requires at least one argument | No argument sent in this method. Is required at least one
+
+### SDK common errors Transaction.verify()
+
+| Error                                                              | Common Cause
+|--------------------------------------------------------------------|-----------------------------------------
+| jwt.exceptions.DecodeError: Invalid header padding                 | Header of JWT is incomplete
+| jwt.exceptions.InvalidSignatureError: Signature verification failed| The JWT is incomplete. The token is incomplete
+| Invalid header string: 'utf-8' codec can't decode byte 0x88 in position 6: invalid start byte| First section of JWT is incomplete
+| TypeError: Type use in 'token' is incorrect           | Token argument recive it's not String
+| TypeError: Type use in 'signature_token' is incorrect | signature_token argument recive it's not String
+
+
+### SDK common errors
+
+| Error                                               | Common Cause
+|-----------------------------------------------------|--------------------------------------
+| requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api-sandbox.etpaymen', port=443): Max retries exceeded with url: /session/initialize (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002A296CC3348>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))| URL used is invalid. Fail to establish connection
