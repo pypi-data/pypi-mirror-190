@@ -1,0 +1,7 @@
+noop.cpython-311-x86_64-linux-gnu.so,sha256=ZW2m1d5PTgw53F1kiihlNiFtJbkcnj0b3ssP-lZJySs,7528
+sqlite_fastrand/__init__.py,sha256=dEGb1LA4gLnidbyTn2YvKFHF5mtfOdkYzoToXQBlDUo,244
+sqlite_fastrand/fastrand0.so,sha256=_jN9MwcpV7ZIAYDTCiyK_IgkEbCvw9uXh4lhM2c16TM,4235392
+sqlite_fastrand-0.2.0.dist-info/METADATA,sha256=B3yejRtj-0I-oi9-kGugnujvW46ZG4vcFleL3HyR6bc,519
+sqlite_fastrand-0.2.0.dist-info/WHEEL,sha256=wCpHU5PrLGNdpo-ZaCOtE6te0ycAK2oYvJmTJCUKnUQ,105
+sqlite_fastrand-0.2.0.dist-info/top_level.txt,sha256=uJpLen17gtUxTnP_tfbtLzPomkSZ7v2wcIyEAZ4ZokE,21
+sqlite_fastrand-0.2.0.dist-info/RECORD,,
