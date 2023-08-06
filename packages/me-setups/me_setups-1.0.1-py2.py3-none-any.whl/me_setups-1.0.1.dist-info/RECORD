@@ -1,0 +1,14 @@
+me_setups/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+me_setups/boards/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+me_setups/boards/gas52.py,sha256=um_bwgajh56M56DLJwx3i76m6dukPHI9SS_0m7CeusM,4591
+me_setups/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+me_setups/components/comp.py,sha256=x8FkXG8YG7u5AEMtTU-am7KnhlCKx_DJLD1G7Jpa6Vw,4382
+me_setups/components/const.py,sha256=ErWu8K8hpqBAboBv_XF0yP69Vg663Ur6_By1tNrhFKM,300
+me_setups/components/eqs.py,sha256=y21zTlEDbx1GcQ3zH6ra2WYPZ3_45hboK320J2sSXvE,1544
+me_setups/components/mcs.py,sha256=OxQNhKDHbJJWu2dC6VDWf99wAIdsHTyH1JUjcNpCmJs,178
+me_setups/components/mcu.py,sha256=EOsC1oedSetSThdEpv2oTSiy3KZwOIjYKULvKkJfMnA,3602
+me_setups/components/tools.py,sha256=0xAGOzJE21xMBhOWtEK7AlFpvUcQv5yfnGR7yW4gh4Y,1398
+me_setups-1.0.1.dist-info/METADATA,sha256=c4EWJCBBZ51oqdje9oCZ_v_tm_bsBuf37AcoakUz088,618
+me_setups-1.0.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+me_setups-1.0.1.dist-info/top_level.txt,sha256=M6VRFl7qitaX1HGhl727VAf8Nga23xirFzncI4tWoqQ,10
+me_setups-1.0.1.dist-info/RECORD,,
