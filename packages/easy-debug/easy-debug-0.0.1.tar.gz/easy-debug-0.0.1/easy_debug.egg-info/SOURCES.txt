@@ -1,0 +1,8 @@
+README.md
+setup.py
+easy_debug/__init__.py
+easy_debug/debug.py
+easy_debug.egg-info/PKG-INFO
+easy_debug.egg-info/SOURCES.txt
+easy_debug.egg-info/dependency_links.txt
+easy_debug.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: easy-debug
+Version: 0.0.1
+Summary: A tool that help live debugging
+Home-page: https://github.com/ThePhoenix78/easy-debug
+Download-URL: https://github.com/ThePhoenix78/easy-debug/tarball/master
+Author: ThePhoenix78
+Author-email: thephoenix788@gmail.com
+License: MIT
+Keywords: wrapper,event,debug
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
