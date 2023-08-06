@@ -1,0 +1,9 @@
+README.md
+setup.py
+RedesBayesianas_18364_18761.egg-info/PKG-INFO
+RedesBayesianas_18364_18761.egg-info/SOURCES.txt
+RedesBayesianas_18364_18761.egg-info/dependency_links.txt
+RedesBayesianas_18364_18761.egg-info/requires.txt
+RedesBayesianas_18364_18761.egg-info/top_level.txt
+redesBayesianas_18364_18761/__init__.py
+redesBayesianas_18364_18761/redes.py
