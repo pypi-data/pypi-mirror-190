@@ -1,0 +1,9 @@
+databar/__init__.py,sha256=87rv5GVMvs8UUCEDAp1qOMgwERdipz9U2LXTProVKGs,96
+databar/connection.py,sha256=UKKGs1Q2LFG71MoFZjh7vmy_fvm68_GpSv7UWg7CY6w,19173
+databar/helpers.py,sha256=T9QFH0qaLYmj-fv5wFr3LQ4LR2SkLiQhHJVpd1zK4pA,2800
+databar/table.py,sha256=9wTNqACzVwi4p4tArTQ6u5uyNrDSWJmQIuHBK37usO8,9635
+databar-0.5.0.dist-info/LICENSE,sha256=04GAH76NkKdMmxkSKCgGDdwUasu49f2aNXy5BGVmZYw,1069
+databar-0.5.0.dist-info/METADATA,sha256=TexYyb9x7ZHq2i1V1NuhSp-O5yxUO5kYXvFZR7jNVec,1950
+databar-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+databar-0.5.0.dist-info/top_level.txt,sha256=9l5X4gYODANr4PDgSt1TmCVJEA5aP_PsNR146JvcixM,8
+databar-0.5.0.dist-info/RECORD,,
