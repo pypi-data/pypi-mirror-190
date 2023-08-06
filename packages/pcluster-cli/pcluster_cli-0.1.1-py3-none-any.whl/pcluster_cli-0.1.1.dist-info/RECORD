@@ -1,0 +1,8 @@
+pcluster_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pcluster_cli/main.py,sha256=QK_0sR1CDwjgU9GqM3zHCmuU_huCb9SuUVQRqVhkvO0,17915
+pcluster_cli/node-startup.sh,sha256=rno1KSJX_IO3wfAkWHC9JUEg0ul0vztVUIEclpbFYLo,1676
+pcluster_cli/pcluster.yaml,sha256=7mk_Ja4MV0t0c2jXPhFIbL11SGDy28FjNvEAuRL-J-Q,1876
+pcluster_cli-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pcluster_cli-0.1.1.dist-info/entry_points.txt,sha256=s1m4x94xAbUckNs5KV-cQw6L4WlQ-CK481McUxArRGM,46
+pcluster_cli-0.1.1.dist-info/METADATA,sha256=1mS8nPKnMRnnI5Usb4H0CrqfS5zUGYDoABMIzQL1J7A,1190
+pcluster_cli-0.1.1.dist-info/RECORD,,
