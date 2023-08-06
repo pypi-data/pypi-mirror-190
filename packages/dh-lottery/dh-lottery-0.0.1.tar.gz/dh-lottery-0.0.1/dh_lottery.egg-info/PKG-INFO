@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dh-lottery
+Version: 0.0.1
+Summary: Dh lottery
+Home-page: https://gitlab.com/dh_lottery
+Author: stkang90
+Author-email: stkang90@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/dh_lottery/-/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Description
+===========
+
+DH Lottery
+
