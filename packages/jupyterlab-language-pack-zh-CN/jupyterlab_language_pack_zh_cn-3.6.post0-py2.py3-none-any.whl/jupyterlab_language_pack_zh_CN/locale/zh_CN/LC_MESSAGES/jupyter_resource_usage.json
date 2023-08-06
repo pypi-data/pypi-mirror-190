@@ -1,0 +1,90 @@
+{
+    "": {
+        "domain": "jupyter_resource_usage",
+        "language": "zh-CN",
+        "plural_forms": "nplurals=1; plural=0;",
+        "version": "jupyterlab"
+    },
+    "%2%% used on %1 CPU": [
+        "\u5df2\u4f7f\u7528 %2%% / %1 CPU",
+        "\u5df2\u4f7f\u7528 %2%% / %1 CPU"
+    ],
+    "Active:": [
+        "\u6d3b\u52a8\u4e2d\uff1a"
+    ],
+    "Available:": [
+        "\u53ef\u7528\uff1a"
+    ],
+    "CPU:": [
+        "CPU\uff1a"
+    ],
+    "Current memory usage": [
+        "\u5f53\u524d\u5185\u5b58\u7528\u91cf"
+    ],
+    "Free:": [
+        "\u7a7a\u95f2\uff1a"
+    ],
+    "Host CPU": [
+        "\u4e3b\u673a CPU"
+    ],
+    "Host Virtual Memory": [
+        "\u4e3b\u673a\u865a\u62df\u5185\u5b58"
+    ],
+    "Inactive:": [
+        "\u975e\u6d3b\u8dc3\uff1a"
+    ],
+    "Kernel Host:": [
+        "\u5185\u6838\u4e3b\u673a\uff1a"
+    ],
+    "Kernel ID:": [
+        "\u5185\u6838 ID\uff1a"
+    ],
+    "Kernel Resource": [
+        "\u5185\u6838\u8d44\u6e90"
+    ],
+    "Kernel Usage": [
+        "\u5185\u6838\u7528\u91cf"
+    ],
+    "Kernel usage": [
+        "\u5185\u6838\u7528\u91cf"
+    ],
+    "Kernel usage details are not available": [
+        "\u5185\u6838\u7528\u91cf\u8be6\u7ec6\u4fe1\u606f\u4e0d\u53ef\u7528"
+    ],
+    "Kernel usage is not available": [
+        "\u5185\u6838\u7528\u91cf\u4fe1\u606f\u4e0d\u53ef\u7528"
+    ],
+    "Mem: %1 %2": [
+        "\u5185\u5b58\uff1a%1 %2"
+    ],
+    "Mem: %1 / %2 %3": [
+        "\u5185\u5b58\uff1a%1 / %2 %3"
+    ],
+    "Memory:": [
+        "\u5185\u5b58\uff1a"
+    ],
+    "Notebook:": [
+        "\u7b14\u8bb0\u672c\uff1a"
+    ],
+    "Percent used:": [
+        "\u4f7f\u7528\u767e\u5206\u6bd4\uff1a"
+    ],
+    "Please check with your system administrator that you are running IPyKernel version 6.10.0 or above.": [
+        "\u8bf7\u4e0e\u60a8\u7684\u7cfb\u7edf\u7ba1\u7406\u5458\u68c0\u67e5\u60a8\u6b63\u5728\u8fd0\u884c\u7684 IPyKernel \u4e3a 6.10.0 \u6216\u66f4\u9ad8\u7684\u7248\u672c\u3002"
+    ],
+    "Process ID:": [
+        "\u8fdb\u7a0b ID\uff1a"
+    ],
+    "Timestamp:": [
+        "\u65f6\u95f4\u6233\uff1a"
+    ],
+    "Total:": [
+        "\u603b\u8ba1\uff1a"
+    ],
+    "Used:": [
+        "\u5df2\u7528\uff1a"
+    ],
+    "Wired:": [
+        "\u8fde\u7ebf\uff1a"
+    ]
+}
