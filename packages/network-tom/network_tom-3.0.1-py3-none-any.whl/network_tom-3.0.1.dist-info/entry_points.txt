@@ -1,0 +1,2 @@
+[console_scripts]
+func1 = func1:main
