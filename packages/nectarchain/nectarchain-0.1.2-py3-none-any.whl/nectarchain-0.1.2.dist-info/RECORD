@@ -1,0 +1,17 @@
+nectarchain/__init__.py,sha256=dKm86-9bkYqdSgbB2Onu26B94vteKMLBUrbH8rhykZE,59
+nectarchain/_version.py,sha256=SiUqd8Cj_hPyzaVK09GtWaRYBHz7s-4Hx7Tg3ANhD4k,160
+nectarchain/version.py,sha256=QguSr8Xzd-ZJBUvZnwvDIlbpLHa1T62QIEz0tVD5TDU,739
+nectarchain/calibration/NectarGAIN.py,sha256=HJCRnilNkE6F8TzmaDDF2vEXI4fPThbNkybyJwQsgoM,19610
+nectarchain/calibration/__init__.py,sha256=U8P9R4gw4MMFDBpbyWPigJZH7B3tdYOeqLjciYogOZ8,39
+nectarchain/calibration/container/__init__.py,sha256=hqGYIiqF99tgW7dox3fFHOddCpq6rvdUbhu63_58WpQ,46
+nectarchain/calibration/container/charge.py,sha256=5smL-MNLYMyi5HBULEPi-YJ9bgpOmh_rrfO5XbFVNZE,16701
+nectarchain/calibration/container/charge_extractor.py,sha256=QY7OfPDehw68meVm98A3aI7LHGKLIcMxZ2bxNw5TH70,4377
+nectarchain/calibration/container/utils.py,sha256=YktaAqN-_5FFfrUly6oBz3iRxTHjdIaopFAaXP-dV_0,6639
+nectarchain/calibration/container/waveforms.py,sha256=1f9KMVWGtz5ihECoJBT_8uA_SA1_UWV3Kowkw8ZPfMg,14345
+nectarchain/tools/__init__.py,sha256=_Qcf7vxJeMeLo26WCASj3nifkTPwnAffqK5xDzKpIKY,41
+nectarchain/tools/write_camera_calibration.py,sha256=zdKYpAwLlYPZFR01laXy0GX_lTFfwD-8bf1HwL9N3To,8569
+nectarchain/tools/write_pedestals.py,sha256=9B1S1QEaunzzZgvDzvLl_3h4yWUxkoDgzAVMy6usIuE,3285
+nectarchain-0.1.2.dist-info/METADATA,sha256=7DhZL_bQvz9JPk9OvaHPWxb-lWqzYfBsd1SFV-urBRc,3145
+nectarchain-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nectarchain-0.1.2.dist-info/top_level.txt,sha256=SxWugkje7_P0pAgWse-oTE-xPo2KLIYWv9QB2Duho5Y,12
+nectarchain-0.1.2.dist-info/RECORD,,
