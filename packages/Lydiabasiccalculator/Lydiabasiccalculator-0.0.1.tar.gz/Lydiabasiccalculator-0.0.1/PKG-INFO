@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Lydiabasiccalculator
+Version: 0.0.1
+Summary: A very basic caluclator
+Home-page: 
+Author: Lydia Whittaker
+Author-email: lydwhitt7@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a basic calculator that will add, subtract, multiply, and divide two numbers
+
+Change Log
+===========
+
+0.0.1 (07/02/2023)
+--------------------
+- First Release
