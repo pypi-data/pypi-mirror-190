@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/__init__.py
+src/nenet.py
+src/nenet.egg-info/PKG-INFO
+src/nenet.egg-info/SOURCES.txt
+src/nenet.egg-info/dependency_links.txt
+src/nenet.egg-info/top_level.txt
