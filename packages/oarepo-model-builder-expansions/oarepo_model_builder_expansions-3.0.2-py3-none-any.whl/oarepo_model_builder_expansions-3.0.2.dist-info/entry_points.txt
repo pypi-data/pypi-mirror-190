@@ -1,0 +1,12 @@
+[oarepo_model_builder.builders.model]
+0320-invenio_record_service = oarepo_model_builder.invenio.invenio_record_service:InvenioRecordServiceBuilder
+2211-invenio_expansions_record_service_config = oarepo_model_builder_expansions.invenio.invenio_expansions_record_service_config:InvenioExpansionsRecordServiceConfigBuilder
+
+[oarepo_model_builder.model_preprocessors.model]
+11-invenio_expansions_base_classes = oarepo_model_builder_expansions.model_preprocessors.invenio_expansions_base_classes:InvenioExpansionsBaseClassesModelPreprocessor
+
+[oarepo_model_builder.templates]
+100-expansions_templates = oarepo_model_builder_expansions.invenio
+
+[oarepo_model_builder.validation]
+expansions-validation = oarepo_model_builder_expansions.validation:validators
