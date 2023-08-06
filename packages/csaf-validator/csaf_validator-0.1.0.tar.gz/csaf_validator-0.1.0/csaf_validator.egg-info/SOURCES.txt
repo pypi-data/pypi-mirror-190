@@ -1,0 +1,8 @@
+README.md
+setup.py
+csaf_validator.egg-info/PKG-INFO
+csaf_validator.egg-info/SOURCES.txt
+csaf_validator.egg-info/dependency_links.txt
+csaf_validator.egg-info/entry_points.txt
+csaf_validator.egg-info/requires.txt
+csaf_validator.egg-info/top_level.txt

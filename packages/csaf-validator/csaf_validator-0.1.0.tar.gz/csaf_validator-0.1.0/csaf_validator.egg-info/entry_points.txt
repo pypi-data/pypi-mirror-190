@@ -1,0 +1,3 @@
+[console_scripts]
+csaf_validator = csaf_validator:main
+
