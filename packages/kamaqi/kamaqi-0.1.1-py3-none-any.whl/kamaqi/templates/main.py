@@ -1,0 +1,33 @@
+MAIN=\
+"""
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+# Import routs
+from {{project_name}}.router import {{project_name}}_routs
+{%  for app in apps %}
+from {{app}}.router import {{app}}_routs
+{%  endfor %}
+
+from database import models
+from database.database import engine
+#models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI(title="{{project_name.capitalize()}} API",
+              description="A powerful API for {{project_name.capitalize()}} project",
+              version="1.0.0")
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"])
+
+# Include routs
+app.include_router({{project_name}}_routs)
+{%  for app in apps %}
+app.include_router({{app}}_routs)
+{%  endfor %}
+""" 
