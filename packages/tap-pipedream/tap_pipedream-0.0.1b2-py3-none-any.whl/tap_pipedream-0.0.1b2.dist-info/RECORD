@@ -1,0 +1,9 @@
+tap_pipedream/__init__.py,sha256=FgSqa9tCl9ZKGGnJDb5yxPD2APSv9TNJilMlezgadfo,84
+tap_pipedream/__main__.py,sha256=dFojcnCR7Eo9SvbgDJtUpRt3hPFpYHx_1zpkUxIQwik,122
+tap_pipedream/client.py,sha256=fXs2CgKwgZKk2YckNyEKynnMUWhHSWW4BkSecPWmYBE,1543
+tap_pipedream/streams.py,sha256=TrFEvbJtTE6rWoVIruz5ep_lRVDoHwrsTkJGio6Ci-o,8154
+tap_pipedream/tap.py,sha256=lg519UJdvYw3orj8-bjfFSSfPJ8aTD5a07BBFEa1vew,1511
+tap_pipedream-0.0.1b2.dist-info/METADATA,sha256=w4nypVUUpCpJxhOwZMfELW-CO84_R9FPNBiEdVI-s6s,4120
+tap_pipedream-0.0.1b2.dist-info/entry_points.txt,sha256=lWmiUnlmVCtBFh0vjkFFgzrkVapaScBBE09F3m6hqL4,68
+tap_pipedream-0.0.1b2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tap_pipedream-0.0.1b2.dist-info/RECORD,,
