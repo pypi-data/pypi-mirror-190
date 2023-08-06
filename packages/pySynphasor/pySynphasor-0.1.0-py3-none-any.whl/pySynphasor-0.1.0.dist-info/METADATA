@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pySynphasor
+Version: 0.1.0
+Summary: IEEE C37.118 Packet Manipulation Tool
+Home-page: https://github.com/shuvangkardas/pySynphasor
+Author: Shuvangkar Das
+Author-email: shuvangkarcdas@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scapy
+
+
+
+
+# Quick Start Guide
+Install pySynphasor Library
+```python
+pip install pySynphasor
+```
+
+Import Library using the following script
+```python
+from pySynphasor.synphasor import *
+```
+
+Then start using the library. 
