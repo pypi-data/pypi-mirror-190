@@ -1,0 +1,12 @@
+cuoco/__init__.py,sha256=8dvli72vQ-FHGth5ChMBnurlmtMwl7vu5vD0HKtnaQ8,29
+cuoco/dataCleaning.py,sha256=NJPki6qD0qdl8_aZKMNRRYeJOno2wUjj8TjiKDjyQTk,2423
+cuoco/dataModeling.py,sha256=Hkz4G6tz78-QNB3NYBXHelWxmsLVapZg0qaJMjtO4Wc,777
+cuoco/dataPipeline.py,sha256=xNcZky5qde66kmrjjr1uZCzbE26RSwDXf6KN_TK8B-s,2184
+cuoco/dataPresentation.py,sha256=Gi4SADHklrNcch6L5qfgyn09nAJywbaGMWtp9avXNQs,860
+cuoco/jsonReading.py,sha256=zdNjn3wbELPTBc5gYwjOmoxW_Uab_M4kru_53FWhndE,1652
+cuoco/mainTest.py,sha256=6DSIl9BIkUmLiAWqTxTkLi0Ukik9OW5hvqEMtnCW9V8,209
+cuoco-0.0.7.dist-info/LICENSE,sha256=LoV48WtuomVBIWbotLHaBF_MEfKNsD1mSQhBASSi8B4,35801
+cuoco-0.0.7.dist-info/METADATA,sha256=uAPx7pDMr3T1MHuktQwadYMHu9RURUQFDVkb8-Z3PGQ,2583
+cuoco-0.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cuoco-0.0.7.dist-info/top_level.txt,sha256=9LXKcqIJAwFJSqFbBh6h44pG6HyNtuUQEKnXYhHRCFo,6
+cuoco-0.0.7.dist-info/RECORD,,
