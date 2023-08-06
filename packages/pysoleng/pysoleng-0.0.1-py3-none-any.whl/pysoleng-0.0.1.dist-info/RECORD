@@ -1,0 +1,10 @@
+pysoleng/__init__.py,sha256=lrqO7dcuwaPtMoG4dUZ4FmfOwlrBDajUoBndMHxGIuo,94
+pysoleng/models.py,sha256=P9vWEYHj45He31i2f17tjh0M3SuxPCQ6FNdgAxDVa4Y,5372
+pysoleng/solar.py,sha256=eaJXrS0YZucm0c51-yQZJZMNV85NUBddArFpnKRh60Y,46543
+pysoleng/timeplace.py,sha256=H1fzJdJcyPv74vrpMj4OWqKCPquSIwtZaUiZCB65GaU,8525
+pysoleng/utils.py,sha256=9GcLBaRG1wpoOxvxLeTAiYO0ywk23ZbaNoxi07sRluQ,13209
+pysoleng-0.0.1.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+pysoleng-0.0.1.dist-info/METADATA,sha256=9DMoFQ2qq9pYXmuUk5-0N-aUd7_Wd_T8YWI25ZAA1pA,1932
+pysoleng-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pysoleng-0.0.1.dist-info/top_level.txt,sha256=7TTiGdp7-Yr0tJPJnTzjhKt-4Y31WM5bReQs-cnoya4,9
+pysoleng-0.0.1.dist-info/RECORD,,
