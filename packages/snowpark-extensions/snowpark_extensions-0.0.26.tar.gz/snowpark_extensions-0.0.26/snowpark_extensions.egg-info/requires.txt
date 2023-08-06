@@ -1,0 +1,4 @@
+snowflake-snowpark-python[pandas]==1.1.0
+nest_asyncio
+jinja2
+rich
