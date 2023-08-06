@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: bayesian_pack_dv_lp-dev
+Version: 0.0.1
+Summary: An abstraction on bayesian network.
+Project-URL: Homepage, https://github.com/LPELCRACK896/bayes-probabilistic-divinas.git
+Author-email: DVN <lp-dev@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Bayes probablistic module DV
+
+Build bayes probabilistic networks to find solutions. 
+
+## Getting started
+
+
+
+### Prerequisitos
+```
+Python 3.9.16 or higher
+```
+### Installing
+
+```
+
+
+```
+## Authors
+- Jessica Ortiz
+- Luis Pedro Gonzalez 
+- Andrea Lam
+- Rebecca Smith
