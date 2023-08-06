@@ -1,0 +1,9 @@
+README.md
+setup.py
+diki/__init__.py
+diki/diki.py
+diki_scraper.egg-info/PKG-INFO
+diki_scraper.egg-info/SOURCES.txt
+diki_scraper.egg-info/dependency_links.txt
+diki_scraper.egg-info/requires.txt
+diki_scraper.egg-info/top_level.txt
