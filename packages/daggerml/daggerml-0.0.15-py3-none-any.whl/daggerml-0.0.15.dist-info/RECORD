@@ -1,0 +1,11 @@
+daggerml/__init__.py,sha256=hBZcrhYiXhzNjtDlRdZJv8yE9860DZVvUY3x5xa7cbA,406
+daggerml/__main__.py,sha256=euQbSyJSDsBAbxYA1ufBfhNr05uNjuwgDBWwqx_UoD8,138
+daggerml/_cli.py,sha256=QMX2126uDKfOby4j7in9jocxgCCwmDl89V_PtCNHsJg,1066
+daggerml/_clink.py,sha256=y0YfxPvwq2K-V3_W8akfjnJApuOiwDkqBey1dbCIuM0,1983
+daggerml/_config.py,sha256=xRFv7rGqRF0JYH3zZnrlMWfUBudM5-isvMKvtyXXVOc,3833
+daggerml/_dag.py,sha256=aRYU_NcAg59n337ZzSsBeIgCk0L3Y84IPSMBa5VQwHg,16863
+daggerml-0.0.15.dist-info/METADATA,sha256=Zj4x1yTsqr0YE8BWpAwcDE8G_zIBQJRDoq7_k-L-Kis,2844
+daggerml-0.0.15.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+daggerml-0.0.15.dist-info/entry_points.txt,sha256=Q-ItUhWN_mEs2H_GkuPJtkii_HLl3PzMgOEaA3SNYSc,42
+daggerml-0.0.15.dist-info/top_level.txt,sha256=O_Wdk7jDIOIO0g2e6xqXN8zizhiwtsYCp0TsCLenLbQ,9
+daggerml-0.0.15.dist-info/RECORD,,
