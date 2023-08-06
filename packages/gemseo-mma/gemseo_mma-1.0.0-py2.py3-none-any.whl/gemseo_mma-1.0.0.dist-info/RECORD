@@ -1,0 +1,14 @@
+gemseo_mma/__init__.py,sha256=15PRGcvvv_d64NpbmuCa7TDKXJGE4jeQplDCYRRrtGE,830
+gemseo_mma/opt/__init__.py,sha256=--jRsq9oF45K6KA6tl3iXV1t6u2NV19u8HM5dHIm_CQ,818
+gemseo_mma/opt/lib_mma.py,sha256=EDm6tnw1HUnBRao5qCWPgTUjuOAkO7eu1jVB0dSstBU,7923
+gemseo_mma/opt/core/__init__.py,sha256=h8DBGKks6AOxLaHZ5X3b-5UwOK7Isx33RnQLHXwG-OE,856
+gemseo_mma/opt/core/mma.py,sha256=ufqjl2XTyCWxGD67uZ3lZ-0SJHOHAykiaaD65cUfucA,21269
+gemseo_mma/opt/core/mma_optimizer.py,sha256=MZONuiGMo78p3dCa48Vy8C2CHyXIjEAapOJYyORQ-4k,12046
+gemseo_mma/opt/options/MMA_options.json,sha256=zsVIp2hATjBkvypkB0tGIF720ZZfeMA20rRPNAA6-Jg,2103
+gemseo_mma-1.0.0.dist-info/CREDITS.rst,sha256=pirbkg4XtDd2FDRy4E1LyRtIheEI-iVoMGid7p_O8TM,1837
+gemseo_mma-1.0.0.dist-info/LICENSE.txt,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+gemseo_mma-1.0.0.dist-info/METADATA,sha256=yXF8k_3vLgAd5GMFPX8jvVrQbRJksUkSEZXPtAfyR4M,4910
+gemseo_mma-1.0.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+gemseo_mma-1.0.0.dist-info/entry_points.txt,sha256=gbsMCzDI_scVbWQZBr_BL7Y1DRa9dmBgJtF4x__L5NU,41
+gemseo_mma-1.0.0.dist-info/top_level.txt,sha256=KdaeivKHJwxSAUCdjMpB5Rj9f9pLdFiZxE1lxNg_Rew,11
+gemseo_mma-1.0.0.dist-info/RECORD,,
