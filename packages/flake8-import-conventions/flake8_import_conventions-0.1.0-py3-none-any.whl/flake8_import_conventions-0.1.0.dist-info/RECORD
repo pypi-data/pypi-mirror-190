@@ -1,0 +1,9 @@
+flake8_import_conventions/__init__.py,sha256=LdBm3ZYIs08L6wDcnpZnK41c-D_SWgsfnlGzzg-W7pA,950
+flake8_import_conventions/errors.py,sha256=oe9gae6kIzn2PSxyTuTZGtiJfBtIA3FNscRsJPBEvuU,1237
+flake8_import_conventions/py.typed,sha256=Ig0zC36fD3elCVgcgSSXaNZJRWgcGCKCYi4bgwbdTE8,86
+flake8_import_conventions/visitor.py,sha256=mimxsk90zy980lJvpQ9asQ4mQcZkBLCJUbnd2ZcBoUk,1723
+flake8_import_conventions-0.1.0.dist-info/METADATA,sha256=7Ai3IKIBHxxO-whOPoF6zIUsEY1rdL6HvIrBg1qGlqI,4561
+flake8_import_conventions-0.1.0.dist-info/entry_points.txt,sha256=-IOSCmSy-IgtgzJlqwngY76RNqfFJlw7l3TE-uOvlFk,56
+flake8_import_conventions-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+flake8_import_conventions-0.1.0.dist-info/LICENSE,sha256=HP2jsX27vkmd2eBFRESDHf9fPXWZCVVTmzrraWKXGkg,1071
+flake8_import_conventions-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[flake8.extension]
+IC=flake8_import_conventions:Plugin
+
