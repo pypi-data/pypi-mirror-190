@@ -1,0 +1,20 @@
+[build-system]
+requires = ["dataclasses", "hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "bayesian_pack_dv_lp-dev"
+version = "0.0.1"
+authors = [
+  { name="DVN", email="lp-dev@gmail.com" },
+]
+description = "An abstraction on bayesian network."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/LPELCRACK896/bayes-probabilistic-divinas.git"
