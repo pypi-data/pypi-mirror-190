@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyenerginetpowerrightnow"
+version = "22.2.1"
+authors = [
+  { name="Thilo Bangert", email="thilo.bangert@gmail.com" },
+]
+description = "A small python library to access electrical energy statistics for Denmark"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/m6cx1/pyenerginetpowerrightnow"
+"Bug Tracker" = "https://gitlab.com/m6cx1/pyenerginetpowerrightnow/-/issues"
