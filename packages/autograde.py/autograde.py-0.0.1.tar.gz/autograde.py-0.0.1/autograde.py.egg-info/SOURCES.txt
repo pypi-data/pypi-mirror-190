@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+autograde.py.egg-info/PKG-INFO
+autograde.py.egg-info/SOURCES.txt
+autograde.py.egg-info/dependency_links.txt
+autograde.py.egg-info/top_level.txt
+grader/__init__.py
+grader/__main__.py
