@@ -1,0 +1,9 @@
+airflow_kaldea/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_kaldea/__version__.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+airflow_kaldea/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_kaldea/operators/kaldea_job_operator.py,sha256=7aYogFh5-tBb9OnBTarGze7bC5ZeyljqAcUhFzgS8tQ,4282
+airflow_kaldea-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+airflow_kaldea-0.0.2.dist-info/METADATA,sha256=ldqhc3TchMrEp4JY0SF1I2nqbofUuQA_nDD-0nYLWzg,923
+airflow_kaldea-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+airflow_kaldea-0.0.2.dist-info/top_level.txt,sha256=OhIqf2NR8jNXJni1R-wgo-N-qUn_YL1itr4wN0AZcX0,15
+airflow_kaldea-0.0.2.dist-info/RECORD,,
