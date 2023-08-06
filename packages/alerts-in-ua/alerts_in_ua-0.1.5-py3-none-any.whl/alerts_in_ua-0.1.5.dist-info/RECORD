@@ -1,0 +1,10 @@
+alerts_in_ua/__init__.py,sha256=BNGJZPODRcA0RFLTnArGrJ2Tjrf3zctcsG4UfzHWhG4,64
+alerts_in_ua/alert.py,sha256=l9UpEgfp_mLIE9Af9EG3DSaBJPqsU7e7nNr2yNDCPY4,854
+alerts_in_ua/async_client.py,sha256=3bLDAQP5gVPj0yqKzB7qT30v9SeIn4uXnIhw-ba9mSU,3202
+alerts_in_ua/client.py,sha256=T8mcSE_labXVzyZJcMBK_Z3U39P30WyrMWD4XvE_72w,2921
+alerts_in_ua/errors.py,sha256=k3TmGYQ2Gcfi5HdceXfEwlkoYnGhplLDj_QVTH9rdq8,265
+alerts_in_ua-0.1.5.dist-info/LICENSE.txt,sha256=zN5JNSULOzNf0YhIwcbBUFQ4ZrXN3t1gPWF6yqHxdpw,1067
+alerts_in_ua-0.1.5.dist-info/METADATA,sha256=iZEUmhnVHfSk9FqfAhYD5DMfibhKDrziQK7XKbTKnoU,1642
+alerts_in_ua-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alerts_in_ua-0.1.5.dist-info/top_level.txt,sha256=ID8v6qr4Y2AKvMy7IJoD13YcLyqS4LYrpaZnLY2TqLs,13
+alerts_in_ua-0.1.5.dist-info/RECORD,,
