@@ -1,0 +1,10 @@
+.DS_Store
+pybids_0.15.2_db/
+derivatives/contarg/hierarchical/testing1sub/sub-*/func/sub-*_task-rest_run-*_atlas-Coords_space-T1w_desc-dt0.5.custaff_net_reference_correlation.nii.gz
+derivatives/contarg/hierarchical/testing1sub/sub-*/func/sub-*_task-rest_run-*_atlas-Coords_space-T1w_desc-dt0.5.custaff_targetclust.nii.gz
+derivatives/contarg/hierarchical/testing1sub/sub-*/func/sub-*_task-rest_run-*_atlas-Coords_space-T1w_desc-dt0.5.custaff_targetclustinfo.tsv
+derivatives/contarg/hierarchical/testing2subs/sub-*/func/sub-*_task-rest_run-*_atlas-Coords_space-T1w_desc-dt0.5.custaff_net_reference_correlation.nii.gz
+derivatives/contarg/hierarchical/testing2subs/sub-*/func/sub-*_task-rest_run-*_atlas-Coords_space-T1w_desc-dt0.5.custaff_targetclust.nii.gz
+derivatives/contarg/hierarchical/testing2subs/sub-*/func/sub-*_task-rest_run-*_atlas-Coords_space-T1w_desc-dt0.5.custaff_targetclustinfo.tsv
+
+derivatives/contarg/hierarchical/*/sub-*/func/*.pkl.gz
