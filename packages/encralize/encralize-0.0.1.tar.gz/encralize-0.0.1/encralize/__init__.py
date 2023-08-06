@@ -1,0 +1,1 @@
+from packaging_encralize.encralize import encralizer

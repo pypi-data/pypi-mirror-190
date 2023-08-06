@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: encralize
+Version: 0.0.1
+Summary: A simple package to safely serialize and encrypt data
+Home-page: https://github.com/Malasaur/encralize
+Download-URL: https://github.com/Malasaur/encralize/archive/refs/tags/v_0.0.1.tar.gz
+Author: Silvio Amuntenci
+Author-email: amuntenci.silvio@gmail.com
+License: gpl-3.0
+Keywords: serialization,encryption
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
