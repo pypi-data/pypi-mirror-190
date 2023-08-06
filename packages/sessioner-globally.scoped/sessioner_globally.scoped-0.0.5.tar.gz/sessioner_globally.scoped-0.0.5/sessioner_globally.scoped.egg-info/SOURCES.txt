@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.py
+sessioner/__init__.py
+sessioner_globally.scoped.egg-info/PKG-INFO
+sessioner_globally.scoped.egg-info/SOURCES.txt
+sessioner_globally.scoped.egg-info/dependency_links.txt
+sessioner_globally.scoped.egg-info/top_level.txt
