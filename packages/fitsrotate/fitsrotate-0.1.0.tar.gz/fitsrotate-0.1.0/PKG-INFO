@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: fitsrotate
+Version: 0.1.0
+Summary: Rotate a FITS file to put spectral axis first
+License: MIT
+Author: Alec Thomson
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: astropy (>=5,<6)
+Requires-Dist: dask (>=2023,<2024)
+Requires-Dist: numpy (>=1.22,<2.0)
+Description-Content-Type: text/markdown
+
+# PyFITSRotate
+
+## Description
+A simple Python script to rotate FITS cube axes. It uses the [astropy](http://www.astropy.org/) package to read and write FITS files.
+
+The default action is to rotate the spectral axis to be the first axis. This is useful for heavy IO operations on FITS cubes/
+
+## Installation
+From github:
+```
+pip install git+https://github.com/AlecThomson/pyfitsrotate.git
+```
+From PyPI:
+```
+pip install fitsrotate
+```
+
+## Usage
+```
+❯ fitsrotate -h
+usage: fitsrotate [-h] [-o [OUTFILE]] [-e EXT] [-s SWAP_AX] filename
+
+Rotate a FITS file to put spectral axis first.
+
+positional arguments:
+  filename              Input filename.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o [OUTFILE], --outfile [OUTFILE]
+                        Output filename. Defaults to input filename with .rot.fits extension.
+  -e EXT, --ext EXT     Extension number. Defaults to 0.
+  -s SWAP_AX, --swap-ax SWAP_AX
+                        Axis to swap with spectral axis (numpy convention). Defaults to -1.
+```
+
