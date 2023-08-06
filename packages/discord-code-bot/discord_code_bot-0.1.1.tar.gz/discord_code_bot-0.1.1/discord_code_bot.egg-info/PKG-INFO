@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: discord-code-bot
+Version: 0.1.1
+Summary: Package to add code evaluation to discord bot
+Home-page: https://https://github.com/lubenicapp/discord_code_bot
+Author: Lubenica#3872
+Author-email: lubenicapp@tutanota.com
+License: BSD 2-clause
+Keywords: python,discord,bot
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
