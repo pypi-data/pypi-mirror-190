@@ -1,0 +1,15 @@
+just_because/__init__.py,sha256=ruvkJXVCQ96Ns9LYCVK8JDCWca0onrxMPtQccOzrB4A,125
+just_because/ji.py,sha256=JDoaA7Pdcd5cL-98S8HL9_bdcIIcHGP0f-CFWkFkxbc,206
+just_because/ji2zhiyin.py,sha256=DpihSJao1kI48fey_M48r5obqElqDU5kpvNxfccyamg,180
+just_because/patterns.py,sha256=9SMTgZtx2YsCyKE-y_kTtnPZa6IWtdFoZXF3GZGMG8E,549
+just_because/requirements.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+just_because/zhiyin.py,sha256=39B7qHjpeK5MNnKM17FhpuDchBPf-vqxw2nTOzsxUU4,183
+just_because/zhiyin2ji.py,sha256=MPFlqyKOqzm7DRpIqgLq_MbjimQ9K5KC1wiGtRW6cZI,186
+just_because/words/ji.txt,sha256=DF_owCtmQZ-GHbo7On-QIv6jAuGYAwSafQdciV0VFVQ,1030
+just_because/words/yin.txt,sha256=_28hgCe3jT_AbtQUuSn-VszNOLxz-PoYDbUAfonUzfI,466
+just_because/words/zhi.txt,sha256=EoNMt8-WcTLdJR3rmn_E84RA3rSgsY6KLOjk9v0MR6c,823
+just_because-1.0.2.dist-info/LICENSE,sha256=J9eazsYx4iykr4TXVbQYWCgTckalIepWmG9kN1UwGN0,1065
+just_because-1.0.2.dist-info/METADATA,sha256=g_URTunie33y9h2pCldz-mPTi3J7rvD8RTUCjp019xk,1696
+just_because-1.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+just_because-1.0.2.dist-info/top_level.txt,sha256=KbXJPna0wFW0rNVabaLaHPHcTQTe1eUlmZKDAAkV5v8,13
+just_because-1.0.2.dist-info/RECORD,,
