@@ -1,0 +1,8 @@
+jupysec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupysec/finding.py,sha256=QYQ-wb81ArcE8BhDGiWNCOxchGhyaWdmKzN197ESegE,293
+jupysec/rules.py,sha256=5Syo8Tq4UmSt2A3lz0QU4JjcEPLGHYww5NFWtsZgNuw,15477
+jupysec-0.1.16.dist-info/LICENSE,sha256=fwtfPTa9u4d-2yVHiMpBUxddgvF2NwdlsZnTUnxe7hw,1517
+jupysec-0.1.16.dist-info/METADATA,sha256=zwJfHER4SyIJ9ToPyV1XyncuXvj46xMK9DPUtYtQr_I,2544
+jupysec-0.1.16.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jupysec-0.1.16.dist-info/top_level.txt,sha256=u22Dmepn7Eyl2WO6aK3OaWLo8f4UpamY6iZQLYVqpEU,8
+jupysec-0.1.16.dist-info/RECORD,,
