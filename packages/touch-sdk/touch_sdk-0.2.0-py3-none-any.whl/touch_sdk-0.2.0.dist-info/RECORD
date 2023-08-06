@@ -1,0 +1,11 @@
+touch_sdk/__init__.py,sha256=RmrBuouN9YYXW5cUYpJJ3sReNHjda-KyP7rc-NbV_2g,345
+touch_sdk/ble_connector.py,sha256=cLdwRo50I-k-LwBwF7qzA0JEfhjifkBpqABHZb6Q3vI,3475
+touch_sdk/watch.py,sha256=LF0q2_v2bXz6VuVUpvlRjS-b5ulfV6oalz3HSMKdsic,9723
+touch_sdk/protobuf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+touch_sdk/protobuf/vec_pb2.py,sha256=BpyoK4fef679A-B6rBEgceYZmrUru5d-XTmp4Yz-NhM,1374
+touch_sdk/protobuf/watch_input_pb2.py,sha256=kkd2sTliNBOThtFlEgFyscipczUJHK4J7Sn45U6cdIE,1462
+touch_sdk/protobuf/watch_output_pb2.py,sha256=2x34jCrKdC65i1_JFJMEfWT4GQXtoSQSJLQXveZ8Xt0,3383
+touch_sdk-0.2.0.dist-info/METADATA,sha256=2yD0VXnHvij3MiMEWVt87u_h6M-RJS67h1Xkz123fr8,3675
+touch_sdk-0.2.0.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+touch_sdk-0.2.0.dist-info/licenses/LICENSE,sha256=dITx6S5gw76D-NYCY41fQdXbS3GMYAmbXWM69sY1Zlc,740
+touch_sdk-0.2.0.dist-info/RECORD,,
