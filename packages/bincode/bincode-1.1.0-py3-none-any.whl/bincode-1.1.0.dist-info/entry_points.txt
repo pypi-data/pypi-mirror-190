@@ -1,0 +1,2 @@
+[console_scripts]
+bincode = bincode.__init__:search
