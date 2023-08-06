@@ -1,0 +1,8 @@
+download
+colorama
+python-dotenv
+setenvironment>=1.0.10
+shellexecute
+
+[test]
+pytest
