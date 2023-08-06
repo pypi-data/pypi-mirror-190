@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: psu-base
+Version: 5.1.8
+Summary: Basic features used in all PSU Django apps
+Home-page: https://github.com/PSU-OIT-ARC/django-psu-base
+Author: Mike Gostomski
+Author-email: mjg@pdx.edu
+License: MIT License
+Platform: UNKNOWN
+Classifier: Framework :: Django :: 2.2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Django (<4.0,>=3.2.10)
+Requires-Dist: urllib3 (>=1.26.6)
+Requires-Dist: certifi (>=2020.12.5)
+Requires-Dist: chardet (>=4.0.0)
+Requires-Dist: django-cas-ng (>=4.2.1)
+Requires-Dist: idna (>=2.10)
+Requires-Dist: lxml (>=4.8.0)
+Requires-Dist: psycopg2-binary (>=2.9.1)
+Requires-Dist: pylibmc (>=1.6.1)
+Requires-Dist: python-cas (>=1.5.0)
+Requires-Dist: python-memcached (>=1.59)
+Requires-Dist: pytz (>=2021.1)
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: sqlparse (>=0.4.1)
+Requires-Dist: django-crequest (>=2018.5.11)
+Requires-Dist: arrow (>=1.2.2)
+Requires-Dist: pycryptodome (>=3.14.1)
+Requires-Dist: libsass (>=0.21.0)
+Requires-Dist: django-compressor (>=2.4.1)
+Requires-Dist: django-sass-processor (>=1.0.1)
+Requires-Dist: sentry-sdk (>=1.5.5)
+Requires-Dist: asgiref (>=3.5.0)
+Requires-Dist: gunicorn (>=20.0.4)
+Requires-Dist: pyyaml (>=5.4.1)
+
+Reusable Django app specifically for PSU's custom-built web applications. 
+
