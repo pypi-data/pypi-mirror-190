@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: builderer
+Version: 0.1.0
+Summary: Container based mono repo builder.
+Author: Florian Sattler
+Author-email: dev@florian-sattler.de
+License: MIT
+Keywords: builderer,continuous integration,continuous delivery
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+
+# builderer
+Container based mono repo builder
