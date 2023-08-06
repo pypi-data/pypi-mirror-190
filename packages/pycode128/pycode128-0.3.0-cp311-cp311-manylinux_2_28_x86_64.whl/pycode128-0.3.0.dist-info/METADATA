@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pycode128
+Version: 0.3.0
+Summary: Python extension for Code128 barcode generator library.
+Home-page: https://github.com/gpongelli/pycode128
+License: MIT
+Author: Gabriele Pongelli
+Author-email: gabriele.pongelli@gmail.com
+Requires-Python: >=3.8.0,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (==8.0.1)
+Requires-Dist: cloup (>=0.15.1,<0.16.0)
+Requires-Dist: termcolor (>=1.1.0,<2.0.0)
+Requires-Dist: tqdm (>=4.64.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Code128 library's python extension
+
+
+[![pypi](https://img.shields.io/pypi/v/pycode128.svg)](https://pypi.org/project/pycode128/)
+[![python](https://img.shields.io/pypi/pyversions/pycode128.svg)](https://pypi.org/project/pycode128/)
+[![Build Status](https://github.com/gpongelli/pycode128/actions/workflows/dev.yml/badge.svg)](https://github.com/gpongelli/pycode128/actions/workflows/dev.yml)
+[![codecov](https://codecov.io/gh/gpongelli/pycode128/branch/main/graphs/badge.svg)](https://codecov.io/github/gpongelli/pycode128)
+
+
+
+Python extension for Code128 barcode generator library
+
+
+* Documentation: <https://gpongelli.github.io/pycode128>
+* GitHub: <https://github.com/gpongelli/pycode128>
+* PyPI: <https://pypi.org/project/pycode128/>
+* Free software: MIT
+
+
+## Features
+
+* TODO
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [waynerv/cookiecutter-pypackage](https://github.com/waynerv/cookiecutter-pypackage) project template.
+
