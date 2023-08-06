@@ -1,0 +1,15 @@
+build
+ipycytoscape
+ipywidgets
+ipyleaflet
+ipycytoscape
+tabulate
+fabrictestbed==1.4.4
+paramiko
+jinja2>=3.0.0
+pandas
+numpy
+
+[test]
+pytest
+coverage[toml]
