@@ -1,0 +1,12 @@
+optipack/.config/project_structure.yaml,sha256=QyYo--YYvJA8IWofhVX5qBhzjk-wV5-pGeA1tkSAQ2w,168
+optipack/__init__.py,sha256=63nlmCaN1efJI3Mt7LdtMd_8zOHQFtyM9xWhVXl3_1M,44
+optipack/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optipack/cli.py,sha256=YVW9r2N7VZQOCOkOUmcy7CFi3CTwJFtB8vyfIyvSo5Q,984
+optipack/sdk/__init__.py,sha256=H8ja5HDfzTva43VQOt6vfPG1u-9NOYKoMOA9Uo2L0EA,32
+optipack/sdk/optipack_init.py,sha256=U86tP0RCQ_F7cLPjdOEYEqlcMwqtLQQAC3aga14Zr9E,1674
+optipack/util.py,sha256=ygLloxzMPdkRPCnVchEkwihpwX8OKY7EHGgBg_qrGYQ,130
+optipack-0.0.10.dev0.dist-info/LICENSE,sha256=RmgLlI0R61vCtABiF4LIE2GExMxGb5vbfCfoaICCCHA,1072
+optipack-0.0.10.dev0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+optipack-0.0.10.dev0.dist-info/entry_points.txt,sha256=LkIY4cFlXEDNGHBcwq6Q5IafKQgcwycMrq5BRyaR0tk,45
+optipack-0.0.10.dev0.dist-info/METADATA,sha256=pYUQrGDVxb05LrmrRTGq-gSwidrMMTJAp8LJNMH5eAQ,594
+optipack-0.0.10.dev0.dist-info/RECORD,,
