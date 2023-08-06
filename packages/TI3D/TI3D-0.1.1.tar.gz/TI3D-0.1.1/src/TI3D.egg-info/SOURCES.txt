@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/TI3d.py
+src/__init__.py
+src/TI3D.egg-info/PKG-INFO
+src/TI3D.egg-info/SOURCES.txt
+src/TI3D.egg-info/dependency_links.txt
+src/TI3D.egg-info/top_level.txt
