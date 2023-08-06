@@ -1,0 +1,8 @@
+xarray
+
+[all]
+matplotlib
+pint
+shapely
+regex
+rich
