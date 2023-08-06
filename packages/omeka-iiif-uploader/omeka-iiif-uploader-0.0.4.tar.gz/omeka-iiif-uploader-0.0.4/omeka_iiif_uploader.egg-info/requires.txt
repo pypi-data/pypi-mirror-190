@@ -1,0 +1,6 @@
+requests
+tqdm
+pandas
+beautifulsoup4
+
+[dev]

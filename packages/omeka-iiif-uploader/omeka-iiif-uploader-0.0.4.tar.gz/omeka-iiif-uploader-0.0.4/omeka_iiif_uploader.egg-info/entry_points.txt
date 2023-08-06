@@ -1,0 +1,2 @@
+[nbdev]
+omeka_iiif_uploader = omeka_iiif_uploader._modidx:d

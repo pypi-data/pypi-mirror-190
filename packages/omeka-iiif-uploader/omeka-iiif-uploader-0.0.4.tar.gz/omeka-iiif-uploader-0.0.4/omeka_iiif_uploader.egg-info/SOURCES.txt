@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+omeka_iiif_uploader/__init__.py
+omeka_iiif_uploader/_modidx.py
+omeka_iiif_uploader/core.py
+omeka_iiif_uploader.egg-info/PKG-INFO
+omeka_iiif_uploader.egg-info/SOURCES.txt
+omeka_iiif_uploader.egg-info/dependency_links.txt
+omeka_iiif_uploader.egg-info/entry_points.txt
+omeka_iiif_uploader.egg-info/not-zip-safe
+omeka_iiif_uploader.egg-info/requires.txt
+omeka_iiif_uploader.egg-info/top_level.txt
