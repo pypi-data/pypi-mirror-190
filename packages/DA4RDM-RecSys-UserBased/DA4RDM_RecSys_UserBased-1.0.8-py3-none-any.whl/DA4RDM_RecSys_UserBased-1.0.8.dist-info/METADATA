@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: DA4RDM-RecSys-UserBased
+Version: 1.0.8
+Summary: A package that recommends similar data collections based on the analysis of user-resource interaction patterns.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: jsons
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+
+# DA4RDM-RecSys-UserBased
+
+## Description
+The DA4RDM-RecSys-ContentBased is a python based package that recommends similar data collections based on unstructured and explicitly provided meta information of files.
+
