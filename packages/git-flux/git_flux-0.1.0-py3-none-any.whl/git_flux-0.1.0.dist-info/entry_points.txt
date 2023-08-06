@@ -1,0 +1,3 @@
+[console_scripts]
+git-flux=git_flux.__main__:cli
+
