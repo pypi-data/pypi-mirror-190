@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cr-dbconnections
+Version: 0.0.2
+Summary: Classes básicas de conexão com bancos de dados.
+Home-page: https://github.com/ConsultaRemedios/cr_dbconnections
+Author: Henrique Ortiz
+Author-email: henrique.ortiz@consultaremedios.com.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pymongo
+Requires-Dist: sqlalchemy
+Requires-Dist: python-dotenv
+Requires-Dist: PyYAML
+
+# cr_dbconnections
+Classes bÃ¡sicas para conexÃ£o com banco de dados diversos, utilizado em conjunto com Jupyter Notebook para exploraÃ§Ã£o de dados, bem como geraÃ§Ã£o de relatÃ³rios bÃ¡sicos.
+
+
