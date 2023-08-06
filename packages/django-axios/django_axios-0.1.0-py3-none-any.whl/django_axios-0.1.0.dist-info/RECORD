@@ -1,0 +1,8 @@
+django_axios/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_axios/apps.py,sha256=7TUVnaKl4QKj0MEI9hrfCSmZiq63AqBsPWL8VY0pXY0,242
+django_axios/settings.py,sha256=cYqwukBIi2q0os7ow7Em92dTEmFVG238Fp9uhpkp3rw,234
+django_axios/socket.py,sha256=wFlIQds8DRLbHNvr-2rUwZ705xi7VKpZsRu7vebSrTs,2383
+django_axios-0.1.0.dist-info/LICENSE,sha256=fpFDg7rBeiwXkovCK6WneUmUNFv4kFaACNdDlh1iw7I,1095
+django_axios-0.1.0.dist-info/METADATA,sha256=iuJNEAzY-x68XXoyElEWXYTizZuAAChhLslv5JtLCU0,1927
+django_axios-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+django_axios-0.1.0.dist-info/RECORD,,
