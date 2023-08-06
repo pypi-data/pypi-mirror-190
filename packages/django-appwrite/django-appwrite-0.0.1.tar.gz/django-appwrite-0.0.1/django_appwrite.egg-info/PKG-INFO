@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: django-appwrite
+Version: 0.0.1
+Summary: Django Middleware to authenticate users with Appwrite
+License-File: LICENSE
