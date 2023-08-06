@@ -1,0 +1,12 @@
+name: py3
+dependencies:
+- python=3
+- numpy
+- gevent
+- graphviz
+- mock
+- packaging
+- pillow
+- psutil
+- sphinx
+- sphinx_rtd_theme
