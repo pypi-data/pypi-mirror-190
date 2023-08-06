@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gfatypes/__init__.py
+gfatypes/gfatypes.py
+gfatypes.egg-info/PKG-INFO
+gfatypes.egg-info/SOURCES.txt
+gfatypes.egg-info/dependency_links.txt
+gfatypes.egg-info/not-zip-safe
+gfatypes.egg-info/top_level.txt
