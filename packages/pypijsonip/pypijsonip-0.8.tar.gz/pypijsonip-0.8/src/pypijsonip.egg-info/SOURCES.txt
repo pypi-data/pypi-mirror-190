@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/pypijsonip.egg-info/PKG-INFO
+src/pypijsonip.egg-info/SOURCES.txt
+src/pypijsonip.egg-info/dependency_links.txt
+src/pypijsonip.egg-info/top_level.txt
+src/pypinetworktest_ttataryn26/__init__.py
+src/pypinetworktest_ttataryn26/feedParse.py
+src/pypinetworktest_ttataryn26/test.py
