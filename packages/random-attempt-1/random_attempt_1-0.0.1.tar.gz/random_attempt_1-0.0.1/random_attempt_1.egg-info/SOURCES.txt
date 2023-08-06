@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.cfg
+setup.py
+interaction_aware_motion_prediction/__init__.py
+random_attempt_1.egg-info/PKG-INFO
+random_attempt_1.egg-info/SOURCES.txt
+random_attempt_1.egg-info/dependency_links.txt
+random_attempt_1.egg-info/requires.txt
+random_attempt_1.egg-info/top_level.txt
+random_attempt_1.egg-info/zip-safe
