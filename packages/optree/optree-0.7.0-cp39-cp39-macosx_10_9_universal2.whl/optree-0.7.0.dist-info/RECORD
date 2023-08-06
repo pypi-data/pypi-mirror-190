@@ -1,0 +1,14 @@
+optree-0.7.0.dist-info/RECORD,,
+optree-0.7.0.dist-info/LICENSE,sha256=2p1yHZ2-Wggk7ku5MVp59TvIUeCBZB8nd7RwtdlJPL0,11374
+optree-0.7.0.dist-info/WHEEL,sha256=3CvWwwrveU6DPPAN5tRMQqrJUeYk31ia0U1Qy22JNO4,113
+optree-0.7.0.dist-info/top_level.txt,sha256=wxgWsTkpSlcz3dX9fMJb8ShwAlFdBUpvrlMRYE31_Po,7
+optree-0.7.0.dist-info/METADATA,sha256=3oDeITbJpbnJl1l7R4WH0lZMsV5n0w5XC1_WqeU7TkI,36210
+optree/_C.pyi,sha256=Ml4M9n2Dg7qEKB_fV8GGTXjzavleJN9686xykLQUcOQ,2878
+optree/version.py,sha256=6lpsTq9IHgqkfI7bwAxokbeRRwvV2j_YvMIV3QMghhQ,1768
+optree/registry.py,sha256=zWD26c_UhLW64Yr0FP8jsrwFTvw1prdk7KWKYOBIenE,22980
+optree/__init__.py,sha256=oul_cNwTBl_KSJ2CAbnBz1fwUpmPuXsfrMzGRM8nleA,3255
+optree/ops.py,sha256=zuUqJYK34mSTFZxsn6biPAyj6FlA-MKPh8bxQxg6xmc,55040
+optree/utils.py,sha256=KNoJ3IlrsXtfOuAtY5XyNmeJxsdMGMfrbvSzPE4JvYc,1548
+optree/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optree/typing.py,sha256=a2I4ytVtLEDPO6c4QcKrHMO2jUV0hGHziaPsZONlveI,9636
+optree/_C.cpython-39-darwin.so,sha256=MLAfjkRIBIVxMxg0olUrPVs0V9mzHSKU6Mxa3gw6GQo,965736
