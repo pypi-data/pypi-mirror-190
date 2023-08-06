@@ -1,0 +1,11 @@
+LICENSE.rst,sha256=qhQyavx0SN9nB1wUrnfi5uHVP5vNWtJ7YITw_5L_xzk,1066
+cms_helpers/__init__.py,sha256=Zm1HnRHNuDgrzfsugYQM49PjO6N_Ui5pu9BaD-rXmi4,165
+cms_helpers/anylink_extensions.py,sha256=rtn75h4RxgTGN3QX9xIo1MGLCy_Q-fEUYHwwCKBPaSE,1764
+cms_helpers/cms_toolbars.py,sha256=5YwTMggK2_5xW-_wtalfTVscgnpUATVR2BHTqGKCKmQ,2405
+cms_helpers/filer_fields.py,sha256=OOfrnvA4CQjOlFRuNGYjig_sg7yRXuKr6Ug_uKSJUV4,2264
+cms_helpers/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cms_helpers/templatetags/cms_helpers.py,sha256=4KGNDbn5FOxqdJItvu4niLKV-E5_JrhtjSd4VlnvmyM,2222
+django_cms_helpers-2.0.0.dist-info/LICENSE.rst,sha256=qhQyavx0SN9nB1wUrnfi5uHVP5vNWtJ7YITw_5L_xzk,1066
+django_cms_helpers-2.0.0.dist-info/METADATA,sha256=d65NCWp5_3Pm_hutkodtT_caFyDEV4lMghMkcil1vIU,2918
+django_cms_helpers-2.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+django_cms_helpers-2.0.0.dist-info/RECORD,,
