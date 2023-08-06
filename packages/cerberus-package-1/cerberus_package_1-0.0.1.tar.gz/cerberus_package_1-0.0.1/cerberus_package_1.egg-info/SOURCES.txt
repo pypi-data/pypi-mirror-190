@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cerberus_package_1.egg-info/PKG-INFO
+cerberus_package_1.egg-info/SOURCES.txt
+cerberus_package_1.egg-info/dependency_links.txt
+cerberus_package_1.egg-info/requires.txt
+cerberus_package_1.egg-info/top_level.txt
+cerberuspackage1/__init__.py
+cerberuspackage1/arcface.py
+cerberuspackage1/scrdf_cbr.py
