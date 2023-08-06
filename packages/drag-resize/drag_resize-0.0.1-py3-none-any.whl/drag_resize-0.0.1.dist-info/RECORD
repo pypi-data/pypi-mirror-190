@@ -1,0 +1,12 @@
+drag_resize/DragResize.py,sha256=vDux9FX8UT3aIWLE90ED9VTlPibmE8xJSJj7yt2DJy4,1335
+drag_resize/__init__.py,sha256=ehglnhC2PdC_SQFK-U4E0Bs3eaXD5cavDbIoJ25b0sA,2338
+drag_resize/_imports_.py,sha256=xO74J02RcxJgBbnufa8e-eaA3rFjuQZwIp2bopekU7Q,70
+drag_resize/drag_resize.min.js,sha256=pI9bmS2_3tJv4CJlBcdgzVdsfhnBSpOUBczN0YvZFmI,60178
+drag_resize/drag_resize.min.js.map,sha256=YZT4NqZddAnD-51gcRrBya43JyLJea9qkFeEJdqs40c,95
+drag_resize/metadata.json,sha256=-BnbpbkCAAEYwDNV40DZlX0sJ4XVCCI4Mwy4z2rvUdQ,1905
+drag_resize/package-info.json,sha256=56TmDEj_HgganAOAapIH_oEdfbeToNFM-GWuc8LfLVk,2099
+drag_resize-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drag_resize-0.0.1.dist-info/METADATA,sha256=Fw54f9MJIoIXG-uOLEOLxi9aSe5WPFxvnshuRZHg7tI,329
+drag_resize-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+drag_resize-0.0.1.dist-info/top_level.txt,sha256=4-Pv6Z2dxg1u_a9iPS8t45kSjldzXRyJpDxuDo2GErk,12
+drag_resize-0.0.1.dist-info/RECORD,,

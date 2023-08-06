@@ -1,0 +1,96 @@
+{
+  "src/lib/components/DragResize.react.js": {
+    "description": "",
+    "displayName": "DragResize",
+    "methods": [
+      {
+        "name": "handleOnDragStop",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "d",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleOnResizeStop",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          },
+          {
+            "name": "direction",
+            "type": null
+          },
+          {
+            "name": "ref",
+            "type": null
+          },
+          {
+            "name": "delta",
+            "type": null
+          },
+          {
+            "name": "position",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "children": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "x": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "y": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "w": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "h": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+}
