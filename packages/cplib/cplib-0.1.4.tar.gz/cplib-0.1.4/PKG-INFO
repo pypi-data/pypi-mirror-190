@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cplib
+Version: 0.1.4
+Summary: 
+License: Apache-2.0
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: nb
+Requires-Dist: numba (>=0.56,<0.57) ; (python_version < "3.11") and (extra == "nb")
+Requires-Dist: numpy
+Requires-Dist: scipy
