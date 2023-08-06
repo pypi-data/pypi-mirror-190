@@ -1,0 +1,265 @@
+Metadata-Version: 2.1
+Name: psu-base
+Version: 0.2.2
+Summary: Basic features used in all PSU Django apps
+Home-page: https://github.com/PSU-OIT-ARC/django-psu-base
+Author: Mike Gostomski
+Author-email: mjg@pdx.edu
+License: MIT License
+Platform: UNKNOWN
+Classifier: Framework :: Django :: 2.2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (>=2019.6.16)
+Requires-Dist: chardet (>=3.0.4)
+Requires-Dist: Django (>=2.2.2)
+Requires-Dist: django-cas-ng (>=3.6.0)
+Requires-Dist: idna (>=2.8)
+Requires-Dist: lxml (>=4.3.4)
+Requires-Dist: psycopg2-binary (>=2.8.3)
+Requires-Dist: pylibmc (>=1.6.0)
+Requires-Dist: python-cas (>=1.4.0)
+Requires-Dist: python-memcached (>=1.59)
+Requires-Dist: pytz (>=2019.1)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: six (>=1.12.0)
+Requires-Dist: sqlparse (>=0.3.0)
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: django-crequest (>=2018.5.11)
+Requires-Dist: arrow (>=0.14.5)
+
+# PSU-Base
+
+Django add-on for PSU apps which includes common utilities, such as:
+-  PSU Single Sign-On (SSO)
+-  Reference to static content server (e.g. for Bootstrap, FontAwesome4, and JQuery)
+-  Displaying the name and version of the app
+
+More documentation in [Confluence](https://portlandstate.atlassian.net/wiki/spaces/WDT/pages/713162905/Reusable+Django+Apps+The+Django+PSU+Plugin).
+
+## Quick Start
+### Dependencies
+The following dependencies are REQUIRED and must be installed manually in your app:
+- `django-cas-ng` and `crequest`
+    ```sh
+    pip install django-cas-ng
+    pip install crequest
+    ```
+    Add to your app's `settings.py`
+    ```python
+    INSTALLED_APPS = [
+        ...
+        'django_cas_ng',
+        'crequest',
+    ]
+    ```
+
+The following dependencies are REQUIRED in your system:
+- `libpq-dev`
+    ```sh
+    sudo apt install libpq-dev
+    ```
+
+### Installation
+Inside your Django app (we recommend you use a virtual environment)
+1. Set up your virtual envionment:
+   ```bash
+   cd my_django_project
+
+   # Create a virtual environment directory 'env'
+   python -m venv env
+   ```
+
+2. Until PSU-Base is hosted somewhere, for now you can install PSU-Base to your app as follows:
+
+    1. Clone this repository
+       ```sh
+       git clone git@github.com:PSU-OIT-ARC/django-psu-base.git
+       ```
+    2. Build the thing
+       ```sh
+       cd django-psu-base
+       python setup.py sdist bdist_wheel
+       ```
+       This will build two files under `django-psu-base/dist/`.
+       -  `psu-base-0.1.tar.gz`
+       -  `psu_base-0.1-py3-none-any.whl`
+
+       Note that `0.1` will change according to the version.
+    3. Copy either the `.tar.gz` or `.whl`file to your app
+       ```sh
+       cp dist/psu-base-0.1.tar.gz path/to/your/app
+       ```
+       OR
+       ```sh
+       cp dist/psu_base-0.1-py3-none-any.whl path/to/your/app
+       ```
+    4. `cd` into your app and install PSU-Base
+       ```sh
+       cd my_django_project
+       source env/bin/activate # make sure virtual environment is active
+       pip install psu-base-0.1.tar.gz
+       ```
+       OR
+       ```sh
+       pip install psu_base-0.1-py3-none-any.whl
+       ```
+       You get the idea...
+3. (Once published to PyPi or PSU-hosted PyPi/Poetry (to be done soon)...) Install PSU-Base:
+   ```bash
+   # First, activate the virtual environment
+   source env/bin/activate
+
+   # with the environment activated...
+   pip install django-psu-base
+   ```
+
+### Configuring Your App
+
+1. Add PSU-Base to your INSTALLED_APPS in `settings.py`:
+    ```python
+    INSTALLED_APPS = [
+       ...
+       'django_cas_ng',
+       'crequest',
+       'psu_base',
+    ]
+    ```
+
+1. Copy `docs/app_settings_template.py` to your app, name it `app_settings.py` and 
+update the values as needed.  
+
+1. Copy `docs/local_settings_template.py` to your app, name it `local_settings.py` and 
+update the values as needed.  
+
+1. Import your app and local settings files at the end of your settings.py file:
+`settings.py`
+```python
+    # Get app-specific settings
+    from .app_settings import *
+
+    # Override settings with values for the local environment
+    from .local_settings import *
+```
+
+1. Run `python manage.py migrate` to create the PSU-Base models
+
+1. <a name="configureyourapp4"></a>Configure your app's top-level `urls.py` to include urls with PSU namespace
+    ```python
+    # my_app/urls.py
+    from django.conf.urls import url
+    from django.urls import path, include
+    ...
+    urlpatterns = [
+        ...
+        # PSU and CAS views are defined in psu_base app
+        url(settings.URL_CONTEXT+'/psu/', include(('psu_base.urls', 'psu_base'), namespace='psu')),
+        url(settings.URL_CONTEXT+'/accounts/', include(('psu_base.urls', 'psu_base'), namespace='cas')),
+    ]
+    ```
+
+### Using PSU-Base in Your App
+#### Template
+- Extend the `psu_base.html` for your base template. This will add a 'PSU' header and footer. The header will include links to login to PSU SSO. Use the block `pagecontent` to add your own content. E.g. in your app's `index.html`:
+    ```jinja
+    {% extends 'psu_base.html' %}
+
+    {% block pagecontent %}
+        <h1>Hello PSU Base!</h1>
+    {% endblock %}
+    ```
+    ![Image of template rendered with psu base header and footer](images/index1.png)
+
+#### Templatetags
+-  Identity:
+    ```jinja
+    {% load base_taglib %}
+
+    {% display_name %}  <!-- displays user name when logged in -->
+    ```
+
+-  Static content:
+    ```jinja
+    {% load base_taglib %}
+
+    <head>
+        ...
+        {% jquery %} <!-- import jquery -->
+        {% bootstrap %} <!-- import bootstrap -->
+        {% font_awesome version='4' %} <!-- import FontAwesome -->
+    </head>
+    ```
+
+-  Utilities:
+    ```jinja
+    {% load base_taglib %}
+
+    {% app_name %} <!-- display app name -->
+    {% app_version %} <!-- display app version -->
+    ```
+
+#### PSU-Base Classes
+
+1. Log - provide logging interface ([Confluence docs](https://portlandstate.atlassian.net/wiki/spaces/WDT/pages/713719874/Logging))
+    ```python
+    ... # other imports
+    from psu_base.classes.Log import Log
+
+    log = Log()
+
+    def method(param1, param2):
+        log.trace([param1, param2])
+
+        ... # do something
+
+        try
+            ...
+        catch Exception as e:
+            log.error(e)
+
+        log.end(returned_value)  # Will log some metrics e.g. call duration if log.trace() was called first
+
+
+3. Finti - helper/wrapper to handle JWT transactions in Finti API calls [Confluence docs](https://portlandstate.atlassian.net/wiki/spaces/WDT/pages/713949380/Calling+Finti+from+Django)
+
+    __NOTE__: You must have `FINTI_URL` and `FINTI_TOKEN` configured for your app in `local_settings.py`.
+
+    There are two methods available to make Finti calls:
+    -  `jwt_get(self, request, path=None, parameters=None, include_metadata=False)`
+
+        Use to call Finti APIs that use Javascript Web Tokens (JWT). When using this method, you must supply the JWT in the request META attribute: `request.META['HTTP_AUTHORIZATION']`
+
+    -  `get(self, path, parameters=None, include_metadata=False)`
+
+        Use to call Finti APIs that do not use JWT. You must supply a `FINTI_TOKEN` in the `local_settings.py` file.
+        -  `path` : the API URI path without the Finti base URL i.e. `<scope>/<version>/<app_name>/[endpoint/args/querystrings]`
+
+            For example: `wdt/v1/buildings/AB`.  Where: `wdt` is __scope__, `v1` is __version__, `buildings` is __app_name__, `AB` is an __endpoint__.
+
+
+    -  Non-JWT Finti APIs have different response format; see: [Finti Docs](https://sites.google.com/a/pdx.edu/web-services/home/api). The `django-psu-base` Finti module wraps these reseponses into the format used by the Finti APIs which use JWT as shown below.
+
+        The original response content is placed in the `'message'` attribute without modifications. For these kind of response content, the values for `'version'` and `'jwt'` are always `None`.  Responses from APIs that use JWT are returned as-is.
+
+        Displays returned response with format:
+        ```python
+        {
+            'status': ...,
+            'result': ...,
+            'version': ...,
+            'jwt': ...,
+            'message': ...
+        }
+        ```
+        -  `status`: HTTP status code
+        -  `result`: description of status code e.g. 200 = `'success'`
+        -  `version`: API version
+        -  `jwt`: JWT token (when available)
+        -  `message`: information/data requested or error message
+
+    If PSU-Base urls were added to the app (see [Configuring Your App step 4](#configureyourapp4)), you can test calling Finti APIs from the testing page at URL: `base/finti`
+
+    ![Image of API test page](images/api_test.png)
+
