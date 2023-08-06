@@ -1,0 +1,9 @@
+RPA/Assistant/__init__.py,sha256=vEhejm_10V_AOMi-3068p5JuoaQ-C98O40MlXvbT_64,88
+RPA/Assistant/flet_client.py,sha256=zjrqhJ-mSGYfEKnuDkhl4DZFWj5d-Kna3ZenXL1KaVI,7121
+RPA/Assistant/library.py,sha256=MS5iqbB7D5BE7WfXolFwf7e-ldrpxreIVh3xpqjZR4w,38776
+RPA/Assistant/types.py,sha256=d0u9nPVi-NluN8V1yE8JG549xdZhpyarcjmkhY9E_JI,449
+RPA/Assistant/utils.py,sha256=Y6wsWRXv1y8RWWV4j4hCuMNAupTEyRaWh3fXPIxdfrA,1966
+rpaframework_assistant-0.1.7.dist-info/LICENSE,sha256=DREwTEnlFQcHakxEJgQTR6OTYZd5PivKSDAoqzsdJLc,11358
+rpaframework_assistant-0.1.7.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+rpaframework_assistant-0.1.7.dist-info/METADATA,sha256=GaLLM16LFeAJSVao2i3uaO_0sZENDq0aNpq2PFJFsBY,1830
+rpaframework_assistant-0.1.7.dist-info/RECORD,,
