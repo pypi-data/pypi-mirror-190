@@ -1,0 +1,14 @@
+import setuptools
+setuptools.setup(
+    name='MasterYounes',
+    version='0.1',
+    author='Master-Younes',
+    description='Simple library in python for test',
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+        "License :: OSI Approved :: MIT License"
+    ]
+
+)
