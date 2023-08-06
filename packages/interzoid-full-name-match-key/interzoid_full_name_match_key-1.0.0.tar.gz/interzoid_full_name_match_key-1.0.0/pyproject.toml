@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "interzoid_full_name_match_key"
+version = "1.0.0"
+authors = [
+  { name="Interzoid", email="support@interzoid.com" },
+]
+description = "Provides an AI-based person name similarity key used to match inconsistent name data."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Database",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+"Homepage" = "https://www.interzoid.com/apis/individual-name-matching"
