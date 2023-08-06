@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.py
+BeautifulFinance/data_processing.py
+BeautifulFinance/explore.py
+BeautifulFinance/model.py
+BeautifulFinance/visualization.py
+BeautifulFinance.egg-info/PKG-INFO
+BeautifulFinance.egg-info/SOURCES.txt
+BeautifulFinance.egg-info/dependency_links.txt
+BeautifulFinance.egg-info/top_level.txt
