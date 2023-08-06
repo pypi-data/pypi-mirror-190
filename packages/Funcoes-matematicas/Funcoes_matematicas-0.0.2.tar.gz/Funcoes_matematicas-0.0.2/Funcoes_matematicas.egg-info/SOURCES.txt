@@ -1,0 +1,13 @@
+README.md
+setup.py
+Funcoes_matematicas/__init__.py
+Funcoes_matematicas.egg-info/PKG-INFO
+Funcoes_matematicas.egg-info/SOURCES.txt
+Funcoes_matematicas.egg-info/dependency_links.txt
+Funcoes_matematicas.egg-info/requires.txt
+Funcoes_matematicas.egg-info/top_level.txt
+Funcoes_matematicas/processamento/__init__.py
+Funcoes_matematicas/processamento/calculo_area.py
+Funcoes_matematicas/processamento/geracao_pontos.py
+Funcoes_matematicas/utils/__init__.py
+Funcoes_matematicas/utils/plot_pontos.py
