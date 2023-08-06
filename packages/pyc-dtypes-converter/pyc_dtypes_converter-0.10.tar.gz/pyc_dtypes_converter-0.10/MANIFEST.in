@@ -1,0 +1,4 @@
+include pyc_dtypes_converter/requirements.txt
+include pyc_dtypes_converter/thirdparty.json
+include pyc_dtypes_converter/README.MD
+include pyc_dtypes_converter/LICENSE

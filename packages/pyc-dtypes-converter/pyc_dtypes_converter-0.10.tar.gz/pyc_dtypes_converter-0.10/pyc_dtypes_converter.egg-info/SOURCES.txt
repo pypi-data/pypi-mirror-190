@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyc_dtypes_converter/LICENSE
+pyc_dtypes_converter/README.MD
+pyc_dtypes_converter/__init__.py
+pyc_dtypes_converter/requirements.txt
+pyc_dtypes_converter/thirdparty.json
+pyc_dtypes_converter.egg-info/PKG-INFO
+pyc_dtypes_converter.egg-info/SOURCES.txt
+pyc_dtypes_converter.egg-info/dependency_links.txt
+pyc_dtypes_converter.egg-info/top_level.txt
