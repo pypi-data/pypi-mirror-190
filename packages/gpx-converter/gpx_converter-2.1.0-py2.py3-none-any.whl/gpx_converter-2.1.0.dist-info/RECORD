@@ -1,0 +1,10 @@
+gpx_converter/__init__.py,sha256=NnF2ooVgA2GUjgvZhN7n0q9an1k_xjqY9FWnlTL_F1Q,144
+gpx_converter/base.py,sha256=hrRlml2eYlqnUwmpcDNWV0jYMlL1J-fyh8x2jUuPoaI,14176
+gpx_converter/cli.py,sha256=m3-78Kr9JNfhLltRxY5K-A-6ijTpx1AnH0_9_Dk_iRI,1778
+gpx_converter-2.1.0.dist-info/AUTHORS.rst,sha256=071ps4AaRPYiMxjqG-sd3nD0il5cs6voEpzGC_6Gw9g,161
+gpx_converter-2.1.0.dist-info/LICENSE,sha256=kMbc3iFAtRwil-cFCHKHUkHuvbV-zCuLMTGYFV2O5WA,1074
+gpx_converter-2.1.0.dist-info/METADATA,sha256=e6a_CCdFgwNP2m3ccwZ01bVIveo7o0YG_TRICTHOCkI,7649
+gpx_converter-2.1.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+gpx_converter-2.1.0.dist-info/entry_points.txt,sha256=S1vVnVtBYrVvU8S_W7EtxYXl5z18jeRpiocq60aE_Wc,57
+gpx_converter-2.1.0.dist-info/top_level.txt,sha256=YhP7TBgHNQ09B4GjSS6AN9UljDQ90d94y-5K8_kKGrY,14
+gpx_converter-2.1.0.dist-info/RECORD,,
