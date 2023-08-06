@@ -1,0 +1,3 @@
+[console_scripts]
+ptmpdy=ptmpdy.main:app
+
