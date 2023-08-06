@@ -1,0 +1,7 @@
+trivial_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trivial_package/test.py,sha256=i8ib9TfoGqhQM65zvBWttdpA0ZlbL-lSwcvsS0-UJVM,32
+test_upload_fraianna-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+test_upload_fraianna-0.0.1.dist-info/METADATA,sha256=0rlz7s0PAusEI1QwhK_3g-jPx_Bx_YfpE6fTvQMxCys,454
+test_upload_fraianna-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+test_upload_fraianna-0.0.1.dist-info/top_level.txt,sha256=7ulxRuaqerbG0vOr0GpcAAC1QMXoKvh2Dttvpr6i1Ew,16
+test_upload_fraianna-0.0.1.dist-info/RECORD,,
