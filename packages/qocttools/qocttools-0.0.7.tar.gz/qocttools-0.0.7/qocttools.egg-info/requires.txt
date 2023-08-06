@@ -1,0 +1,14 @@
+pytest
+pytest-xdist
+numpy
+jupyter
+scipy
+qutip
+nlopt
+matplotlib
+python-git-info
+mpi4py
+sphinx
+nbsphinx
+sphinxcontrib-bibtex
+sphinx-rtd-theme

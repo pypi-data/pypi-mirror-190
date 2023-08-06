@@ -1,0 +1,3 @@
+include Pipfile
+include qocttools/cythonfuncs.pyx
+recursive-include qocttools/sampleruns *
