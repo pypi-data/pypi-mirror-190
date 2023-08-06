@@ -1,0 +1,11 @@
+spirit_link/__init__.py,sha256=1ktbtTmkcNxkWCChzm-DcWZBdB7ZDmnnNPqnN2bD560,28
+spirit_link/cmd.py,sha256=sY3U7l8bHi8b4HQWs27XQO0FuEDbVXw512WK1HGi6HM,1924
+spirit_link/descriptors.py,sha256=3nuk4ohFeIadoIRpIVqcAd6Ii2Hd3_Afn7rxlvDUT1M,5063
+spirit_link/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spirit_link/backends/dot.py,sha256=LdNXsTAz3gPnxtClGkgN9Y9TgqblQtvQ451al_FAmrU,6770
+spirit_link-0.1.dist-info/LICENSE,sha256=y1sbC3oys_bRlPW_-PKHifzOZ1T72N6cjCD0-pMdN8k,1118
+spirit_link-0.1.dist-info/METADATA,sha256=gdwExP3D9A4FdsNdsusL_7aGolhYetZZFehrp6Y_UA8,2830
+spirit_link-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+spirit_link-0.1.dist-info/entry_points.txt,sha256=50Ecz2r3U9qAsKR3yn27n6Ry41x3hEU5jUIJHR-75SU,54
+spirit_link-0.1.dist-info/top_level.txt,sha256=2rIpZFnCmTuDgt1XXwZ2ZryCesdkbz45EjR7iXP91gc,12
+spirit_link-0.1.dist-info/RECORD,,

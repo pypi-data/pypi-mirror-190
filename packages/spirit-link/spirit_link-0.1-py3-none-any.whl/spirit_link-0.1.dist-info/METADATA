@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: spirit-link
+Version: 0.1
+Home-page: https://github.com/Suzhou-Tongyuan/spirit-link
+Author: TongYuan
+Author-email: support@tongyuan.cc
+License: mit
+Platform: any
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wisepy2
+Requires-Dist: graphviz-artist
+Requires-Dist: colorama
+
+# spirit-link
+
+
+## 使用
+
+下面是一个示例。通常来说，我们根据`需求` (Requirement) 进行项目开发，`项目` (Project) 被拆分为一个或多个模块，`模块` (Module) 被拆分为多个任务，`任务`(Task) 可以拆分为子任务：
+
+- 项目
+  - 模块
+    - 任务
+      - 子任务
+        - 子任务的子任务
+
+代码示例如下:
+
+```python
+from spirit_link import *
+项目(
+    "项目名",
+    [
+        模块(
+            "模块名",
+            [
+                任务("任务1"),
+                任务(
+                    "任务2",
+                    [
+                        # 子任务
+                    ]
+                ),
+            ]
+        ),
+    ]
+)
+```
+
+不管还是最顶层的`项目`，还是中间的`模块`，根部的`任务`，甚至是`需求`，这些都是`节点` (Node)。节点之间可以创建依赖：
+
+```python
+assert isinstance(项目, Node) and isinstance(任务, Node) and isinstance(需求, Node)
+任务1.depends(任务2)
+任务1.depends(项目3)
+```
+
+`节点`可以被用`标签` (Tag)标记：
+
+```python
+from enum import Enum
+
+class 我的标签(标签, Enum):
+    情况1 = 1
+    情况2 = 2
+
+任务1.tag(我的标签.情况1)
+```
+
+下面是一个例子：
+
+```python
+from enum import Enum
+from spirit_link import *
+from spirit_link.backends.dot import build_graph, output
+
+class 进度(Tag, Enum):
+    未开始 = 0
+    规划中 = 1
+    进行中 = 2
+    已完成 = 3
+    已验证 = 4
+
+## 描述需求
+
+A = 需求("A")
+
+B = 项目(
+    "B",
+    [
+        模块(
+            "C",
+            [
+                任务("a1"),
+                任务("a2")
+            ]
+        ),
+        模块(
+            "D",
+            [
+                任务("a3"),
+                任务("a4"),
+                任务(
+                    "a5",
+                    children=[
+                        任务("a5-1"),
+                        任务("a5-2")
+                    ]
+                )
+            ]
+        ),
+])
+
+
+A.depends(B)
+
+root = B
+outliers = [A]
+```
+
+可以从中构建一个PDF：
+
+```
+spirit-link.exe test.py --o=test.pdf
+```
+
+得到下图：
+
+![](./test.png)
+

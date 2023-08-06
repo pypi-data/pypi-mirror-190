@@ -1,0 +1,2 @@
+[console_scripts]
+spirit-link = spirit_link.cmd:entry
