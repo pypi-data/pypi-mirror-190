@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: djangocms-blog-highlight-posts
+Version: 0.0.3
+Summary: A djangocms-blog extension allowing to highlight posts
+Home-page: https://gitlab.com/kapt/open-source/djangocms-blog-highlight-posts
+License: LGPL-3.0
+Author: KAPT dev team
+Author-email: dev@kapt.mobi
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Django (>=3.2)
+Requires-Dist: djangocms-blog (>=1.2.3)
+Project-URL: Repository, https://gitlab.com/kapt/open-source/djangocms-blog-highlight-posts
+Description-Content-Type: text/markdown
+
+A djangocms-blog extension allowing to mark some posts as highlight and sort queryset to display them first on the posts list
+
+----
+
+## Install
+
+* Install the package
+    ```bash
+    python3 -m pip install djangocms-blog-highlight-posts
+    ```
+
+* Add it in your `INSTALLED_APPS`:
+    ```python
+
+        "djangocms_blog_highlight_posts",
+    ```
+
+* Override blog url conf (in project settings):
+    ```python
+
+        BLOG_URLCONF = "djangocms_blog_highlight_posts.urls"
+    ```
+
+* Run the migration:
+    ```sh
+    python3 manage.py migrate djangocms_blog_highlight_posts
+    ```
+
+
+
