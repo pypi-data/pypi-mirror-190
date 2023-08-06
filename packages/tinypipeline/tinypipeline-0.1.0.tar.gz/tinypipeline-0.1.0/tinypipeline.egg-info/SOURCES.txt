@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish-package.yaml
+.github/workflows/run-tests.yaml
+tests/__init__.py
+tests/test_pipeline.py
+tinypipeline/__init__.py
+tinypipeline/pipeline.py
+tinypipeline/step.py
+tinypipeline.egg-info/PKG-INFO
+tinypipeline.egg-info/SOURCES.txt
+tinypipeline.egg-info/dependency_links.txt
+tinypipeline.egg-info/top_level.txt
