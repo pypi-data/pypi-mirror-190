@@ -1,0 +1,17 @@
+sense_hat_matrix/Graph.py,sha256=pEGy9ghdRmXoEkm8D3eSZvgf_-9SAG5qSEL_X1IIqEk,892
+sense_hat_matrix/GraphUtil.py,sha256=NIkrOqU3nz_TF6W60QZkxmGzwPp9Uq1zsWOGXY86q98,673
+sense_hat_matrix/LedMatrix.py,sha256=fXPv-J2vVBRwNc_73DY1RhD_HX55nxsgS0kzaSjj910,1100
+sense_hat_matrix/LedMatrixUtil.py,sha256=1XzabitmyCp_lV3aX8Lf-sP1If3beC8Y7-h25TnE5k0,1298
+sense_hat_matrix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sense_hat_matrix/app.py,sha256=XSVpHY6CaDPcPjHPtEsVP5qqzBQK4yudWh5ldC7MvZw,317
+test/DoesItWork.py,sha256=OZf3_oJCrU2UPrKNoxX-MGb6aaJOjow8l-6gKDJr73Y,249
+test/PrettyPrint.py,sha256=PE6OA7UZclIHKMfTaxUshTRZ5E66fCdbAtYomL-wOdI,931
+test/TestGraph.py,sha256=5vHOqhKUBhvRDbxJZvs0bagodC73DGBxR2CbYCWIOk0,2728
+test/TestGraphUtil.py,sha256=M9cY5yYD-iEwCxDXtxmjWG9zzU8C-o0g70mp-p67nWY,942
+test/TestLedMatrixUtil.py,sha256=D1xnQtWaDHNpCXLwtbFZDMLPZF2UdZvPsTTKBlyqwQg,2083
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sense_hat_matrix-0.0.8.dist-info/LICENSE,sha256=qPDaoyiS7EmVgyZIuSrCHRWRfzrf5bO4Oy-cPpm_g4A,1315
+sense_hat_matrix-0.0.8.dist-info/METADATA,sha256=Umxzyk_ED4Q_OZjdyLQWZA_P1p-b_fjBRp5FjM_NoDQ,1243
+sense_hat_matrix-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sense_hat_matrix-0.0.8.dist-info/top_level.txt,sha256=bEY9AXHA77Oogo2nveh8QybmdPMHXzAXI_MhNPkHhH4,22
+sense_hat_matrix-0.0.8.dist-info/RECORD,,
