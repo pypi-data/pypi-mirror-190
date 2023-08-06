@@ -1,0 +1,3 @@
+[console_scripts]
+holoviews_samap = holoviews_samap.util.command:main
+
