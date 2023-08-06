@@ -1,0 +1,10 @@
+README.md
+setup.py
+pktype/__init__.py
+pktype/pokemon_type.py
+pktype/type_file.py
+pktype.egg-info/PKG-INFO
+pktype.egg-info/SOURCES.txt
+pktype.egg-info/dependency_links.txt
+pktype.egg-info/top_level.txt
+pktype.egg-info/zip-safe
