@@ -1,0 +1,28 @@
+check:
+    cargo clippy
+#run:
+#    RUST_LOG=debug cargo run
+#test:
+#    RUST_LOG=debug cargo test
+#db_proxy_prod:
+#    kubectl port-forward -n db service/galaxy-mongodb-svc 27018:27017
+docker_build:
+    docker build . -t asia-southeast1-docker.pkg.dev/modular-bucksaw-331913/limitless/exchange-worker:master
+docker_build_m1:
+    docker buildx build --platform linux/amd64 -t asia-southeast1-docker.pkg.dev/modular-bucksaw-331913/limitless/exchange-worker:master .
+
+docker_push:
+    docker push asia-southeast1-docker.pkg.dev/modular-bucksaw-331913/limitless/exchange-worker:master
+docker_shell:
+    docker container run -it asia-southeast1-docker.pkg.dev/modular-bucksaw-331913/limitless/exchange-worker:master bash
+docker_run:
+    docker run -it asia-southeast1-docker.pkg.dev/modular-bucksaw-331913/limitless/exchange-worker:master
+#kube_deploy:
+#    kubectl apply -f ./kube/exchange_worker.yaml
+#kube_restart:
+#    kubectl rollout restart deploy gravity
+#release:
+#    @just docker_build
+#    @just docker_push
+#    @just kube_deploy
+#    @just kube_restart

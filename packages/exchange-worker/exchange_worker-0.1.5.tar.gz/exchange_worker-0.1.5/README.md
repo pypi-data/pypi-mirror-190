@@ -1,0 +1,5 @@
+## Installation
+
+```
+cargo run
+```
