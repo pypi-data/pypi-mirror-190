@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: exchange-worker
+  namespace: galaxy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: exchange-worker
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: exchange-worker
+        tier: backend
+    spec:
+      #      imagePullSecrets:
+      #        - name: regcred
+      containers:
+        - name: warp
+          image: asia-southeast1-docker.pkg.dev/modular-bucksaw-331913/limitless/exchange_worker:master
+          imagePullPolicy: "Always"
+          command: [ "./exchange_worker" ]
+          resources:
+            requests:
+              memory: 100Mi
+              cpu: 500m
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: exchange-worker-config
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: exchange-worker-config
+  namespace: galaxy
+data:
+  RUST_LOG: debug
