@@ -1,0 +1,13 @@
+click<9,>=8
+packaging<24,>=17
+parse-stages<0.2,>=0.1
+pyparsing<4,>=3
+setuptools
+utf8-locale<2,>=1
+
+[:python_version < "3.11"]
+contextlib-chdir<2,>=1
+tomli<3,>=2
+
+[tox]
+tox<4,>=3
