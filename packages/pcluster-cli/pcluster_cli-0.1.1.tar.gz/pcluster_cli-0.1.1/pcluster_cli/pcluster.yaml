@@ -1,0 +1,82 @@
+Image:
+  Os: alinux2
+  {% if ami %}
+  CustomAmi: {{ami}}
+  {% endif %}
+HeadNode:
+  InstanceType: {{master_instance_type}}
+  Networking:
+    SubnetId: {{master_subnet_id}}
+    {% if security_groups %}
+    AdditionalSecurityGroups:
+    {% for sgroup in security_groups %}
+    - {{sgroup}}
+    {% endfor %}
+    {% endif %}
+  Ssh:
+    KeyName: {{ssh_key}}
+  CustomActions:
+    OnNodeConfigured :
+      Script: s3://altos-pcluster-cli-config/{{name}}.sh
+      Args:
+      - {{user}}
+      {% if s3 %}
+      - {{s3}}
+      {% endif %}
+    OnNodeUpdated :
+      Script: s3://altos-pcluster-cli-config/{{name}}.sh
+      Args:
+      - {{user}}
+      {% if s3 %}
+      - {{s3}}
+      {% endif %}
+  Iam:
+    S3Access:
+    - BucketName: "*"
+      EnableWriteAccess: false
+    AdditionalIamPolicies:
+    - Policy: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess 
+Scheduling:
+  Scheduler: slurm
+  SlurmSettings:
+    QueueUpdateStrategy: DRAIN
+  SlurmQueues:
+  - Name: default-queue
+    ComputeResources:
+    - Name: default-queue
+      Instances:
+      - InstanceType: {{compute_instance_type}}
+      MinCount: {{min_count}}
+      MaxCount: {{max_count}}
+    Networking:
+      SubnetIds:
+      - {{compute_subnet_id}}
+      {% if security_groups %}
+      AdditionalSecurityGroups:
+      {% for sgroup in security_groups %}
+      - {{sgroup}}
+      {% endfor %}
+      {% endif %}
+    CustomActions:
+      OnNodeConfigured :
+        Script: s3://altos-pcluster-cli-config/{{name}}.sh
+        Args:
+        - {{user}}
+        {% if s3 %}
+        - {{s3}}
+        {% endif %}
+    Iam:
+      S3Access:
+      - BucketName: "*"
+        EnableWriteAccess: false
+      AdditionalIamPolicies:
+      - Policy: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess 
+{% if efs %}
+SharedStorage:
+  - MountDir: /share
+    Name: share
+    StorageType: Efs
+    EfsSettings:
+      FileSystemId: {{efs}}
+{% endif %}
+
