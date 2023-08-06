@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: calculator-python-2.0
+Version: 1.0.56
+Summary: some descripiton
+Author-email: Mujahid Daud Khan <mujahid.khan@apimatic.io>
+License: MIT
+Project-URL: additionalProp1, https://github.com/Shield-Jaguar
+Keywords: calculator
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Provides-Extra: testutils
+License-File: LICENSE

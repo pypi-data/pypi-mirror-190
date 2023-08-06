@@ -1,0 +1,17 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+[project]
+name = "calculator_python_2.0"
+description = "some descripiton"
+version = "1.0.56"
+readme = "some readme"
+requires-python = ">=3.7"
+keywords = ["calculator"]
+license = {text = "MIT"}
+authors = [{name = "Mujahid Daud Khan", email = "mujahid.khan@apimatic.io"}]
+urls = {additionalProp1 = "https://github.com/Shield-Jaguar"}
+dependencies = ["apimatic-core~=0.1.0", "apimatic-core-interfaces~=0.1.0", "apimatic-requests-client-adapter~=0.1.0", "python-dateutil~=2.8.1", "enum34~=1.1, >=1.1.10"]
+classifiers = ["Intended Audience :: Developers"]
+[project.optional-dependencies]
+testutils = ["pytest>=7.1.3"]
