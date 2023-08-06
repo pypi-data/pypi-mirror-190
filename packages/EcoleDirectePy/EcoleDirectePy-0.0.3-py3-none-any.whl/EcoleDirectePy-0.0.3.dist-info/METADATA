@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: EcoleDirectePy
+Version: 0.0.3
+Summary: a API Wrapper for EcoleDirecte.fr
+Author: DK16
+Author-email: <dk16v2@gmail.com>
+Keywords: python,ecoledirecte,api,Wrapper
+License-File: LICENSE
+Requires-Dist: requests
+
