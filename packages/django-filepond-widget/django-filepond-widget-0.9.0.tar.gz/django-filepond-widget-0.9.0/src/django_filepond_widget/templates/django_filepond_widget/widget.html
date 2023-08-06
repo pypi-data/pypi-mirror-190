@@ -1,0 +1,68 @@
+{% load static %}
+
+<input type="file" class="filepond">
+
+<!-- Load FilePond library -->
+<script type="text/javascript" src="{% static "django_filepond_widget/js/filepond.min.js" %}"></script>
+<script type="text/javascript" src="{% static "django_filepond_widget/js/js.cookie.min.js" %}"></script>
+<link rel="stylesheet" href="{% static "django_filepond_widget/css/filepond.min.css" %}">
+<style>
+    .filepond--panel-root {
+        background-color: var(--darkened-bg);
+    }
+
+    .filepond--credits {
+        display: none;
+    }
+    .filepond {
+        min-width: 200px;
+        min-height: 76px;
+    }
+</style>
+
+<!-- Turn all file input elements into ponds -->
+<script>
+    function disableSaving(disable){
+        for (const child of document.querySelectorAll('input[type="submit"]')) {
+            if (disable) {
+                child.setAttribute("disabled", "true");
+            } else {
+                child.removeAttribute("disabled");
+            }
+        }
+    }
+    FilePond.parse(document.body);
+    FilePond.setOptions({
+        name: '{{ widget.name }}',
+        chunkUploads: true,
+        chunkSize: 500000,
+        dropOnPage: true,
+        allowMultiple: false,
+        allowPaste: true,
+        allowBrowse: true,
+        allowDrop: true,
+        server: {
+            headers: { 'X-CSRFToken': Cookies.get('csrftoken') },
+            url: '/fp',
+            process: {
+                url: '/process/',
+                method: 'POST',
+                ondata: (formData) => {
+                    formData.append('fp_upload_field', "{{ widget.name }}");
+                    return formData;
+                },
+            },
+            patch: '/patch/',
+            revert: '/revert/',
+            fetch: '/fetch/?target=',
+            load: '/load/'
+        },
+        oninitfile: () => {
+            disableSaving(true);
+        },
+        onprocessfiles: () => {
+            disableSaving(false);
+        },
+        ...JSON.parse('{{ filepond_options|safe }}')
+    });
+</script>

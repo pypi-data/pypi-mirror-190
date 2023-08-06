@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: django-filepond-widget
+Version: 0.9.0
+Author-email: Jelle Besseling <jelle@pingiun.com>
+License: Unlicense
+Project-URL: homepage, https://github.com/pingiun/django-filepond-widget
+Project-URL: repository, https://github.com/pingiun/django-filepond-widget
+Project-URL: documentation, https://github.com/pingiun/django-filepond-widget
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Django Filepond Widget
+
+
+## License
+
+You can freely use this project without limitations.
+More specificallly, this project is freely licenced under the "Unlicense".
+See the LICENSE file for more information.
+
+Note that django, django_drf_filepond, filepond and js-cookie are licensed under
+different licences.

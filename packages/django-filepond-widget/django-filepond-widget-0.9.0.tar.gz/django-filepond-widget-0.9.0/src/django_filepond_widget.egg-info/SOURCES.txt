@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_filepond_widget/__init__.py
+src/django_filepond_widget/apps.py
+src/django_filepond_widget/fields.py
+src/django_filepond_widget.egg-info/PKG-INFO
+src/django_filepond_widget.egg-info/SOURCES.txt
+src/django_filepond_widget.egg-info/dependency_links.txt
+src/django_filepond_widget.egg-info/requires.txt
+src/django_filepond_widget.egg-info/top_level.txt
+src/django_filepond_widget/static/django_filepond_widget/css/filepond.min.css
+src/django_filepond_widget/static/django_filepond_widget/js/filepond.min.js
+src/django_filepond_widget/static/django_filepond_widget/js/js.cookie.min.js
+src/django_filepond_widget/templates/django_filepond_widget/widget.html
