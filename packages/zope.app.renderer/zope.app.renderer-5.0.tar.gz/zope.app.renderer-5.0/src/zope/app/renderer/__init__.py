@@ -1,0 +1,51 @@
+##############################################################################
+#
+# Copyright (c) 2003 Zope Foundation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+"""Plain Text Renderer Classes
+
+"""
+from zope.component.interfaces import IFactory
+from zope.interface import Declaration
+from zope.interface import directlyProvides
+from zope.interface import implementer
+
+from zope.app.renderer.interfaces import IHTMLRenderer  # noqa: F401 unused
+from zope.app.renderer.interfaces import ISource  # noqa: F401 import unused
+
+
+try:
+    text_type = unicode
+except NameError:
+    text_type = str
+
+
+class Source(text_type):
+    __provides__ = None
+
+
+@implementer(IFactory)
+class SourceFactory:
+    """Creates an ISource object."""
+
+    def __init__(self, iface, title='', description=''):
+        self._iface = iface
+        self.title = title
+        self.description = description
+
+    def getInterfaces(self):
+        return Declaration(self._iface).flattened()
+
+    def __call__(self, ustr):
+        source = Source(ustr)
+        directlyProvides(source, self._iface)
+        return source
