@@ -1,0 +1,14 @@
+env
+venv
+.env
+.venv
+notes
+data
+tests/helpers/test_config.py
+*.pem
+*.pyc
+__pycache__
+*.egg-info
+.tox
+build/
+dist/
