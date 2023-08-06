@@ -1,0 +1,10 @@
+gym<=0.22,>=0.21.0
+
+[examples]
+jupyterlab
+matplotlib
+stable_baselines3[extra]
+ipywidgets
+
+[tests]
+pytest
