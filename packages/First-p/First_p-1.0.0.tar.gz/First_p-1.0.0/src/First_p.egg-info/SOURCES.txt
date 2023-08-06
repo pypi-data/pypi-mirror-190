@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+pyproject.toml
+setup.cfg
+src/First_p.egg-info/PKG-INFO
+src/First_p.egg-info/SOURCES.txt
+src/First_p.egg-info/dependency_links.txt
+src/First_p.egg-info/top_level.txt
