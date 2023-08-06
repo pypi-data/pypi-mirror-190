@@ -1,0 +1,13 @@
+odoo/addons/base_ir_actions_sequence/README.rst,sha256=yELi_oeHle3DyetHrggEH8IJ4y014eOUNyLRkXY3uEw,3363
+odoo/addons/base_ir_actions_sequence/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/base_ir_actions_sequence/__manifest__.py,sha256=XFXArtZcWxQD60TgAYBs9uvPMv-DtDUC0yiEMu1Hupo,426
+odoo/addons/base_ir_actions_sequence/i18n/base_ir_actions_sequence.pot,sha256=hhNt0c62gwYUlFIfSWjEC-r6vgvg_c_tmOY9vu4o0CQ,1301
+odoo/addons/base_ir_actions_sequence/models/__init__.py,sha256=g7nyg4c82IeB-LbxJTe429OMbLYGI4jbW-t9WH9Puxw,25
+odoo/addons/base_ir_actions_sequence/models/ir_actions.py,sha256=VfikBH9yMESuFapsQb1UN4-DCaHTlnxN6Zw-tgk_Uy0,664
+odoo/addons/base_ir_actions_sequence/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/base_ir_actions_sequence/static/description/index.html,sha256=V3_iv9pL51a4YrpkqCtbFPH6xDok8dfkUYrg-f65xlI,12930
+odoo/addons/base_ir_actions_sequence/views/actions_views.xml,sha256=jbuAub_K7NwO59sCucp1_GOgbc7Py7YKRsn6ZKLJg_A,3125
+odoo13_addon_base_ir_actions_sequence-13.0.1.0.1.dist-info/METADATA,sha256=7wH7_aKgEe8OAmfJT9ZnaYSCBfzO2Vfw59RZ4btv1Yw,3912
+odoo13_addon_base_ir_actions_sequence-13.0.1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo13_addon_base_ir_actions_sequence-13.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_base_ir_actions_sequence-13.0.1.0.1.dist-info/RECORD,,
