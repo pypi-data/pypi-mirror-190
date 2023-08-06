@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kyfkyf
+Version: 0.0.0
+Summary: A pure-Python Kafka clone
+License: WTFPL
+Author: Rémy Sanchez
+Author-email: remy.sanchez@hyperthese.net
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Kyfkyf
+
+For now I'm just squatting the name. If you need it for your project shoot me an email.
+
