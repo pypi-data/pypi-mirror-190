@@ -1,0 +1,3 @@
+[console_scripts]
+fabexp=fabexp_helper.fabexp:create_project
+
