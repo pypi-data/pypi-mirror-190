@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyc3"
+version = "0.0.2"
+description = ""
+authors = ["Simon Warchol <simonwarchol@g.harvard.edu>"]
+readme = "README.md"
+packages = [{include = "pyc3"}]
+repository = "https://github.com/python-poetry/poetry"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.24.2"
+colorio = "^0.12.15"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
