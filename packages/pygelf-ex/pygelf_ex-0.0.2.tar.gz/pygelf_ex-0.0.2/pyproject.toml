@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pygelf-ex"
+version = "0.0.2"
+authors = [
+  { name="Ivan Mukhin", email="muhin.ivan@gmail.com" },
+  { name="Anders Ågren", email="anders.agren@rssoftware.se" },
+]
+description = "Logging handlers with GELF support"
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rs-anders-agren/pygelf-ex"
