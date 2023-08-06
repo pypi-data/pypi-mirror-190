@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: funzin-vc-utils
+Version: 0.2.3
+Summary: funzin vc solution utils
+Home-page: https://dnchoi.github.io
+Author: dnchoi
+Author-email: luke.dn.choi@funzin.co.kr
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: black
+Requires-Dist: flake8
+Requires-Dist: opencv-python
+Requires-Dist: colorlog
+Requires-Dist: mlflow
+Requires-Dist: boto3
+Requires-Dist: wandb
+
+UNKNOWN
+
+
