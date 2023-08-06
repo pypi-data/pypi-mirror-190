@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: builderer
+Version: 0.2.0
+Summary: Container based mono repo builder.
+Home-page: https://github.com/florian-sattler/builderer
+Author: Florian Sattler
+Author-email: dev@florian-sattler.de
+License: MIT
+Keywords: builderer,continuous integration,continuous delivery
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic-argparse (>=0.6)
+Requires-Dist: pyyaml (>=5.1)
+
+# builderer
+
+Container based mono repo builder(er) designed to build container based mono repos using either docker or podman.
+
+It's configuration is supplied via commandline. See `builderer --help` for details.
+
+Interested what's new? Look in the [Changelog](CHANGELOG.md)! 🧐
+
+# Installation
+
+```bash
+pip install builderer
+```
