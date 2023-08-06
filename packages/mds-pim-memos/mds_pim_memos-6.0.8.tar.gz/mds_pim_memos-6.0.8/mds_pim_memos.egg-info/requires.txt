@@ -1,0 +1,4 @@
+html2text
+mds-sqlextension>=0.1.11
+python-slugify
+trytond<6.1,>=6.0
