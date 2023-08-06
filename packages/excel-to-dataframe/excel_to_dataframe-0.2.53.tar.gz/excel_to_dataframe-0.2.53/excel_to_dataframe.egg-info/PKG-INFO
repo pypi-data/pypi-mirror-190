@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: excel-to-dataframe
+Version: 0.2.53
+Summary: Excel to Pandas or Microsoft Dataframe
+Home-page: https://github.com/nelsonbittencourt/excel_to_dataframe
+Author: Nelson Rossi Bittencourt
+Author-email: nbittencourt@hotmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+C++ dll to converts Excel worksheets to Pandas or Microsoft dataframes
