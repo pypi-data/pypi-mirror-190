@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: manim-paulie
+Version: 0.1.0
+Summary: 
+Author: Pauline
+Author-email: git@ethanlibs.co
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: manim (>=0.3)
+Description-Content-Type: text/markdown
+
+

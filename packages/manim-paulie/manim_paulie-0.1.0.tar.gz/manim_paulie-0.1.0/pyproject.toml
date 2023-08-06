@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "manim-paulie"
+version = "0.1.0"
+description = ""
+authors = ["Pauline <git@ethanlibs.co>"]
+readme = "README.md"
+packages = [{include = "manim_paulie", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+manim = ">=0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."manim.plugins"]
+"manim_paulie" = "manim_paulie"
