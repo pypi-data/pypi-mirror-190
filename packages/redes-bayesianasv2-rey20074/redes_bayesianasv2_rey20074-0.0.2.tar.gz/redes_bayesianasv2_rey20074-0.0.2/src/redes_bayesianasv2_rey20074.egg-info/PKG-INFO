@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: redes-bayesianasv2-rey20074
+Version: 0.0.2
+Summary: Una libreria para construir redes bayesianas y realizar inferencia probabilística
+Home-page: https://github.com/MarianoReyes/redes_bayesianas_package
+Author: Jose Reyes
+Author-email: josemarianoreyesh02@gmail.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Redes Bayesianas
+
+Una librería para construir redes bayesianas y realizar inferencia probabilística.
+
+## Instalación
+
+Con el manejador de paquetes pip:
+
+- **pip install redes-bayesianas-rey20074==0.0.1**
+
+## Uso
+
+<sub> 
+    
+    # importa la libreria
+    import redes_bayesianas_20074
+
+    # Crea una red bayesiana
+    red_bayesiana = mi_libreria_python.BayesianNetwork()
+    red_bayesiana.add_node("clima", ["soleado", "nublado", "lluvioso"], [0.6, 0.3, 0.1])
+    red_bayesiana.add_node("temperatura", ["caliente", "templada", "fria"], [0.4, 0.5, 0.1])
+    red_bayesiana.add_edge("clima", "temperatura", [[0.8, 0.2, 0], [0.4, 0.5, 0.1], [0.2, 0.4, 0.4]])
+
+    # Realiza inferencia probabilística
+    inference = mi_libreria_python.Inference(red_bayesiana)
+    resultados = inference.probability("temperatura", {"clima": "soleado"})
+    print(resultados)
+
+</sub>
+
+## API
+
+Se incluyen las siguientes clases
+
+### Clase BayesianNetwork
+
+- add_node(nombre, valores, probabilidades): Agrega un nodo a la red bayesiana con el nombre especificado, los valores posibles y las probabilidades iniciales.
+
+- add_edge(nodo_padre, nodo_hijo, probabilidades): Agrega una relación entre dos nodos de la red bayesiana, especificando las probabilidades condicionales.
+
+### Clase Inference
+
+- probability(nodo, evidencias): Devuelve la distribución de probabilidad de un nodo dado un conjunto de evidencias.

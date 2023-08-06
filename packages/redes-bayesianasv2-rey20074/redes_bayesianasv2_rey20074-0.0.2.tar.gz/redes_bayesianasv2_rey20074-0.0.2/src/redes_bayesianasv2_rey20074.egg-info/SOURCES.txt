@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/redes_bayesianas_20074/__init__.py
+src/redes_bayesianas_20074/bayesian_library.py
+src/redes_bayesianasv2_rey20074.egg-info/PKG-INFO
+src/redes_bayesianasv2_rey20074.egg-info/SOURCES.txt
+src/redes_bayesianasv2_rey20074.egg-info/dependency_links.txt
+src/redes_bayesianasv2_rey20074.egg-info/top_level.txt
