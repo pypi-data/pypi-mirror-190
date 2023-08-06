@@ -1,0 +1,5 @@
+src/postgres-wrangler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/postgres-wrangler/postgresql.py,sha256=T85FrvmZhSipAQWmtjBRYcNXSdp6eXe_DGQnI0DVRB4,7961
+postgres_wrangler-0.0.1.dist-info/METADATA,sha256=vK0ayWbhLl-gjnkOg5fIQit6X3a_mVWHMHbIbIQWNho,771
+postgres_wrangler-0.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+postgres_wrangler-0.0.1.dist-info/RECORD,,
