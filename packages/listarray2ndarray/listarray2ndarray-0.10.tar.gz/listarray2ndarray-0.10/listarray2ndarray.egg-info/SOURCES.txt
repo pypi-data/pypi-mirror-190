@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+listarray2ndarray/LICENSE
+listarray2ndarray/README.MD
+listarray2ndarray/__init__.py
+listarray2ndarray/requirements.txt
+listarray2ndarray/thirdparty.json
+listarray2ndarray.egg-info/PKG-INFO
+listarray2ndarray.egg-info/SOURCES.txt
+listarray2ndarray.egg-info/dependency_links.txt
+listarray2ndarray.egg-info/requires.txt
+listarray2ndarray.egg-info/top_level.txt

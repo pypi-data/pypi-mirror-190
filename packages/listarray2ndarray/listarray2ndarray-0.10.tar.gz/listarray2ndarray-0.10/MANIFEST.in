@@ -1,0 +1,4 @@
+include listarray2ndarray/requirements.txt
+include listarray2ndarray/thirdparty.json
+include listarray2ndarray/README.MD
+include listarray2ndarray/LICENSE
