@@ -1,0 +1,7 @@
+LICENSE
+ffbsender.py
+setup.py
+fbbsender.egg-info/PKG-INFO
+fbbsender.egg-info/SOURCES.txt
+fbbsender.egg-info/dependency_links.txt
+fbbsender.egg-info/top_level.txt
