@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redes_bayesianas_rey20074"
+version = "0.0.2"
+authors = [
+  { name="Jose Reyes", email="josemarianoreyesh02@gmail.com" },
+  { name="Esteban Aldana Reyes", email="example@gmail.com" },
+  { name="Juan Carlos Bajan", email="exmple@gmail.com" },
+  { name="Kenneth Galvez", email="example@gmail.com" },
+]
+description = "Una libreria para construir redes bayesianas y realizar inferencia probabilística"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JuanCarlosBajan/UVG-IA-lab2"
