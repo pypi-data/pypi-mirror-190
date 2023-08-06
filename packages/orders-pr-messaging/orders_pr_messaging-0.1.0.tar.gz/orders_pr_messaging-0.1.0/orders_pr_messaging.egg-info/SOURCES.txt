@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+orders_pr_messaging.egg-info/PKG-INFO
+orders_pr_messaging.egg-info/SOURCES.txt
+orders_pr_messaging.egg-info/dependency_links.txt
+orders_pr_messaging.egg-info/requires.txt
+orders_pr_messaging.egg-info/top_level.txt
