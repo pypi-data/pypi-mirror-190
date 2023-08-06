@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pymoviedownloader
+Version: 0.0.2
+Summary: App that automates the downloading of movies
+Home-page: https://github.com/Housain-maina/PyMovieDownloader
+Author: Hussaini Usman
+Author-email: hussainmaina27@gmail.com
+Maintainer: Hussaini Usman
+License: MIT
+Download-URL: https://github.com/Housain-maina/PyMovieDownloader/archive/main.zip
+Project-URL: Documentation, https://github.com/Housain-maina/PyMovieDownloader
+Project-URL: Tracker, https://github.com/Housain-maina/PyMovieDownloader/issues
+Project-URL: Source, https://github.com/Housain-maina/PyMovieDownloader/tree/main
+Description: # PyMovieDownloader
+        Python app that automates the downloading of movies from popular movies download sites.
+        
+Keywords: python automation movie bot selenium download
+Platform: win32
+Platform: linux
+Platform: linux2
+Platform: darwin
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: English
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
