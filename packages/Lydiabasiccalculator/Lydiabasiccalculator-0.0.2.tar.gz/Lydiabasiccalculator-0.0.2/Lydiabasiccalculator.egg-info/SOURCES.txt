@@ -1,0 +1,11 @@
+CHANGELOG.mp
+LICENSE
+LICENSE.txt
+MANIFEST.in
+README.mp
+setup.py
+Lydiabasiccalculator/__init__.py
+Lydiabasiccalculator.egg-info/PKG-INFO
+Lydiabasiccalculator.egg-info/SOURCES.txt
+Lydiabasiccalculator.egg-info/dependency_links.txt
+Lydiabasiccalculator.egg-info/top_level.txt
