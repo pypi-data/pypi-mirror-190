@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+h5py
+sklearn
+mogp_emulator
+tqdm
