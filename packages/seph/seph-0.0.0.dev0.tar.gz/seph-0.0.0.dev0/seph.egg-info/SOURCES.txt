@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+seph/__init__.py
+seph.egg-info/PKG-INFO
+seph.egg-info/SOURCES.txt
+seph.egg-info/dependency_links.txt
+seph.egg-info/top_level.txt
