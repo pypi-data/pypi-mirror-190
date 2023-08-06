@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+pyproject.toml
+src/sbvoicedb/__init__.py
+src/sbvoicedb/common.py
+src/sbvoicedb/database.py
+src/sbvoicedb/download.py
+src/sbvoicedb/process.py
+src/sbvoicedb.egg-info/PKG-INFO
+src/sbvoicedb.egg-info/SOURCES.txt
+src/sbvoicedb.egg-info/dependency_links.txt
+src/sbvoicedb.egg-info/requires.txt
+src/sbvoicedb.egg-info/top_level.txt
+tests/test_all.py
