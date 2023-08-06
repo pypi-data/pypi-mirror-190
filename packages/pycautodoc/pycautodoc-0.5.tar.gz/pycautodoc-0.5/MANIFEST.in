@@ -1,0 +1,4 @@
+include pycautodoc.toml
+include *.md
+include LICENSE
+~                                          

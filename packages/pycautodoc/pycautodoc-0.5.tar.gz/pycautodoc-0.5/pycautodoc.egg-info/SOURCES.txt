@@ -1,0 +1,12 @@
+MANIFEST.in
+pycautodoc.toml
+setup.cfg
+setup.py
+pycautodoc/__init__.py
+pycautodoc/_pycautodoc.so
+pycautodoc/pycautodoc.py
+pycautodoc.egg-info/PKG-INFO
+pycautodoc.egg-info/SOURCES.txt
+pycautodoc.egg-info/dependency_links.txt
+pycautodoc.egg-info/not-zip-safe
+pycautodoc.egg-info/top_level.txt
