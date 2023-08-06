@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "kyfkyf"
+version = "0.0.0"
+description = "A pure-Python Kafka clone"
+authors = ["Rémy Sanchez <remy.sanchez@hyperthese.net>"]
+license = "WTFPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
