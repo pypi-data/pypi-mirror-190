@@ -1,0 +1,11 @@
+name: from
+steps:
+- raw:
+  - FROM {{ args[0] }}
+---
+name: label
+steps:
+- raw:
+  {% for k,v in kwargs.items() %}
+  - LABEL {{ k }}="{{ v }}"
+  {% endfor %}
