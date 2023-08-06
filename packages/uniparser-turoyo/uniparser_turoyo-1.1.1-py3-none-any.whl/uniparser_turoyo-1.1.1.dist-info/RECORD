@@ -1,0 +1,14 @@
+uniparser_turoyo/__init__.py,sha256=fdBE335dCaktDelTlqGH5mSsLVVVYk9Hun2JOZr3O3Y,38
+uniparser_turoyo/__main__.py,sha256=hY54h2DMx9kUbgG44_76nhWYxaWRImA27nYxcKTwab8,735
+uniparser_turoyo/analyzer.py,sha256=eFChrk5BNQDw_MjK7cwc0ga39g30pRxclbrNGANM_J0,3025
+uniparser_turoyo/data_nodiacritics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniparser_turoyo/data_nodiacritics/lexemes.txt,sha256=fc9RjeGa_0FicTCPsdnhRncWF1Lx3X4EFp-GR2KcTXM,1978912
+uniparser_turoyo/data_nodiacritics/paradigms.txt,sha256=JyppnDF1Sm5ZBgxR1LqGSGIjFB0aRTSVp6dykgy69J0,1202501
+uniparser_turoyo/data_strict/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniparser_turoyo/data_strict/lexemes.txt,sha256=hIJLGIPSR3u7eMRvmfZPompgQUjWnQHOoE_g42dG-Y8,1837479
+uniparser_turoyo/data_strict/paradigms.txt,sha256=vEzZLBU1hQGkmzhkmsgJxafqGzoeS36Pm0r16U2Sj_Q,1202220
+uniparser_turoyo-1.1.1.dist-info/LICENSE,sha256=uVhVqPxgYocmPOHN0iBIIbfrzB9RySbuSBc-7SLpUEs,1146
+uniparser_turoyo-1.1.1.dist-info/METADATA,sha256=Pn1XK8OpjNukmaS85FqtEjn3LzE1fKRRilIoDk4100Y,5665
+uniparser_turoyo-1.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uniparser_turoyo-1.1.1.dist-info/top_level.txt,sha256=2ZLF2SMVPAFquLayKa-TcJjHmMrtXDcQw0Tschjaa9w,17
+uniparser_turoyo-1.1.1.dist-info/RECORD,,
