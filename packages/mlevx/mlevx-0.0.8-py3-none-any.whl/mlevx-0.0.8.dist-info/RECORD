@@ -1,0 +1,11 @@
+mlevx/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mlevx/finalized_model.h5,sha256=dBDxzIJ4YiWx52AdIwZ44WOtvJSWj54dAu3RFCNy71M,123371478
+mlevx/logscaler.gz,sha256=GJ3Cqegdy8zvsx9etKjiXex1sOEt-q5qjo_D1-0IVRw,548
+mlevx/regbot.py,sha256=azPP0hjvcNrlhSMxfQsL4g3M9rwjFkJ8xtVnATpflgo,2556
+mlevx/test.py,sha256=ZDNTkS-3nYhyXGZ_7L6mlLviVm03fy2thf1o5r04Dgw,716
+mlevx/__pycache__/regbot.cpython-310.pyc,sha256=9Vqe0kKCmXU35YkzuK9sdGqoJOkXpxa4CKLKZqd3-1M,3083
+mlevx-0.0.8.dist-info/LICENSE,sha256=w1UKXDXzOM3J1kFMfQxxM7DGKkKOORDkad7Sp9Of8kE,1058
+mlevx-0.0.8.dist-info/METADATA,sha256=Pi4HK4S9P3qauA5vMXKB1RZLoIXa78TFgfUpVvb1WRU,3067
+mlevx-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mlevx-0.0.8.dist-info/top_level.txt,sha256=OTAbtk4bHKbgMne_FGnGfIwPy0wnYwDSnSFc9dLw6iQ,6
+mlevx-0.0.8.dist-info/RECORD,,
