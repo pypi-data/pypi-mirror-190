@@ -1,0 +1,12 @@
+typer
+rich
+numpy
+matplotlib
+pandas
+scipy
+PyQt6
+PyQt6-Charts
+pillow
+pyyaml
+pyqtgraph
+Cerberus

@@ -1,0 +1,3 @@
+[console_scripts]
+synth-forc = synth_forc.gui.main:main
+synth-forc-cli = synth_forc.cli.forc:main

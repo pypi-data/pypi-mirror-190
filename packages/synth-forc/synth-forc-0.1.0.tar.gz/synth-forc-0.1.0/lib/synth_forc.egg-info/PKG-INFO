@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: synth-forc
+Version: 0.1.0
+Summary: A tool used to visualise synthetic FORC data generated using micromagnetic models.
+Home-page: https://github.com/Lesleis-Nagy/synth-forc
+Author: L. Nagy, Miguel A. Valdez-Grijalva, W. Williams, A. Muxworthy,  G. Paterson and L. Tauxe
+Author-email: lesleisnagy@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENCE.txt
