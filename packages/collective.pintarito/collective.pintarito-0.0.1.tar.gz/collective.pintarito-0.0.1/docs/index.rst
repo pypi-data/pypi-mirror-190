@@ -1,0 +1,5 @@
+====================
+collective.pintarito
+====================
+
+User documentation

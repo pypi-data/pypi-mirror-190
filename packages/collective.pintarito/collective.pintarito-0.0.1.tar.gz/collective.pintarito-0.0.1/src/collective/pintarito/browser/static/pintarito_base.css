@@ -1,0 +1,65 @@
+#portal-logo path,
+#portal-logo circle {
+    fill: var(--pintarito-base);
+}
+
+:root {
+    --bs-primary: var(--pintarito-base) !important;
+    --bs-link-color: var(--pintarito-darker) !important;
+    --plone-toolbar-text-color: var(--bs-dark) !important;
+    --plone-link-color: #var(--pintarito-dark) !important;
+}
+
+.navbar-barceloneta {
+    --bs-navbar-background: #var(--pintarito-lighter) !important;
+    --bs-navbar-color: var(--plone-link-color) !important;
+}
+
+.btn-outline-light {
+    --bs-btn-color: var(--plone-link-color) !important;
+}
+
+#edit-zone .dropdown-item,
+#edit-zone .nav-link {
+    color: var(--bs-white) !important;
+}
+
+#portal-footer-wrapper {
+    background-color: #var(--pintarito-lighter) !important;
+}
+
+.pat-structure table.dataTable tr td.actionmenu-container .btn,
+.pat-structure .itemRow.folder .title a {
+    color: var(--bs-link-color) !important;
+}
+
+#edit-zone .dropdown-header {
+    background: var(--bs-primary) !important;
+}
+
+#edit-zone .dropdown-item:focus,
+#edit-zone .dropdown-item:hover,
+#edit-zone .nav-link:focus,
+#edit-zone .nav-link:hover {
+    background: var(--bs-primary) !important;
+    color: var(--plone-toolbar-text-color) !important;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--pintarito-base) !important;
+    --bs-btn-border-color: var(--pintarito-base) !important;
+    --bs-btn-hover-bg: #var(--pintarito-dark) !important;
+    --bs-btn-hover-border-color: #var(--pintarito-dark) !important;
+    --bs-btn-active-bg: #var(--pintarito-dark) !important;
+    --bs-btn-active-border-color: #var(--pintarito-dark) !important;
+    --bs-btn-disabled-bg: var(--pintarito-base) !important;
+    --bs-btn-disabled-border-color: var(--pintarito-base) !important;
+}
+
+#portal-footer-wrapper a:hover {
+    color: var(--pintarito-lighter) !important;
+}
+
+#portal-footer-wrapper a {
+    color: var(--pintarito-light) !important;
+}

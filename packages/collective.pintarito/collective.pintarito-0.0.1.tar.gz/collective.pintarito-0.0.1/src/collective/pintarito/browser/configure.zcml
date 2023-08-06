@@ -1,0 +1,35 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.pintarito"
+    >
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include
+      package="z3c.jbot"
+      file="meta.zcml"
+      />
+  <browser:jbot
+      directory="overrides"
+      layer="collective.pintarito.interfaces.ICollectivePintaritoLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      directory="static"
+      name="collective.pintarito"
+      type="plone"
+      />
+
+  <browser:viewlet
+      name="collective.pintarito.styles"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IHtmlHeadLinks"
+      class=".selection.SelectionViewlet"
+      template="templates/styles.pt"
+      permission="zope.Public"
+      layer="collective.pintarito.interfaces.ICollectivePintaritoLayer"
+      />
+
+</configure>

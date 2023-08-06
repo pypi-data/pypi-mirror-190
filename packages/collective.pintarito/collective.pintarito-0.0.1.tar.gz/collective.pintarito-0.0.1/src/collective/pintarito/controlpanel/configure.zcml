@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    >
+
+  <browser:page
+      name="pintarito-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".settings.PintaritoSettingsControlPanel"
+      permission="cmf.ManagePortal"
+      layer="collective.pintarito.interfaces.ICollectivePintaritoLayer"
+      />
+
+</configure>

@@ -1,0 +1,8 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <utility
+      name="collective.pintarito.vocabularies.available_selections"
+      component=".available_selections.selections_factory"
+      />
+
+</configure>

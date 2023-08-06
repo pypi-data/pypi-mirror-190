@@ -1,0 +1,9 @@
+
+/* purple based theme */
+:root {
+    --pintarito-darker: #6035FF;
+    --pintarito-dark: #935BFF;
+    --pintarito-base: #800080;
+    --pintarito-light: #C180FF;
+    --pintarito-lighter: #EFA6FF;
+}

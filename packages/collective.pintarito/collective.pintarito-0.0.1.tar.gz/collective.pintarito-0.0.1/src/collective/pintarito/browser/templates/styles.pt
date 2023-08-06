@@ -1,0 +1,13 @@
+<tal:condition condition="view/available">
+  <!-- add a css file to the page, might need a cache buster -->
+  <link href="${here/portal_url}/++plone++collective.pintarito/${view/selection}.css"
+        media="all"
+        rel="stylesheet"
+        type="text/css"
+  />
+  <link href="${here/portal_url}/++plone++collective.pintarito/pintarito_base.css"
+        media="all"
+        rel="stylesheet"
+        type="text/css"
+  />
+</tal:condition>

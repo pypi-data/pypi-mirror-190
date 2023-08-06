@@ -1,0 +1,10 @@
+/*
+Based on https://coolors.co/palette/0a0908-22333b-eae0d5-c6ac8f-5e503f
+*/
+:root {
+    --pintarito-darker: #0a0908;
+    --pintarito-dark: #22333b;
+    --pintarito-base: #5e503f;
+    --pintarito-light: #c6ac8f;
+    --pintarito-lighter: #eae0d5;
+}
