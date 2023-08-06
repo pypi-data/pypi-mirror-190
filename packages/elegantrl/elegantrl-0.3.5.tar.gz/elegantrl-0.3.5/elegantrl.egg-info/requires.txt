@@ -1,0 +1,5 @@
+torch
+numpy
+matplotlib
+gym
+gym[box2d]
