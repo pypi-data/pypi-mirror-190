@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pysigrok-hardware-raspberrypi-pico
+Version: 0.1.0
+Summary: PySigrok driver for rp2040 logic capture
+Author-email: Scott Shawcroft <scott@tannewt.org>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/pysigrok/hardware-raspberrypi-pico
