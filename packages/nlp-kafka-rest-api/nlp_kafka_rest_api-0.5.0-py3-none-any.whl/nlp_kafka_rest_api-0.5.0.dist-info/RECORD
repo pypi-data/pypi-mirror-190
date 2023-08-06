@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kafka_rest/__init__.py,sha256=8imr3xHyoP-H7CEVkpd7u9XXWNprRFFEB41zFE3EvWc,57
+kafka_rest/__main__.py,sha256=mDpBP93acMbpB2gjJHNPfQSsfFyo4b6zID2cQ0fGz9c,4736
+kafka_rest/kafka_rest.py,sha256=ykWazoAKYBmTyvAQGd0ZE34_zZDfERDsMuhm4SDQNjk,9692
+nlp_kafka_rest_api-0.5.0.dist-info/LICENSE,sha256=wJVuW0Ptz6hh5hz5Ofey4-Gf_kIMaZ8tJQ4mqh2mulc,1073
+nlp_kafka_rest_api-0.5.0.dist-info/METADATA,sha256=cQn5FReCvCJwcNMHfPyFlrIvNH0-VMveV4ZrucrRyuQ,5061
+nlp_kafka_rest_api-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nlp_kafka_rest_api-0.5.0.dist-info/entry_points.txt,sha256=y4RzpNq0XXK0D-tzSzF3Oz2uwotLVQVc8w4beyNeLkQ,56
+nlp_kafka_rest_api-0.5.0.dist-info/top_level.txt,sha256=OA-Vg-oyU49l6Y5ANxBvDYOLSZFaN9-eeC2DaZ-EouY,20
+nlp_kafka_rest_api-0.5.0.dist-info/RECORD,,
