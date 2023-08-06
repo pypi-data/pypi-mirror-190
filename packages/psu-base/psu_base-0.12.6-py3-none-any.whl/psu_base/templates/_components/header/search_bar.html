@@ -1,0 +1,34 @@
+{% load base_taglib %}
+<form action="https://www.pdx.edu/search-psu"
+      method="get" id="google-appliance-block-form"
+      accept-charset="UTF-8" _lpchecked="1"
+>
+    <div>
+        <div class="container-inline">
+        <h1 class="sr-only">Search Portland State</h1>
+        <div class="form-item form-type-textfield form-item-search-keys" style="white-space:nowrap">
+            <label class="sr-only" for="edit-search-keys">Enter the terms you wish to search for. </label>
+            <div id="header-search-input_block">
+                <span class="float-left">
+                    <input
+                        title="Enter the terms you wish to search for. (AccessKey [s])" accesskey="s"
+                        id="edit-search-keys"
+                        name="query"
+                        value=""
+                        size="15"
+                        maxlength="128"
+                        class="form-control"
+                        style="max-width: 200px;font-size: .7em;display:inline-block;"
+                        type="text"
+                        placeholder="Search..."
+                    />
+                </span>
+                <span class="float-left">
+                    {%fa fa-search onclick="this.form.submit();" style="border:0;background-color:inherit;color:inherit;" title="Submit Search Form"%}
+                </span>
+            </div>
+
+	    </div>
+	</div>
+</div></form>
+
