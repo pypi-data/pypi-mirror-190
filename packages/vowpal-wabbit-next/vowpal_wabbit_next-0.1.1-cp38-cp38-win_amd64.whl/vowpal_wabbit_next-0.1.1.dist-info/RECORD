@@ -1,0 +1,16 @@
+vowpal_wabbit_next/__init__.py,sha256=LPrd1r7i5FUWtvdBC2eG4X42erI_69PWZt5sDp-ndMM,1089
+vowpal_wabbit_next/_core.cp38-win_amd64.pyd,sha256=3x59YG41Qcagib_y_bUa8_FdMeyzc0SmlLhM7JrHSnU,4838400
+vowpal_wabbit_next/_core.pyi,sha256=c3icV1bT0LeXLsqhIXFv8sUnZPS6JC4kOHHX2D-svfU,7898
+vowpal_wabbit_next/cache_format.py,sha256=gNIvOmkMHM5nysjn8hz22p-Lz0gsB_E5UbSWaB-y3ws,4475
+vowpal_wabbit_next/cli_driver.py,sha256=hw47NGjPFjI1AloMo9sxCACKHNm8RDnXmH3Jc3sMuCk,2941
+vowpal_wabbit_next/delta.py,sha256=8KIu0XZb-NPRUM3Tqd6NpQcl1j0CErq4RSjFckvMsNE,2389
+vowpal_wabbit_next/dsjson_format.py,sha256=lgVgMTC7ToTaaNp4Z12cNUbFXHsi3JIS79GeM-Wqik0,3256
+vowpal_wabbit_next/example.py,sha256=hs6o31s4LLiV8p-wu9A1WL80a9-t7npq5XfxQEj-Ixc,48
+vowpal_wabbit_next/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vowpal_wabbit_next/text_format.py,sha256=xbjXZ646KTbFYVtQnPIZ5YkZIkOSWdKXNtVCc4HiaSg,3090
+vowpal_wabbit_next/workspace.py,sha256=iDz0D_taY-CFxjUWWfeQVjHxs5LjFpI9a8N7zxPPolY,12796
+vowpal_wabbit_next-0.1.1.dist-info/LICENSE,sha256=eYap0tLZ-vsM2IJ40bUf31ilOTmdfKgqStsTvIuYvJo,1588
+vowpal_wabbit_next-0.1.1.dist-info/METADATA,sha256=bb2KzRYk50hloZNeZppD-8pD2EHSiN9htJp7_62UB1M,1877
+vowpal_wabbit_next-0.1.1.dist-info/WHEEL,sha256=zAxkWi-6PasWx3dAzMdfAuNKrQ9lMLr21NICid-r2ks,94
+vowpal_wabbit_next-0.1.1.dist-info/top_level.txt,sha256=qpt5-V6QyxisbmemgJBQ5_KwDrZP5etmNIL8twZSfCg,19
+vowpal_wabbit_next-0.1.1.dist-info/RECORD,,
