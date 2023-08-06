@@ -1,0 +1,2 @@
+[nbdev]
+cjm_kaggle_utils = cjm_kaggle_utils._modidx:d
