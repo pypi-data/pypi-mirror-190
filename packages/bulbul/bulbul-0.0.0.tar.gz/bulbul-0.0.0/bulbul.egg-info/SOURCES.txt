@@ -1,0 +1,8 @@
+MANIFEST.in
+pyproject.toml
+setup.py
+bulbul.egg-info/PKG-INFO
+bulbul.egg-info/SOURCES.txt
+bulbul.egg-info/dependency_links.txt
+bulbul.egg-info/requires.txt
+bulbul.egg-info/top_level.txt

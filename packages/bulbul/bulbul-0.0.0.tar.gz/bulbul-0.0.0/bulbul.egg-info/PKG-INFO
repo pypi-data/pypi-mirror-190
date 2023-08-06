@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bulbul
+Version: 0.0.0
+Summary: chatbot
+Author-email: Sovit Ranjan Rath <sovitrath5@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
