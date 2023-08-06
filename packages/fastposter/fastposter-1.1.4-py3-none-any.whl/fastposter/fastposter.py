@@ -1,0 +1,155 @@
+import base64
+import hashlib
+import json
+import random
+import string
+import time
+from hashlib import md5
+
+import requests
+from fastposter import __version__
+
+## 常量定义区域
+# 客户端版本
+CLIENT_VERSION = __version__.__version__
+
+# 客户端类型
+CLIENT_TYPE = 'python'
+
+# 默认的用户代理
+USER_AGENT = "fastposter-cloud-client/" + CLIENT_VERSION + " (" + CLIENT_TYPE + ")"
+
+# 接入点地址
+ENDPOINT = 'https://api.fastposter.net'
+
+
+def md5(params):
+    """
+    md5小写
+    :param params:
+    :return:
+    """
+    m = hashlib.md5()
+    m.update(params.encode("utf8"))
+    data_digest = m.digest()
+    return data_digest.hex().lower()
+
+
+class Poster:
+    """
+    海报对象
+    """
+
+    def __init__(self, traceId, type, content, b64):
+        """
+        初始化海报对象
+        :param traceId:
+        :param type:
+        :param content:
+        :param b64:
+        """
+        self.traceId = traceId
+        self.type = type
+        self.bytes = content
+        self.size = len(content)
+        self.b64 = b64
+
+    def saveTo(self, path):
+        """
+        保存到指定目录
+        :param path:
+        :return: None
+        """
+        with open(path, 'wb') as f:
+            f.write(self.bytes)
+
+    def save(self):
+        """
+        保存海报
+        :return: 文件路径
+        """
+        path = self.traceId[0:16] + "." + self.type
+        if self.b64:
+            path += ".b64"
+        self.saveTo(path)
+        return path
+
+
+class CloudClient:
+    """
+    海报云服务客户端
+    """
+
+    @staticmethod
+    def version(self):
+        return CLIENT_VERSION
+
+    def __init__(self, appKey='', appSecret='', endpoint=ENDPOINT):
+        """
+        初始化一个海报云服务客户端
+        :param appKey: 应用KEY
+        :param appSecret: 应用密钥
+        :param endpoint: 接入端地址
+        """
+        self.appKey = appKey
+        self.appSecret = appSecret
+        self.endpoint = endpoint
+
+    def buildPoster(self, uuid, params={}, type='png', scale=1.0, b64=False, userAgent=None, onlySign=False):
+        """
+        生成海报
+        :param uuid: 海报UUID
+        :param params: 海报参数
+        :param type: 海报类型
+        :param scale: 海报缩放比 0.1 ~ 1.0
+        :param b64: 是否返回base64字符串
+        :param userAgent: 客户代理
+        :param onlySign: 只签名
+        :return: 海报|签名对象
+        """
+
+        payload = json.dumps(params, ensure_ascii=False)
+        payload = base64.b64encode(payload.encode(encoding='utf-8')).decode(encoding='utf-8')
+        timestamp = str(int(time.time()))
+        nonce = ''.join(random.sample(string.ascii_letters, 16))
+        pay = payload + timestamp + nonce + self.appSecret
+        sign = md5(pay)
+
+        body = {
+            "uuid": uuid,
+            "appKey": self.appKey,
+            "timestamp": timestamp,
+            "nonce": nonce,
+            "payload": payload,
+            "sign": sign,
+            "type": type,
+        }
+
+        if b64:
+            body['b64'] = True
+
+        # 校验参数
+        if scale != 1.0:
+            body['scale'] = scale
+
+        if onlySign:
+            return body
+
+        userAgent = userAgent if userAgent else USER_AGENT
+        headers = {
+            'Client-Type': CLIENT_TYPE,
+            'Client-Version': CLIENT_VERSION,
+            'User-Agent': userAgent,
+            'cache-control': "no-cache"
+        }
+
+        url = self.endpoint + "/v1/build/poster"
+        r = requests.post(url, headers=headers, json=body)
+
+        # 请求出现异常
+        if r.headers['Content-Type'].startswith('application/json'):
+            print(r.json())
+
+        traceId = r.headers['fastposter-cloud-traceid']
+        print(traceId)
+        return Poster(traceId, type, r.content, b64)
