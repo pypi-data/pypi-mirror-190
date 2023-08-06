@@ -1,0 +1,8 @@
+fugue[ibis]==0.8.1.dev3
+fs-gcsfs
+pandas-gbq
+google-auth
+ibis-framework[bigquery]
+
+[ray]
+fugue[ray]==0.8.1.dev3
