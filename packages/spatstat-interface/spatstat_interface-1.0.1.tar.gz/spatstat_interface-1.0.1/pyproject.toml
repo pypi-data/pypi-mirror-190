@@ -1,0 +1,69 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "spatstat-interface"
+version = "1.0.1"
+description = "Simple Python interface with the spatstat R package using rpy2"
+license = "MIT"
+authors = ["Guillaume Gautier <guillaume.gga@gmail.com>"]
+maintainers = ["Guillaume Gautier <guillaume.gga@gmail.com>"]
+readme = "README.md" # path to README file (.md or .rst)
+homepage = "https://github.com/For-a-few-DPPs-more/spatstat-interface" # url
+repository = "https://github.com/For-a-few-DPPs-more/spatstat-interface" # url
+documentation = "https://github.com/For-a-few-DPPs-more/spatstat-interface" # url
+keywords = [
+    "spatial statistics",
+    "point processes",
+    "python",
+    "R",
+    "spatstat",
+] # ["optimization", "gradrient descent"] at most 5 keywords
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: R",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Mathematics",
+] # https://pypi.org/classifiers/
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+
+# poetry add PACKAGENAME
+pandas = "^1.2.4"
+rpy2 = "^3.4.5"
+
+# poetry add PACKAGENAME --optional
+jupyter = { version = "^1.0.0", optional = true }
+numpy = { version = "^1.20.3", optional = true }
+matplotlib = { version = "^3.5.2", optional = true }
+
+[tool.poetry.extras]
+notebook = ["jupyter", "numpy", "matplotlib"]
+
+[tool.poetry.group.dev]
+optional = true # makes the `dev` dependency group optional
+# poetry install --with dev
+# poetry install --only dev
+
+[tool.poetry.group.dev.dependencies]
+# poetry add PACKAGENAME --group dev
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+
+pre-commit = "^2.15.0"
+black = "^21.6b0"
+isort = "^5.9.3"
+
+[tool.pytest.ini_options]
+# poetry run pytest
+minversion = "6.0"
+addopts = "-ra -q -vv --cov=spatstat_interface --cov-report=xml"
+testpaths = ["tests"]
