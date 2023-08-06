@@ -1,0 +1,51 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+authors = []
+description = "A package for datastructures and algorithms."
+# license = "Apache-2.0"
+name = "cplib"
+packages = [{ include = "cplib" }]
+readme = "README.md"
+version = "0.1.1"
+
+[tool.poetry.dependencies]
+
+python = "^3.10"
+numpy = "*"
+scipy = "*"
+numba = { version = "^0.56", python = "<3.11", optional = true }
+
+[tool.poetry.extras]
+nb = ["numba"]
+
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pdoc = "^12"
+
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+
+
+[tool.mypy]
+strict = true
+plugins = "numpy.typing.mypy_plugin"
+
+
+[tool.pytest.ini_options]
+python_files = ["*.py"]
+python_classes = ["Test*", "_Test*"]
+python_functions = ["test", "_test", "_test_*", "test_*"]
