@@ -1,0 +1,6 @@
+pytermor
+click
+python-daemon
+psutil
+PyYAML
+requests
