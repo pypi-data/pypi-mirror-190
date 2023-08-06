@@ -1,0 +1,63 @@
+[project]
+name = "configur8"
+description = "Type-safe configuration and validation library"
+authors = [
+    { name = "Nick Joyce", email = "nick@stratuscode.com" },
+]
+requires-python = ">=3.7,<4.0"
+readme = "README.md"
+keywords = [
+    "config",
+    "configuration",
+    "configurations",
+    "settings",
+    "env",
+    "environment",
+    "environments",
+    "application",
+    "python-config",
+]
+classifiers = [
+    "Topic :: Software Development",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dynamic = []
+dependencies = [
+    "email-validator>=1.3.1",
+    "typing-extensions>=4.0.0",
+]
+version = "2.0.0"
+
+[project.license]
+text = "MIT"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "codecov",
+    "flake8",
+    "mypy",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-mypy-plugins",
+    "pytest",
+    "types-pyyaml",
+    "setuptools>=67.2.0",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "src/configur8/__about__.py"
+
+[tool.pytest.ini_options]
+addopts = "  --cov-report html\n  --cov=src\n  --cov-fail-under=80\n  --mypy-ini-file=./mypy.ini\n  --mypy-only-local-stub\n  --ignore=__pypackages__\n"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
