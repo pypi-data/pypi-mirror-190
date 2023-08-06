@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+setup.py
+scrape_google_scholar_py.egg-info/PKG-INFO
+scrape_google_scholar_py.egg-info/SOURCES.txt
+scrape_google_scholar_py.egg-info/dependency_links.txt
+scrape_google_scholar_py.egg-info/requires.txt
+scrape_google_scholar_py.egg-info/top_level.txt
