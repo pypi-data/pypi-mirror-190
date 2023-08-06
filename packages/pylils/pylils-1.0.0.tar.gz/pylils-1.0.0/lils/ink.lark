@@ -1,0 +1,161 @@
+// https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md
+
+start: (NEWLINE | stmt)+
+
+?stmt: text
+     | include
+     | options
+     | knot
+     | divert
+     | expr
+     | TODO              -> todo
+
+// Variable usage
+?expr: variable
+     | operation
+
+VAR.2: WS_INLINE* "VAR"
+OP.2: WS_INLINE* "~"
+ADD.2: WS_INLINE* "+"
+SUB.2: WS_INLINE* "-"
+MUL.2: WS_INLINE* "*"
+DIV.2: WS_INLINE* "/"
+NEG.2: "-"
+VARNAME: (CNAME | ".")+
+
+variable: VAR WS_INLINE* assignment
+operation: OP WS_INLINE* assignment
+assignment: CNAME WS_INLINE? "=" WS_INLINE? sum
+
+?sum: product
+   | sum ADD WS_INLINE? product   -> add
+   | sum SUB WS_INLINE? product   -> sub
+
+?product: atom
+    | product MUL WS_INLINE? atom  -> mul
+    | product DIV WS_INLINE? atom  -> div
+
+// TODO: Add parenthesis operations here
+?atom: "null"                -> const_none
+     | "true"                -> const_true
+     | "false"               -> const_false
+     | ESCAPED_STRING        -> str
+     | NUMBER                -> number
+     | VARNAME               -> var
+     | NEG WS_INLINE? atom   -> neg
+
+EQ.3: WS_INLINE* "=="
+LT.2: WS_INLINE* "<"
+GT.2: WS_INLINE* ">"
+LTE.2: WS_INLINE* "<="
+GTE.2: WS_INLINE* ">="
+AND.2: WS_INLINE* "&&"
+OR.2: WS_INLINE* "||"
+NOT.2: WS_INLINE* "not"
+// TODO: Add parenthesis operations here
+LOGICSTART.2: WS_INLINE? "{"
+LOGICSEND.2: WS_INLINE? "}"
+logic: LOGICSTART WS_INLINE? condition LOGICSEND
+?condition: sum
+         | sum EQ WS_INLINE? sum              -> eq
+         | sum LT WS_INLINE? sum              -> lt
+         | sum GT WS_INLINE? sum              -> gt
+         | sum LTE WS_INLINE? sum             -> lte
+         | sum GTE WS_INLINE? sum             -> gte
+         | condition AND WS_INLINE? condition -> and_
+         | condition OR WS_INLINE? condition  -> or_
+         | NOT WS_INLINE? condition           -> not_
+
+// Multiple line of plain text with tags
+text: (GLUESTART? STRING GLUEEND? divert? tag? NEWLINE*)+
+// text doesn't starts with:
+// #: comment
+// *: option
+// =: knot
+// //: comment
+// /*: comment
+// ->: divert
+// <>: glue
+TEXTSTART.1: /[^#\*=\-\/\t<\n ]/
+           | "-" /[^>]/
+           | "/" /[^\/\*]/
+           | "<" /[^>]/
+TEXTBODY: /
+    ([^#\n\-<]
+     |-[^>][^#\n\-]* # - but not divert
+     |<[^>][^#\n\<]* # < but not glue
+    )*
+/x
+
+STRING.0: WS_INLINE* (TEXTSTART TEXTBODY | NEWLINE)
+GLUE: "<>"
+GLUESTART: GLUE
+GLUEEND: GLUE
+
+// Option parsing
+// * opt1
+//   opt1 content text
+//   -> divert in opt1
+// * opt2 [suppress] with text -> divert # with tag support
+options: option+
+opttext: logic? OPTSTRING? ("[" OPTSUPPRESS? "]" OPTPOST?)? divert? WS_INLINE* tag?
+option: OPT opttext NEWLINE (text | operation NEWLINE | divert NEWLINE?)*
+OPTSTRING: /[^#\n\[\]\-={}]+/
+OPTSUPPRESS: OPTSTRING
+OPTPOST: OPTSTRING
+
+// Knot
+// === knot_name ===
+// knot content that can be
+// * text
+// * options
+// * divert
+knotheader: KNOT WS_INLINE* CNAME WS_INLINE* "==="?
+knot: knotheader NEWLINE content? stitch*
+
+// Stitches
+// = stitch_name
+// stitch content can be
+stitchheader: STITCH WS_INLINE* CNAME
+stitch: stitchheader NEWLINE content
+
+content: (text | options | divert | operation | NEWLINE)+
+
+// Divert
+// -> knot_name
+// -> knot_name.stitch
+NDIVERT.3: WS_INLINE* "->"
+divert: NDIVERT WS_INLINE* divert_name
+divert_name: CNAME divert_stitch?
+divert_stitch: DOT CNAME
+// Give priority to avoid string matching instead of divert in options
+DOT.2: "."
+
+include: INCLUDE WS_INLINE* FILENAME WS_INLINE* NEWLINE
+INCLUDE.5: "INCLUDE"
+FILENAME.1: /[^\n ]/+ ".ink"
+
+TODO: "TODO:" STRING
+?tag: SH_COMMENT
+
+// The priority in this rules is important, KNOT has higher priority thant
+// STITCH
+KNOT.3: WS_INLINE* "==="
+STITCH.2: WS_INLINE* "="
+OPT.1: WS_INLINE* "*"
+
+NEWLINE.1: CR? LF
+
+%import common.CR
+%import common.LF
+%import common.CPP_COMMENT
+%import common.C_COMMENT
+%import common.SH_COMMENT
+%import common.WS_INLINE
+%import common.CNAME
+%import common.ESCAPED_STRING
+%import common.NUMBER
+
+%ignore CPP_COMMENT
+%ignore C_COMMENT
+%ignore TODO
