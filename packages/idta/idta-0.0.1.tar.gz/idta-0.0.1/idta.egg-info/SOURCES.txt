@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+idta/__init__.py
+idta/idta.py
+idta.egg-info/PKG-INFO
+idta.egg-info/SOURCES.txt
+idta.egg-info/dependency_links.txt
+idta.egg-info/top_level.txt

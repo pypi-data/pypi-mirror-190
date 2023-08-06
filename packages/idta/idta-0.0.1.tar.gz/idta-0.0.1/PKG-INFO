@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: idta
+Version: 0.0.1
+Summary: Inhibitory Drug Target Analyser
+Home-page: UNKNOWN
+Author: Faruk Üstünel
+Author-email: <faruk.ustunel@bezmialem.edu.tr>
+License: UNKNOWN
+Keywords: drug target,viruses
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Viruses, in particular, RNA viruses show increased drug resistance to antivirals that directly act on viral proteins. IDTA module aims to find the candidate drugs/antivirals by using /high-throughput screening of FDA approved drug databases to target historically conserved sequences (HCS) of a given virus.
+
