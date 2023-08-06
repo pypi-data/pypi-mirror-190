@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: p5control
+Version: 0.0.1a1
+Summary: Measurement control software written in python
+Author-email: mawenzy <39279779+mawenzy@users.noreply.github.com>
+Maintainer-email: mawenzy <39279779+mawenzy@users.noreply.github.com>, schmampf <61253184+schmampf@users.noreply.github.com>
+License: BSD-3-Clause
+Project-URL: homepage, https://github.com/mawenzy/p5control
+Project-URL: documentation, https://p5control.readthedocs.io/en/latest/
+Project-URL: repository, https://github.com/mawenzy/p5control
+Keywords: p5control,measurement toolkit,experimentation platform,physics,science,research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: gui
+Provides-Extra: dev
+Provides-Extra: tests
+License-File: LICENSE
+
+# p5control
+[![GitHub license](https://img.shields.io/github/license/mawenzy/p5control)](https://github.com/mawenzy/p5control/blob/main/LICENSE)
+[![Documentation Status](https://readthedocs.org/projects/p5control/badge/?version=latest)](https://p5control.readthedocs.io/en/latest/?badge=latest)
+[![Package](https://img.shields.io/pypi/v/p5control)](https://pypi.org/project/p5control/)
+
+See the docs: https://p5control.readthedocs.io/en/latest/
+
+Control your instruments using python. This repo provides code to facilitate measurement control and data acquisition, including gui elements.
+
+Heavily inspired by [nspyre](https://github.com/nspyre-org/nspyre) and [hdf5view](https://github.com/marts/hdf5view).
