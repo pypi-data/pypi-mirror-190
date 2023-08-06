@@ -1,0 +1,4 @@
+[gui_scripts]
+analysePosition = MzChess:runAnalysePosition
+buildFen = MzChess:runFenBuilder
+mzChess = MzChess:runMzChess
