@@ -1,0 +1,8 @@
+README.md
+setup.py
+BayesianNetwork/BayesianNetwork.py
+BayesianNetwork/__init__.py
+BayesianNetwork.egg-info/PKG-INFO
+BayesianNetwork.egg-info/SOURCES.txt
+BayesianNetwork.egg-info/dependency_links.txt
+BayesianNetwork.egg-info/top_level.txt
