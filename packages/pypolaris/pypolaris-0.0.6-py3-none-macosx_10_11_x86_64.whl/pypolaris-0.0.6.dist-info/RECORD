@@ -1,0 +1,7 @@
+pypolaris/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypolaris/_pypolaris.so,sha256=o6QLkfzDHPMAGHTxCKvQqfbSz3ClX4zPJhQaTFSSt6c,623704
+pypolaris/pypolaris.py,sha256=QOLL5gi5HKLraPnexSdXcxSw3Qt265QbFPew22viayE,21460
+pypolaris-0.0.6.dist-info/METADATA,sha256=wi-ELisAGFyMYsqfASMi359KoY8edv4TIGOAvu_Kzsc,324
+pypolaris-0.0.6.dist-info/WHEEL,sha256=d1DEYkMjlT93GFRtQMwfSlNJuo2L3_ARY5aEfYKxpD0,108
+pypolaris-0.0.6.dist-info/top_level.txt,sha256=PL1mGMbiEAOnVAGUsWMxEY0I0sy9LCNBJr8-dpgR04E,10
+pypolaris-0.0.6.dist-info/RECORD,,
