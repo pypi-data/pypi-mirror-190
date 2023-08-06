@@ -1,0 +1,11 @@
+pyread_swift/__init__.py,sha256=3Ml9YpX9XuA_WXxn4iExIrLmpoCGCzLDv5-WTJT6FdM,115
+pyread_swift/io.py,sha256=zWrqFvblsLjn3XrvvGGii_nrouq152jWCAxRWY85ueU,9930
+pyread_swift/read_dataset.py,sha256=NzKxny4K9bhhfc9b6sw367rgoe3UtCGWNnnEh-561kY,10848
+pyread_swift/read_header.py,sha256=2DHV7kWgSbtz_xHffeb0tTFdc7FcoBH8gXtqaV0RGAA,2131
+pyread_swift/select_region.py,sha256=X-qRNUSsdqhpxJ54wkHlzCecO7ZnMejR2D23JIST6Lo,11037
+pyread_swift/split_selection.py,sha256=uKLbvhJj8jj2c88xdPpMtOJcC8sPziYfI3r25PId-3Q,7980
+pyread_swift-1.0.0.dist-info/LICENCE,sha256=UxaFZh-4juxT4bnDq-MbA-peHjeY7adJd7e-O5AtL0U,1553
+pyread_swift-1.0.0.dist-info/METADATA,sha256=4sCHP5IZ805eqvosZRC7dgI7WYJ-lZyLr4nJ0hXL_Go,7559
+pyread_swift-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyread_swift-1.0.0.dist-info/top_level.txt,sha256=keKQfH8nKZ4WVkjhd4-EsOhG-el4-E9I4d3BMJul2-A,13
+pyread_swift-1.0.0.dist-info/RECORD,,
