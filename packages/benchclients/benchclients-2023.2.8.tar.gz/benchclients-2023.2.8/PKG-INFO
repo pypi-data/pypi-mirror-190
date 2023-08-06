@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: benchclients
+Version: 2023.2.8
+Summary: Clients for the Conbench ecosystem
+Home-page: https://github.com/conbench/conbench/tree/main/benchclients
+Maintainer: Voltron Data
+Maintainer-email: conbench@voltrondata.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# benchclients
+
+A lightweight Python package with clients for working with APIs in the Conbench ecosystem
