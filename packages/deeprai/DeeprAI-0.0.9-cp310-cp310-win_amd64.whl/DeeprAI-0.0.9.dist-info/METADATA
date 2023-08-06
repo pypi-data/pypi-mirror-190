@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: DeeprAI
+Version: 0.0.9
+Summary: A easy to use and beginner friendly neural network tool box that anyone can pick up and explorer machine learning! 
+Home-page: https://github.com/Deepr-ai/Deepr-ai
+Author: Kieran Carter
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Cython
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: alive-progress
+Requires-Dist: colorama
+Requires-Dist: cryptography
+Requires-Dist: cython
+Requires-Dist: numpy
+Requires-Dist: pyndb
+
+![](images/read_me-header.png)
+## What is Deepr-ai?
+Deeper-ai is a beginner friendly neural network libary developed in Python and Cython. Deepr-ai is super simple and easy to use. Deepr-ai is made for a level 0 introduction to machine learning to get a understanding of the core consepts and to prepare the user for more advanced frame works (which deepr-ai might make in the future).
+## How do you use Deepr-ai?
+You can get started and look at examples and by navigating to the "start_up" folder.
+## What makes Deepr-ai diffrent from other machine learning libraries?
+With Deepr-ai's super easy and simple setup it requires almost no previous knowledge in Python, math, and machine learning to set up a model. However there are more advanced setting for more experanced users.
+## Is Deepr-ai finished?
+Currently Deepr-ai is under devopment, regular updates are planned granted im in highschool so updates might be delayed. However Deepr-ai still has useful features and practical uses in its unfinished form. 
+<p align="center">
+Copyright 2023 Kieran Carter
+</p>
