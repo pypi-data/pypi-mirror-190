@@ -1,0 +1,2 @@
+[console_scripts]
+contarg = contarg.cli.cli:contarg
