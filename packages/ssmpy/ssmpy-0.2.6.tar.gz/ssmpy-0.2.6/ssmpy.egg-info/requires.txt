@@ -1,0 +1,11 @@
+rdflib
+
+[:python_version < "3.8"]
+numpy<=1.19.5,>=1.18.5
+
+[:python_version >= "3.8"]
+pandas
+sqlite3
+math
+multiprocessing
+numpy>=1.19.5
