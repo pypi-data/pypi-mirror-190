@@ -1,0 +1,4 @@
+dagster==1.1.17
+dagster-snowflake==0.17.17
+pyspark
+requests
