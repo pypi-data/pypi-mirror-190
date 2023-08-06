@@ -1,0 +1,7 @@
+
+class Metric:
+    def __init__(self, spec):
+        self.spec = spec
+
+
+
