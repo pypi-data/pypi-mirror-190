@@ -1,0 +1,88 @@
+site_name: Ellar
+site_description: Ellar - Python ASGI web framework for building fast, efficient and scalable RESTAPIs and server-side application.
+site_url: https://github.com/eadwinCode/ellar
+repo_name: eadwinCode/ellar
+repo_url: https://github.com/eadwinCode/ellar
+edit_uri: blob/master/docs
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+
+  language: en
+  logo: img/Icon.svg
+  favicon: img/Icon.svg
+  icon:
+    repo: fontawesome/brands/git-alt
+
+plugins:
+- search
+
+nav:
+  - Introduction: index.md
+  - Overview:
+      - Step One:  overview/index.md
+      - Controllers:  overview/controllers.md
+      - Providers:  overview/providers.md
+      - Modules:  overview/modules.md
+      - Middlewares:  overview/middleware.md
+      - Exception Handling:  overview/exception_handling.md
+#      - Guards:  overview/guards.md
+      - Custom Decorators:  overview/custom_decorators.md
+      - Module Router:  overview/module-router.md
+  - Configuration: configurations.md
+  - How-to Guides:
+      - Input Parsing: parsing-inputs/index.md
+      - Path: parsing-inputs/path-params.md
+      - Query: parsing-inputs/query-params.md
+      - Header: parsing-inputs/header-params.md
+      - Cookie: parsing-inputs/cookie-params.md
+      - Body: parsing-inputs/body.md
+      - Form: parsing-inputs/form-params.md
+      - File: parsing-inputs/file-params.md
+      - Handling Response:
+          - Response Schema: handling-response/response.md
+          - Response Model: handling-response/response-model.md
+  - Templating:
+    - html: templating/templating.md
+    - Static Files: templating/staticfiles.md
+
+#  - Custom Providers: basics/custom-providers.md
+#  - Injection Scopes: basics/injection-scope.md
+#  - Model View Controller: basics/model-view-controller.md
+#  - Events: basics/events.md
+  - Versioning: basics/versioning.md
+  - Commands: basics/commands.md
+  - Testing: basics/testing.md
+  - OpenAPI: openapi/index.md
+  - WebSockets: websockets.md
+  - Mount: mount.md
+  - Background Tasks: background-task.md
+  - Release Notes: release-notes.md
+
+markdown_extensions:
+- codehilite
+- admonition
+- pymdownx.superfences
+- toc:
+    permalink: true
+extra_css:
+  - stylesheets/extra.css
