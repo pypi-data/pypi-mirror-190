@@ -1,0 +1,4 @@
+include hexintcalc/requirements.txt
+include hexintcalc/thirdparty.json
+include hexintcalc/README.MD
+include hexintcalc/LICENSE

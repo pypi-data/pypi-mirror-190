@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+hexintcalc/LICENSE
+hexintcalc/README.MD
+hexintcalc/__init__.py
+hexintcalc/requirements.txt
+hexintcalc/thirdparty.json
+hexintcalc.egg-info/PKG-INFO
+hexintcalc.egg-info/SOURCES.txt
+hexintcalc.egg-info/dependency_links.txt
+hexintcalc.egg-info/requires.txt
+hexintcalc.egg-info/top_level.txt
