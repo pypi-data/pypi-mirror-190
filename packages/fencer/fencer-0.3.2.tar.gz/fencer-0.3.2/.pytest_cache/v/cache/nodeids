@@ -1,0 +1,9 @@
+[
+  "tests/api_spec_test.py::test_capture_query_params",
+  "tests/api_spec_test.py::test_load_endpoints",
+  "tests/api_spec_test.py::test_produce_path_parameter",
+  "tests/api_spec_test.py::test_produce_query_param_value",
+  "tests/api_spec_test.py::test_resolve_allof_component",
+  "tests/api_spec_test.py::test_resolve_anyof_component",
+  "tests/api_spec_test.py::test_resolve_component"
+]
