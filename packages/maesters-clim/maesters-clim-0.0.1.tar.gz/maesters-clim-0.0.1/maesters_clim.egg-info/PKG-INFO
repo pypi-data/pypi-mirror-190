@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: maesters-clim
+Version: 0.0.1
+Summary: Maesters-of-Clim tempt to help retriving climate data (climate index, reanalysis) from the main-stream climate insitution (like IRI, PSL, NCEI, RDA).
+Home-page: https://github.com/blizhan/maesters-of-clim
+Author: blizhan
+Author-email: blizhan@icloud.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Maesters-of-Clim
+
+![](./static/maesters_of_clim.jpg)
+
+Maesters-of-Clim tempt to help retriving climate data (climate index, reanalysis) from the main-stream climate insitution (like IRI, PSL, NCEI, RDA). 
+
+### Usage
+```python
+from maesters_of_clim import Climate_Maester
+from datetime import datetime
+
+# retrive history climate index from nina
+c = Climate_Maester(
+    indexes=['nina34a', 'pdo', 'soi'],
+    source='psl'
+)
+df = c.history()
+
+# retrive half-year ENSO forecast probability
+c = Climate_Maester(
+    indexes='enso',
+    source='iri'
+)
+iridf = c.forecast(pred_at=datetime(2022, 10, 1))
+
+c = Climate_Maester(
+    indexes='enso',
+    source='cpc'
+)
+cpcdf = c.forecast(pred_at=datetime(2022, 10, 1))
+```
+
+
