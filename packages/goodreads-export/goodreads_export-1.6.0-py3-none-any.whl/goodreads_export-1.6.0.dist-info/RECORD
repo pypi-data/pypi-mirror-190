@@ -1,0 +1,16 @@
+goodreads_export/__init__.py,sha256=E8Xg_q61Sxd2nKE1a4aPO_Wngznyr9_FYAkJcDAzOEY,43
+goodreads_export/author_file.py,sha256=jxl5bNl9v3V5raEmcc7NjefLvia5Akd4gmrqEAgm4x4,3399
+goodreads_export/book_file.py,sha256=pJ-W3oB07QyZsakECxZAjGHHeFF1W5rJ6-4XbB_voec,8919
+goodreads_export/clean_file_name.py,sha256=ITNLeoG0ZEhKDuFrBNCe8lQI7Z36jcaWR6MjiRVr_So,600
+goodreads_export/goodreads_book.py,sha256=4O13CVbArgLkBqZarfIv9kbdwiSfYaZhkA0haMOmVsg,2284
+goodreads_export/log.py,sha256=I4oQwHvXz4F2l2hgGamUPLP19Rm2-bC_Jtjj8F51H-c,2640
+goodreads_export/main.py,sha256=KE0SruF6ROd2Y1Eq6VI8f5FWRHWazgM3Qw4A9NWkb34,5720
+goodreads_export/markdown_book.py,sha256=PYqBE3HrusIvwJ1ucsqAvJzZYhhzXZ1FpUl1W77qhu4,9549
+goodreads_export/stat.py,sha256=MZ_Tl2e2OYx3G_9BE2Q15HKWs6Q_fOUv7olfUwOJaoo,601
+goodreads_export/version.py,sha256=GXL-pi95MCVByDlCjcR2QRfd6VmTmu5Erp222m3SkMU,18
+goodreads_export-1.6.0.dist-info/LICENSE.txt,sha256=lXOJNkYonDE3JYr3iPX04gTgzdwcZCBQHyuirlkUJsU,1084
+goodreads_export-1.6.0.dist-info/METADATA,sha256=vIYSKCsvLYjME_0JDgs74JDTtjUKajtJfwmYDOEcRhQ,2231
+goodreads_export-1.6.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+goodreads_export-1.6.0.dist-info/entry_points.txt,sha256=iGT0M2ghOhrcObBAhIy3NldYsGSvVlyKqdxUw8xwA_k,64
+goodreads_export-1.6.0.dist-info/top_level.txt,sha256=Qh6TSA2N1oZ0FUqwMNzAM7fizge050g9LrIcFeZ0q7Q,17
+goodreads_export-1.6.0.dist-info/RECORD,,
