@@ -1,0 +1,205 @@
+[build-system]
+requires = [
+    "hatchling",
+    "hatch-fancy-pypi-readme",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "cumulusci"
+dynamic = [
+    "readme",
+    "version",
+]
+description = "Build and release tools for Salesforce developers"
+requires-python = ">=3.8"
+authors = [
+    { name = "Salesforce.org", email = "sfdo-mrbelvedere@salesforce.com" },
+]
+keywords = [
+    "cumulusci",
+    "salesforce",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "appdirs==1.4.4",
+    "authlib==1.2.0",
+    "certifi==2022.12.7",
+    "cffi==1.15.1",
+    "charset-normalizer==3.0.1",
+    "click==8.1.3",
+    "cryptography==39.0.0",
+    "defusedxml==0.7.1",
+    "docutils==0.16",
+    "faker==16.6.1",
+    "fs==2.4.16",
+    "github3-py==3.2.0",
+    "greenlet==2.0.2",
+    "gvgen==1.0",
+    "idna==3.4",
+    "importlib-metadata==6.0.0",
+    "jeepney==0.8.0",
+    "jinja2==3.1.2",
+    "keyring==23.0.1",
+    "lxml==4.9.2",
+    "markdown-it-py==2.1.0",
+    "markupsafe==2.1.2",
+    "mdurl==0.1.2",
+    "natsort==8.2.0",
+    "psutil==5.9.4",
+    "pycparser==2.21",
+    "pydantic==1.10.4",
+    "pygments==2.14.0",
+    "pyjwt[crypto]==2.6.0",
+    "python-baseconv==1.2.2",
+    "python-dateutil==2.8.2",
+    "pytz==2022.7.1",
+    "pyyaml==6.0",
+    "requests==2.28.2",
+    "requests-futures==1.0.0",
+    "rich==13.3.1",
+    "robotframework==6.0.2",
+    "robotframework-lint==1.1",
+    "robotframework-pabot==2.13.0",
+    "robotframework-pythonlibcore==4.1.0",
+    "robotframework-requests==0.9.4",
+    "robotframework-seleniumlibrary==5.1.3",
+    "robotframework-stacktrace==0.4.1",
+    "rst2ansi==0.1.5",
+    "salesforce-bulk==2.2.0",
+    "sarge==0.1.7.post1",
+    "secretstorage==3.3.3",
+    "selenium==3.141.0",
+    "simple-salesforce==1.11.4",
+    "six==1.16.0",
+    "snowfakery==3.4.1",
+    "sqlalchemy==1.4.46",
+    "typing-extensions==4.4.0",
+    "unicodecsv==0.14.1",
+    "uritemplate==4.1.1",
+    "urllib3==1.26.14",
+    "xmltodict==0.13.0",
+    "zipp==3.12.0",
+]
+
+[project.license]
+text = "BSD 3-Clause License"
+
+[project.optional-dependencies]
+docs = [
+    "myst-parser",
+    "Sphinx",
+]
+lint = [
+    "black",
+    "flake8<4",
+    "isort",
+    "pre-commit",
+]
+test = [
+    "coverage[toml]",
+    "factory-boy",
+    "furo",
+    "jsonschema",
+    "pytest<7.1 ",
+    "pytest-cov",
+    "pytest-random-order",
+    "pytest-vcr",
+    "responses",
+    "testfixtures",
+    "tox",
+    "typeguard",
+    "vcrpy",
+]
+
+[project.scripts]
+cci = "cumulusci.cli.cci:main"
+snowfakery = "snowfakery.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/SFDO-Tooling/CumulusCI"
+Changelog = "https://cumulusci.readthedocs.io/en/stable/history.html"
+"Bug Tracker" = "https://github.com/SFDO-Tooling/CumulusCI/issues"
+
+[tool.hatch.version]
+path = "cumulusci/__about__.py"
+
+[tool.hatch.build]
+include = [
+    "/cumulusci",
+    "/cumulusci/**/*.*",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/cumulusci",
+    "/requirements/*",
+    "README.md",
+    "docs/history.md",
+]
+
+[tool.hatch.build.targets.wheel]
+exclude = [
+    "tests/",
+    "*.sql",
+    "*.zip",
+]
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/markdown"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "docs/history.md"
+start-after = "<!-- latest-start -->\n\n"
+end-before = "\n\n<!-- latest-stop -->"
+
+[tool.black]
+exclude = "^/(\\.|dist|pybuild|venv)"
+
+[tool.coverage.run]
+omit = [
+    "*/tests/*",
+    "cumulusci/files/*",
+]
+source = [
+    "cumulusci",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "@abstract",
+    "@abc.abstract",
+]
+
+[tool.pytest.ini_options]
+testpaths = "cumulusci"
+addopts = "-p cumulusci.tests.pytest_plugins.pytest_typeguard -p cumulusci.tests.pytest_plugins.pytest_sf_vcr -p cumulusci.tests.pytest_plugins.pytest_sf_orgconnect"
+markers = [
+    "metadeploy: mark a test that interacts with the MetaDeploy REST API",
+]
+filterwarnings = [
+    "error:ClassMovedWarning",
+    "ignore::DeprecationWarning:.*.rflint",
+    "ignore::DeprecationWarning:.*.selenium",
+    "ignore::SyntaxWarning:.*.selenium",
+]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+skip_glob = "cumulusci/**/__init__.py"
+known_first_party = "cumulusci"
+known_third_party = "robot"
