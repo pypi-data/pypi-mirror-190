@@ -1,0 +1,14 @@
+test_stages/__init__.py,sha256=E2812YPfJbUPN7h0ydrX3ZDwIPx1daHGEwIwKBSQ994,1431
+test_stages/cmd.py,sha256=gVoJzNyHNIXvp-e1VY-Me9dqtLLnQImiovdoZ95VJYE,7518
+test_stages/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_stages/tox_stages/__init__.py,sha256=aUlXxR3j9dQFGUneMuEGQI-W7i0FdJJr9KiYo6gxGdo,184
+test_stages/tox_stages/__main__.py,sha256=gQrUJ2-bc3vODlxqSSGgzl89NMRRFEPkoSawv9lmPlo,4612
+tox_trivtags/__init__.py,sha256=Qd7zFv0OQTPEufthFq6EdCcxgsvMiBU1JfiqXN71wVk,2106
+tox_trivtags/parse.py,sha256=MpdyEPxzZPoLG8BjlG5-2XpuOz2ivbZfioGuFasIWtk,4844
+tox_trivtags/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_stages-0.1.1.dist-info/METADATA,sha256=B7JPyMSzM_VokvkK3nzlC26lbczkJXR2t2eNVLqQqOU,3985
+test_stages-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+test_stages-0.1.1.dist-info/entry_points.txt,sha256=Eut9WMV0MJLgfUPNewmUcRwFec0t3XUZoNw0yfLFEtY,99
+test_stages-0.1.1.dist-info/top_level.txt,sha256=APhGJQ8uIT9Kpb8pdW-G7pchhX2oTGNZIWNBMzL3AyE,25
+test_stages-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+test_stages-0.1.1.dist-info/RECORD,,
