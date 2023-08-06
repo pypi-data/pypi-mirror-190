@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+mamonca/mc.cpp
+mamonca.egg-info/PKG-INFO
+mamonca.egg-info/SOURCES.txt
+mamonca.egg-info/dependency_links.txt
+mamonca.egg-info/top_level.txt
