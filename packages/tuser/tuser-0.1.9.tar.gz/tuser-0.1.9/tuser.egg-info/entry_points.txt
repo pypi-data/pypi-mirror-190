@@ -1,0 +1,2 @@
+[console_scripts]
+tuser = Tuser.tuser:main
