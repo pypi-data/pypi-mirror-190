@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+__init__.py
+generate.py
+is_prime.py
+realistictype.py
+setup.cfg
+setup.py
+test.py
+words_count.py
+tuzikmediatools.egg-info/PKG-INFO
+tuzikmediatools.egg-info/SOURCES.txt
+tuzikmediatools.egg-info/dependency_links.txt
+tuzikmediatools.egg-info/top_level.txt
