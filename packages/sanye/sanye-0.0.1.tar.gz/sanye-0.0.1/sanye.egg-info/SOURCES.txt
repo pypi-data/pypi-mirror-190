@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+sanye.egg-info/PKG-INFO
+sanye.egg-info/SOURCES.txt
+sanye.egg-info/dependency_links.txt
+sanye.egg-info/top_level.txt
