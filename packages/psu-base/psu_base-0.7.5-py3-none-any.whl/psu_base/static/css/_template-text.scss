@@ -1,0 +1,58 @@
+@import 'variables';
+
+/** HEADINGS **/
+h1 {
+    @include heading();
+    font-size: 1.6em;
+}
+h2 {
+    @include heading();
+    font-size: 1.5em;
+}
+h3 {
+    @include heading();
+    font-size: 1.4em;
+}
+h4 {
+    @include heading();
+    font-size: 1.3em;
+}
+h5 {
+    @include heading();
+    font-size: 1.2em;
+}
+h6 {
+    @include heading();
+    font-size: 1.1em;
+}
+
+.text-heading{
+    @include heading();
+    font-size: 1em;
+}
+.text-intro{
+    color: lighten($text-color, 30%);
+    font-family: $heading-font;
+}
+.text-note{
+    color: lighten($text-color, 30%);
+    font-size: .8em;
+}
+
+.code{
+    color: $code-color;
+    font-family: $code-font;
+}
+code, span.code{
+    color: $code-color;
+    font-family: $code-font;
+    border: 1px solid lighten($code-color, 40%);
+    background-color: #DEDEDE;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.indented{
+
+}
+
