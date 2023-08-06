@@ -1,0 +1,3 @@
+[console_scripts]
+lofarBFcube = lofarSun.BF.GUI.lofarBFgui:main
+pyms_overview = lofarSun.cli.pyms_overview.__main__:main
