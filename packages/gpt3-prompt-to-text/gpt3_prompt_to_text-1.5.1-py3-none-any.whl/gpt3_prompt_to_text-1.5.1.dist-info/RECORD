@@ -1,0 +1,8 @@
+gpt3_prompt_to_text/__init__.py,sha256=NPuGXipKrWdU2C5pwDP9Mtb4OeAq4KT48OR8CgCEm0o,160
+gpt3_prompt_to_text/_version.py,sha256=NPuGXipKrWdU2C5pwDP9Mtb4OeAq4KT48OR8CgCEm0o,160
+gpt3_prompt_to_text/gpt3_prompt_to_text.py,sha256=Q17MwdaZ9DbTvUffYQ1LlQrkQ_Yx4du8wigWJuDUAr0,6932
+gpt3_prompt_to_text-1.5.1.dist-info/entry_points.txt,sha256=8eqbwApUeftB9jQS6qK5V5qmVwYDPI1Ovsxy123pYvw,84
+gpt3_prompt_to_text-1.5.1.dist-info/LICENSE.md,sha256=pvQ3XbbHkkKZbXOlYsZuGQ9XH66sJVSkQywgl-izEkc,1093
+gpt3_prompt_to_text-1.5.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+gpt3_prompt_to_text-1.5.1.dist-info/METADATA,sha256=Uf-3HDp4xNDlIlE04WYf1Gi6z82-y5TQxU0IOa8ESZs,4390
+gpt3_prompt_to_text-1.5.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+gpt3-prompt-to-text=gpt3_prompt_to_text.gpt3_prompt_to_text:main
+
