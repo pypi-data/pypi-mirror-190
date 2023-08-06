@@ -1,0 +1,13 @@
+fqdn_parser/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+fqdn_parser/skeleton.py,sha256=KBqg3K_jo6nmX9dsAV080jWK12q-0FChN9kjUzp9Osk,3808
+fqdn_parser/suffix_parser.py,sha256=3MkmCsB3iDVp0oeNvmXvOnqqC-FVpNhOb8i7Ic6NLjo,6117
+fqdn_parser/suffixes.py,sha256=eFx7riILTMHF5ApHeQEusBDcXjJYbKTyDaBQoJbhcr0,8755
+fqdn_parser/tld_ranks.py,sha256=mk0v2LVJ1H-0KUF1u0mZE4W7kV1nwxvz01jp5ClzA_o,1102
+fqdn_parser/tld_reg_date_parser.py,sha256=NIPUBcxmtg6DwqksvD8Lit42Dry6R0GHOi1-y8drnAI,3246
+fqdn_parser/tld_reg_dates_v1.txt,sha256=emLfDbcKE0WoyaNQfLygD7sRK1w6zwTHIr81swB2PQk,26236
+fqdn_parser/trie.py,sha256=Ca-AYwlEoG4zokWeVW0_mrlK-vXF--LECmY4HuPtI_0,3140
+fqdn_parser-1.0.4.dist-info/LICENSE.txt,sha256=W3Pn63iJzaQpLIfo8G642VDLNTVKBRj1UyT9EGTdjx4,1079
+fqdn_parser-1.0.4.dist-info/METADATA,sha256=qgoFTYZQFwXu_UoJNI-tWzCAWTWogsVjHuS9moAa43M,6469
+fqdn_parser-1.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fqdn_parser-1.0.4.dist-info/top_level.txt,sha256=gUwEG-yR9di8qhr7w4aZLu-OE8EJNssiS0H8WPZEJJc,12
+fqdn_parser-1.0.4.dist-info/RECORD,,
