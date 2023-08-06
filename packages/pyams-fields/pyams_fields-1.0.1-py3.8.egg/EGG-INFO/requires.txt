@@ -1,0 +1,17 @@
+setuptools
+persistent
+pyams_i18n
+pyams_security
+pyams_utils
+pyramid
+zope.annotation
+zope.componentvocabulary
+zope.container
+zope.interface
+zope.location
+zope.schema
+
+[test]
+pyams_zmi
+pyramid_zcml
+zope.exceptions
