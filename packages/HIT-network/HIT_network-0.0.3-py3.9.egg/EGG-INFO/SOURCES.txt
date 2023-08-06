@@ -1,0 +1,11 @@
+setup.py
+HIT_network/__init__.py
+HIT_network/draw_networks.py
+HIT_network/random_networks.py
+HIT_network/read_txt_networks.py
+HIT_network/scale_of_network.py
+HIT_network.egg-info/PKG-INFO
+HIT_network.egg-info/SOURCES.txt
+HIT_network.egg-info/dependency_links.txt
+HIT_network.egg-info/requires.txt
+HIT_network.egg-info/top_level.txt
