@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+jps_gallery_tools/__init__.py
+jps_gallery_tools/_modidx.py
+jps_gallery_tools/api.py
+jps_gallery_tools/core.py
+jps_gallery_tools.egg-info/PKG-INFO
+jps_gallery_tools.egg-info/SOURCES.txt
+jps_gallery_tools.egg-info/dependency_links.txt
+jps_gallery_tools.egg-info/entry_points.txt
+jps_gallery_tools.egg-info/not-zip-safe
+jps_gallery_tools.egg-info/requires.txt
+jps_gallery_tools.egg-info/top_level.txt
