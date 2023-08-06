@@ -1,0 +1,11 @@
+yowasp_nextpnr_gowin/__init__.py,sha256=Iz7OeC2b0WBMkt5VRgZtYn6Q0jYbfLsPBEHXcROiyX4,280
+yowasp_nextpnr_gowin/nextpnr-gowin.wasm,sha256=FCPmojidZtgq-2i0WmW1Ogl2HeI9jF8HEOYvMAYepfI,1505977
+yowasp_nextpnr_gowin/share/gowin/chipdb-GW1N-1.bin,sha256=W4VptUswzLpkBo1_xv-YGr-fcsKd6cRA3xOo549gyCE,377690
+yowasp_nextpnr_gowin/share/gowin/chipdb-GW1N-4.bin,sha256=1OmMygCSzSw-aurNkB8O7JL_MY4ZPotkHBGntmye9ao,598605
+yowasp_nextpnr_gowin/share/gowin/chipdb-GW1N-9.bin,sha256=R629mFV0cBIGVaLoFoGF6ZA9Mcr8uWtMJwQO0aHAZBg,773600
+yowasp_nextpnr_gowin/share/gowin/chipdb-GW1NS-2.bin,sha256=DCn4w0DiT2Oe_-B3fmYHYUr60mpna1iXaFq_zf-qY1I,445521
+yowasp_nextpnr_gowin-0.1.0.0.post403.dist-info/METADATA,sha256=P8vC5fcdyw-X9ksv2Gspog8GFvZ0K-jise1zM_Wh7D8,2964
+yowasp_nextpnr_gowin-0.1.0.0.post403.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+yowasp_nextpnr_gowin-0.1.0.0.post403.dist-info/entry_points.txt,sha256=P1MMVSi-MpolOEpbZny1XSW9rhhe3z2P_Ay-BpZRfPU,86
+yowasp_nextpnr_gowin-0.1.0.0.post403.dist-info/top_level.txt,sha256=l5MyCG4a9U9NirCGNN3svAM78A25dinwqSPtRydovN8,21
+yowasp_nextpnr_gowin-0.1.0.0.post403.dist-info/RECORD,,
