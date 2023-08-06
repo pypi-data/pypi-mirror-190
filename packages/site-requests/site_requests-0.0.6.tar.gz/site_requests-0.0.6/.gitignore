@@ -1,0 +1,7 @@
+dist
+venv
+.python-version
+*.pyc
+pip_uninstall.sh
+uninstall.txt
+パッケージ化の注意点.txt
