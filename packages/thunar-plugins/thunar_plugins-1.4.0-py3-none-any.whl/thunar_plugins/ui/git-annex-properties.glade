@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkListStore" id="git_annex_metadata_paths_liststore">
+    <columns>
+      <!-- column-name filepath -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkTreeStore" id="git_annex_metadata_treestore">
+    <columns>
+      <!-- column-name field -->
+      <column type="gchararray"/>
+      <!-- column-name value -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkEntryCompletion" id="git_annex_metadata_field_completition">
+    <property name="model">git_annex_metadata_treestore</property>
+    <property name="minimum-key-length">0</property>
+    <property name="text-column">0</property>
+    <property name="inline-completion">True</property>
+  </object>
+  <object class="GtkEntryCompletion" id="git_annex_metadata_value_completition">
+    <property name="model">git_annex_metadata_treestore</property>
+    <property name="minimum-key-length">0</property>
+    <property name="text-column">1</property>
+    <property name="inline-completion">True</property>
+  </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">list-add</property>
+  </object>
+  <object class="GtkImage" id="image2">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">dialog-ok</property>
+  </object>
+  <object class="GtkImage" id="image3">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">help-contents</property>
+  </object>
+  <object class="GtkImage" id="image4">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">edit-delete</property>
+  </object>
+  <object class="GtkImage" id="image6">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">edit-delete</property>
+  </object>
+  <object class="GtkBox" id="git_annex_metadata_properties_page">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="orientation">vertical</property>
+    <property name="spacing">10</property>
+    <signal name="destroy" handler="stopReadMetadata" swapped="no"/>
+    <signal name="hide" handler="stopReadMetadata" swapped="no"/>
+    <signal name="show" handler="readMetadata" swapped="no"/>
+    <signal name="unrealize" handler="stopReadMetadata" swapped="no"/>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-top">5</property>
+        <property name="margin-bottom">5</property>
+        <child>
+          <object class="GtkImage">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">git-annex</property>
+            <property name="icon_size">6</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes" context="pane title">Git Annex Metadata</property>
+            <property name="justify">center</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="1"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">Here you can edit Git Annex metadata for the selected files.</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="spacing">10</property>
+        <child>
+          <object class="GtkEntry" id="git_annex_metadata_field_entry">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes" context="minihelp for text entry">Field names can only consist of characters A-Z0-9_.-</property>
+            <property name="activates-default">True</property>
+            <property name="placeholder-text" translatable="yes" context="placeholder for text entry (Add value to FIELD)">field</property>
+            <property name="completion">git_annex_metadata_field_completition</property>
+            <property name="show-emoji-icon">True</property>
+            <signal name="changed" handler="metadataTextChanged" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="git_annex_metadata_value_entry">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="activates-default">True</property>
+            <property name="placeholder-text" translatable="yes" context="placeholder for text entry (Add VALUE to field)">value</property>
+            <property name="completion">git_annex_metadata_value_completition</property>
+            <property name="input-purpose">alpha</property>
+            <property name="input-hints">GTK_INPUT_HINT_NO_EMOJI | GTK_INPUT_HINT_NONE</property>
+            <signal name="changed" handler="metadataTextChanged" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="git_metadata_add_button">
+            <property name="label" translatable="yes" context="button to add metadata">Add</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can-focus">True</property>
+            <property name="can-default">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes" context="minihelp for button">Add the value to the field, preserving other values.</property>
+            <property name="image">image1</property>
+            <signal name="clicked" handler="editMetadata" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="git_metadata_set_button">
+            <property name="label" translatable="yes" context="button to set metadata">Set</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can-focus">True</property>
+            <property name="can-default">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes" context="minihelp for button">Set the value of the field, removing all other values.</property>
+            <property name="image">image2</property>
+            <signal name="clicked" handler="editMetadata" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="git_metadata_setdefault_button">
+            <property name="label" translatable="yes" context="button to set metadata">Set Default</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can-focus">True</property>
+            <property name="can-default">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes" context="minihelp for button">Set the field to the value if it doesn't already have another value set.</property>
+            <property name="image">image3</property>
+            <signal name="clicked" handler="editMetadata" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="git_metadata_remove_button">
+            <property name="label" translatable="yes" context="button to remove metadata">Remove</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can-focus">True</property>
+            <property name="can-default">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes" context="minihelp for button">Remove value from field</property>
+            <property name="image">image4</property>
+            <signal name="clicked" handler="editMetadata" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="git_metadata_clear_button">
+            <property name="label" translatable="yes" context="button to clear metadata">Clear</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can-focus">True</property>
+            <property name="can-default">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes" context="minihelp for button">Clear the field of all values</property>
+            <property name="image">image6</property>
+            <signal name="clicked" handler="editMetadata" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">6</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinner" id="git_annex_metadata_edit_spinner">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">7</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="git_annex_metadata_edit_image">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">8</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">Here you can generate an overview of the selected file's metadata.</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">3</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="spacing">10</property>
+        <child>
+          <object class="GtkButton" id="git_annex_read_metadata_button">
+            <property name="label">gtk-refresh</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="use-stock">True</property>
+            <signal name="clicked" handler="readMetadata" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkProgressBar" id="git_annex_metadata_read_progressbar">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pulse-step">0.01</property>
+            <property name="text" translatable="yes" context="progress bar text">Read Metadata</property>
+            <property name="show-text">True</property>
+            <property name="ellipsize">end</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkScrolledWindow">
+        <property name="height-request">150</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="shadow-type">in</property>
+        <child>
+          <object class="GtkTreeView">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="model">git_annex_metadata_paths_liststore</property>
+            <property name="show-expanders">False</property>
+            <child internal-child="selection">
+              <object class="GtkTreeSelection"/>
+            </child>
+            <child>
+              <object class="GtkTreeViewColumn">
+                <property name="title" translatable="yes" context="TreeView column">File</property>
+                <child>
+                  <object class="GtkCellRendererText"/>
+                  <attributes>
+                    <attribute name="text">0</attribute>
+                  </attributes>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkScrolledWindow">
+        <property name="height-request">150</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="shadow-type">in</property>
+        <child>
+          <object class="GtkTreeView" id="git_annex_metadata_treeview">
+            <property name="width-request">400</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="model">git_annex_metadata_treestore</property>
+            <child internal-child="selection">
+              <object class="GtkTreeSelection"/>
+            </child>
+            <child>
+              <object class="GtkTreeViewColumn">
+                <property name="title" translatable="yes" context="TreeView column title">field</property>
+                <property name="clickable">True</property>
+                <property name="sort-column-id">0</property>
+                <child>
+                  <object class="GtkCellRendererText" id="field_cellrenderer">
+                    <property name="xalign">1</property>
+                  </object>
+                  <attributes>
+                    <attribute name="text">0</attribute>
+                  </attributes>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkTreeViewColumn">
+                <property name="title" translatable="yes" context="TreeView column title">value</property>
+                <property name="clickable">True</property>
+                <property name="sort-column-id">1</property>
+                <child>
+                  <object class="GtkCellRendererText" id="value_cellrenderer"/>
+                  <attributes>
+                    <attribute name="text">1</attribute>
+                  </attributes>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="fill">True</property>
+        <property name="position">7</property>
+      </packing>
+    </child>
+  </object>
+</interface>
