@@ -1,0 +1,4 @@
+sounddevice>=0.4.4
+vosk>=0.3.44
+pygoogletranslation>=2.0.6
+pysimplegui>=4.60.1
