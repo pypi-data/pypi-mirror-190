@@ -1,0 +1,6 @@
+duplicates
+find_new
+picorg
+rename
+settings
+timestamp_finder
