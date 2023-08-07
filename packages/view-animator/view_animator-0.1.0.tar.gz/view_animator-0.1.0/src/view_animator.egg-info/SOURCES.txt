@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/view_animator/__init__.py
+src/view_animator/base_animator.py
+src/view_animator/pybullet_animator.py
+src/view_animator/rviz_animator.py
+src/view_animator.egg-info/PKG-INFO
+src/view_animator.egg-info/SOURCES.txt
+src/view_animator.egg-info/dependency_links.txt
+src/view_animator.egg-info/requires.txt
+src/view_animator.egg-info/top_level.txt
