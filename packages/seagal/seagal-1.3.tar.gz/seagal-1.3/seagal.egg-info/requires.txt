@@ -1,0 +1,9 @@
+scanpy[leiden]
+numpy
+anndata
+pandas
+matplotlib
+seaborn
+scipy
+squidpy
+sklearn
