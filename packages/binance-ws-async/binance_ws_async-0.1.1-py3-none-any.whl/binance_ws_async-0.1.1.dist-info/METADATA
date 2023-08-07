@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: binance-ws-async
+Version: 0.1.1
+Summary: binance simple ws library
+Maintainer-email: Yongwoo Park <nnnlife@gmail.com>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/nnnlife/binance-ws-async
+Project-URL: Source, https://github.com/nnnlife/binance-ws-async
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: Jython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: websockets (>=10.3)
+Requires-Dist: certifi (>=2022.12.7)
+Requires-Dist: charset-normalizer (<4.0,>=2.0)
+Requires-Dist: idna (>=3.4)
+Requires-Dist: pycryptodome (>=3.17)
+Requires-Dist: requests (>=2.28.2)
+Requires-Dist: urllib3 (>=1.26.14)
+
