@@ -1,0 +1,13 @@
+seagal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seagal/_gmod.py,sha256=Z1ViaKGHcBarTdguvQ_NGhdPuzvqvTpGOB185jP-97Q,3089
+seagal/_plotting.py,sha256=j-qpb_sDnf4PFWb-N8hHn4S_fXC7MJpSdPdeRIDEjTc,3998
+seagal/_utils.py,sha256=X-GKn7HrsHTHgw3I_OflYuxmkrhs4nPFu0sdFiM4GBw,13590
+seagal/lee_vec.py,sha256=AI8DWvgxveNTIfrzEt4TeGgnMjdxsWjD199BNCGYnkY,11553
+seagal/seagal.py,sha256=lEKNt7E8KJ9qeCuhjObz5FUyeaK1daU3dvclYwqDzgg,978
+seagal/spatial_measure.py,sha256=4hJfAG4GzailoJ_5aO-pUJ_LOqG-UxSVSgd5-cISTCE,6442
+seagal/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seagal/modules/gmod.py,sha256=jmASA4oNjI7bGTOHfBPv6hSjrBrmpjg1TIF-kn0jDPo,3113
+seagal-1.9.13.dist-info/METADATA,sha256=m8w09Qlyxas9ZDDn6ySkFJXtzdr4i6060CkM15yyo9o,700
+seagal-1.9.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+seagal-1.9.13.dist-info/top_level.txt,sha256=PdXZorEELfflet4GbttkfeLdmlmxZlEy7bhLxjH_HgQ,7
+seagal-1.9.13.dist-info/RECORD,,
