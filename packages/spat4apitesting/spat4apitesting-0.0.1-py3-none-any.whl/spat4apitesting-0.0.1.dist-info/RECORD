@@ -1,0 +1,11 @@
+src/spat4apitesting/atr.py,sha256=wq1hJulxxujYkxQpEUMchaqQ-YXXj4KCDZ6yN_2vJ6k,3485
+src/spat4apitesting/pyrest/API_Call.py,sha256=WQPIOt6XHYBS0EX3oWyJv1iw3CjLRjB4Erm2MgqGgeQ,9657
+src/spat4apitesting/pyrest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/spat4apitesting/pyrest/ad_hock.py,sha256=rQJG8veaRDuOEwH9ipdATJERUNoN_jZfeX-cyhENFpI,4133
+src/spat4apitesting/pyrest/conftest.py,sha256=IEFPEIyX3eK7uqSDof3PmRIkZEaNzGl6FGZLhQF7OY4,993
+src/spat4apitesting/pyrest/setup.py,sha256=EYftxNtKSPOGDRrVzRk1ThXZPWD5X_MqzsgYURKxaFM,4820
+src/spat4apitesting/pyrest/util.py,sha256=lSJdAoE1DXqx3UzFFEv7iVGrdfrm4mmHZaQtLh9RvEc,4030
+spat4apitesting-0.0.1.dist-info/METADATA,sha256=Oe7RkRl9qroSUqf0PJJs0luqCyTwIaKFFYTJnJ7HM4A,1040
+spat4apitesting-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+spat4apitesting-0.0.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+spat4apitesting-0.0.1.dist-info/RECORD,,
