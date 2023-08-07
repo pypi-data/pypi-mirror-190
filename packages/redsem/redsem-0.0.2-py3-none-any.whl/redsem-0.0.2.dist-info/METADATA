@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: redsem
+Version: 0.0.2
+Summary: Convertir datos tabulares en redes semánticas
+Home-page: https://git.c3.unam.mx/alejandro.prieto/redsem
+Author: Mauricio Alejandro Prieto Palacios
+Author-email: "Alejandro Palacios" <alejandro.prieto@c3.unam.mx>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: networkx
+
+# redsem
+
+Funcionalidades para convertir datos tabulares en redes semánticas
+
+## Documentación
+Por el momento la documentación se encuentra en este [sitio](https://redsem.readthedocs.io/es/latest/index.html)
+
+## Instalación
+
+```python
+pip install redsem
+```
