@@ -1,0 +1,14 @@
+cnki2bibtex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnki2bibtex/bibtex_entry.py,sha256=sJmD-nHGXP-YwZMzWcOGN7wA7mg-GVZnO_aL4mCLUYs,9477
+cnki2bibtex/cnki2bib.py,sha256=byYQ7bEdTOINp35LB_r96wN7wkMmJcy0b4n1Rxs8Xt0,4364
+cnki2bibtex/cnki_entry.py,sha256=JJNBz6VRw42KvoUjLZXGU13yUwvC9tmNIqSkbAti1mc,2897
+cnki2bibtex/entry.py,sha256=WL_ZI7ATzXG52GaooowFWdfL1IjDMYchTAUoZISZai8,1339
+cnki2bibtex/misc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cnki2bibtex/misc/check.py,sha256=yx7G7nQx5tdfigCed_NxLj4uXenEUQvF6aWTfkfor10,1101
+cnki2bibtex/misc/configure.py,sha256=xCgr4Jqi9FekoQMy9A5B9-Pcd4L4BrYkw3V89KcZEpQ,563
+cnki2bib-0.2.8.dist-info/LICENSE,sha256=qAp2vpqx_jrA2FahMtTFLv8cCyqrUsZmWt5LYtpzVAU,1063
+cnki2bib-0.2.8.dist-info/METADATA,sha256=cx1hA7pm9NCdgsiaUjQeO3uaJTMPqJjSxshiWgueUY4,3746
+cnki2bib-0.2.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cnki2bib-0.2.8.dist-info/entry_points.txt,sha256=wUUgt4qNWEumd0kfEV0f9lQiI3BDHzogot7-yVZEmks,57
+cnki2bib-0.2.8.dist-info/top_level.txt,sha256=lyyd4h66sm_VhOhAYIiCn91Q6-0_5R2_DkM_vSghpio,12
+cnki2bib-0.2.8.dist-info/RECORD,,
