@@ -1,0 +1,24 @@
+[tool.pdm]
+
+[project]
+name = "this-django"
+version = "0.1.0"
+description = "Zen Django"
+authors = [
+    { name = "maksyutov vlad", email = "maksyutov.vlad@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://gitlab.com/1PaCHeK1/this-django"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
