@@ -1,0 +1,8 @@
+[console_scripts]
+aggregates = mouse2.aggregates:main
+backbone_bond_autocorrelations = backbone_bond_autocorrelations:main
+backbone_twist = backbone_twist:main
+bond_orientational_ordering = bond_orientational_ordering:main
+data2pdb = data2pdb
+lamellar_orientational_ordering = lamellar_orientational_ordering:main
+
