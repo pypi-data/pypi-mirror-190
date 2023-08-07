@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logical_operator"
+version = "1.0.0"
+authors = [
+  { name="Braedyn L" },
+]
+description = "Normalized logical operators as functions."
+readme = "README.md"
+license = { text="MIT License" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["logical", "operator", "functions"]
+
+[project.urls]
+"Homepage" = "https://github.com/braedynl/logical_operator"
+"Source" = "https://github.com/braedynl/logical_operator"
+"Documentation" = "https://github.com/braedynl/logical_operator"
+"Bug Tracker" = "https://github.com/braedynl/logical_operator/issues"
+
+[tool.setuptools.package-data]
+"*" = ["*.pyi", "py.typed"]

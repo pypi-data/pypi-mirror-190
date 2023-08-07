@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+logical_operator/__init__.py
+logical_operator/py.typed
+logical_operator.egg-info/PKG-INFO
+logical_operator.egg-info/SOURCES.txt
+logical_operator.egg-info/dependency_links.txt
+logical_operator.egg-info/top_level.txt
