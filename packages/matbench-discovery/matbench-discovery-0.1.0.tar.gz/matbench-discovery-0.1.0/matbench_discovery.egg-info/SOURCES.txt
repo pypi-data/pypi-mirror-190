@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+matbench_discovery/__init__.py
+matbench_discovery/data.py
+matbench_discovery/energy.py
+matbench_discovery/metrics.py
+matbench_discovery/plots.py
+matbench_discovery/preds.py
+matbench_discovery/slurm.py
+matbench_discovery/structure.py
+matbench_discovery.egg-info/PKG-INFO
+matbench_discovery.egg-info/SOURCES.txt
+matbench_discovery.egg-info/dependency_links.txt
+matbench_discovery.egg-info/requires.txt
+matbench_discovery.egg-info/top_level.txt
+matbench_discovery/../data/mp/2022-09-19-mp-elemental-reference-entries.json
