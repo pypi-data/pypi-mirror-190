@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: feagi_agent
+Version: 0.0.22
+Summary: Feagi agent to work with general and simulation robots
+Home-page: https://github.com/feagi/feagi
+Author: Neuraville LLC
+Author-email: info@neuraville.com
+Project-URL: Bug Tracker, https://github.com/feagi/feagi/issues
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Quick start using feagi_agent with your webcam
+1) Windows:
+`pip install feagi-agent`
+Linux/Mac:
+`pip3 install feagi-agent`
+
+2. Windows: `python -m feagi_agent --robot webcam --ip 127.0.0.1` Linux/Mac: `python3 -m feagi_agent --robot webcam --ip 127.0.0.1`
