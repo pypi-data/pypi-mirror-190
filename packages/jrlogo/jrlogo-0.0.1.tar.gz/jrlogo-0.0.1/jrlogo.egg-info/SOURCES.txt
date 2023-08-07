@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+jrlogo/__init__.py
+jrlogo/color.py
+jrlogo/screen.py
+jrlogo/shape.py
+jrlogo/turtle.py
+jrlogo.egg-info/PKG-INFO
+jrlogo.egg-info/SOURCES.txt
+jrlogo.egg-info/dependency_links.txt
+jrlogo.egg-info/requires.txt
+jrlogo.egg-info/top_level.txt
