@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hayes-face
+Version: 0.0.1
+Summary: Base on RetinaFace
+Home-page: https://github.com/cjhayes16/hayesface
+Author: jhayes
+Author-email: 310869927@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.14.0)
+Requires-Dist: gdown (>=3.10.1)
+Requires-Dist: Pillow (>=5.2.0)
+Requires-Dist: opencv-python (>=3.4.4)
+Requires-Dist: tensorflow (>=1.9.0)
+
+# hayesface
