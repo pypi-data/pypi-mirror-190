@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/f4.egg-info/PKG-INFO
+src/f4.egg-info/SOURCES.txt
+src/f4.egg-info/dependency_links.txt
+src/f4.egg-info/top_level.txt
+src/f4py/Builder.py
+src/f4py/Filters.py
+src/f4py/IndexBuilder.py
+src/f4py/IndexSearcher.py
+src/f4py/Parser.py
+src/f4py/Utilities.py
+src/f4py/__init__.py
+test/test.py
