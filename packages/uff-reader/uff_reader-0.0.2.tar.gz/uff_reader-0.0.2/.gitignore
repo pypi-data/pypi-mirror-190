@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__
+.tox
+MANIFEST
+.idea
+*.h5
+*.uff
+/venv/
+/build/
+/src/UFF.py.egg-info/
+/src/uff_reader.egg-info/
+/dist/*
