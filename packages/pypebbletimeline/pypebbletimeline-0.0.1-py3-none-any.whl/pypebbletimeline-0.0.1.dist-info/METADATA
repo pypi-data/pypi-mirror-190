@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pypebbletimeline
+Version: 0.0.1
+Summary: Interface with the Rebble Timeline Services in python.
+Author: BlockArchitech
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests
+
+# pytimline
+
+Interface with Rebble's Timeline API via Python.
