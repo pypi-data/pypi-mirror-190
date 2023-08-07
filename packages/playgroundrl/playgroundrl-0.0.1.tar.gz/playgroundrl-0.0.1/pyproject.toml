@@ -1,0 +1,12 @@
+[project]
+name = 'playgroundrl'
+version = '0.0.1'
+authors = [
+    {name = "Langston Nashold"},
+    {name = "Rayank Krishnan"},
+]
+description = "Python SDK for Playground RL"
+
+[build-system]
+requires = ['hatchling']
+build-backend = "hatchling.build"
