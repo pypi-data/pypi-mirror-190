@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pycolord/__init__.py
+pycolord/color.py
+pycolord.egg-info/PKG-INFO
+pycolord.egg-info/SOURCES.txt
+pycolord.egg-info/dependency_links.txt
+pycolord.egg-info/top_level.txt
