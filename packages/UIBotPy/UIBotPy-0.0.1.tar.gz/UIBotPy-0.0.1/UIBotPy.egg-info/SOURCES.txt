@@ -1,0 +1,8 @@
+README.md
+setup.py
+UIBotPy/__init__.py
+UIBotPy/__main__.py
+UIBotPy.egg-info/PKG-INFO
+UIBotPy.egg-info/SOURCES.txt
+UIBotPy.egg-info/dependency_links.txt
+UIBotPy.egg-info/top_level.txt
