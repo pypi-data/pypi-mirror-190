@@ -1,0 +1,4 @@
+numpy
+pyedflib
+tensorflow
+tqdm
