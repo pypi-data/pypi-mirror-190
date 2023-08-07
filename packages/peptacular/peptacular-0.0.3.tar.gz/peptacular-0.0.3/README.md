@@ -1,0 +1,1 @@
+Utility package for handling peptide and protein sequences/files

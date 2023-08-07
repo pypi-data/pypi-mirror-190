@@ -1,0 +1,14 @@
+README.md
+setup.py
+peptacular/__init__.py
+peptacular/constants.py
+peptacular/fasta.py
+peptacular/peptide.py
+peptacular/protein.py
+peptacular.egg-info/PKG-INFO
+peptacular.egg-info/SOURCES.txt
+peptacular.egg-info/dependency_links.txt
+peptacular.egg-info/requires.txt
+peptacular.egg-info/top_level.txt
+tests/test_peptide.py
+tests/test_protein.py
