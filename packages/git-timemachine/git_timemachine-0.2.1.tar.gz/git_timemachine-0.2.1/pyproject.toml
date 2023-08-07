@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "git-timemachine"
+version = "0.2.1"
+description = "A command-line tool to help you manage Git commits at different time nodes."
+authors = ["HE Yaowen <he.yaowen@hotmail.com>"]
+homepage = "https://github.com/he-yaowen/git-timemachine"
+repository = "https://github.com/he-yaowen/git-timemachine"
+documentation = "https://github.com/he-yaowen/git-timemachine/blob/main/README.md"
+keywords = ["git", "commit", "timemachine"]
+license = "GPL-3.0"
+readme = "README.md"
+classifiers = [
+    "Topic :: Software Development :: Version Control :: Git",
+]
+
+packages = [{include = "git_timemachine", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+click = "^8.1.3"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.0.4"
+pylint = "^2.16.1"
+pyinstaller = "^5.7.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.1"
+chance = "^0.110"
+pytest-mock = "^3.10.0"
+pytest-cov = "^4.0.0"
+
+[tool.poetry.scripts]
+git-timemachine= "git_timemachine.__main__:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
