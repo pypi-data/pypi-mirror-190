@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: shoal
+Version: 0.3.0
+Summary: Lazy, Python-first, alternative to make, just, doit, and invoke
+Home-page: https://github.com/kyleking/shoal
+License: MIT
+Author: Kyle King
+Author-email: dev.act.kyle@gmail.com
+Requires-Python: >=3.7.12,<4.0.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beartype (>=0.12.0)
+Requires-Dist: pydantic (>=1.10.4)
+Requires-Dist: rich (>=13.3.1)
+Project-URL: Bug Tracker, https://github.com/kyleking/shoal/issues
+Project-URL: Changelog, https://github.com/kyleking/shoal/blob/main/docs/docs/CHANGELOG.md
+Project-URL: Documentation, https://shoal.kyleking.me
+Project-URL: Repository, https://github.com/kyleking/shoal
+Description-Content-Type: text/markdown
+
+# shoal
+
+Python function and shell command task runner. Alternative to `make`, [`just`](https://github.com/casey/just), [`doit`](https://github.com/pydoit/doit), and [`invoke`](https://pypi.org/project/invoke). Used in [`calcipy`](https://pypi.org/project/calcipy)
+
+## Installation
+
+`poetry add shoal`
+
+## Usage
+
+There are two ways to use `shoal`, either as a way to organize a set of local tasks or to distribute with a package.
+
+For more example code, see the [scripts] directory or the [tests].
+
+### Local Runner
+
+Create a `shoals.py` file with:
+
+```py
+from shoal import shoalling
+
+shoalling()
+```
+
+Then run the file with:
+
+```sh
+poetry run python shoals.py --task-help
+```
+
+Add additional tasks or import tasks from a third party package (such as [`calcipy`](https://pypi.org/project/calcipy))
+
+### Package
+
+Create a `<package>/shoals.py` file with:
+
+```py
+from shoal import shoalling  # noqa: F401
+```
+
+Add the file to your `pyproject.toml` scripts:
+
+```toml
+[tool.poetry.scripts]
+shoal = "shoal:shoalling"
+```
+
+Then test with:
+
+```sh
+poetry run shoal --task-help
+```
+
+## Project Status
+
+See the `Open Issues` and/or the [CODE_TAG_SUMMARY]. For release history, see the [CHANGELOG].
+
+## Contributing
+
+We welcome pull requests! For your pull request to be accepted smoothly, we suggest that you first open a GitHub issue to discuss your idea. For resources on getting started with the code base, see the below documentation:
+
+- [DEVELOPER_GUIDE]
+- [STYLE_GUIDE]
+
+## Code of Conduct
+
+We follow the [Contributor Covenant Code of Conduct][contributor-covenant].
+
+### Open Source Status
+
+We try to reasonably meet most aspects of the "OpenSSF scorecard" from [Open Source Insights](https://deps.dev/pypi/shoal)
+
+## Responsible Disclosure
+
+If you have any security issue to report, please contact the project maintainers privately. You can reach us at [dev.act.kyle@gmail.com](mailto:dev.act.kyle@gmail.com).
+
+## License
+
+[LICENSE]
+
+[changelog]: ./docs/CHANGELOG.md
+[code_tag_summary]: ./docs/CODE_TAG_SUMMARY.md
+[contributor-covenant]: https://www.contributor-covenant.org
+[developer_guide]: ./docs/DEVELOPER_GUIDE.md
+[license]: https://github.com/kyleking/shoal/LICENSE
+[scripts]: https://github.com/kyleking/shoal/scripts
+[style_guide]: ./docs/STYLE_GUIDE.md
+[tests]: https://github.com/kyleking/shoal/tests
+
