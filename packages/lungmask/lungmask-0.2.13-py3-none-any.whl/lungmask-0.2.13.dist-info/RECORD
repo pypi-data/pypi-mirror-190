@@ -1,0 +1,11 @@
+lungmask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lungmask/__main__.py,sha256=Is5U2iagEsxyyO9At3NZiKmFLMdM-deHogn4cLECRCo,3270
+lungmask/mask.py,sha256=MxSbzUcBqK1CNFGSA8MBOPaJuopi8d3Q5NePCM3Vw5M,5379
+lungmask/resunet.py,sha256=1yMo8lp_Z8bBiW778wpgLViQ28WA0s9fKi9yzu5jk4w,6070
+lungmask/utils.py,sha256=8YXUFGkRmh-GKD9wgS_K0yjD3xFsGODgR9XyV5AgOjo,11933
+lungmask-0.2.13.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lungmask-0.2.13.dist-info/METADATA,sha256=KYD1rdSoyhwR5hQwdtC9-qui70dfCwrlon7kDe4OAzc,6651
+lungmask-0.2.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+lungmask-0.2.13.dist-info/entry_points.txt,sha256=iqpUUzQL6rY7QAjbJrM5WCXI8GZYShlxB07Yy_eGqVA,52
+lungmask-0.2.13.dist-info/top_level.txt,sha256=x_skizP3x2DRRm-pPe_6fsl1FJZN90FFTuaJncgWVTY,9
+lungmask-0.2.13.dist-info/RECORD,,
