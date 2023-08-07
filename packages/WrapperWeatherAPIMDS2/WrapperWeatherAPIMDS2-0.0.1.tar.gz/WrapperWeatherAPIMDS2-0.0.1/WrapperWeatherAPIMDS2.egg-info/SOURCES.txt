@@ -1,0 +1,5 @@
+setup.py
+WrapperWeatherAPIMDS2.egg-info/PKG-INFO
+WrapperWeatherAPIMDS2.egg-info/SOURCES.txt
+WrapperWeatherAPIMDS2.egg-info/dependency_links.txt
+WrapperWeatherAPIMDS2.egg-info/top_level.txt
