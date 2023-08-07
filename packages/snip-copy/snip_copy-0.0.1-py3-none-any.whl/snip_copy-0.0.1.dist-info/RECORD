@@ -1,0 +1,14 @@
+snip_copy/__init__.py,sha256=JBcwqDP0q1HaSbcmUPBOse5FqZUMI03ujDG9dr8Foig,82
+snip_copy/__main__.py,sha256=zJK2wSolzq0dK_TVD9Rt7e5j4iabY0GTeBWt2Ta9ErA,3437
+snip_copy/copy.py,sha256=SUWNAm0WMXRlMIqzj6xVuEon1h8_VQ1II2-ZDA10CUI,1677
+snip_copy/parse.py,sha256=jmIC-o2ywT33ipQPhYESz6fRiNPkCT4Mzvc9kG6m1UA,1834
+snip_copy/snip.py,sha256=gOGUeNatDSBOIOeSI5IOXV41IFpdeuXV3cCYv9VkkZo,1490
+snip_copy/ipynb/__init__.py,sha256=4hwYMjIKtJG3zWt0ZnEq1GCFEJTirdmacS4exvxSMfQ,46
+snip_copy/ipynb/__main__.py,sha256=lUzT6-FeOUNvMirClrCOvTnot12NZrky1EMlK9uQgh0,987
+snip_copy/ipynb/copy.py,sha256=exNnnXcCY7b-nu2xQOAAvpjeQLnQzQ8hN4pTtgHfVTw,1603
+snip_copy/ipynb/json_ipynb.py,sha256=ws8yoPTaSkYpmPOOdO9Nqdc6pXPkKK1IV-jmtpReinM,2356
+snip_copy-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+snip_copy-0.0.1.dist-info/METADATA,sha256=24jqv1Hh2mOKbbvnT63031bhQ1DXki2ByEsZm0hS-OI,43634
+snip_copy-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+snip_copy-0.0.1.dist-info/top_level.txt,sha256=3jxhoRv4fhNkgd2522wctVro6HN3-VsDd9zBfo41gBk,10
+snip_copy-0.0.1.dist-info/RECORD,,
