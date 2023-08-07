@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/redsem/__init__.py
+src/redsem/api.py
+src/redsem.egg-info/PKG-INFO
+src/redsem.egg-info/SOURCES.txt
+src/redsem.egg-info/dependency_links.txt
+src/redsem.egg-info/requires.txt
+src/redsem.egg-info/top_level.txt
+test/test_main.py
