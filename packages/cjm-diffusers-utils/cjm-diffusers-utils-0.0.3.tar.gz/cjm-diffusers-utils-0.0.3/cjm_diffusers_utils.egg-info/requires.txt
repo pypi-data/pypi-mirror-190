@@ -1,0 +1,10 @@
+fastcore
+tqdm
+torch
+torchvision
+diffusers
+transformers
+accelerate
+cjm_pytorch_utils
+
+[dev]
