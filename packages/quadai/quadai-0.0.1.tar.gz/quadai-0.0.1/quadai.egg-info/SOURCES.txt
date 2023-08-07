@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+quadai.egg-info/PKG-INFO
+quadai.egg-info/SOURCES.txt
+quadai.egg-info/dependency_links.txt
+quadai.egg-info/top_level.txt
