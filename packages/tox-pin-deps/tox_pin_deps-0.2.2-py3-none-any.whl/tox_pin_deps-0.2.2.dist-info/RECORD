@@ -1,0 +1,13 @@
+tox_pin_deps/__init__.py,sha256=wCF2b2aq5CfOpudDvqoImGCeUSL1LKpPssiuWxfPVZY,45
+tox_pin_deps/common.py,sha256=tmXbNuwKqAYakDyuN5lNukIzRQWUgP5-lX7ngyfq0lY,1858
+tox_pin_deps/compile.py,sha256=AL14HhcZv_ewg8sbtD-QdBxIyxPs47vCa_3wlUKbLxA,7217
+tox_pin_deps/loader.py,sha256=RDQ16KZfvy8VI7hzxHRMY6O2giCazQfDRah3tDw0LVo,606
+tox_pin_deps/plugin.py,sha256=xwExuDPL8XzOgQChKhInLgGqPeYv1Uder4Qqga6LkNQ,4490
+tox_pin_deps/plugin4.py,sha256=Rbu6Qm6TGaD76ztplzZ8DK5WwEDB9R0xeSdly1C6eDw,5055
+tox_pin_deps/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tox_pin_deps-0.2.2.dist-info/LICENSE,sha256=4GRypNy_8VGEl8Nb9fJPGwlkB-XLIwnvInXJWG4w9-4,1068
+tox_pin_deps-0.2.2.dist-info/METADATA,sha256=N65o2S4Hf4yA2teHPzFYJtu1SJSqqXM5lncA92tQ4Zw,6824
+tox_pin_deps-0.2.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tox_pin_deps-0.2.2.dist-info/entry_points.txt,sha256=poImAoKA5PsuwTfaHv6IcvG_xPzvwb1Dgepah8Al_0U,37
+tox_pin_deps-0.2.2.dist-info/top_level.txt,sha256=b8qyJ1AiTx8H7xgHzejg0xKCYeF5I_CQic7yn1ZFAx4,13
+tox_pin_deps-0.2.2.dist-info/RECORD,,
