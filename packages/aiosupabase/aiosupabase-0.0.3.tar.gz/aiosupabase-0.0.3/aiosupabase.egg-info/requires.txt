@@ -1,0 +1,6 @@
+aiohttpx
+lazyops
+postgrest-py
+gotrue
+realtime
+storage3
