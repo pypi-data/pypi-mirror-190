@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Kvsqlite.egg-info/PKG-INFO
+Kvsqlite.egg-info/SOURCES.txt
+Kvsqlite.egg-info/dependency_links.txt
+Kvsqlite.egg-info/top_level.txt
+kvsqlite/__init__.py
+kvsqlite/client.py
+kvsqlite/sqlite.py
+test/test_kvsqlite.py
