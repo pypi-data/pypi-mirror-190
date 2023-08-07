@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+NOTICE.md
+README.md
+setup.py
+lambda_debug_logging/__init__.py
+lambda_debug_logging/failure_detection.py
+lambda_debug_logging/formatters.py
+lambda_debug_logging/handlers.py
+lambda_debug_logging/wrapper.py
+lambda_debug_logging.egg-info/PKG-INFO
+lambda_debug_logging.egg-info/SOURCES.txt
+lambda_debug_logging.egg-info/dependency_links.txt
+lambda_debug_logging.egg-info/requires.txt
+lambda_debug_logging.egg-info/top_level.txt
