@@ -1,0 +1,14 @@
+chartkick/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chartkick/django/__init__.py,sha256=Ki8MBcIJgMmH-f9xLoH7nSiW45iKLLr6LQfn1aE27do,3198
+chartkick/django/static/chartkick/Chart.bundle.js,sha256=PD6l0IlWxk22zCWITDA6naqD8qv7_btuMfPFUTPFU3Q,956541
+chartkick/django/static/chartkick/chartkick.js,sha256=yjdbdVFTCC6up7cfGL6W5guJip7XCXe4rBcWJkXvfxg,71520
+chartkick/licenses/LICENSE-chart.js.txt,sha256=Wgh3rW2BhSm-TzMAnQlCzffi7XZWFW9KunMIRZpUYDA,1093
+chartkick/licenses/LICENSE-chartjs-adapter-date-fns.txt,sha256=tLg1XCzSsYNUmAoMZCIYHXvW6JXZSuiLNXDpfGDuoD0,1088
+chartkick/licenses/LICENSE-chartkick.js.txt,sha256=Xd48v02sm_-BO_LEHIP5ZNxELcOQCRgpc8dfjnlvQyE,1073
+chartkick/licenses/LICENSE-date-fns.txt,sha256=jTlRw4lnuWSx_iWb_SAMJkfMBMhYtVpEFOMSKmDx70s,1117
+chartkick/licenses/LICENSE-kurkle-color.txt,sha256=KFnFAxO60rp3sIFBDEd76vkrYMoTp3okjYmFmm3WrIE,1085
+chartkick-1.0.0.dist-info/LICENSE.txt,sha256=8RTRRjDhA2d1z7v-I4treC3rzJ6TGqfZpNjBSS76epc,1102
+chartkick-1.0.0.dist-info/METADATA,sha256=zP0iFYdKJ3-mkerKk041Da08wV30Y-JCl5NDjKI7QWE,8104
+chartkick-1.0.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+chartkick-1.0.0.dist-info/top_level.txt,sha256=JD_BwljxPhZ8fNScIXtr-zALKlPEEX2241KV2J_D264,10
+chartkick-1.0.0.dist-info/RECORD,,
