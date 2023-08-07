@@ -1,0 +1,16 @@
+scipy
+numpy
+matplotlib
+opencv_python
+torch
+torchvision
+tqdm
+Pillow
+h5py
+tensorboard
+thop
+onnx
+onnxsim
+onnxruntime
+pycocotools
+pascal_voc_writer
