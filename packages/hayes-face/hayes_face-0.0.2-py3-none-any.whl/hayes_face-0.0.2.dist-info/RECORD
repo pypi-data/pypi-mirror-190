@@ -1,0 +1,12 @@
+retinaface/RetinaFace.py,sha256=mmlgsHAJpRKel2i2DZgEj2eYym3dqq9RaySF6tEQuL4,6892
+retinaface/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retinaface/commons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retinaface/commons/postprocess.py,sha256=jg7187pczdQJAsj-dng91jVoDDC0AQqkbfRFjGLjvNA,7337
+retinaface/commons/preprocess.py,sha256=ESZCTXMfWhC7uwfo9hvyeISLky8kFNUagnLgciiJ1hA,1835
+retinaface/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retinaface/model/retinaface_model.py,sha256=jotMgwB31Yvxiphat-roXpPO_Y7W3eDlWMGYBf4j-to,41628
+hayes_face-0.0.2.dist-info/LICENSE,sha256=oq-dQRzJJk0sMaq70J9KfJRL6UC1dawd7tMMmK84JgE,1098
+hayes_face-0.0.2.dist-info/METADATA,sha256=eoqjqUQg4tEWLpxB0sC0ukiiqDD3AJ8mC3PKmfzHic0,615
+hayes_face-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hayes_face-0.0.2.dist-info/top_level.txt,sha256=pfovrQynXTF0QV20p2oj5Lqgoh9AbT3qQ-nkyut5yw0,11
+hayes_face-0.0.2.dist-info/RECORD,,
