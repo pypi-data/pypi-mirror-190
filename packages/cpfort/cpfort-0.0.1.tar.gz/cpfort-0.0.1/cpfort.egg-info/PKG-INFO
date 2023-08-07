@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cpfort
+Version: 0.0.1
+Summary: cpfort package
+Home-page: https://github.com/diannekb/cpfort
+Download-URL: https://github.com/diannekb/cpfort/archive/refs/tags/0.0.1.tar.gz
+Author: NTNU
+Author-email: kimbienes@gmail.com
+License: MIT
+Keywords: pypi,cpfort
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+auswert
+

@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cpfort/__init__.py
+cpfort.egg-info/PKG-INFO
+cpfort.egg-info/SOURCES.txt
+cpfort.egg-info/dependency_links.txt
+cpfort.egg-info/top_level.txt
