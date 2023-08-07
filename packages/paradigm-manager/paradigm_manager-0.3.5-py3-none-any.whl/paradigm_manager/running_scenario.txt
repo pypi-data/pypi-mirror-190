@@ -1,0 +1,17 @@
+# Scenario 1
+# Sets layouts and fst resources and creates a paradigm of amisk, which is NA paradigm
+# need to update resources directories based on your system
+
+import paradigm_manager
+pm = paradigm_manager.ParadigmManager(
+        layout_directory="/home/ubuntu/cmput401/paradigm-panes/paradigm_panes/resources/layouts",
+        generation_fst="/home/ubuntu/cmput401/paradigm-panes/paradigm_panes/resources/fst/crk-strict-generator.hfstol"
+     )
+lemma = "amisk"
+p_type = "NA"
+pm.set_lemma(lemma)
+pm.set_paradigm(p_type)
+pm.generate()
+(Fetch recordings)
+pm.bulk_add_recordings(recordings)
+paradigm = pm.get_generated_paradigm()
