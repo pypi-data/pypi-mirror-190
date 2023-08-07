@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+malicious_donotinstall_httpspost/__init__.py
+malicious_donotinstall_httpspost.egg-info/PKG-INFO
+malicious_donotinstall_httpspost.egg-info/SOURCES.txt
+malicious_donotinstall_httpspost.egg-info/dependency_links.txt
+malicious_donotinstall_httpspost.egg-info/requires.txt
+malicious_donotinstall_httpspost.egg-info/top_level.txt
