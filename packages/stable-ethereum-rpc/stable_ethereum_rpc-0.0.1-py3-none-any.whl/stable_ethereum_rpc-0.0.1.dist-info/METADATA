@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stable-ethereum-rpc
+Version: 0.0.1
+Summary: Stable ethereum rpc
+Home-page: https://github.com/phamhongphuc1999/stable-ethereum-rpc
+Author: Phạm Hồng Phúc
+Author-email: phamhongphuc12atm1@gmail.com
+Project-URL: Bug Tracker, https://github.com/phamhongphuc1999/stable-ethereum-rpc
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1 align="center">Stable Ethereum Rpc</h1>
+
+```shell
+pip3 install stable-ethereum-rpc
+```
