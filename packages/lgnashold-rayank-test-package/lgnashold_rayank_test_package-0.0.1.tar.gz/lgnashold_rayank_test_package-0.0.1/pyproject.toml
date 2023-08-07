@@ -1,0 +1,12 @@
+[project]
+name = 'lgnashold_rayank_test_package'
+version = '0.0.1'
+authors = [
+    {name = "Langston Nashold"},
+    {name = "Rayank Krishnan"},
+]
+description = "Python SDK for playground project"
+
+[build-system]
+requires = ['python-socketio==5.6.0', 'hatchling']
+build-backend = "hatchling.build"
