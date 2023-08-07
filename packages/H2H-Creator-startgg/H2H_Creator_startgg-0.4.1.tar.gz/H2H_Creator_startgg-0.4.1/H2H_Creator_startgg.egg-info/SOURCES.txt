@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+H2H_Creator_startgg/H2HCreator.py
+H2H_Creator_startgg/__init__.py
+H2H_Creator_startgg/api.py
+H2H_Creator_startgg/creator.py
+H2H_Creator_startgg/events.py
+H2H_Creator_startgg/exceptions.py
+H2H_Creator_startgg/players.py
+H2H_Creator_startgg/queries.py
+H2H_Creator_startgg/results.py
+H2H_Creator_startgg/spreadsheets.py
+H2H_Creator_startgg.egg-info/PKG-INFO
+H2H_Creator_startgg.egg-info/SOURCES.txt
+H2H_Creator_startgg.egg-info/dependency_links.txt
+H2H_Creator_startgg.egg-info/top_level.txt
