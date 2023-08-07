@@ -1,0 +1,6 @@
+<odoo>
+  <data>
+    <menuitem name="Vertical Habitatge" id="vh.menu_root"
+      web_icon="vh,static/src/img/vh_odoo_icon.png"/>
+  </data>
+</odoo>
