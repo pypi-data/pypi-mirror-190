@@ -1,0 +1,10 @@
+jrlogo/__init__.py,sha256=a_GBrEIdOqeUgXWVobJIjoq3jFC-eHKlGgl8I9HSAcs,46
+jrlogo/color.py,sha256=WbnEiGLAb5hk9wNUu0XvcadZG6kZSgV2T1TOLAORttY,18389
+jrlogo/screen.py,sha256=5-ydeDKqluxwp2sAW38j9qUU5JGapFInf-v3zOnCtlw,764
+jrlogo/shape.py,sha256=9gH1Fk3awNtaygmYZTuNw9d6HZYrFy4y96cRx-PiExk,1309
+jrlogo/turtle.py,sha256=hfunBoHJsF3bNT8KeI1TToi7Cx0hp-WaQvFSSODtDXw,4208
+jrlogo-0.0.1.dist-info/LICENSE,sha256=6j6W9wC9ZrpWYCVd3s3bQj0ryEIYSyN3lZaZtxRITts,1887
+jrlogo-0.0.1.dist-info/METADATA,sha256=q-1NwPdtGHa9tIBYdk4JnfBdFfVNS-aXmmiEqSvjFXg,352
+jrlogo-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jrlogo-0.0.1.dist-info/top_level.txt,sha256=RgrZCFVyhnemiYfW4SiyAxAhY8J3W-iKKlO2_R3raII,7
+jrlogo-0.0.1.dist-info/RECORD,,
