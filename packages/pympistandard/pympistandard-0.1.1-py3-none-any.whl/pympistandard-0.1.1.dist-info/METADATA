@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pympistandard
+Version: 0.1.1
+Summary: Python API to the MPI Standard
+Author: Martin Ruefenacht
+Author-email: martin.ruefenacht@lrz.de
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
