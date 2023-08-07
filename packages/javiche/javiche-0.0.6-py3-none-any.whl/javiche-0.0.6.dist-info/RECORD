@@ -1,0 +1,10 @@
+javiche/__init__.py,sha256=hbfIsz8BsiZYT1DSH_ewziEXHbAOYsZzqv0xVClixMQ,91
+javiche/_modidx.py,sha256=PVgSKJX7_HxZ8orGEJJu1KRkqAlMCOjLMKR0VUd96ys,1067
+javiche/invdes.py,sha256=YZK_P3QGojtW1_Yn12ExCTV7ArARwqQFOJI9CX9cib8,2425
+javiche/jaxify.py,sha256=rqjWauUysiucpXLPK_lVxS-32xdVxK_2gXXRTv4pJNo,3631
+javiche-0.0.6.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+javiche-0.0.6.dist-info/METADATA,sha256=ua1zeco0jYmMpfTC9-Q3x_hg545QzssJ28ZAaBATk1I,3195
+javiche-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+javiche-0.0.6.dist-info/entry_points.txt,sha256=-o0IpSmPP-jJzHpscL5Dam61Bj1OOYuMfYjx_TSWo-c,36
+javiche-0.0.6.dist-info/top_level.txt,sha256=6EWuIC6jDoSTSqK85_FVEKKQZi3_8bmudIP329OSJJM,8
+javiche-0.0.6.dist-info/RECORD,,
