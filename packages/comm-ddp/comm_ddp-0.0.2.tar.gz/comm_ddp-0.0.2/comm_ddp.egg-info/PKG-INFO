@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: comm-ddp
+Version: 0.0.2
+Summary: communication tools for pytorch-DDP
+Author: Chaoyi Zhang
+
+communication tools for pytorch-DDP (single-node with multi-gpus). See more details as in https://github.com/chaoyivision/comm_ddp.
