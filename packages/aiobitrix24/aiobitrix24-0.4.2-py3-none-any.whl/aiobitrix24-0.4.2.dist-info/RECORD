@@ -1,0 +1,13 @@
+LICENSE,sha256=Alc6qZk2-dHEEZJLZESGbxiU5tsBpYCXuRi3Jso5JxE,1072
+aiobitrix24/__init__.py,sha256=jOW0W3vTHm0eWFiG-k680kXnSQa06GNZUIZsTZR0180,121
+aiobitrix24/_bitrix24.py,sha256=yIxGuuptKkWgLqJfqDRgWLFnHAS6Qd6h18IXlyT5n3U,3132
+aiobitrix24/_builders.py,sha256=pQMEwKoXXZRdZvgdVpvv-br7BVTC1blTacUNQyhpmAs,2562
+aiobitrix24/_crm.py,sha256=FtySUML3qm5KfBeiXf8M8Jg47jH0N8Yh4ztk5C1mSlQ,5328
+aiobitrix24/exceptions.py,sha256=JauNff5-8Sn06fu7cZKCTUa50PuuEEB94exHRCcrwFk,245
+aiobitrix24/methods/__init__.py,sha256=YNcyrxLFPDCI9xwoWWlg0dGIyftbRLbYbRYITm_rPTE,178
+aiobitrix24/methods/common.py,sha256=pDE9ekpFj-PuYs_hf6wYWjtFM3FUcsdgKYpvnyp8C48,47
+aiobitrix24/methods/crm.py,sha256=o5HApvE47flIueoR-a4ggRFiJBbKgMfTutjE73jz8k8,190
+aiobitrix24-0.4.2.dist-info/LICENSE,sha256=Alc6qZk2-dHEEZJLZESGbxiU5tsBpYCXuRi3Jso5JxE,1072
+aiobitrix24-0.4.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aiobitrix24-0.4.2.dist-info/METADATA,sha256=ploFC4qH-9L0N_d756lfKWRXl_XlQURyjAwWh0JCVTM,904
+aiobitrix24-0.4.2.dist-info/RECORD,,
