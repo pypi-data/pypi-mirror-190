@@ -1,0 +1,6 @@
+[console_scripts]
+convert-network=knext.converter:app
+get-kgml=knext.get_kgml:app
+parse-genes=knext.KNeXT:app
+parse-mixed=knext.KNeXTm:app
+
