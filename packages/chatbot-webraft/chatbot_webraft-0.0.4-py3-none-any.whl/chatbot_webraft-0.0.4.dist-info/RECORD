@@ -1,0 +1,8 @@
+chatbot_webraft/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatbot_webraft/chatbot.py,sha256=mZH0ANig0wnFkR0NvyXhIeAHk9R2WAIqo0PL9y_sxtI,1737
+chatbot_webraft/modeltype_load.py,sha256=dPnlLyNHPVY0w9Hhn5kFghfbLgjsHHz2-jQ9ilNs5Is,719
+chatbot_webraft/test.model,sha256=PjSvbDUTW6E9Q2AegFKxqj3QypK8b3E0vdQEhTRsngc,266
+chatbot_webraft-0.0.4.dist-info/METADATA,sha256=1k9vS2mHZJJDaNAc2McsAsIXz1Ow0UDXtPLzz3ngTLc,3204
+chatbot_webraft-0.0.4.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+chatbot_webraft-0.0.4.dist-info/licenses/LICENSE,sha256=nZww37ZSF2i6O5FrOZsEXUBeK3ZC_o_uEDf054pGCig,1091
+chatbot_webraft-0.0.4.dist-info/RECORD,,
