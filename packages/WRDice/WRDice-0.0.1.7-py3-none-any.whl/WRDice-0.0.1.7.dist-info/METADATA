@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: WRDice
+Version: 0.0.1.7
+Summary: Python simulator for war room battles
+Home-page: 
+Author: theterminator
+Author-email: warroom@theterminator.e4ward.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C
+Requires-Python: >=3.8.10
+Requires-Dist: numpy
+Requires-Dist: tqdm
+
