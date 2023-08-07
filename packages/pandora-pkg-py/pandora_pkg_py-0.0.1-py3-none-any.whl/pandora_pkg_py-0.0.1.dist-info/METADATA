@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pandora-pkg-py
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Fran Cruz
+Author-email: fran.cruz@es.abb.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pandora-pkg-py
+
+It is a test for upload package to azure
+
+
