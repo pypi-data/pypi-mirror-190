@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bayesNetworks18051
+Version: 0.0.2
+Summary: simple library for bayesian networks
+Author: Javier Alvarez
+Author-email: <javieremilio1@gmail.com>
+Keywords: python,bayes,bayesian network
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+
+A package that allows you to create bayesian networks and perform certain actions on them
