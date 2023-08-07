@@ -1,0 +1,9 @@
+LICENCE
+setup.py
+JvTest/__init__.py
+JvTest/oi.py
+JvTest.egg-info/PKG-INFO
+JvTest.egg-info/SOURCES.txt
+JvTest.egg-info/dependency_links.txt
+JvTest.egg-info/requires.txt
+JvTest.egg-info/top_level.txt
