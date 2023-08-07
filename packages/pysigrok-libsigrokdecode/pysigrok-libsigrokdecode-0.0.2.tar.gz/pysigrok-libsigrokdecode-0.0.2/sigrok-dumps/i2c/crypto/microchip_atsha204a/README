@@ -1,0 +1,57 @@
+-------------------------------------------------------------------------------
+Microchip ATSHA204A / ATECC508A
+-------------------------------------------------------------------------------
+
+The Microchip ATSHA204 / ATECC508A are crypto-authentication devices that
+communicate with a host over I2C.
+
+Details:
+https://www.microchip.com/design-centers/security-ics/cryptoauthentication
+
+
+Logic analyzer setup
+--------------------
+
+The logic analyzer used was a standard 8-channel FX2-based device (at 1 MHz).
+
+  Probe       ATSHA204A
+  ---------------------
+  0           SDA
+  1           SCL
+
+
+Data
+----
+
+The included samples originate from unit tests executed on the ATSHA204A
+and the ATECC508A, and were captured using PulseView.
+
+The ATSHA204A set contains samples of the following commands:
+
+ - Random
+ - DevRev
+ - Nonce
+ - GenDig
+ - HMAC
+ - MAC
+ - CheckMac
+ - DeriveKey
+ - Pause
+
+The ATECC508A set contains samples of the following commands:
+
+- CheckMAC
+- Counter
+- DeriveKey
+- DevRev
+- ECDH
+- GenDig
+- GenKey
+- HMAC
+- MAC
+- Nonce
+- Random
+- Read
+- SHA
+- Sign
+- Verify

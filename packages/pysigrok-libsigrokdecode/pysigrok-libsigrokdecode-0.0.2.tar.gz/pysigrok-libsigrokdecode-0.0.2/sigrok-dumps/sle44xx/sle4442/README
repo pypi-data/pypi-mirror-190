@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Siemens SLE4442 Chip Card protocol capture
+-------------------------------------------------------------------------------
+
+See the parent directory for more general information. These captures
+correspond to the SLE4442 chip. Each file demonstrates an individual
+operation.
+
+
+Logic analyzer setup
+--------------------
+
+The logic analyzer used was a Cypress FX2 no-brand device (at 500kHz):
+
+  Probe       SLE4442 pin
+  -----------------------
+  0           I/O
+  1           CLK
+  2           RST
+
+
+sle4442_atr.sr
+--------------
+
+Reset issued by the reader, ATR (Answer to Reset) response sent by the card.
+
+
+sle4442_psc_correct.sr
+----------------------
+
+Reader reset, correct PSC (Programmable Security Code) sent by the reader to
+the card, and gets accepted.
+
+
+sle4442_psc_wrong.sr
+--------------------
+
+Reader reset, incorrect PSC sent by the reader to the card, and gets refused.
+
+
+sle4442_read_main_memory.sr
+---------------------------
+
+Full read of the card's main memory (complete address range). Includes the
+ATR content at offset 0.
+
+
+sle4442_write_cafe1337_offset_30.sr
+-----------------------------------
+
+Write 0xCA 0xFE 0x13 0x37 to main memory at offset 0x30, then read back
+several main memory regions (starting slightly before the recently written
+address range, and starting from the beginning of the card's memory). Each
+read continues to the end of the card's capacity.
