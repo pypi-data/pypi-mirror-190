@@ -1,0 +1,6 @@
+PyQt5==5.15.9
+requests
+beautifulsoup4
+
+[:python_version < "3.7"]
+dataclasses
