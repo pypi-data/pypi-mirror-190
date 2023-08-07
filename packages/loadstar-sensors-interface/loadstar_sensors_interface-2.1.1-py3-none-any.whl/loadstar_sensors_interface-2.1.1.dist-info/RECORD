@@ -1,0 +1,10 @@
+loadstar_sensors_interface/__about__.py,sha256=CsQSPaiRJVjQBR9AbcNVKkmLlXZrswAacVWVHrNIgPA,471
+loadstar_sensors_interface/__init__.py,sha256=ByIAVyNgvnf_OjL0Q7MY_c9T0b90FvNVm1hH_a_KMi8,395
+loadstar_sensors_interface/cli.py,sha256=ACAj6fk41iNZTuj9GXCi6ookH5qf02q4XP3FGmeoxrA,3530
+loadstar_sensors_interface/loadstar_sensors_interface.py,sha256=j8CV4H8lWv9-6mtLbDNWBPappoRyeKO2w8-LUo92Iy8,12704
+loadstar_sensors_interface-2.1.1.dist-info/LICENSE,sha256=Ng6B0x7My_ghQ90oLnP3poDzRj5Xm0xwkKDKbMdNtKU,1529
+loadstar_sensors_interface-2.1.1.dist-info/METADATA,sha256=aTmZvCvFvI9EfP0IbaIeEBd0WBPU_sg1nj19xF217nM,10445
+loadstar_sensors_interface-2.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+loadstar_sensors_interface-2.1.1.dist-info/entry_points.txt,sha256=5PSQEatOn9PrgrMfiMxh5o-7uhaeAyCnaQ97LOevQ8M,65
+loadstar_sensors_interface-2.1.1.dist-info/top_level.txt,sha256=gMhVsfSr5WoIwkOshKpwibXi7b2eBIbdUTOzxMvqvRo,27
+loadstar_sensors_interface-2.1.1.dist-info/RECORD,,
