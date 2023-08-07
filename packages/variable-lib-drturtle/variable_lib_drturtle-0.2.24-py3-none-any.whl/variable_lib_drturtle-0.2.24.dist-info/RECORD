@@ -1,0 +1,8 @@
+variable_lib_drturtle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+variable_lib_drturtle/arrays.py,sha256=t8Kmq6IbvEcuhE4j0lmQx7vKujs9ACAK9RL3AkaQh38,4687
+variable_lib_drturtle/nd.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+variable_lib_drturtle/variables.py,sha256=v9qc5p_W7-wkAZuJzS23cvMpt4GwqS9DQpJymTuVIQU,3506
+variable_lib_drturtle-0.2.24.dist-info/METADATA,sha256=oJZ9hoEwCuxrCYdSpuH7daijglyM9OhA6Yxo6Wdd5oc,655
+variable_lib_drturtle-0.2.24.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+variable_lib_drturtle-0.2.24.dist-info/licenses/LICENSE,sha256=KZ-pwE1uvs2SbIjpaN2DgsU3K4QmFnjH9eaXlIMZoWM,1087
+variable_lib_drturtle-0.2.24.dist-info/RECORD,,
