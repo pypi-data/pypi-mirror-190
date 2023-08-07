@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: eadfv
+Version: 0.1
+Summary: view pretty pandas dataframe including east asian unicode characters
+Home-page: https://github.com/hkgeo/eadfv
+Download-URL: https://github.com/hkgeo/eadfv/archive/refs/heads/main.zip
+Author: hyuk
+Author-email: nacl31566@gmail.com
+Keywords: east asia,eadfv
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3
+Requires-Dist: numpy
+Requires-Dist: pandas
+
