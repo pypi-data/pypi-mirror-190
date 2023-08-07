@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cap_cake/__init__.py
+src/cap_cake/capcake.py
+src/capac.egg-info/PKG-INFO
+src/capac.egg-info/SOURCES.txt
+src/capac.egg-info/dependency_links.txt
+src/capac.egg-info/top_level.txt

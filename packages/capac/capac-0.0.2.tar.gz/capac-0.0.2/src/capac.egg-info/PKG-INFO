@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: capac
+Version: 0.0.2
+Summary: Package to capture network traffic
+Home-page: https://github.com/soreana/capac
+Author: Sina Kashipazha
+Author-email: esterlinkof@gmail.com
+Project-URL: Bug Tracker, https://github.com/soreana/capac/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Capac
