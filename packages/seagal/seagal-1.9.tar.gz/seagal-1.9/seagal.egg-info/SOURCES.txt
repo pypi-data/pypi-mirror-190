@@ -1,0 +1,12 @@
+README.md
+setup.py
+modules/__init__.py
+modules/gmod.py
+plot/__init__.py
+plot/plotting.py
+seagal.egg-info/PKG-INFO
+seagal.egg-info/SOURCES.txt
+seagal.egg-info/dependency_links.txt
+seagal.egg-info/not-zip-safe
+seagal.egg-info/requires.txt
+seagal.egg-info/top_level.txt
