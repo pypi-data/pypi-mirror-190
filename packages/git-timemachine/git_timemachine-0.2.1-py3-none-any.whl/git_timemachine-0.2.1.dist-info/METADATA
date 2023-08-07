@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: git-timemachine
+Version: 0.2.1
+Summary: A command-line tool to help you manage Git commits at different time nodes.
+Home-page: https://github.com/he-yaowen/git-timemachine
+License: GPL-3.0
+Keywords: git,commit,timemachine
+Author: HE Yaowen
+Author-email: he.yaowen@hotmail.com
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Project-URL: Documentation, https://github.com/he-yaowen/git-timemachine/blob/main/README.md
+Project-URL: Repository, https://github.com/he-yaowen/git-timemachine
+Description-Content-Type: text/markdown
+
+# git-timemachine
+
+A command-line tool to help you manage Git commits at different time nodes.
+
+## Quickstart
+
+1. Install command-line tool `git-timemachine` via command:
+
+    ```shell
+    pip install git-timemachine
+    ```
+
+2. Initialize configurations for `git-timemachine`:
+
+    ```shell
+    git-timemachine config --init
+    ```
+
+3. Edit the timestamp for last commit and range of time growth
+   in `$HOME/.git-timemachine/config` by any plain text editor.
+
+4. In a Git repository, run the following command to record a commit according
+   to the timestamp in configurations:
+
+    ```shell
+   git-timemachine commit -m 'A commit from specified time point.'
+    ```
+
+5. Grow the timestamp for next commits:
+    ```shell
+   git-timemachine grow
+    ```
+
+## License
+
+Copyright (C) 2022 HE Yaowen <he.yaowen@hotmail.com>
+
+The GNU General Public License (GPL) version 3, see [LICENSE](./LICENSE).
+

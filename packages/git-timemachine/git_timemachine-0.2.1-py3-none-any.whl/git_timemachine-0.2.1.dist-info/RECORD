@@ -1,0 +1,16 @@
+git_timemachine/__init__.py,sha256=qWzahms0U49gPCTyJJvdTpfffDigqrmV_AooSSWF6Jo,87
+git_timemachine/__main__.py,sha256=pOwepwHnwS05_Tmzn-Rn1vvQK6gXjJiCFU_vIN_UdG0,1006
+git_timemachine/commands/__init__.py,sha256=tPc0j6ELUTauYBQ1speqmmJ-Dbela4mBEaO1t8nv-Ik,167
+git_timemachine/commands/commit.py,sha256=akxQxabEevgustNb6VuPE4ynMZ2n8RAllEkWqtgSYk4,812
+git_timemachine/commands/config.py,sha256=GKxPsKF-0mqBy0NTCQOgkoUH7Aj_3x6thfhbDPcuL2Q,1532
+git_timemachine/commands/grow.py,sha256=ThCnZEvCksBSCPxXVJNAffgTXwsEo8S5fF2KPD1InQg,431
+git_timemachine/commands/log.py,sha256=E50y_VzjbHMUw_9Nn0G6Hwm8R7tgxdnYUQHsSCEWYi4,363
+git_timemachine/commands/migrate.py,sha256=EAgt3wnns2c2ghEnK0Doc_iaTTCpg7RiP711gpq5Ho8,2234
+git_timemachine/consts.py,sha256=xMcqg1LYDP4aJiAMWYz26ooz-1jykaUhAsTaYPNOHng,144
+git_timemachine/git.py,sha256=4ylhQvHCbYvBTmaNEaBZ219iABXUsx1RhPpWA_02I3g,538
+git_timemachine/helpers.py,sha256=-WkBA2EduFSXXOl04IA1W8R_xiKIt8EuvKk8ger6Wr8,936
+git_timemachine-0.2.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+git_timemachine-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+git_timemachine-0.2.1.dist-info/entry_points.txt,sha256=TBKLx25HuoXRFX50g3w1LeTkN-iN0jtXlCNWGArm7R8,64
+git_timemachine-0.2.1.dist-info/METADATA,sha256=oeCB3bkdez7Bf1C_DxBCEM-vDOeRzX_eWXVDmGMypp8,1868
+git_timemachine-0.2.1.dist-info/RECORD,,
