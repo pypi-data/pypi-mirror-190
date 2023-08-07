@@ -1,0 +1,16 @@
+reponews/__init__.py,sha256=ue6FVpfxgeCaf91qRtmNQE9CUPl_HZieD0J7r9dUTCE,1018
+reponews/__main__.py,sha256=hQAxR3zauoBBUeRO_kadlreUn7KUQDEqPH9yeXhROyU,3770
+reponews/client.py,sha256=bg7Irn-xAzv1xzIsulUmuKiA7-YmKJuXcv23N9i39tk,5581
+reponews/config.py,sha256=SY3QqxMYT6hj__5trsd96YzVvRy60hEik5Lx9xtvQCE,10030
+reponews/core.py,sha256=59SPNicOOzid4odSzdnNPjvfh3PF-G2MuvDN07eyVEE,8272
+reponews/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reponews/qlobjs.py,sha256=C4MZClf9onCTRr03HDWTUvrVeJqI2IpBgmNxXAZKGSA,4924
+reponews/qmanager.py,sha256=qs4ofZhXdW0LA8v9k860O6APrF-36NXwNaaYAvnnwhE,6664
+reponews/types.py,sha256=NgZVs_l-009WBQ1lxztl-ZF6oDs_CirZ-JXL_lqlwq0,9807
+reponews/util.py,sha256=qlqULgsVlxkaXVjWI_I95RdKooVmbNyyucsYrq63njk,571
+reponews-0.3.0.dist-info/LICENSE,sha256=KGJvUnSzIB9GWo3H-JiNQskY72zBCKmN0-dwdo0y050,1095
+reponews-0.3.0.dist-info/METADATA,sha256=o0kKnwIPfMph2k2QAj_VmVtPVHmBAv3qouDS7Ohi0YA,18372
+reponews-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+reponews-0.3.0.dist-info/entry_points.txt,sha256=crtMOymuChci0JEFzPebJydX32HLqGBtcAEVgefSv88,52
+reponews-0.3.0.dist-info/top_level.txt,sha256=1dIamrUKOxVTeMObfQ8L3e6oN4ZBcXKznUyo23p9p2Y,9
+reponews-0.3.0.dist-info/RECORD,,
