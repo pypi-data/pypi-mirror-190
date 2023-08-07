@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: auswert
+Version: 0.0.2
+Summary: Auswert package
+Home-page: https://github.com/diannekb/auswert
+Download-URL: https://github.com/diannekb/auswert/archive/refs/tags/0.0.2.tar.gz
+Author: NTNU
+Author-email: kimbienes@gmail.com
+License: MIT
+Keywords: pypi,auswert
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+auswert
+
