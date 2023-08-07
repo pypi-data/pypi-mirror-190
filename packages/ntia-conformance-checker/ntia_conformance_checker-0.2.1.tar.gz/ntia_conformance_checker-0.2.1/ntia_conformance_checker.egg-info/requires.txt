@@ -1,0 +1,5 @@
+click
+spdx-tools>=0.7.0rc0
+
+[test]
+pytest
