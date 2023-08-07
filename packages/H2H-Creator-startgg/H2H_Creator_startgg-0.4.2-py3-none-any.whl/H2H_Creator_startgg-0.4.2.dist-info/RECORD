@@ -1,0 +1,15 @@
+H2H_Creator_startgg/H2HCreator.py,sha256=ooBcPSYMw-GWE7r1HgdPUHwsA-b37LW0JsrArXzLI-A,1955
+H2H_Creator_startgg/__init__.py,sha256=8wXgJAMN6kHJSv2ncvDLccT_qmkeUWput1H8P4EMsio,51
+H2H_Creator_startgg/api.py,sha256=CFS_z0Qv4zRDAwAM4DVH-tHep14IiHG9N8TYBGNWUkY,1472
+H2H_Creator_startgg/creator.py,sha256=uLCa_d5nbTdFJ0DV_BFVrjYKYl2GxKKtprpsssOYmfo,9177
+H2H_Creator_startgg/events.py,sha256=adWkbP03tjheO23rnWalevAcCIj_E3OZF-mMBTAPOXA,3740
+H2H_Creator_startgg/exceptions.py,sha256=1k2ZqxZdwYpBgdbtrV9nWfh9DYrrUsN8ZBqcSFJPv2A,486
+H2H_Creator_startgg/players.py,sha256=GWY_iP36FSINFNhzUMmciT9OPn_Tu732aWV_CTsaK0g,1507
+H2H_Creator_startgg/queries.py,sha256=RH3ECUPYzzw4maKlUn-Ll2UJT9SccNCM2MLE9IIS2ZI,1959
+H2H_Creator_startgg/results.py,sha256=VvipsF4XCJEtjuQbusPeq1cA7EKnyXRlJtgiQt7StGI,2815
+H2H_Creator_startgg/spreadsheets.py,sha256=czSK-82IJvPrIM0wQbNsfTsaocC-37s5GvEok0C2UX8,1929
+H2H_Creator_startgg-0.4.2.dist-info/LICENSE,sha256=VC-q-JJ8bHiN0CjNfN25fPK0vR9muZfLRu7iln8ApzM,1085
+H2H_Creator_startgg-0.4.2.dist-info/METADATA,sha256=foIBGY6miM2vMh_9TtSNICKb0d-zmaMT9D7SuwBqEWA,7797
+H2H_Creator_startgg-0.4.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+H2H_Creator_startgg-0.4.2.dist-info/top_level.txt,sha256=Q0WsbGMucy4Jt3lhMKn5SvmzgsZA8EchSdjLijUgUeI,20
+H2H_Creator_startgg-0.4.2.dist-info/RECORD,,
