@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: footprint-py
+Version: 1.3
+Summary: A python OSINT tool to discover and analyze the digital footprint of a targets email or username across millions of sites.
+Home-page: https://github.com/Frikallo/footprint
+Author: Noah Kay
+Author-email: noahkay13@gmail.com
+License: Apache
+Keywords: cli,email,osint
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: halo (==0.0.31)
+Requires-Dist: email-validator (==1.3.0)
+Requires-Dist: dnspython (==2.3.0)
+Requires-Dist: pyfiglet (==0.8.post1)
+Requires-Dist: termcolor (==2.2.0)
+Requires-Dist: requests (==2.28.2)
+
+# footprint-py
+
+<p align="center">
+  <img src="https://github.com/Frikallo/footprint/blob/main/examples/banner.png" width="500" title="footprint-banner">
+</p>
+
+## What is footprint-py
+
+A python OSINT tool to discover and analyze the digital footprint of a targets email or username across millions of sites. Perfect for gathering gneral information about a target email.
+
+#### Features: :eyes:
+
+* Email validation
+* Check social accounts
+* Scan Pastebin Dumps
+* Check Breached Sites
+* DNS/IP Lookup
+* Username search (WIP)
+* Check if email is active (WIP)
+* Check related emails (WIP)
+
+## Services (APIs):
+
+| Service | Function | Status |
+| :--- | :--- | :--- |
+| [ipapi.co](https://ipapi.co/) - Public | More Information About Domain | :white\_check\_mark: |
+| [psbdmp.ws](https://psbdmp.ws/) - Public | Pastebin Dumps | :white\_check\_mark: |
+| [hunter.io](https://hunter.io/) - Public | Related Emails | :white\_check\_mark: :key: |
+| [emailrep.io](https://emailrep.io/) - Public | Breached Sites Names | :white\_check\_mark: :key: |
+| [BreachDirectory](https://breachdirectory.org/)| Password Leaks | :white\_check\_mark: :key: |
+
+:key: API key required
+
+#### If you want to use footprint with full features, set your API keys:
+
+ ```
+  footprint set hunter <hunter.io API key>
+  footprint set emailrep <emailrep.io API key>
+  footprint set breachdirectory <breachdirectory.org API key>
+  ```
+
+## Installation:
+```
+pip install footprint-py
+-----------
+OR
+-----------
+git clone https://github.com/Frikallo/footprint.git
+cd footprint
+python setup.py install
+```
+
+## Usage:
+```
+footprint example@email.com
+-----------
+OR
+-----------
+python -m footprint example@email.com
+```
+
+## Demo:
+<p align="center">
+  <img src="https://github.com/Frikallo/footprint/blob/main/examples/demo.gif" width="500" title="footprint">
+</p>
+
+This project is licensed under the APACHE License - see the [LICENSE](https://github.com/Frikallo/footprint/blob/main/LICENSE) file for details
+
