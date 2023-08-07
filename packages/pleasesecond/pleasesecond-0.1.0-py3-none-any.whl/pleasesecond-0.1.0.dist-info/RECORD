@@ -1,0 +1,6 @@
+pleasesecond/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pleasesecond/filename.py,sha256=NHMrBqzZXsJKqIbb97wuXQUZu84ajcPpPEbCnlAnBSI,105
+pleasesecond/subfolder/hidden.py,sha256=2YC1_ydcHCo1L7gGOHnQgrdHiqclPCWGjgPQMEpp8po,170
+pleasesecond-0.1.0.dist-info/METADATA,sha256=w3vDAdxVnfvyRWL6becUJJ_Fb1ZwKQjMXPwShPBLBik,384
+pleasesecond-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pleasesecond-0.1.0.dist-info/RECORD,,
