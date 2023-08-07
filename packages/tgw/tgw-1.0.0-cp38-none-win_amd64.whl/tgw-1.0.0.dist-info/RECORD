@@ -1,0 +1,13 @@
+tgw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgw/_tgw.pyd,sha256=3ufoHxq0GzoJqAO0bfFEdEikAYUkgnXl1aMVE82gH2I,1178112
+tgw/boost_random-vc140-mt-1_62.dll,sha256=HwDb-Wj2I0yXwkfKXXxfray5ZC5IjFXure1ziX68JUs,27648
+tgw/boost_system-vc140-mt-1_62.dll,sha256=27E2qCXFoXG71-Csf2IAt7mJMknm2q4svAjL8bxztJU,24576
+tgw/libcrypto-1_1-x64.dll,sha256=hEVxbVqTcp6fMYJF3J-qcRHY2fkKHpspAUCVZFhw4jc,3418112
+tgw/libssl-1_1-x64.dll,sha256=v5VdrqclcohGYwfLz7GhflPDLbjSvEmZpOgeOfGk84M,683520
+tgw/tgw.dll,sha256=He_RHiZZHTylMpSKvdVREXNSG_hKUhoAZcx9pD4CNNo,5821952
+tgw/tgw.py,sha256=aKz7e9gR8Im-Ms3_KxEDuctaCHL1RI2_aVyfwDjBfuE,217788
+tgw/cert/.ca.crt,sha256=7nNv0T_A1wCuv0Qk7w9-XPIQrBUg8f3xml_vYU6TTNU,1460
+tgw-1.0.0.dist-info/METADATA,sha256=ypMa-nyIawjjtbTnOfLUv_DvOh-B2iumKCC749jPd4A,199
+tgw-1.0.0.dist-info/WHEEL,sha256=0Hk2mjE26A6pmbdOtGhx-o6UKG9YGyhPJOwdccf76o0,102
+tgw-1.0.0.dist-info/top_level.txt,sha256=vng1OK2CVRSthtkErkZXTEbnUcSe6PGF6NsrU2O4sHg,13
+tgw-1.0.0.dist-info/RECORD,,
