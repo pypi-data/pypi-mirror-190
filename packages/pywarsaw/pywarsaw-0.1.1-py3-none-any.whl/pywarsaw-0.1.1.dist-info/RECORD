@@ -1,0 +1,10 @@
+pywarsaw/__init__.py,sha256=6CjoJSiJMVQut2UiQiKE8UvO1ip-3ZHLWOFbR1ZT_qI,194
+pywarsaw/client.py,sha256=4cFpVvOfAlVxKahBlutRZlJ9JQJT6QI7QJn_cwotO3g,4887
+pywarsaw/exceptions.py,sha256=D2jWcn7h0Fy0-JfgAQZLZ1BkVIX7xA0Aj-ExaTrRAlo,635
+pywarsaw/objects.py,sha256=-_Et-KArOf0Ehz2SaK9tO-DDxVBD3P2bLtHHoFzZa5Y,26281
+pywarsaw/pywarsaw.py,sha256=KUy50RsNDQfUpm11dFNWPeUOyrWtbDZ9ykOeIy-6Fpo,42876
+pywarsaw/utils.py,sha256=m3sRt--7hZnjX6oXGJ016aCYNGU71R5fm3Ed-KjjnWE,1516
+pywarsaw-0.1.1.dist-info/LICENSE,sha256=NlfgS1PnfOR4pxGJbJToSKpluTH8EnqRmqq5i08PORI,1076
+pywarsaw-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pywarsaw-0.1.1.dist-info/METADATA,sha256=pY35J76LVJB7BMxJXwjmCy5oLJkEoLVMFC-k0Olqblk,6702
+pywarsaw-0.1.1.dist-info/RECORD,,
