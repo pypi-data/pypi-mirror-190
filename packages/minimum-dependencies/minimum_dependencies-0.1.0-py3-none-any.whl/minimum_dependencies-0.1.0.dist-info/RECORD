@@ -1,0 +1,13 @@
+minimum_dependencies/__init__.py,sha256=tvSnwAmRr60yZex0apbUmrdYHHFxchL6F9pbzyOZ7w4,189
+minimum_dependencies/_core.py,sha256=45M5kODyRmXRsJ-XAm3SbxLMRJu40wUX4Vtfl76vq4k,4873
+minimum_dependencies/_script.py,sha256=y4SUafq6KYyajIPXb360OXS5JlelAHkHNQORPlNi4Uw,1194
+minimum_dependencies/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+minimum_dependencies/tests/__init__.py,sha256=BKNr0LjhUI8bae-lseGw9djP0G72aZX-MnwOawoZtXQ,24
+minimum_dependencies/tests/test_core.py,sha256=pHdPaUldwhQJS9WzgFadkP9Qnewf1jC51qxFi6oSyZw,9248
+minimum_dependencies/tests/test_script.py,sha256=jT9TlMgHrNFp_Bn2TVVAXaH5gKJ_NN8vaIDogyiJ4hE,1936
+minimum_dependencies-0.1.0.dist-info/LICENSE,sha256=Zm10lBS4cqbatOCeaIFsZZ9yBwbskVsKRr9xvaHF9Pw,1561
+minimum_dependencies-0.1.0.dist-info/METADATA,sha256=LJMHsT_uhCJeM2PbeLihoeD8HnWUI4qcX7slZYsm8WE,6172
+minimum_dependencies-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+minimum_dependencies-0.1.0.dist-info/entry_points.txt,sha256=3RL3_f5Z6oiHKe5BmLq6AQWajMcF-fz3O97acWoeCog,75
+minimum_dependencies-0.1.0.dist-info/top_level.txt,sha256=YX2jpiBUu0atZm6fkLi33qcI0dQmRd-E4g7H4WpKHdg,21
+minimum_dependencies-0.1.0.dist-info/RECORD,,

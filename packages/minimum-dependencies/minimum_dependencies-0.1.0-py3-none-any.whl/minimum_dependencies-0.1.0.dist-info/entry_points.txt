@@ -1,0 +1,2 @@
+[console_scripts]
+minimum_dependencies = minimum_dependencies._script:main
