@@ -1,0 +1,5 @@
+pydantic
+pytz
+humps
+requests
+svgdiagram>=1.4.2
