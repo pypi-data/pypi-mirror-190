@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+auswert/__init__.py
+auswert.egg-info/PKG-INFO
+auswert.egg-info/SOURCES.txt
+auswert.egg-info/dependency_links.txt
+auswert.egg-info/top_level.txt
