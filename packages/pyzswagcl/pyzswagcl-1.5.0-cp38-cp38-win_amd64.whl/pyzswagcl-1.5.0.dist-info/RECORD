@@ -1,0 +1,11 @@
+LICENSE.txt,sha256=82HFE2tG6k1v7YD065fi3PSy0tCuV68AM7WXaA4Y2Mc,1557
+httpcl.lib,sha256=4MVgjAmZDIdpUbKEdsb9_N2QoGzkWs_sFp7r5V0HIHQ,4340218
+libcrypto-1_1-x64.dll,sha256=f6U8_Zkt3CccdYxKMs98MGAEqT-SUOeG39gqXBspp7A,3423232
+libssl-1_1-x64.dll,sha256=fCJy-nQGvTNrWlcfQV1GB9EnrnJlG4tB19OX_y_SKXs,686080
+pyzswagcl.cp38-win_amd64.pyd,sha256=GO90RC2n-G-kUNw6KUdcqK9plF6BUUt2PbT7lw0lHEQ,979456
+speedyj.lib,sha256=cLUHXaG9_R5m4iWDpl3ovs6NBXeiXxAjeskeKnk3PNc,98304
+zswagcl.dll,sha256=fdNMkaOkvIFVrJ30wH30sRG5SUYk0TfLcTDdD3oNgt0,878080
+pyzswagcl-1.5.0.dist-info/METADATA,sha256=8fLtnCx9DDyetQgiT62xvz_NjQ49XDnYrgZGbdRJnVY,295
+pyzswagcl-1.5.0.dist-info/WHEEL,sha256=b_PH-i_F2xFYDXcROE5vpDbWUcY020I0eLFvEIYA9Pc,100
+pyzswagcl-1.5.0.dist-info/top_level.txt,sha256=68xZPCqJP4enWPpsst2_9GD8GiGgr8ImRsP5uHJO1jo,10
+pyzswagcl-1.5.0.dist-info/RECORD,,
