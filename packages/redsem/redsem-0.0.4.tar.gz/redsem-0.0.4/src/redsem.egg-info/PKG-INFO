@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: redsem
+Version: 0.0.4
+Summary: Convertir datos tabulares en redes semánticas
+Home-page: https://git.c3.unam.mx/alejandro.prieto/redsem
+Author: Mauricio Alejandro Prieto Palacios
+Author-email: "Alejandro Palacios" <alejandro.prieto@c3.unam.mx>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# redsem
+
+Funcionalidades para convertir datos tabulares en redes semánticas
+
+## Documentación
+Por el momento la documentación se encuentra en este [sitio](https://redsem.readthedocs.io/es/latest/index.html)
+
+## Instalación
+
+```python
+pip install redsem
+```
+
+## Uso
+
+### Prepación de datos
+
+```python
+import redsem
+import pandas as pd
+import networkx as nx
+datos = pd.read_csv('datos.csv')
+df = redsem.filtrar_primeras_posiciones(datos, ultima_posicion=3)
+red = nx.from_pandas_edgelist(datos,
+                                source='estimulo',
+                                target='palabra_limpia',
+                                edge_attr=['frecuencia_total', 'parte_del_habla'])
+```
+
+Primero se señala las particiones en estímulos y palabras respuestas.
+
+```python
+mapeo_bipartita = {nodo: 'estimulo' if nodo.endswith('_semilla') else 'respuesta' for nodo in red.nodes()}
+nx.set_node_attributes(red, mapeo_bipartita, 'bipartita')
+```
+
+Ahora se establece los atributos.
+```python
+columnas_atributos = ('frecuencia_total', 'estimulo', 'frecuencia_palabra_estimulo')
+df_atributos = datos.set_index('palabra_limpia')[columnas_atributos]
+atributos_dic = {}
+for col in df_atributos.columns:
+    atributos_nodos = df_atributos[col].to_dict()
+    atributos_dic[col] = atributos_nodos
+    nx.set_node_attributes(grafo, atributos_nodos, col)
+```
+
+### Análisis de redes
+
+```python
+import redsem
+
+covid = redsem.proyectar_red_por_estimulos(red, 'covid_semilla')
+nx.export('covid.gexf', covid)
+
+covid_dieta = redsem.proyectar_red_por_estimulos(red, 'covid_semilla', 'dieta_semilla')
+nx.export('covid_dieta.gexf', covid_dieta)
+```
