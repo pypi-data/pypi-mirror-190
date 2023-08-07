@@ -1,0 +1,10 @@
+napari_nibabel/__init__.py,sha256=eBgV95-hD8C912WNvonn4AiKnse0Js-oDP_bM9wSblE,176
+napari_nibabel/_reader.py,sha256=pR_ek9KwnYl9dH60pq231eAxzh3pKkp2Bo5vNqfMmaM,4830
+napari_nibabel/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+napari_nibabel/napari.yaml,sha256=bRZMUW0hW3E75Ajo4Htpcev_sK78VgFrsIHzyy7U1HQ,539
+napari_nibabel-0.1.0.dist-info/LICENSE,sha256=8k7SlKOyLdOa0Ski2LOIUZjQ4Y25Z1ipykMCvbJyZWY,1083
+napari_nibabel-0.1.0.dist-info/METADATA,sha256=1kHgRecrPtaoAaLNuPE9icM4sSX1sWyAMmPnsvdpjMg,3523
+napari_nibabel-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+napari_nibabel-0.1.0.dist-info/entry_points.txt,sha256=FFmOnsAzbuSlyyIXsbrbw3IS9QUUX_Xo1jTUjeZ91TM,62
+napari_nibabel-0.1.0.dist-info/top_level.txt,sha256=YDjIMQUFPbmdPgZRSTmQBjxEQF2LA5kLweRcmhQkxOU,15
+napari_nibabel-0.1.0.dist-info/RECORD,,

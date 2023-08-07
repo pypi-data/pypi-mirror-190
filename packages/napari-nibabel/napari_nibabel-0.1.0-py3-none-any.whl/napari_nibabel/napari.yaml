@@ -1,0 +1,17 @@
+name: napari-nibabel
+display_name: Napari NiBabel
+contributions:
+  commands:
+    - id: napari-nibabel.get_reader
+      python_name: napari_nibabel._reader:napari_get_reader
+      title: Open data with NiBabel
+  readers:
+    - command: napari-nibabel.get_reader
+      accepts_directories: true
+      filename_patterns:
+        - '*.par'  # Philips PAR/REC files
+        - '*.hdr'  # hdr/img files (ANALYZE or NIfTI)
+        - '*.nii'  # NIfTI
+        - '*.nii.gz'  # NIfTI (compressed)
+        - '*.gii'  # GIfTI
+        - '*.dcm'  # DICOM
