@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "as-flask-docs"
+version = "1.0.4"
+description = "对flask提供数据校验和openapi(swagger)文档自动生成的支持"
+License = "MIT"
+authors = ["liuzhijun <lzjun567@gmail.com>",]
+maintainers = ["ansen <ansen921@gmail.com>",]
+readme = "README.md"
+homepage = "https://github.com/Dorain-An/flask-docs"
+packages = [{include = "as_flask_docs"}]
+keywords = ["flask", "api", "docs", "swagger", "redoc", "rapidoc"]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Flask = "^2.0.2"
+pydantic = "^1.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
