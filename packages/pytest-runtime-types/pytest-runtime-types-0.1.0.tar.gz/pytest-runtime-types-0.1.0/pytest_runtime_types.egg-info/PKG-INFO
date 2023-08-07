@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pytest-runtime-types
+Version: 0.1.0
+Summary: Checks type annotations on runtime while running tests.
+Home-page: http://github.com/wlatanowicz/pytest-runtime-types
+Author: Wiktor Latanowicz
+Author-email: pytest-runtime-types@wiktor.latanowicz.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+pytest-runtime-types
+====================
