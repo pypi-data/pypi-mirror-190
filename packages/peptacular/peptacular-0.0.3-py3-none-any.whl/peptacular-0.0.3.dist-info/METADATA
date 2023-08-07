@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: peptacular
+Version: 0.0.3
+Summary: Utility package for handling peptide and protein sequences/files
+Home-page: 
+Author: Patrick Garrett
+Author-email: pgarrett@scripps.edu
+Requires-Python: >=3.6
+Requires-Dist: regex (==2022.10.31)
+
