@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ml_manager
+Version: 0.2.0
+Summary: A manager which manages all your ML experiments
+Author: Manoj Akondi
+Author-email: manojakondi25@gmail.com
+Keywords: python,pytorch,Machine Learning,Deep Learning
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+ml_manager is a managerial software which manages all ML experiments, it tracks losses and metrics, saves the history, makes training plots, makes up a different folder for every new experiment and also sends training alerts and updates on your telegram.

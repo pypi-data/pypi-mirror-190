@@ -1,0 +1,8 @@
+setup.py
+ml_manager/__init__.py
+ml_manager/manage_runs.py
+ml_manager.egg-info/PKG-INFO
+ml_manager.egg-info/SOURCES.txt
+ml_manager.egg-info/dependency_links.txt
+ml_manager.egg-info/requires.txt
+ml_manager.egg-info/top_level.txt
