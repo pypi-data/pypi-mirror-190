@@ -1,0 +1,2 @@
+[console_scripts]
+createpythoncmd = createpythoncmd.cli:main
