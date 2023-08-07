@@ -1,0 +1,14 @@
+ateltasdk/VERSION,sha256=6d2FB_S_DG9CRY5BrqgzrQvT9hJycjNe7pv01YVB7Wc,6
+ateltasdk/__init__.py,sha256=KBTqirwaCXlCPc2xKsn73k5u1-H5YCPu-eRUaJCkAMQ,273
+ateltasdk/__main__.py,sha256=ZCW58pmGIoWk3sQ4G-Rl9oZe6_u9PlYN_kFv6rP4Btw,135
+ateltasdk/base.py,sha256=7VLUrIcpovISU-uhw2wxkPmea7rfQcR1qaKOZbJr02A,329
+ateltasdk/cli.py,sha256=jgCopHqHv3drOMRoWmAByQ2sZ0J6TVHJH_vVtmJD5xU,529
+ateltasdk/pose/draw.py,sha256=kHtBxmOpBMRpY8iLWMwu1XQ3V41cohoRQlt4wv4r1Cg,4107
+ateltasdk/pose/pose_matcher.py,sha256=rfAYOANoDytTMIbRLANmhbgdj7MATbVmKmpWYf3wtBo,1801
+ateltasdk/pose/pose_utils.py,sha256=_LG2uKHS5V7Q1FKaUE2ky4J5FlE2p-fJt0tLg7XjJJs,3222
+ateltasdk/streamer.py,sha256=Dn6ySqX0pEyFb8p862WfMSQo6A03eiU96SojKqtGs6A,6382
+ateltasdk-0.1.2.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+ateltasdk-0.1.2.dist-info/METADATA,sha256=zImvi6KaoILBZ0slX3XpJiqfQakI85PNAx0_MLMUqB4,1244
+ateltasdk-0.1.2.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+ateltasdk-0.1.2.dist-info/entry_points.txt,sha256=6h93wCOfyOpPgFRhKvNWsg-d7StbM7Zjl9FIkltm9EQ,53
+ateltasdk-0.1.2.dist-info/RECORD,,
