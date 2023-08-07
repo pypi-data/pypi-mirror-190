@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+ceotr_erddap_proxy/__init__.py
+ceotr_erddap_proxy/erddapy_proxy.py
+ceotr_erddap_proxy.egg-info/PKG-INFO
+ceotr_erddap_proxy.egg-info/SOURCES.txt
+ceotr_erddap_proxy.egg-info/dependency_links.txt
+ceotr_erddap_proxy.egg-info/requires.txt
+ceotr_erddap_proxy.egg-info/top_level.txt
+ceotr_erddap_proxy.egg-info/zip-safe
