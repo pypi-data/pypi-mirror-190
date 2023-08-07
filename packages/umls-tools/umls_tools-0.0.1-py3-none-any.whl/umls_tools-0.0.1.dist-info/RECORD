@@ -1,0 +1,12 @@
+umls_tools/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+umls_tools/metathesaurus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umls_tools/metathesaurus/metathesaurus_column.py,sha256=JAfCyYVdEbpQateVG6rtRGR5RDWLhhwM7kFpj8_Zwi0,2252
+umls_tools/metathesaurus/metathesaurus_file.py,sha256=aHO5UcRVoYWKgYsraBdSEUpKVDVN4PmJ2-_ph3UfqFY,2438
+umls_tools/semantic_network/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umls_tools/semantic_network/semantic_network_column.py,sha256=1pl-jRwgM9Bh2cxL9QEDwNW506vsY-iDYdSMSN1qEPc,1023
+umls_tools/semantic_network/semantic_network_file.py,sha256=Tczl-xKn3xOA9omvVMx1spmc5lJiTFXz2WSLFz0I83A,1632
+umls_tools/umls_column.py,sha256=d_z_ArF-KyGHL8R1vjZgGOh76q4iEkVtRC84gl8TZBo,557
+umls_tools/umls_file.py,sha256=Ekv0XNzkL3RJrm99irPwo2DtKOrPEzob_qQI7MZArIE,872
+umls_tools-0.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+umls_tools-0.0.1.dist-info/METADATA,sha256=avY53rMuU56B5ZPLcnP229fbwFwad7fypviKmPBVdzY,296
+umls_tools-0.0.1.dist-info/RECORD,,
