@@ -1,0 +1,7 @@
+README.md
+setup.py
+aussrc_clients.egg-info/PKG-INFO
+aussrc_clients.egg-info/SOURCES.txt
+aussrc_clients.egg-info/dependency_links.txt
+aussrc_clients.egg-info/requires.txt
+aussrc_clients.egg-info/top_level.txt
