@@ -1,0 +1,8 @@
+pub_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pub_package/pdf2image.py,sha256=5rdd0ngk2vdLfWUOdZHFbO6dFS56bHkgvMHkYfsjPOU,38
+pub_package/pdf2text.py,sha256=1pBuJmqI_OwNeRlVWS6CjfL9Dh45wyEYuDl5A9eJvfc,37
+chamathpdf-0.0.1.dist-info/LICENCE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+chamathpdf-0.0.1.dist-info/METADATA,sha256=jYL35PiA02imnS-yhQMFIG9hnguKseCAkdu3b6dkvEE,326
+chamathpdf-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chamathpdf-0.0.1.dist-info/top_level.txt,sha256=UpqR6Hz1rTQBx0ZI7-7l7M_Sm55OETrvKnbYF1u66Vo,12
+chamathpdf-0.0.1.dist-info/RECORD,,
