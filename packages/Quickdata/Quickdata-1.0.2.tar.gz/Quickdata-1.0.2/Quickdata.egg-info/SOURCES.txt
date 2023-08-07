@@ -1,0 +1,8 @@
+README.md
+setup.py
+Quickdata/Funciones.py
+Quickdata/__init__.py
+Quickdata.egg-info/PKG-INFO
+Quickdata.egg-info/SOURCES.txt
+Quickdata.egg-info/dependency_links.txt
+Quickdata.egg-info/top_level.txt
