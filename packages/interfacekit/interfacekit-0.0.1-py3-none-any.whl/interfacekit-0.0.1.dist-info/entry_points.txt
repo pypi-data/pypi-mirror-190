@@ -1,0 +1,3 @@
+[console_scripts]
+interfacekit = interfacekit.cli:main
+
