@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: nhelmclient
+Version: 0.1.0
+Summary: Helm client library
+Home-page: UNKNOWN
+Author: NMachine
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: inflection
+Requires-Dist: pyyaml
+Requires-Dist: typing-extensions
+
+nHelmClient
+===========
+
+The Helm Client Library.
+
+Features:
+* get values from charts (helm show values)
+* check deployment (helm status)
+* install (helm install)
+* call other Helm commands
+
+
+Example
+-------
+
+```
+from nhelmclient import Configuration, HelmClient
+
+configuration = Configuration()
+helm = HelmClient(configuration)
+helm.install(release_name, repo_url, chart)
+```
+
+
