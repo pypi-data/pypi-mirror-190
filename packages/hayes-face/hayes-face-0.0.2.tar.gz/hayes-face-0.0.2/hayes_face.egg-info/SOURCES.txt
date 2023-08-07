@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+hayes_face.egg-info/PKG-INFO
+hayes_face.egg-info/SOURCES.txt
+hayes_face.egg-info/dependency_links.txt
+hayes_face.egg-info/requires.txt
+hayes_face.egg-info/top_level.txt
+retinaface/RetinaFace.py
+retinaface/__init__.py
+retinaface/commons/__init__.py
+retinaface/commons/postprocess.py
+retinaface/commons/preprocess.py
+retinaface/model/__init__.py
+retinaface/model/retinaface_model.py
