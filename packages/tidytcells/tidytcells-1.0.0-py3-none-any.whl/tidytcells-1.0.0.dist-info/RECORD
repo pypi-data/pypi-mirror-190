@@ -1,0 +1,16 @@
+tidytcells/__init__.py,sha256=rGzEk5MQiS58ik_KvuaP182GwjgfBMS_k16asqbJ4ew,676
+tidytcells/_decomposed_gene.py,sha256=6Ki6nx943y3M67IWeQmqntr6Iexurr2vMSSeSbyNXRY,907
+tidytcells/mhc/__init__.py,sha256=D_kSK2Q1qGUKauVfDCbFYtBd5qQbWq1ijIf-qIkHVyc,68
+tidytcells/mhc/_main.py,sha256=XKUmM-Gma3auTPkSj0JEn1-LZOTdlvEyz-yqDDX4CIQ,9761
+tidytcells/resources/homosapiens_mhc.json,sha256=jRhcI3AXsdNSATJF6XSy_8OC5_aLFSqTvkP64FHNh-8,611997
+tidytcells/resources/homosapiens_mhc_synonyms.json,sha256=jK0022H58o-Ir2ks2rKadUnaBew5tG_9CBlloBJsmtc,1295
+tidytcells/resources/homosapiens_tcr.json,sha256=Rz0tjxl7aKJUUinW3h1BUYBgU4VMv-gA6S9_6RH2xic,12832
+tidytcells/resources/homosapiens_tcr_synonyms.json,sha256=KmbBI0jLUoW_-OYeAQgc0BJx2pS5Ym6PhbxyzgquOVo,6500
+tidytcells/resources/musmusculus_tcr.json,sha256=F6hetjsboAGgdHdcFJvKaHuIQYhuG7-BovLFuzYl4kA,15114
+tidytcells/tcr/__init__.py,sha256=52cTmkqZgJYPEtuvV0wyX7nsPStqrtJyRziBf2pXjYY,38
+tidytcells/tcr/_main.py,sha256=pc4GFjHeWTUCOH0jUhpZQM67ShFy4iRjon9B5oH7cUc,5674
+tidytcells-1.0.0.dist-info/LICENSE.txt,sha256=FY2Gxf5nKGloBCrk7PBQ1n8LTR2x8i3EIO2cUL9WIvE,1068
+tidytcells-1.0.0.dist-info/METADATA,sha256=MTeyUhGIBUvYoCvoHtZ2GQo526omYL23HY0e3TBZ7Rs,2520
+tidytcells-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tidytcells-1.0.0.dist-info/top_level.txt,sha256=igXdVB29fieqs0GIkDpW-TrRSqyH82WyQbPoLFg6hFk,11
+tidytcells-1.0.0.dist-info/RECORD,,
