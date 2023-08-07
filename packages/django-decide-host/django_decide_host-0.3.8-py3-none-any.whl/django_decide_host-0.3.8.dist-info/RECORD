@@ -1,0 +1,15 @@
+decide_host/__init__.py,sha256=cpTT1xkU-pCgoDwZLGrs2o4SjS9DtxwMs9j9vYEqJ7s,42
+decide_host/admin.py,sha256=mFhRQNiEo5oGjMC_jW3R76bcZysSD3CHgU9XhCokv6s,290
+decide_host/apps.py,sha256=snskQ6le35Zb_3T_ByiZnRgp-pcfZfrBLFNqTwRKvL0,96
+decide_host/models.py,sha256=MmIjdg0v2erTlWs2Ocei6O8tYu8U-DN-5roxU54QOeI,3101
+decide_host/serializers.py,sha256=qdaefrtPbrxu6fRb4BkY7yuzrUlCDIZUeQhJaRZiU9c,4360
+decide_host/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+decide_host/urls.py,sha256=HBVu2SByvtp-IE8JgO3VyLl7-Bis8rBERVbCMBqFcRA,1308
+decide_host/views.py,sha256=CXWxXnisyRkTKP4a_xsXH_4xGAItRAcm0PD2NrGeVmA,6657
+decide_host/management/commands/import_trials.py,sha256=6FHBwbUeHuNma5L-xMlI2TEy1KpNEmAVDC48KXj4rso,1422
+decide_host/management/commands/__pycache__/import_jsonl.cpython-36.pyc,sha256=d2iElo0DFtl4L8CT22vzflYET087iWi-AL8c7D0lHBo,1531
+decide_host/management/commands/__pycache__/import_trials.cpython-36.pyc,sha256=IOu_FMN72Ml8FZhMl05hweJBKySFu-pbcy19f5FmXGQ,1574
+django_decide_host-0.3.8.dist-info/METADATA,sha256=iK5_uQH-c42PIAEddCNYRgDcUK6jBfhZoNqfgqgOfJM,2514
+django_decide_host-0.3.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_decide_host-0.3.8.dist-info/top_level.txt,sha256=S9RAK07TWURjmhUXgkq4UlsIiutunex-v-Nsrz9k7VQ,12
+django_decide_host-0.3.8.dist-info/RECORD,,
