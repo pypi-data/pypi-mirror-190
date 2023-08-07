@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hltv-stats
+Version: 0.1.4
+Summary: Simple parser for HLTV.org team stats and matches (using requests and bs4)
+Home-page: https://github.com/a3agalyan/hltv-stats
+License: MIT
+Author: Armen A
+Author-email: agalyan.armen@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: cuid (>=0.3,<0.4)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Repository, https://github.com/a3agalyan/hltv-stats
+Description-Content-Type: text/markdown
+
+Simple parser for HLTV.org team stats and matches (using requests and bs4)
