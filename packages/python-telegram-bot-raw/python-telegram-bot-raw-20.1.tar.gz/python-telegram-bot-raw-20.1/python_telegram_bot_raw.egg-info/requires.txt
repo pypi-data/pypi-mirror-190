@@ -1,0 +1,11 @@
+httpx[http2]~=0.23.3
+
+[all]
+httpx[socks]
+cryptography!=3.4,!=3.4.1,!=3.4.2,!=3.4.3,>=39.0.1
+
+[passport]
+cryptography!=3.4,!=3.4.1,!=3.4.2,!=3.4.3,>=39.0.1
+
+[socks]
+httpx[socks]
