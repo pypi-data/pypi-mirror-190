@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pysigrok-libsigrokdecode
+Version: 0.0.2
+Summary: Collection of protocol decoders from libsigrokdecode
+Author-email: Scott Shawcroft <scott@tannewt.org>
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: pysigrok
+Project-URL: Home, https://github.com/pysigrok/libsigrokdecode
