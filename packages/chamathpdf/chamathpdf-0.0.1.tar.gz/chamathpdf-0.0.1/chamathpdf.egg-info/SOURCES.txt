@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+chamathpdf.egg-info/PKG-INFO
+chamathpdf.egg-info/SOURCES.txt
+chamathpdf.egg-info/dependency_links.txt
+chamathpdf.egg-info/top_level.txt
+pub_package/__init__.py
+pub_package/pdf2image.py
+pub_package/pdf2text.py

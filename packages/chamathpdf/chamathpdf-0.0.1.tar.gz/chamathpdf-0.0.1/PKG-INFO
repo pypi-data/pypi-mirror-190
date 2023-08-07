@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: chamathpdf
+Version: 0.0.1
+Summary: A simple python package to generate PDFs from Chamath
+Home-page: https://github.com/chamath/chamathpdf
+Author: Chamath
+Author-email: anpch@example.com
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+This is the home page for the project
