@@ -1,0 +1,11 @@
+README.md
+setup.py
+interfacekit/__init__.py
+interfacekit/cli.py
+interfacekit/version.py
+interfacekit.egg-info/PKG-INFO
+interfacekit.egg-info/SOURCES.txt
+interfacekit.egg-info/dependency_links.txt
+interfacekit.egg-info/entry_points.txt
+interfacekit.egg-info/requires.txt
+interfacekit.egg-info/top_level.txt
