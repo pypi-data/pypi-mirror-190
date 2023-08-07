@@ -1,0 +1,3 @@
+[console_scripts]
+ateltasdk=ateltasdk.__main__:main
+
