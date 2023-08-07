@@ -1,0 +1,9 @@
+requests==2.28.2
+singer-python==5.13.0
+
+[dev]
+ipdb
+
+[test]
+nose
+pylint==2.13.4
