@@ -1,0 +1,12 @@
+pimage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pimage/block.py,sha256=_EaOcAmBl_ekDQgRsfrjZLzhDBJzRuTs7tEZ94r57Po,7175
+pimage/configuration.py,sha256=v8s7s_bQaSd0YctgtoBTb5WR6wkG8L2vD36YiTpClrM,1502
+pimage/container.py,sha256=kFEmADqVPJXlqPr6ruWZP2BsDF90Nb0fteMa2pOKE6w,1604
+pimage/copy_move.py,sha256=zkFZhK32sY4Bh81uY6udlNrACtafDJUiCeGllqEcpoA,2395
+pimage/image_object.py,sha256=X71lRRVxIr-E2xdLo7i9G8rlD0aTRGEtcjpnA3G6zJ4,15642
+pimage-1.1.0.dist-info/LICENSE-APACHE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pimage-1.1.0.dist-info/LICENSE-MIT,sha256=XDlLJCvl_QxonES4MnzuUUnebi6dhIgFBoihzRPafZ8,1077
+pimage-1.1.0.dist-info/METADATA,sha256=p65D3QgnOqeAYD-iKVNhx2weKNOvDufNzVKbhHcFYFU,1468
+pimage-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pimage-1.1.0.dist-info/top_level.txt,sha256=D5X05jNoaM3yg6ZH4xg9YJnCxdiB9YxBZ6Yqc-LVmSg,7
+pimage-1.1.0.dist-info/RECORD,,
