@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+javiche/__init__.py
+javiche/_modidx.py
+javiche/invdes.py
+javiche/jaxify.py
+javiche.egg-info/PKG-INFO
+javiche.egg-info/SOURCES.txt
+javiche.egg-info/dependency_links.txt
+javiche.egg-info/entry_points.txt
+javiche.egg-info/not-zip-safe
+javiche.egg-info/requires.txt
+javiche.egg-info/top_level.txt

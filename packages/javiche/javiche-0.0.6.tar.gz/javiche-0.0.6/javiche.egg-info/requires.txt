@@ -1,0 +1,10 @@
+numpy
+ceviche
+jax
+jaxlib
+
+[dev]
+nbdev>=2.3
+tqdm
+jupyter
+ipywidgets

@@ -1,0 +1,2 @@
+[nbdev]
+javiche = javiche._modidx:d
