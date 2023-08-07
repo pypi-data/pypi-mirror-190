@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-nibabel = napari_nibabel:napari.yaml

@@ -1,0 +1,7 @@
+numpy
+nibabel[dicom,dicomfs,spm]
+
+[testing]
+tox
+pytest
+pytest-cov
