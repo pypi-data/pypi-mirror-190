@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: diki-scraper
+Version: 1.3
+Summary: A library for generating diki.pl ENG-PL translations
+Home-page: https://github.com/mepavv/diki_scraper
+Author: Michał Pawłowski
+Author-email: <michal.paw000@gmail.com>
+License: MIT
+Keywords: scraper,api,translation,polish,english
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# diki_scraper: A Python library for generating diki.pl ENG-PL translations
+
+`diki_scraper` pozwala na tĹ‚umaczenie sĹ‚Ăłw z sĹ‚ownika ENG-PL diki.pl
+
+## Instalacja
+```
+pip install diki_scraper
+```
+
+
+## Opis funkcji
+
+ModuĹ‚ zawiera funkcjÄ™ `diki.translation(word, num = 5, ex_trans = 1)`
+
+`word`, akceptuje string, ktĂłry masz zamiar przetĹ‚umaczyÄ‡\
+`num`, opcjonalnie akceptuje int (domyĹ›lnie 5), okreĹ›lajÄ…cy do ilu tĹ‚umaczeĹ„ (max) ma zwrĂłciÄ‡ funkcja \
+`ex_trans`, opcjonalnie akceptuje int (domyĹ›lnie 1), okreĹ›lajÄ…cy czy funkcja ma zwrĂłciÄ‡ dokĹ‚adne tĹ‚umaczenie sĹ‚owa, np. czy dla sĹ‚owa 'used' majÄ… zostaÄ‡ wyĹ›wietlone tĹ‚umaczenia sĹ‚owa 'use'
+
+
+## PrzykĹ‚ady uĹĽycia
+
+
+
+```python
+from diki_scraper import diki
+
+diki.translation('used')
+```
+
+```python
+['uĹĽywany', 'przyzwyczajony', 'przywykĹ‚y']
+```
+
+```python
+from diki_scraper import diki
+
+diki.translation('used',10,0)
+```
+
+```python
+['uĹĽywany', 'przyzwyczajony', 'przywykĹ‚y', 'uĹĽywaÄ‡', 'korzystaÄ‡ (np. z telefonu, toalety)', 'zuĹĽywaÄ‡', 'wykorzystywaÄ‡ (np. kogoĹ› do swoich celĂłw)', 'uĹĽywaÄ‡ (w mowie lub w piĹ›mie)', 'uĹĽywaÄ‡', 'wykorzystywaÄ‡ (np. przewagÄ™)']
+```
+
+
+
+
