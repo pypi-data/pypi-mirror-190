@@ -1,0 +1,7 @@
+torch
+numpy
+
+[test]
+pytest
+gym<=0.20
+pygame
